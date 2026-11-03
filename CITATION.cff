@@ -10,3 +10,4 @@ type: software
 license: MIT
 repository-code: "https://github.com/swogger/gp-vs-blind-search"
 date-released: 2026-11-03
+doi: 10.5281/zenodo.23915069

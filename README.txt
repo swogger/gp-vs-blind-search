@@ -5,7 +5,7 @@ Dimitar Georgiev Kazakov, Technical University of Varna
 Contact: dimitar.kazakov@gmail.com
 Paper: [citation and DOI to be added on publication]
 Repository: https://github.com/swogger/gp-vs-blind-search
-Archive: [Zenodo DOI to be added at release]
+Archive: https://doi.org/10.5281/zenodo.23915069 (all versions; Zenodo)
 Preregistrations (OSF, public): Stage 0 xh9ag, Stage 1 a3spg, Stage 2 dg7f3, Stage 2 addendum bc9g4,
 Stage 3 hb238, Stage 4 s5fjm (https://osf.io/<id>).
 Earlier study: https://github.com/swogger/gp-construction-size
