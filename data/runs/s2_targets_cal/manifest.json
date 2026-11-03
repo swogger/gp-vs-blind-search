@@ -1,0 +1,409 @@
+{
+ "phase": "s2_targets_cal",
+ "description": "Study 2 calibration targets (gate G2, D062): 30 per level on the 10 levels of data/registration/levels.json, seed TARGET_SEEDS['calibration']. Target generation is not a search, so it runs before Stage 1; the files and checksums are attached to it. Real sets load their values: --workers 2.",
+ "created": "2026-10-20 10:04:04",
+ "git": "5a0e37a",
+ "n_tasks": 16,
+ "tasks": [
+  {
+   "key": "F-EML",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "F-EML",
+    "--name",
+    "calibration",
+    "--n",
+    "30",
+    "--seed",
+    "20261021",
+    "--levels",
+    "7,9,11,13,15,17,19,21,23,25"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "F-EML",
+    "out": "data/targets_s2/F-EML"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ARITH4",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "R-ARITH4",
+    "--name",
+    "calibration",
+    "--n",
+    "30",
+    "--seed",
+    "20261021",
+    "--levels",
+    "7,9,11,13,15,17,19,21,23,25"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "R-ARITH4",
+    "out": "data/targets_s2/R-ARITH4"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ELEM4",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "R-ELEM4",
+    "--name",
+    "calibration",
+    "--n",
+    "30",
+    "--seed",
+    "20261021",
+    "--levels",
+    "6,7,8,9,10,11,12,13,14,15"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "R-ELEM4",
+    "out": "data/targets_s2/R-ELEM4"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-HYB",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "R-HYB",
+    "--name",
+    "calibration",
+    "--n",
+    "30",
+    "--seed",
+    "20261021",
+    "--levels",
+    "7,9,11,13,15,17,19,21,23,25"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "R-HYB",
+    "out": "data/targets_s2/R-HYB"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-LDE0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "F-LDE0",
+    "--name",
+    "calibration",
+    "--n",
+    "30",
+    "--seed",
+    "20261021",
+    "--levels",
+    "9,11,13,15,17,19,21,23,25,27"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "F-LDE0",
+    "out": "data/targets_s2/F-LDE0"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-NAND-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-NAND-n5",
+    "--name",
+    "calibration",
+    "--n",
+    "30",
+    "--seed",
+    "20261021",
+    "--levels",
+    "9,15,21,29,35,45,47,59,61,63"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-NAND-n5",
+    "out": "data/targets_s2/BOOL-NAND-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-NOR-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-NOR-n5",
+    "--name",
+    "calibration",
+    "--n",
+    "30",
+    "--seed",
+    "20261021",
+    "--levels",
+    "7,13,19,25,31,39,43,51,57,63"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-NOR-n5",
+    "out": "data/targets_s2/BOOL-NOR-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-IMP0-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-IMP0-n5",
+    "--name",
+    "calibration",
+    "--n",
+    "30",
+    "--seed",
+    "20261021",
+    "--levels",
+    "5,7,9,13,15,21,23,27,29,35"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-IMP0-n5",
+    "out": "data/targets_s2/BOOL-IMP0-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AON-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-AON-n5",
+    "--name",
+    "calibration",
+    "--n",
+    "30",
+    "--seed",
+    "20261021",
+    "--levels",
+    "5,8,12,16,19,23,26,31,32,38"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-AON-n5",
+    "out": "data/targets_s2/BOOL-AON-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AONX-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-AONX-n5",
+    "--name",
+    "calibration",
+    "--n",
+    "30",
+    "--seed",
+    "20261021",
+    "--levels",
+    "4,5,7,12,15,19,23,27,32,35"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-AONX-n5",
+    "out": "data/targets_s2/BOOL-AONX-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-RICH-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-RICH-n5",
+    "--name",
+    "calibration",
+    "--n",
+    "30",
+    "--seed",
+    "20261021",
+    "--levels",
+    "3,5,9,12,15,18,21,25,28,31"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-RICH-n5",
+    "out": "data/targets_s2/BOOL-RICH-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-EML-R",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "F-EML-R",
+    "--name",
+    "calibration",
+    "--n",
+    "30",
+    "--seed",
+    "20261021",
+    "--levels",
+    "7,9,11,13,15,17,19,21,23,25"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "F-EML-R",
+    "out": "data/targets_s2/F-EML-R"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-TRIG",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "R-TRIG",
+    "--name",
+    "calibration",
+    "--n",
+    "30",
+    "--seed",
+    "20261021",
+    "--levels",
+    "5,6,7,8,9,10,11,12,13,14"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "R-TRIG",
+    "out": "data/targets_s2/R-TRIG"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-IMP0R-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-IMP0R-n5",
+    "--name",
+    "calibration",
+    "--n",
+    "30",
+    "--seed",
+    "20261021",
+    "--levels",
+    "5,7,9,13,17,19,23,25,29,31"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-IMP0R-n5",
+    "out": "data/targets_s2/BOOL-IMP0R-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-NAND-n6",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-NAND-n6",
+    "--name",
+    "calibration",
+    "--n",
+    "30",
+    "--seed",
+    "20261021",
+    "--levels",
+    "11,15,19,25,29,35,37,39,41,43"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-NAND-n6",
+    "out": "data/targets_s2/BOOL-NAND-n6"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AON-n6",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-AON-n6",
+    "--name",
+    "calibration",
+    "--n",
+    "30",
+    "--seed",
+    "20261021",
+    "--levels",
+    "5,7,10,14,16,21,22,28,29,35"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-AON-n6",
+    "out": "data/targets_s2/BOOL-AON-n6"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

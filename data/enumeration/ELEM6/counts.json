@@ -1,0 +1,127 @@
+{
+ "grammar": "ELEM6",
+ "levels": [
+  {
+   "K": 1,
+   "N_syntactic": 2,
+   "candidates": 2,
+   "U": 2,
+   "U_cum": 2,
+   "U_finite_nonconst": 1,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 2,
+   "N_syntactic": 4,
+   "candidates": 4,
+   "U": 4,
+   "U_cum": 6,
+   "U_finite_nonconst": 2,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 3,
+   "N_syntactic": 24,
+   "candidates": 24,
+   "U": 11,
+   "U_cum": 17,
+   "U_finite_nonconst": 8,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 4,
+   "N_syntactic": 112,
+   "candidates": 86,
+   "U": 51,
+   "U_cum": 68,
+   "U_finite_nonconst": 40,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 5,
+   "N_syntactic": 672,
+   "candidates": 342,
+   "U": 149,
+   "U_cum": 217,
+   "U_finite_nonconst": 127,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 6,
+   "N_syntactic": 3904,
+   "candidates": 1466,
+   "U": 628,
+   "U_cum": 845,
+   "U_finite_nonconst": 567,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 7,
+   "N_syntactic": 24448,
+   "candidates": 5756,
+   "U": 2515,
+   "U_cum": 3360,
+   "U_finite_nonconst": 2325,
+   "cpu_s": 0.02,
+   "vals_stored": true
+  },
+  {
+   "K": 8,
+   "N_syntactic": 154368,
+   "candidates": 24334,
+   "U": 10125,
+   "U_cum": 13485,
+   "U_finite_nonconst": 9466,
+   "cpu_s": 0.06,
+   "vals_stored": true
+  },
+  {
+   "K": 9,
+   "N_syntactic": 1004032,
+   "candidates": 104102,
+   "U": 43205,
+   "U_cum": 56690,
+   "U_finite_nonconst": 40855,
+   "cpu_s": 0.29,
+   "vals_stored": true
+  },
+  {
+   "K": 10,
+   "N_syntactic": 6611968,
+   "candidates": 444946,
+   "U": 184009,
+   "U_cum": 240699,
+   "U_finite_nonconst": 174814,
+   "cpu_s": 1.24,
+   "vals_stored": true
+  },
+  {
+   "K": 11,
+   "N_syntactic": 44226560,
+   "candidates": 1949646,
+   "U": 794962,
+   "U_cum": 1035661,
+   "U_finite_nonconst": 756822,
+   "cpu_s": 5.41,
+   "vals_stored": true
+  },
+  {
+   "K": 12,
+   "N_syntactic": 298905600,
+   "candidates": 8582324,
+   "U": 3493496,
+   "U_cum": 4529157,
+   "U_finite_nonconst": 3328547,
+   "cpu_s": 20.21,
+   "vals_stored": false
+  }
+ ],
+ "hash_precision": 9,
+ "sample": "grid (2,3) 100 points"
+}

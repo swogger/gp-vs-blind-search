@@ -1,0 +1,2003 @@
+diff --git a/src/reach/analysis/s2/audit.py b/src/reach/analysis/s2/audit.py
+index 2e49e6aa295965c8a1a9addac4859d27266dbaca..0437c86902a4f0ed35edc14485b05860c9fa03cd 100644
+--- a/src/reach/analysis/s2/audit.py
++++ b/src/reach/analysis/s2/audit.py
+@@ -76,6 +76,71 @@ def bigtree_compare(orig, again):
+     return out
+ 
+ 
++REVISIT_IGNORE = BIGTREE_IGNORE | {"audit_of", "rv"}   # bookkeeping, timing and the counter's new field
++
++
++def revisit_compare(orig, again):
++    """Problems of one H6d re-run (D098): every differing field except REVISIT_IGNORE (sorted), then a missing rv or
++    one whose evaluations are not the run's (the population of every evaluated generation)."""
++    keys = (set(orig) | set(again)) - REVISIT_IGNORE
++    out = sorted(k for k in keys if orig.get(k) != again.get(k))
++    rv = again.get("rv")
++    if not rv:
++        return out + ["no rv"]
++    n = again.get("pop_size", 0) * (again.get("gens_reached", 0) + (again.get("terminal_state") == "converged"))
++    if rv["stop"]["n"] != n:
++        out.append(f"rv counts {rv['stop']['n']} evaluations, the run made {n}")
++    return out
++
++
++def revisit_report(root, phase):
++    """Each planned task of an H6d re-run phase against its original row, per source phase: planned, rerun,
++    identical, differing {original key: problems}, missing; plus CPU seconds of the re-runs, of their originals and of
++    the counter. ok only if nothing differs and nothing is missing."""
++    import json
++    from pathlib import Path
++    from reach.runner.queue import read_results
++    root = Path(root)
++    tasks = json.loads((root / f"data/runs/{phase}/manifest.json").read_text())["tasks"]
++    again = read_results(root / f"data/runs/{phase}/results.jsonl")
++    out, ok = {}, True
++    cpu = dict(rerun=0.0, original=0.0, counter=0.0)
++    for src in sorted({t["meta"]["audit_of"] for t in tasks}):
++        orig = read_results(root / f"data/runs/{src}/results.jsonl")
++        e = dict(planned=0, rerun=0, identical=0, differing={}, missing=[])
++        for t in (t for t in tasks if t["meta"]["audit_of"] == src):
++            e["planned"] += 1
++            k, r = t["meta"]["audit_key"], again.get(t["key"])
++            if r is None:
++                e["missing"].append(k)
++                continue
++            e["rerun"] += 1
++            d = revisit_compare(orig[k], r)
++            if d:
++                e["differing"][k] = d
++            else:
++                e["identical"] += 1
++            cpu["rerun"] += r.get("cpu_seconds") or 0.0
++            cpu["original"] += orig[k].get("cpu_seconds") or 0.0
++            cpu["counter"] += (r.get("rv") or {}).get("cpu_seconds") or 0.0
++        ok = ok and not e["differing"] and not e["missing"]
++        out[src] = e
++    return dict(ok=ok, phase=phase, sources=out, cpu_seconds=cpu)
++
++
++def print_revisit_report(rep):
++    for src, e in rep["sources"].items():
++        print(f"{rep['phase']} <- {src}: planned {e['planned']}, rerun {e['rerun']}, identical {e['identical']}, "
++              f"differing {len(e['differing'])}, missing {len(e['missing'])}")
++        for k, d in list(e["differing"].items())[:20]:
++            print(f"  {k}: {', '.join(d)}")
++    c = rep["cpu_seconds"]
++    if c["original"]:
++        print(f"CPU: re-runs {c['rerun'] / 3600:.2f} h, originals {c['original'] / 3600:.2f} h "
++              f"(x{c['rerun'] / c['original']:.2f}); counter {c['counter'] / 3600:.2f} h")
++    print("OK" if rep["ok"] else "NOT OK")
++
++
+ def bigtree_report(root, phase):
+     """Each planned task of `phase` (s2_audit_bigtrees or its sample; the manifest names the original row) against
+     its original, per source phase: planned, rerun, identical, differing {original key: problems}, missing (no rerun
+diff --git a/src/reach/analysis/s2/h11_report.py b/src/reach/analysis/s2/h11_report.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..6cf8d49d67ecf3c6ef0b1ef81e47cf097c7f2354
+--- /dev/null
++++ b/src/reach/analysis/s2/h11_report.py
+@@ -0,0 +1,148 @@
++"""H11 driver, Stage 4 (D100; REQ-ANA-96; docs/design/remedy.md).
++
++    python -m reach.analysis.s2.h11_report [--boot B]
++
++Refuses unless s4_restart holds exactly the registered tasks (data/registration/stage4_tasks.json) and every target
++file matches its .sha256. Sizes (bits_sem) of both arms come from the same registered target files, proven levels only.
++Restart arm: every s4_restart row per (set, target). One-run arm: s2_ho_a16 at 16 x E0 (`tidy`), checked against
++data/analysis/remedy.json (instrument check). Then `remedy.h11` with its registered constants, and the descriptive
++outputs. Writes data/analysis/h11.json and docs/status/h11_report.md.
++"""
++import argparse
++import hashlib
++import json
++import math
++import time
++from collections import defaultdict
++from pathlib import Path
++
++from reach import s2_lock as L
++from reach.analysis.s2 import law, remedy
++from reach.analysis.s2.load import read_phase, tidy
++
++SETS = ("R-ARITH", "R-ELEM6", "RS-add_sqrt", "RS-eml_sin_sqrt_square", "RS-mul_div_eml_sin_square", "RS-mul_eml_sin")
++TARGET_FILES = ("heldout", "restart")
++
++
++def check_complete(rows, registered):
++    """Refuse unless the rows' keys are exactly the registered task list (count and key hash)."""
++    if len(rows) != registered["n_tasks"] or L.task_list_hash(rows) != registered["sha256"]:
++        raise RuntimeError(f"s4_restart: {len(rows)} rows, key hash {L.task_list_hash(rows)[:16]}; registered "
++                           f"{registered['n_tasks']} tasks, {registered['sha256'][:16]}: incomplete or not the "
++                           "registered tasks")
++
++
++def load_sizes(root, sets):
++    """{set: {target_id: bits_sem}} over the registered target files present, proven levels only; each file checked
++    against its .sha256."""
++    out = {}
++    for g in sets:
++        out[g] = {}
++        for name in TARGET_FILES:
++            p = Path(root) / f"data/targets_s2/{g}/{name}.json"
++            if not p.exists():
++                continue
++            want = (p.parent / f"{name}.sha256").read_text().split()[0]
++            if hashlib.sha256(p.read_bytes()).hexdigest() != want:
++                raise RuntimeError(f"{p}: SHA-256 differs from {name}.sha256")
++            for t in json.loads(p.read_text()):
++                if t["K_proven"] == t["K_construction"] and not t.get("constructed"):
++                    out[g][t["target_id"]] = t["units"]["bits_sem"]
++    return out
++
++
++def build(root, sets=SETS, boot=remedy.H11_BOOT):
++    root = Path(root)
++    rows = read_phase("s4_restart", root)
++    check_complete(rows, json.loads((root / "data/registration/stage4_tasks.json").read_text())["s4_restart"])
++    sizes = load_sizes(root, sets)
++    restart = {}
++    for g in sets:
++        by = defaultdict(list)
++        for r in rows:
++            if r["set"] == g:
++                if r["target_id"] not in sizes[g]:
++                    raise RuntimeError(f"{g} {r['target_id']}: not a proven target of the registered files")
++                by[r["target_id"]].append(r)
++        restart[g] = (dict(by), {t: sizes[g][t] for t in by})
++    one = {}
++    recs = tidy([r for r in read_phase("s2_ho_a16", root) if r.get("set") in sets], (16,))
++    for g in sets:
++        rr = [r for r in recs if r["set"] == g]
++        missing = {r["target_id"] for r in rr} - set(sizes[g])
++        if missing:
++            raise RuntimeError(f"{g}: one-run targets not in the registered proven files: {sorted(missing)[:3]}")
++        one[g] = [dict(target_id=r["target_id"], y=r["y"], units={"bits_sem": sizes[g][r["target_id"]]}) for r in rr]
++    ref = json.loads((root / "data/analysis/remedy.json").read_text())["systems"]["tree GP, 16 x E0"]
++    for g in sets:                                           # instrument check of the one-run arm
++        k = law._k50(one[g], "bits_sem")
++        if not math.isclose(k, ref[g]["k50"], abs_tol=1e-9):
++            raise RuntimeError(f"instrument check: {g} one-run K50 {k} differs from remedy.json's {ref[g]['k50']}")
++    res = dict(label="STAGE 4 (H11; confirmatory once registered)", sets=list(sets), rows=len(rows),
++               h11=remedy.h11(restart, one, boot=boot), descriptive={})
++    null = res["h11"]["null"]
++    for g in sets:
++        runs, size = restart[g]
++        dr = {str(R): remedy.restart_k50(runs, size, R=R, L=100) for R in (2, 4, 8, 16, 32)}
++        l50 = remedy.restart_k50(runs, size, R=64, L=50)
++        gap = res["h11"]["per_set"][g]["gap"]
++        res["descriptive"][g] = dict(restarts_L100=dr, restarts_L50_R64=l50, eval_ratio=remedy.eval_ratio(gap),
++                                     gap_L50=l50["k50"] - null)
++    res["built"] = time.strftime("%Y-%m-%d %H:%M:%S")
++    return res
++
++
++def _f(x, d=2, sign=False):
++    if x is None or (isinstance(x, float) and math.isnan(x)):
++        return "n/a"
++    return f"{x:+.{d}f}" if sign else f"{x:.{d}f}"
++
++
++def render(res):
++    h = res["h11"]
++    L_ = [f"# H11 report: {res['label']}", "",
++          f"> Generated by `reach.analysis.s2.h11_report` ({res['built']}); every number from data/analysis/h11.json. "
++          f"Do not edit by hand. Rows {res['rows']}; bootstrap {h['boot']} replicates. The null's reach at 16 × E₀: "
++          f"{h['null']:.2f} bits.", "", "## Tests (Holm over the two)", "",
++          "| Test | estimate | 90% interval | margin | p | Holm threshold | estimable | supported |",
++          "|---|---|---|---|---|---|---|---|"]
++    for k in ("H11-1", "H11-2"):
++        t = h["tests"][k]
++        iv = f"[{_f(t.get('lo90'), sign=True)}, {_f(t.get('hi90'), sign=True)}]" if "lo90" in t else "per set"
++        L_.append(f"| {k} | {_f(t['estimate'], sign=True)} | {iv} | {t['margin']:+.0f} | {t['p']:.4f} | "
++                  f"{t['threshold']:.4f} | {'yes' if t['estimable'] else 'no'} | {'yes' if t['supported'] else 'no'} |")
++    sl = h["set_level"]
++    L_ += ["", f"Set level (descriptive): mean gap {_f(sl['mean'], sign=True)}, SE {_f(sl['se'])} over {sl['n_sets']} "
++           "sets.", "", "## Per set at 16 × E₀ (bits)", "",
++           "| set | restarted K₅₀ (32 × 100) | flag | one run K₅₀ | gap to null | gain | gain p | evaluation ratio |",
++           "|---|---|---|---|---|---|---|---|"]
++    for g, v in h["per_set"].items():
++        L_.append(f"| {g} | {_f(v['k50'])} | {'lower bound' if v['extrapolated'] else ''} | {_f(v['one_run'])} | "
++                  f"{_f(v['gap'], sign=True)} | {_f(v['gain'], sign=True)} | {h['per_set_gain_tests'][g]['p']:.4f} | "
++                  f"×{res['descriptive'][g]['eval_ratio']:.2f} |")
++    L_ += ["", "## Descriptive (no test)", "",
++           "| set | K₅₀ at R = 2, 4, 8, 16, 32 (L 100) | 64 × 50 generations: K₅₀ (gap) |", "|---|---|---|"]
++    for g, v in res["descriptive"].items():
++        ks = ", ".join(_f(v["restarts_L100"][R]["k50"]) + ("^" if v["restarts_L100"][R]["extrapolated"] else "")
++                       for R in ("2", "4", "8", "16", "32"))
++        L_.append(f"| {g} | {ks} | {_f(v['restarts_L50_R64']['k50'])} ({_f(v['gap_L50'], sign=True)}) |")
++    L_ += ["", "`^`: above the top tested level, replaced by it (a lower bound)."]
++    return "\n".join(L_) + "\n"
++
++
++def main(argv=None, root=None):
++    from reach.paths import ROOT
++    ap = argparse.ArgumentParser()
++    ap.add_argument("--boot", type=int, default=remedy.H11_BOOT)
++    a = ap.parse_args(argv)
++    root = Path(root or ROOT)
++    res = build(root, boot=a.boot)
++    (root / "data/analysis/h11.json").write_text(json.dumps(res, indent=1, default=float) + "\n")
++    (root / "docs/status/h11_report.md").write_text(render(res))
++    t = res["h11"]["tests"]
++    print(f"written data/analysis/h11.json; H11-1 supported: {t['H11-1']['supported']}; "
++          f"H11-2 supported: {t['H11-2']['supported']}")
++
++
++if __name__ == "__main__":
++    main()
+diff --git a/src/reach/analysis/s2/h6d.py b/src/reach/analysis/s2/h6d.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..6f46247d65323093076a3bdf5a4554273fe9a694
+--- /dev/null
++++ b/src/reach/analysis/s2/h6d.py
+@@ -0,0 +1,304 @@
++"""H6d (T25, D098; docs/design/h6_explanation.md version 2; REQ-ANA-87): H6's gap split exactly into guidance, size
++spread, repetition and an estimator offset, gap = G - S - R + O.
++
++For a set and a budget of E evaluations: gap = K50(GP) - log2 E, H6c's own convention (K50 on corrected bits_sem by
++`law._k50`; the null at log2 E). D is the mean number of distinct keys a run evaluates within E. The unguided twin hits a
++level-K target with probability c_K = D_K / U_K (the share of level K GP covers, the run's own target left out);
++enumeration of D hits with probability 1 up to the level where it ends, the remainder there, 0 above. K50(twin) and
++K50(enum D) use H6's estimator on the same targets with these probabilities as rates. R = log2 E - log2 D,
++S = K50(enum D) - K50(twin), G = K50(GP) - K50(twin), O = K50(enum D) - log2 D.
++
++A run is dict(target_id, K, bits_sem, y={E: 0/1}, rv=the counter's record or None). Counts over runs that stop at a hit
++are life-table means stratified by the run's target level (`cumulative`)."""
++import json
++import math
++from pathlib import Path
++
++import numpy as np
++
++from reach.analysis.s2 import law
++from reach.revisit import PREFIXES
++
++E0 = 20_000
++SIZE_CHECKS = ("BOOL-NAND-n6", "BOOL-AON-n6")          # left out of H6c's domain means (`confirm.SIZE_CHECKS`)
++SEED, BOOT, KEEP = 20261020, 2000, 0.9               # H6's bootstrap; Stage 1's estimability rule (`nullgap`)
++DELTA = {"H6d-1": 1.0, "H6d-2": 0.15}                # proposed margins (design 6), confirmed before Gate G5
++ALPHA = 0.05
++LOG2 = math.log2
++
++
++# ---------------------------------------------------------------- counts over runs
++def _snap(rv, p):
++    return rv["prefixes"].get(str(p)) if p is not None else None
++
++
++def _life_table(runs, E, field, pooled_inc=None):
++    """Mean count at the first prefix over the runs that reached it, plus, per later prefix up to E, the mean increment
++    over the runs that reached that prefix; an interval no run reached takes pooled_inc[p] (NaN without it)."""
++    total, prev = None, None
++    for p in (q for q in PREFIXES if q <= E):
++        pairs = [(_snap(r["rv"], p), _snap(r["rv"], prev)) for r in runs]
++        alive = [(np.asarray(s[field], float), np.asarray(o[field], float) if o is not None else 0.0)
++                 for s, o in pairs if s is not None]
++        if alive:
++            inc = np.mean([s - o for s, o in alive], axis=0)
++        elif pooled_inc is not None and p in pooled_inc:
++            inc = pooled_inc[p]
++        else:
++            return float("nan")
++        total = inc if total is None else total + inc
++        prev = p
++    return float("nan") if total is None else total
++
++
++def _increments(runs, E, field):
++    out, prev = {}, None
++    for p in (q for q in PREFIXES if q <= E):
++        pairs = [(_snap(r["rv"], p), _snap(r["rv"], prev)) for r in runs]
++        alive = [np.asarray(s[field], float) - (np.asarray(o[field], float) if o is not None else 0.0)
++                 for s, o in pairs if s is not None]
++        if alive:
++            out[p] = np.mean(alive, axis=0)
++        prev = p
++    return out
++
++
++def cumulative(runs, E, field, how="stratified"):
++    """Mean count `field` ("d", "undef", "lv", "lv_ok") within E evaluations over the runs (those with an rv).
++    stratified (primary): a life table per target level, levels weighted by their share of runs, an interval a level
++    has no run in taking the pooled increment; pooled: one life table; carry: a stopped run keeps its last counts (a
++    lower bound); never_hit: runs that reached E without a hit."""
++    runs = [r for r in runs if r.get("rv")]
++    if not runs:
++        return float("nan")
++    if how == "pooled":
++        return _life_table(runs, E, field)
++    if how == "carry":
++        def last(rv):
++            s = _snap(rv, E)
++            return s if s is not None else rv["stop"]
++        return _scalar(np.mean([np.asarray(last(r["rv"])[field], float) for r in runs], axis=0))
++    if how == "never_hit":
++        keep = [r for r in runs if r["y"].get(E) == 0 and _snap(r["rv"], E) is not None]
++        if not keep:
++            return float("nan")
++        return _scalar(np.mean([np.asarray(_snap(r["rv"], E)[field], float) for r in keep], axis=0))
++    pooled = _increments(runs, E, field)
++    by = {}
++    for r in runs:
++        by.setdefault(r["K"], []).append(r)
++    parts = [(len(rr), _life_table(rr, E, field, pooled)) for rr in by.values()]
++    if any(np.ndim(v) == 0 and not np.isfinite(v) for _, v in parts):
++        return float("nan")
++    return _scalar(sum(n * np.asarray(v) for n, v in parts) / len(runs))
++
++
++def _scalar(v):
++    return float(v) if np.ndim(v) == 0 else v
++
++
++# ---------------------------------------------------------------- hit probabilities and K50s
++def twin_probs(lv, U):
++    """{K: share of level K covered}, from mean distinct keys per level `lv` (index = level); 0 above the bound."""
++    return {k: (min(1.0, float(lv[k]) / U[k]) if k < len(lv) and U[k] > 0 else 0.0) for k in U}
++
++
++def enum_probs(D, U):
++    """Size-ordered enumeration of D distinct functions: 1 for full levels, the remainder at the level where it ends."""
++    out, left = {}, float(D)
++    for k in sorted(U):
++        out[k] = 1.0 if U[k] == 0 or left >= U[k] else max(0.0, left / U[k])
++        left -= U[k]
++    return out
++
++
++def k50_rates(runs, probs):
++    """H6's estimator (`law._k50`, bits_sem) on the runs' targets with hit probabilities as rates."""
++    return law._k50([dict(units=dict(bits_sem=r["bits_sem"]), y=probs.get(r["K"], 0.0)) for r in runs], "bits_sem")
++
++
++def k50_interp(probs, U):
++    """Where the per-level probability crosses 1/2, interpolated linearly in log2 U(<=K) over every level (the primary
++    null's rule, `null.reach_bits_sem`); a sensitivity for the twin (review S2)."""
++    cum, pts = 0, []
++    for k in sorted(U):
++        cum += U[k]
++        if U[k] > 0:
++            pts.append((LOG2(cum), probs.get(k, 0.0)))
++    for (x0, p0), (x1, p1) in zip(pts, pts[1:]):
++        if p0 >= 0.5 > p1:
++            return x0 + (p0 - 0.5) / (p0 - p1) * (x1 - x0)
++    return float("nan")
++
++
++def gap(runs, E):
++    gp = [r for r in runs if E in r["y"]]
++    return law._k50([dict(units=dict(bits_sem=r["bits_sem"]), y=r["y"][E]) for r in gp], "bits_sem") - LOG2(E)
++
++
++def set_terms(runs, E, U, how="stratified"):
++    """gap, R, S, G, O and their parts for one set at budget E."""
++    gp = [r for r in runs if E in r["y"]]
++    d = cumulative(runs, E, "d", how)
++    lv = cumulative(runs, E, "lv", how)
++    k_gp = gap(runs, E) + LOG2(E)
++    k_twin = k50_rates(gp, twin_probs(lv, U)) if np.ndim(lv) else float("nan")
++    k_enum = k50_rates(gp, enum_probs(d, U)) if np.isfinite(d) else float("nan")
++    log2_d = LOG2(d) if np.isfinite(d) and d > 0 else float("nan")
++    return dict(gap=k_gp - LOG2(E), k50_gp=k_gp, k50_twin=k_twin, k50_enum=k_enum, log2_d=log2_d,
++                R=LOG2(E) - log2_d, S=k_enum - k_twin, G=k_gp - k_twin, O=k_enum - log2_d)
++
++
++def sensitivities(runs, E, U, U_ok):
++    """Reported beside the primary terms (design 3): other coverage means, eligible coverage, the interpolated twin,
++    evaluations on undefined or constant functions, and runs whose first sight of the target's key and registered
++    exact hit disagree."""
++    gp = [r for r in runs if E in r["y"]]
++    k_gp = gap(runs, E) + LOG2(E)
++    out = {}
++    for how in ("pooled", "carry", "never_hit"):
++        lv = cumulative(runs, E, "lv", how)
++        out[f"G_{how}"] = k_gp - k50_rates(gp, twin_probs(lv, U)) if np.ndim(lv) else float("nan")
++    lv_ok = cumulative(runs, E, "lv_ok")
++    out["G_eligible"] = k_gp - k50_rates(gp, twin_probs(lv_ok, U_ok)) if np.ndim(lv_ok) else float("nan")
++    lv = cumulative(runs, E, "lv")
++    out["k50_twin_interp"] = k50_interp(twin_probs(lv, U), U) if np.ndim(lv) else float("nan")
++    out["G_interp"] = k_gp - out["k50_twin_interp"]
++    out["undef_share"] = cumulative(runs, E, "undef") / E
++    out["key_hit_disagree"] = sum(1 for r in gp if r.get("rv") and
++                                  ((r["rv"].get("target_first") is not None and r["rv"]["target_first"] <= E) != bool(r["y"][E])))
++    return out
++
++
++# ---------------------------------------------------------------- tests
++def equivalence(point, reps, delta):
++    """Two one-sided tests by the bootstrap: p = max(P(rep <= -delta), P(rep >= delta)) over the kept replicates;
++    equivalent when the 90% interval lies inside +-delta and the statistic is estimable (at least 90% of replicates kept
++    and a finite point estimate, Stage 1's rule)."""
++    reps = np.asarray(reps, float)
++    kept = reps[np.isfinite(reps)]
++    estimable = bool(len(kept) >= KEEP * len(reps) and np.isfinite(point))
++    if not len(kept):
++        return dict(estimate=point, lo90=float("nan"), hi90=float("nan"), p=1.0, equivalent=False, estimable=False,
++                    dropped=len(reps), delta=delta)
++    lo, hi = (float(x) for x in np.percentile(kept, [5, 95]))
++    p = max((np.sum(kept <= -delta) + 1) / (len(kept) + 1), (np.sum(kept >= delta) + 1) / (len(kept) + 1))
++    return dict(estimate=float(point), lo90=lo, hi90=hi, p=float(p), delta=delta, estimable=estimable,
++                dropped=int(len(reps) - len(kept)), equivalent=bool(estimable and -delta < lo and hi < delta))
++
++
++def power(point, reps, delta, n_pilot, n_registered):
++    """Power of the bootstrap TOST at the registered sample size, taking the pilot's estimate as the truth: the pilot
++    replicates' SD scaled by sqrt(n_pilot / n_registered) as the registered SE, power = Phi((delta - |point|) / SE -
++    z_0.95) (the nearer bound dominates), and the margin giving 80% power, |point| + (z_0.95 + z_0.80) x SE."""
++    from scipy.stats import norm
++    kept = np.asarray(reps, float)
++    kept = kept[np.isfinite(kept)]
++    se = float(np.std(kept, ddof=1) * math.sqrt(n_pilot / n_registered)) if len(kept) > 1 else float("nan")
++    z95, z80 = norm.ppf(0.95), norm.ppf(0.80)
++    pw = float(norm.cdf((delta - abs(point)) / se - z95)) if se > 0 else float("nan")
++    return dict(estimate=float(point), se=se, delta=delta, power=pw, delta_80=float(abs(point) + (z95 + z80) * se))
++
++
++def holm(tests, alpha=ALPHA):
++    """Holm over the family: tests sorted by p (not estimable: p = 1), each compared with alpha / (m - i); the first
++    failure stops the procedure. Adds 'supported' to each test."""
++    order = sorted(tests, key=lambda k: tests[k]["p"] if tests[k]["estimable"] else 1.0)
++    out, going = {}, True
++    for i, k in enumerate(order):
++        p = tests[k]["p"] if tests[k]["estimable"] else 1.0
++        going = going and p <= alpha / (len(order) - i)
++        out[k] = dict(tests[k], supported=bool(going), threshold=alpha / (len(order) - i))
++    return out
++
++
++def _by_target(runs):
++    by = {}
++    for r in runs:
++        by.setdefault(r["target_id"], []).append(r)
++    return by
++
++
++def _slope(budgets, values):
++    x, y = np.log2(np.asarray(budgets, float)), np.asarray(values, float)
++    return float(np.polyfit(x, y, 1)[0]) if np.all(np.isfinite(y)) and len(y) >= 2 else float("nan")
++
++
++def _resample(by_domain, tgt, rng):
++    out = {}
++    for d, s in by_domain.items():
++        out[d] = {}
++        for g, (_, U) in s.items():
++            ids = list(tgt[d][g])
++            out[d][g] = ([r for j in rng.integers(0, len(ids), len(ids)) for r in tgt[d][g][ids[j]]], U)
++    return out
++
++
++def _twin_difference(by_domain, e0):
++    """H6d-1's statistic: mean K50(twin) over the Boolean main sets minus over the real ones, at e0."""
++    k = {d: np.mean([set_terms(rr, e0, U)["k50_twin"] for rr, U in s.values()]) for d, s in by_domain.items()}
++    return float(k["bool"] - k["real"])
++
++
++def _real_guidance_slope(real_sets, budgets):
++    """H6d-2's statistic: least-squares slope on log2 budget of the mean real G over the real main sets."""
++    g = [np.mean([set_terms(rr, b, U)["G"] for rr, U in real_sets.values()]) for b in budgets]
++    return _slope(budgets, g)
++
++
++def domain_tests(by_domain, budgets=(E0,), boot=BOOT, seed=SEED, slope_sets=None, secondary=None):
++    """by_domain {"real"|"bool": {set: (runs, U)}} at budgets[0] (E0: s2_revisit_a0 and _a16 pooled, as H6c) for
++    H6d-1 (the twins' K50 equal across domains, within DELTA); slope_sets {set: (runs, U)} of the real domain at every
++    budget (s2_revisit_a16, as H6a; default: by_domain["real"]) for H6d-2 (the slope per doubling of real G within
++    DELTA of 0). Target bootstrap within sets for each statistic, Holm over the two."""
++    e0, slope_sets = budgets[0], slope_sets or by_domain["real"]
++    per = {d: {g: set_terms(rr, e0, U) for g, (rr, U) in s.items()} for d, s in by_domain.items()}
++    tgt = {d: {g: _by_target(rr) for g, (rr, _) in s.items()} for d, s in by_domain.items()}
++    rng = np.random.default_rng(seed)
++    reps1 = [_twin_difference(_resample(by_domain, tgt, rng), e0) for _ in range(boot)]
++    stats = {"H6d-1": (_twin_difference(by_domain, e0), reps1)}
++    if len(budgets) >= 2:
++        sl = {"real": slope_sets}
++        tg2 = {"real": {g: _by_target(rr) for g, (rr, _) in slope_sets.items()}}
++        rng = np.random.default_rng(seed)
++        reps2 = [_real_guidance_slope(_resample(sl, tg2, rng)["real"], budgets) for _ in range(boot)]
++        stats["H6d-2"] = (_real_guidance_slope(slope_sets, budgets), reps2)
++    tests = {k: equivalence(pt, rp, DELTA[k]) for k, (pt, rp) in stats.items()}
++    per_budget = {g: {b: set_terms(rr, b, U) for b in budgets} for g, (rr, U) in slope_sets.items()}
++    out = dict(per_set=per, per_budget_real=per_budget, replicates={k: list(map(float, rp)) for k, (_, rp) in stats.items()},
++               **holm(tests))
++    if secondary:                                    # the secondary family: other margins, the same replicates
++        out["secondary"] = holm({k: equivalence(stats[k][0], stats[k][1], d) for k, d in secondary.items() if k in stats})
++    return out
++
++
++# ---------------------------------------------------------------- reading the rows
++def rows_by_set(root, phases):
++    """{set: last row per key} over the phases' results files."""
++    from reach.runner.queue import read_results
++    by = {}
++    for ph in phases:
++        for r in read_results(Path(root) / f"data/runs/{ph}/results.jsonl").values():
++            by.setdefault(r["set"], []).append(r)
++    return by
++
++
++def main_sets(by, domain):
++    return sorted(g for g, rr in by.items() if rr[0]["domain"] == domain and g not in SIZE_CHECKS)
++
++
++def runs_from_rows(rows, budgets_E):
++    """Runs from rows: y at each budget E (evaluations) up to the row's own budget, read by prefix: an exact hit within
++    E. A run stopped by its CPU limit counts as a failure, as in the registered analysis."""
++    out = []
++    for r in rows:
++        hit = (r["gen_exact"] + 1) * r["pop_size"] if r.get("exact") else None
++        y = {E: int(hit is not None and hit <= E) for E in budgets_E if E <= r["budget_E"]}
++        out.append(dict(target_id=r["target_id"], K=r["K"], bits_sem=r["units"]["bits_sem"], y=y, rv=r.get("rv")))
++    return out
++
++
++def levels_U(enum_dir):
++    """(U, U_ok) per level from a set's counts.json: all distinct functions, and those finite and not constant."""
++    lv = json.loads((Path(enum_dir) / "counts.json").read_text())["levels"]
++    return {s["K"]: s["U"] for s in lv}, {s["K"]: s.get("U_finite_nonconst", s["U"]) for s in lv}
+diff --git a/src/reach/analysis/s2/h6d_report.py b/src/reach/analysis/s2/h6d_report.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..2061cf848775ac5c935426f74e7427be6f9293c4
+--- /dev/null
++++ b/src/reach/analysis/s2/h6d_report.py
+@@ -0,0 +1,223 @@
++"""H6d report driver (D098; design version 2; REQ-ANA-88).
++
++    python -m reach.analysis.s2.h6d_report [--pilot] [--boot B]
++
++Refuses unless every re-run row reproduces its original (`audit.revisit_report`) and carries `rv`, and every set's rows
++share one lookup SHA-256 (equal to the registered one once `data/registration/stage3_lookups.json` exists). Computes
++the per-set terms at E0 and the H6d tests (`h6d.domain_tests`), the sensitivities, and the negative control (a blind
++sampler: its hit probabilities on the calibration targets from s2_cal_rand's hits against its twin from
++s2_revisit_rand), then writes data/analysis/h6d.json (pilot: h6d_pilot.json) and docs/status/h6d_report.md
++(h6d_pilot_report.md).
++"""
++import argparse
++import json
++import time
++from pathlib import Path
++
++import numpy as np
++
++from reach.analysis.s2 import h6d as H
++from reach.analysis.s2 import law
++
++CONF = dict(e0_phases=("s2_revisit_a0", "s2_revisit_a16"), slope_phases=("s2_revisit_a16",),
++            budgets=(20_000, 40_000, 80_000, 160_000, 320_000), out="h6d", confirmatory=True,
++            label="STAGE 3 (H6d; confirmatory once registered)")
++PILOT = dict(e0_phases=("s2_revisit_pilot2",), slope_phases=("s2_revisit_pilot2",), budgets=(20_000, 40_000, 80_000),
++             out="h6d_pilot", confirmatory=False, label="PILOT (pilot targets; not confirmatory)")
++LOOKUPS = "data/registration/stage3_lookups.json"
++N_REGISTERED = {"H6d-1": 21_000, "H6d-2": 5_250}   # runs entering each test: s2_cal_a0 + _a16 on the 14 main
++                                                  # sets (2 x 10,500); s2_cal_a16 on the 7 real main sets (7 x 750)
++SECONDARY = {"H6d-1": 0.09, "H6d-2": 0.14}   # secondary family: margins for 80% power at the full pilot
++                                             # (0.082 and 0.131, rounded up; D098, before the Stage 3 registration)
++CONTROL_MARGIN = 0.5      # bits: the control passes when each domain's mean blind-sampler G lies within this of 0
++
++
++def _levels(sets, levels):
++    if levels is not None:
++        return {g: levels[g] for g in sets}
++    from reach.revisit import enum_root
++    return {g: H.levels_U(enum_root(g)) for g in sets}
++
++
++def checks(root, phases, confirmatory):
++    """Reproduction, rv present, one lookup per set (registered once Stage 3 is filed). Raises on any failure."""
++    from reach.analysis.s2.audit import revisit_report
++    rows = reproduced = 0
++    sha = {}
++    for ph in phases:
++        rep = revisit_report(root, ph)
++        bad = {k: v for e in rep["sources"].values() for k, v in e["differing"].items()}
++        missing = sum(len(e["missing"]) for e in rep["sources"].values())
++        if bad or missing:
++            raise RuntimeError(f"{ph}: {len(bad)} rows do not reproduce their originals, {missing} missing "
++                               f"(first: {list(bad.items())[:3]})")
++        rows += sum(e["rerun"] for e in rep["sources"].values())
++        reproduced += sum(e["identical"] for e in rep["sources"].values())
++        for g, rr in H.rows_by_set(root, (ph,)).items():
++            sha.setdefault(g, set()).update(r["rv"]["lookup"]["sha256"] for r in rr)
++    if any(len(v) != 1 for v in sha.values()):
++        raise RuntimeError(f"rows of one set used different lookups: {sorted(g for g, v in sha.items() if len(v) != 1)}")
++    reg = Path(root) / LOOKUPS
++    if confirmatory and reg.exists():
++        want = json.loads(reg.read_text())
++        off = sorted(g for g, v in sha.items() if want.get(g) not in v)
++        if off:
++            raise RuntimeError(f"lookup SHA-256 differs from the registered one for {off}")
++    return dict(rows=rows, reproduced=reproduced, lookups={g: next(iter(v)) for g, v in sorted(sha.items())})
++
++
++def control_set(rows, targets, hits, N, U, U_ok, E=H.E0):
++    """The negative control for one set: G of a blind sampler = K50 of its own hit probabilities on the calibration
++    targets, 1 - (1 - H/N)^E, minus K50 of its twin (its coverage per level), both by H6's estimator."""
++    runs = [dict(target_id=f"s{i}", K=0, bits_sem=0.0, y={}, rv=r["rv"]) for i, r in enumerate(rows)]
++    lv, lv_ok = H.cumulative(runs, E, "lv", how="pooled"), H.cumulative(runs, E, "lv_ok", how="pooled")
++    if np.ndim(lv) == 0:                                                       # no stream reached every prefix
++        return dict(k50_sampler=float("nan"), k50_twin=float("nan"), G=float("nan"), G_eligible=float("nan"),
++                    streams=len(rows))
++    tg = [dict(K=t.get("K_proven"), bits_sem=t["units"]["bits_sem"], target_id=t["target_id"]) for t in targets]
++    own = law._k50([dict(units=dict(bits_sem=t["bits_sem"]), y=1 - (1 - hits.get(t["target_id"], 0) / N) ** E)
++                    for t in tg], "bits_sem")
++    twin = H.k50_rates(tg, H.twin_probs(lv, U))
++    twin_ok = H.k50_rates(tg, H.twin_probs(lv_ok, U_ok))
++    return dict(k50_sampler=own, k50_twin=twin, G=own - twin, G_eligible=own - twin_ok, streams=len(rows))
++
++
++def control_summary(per_set, ctl):
++    """Domain means of the blind sampler's G (the control passes when each lies within CONTROL_MARGIN of 0), and G net
++    of the control for every set it covers (per-set control values carry the target-sampling bias of uneven hit
++    probabilities within a level, which the target bootstrap does not show)."""
++    dom = {d: [ctl[g]["G"] for g in s if g in ctl and np.isfinite(ctl[g]["G"])] for d, s in per_set.items()}
++    means = {d: float(np.mean(v)) if v else float("nan") for d, v in dom.items()}
++    net = {g: per_set[d][g]["G"] - ctl[g]["G"] for d, s in per_set.items() for g in s if g in ctl}
++    return dict(domain=means, net=net, margin=CONTROL_MARGIN,
++                **{"pass": bool(all(np.isfinite(m) and abs(m) <= CONTROL_MARGIN for m in means.values()))})
++
++
++def control(root, levels=None):
++    """The negative control on every full set with s2_revisit_rand rows; None when the phase has not run."""
++    from reach.runner.queue import read_results
++    p = Path(root) / "data/runs/s2_revisit_rand/results.jsonl"
++    if not p.exists():
++        return None
++    rr = list(read_results(p).values())
++    rand = list(read_results(Path(root) / "data/runs/s2_cal_rand/results.jsonl").values())
++    sets = sorted({r["set"] for r in rr})
++    lv = _levels(sets, levels)
++    out = {}
++    for g in sets:
++        hits, N = {}, 0
++        for r in (x for x in rand if x["set"] == g):
++            N += r["n"]
++            for t, h in r["hits"].items():
++                hits[t] = hits.get(t, 0) + h
++        targets = json.loads((Path(root) / f"data/targets_s2/{g}/calibration.json").read_text())
++        out[g] = control_set([r for r in rr if r["set"] == g], targets, hits, N, *lv[g])
++    return out
++
++
++def build(root, cfg, boot=H.BOOT, levels=None):
++    root = Path(root)
++    phases = tuple(dict.fromkeys(cfg["e0_phases"] + cfg["slope_phases"]))
++    chk = checks(root, phases, cfg["confirmatory"])
++    by = H.rows_by_set(root, cfg["e0_phases"])
++    lv = _levels(sorted(by), levels)
++    e0 = {d: {g: (H.runs_from_rows(by[g], cfg["budgets"]), lv[g][0]) for g in H.main_sets(by, d)}
++          for d in ("real", "bool")}
++    sl_by = H.rows_by_set(root, cfg["slope_phases"])
++    slope = {g: (H.runs_from_rows(sl_by[g], cfg["budgets"]), lv[g][0]) for g in H.main_sets(sl_by, "real")}
++    res = H.domain_tests(e0, cfg["budgets"], boot=boot, slope_sets=slope,
++                         secondary=SECONDARY if cfg["confirmatory"] else None)
++    if not cfg["confirmatory"]:                       # the pilot: power of each test at the registered sample size
++        n_pilot = {"H6d-1": sum(len(rr) for d in e0 for rr, _ in e0[d].values()),
++                   "H6d-2": sum(len(rr) for rr, _ in slope.values())}
++        res["power"] = {k: H.power(res[k]["estimate"], res["replicates"][k], H.DELTA[k], n_pilot[k], N_REGISTERED[k])
++                        for k in ("H6d-1", "H6d-2") if k in res}
++    res["sensitivities"] = {g: H.sensitivities(runs, H.E0, U, lv[g][1]) for d in e0 for g, (runs, U) in e0[d].items()}
++    res["domain"] = {d: {k: float(np.mean([t[k] for t in s.values()])) for k in ("gap", "R", "S", "G", "O", "k50_twin")}
++                     for d, s in res["per_set"].items()}
++    res["control"] = control(root, levels) if cfg["confirmatory"] or (root / "data/runs/s2_revisit_rand").exists() else None
++    res["control_summary"] = control_summary(res["per_set"], res["control"]) if res["control"] else None
++    res.update(checks=chk, label=cfg["label"], phases=list(phases), budgets=list(cfg["budgets"]), boot=boot,
++               built=time.strftime("%Y-%m-%d %H:%M:%S"))
++    return res
++
++
++def _f(x, d=2):
++    return "–" if x is None or not np.isfinite(x) else f"{x:+.{d}f}"
++
++
++def render(res):
++    L = [f"# H6d report: {res['label']}", "",
++         f"> Generated by `reach.analysis.s2.h6d_report` ({res['built']}); every number from the JSON beside it. "
++         f"{'Pilot data on pilot targets: not confirmatory.' if 'PILOT' in res['label'] else ''} Do not edit by hand.",
++         "", f"Rows {res['checks']['rows']}, reproducing their originals {res['checks']['reproduced']}; "
++         f"bootstrap {res['boot']} replicates.", "", "## Tests (equivalence, Holm over the two)", "",
++         "| Test | estimate | 90% interval | margin | p | Holm threshold | estimable | supported |", "|---|---|---|---|---|---|---|---|"]
++    for k in ("H6d-1", "H6d-2"):
++        if k in res:
++            t = res[k]
++            L.append(f"| {k} | {_f(t['estimate'])} | [{_f(t['lo90'])}, {_f(t['hi90'])}] | ±{t['delta']} | {t['p']:.4f} | "
++                     f"{t['threshold']:.4f} | {'yes' if t['estimable'] else 'no'} | {'yes' if t['supported'] else 'no'} |")
++    if res.get("secondary"):
++        L += ["", "Secondary family (other margins, the same replicates; Holm over the secondary family only):"]
++        for k, s in res["secondary"].items():
++            L.append(f"- {k}: margin ±{s['delta']}, 90% interval [{_f(s['lo90'])}, {_f(s['hi90'])}], p {s['p']:.4f}, "
++                     f"supported {'yes' if s['supported'] else 'no'}")
++    if res.get("power"):
++        L += ["", "Power at the registered sample size (the pilot's estimate taken as true; SE scaled by sqrt(n_pilot / "
++              "n_registered)):"]
++        for k, s in res["power"].items():
++            L.append(f"- {k}: estimate {_f(s['estimate'])}, registered SE {s['se']:.3f}, power at ±{s['delta']} "
++                     f"{s['power']:.2f}; margin for 80% power {s['delta_80']:.2f}")
++    L += ["", "## Terms at E₀ (bits; gap = G − S − R + O)", "", "| Domain | Set | gap | G | S | R | O | K₅₀ twin |",
++          "|---|---|---|---|---|---|---|---|"]
++    for d, s in res["per_set"].items():
++        for g, t in sorted(s.items()):
++            L.append(f"| {d} | {g} | {_f(t['gap'])} | {_f(t['G'])} | {_f(t['S'])} | {_f(t['R'])} | {_f(t['O'])} | "
++                     f"{_f(t['k50_twin'])} |")
++        m = res["domain"][d]
++        L.append(f"| {d} | mean | {_f(m['gap'])} | {_f(m['G'])} | {_f(m['S'])} | {_f(m['R'])} | {_f(m['O'])} | "
++                 f"{_f(m['k50_twin'])} |")
++    L += ["", "## Sensitivities at E₀ (G under other choices; descriptive)", "",
++          "| Set | pooled | carry | never hit | eligible | interpolated | undefined share | key/hit disagree |",
++          "|---|---|---|---|---|---|---|---|"]
++    for g, s in sorted(res["sensitivities"].items()):
++        L.append(f"| {g} | {_f(s['G_pooled'])} | {_f(s['G_carry'])} | {_f(s['G_never_hit'])} | {_f(s['G_eligible'])} | "
++                 f"{_f(s['G_interp'])} | {s['undef_share']:.3f} | {s['key_hit_disagree']} |")
++    if res.get("control"):
++        L += ["", "## Negative control: a blind sampler (G must lie near 0)", "",
++              "| Set | streams | K₅₀ sampler | K₅₀ twin | G | G eligible |", "|---|---|---|---|---|---|"]
++        for g, c in sorted(res["control"].items()):
++            L.append(f"| {g} | {c['streams']} | {_f(c['k50_sampler'])} | {_f(c['k50_twin'])} | {_f(c['G'])} | "
++                     f"{_f(c['G_eligible'])} |")
++        s = res.get("control_summary")
++        if s:
++            L += ["", f"Domain means of the control's G: " + ", ".join(f"{d} {_f(m)}" for d, m in s["domain"].items())
++                  + f" (margin ±{s['margin']}): {'passes' if s['pass'] else 'FAILS'}. G net of the control: "
++                  + ", ".join(f"{g} {_f(v)}" for g, v in sorted(s["net"].items())) + "."]
++    return "\n".join(L) + "\n"
++
++
++def write(root, res, cfg):
++    root = Path(root)
++    (root / "data/analysis").mkdir(parents=True, exist_ok=True)
++    (root / f"data/analysis/{cfg['out']}.json").write_text(json.dumps(res, indent=1, default=float))
++    (root / "docs/status").mkdir(parents=True, exist_ok=True)
++    (root / f"docs/status/{cfg['out']}_report.md").write_text(render(res))
++
++
++def main(argv=None):
++    from reach.paths import ROOT
++    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
++    ap.add_argument("--pilot", action="store_true")
++    ap.add_argument("--boot", type=int, default=H.BOOT)
++    a = ap.parse_args(argv)
++    cfg = PILOT if a.pilot else CONF
++    res = build(ROOT, cfg, a.boot)
++    write(ROOT, res, cfg)
++    print(f"written data/analysis/{cfg['out']}.json; H6d-1 supported: {res['H6d-1']['supported']}"
++          + (f"; H6d-2 supported: {res['H6d-2']['supported']}" if "H6d-2" in res else ""))
++
++
++if __name__ == "__main__":
++    main()
+diff --git a/src/reach/analysis/s2/preempt.py b/src/reach/analysis/s2/preempt.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..90c04c0eb52b574116deca3fbe27efb0f86a0f0b
+--- /dev/null
++++ b/src/reach/analysis/s2/preempt.py
+@@ -0,0 +1,309 @@
++"""Pre-emptive analyses for the paper (D099; REQ-ANA-89 to 91). EXPLORATORY: existing data, no new runs, no test, no
++Holm family, no decision; never confirmatory.
++
++    python -m reach.analysis.s2.preempt [--boot B]
++
++1. Set offsets out of sample: each held-out set's intercept at E0 with the calibration slope fixed, predicted by the
++   property regression chosen on the calibration sets (data/analysis/calibration_exploratory.json).
++2. Weaker nulls: H6c's gap against the bottom-up enumerator (duplicates included) and uniform random search, beside
++   the primary null; and each null's reach per budget doubling.
++3. Tolerance reach (real domain): K50 with success = validation nMSE <= 1e-6 (`gen_tol`) beside exact recovery. In the
++   Boolean domain the tolerance is 0, so the two are the same outcome (checked on the records).
++Writes data/analysis/preempt.json and docs/status/preempt_report.md.
++"""
++import argparse
++import json
++import math
++import time
++from pathlib import Path
++
++import numpy as np
++
++from reach.analysis.s2 import confirm, law, null, nullgap
++from reach.analysis.s2.load import E0, read_phase, tidy
++
++SEED = 20261102
++BUDGETS = (1, 2, 4, 8, 16)
++KINDS = ("enumeration", "bottom_up", "uniform")
++
++
++# ---------------------------------------------------------------- 3. tolerance outcome
++def tidy_tol(rows, budgets, censored_as_failure=True):
++    """`load.tidy` with success read from `gen_tol` (first generation within tolerance) instead of `gen_exact`. The
++    engine checks exactness only once the best tree is within tolerance, so gen_tol <= gen_exact; a row that breaks
++    this is refused."""
++    for r in rows:
++        ge, gt = r.get("gen_exact"), r.get("gen_tol")
++        if ge is not None and (gt is None or gt > ge):
++            raise ValueError(f"{r.get('key', r.get('target_id'))}: tolerance generation {gt} after exact {ge}")
++    return tidy([{**r, "gen_exact": r.get("gen_tol")} for r in rows], budgets, censored_as_failure)
++
++
++# ---------------------------------------------------------------- 2. weaker nulls
++def null_shift(levels_by_set, E, kind):
++    """Domain mean over sets of log2 E minus the null's reach in bits_sem: added to H6c's gap (GP's K50 minus log2 E) it
++    gives the gap against that null."""
++    return float(np.mean([math.log2(E) - null.reach_bits_sem(lv, E, kind) for lv in levels_by_set.values()]))
++
++
++def gap_against(g6, levels_by_set, E, kind):
++    """H6c's registered gap and CI (`g6`: gap, lo, hi) against another null: shifted by the domain mean of (primary
++    null's reach - that null's reach), both computed, so the computed reach's level granularity cancels and the
++    primary null gives the registered gap exactly."""
++    sh = 0.0 if kind == "enumeration" else null_shift(levels_by_set, E, kind) - null_shift(levels_by_set, E,
++                                                                                          "enumeration")
++    return dict(gap=g6["gap"] + sh, lo=g6["lo"] + sh, hi=g6["hi"] + sh, shift=sh)
++
++
++def null_rate(levels_by_set, kind, budgets=BUDGETS):
++    """Domain mean over sets of the null's reach (bits_sem) per budget doubling, least squares over `budgets` x E0."""
++    x = [math.log2(b) for b in budgets]
++    return float(np.mean([np.polyfit(x, [null.reach_bits_sem(lv, b * E0, kind) for b in budgets], 1)[0]
++                          for lv in levels_by_set.values()]))
++
++
++# ---------------------------------------------------------------- 1. set offsets out of sample
++def _alpha(s, y, beta):
++    """Maximum-likelihood intercept of logit P = alpha - beta s with beta fixed; NaN when every run has one outcome (no
++    finite value). Bisection on the score sum(y - p), which falls monotonically in alpha: Newton from 0 overshot on
++    held-out data and divided by a zero curvature (guardrail row 153)."""
++    if len(y) == 0 or y.min() == y.max():
++        return float("nan")
++    score = lambda a: float((y - 1 / (1 + np.exp(-(a - beta * s)))).sum())   # noqa: E731
++    lo, hi = -1.0, 1.0
++    while score(lo) < 0:
++        lo *= 2
++    while score(hi) > 0:
++        hi *= 2
++    for _ in range(200):
++        mid = (lo + hi) / 2
++        lo, hi = (mid, hi) if score(mid) > 0 else (lo, mid)
++        if hi - lo < 1e-10:
++            break
++    return (lo + hi) / 2
++
++
++def alpha_fixed_beta(recs, beta, unit, boot=200, seed=SEED):
++    """A set's intercept at a fixed slope, with a 95% target-bootstrap CI (dropped replicates counted)."""
++    s = np.array([law._size(r, unit) for r in recs], float)
++    y = np.array([r["y"] for r in recs], float)
++    by = law._by_target([dict(r, _i=i) for i, r in enumerate(recs)])
++    ids, rng = list(by), np.random.default_rng(seed)
++    reps = []
++    for _ in range(boot):
++        ix = [r["_i"] for j in rng.integers(0, len(ids), len(ids)) for r in by[ids[j]]]
++        reps.append(_alpha(s[ix], y[ix], beta))
++    ok = [x for x in reps if np.isfinite(x)]
++    lo, hi = (float(v) for v in np.percentile(ok, [2.5, 97.5])) if ok else (float("nan"),) * 2
++    return dict(est=_alpha(s, y, beta), lo=lo, hi=hi, dropped=boot - len(ok), targets=len(ids))
++
++
++def offset_prediction(alpha_obs, feats, chosen, cal_mean):
++    """Held-out intercepts predicted by the calibration regression (`chosen`: properties and coefficients, intercept
++    first), scored by RMSE against predicting every set at the calibration mean."""
++    c = chosen["coef"]
++    pred = {g: float(c[0] + sum(k * feats[g][p] for k, p in zip(c[1:], chosen["properties"]))) for g in alpha_obs}
++    gs = sorted(alpha_obs)
++    rm = lambda e: float(math.sqrt(np.mean(np.square(e))))   # noqa: E731
++    return dict(pred=pred, rmse_chosen=rm([alpha_obs[g] - pred[g] for g in gs]),
++                rmse_mean=rm([alpha_obs[g] - cal_mean for g in gs]),
++                corr=float(np.corrcoef([alpha_obs[g] for g in gs], [pred[g] for g in gs])[0, 1]) if len(gs) > 2 else None)
++
++
++# ---------------------------------------------------------------- 4. Boolean size bounds
++def bool_size_variants(recs, constructed, ceilings, parities, units_fn):
++    """The four size readings of REQ-ANA-92 as new record lists (the input records are never changed): registered;
++    capped at the space bound; constructed sizes at their lower bound (`confirm.lower_bound_sizes`), capped; proven
++    targets only."""
++    from reach import grammar as G
++    from reach.units import capped
++
++    def cap(rr):
++        return [dict(r, units=dict(r["units"], bits_sem=capped(r["units"]["bits_sem"], G.get(r["set"])))) for r in rr]
++    return dict(registered=[dict(r) for r in recs], capped=cap(recs),
++                lower_bound=cap(confirm.lower_bound_sizes(recs, constructed, ceilings, parities, units_fn)),
++                proven_only=[dict(r) for r in recs if (r["set"], r["target_id"]) not in constructed])
++
++
++# ---------------------------------------------------------------- driver
++def _recs(root, phases, sets, targets, budgets, tol=False):
++    rows = [r for ph in phases for r in read_phase(ph, root) if r.get("set") in sets]
++    rows = [r for r in rows if r.get("algorithm") == "A" and r.get("config") == "base"]
++    confirm._load_units(root, sets, targets)
++    return rows, confirm._with_units((tidy_tol if tol else tidy)(rows, budgets))
++
++
++def build(root, boot=1000):
++    root = Path(root)
++    model = json.loads((root / "data/registration/h7_model.json").read_text())
++    preds = json.loads((root / "data/registration/heldout_predictions.json").read_text())
++    cal = json.loads((root / "data/analysis/calibration.json").read_text())
++    expl = json.loads((root / "data/analysis/calibration_exploratory.json").read_text())["intercepts"]
++    res = dict(label="EXPLORATORY (D099; existing data, no new runs; not confirmatory)", boot=boot,
++               offsets={}, nulls={}, tolerance={})
++    for d in ("real", "bool"):
++        main = model[d]["fit_records"]["sets"]
++        # 1. offsets
++        ex = expl[d]
++        ho = sorted(g for g in preds["features"] if g.startswith("BOOL") == (d == "bool"))
++        _, rr = _recs(root, ("s2_ho_a0", "s2_ho_a16"), ho, "heldout", (1,))
++        a = {g: alpha_fixed_beta([r for r in rr if r["set"] == g], ex["beta"], ex["unit"], boot // 5)
++             for g in ho}
++        feats = confirm.set_features(root, ho)
++        cal_alpha = {g: v["est"] for g, v in ex["alpha"].items() if math.isfinite(v["est"])}
++        sc = offset_prediction({g: v["est"] for g, v in a.items()}, feats, ex["chosen"],
++                               float(np.mean(list(cal_alpha.values()))))
++        res["offsets"][d] = dict(unit=ex["unit"], beta=ex["beta"], chosen=ex["chosen"], calibration=cal_alpha,
++                                 heldout=a, features={g: {p: feats[g][p] for p in ex["chosen"]["properties"]}
++                                                      for g in ho}, **sc)
++        # 2. weaker nulls (H6c's registered gap and CI shifted)
++        lv = confirm._null_levels(main)
++        g6 = cal["h6c"]["gaps"][d]
++        res["nulls"][d] = {k: dict(gap_against(g6, lv, E0, k), rate=(rt := null_rate(lv, k)), per_bit=2 ** (1 / rt))
++                           for k in KINDS}
++        res["nulls"][d]["registered"] = dict(gap=g6["gap"], lo=g6["lo"], hi=g6["hi"])
++        # 3. tolerance
++        rows, ex_recs = _recs(root, ("s2_cal_a0", "s2_cal_a16"), main, "calibration", BUDGETS)
++        if d == "bool":
++            same = sum(r.get("gen_tol") == r.get("gen_exact") for r in rows)
++            res["tolerance"][d] = dict(rows=len(rows), same=same, note="tolerance 0: the same outcome as exact")
++            continue
++        _, tol_recs = _recs(root, ("s2_cal_a0", "s2_cal_a16"), main, "calibration", BUDGETS, tol=True)
++        per = {}
++        for g in main:
++            te = [r for r in tol_recs if r["set"] == g]
++            ee = [r for r in ex_recs if r["set"] == g]
++            t1, e1 = [r for r in te if r["budget"] == 1], [r for r in ee if r["budget"] == 1]
++            rt = law.reach_per_doubling(te, "bits_sem", BUDGETS, boot // 5)
++            per[g] = dict(k50_tol=nullgap._k50_bits(t1), k50_exact=nullgap._k50_bits(e1),
++                          share_tol=float(np.mean([r["y"] for r in t1])),
++                          share_exact=float(np.mean([r["y"] for r in e1])), rate_tol=rt,
++                          rate_exact=cal["h6"][g]["bits_per_doubling"])
++        dg = nullgap.domain_gap({g: [r for r in tol_recs if r["set"] == g and r["budget"] == 1] for g in main},
++                                E0, boot)
++        dg.pop("_reps", None)
++        res["tolerance"][d] = dict(per_set=per, gap_tol=dg, gap_exact=res["nulls"][d]["registered"])
++    res["bool_bounds"] = bool_bounds(root, model["bool"]["fit_records"]["sets"], cal, boot)
++    res["built"] = time.strftime("%Y-%m-%d %H:%M:%S")
++    return res
++
++
++def bool_bounds(root, sets, cal, boot):
++    """REQ-ANA-92: the Boolean H6c gap at E0 (domain mean, target bootstrap), H6d's G per set (K50 of GP minus the
++    registered twin's) and the budget rates under the four size readings. The registered reading must reproduce the
++    registered gap (instrument check)."""
++    from reach.analysis.s2.confirm import _sensitivity_inputs
++    from reach import grammar as G
++    from reach.units import space_bits
++    h6d = json.loads((Path(root) / "data/analysis/h6d.json").read_text())["per_set"]["bool"]
++    _, recs = _recs(root, ("s2_cal_a0", "s2_cal_a16"), sets, "calibration", BUDGETS)
++    var = bool_size_variants(recs, *_sensitivity_inputs(root, sets))
++    cap = space_bits(G.get(sets[0]))
++    out = {}
++    for name, rr in var.items():
++        e0 = {g: [r for r in rr if r["set"] == g and r["budget"] == 1] for g in sets}
++        dg = nullgap.domain_gap(e0, E0, boot)
++        dg.pop("_reps", None)
++        per = {}
++        for g in sets:
++            k = nullgap._k50_bits(e0[g])
++            ks = [nullgap._k50_bits([r for r in rr if r["set"] == g and r["budget"] == b]) for b in BUDGETS]
++            per[g] = dict(k50_e0=k, G=k - h6d[g]["k50_twin"],
++                          rate=law.reach_per_doubling([r for r in rr if r["set"] == g], "bits_sem", BUDGETS,
++                                                      boot // 5),
++                          budgets_above_space=[b for b, x in zip(BUDGETS, ks) if np.isfinite(x) and x > cap])
++        out[name] = dict(gap=dg, G_mean=float(np.mean([v["G"] for v in per.values()])), per_set=per)
++    reg = cal["h6c"]["gaps"]["bool"]["gap"]
++    if not math.isclose(out["registered"]["gap"]["gap"], reg, abs_tol=1e-9):
++        raise RuntimeError(f"instrument check: registered reading gives {out['registered']['gap']['gap']}, "
++                           f"registered gap {reg}")
++    return dict(space_bits=cap, readings=out)
++
++
++def _f(x, d=2, sign=False):
++    return "n/a" if x is None or (isinstance(x, float) and not math.isfinite(x)) else (f"{x:+.{d}f}" if sign else
++                                                                                       f"{x:.{d}f}")
++
++
++def render(res):
++    L = ["# Pre-emptive analyses (EXPLORATORY)", "",
++         f"> Generated by `reach.analysis.s2.preempt` ({res['built']}); every number from data/analysis/preempt.json. "
++         "Do not edit by hand. EXPLORATORY (D099): existing data, no new runs, no test, no decision; not confirmatory. "
++         f"Bootstrap {res['boot']} replicates (offsets and tolerance rates {res['boot'] // 5}).", "",
++         "## 1. Set offsets out of sample", "",
++         "Held-out sets' intercepts at E₀ (logit P = α − β s, β fixed at the calibration value), predicted by the "
++         "property regression chosen on the calibration sets (Stage 1 exploratory; leave-one-set-out rule, D085), "
++         "against predicting the calibration mean.", ""]
++    for d, o in res["offsets"].items():
++        ch = o["chosen"]
++        L += [f"**{d}** (unit {o['unit']}, β {o['beta']:.3f}; chosen {', '.join(ch['properties']) or 'none'}, "
++              f"coefficients {', '.join(f'{c:.3f}' for c in ch['coef'])}; calibration R² {ch['r2']:.2f}): "
++              f"RMSE {o['rmse_chosen']:.3f} against {o['rmse_mean']:.3f} for the calibration mean; correlation "
++              f"{_f(o['corr'])}.", "", "| held-out set | property | α [95% CI] | predicted |", "|---|---|---|---|"]
++        for g, a in o["heldout"].items():
++            L.append(f"| {g} | {', '.join(_f(v, 3) for v in o['features'][g].values())} | {_f(a['est'])} "
++                     f"[{_f(a['lo'])}, {_f(a['hi'])}] | {_f(o['pred'][g])} |")
++        L.append("")
++    L += ["## 2. Weaker nulls", "",
++          "H6c's gap at E₀ (GP's K₅₀ minus the null's reach, bits_sem; the registered gap and 95% CI shifted by the "
++          "difference between the primary null's computed reach and the other null's) and each null's reach per budget "
++          "doubling (1 to 16 × E₀) with its price per bit.", "",
++          "| domain | null | gap at E₀ [95% CI] | null's reach per doubling | evaluations per bit |", "|---|---|---|---|---|"]
++    names = dict(enumeration="exact (primary)", bottom_up="bottom-up, duplicates included",
++                 uniform="uniform random search")
++    for d, n in res["nulls"].items():
++        for k in KINDS:
++            v = n[k]
++            L.append(f"| {d} | {names[k]} | {_f(v['gap'], sign=True)} [{_f(v['lo'], sign=True)}, "
++                     f"{_f(v['hi'], sign=True)}] | {_f(v['rate'])} | ×{_f(v['per_bit'])} |")
++    L += ["", "## 3. Tolerance-based reach (real domain)", "",
++          "Success = validation nMSE ≤ 10⁻⁶ at the budget (`gen_tol`), beside exact recovery. Boolean: "]
++    b = res["tolerance"]["bool"]
++    L[-1] += f"tolerance 0, the same outcome as exact in {b['same']} of {b['rows']} runs."
++    t = res["tolerance"]["real"]
++    L += ["", f"Domain gap at E₀: tolerance {_f(t['gap_tol']['gap'], sign=True)} [{_f(t['gap_tol']['lo'], sign=True)}, "
++          f"{_f(t['gap_tol']['hi'], sign=True)}]; exact (registered) {_f(t['gap_exact']['gap'], sign=True)} "
++          f"[{_f(t['gap_exact']['lo'], sign=True)}, {_f(t['gap_exact']['hi'], sign=True)}].", "",
++          "| set | K₅₀ exact | K₅₀ tolerance | share solved at E₀ exact / tolerance | bits per doubling exact | "
++          "bits per doubling tolerance [95% CI] |", "|---|---|---|---|---|---|"]
++    for g, v in t["per_set"].items():
++        L.append(f"| {g} | {_f(v['k50_exact'])} | {_f(v['k50_tol'])} | {_f(v['share_exact'])} / {_f(v['share_tol'])} | "
++                 f"{_f(v['rate_exact']['rate'], 3)} | {_f(v['rate_tol']['rate'], 3)} [{_f(v['rate_tol']['lo'], 3)}, "
++                 f"{_f(v['rate_tol']['hi'], 3)}] |")
++    bb = res.get("bool_bounds")
++    if bb:
++        names = dict(registered="registered (uncapped)", capped=f"capped at {bb['space_bits']:.0f} bits",
++                     lower_bound="constructed at lower bound, capped", proven_only="proven targets only")
++        L += ["", "## 4. Boolean size bounds (guardrail row 154)", "",
++              f"A 5-input Boolean set has 2^32 functions, so no size exceeds {bb['space_bits']:.0f} bits_sem; the "
++              "registered unit extrapolates above the enumeration ceiling without that bound. The registered reading "
++              "reproduces the registered H6c gap exactly (checked). G = GP's K₅₀ at E₀ minus the registered twin's.", "",
++              "| reading | gap at E₀ [95% CI] | mean G | sets with K₅₀ above the bound at some budget |", "|---|---|---|---|"]
++        for k, v in bb["readings"].items():
++            n_above = sum(bool(p["budgets_above_space"]) for p in v["per_set"].values())
++            L.append(f"| {names[k]} | {_f(v['gap']['gap'], sign=True)} [{_f(v['gap']['lo'], sign=True)}, "
++                     f"{_f(v['gap']['hi'], sign=True)}] | {_f(v['G_mean'], sign=True)} | {n_above} of "
++                     f"{len(v['per_set'])} |")
++        L += ["", "| set | " + " | ".join(f"K₅₀ / bits per doubling, {k}" for k in bb["readings"]) + " |",
++              "|---|" + "---|" * len(bb["readings"])]
++        for g in bb["readings"]["registered"]["per_set"]:
++            L.append(f"| {g} | " + " | ".join(
++                f"{_f(v['per_set'][g]['k50_e0'])} / {_f(v['per_set'][g]['rate']['rate'])}"
++                for v in bb["readings"].values()) + " |")
++    return "\n".join(L) + "\n"
++
++
++def main(argv=None, root=None):
++    from reach.paths import ROOT
++    ap = argparse.ArgumentParser()
++    ap.add_argument("--boot", type=int, default=1000)
++    a = ap.parse_args(argv)
++    root = Path(root or ROOT)
++    res = build(root, a.boot)
++    (root / "data/analysis/preempt.json").write_text(json.dumps(res, indent=1, default=float) + "\n")
++    (root / "docs/status/preempt_report.md").write_text(render(res))
++    print("written data/analysis/preempt.json and docs/status/preempt_report.md")
++
++
++if __name__ == "__main__":
++    main()
+diff --git a/src/reach/analysis/s2/remedy.py b/src/reach/analysis/s2/remedy.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..7c840a6a730836ee8e78c5d6343fc26c60a37393
+--- /dev/null
++++ b/src/reach/analysis/s2/remedy.py
+@@ -0,0 +1,364 @@
++"""The real-domain loss beside its remedies (D100; REQ-ANA-93, 94). EXPLORATORY and descriptive on registered records;
++no test, no decision. Stage 4's registered analysis will use the same restart estimator.
++
++    python -m reach.analysis.s2.remedy [--boot B]
++
++1. Restart curve on Stage 1's allocation runs (real sets): K50 per budget and run length, exact or plug-in, bracketed
++   or extrapolated, beside one long run and the exact null; rates per doubling of restarts on bracketed exact points.
++2. Gaps to the exact null (K50 - log2 E) for tree GP, Cartesian GP and Operon, and per H8 configuration; Boolean sizes
++   capped at the space bound (guardrail row 154).
++3. Evaluation ratios: GP needs 2^(-gap) times blind search's evaluations for the same reach.
++Writes data/analysis/remedy.json and docs/status/remedy_report.md.
++"""
++import argparse
++import json
++import math
++import time
++from collections import defaultdict
++from pathlib import Path
++
++import numpy as np
++
++from reach.analysis.s2 import alloc, confirm, law
++from reach.analysis.s2.load import E0, outcome, read_phase, tidy
++
++BUDGETS = (1, 2, 4, 8, 16)
++LENGTHS = (25, 50, 100, 200)
++GENS_E0 = 200            # generations per E0 at population 100
++
++
++def eval_ratio(gap):
++    """Evaluations GP needs for the null's reach, as a multiple of the null's: the null's reach is exactly log2 E."""
++    return 2.0 ** (-gap)
++
++
++# ---------------------------------------------------------------- 1. restart curve
++def restart_curve(runs_by_target, size_of, L, budgets=BUDGETS):
++    """`runs_by_target` {target: [runs of at least L generations]}, `size_of` {target: bits_sem}. Per budget: R
++    restarts of L generations, K50 of the per-target probabilities (`alloc._k50`), the plug-in and extrapolation
++    flags, and the lower bound (the top tested level when extrapolated)."""
++    top = max(size_of[t] for t in runs_by_target)
++    out = {}
++    for B in budgets:
++        R = int(round(B * GENS_E0 / L))
++        sizes, ps, plug = [], [], False
++        for t, runs in runs_by_target.items():
++            hits = [outcome(r, L) == "success" for r in runs if r.get("terminal_state") != "error"]
++            p, pl = alloc.p_at_least_one(sum(hits), len(hits), R)
++            plug |= pl
++            sizes.append(size_of[t])
++            ps.append(p)
++        k = alloc._k50(sizes, ps)
++        ext = bool(k > top) if not math.isnan(k) else False
++        out[B] = dict(R=R, plug_in=plug, k50=k, extrapolated=ext, lower_bound=top if ext else k,
++                      null=math.log2(B * E0))
++    return out
++
++
++def rate_inside(curve):
++    """Least-squares K50 per doubling of the budget over bracketed, exact points (at least 3), else NaN."""
++    pts = [(math.log2(B), v["k50"]) for B, v in sorted(curve.items())
++           if not v["extrapolated"] and not v["plug_in"] and np.isfinite(v["k50"])]
++    if len(pts) < 3:
++        return dict(rate=float("nan"), points=len(pts))
++    x, y = np.array(pts).T
++    return dict(rate=float(np.polyfit(x, y, 1)[0]), points=len(pts))
++
++
++# ---------------------------------------------------------------- 2. gaps to the exact null
++def null_gaps(recs, budget):
++    """Per set: K50 (bits_sem; Boolean sizes capped at the space bound) of the records at `budget`, minus log2 of the
++    budget's evaluations; flagged when K50 lies above the top tested level (then the gap is a lower bound) or above the
++    space bound (Boolean: K50 reported at the bound)."""
++    from reach import grammar as G
++    from reach.units import capped, space_bits
++    by = defaultdict(list)
++    for r in recs:
++        if r["budget"] == budget:
++            g = G.get(r["set"])
++            by[r["set"]].append(dict(r, units=dict(r["units"], bits_sem=capped(r["units"]["bits_sem"], g))))
++    out = {}
++    for s, rr in sorted(by.items()):
++        k = law._k50(rr, "bits_sem")
++        bound = space_bits(G.get(s))
++        top = max(r["units"]["bits_sem"] for r in rr)
++        above_space = bool(np.isfinite(k) and k > bound)
++        k = bound if above_space else k
++        null = math.log2(budget * E0)
++        out[s] = dict(k50=k, null=null, gap=k - null, extrapolated=bool(np.isfinite(k) and k > top),
++                      capped_above=above_space, n=len(rr), share=float(np.mean([r["y"] for r in rr])))
++    return out
++
++
++# ---------------------------------------------------------------- 4. H11 (Stage 4; REQ-ANA-95; docs/design/remedy.md)
++H11_R, H11_L, H11_BUDGET = 32, 100, 16         # 32 restarts of 100 generations = 16 x E0
++H11_MARGIN, H11_GAIN = -1.0, 2.0
++H11_BOOT, H11_SEED = 2000, 20261020
++
++
++def hits(runs, L):
++    """(s, n): runs exact within L generations, and runs counted. An error row is left out of n; a row killed without a
++    result, or stopped on its CPU limit before L, counts as a failure (`load.outcome`)."""
++    ok = [r for r in runs if r.get("terminal_state") != "error"]
++    return sum(outcome(r, L) == "success" for r in ok), len(ok)
++
++
++def restart_k50(runs_by_target, size_of, R=H11_R, L=H11_L):
++    """K50 of R restarts of L generations, P per target from all its runs (`alloc.p_at_least_one`). Bracketing rule: a
++    K50 above the top tested level (including +inf) is replaced by the top level and flagged; NaN stays NaN."""
++    top = max(size_of[t] for t in runs_by_target)
++    sizes, ps = [], []
++    for t, runs in runs_by_target.items():
++        s, n = hits(runs, L)
++        ps.append(alloc.p_at_least_one(s, n, R)[0])
++        sizes.append(size_of[t])
++    raw = alloc._k50(sizes, ps)
++    ext = bool(not math.isnan(raw) and raw > top)
++    return dict(k50=top if ext else raw, raw=raw, extrapolated=ext, top=top)
++
++
++def conjunction_p(ps):
++    """p of 'every member holds': the largest member p."""
++    return max(ps)
++
++
++def p_beyond(reps, margin, side, boot):
++    """p for 'the statistic lies beyond `margin`' (side 'above': > margin): (replicates at or on the wrong side of the
++    margin + 1)/(kept + 1); estimable when at least 90% of `boot` replicates are kept."""
++    ok = [x for x in reps if np.isfinite(x)]
++    bad = sum(x <= margin for x in ok) if side == "above" else sum(x >= margin for x in ok)
++    lo, hi = (float(v) for v in np.percentile(ok, [5, 95])) if ok else (float("nan"),) * 2
++    return dict(p=(bad + 1) / (len(ok) + 1), kept=len(ok), estimable=len(ok) >= 0.9 * boot, lo90=lo, hi90=hi)
++
++
++def decide(tests, alpha=0.05):
++    """Holm over the family, as Stage 3 (`h6d.holm`): tests sorted by p, a test that is not estimable counting as
++    p = 1; each compared with alpha / (m - i) (p <= threshold); the first failure stops the procedure (guardrail row
++    155: the first version stopped at a non-estimable test whatever its p)."""
++    eff = {k: tests[k]["p"] if tests[k]["estimable"] else 1.0 for k in tests}
++    order = sorted(tests, key=lambda k: eff[k])
++    out, going = {}, True
++    for i, k in enumerate(order):
++        thr = alpha / (len(order) - i)
++        going = going and eff[k] <= thr
++        out[k] = dict(tests[k], threshold=thr, supported=bool(going))
++    return out
++
++
++def h11(restart, one, boot=H11_BOOT, seed=H11_SEED):
++    """`restart` {set: ({target: runs}, {target: bits})}; `one` {set: [one-run records at 16 x E0 with target_id, y,
++    units]}. Returns the point estimates, both tests and the per-set values (REQ-ANA-95)."""
++    E = H11_BUDGET * E0
++    null = math.log2(E)
++    sets = sorted(restart)
++
++    def stats(pick):
++        per = {}
++        for g in sets:
++            runs, size = restart[g]
++            ids = pick(g, sorted(set(runs) | {r["target_id"] for r in one[g]}))
++            rb = {f"{t}#{i}": runs[t] for i, t in enumerate(ids) if t in runs}
++            sz = {f"{t}#{i}": size[t] for i, t in enumerate(ids) if t in runs}
++            k = restart_k50(rb, sz)
++            by = defaultdict(list)
++            for r in one[g]:
++                by[r["target_id"]].append(r)
++            k1 = law._k50([r for t in ids for r in by.get(t, [])], "bits_sem")
++            per[g] = dict(k50=k["k50"], raw=k["raw"], extrapolated=k["extrapolated"], one_run=k1,
++                          gap=k["k50"] - null, gain=k["k50"] - k1)
++        return per
++    point = stats(lambda g, ids: ids)
++    rng = np.random.default_rng(seed)
++    d_reps, gain_reps = [], {g: [] for g in sets}
++    for _ in range(boot):
++        rep = stats(lambda g, ids: [ids[j] for j in rng.integers(0, len(ids), len(ids))])
++        gaps = [v["gap"] for v in rep.values()]
++        d_reps.append(float(np.mean(gaps)) if all(np.isfinite(gaps)) else float("nan"))
++        for g in sets:
++            gain_reps[g].append(rep[g]["gain"])
++    D = float(np.mean([v["gap"] for v in point.values()]))
++    t1 = dict(p_beyond(d_reps, H11_MARGIN, "above", boot), estimate=D, margin=H11_MARGIN)
++    t1["estimable"] = t1["estimable"] and math.isfinite(D)
++    per_gain = {g: p_beyond(gain_reps[g], H11_GAIN, "above", boot) for g in sets}
++    t2 = dict(p=conjunction_p([v["p"] for v in per_gain.values()]), margin=H11_GAIN,
++              estimable=all(v["estimable"] for v in per_gain.values())
++              and all(math.isfinite(point[g]["gain"]) for g in sets),
++              estimate=min(point[g]["gain"] for g in sets))
++    gaps = [v["gap"] for v in point.values()]
++    se = float(np.std(gaps, ddof=1) / math.sqrt(len(gaps))) if len(gaps) > 1 else float("nan")   # undefined for 1 set
++    return dict(null=null, per_set=point, per_set_gain_tests=per_gain,
++                tests=decide({"H11-1": t1, "H11-2": t2}),
++                set_level=dict(mean=D, se=se, n_sets=len(gaps)), boot=boot)
++
++
++# ---------------------------------------------------------------- driver
++def _tidy(root, phases, targets, budgets, keep=lambda r: True):
++    """Tidy records with units; the two 6-input size-check sets are left out, as in H6c's main sets."""
++    rows = [r for ph in phases for r in read_phase(ph, root) if keep(r) and r.get("set") not in confirm.SIZE_CHECKS]
++    sets = sorted({r["set"] for r in rows})
++    confirm._load_units(root, sets, targets)
++    return [r for r in confirm._with_units(tidy(rows, budgets)) if r.get("units", {}).get("bits_sem") is not None]
++
++
++def _domain_means(gaps, real):
++    """Mean gap over the domain's sets, as text: "≥" when any set's K50 is a lower bound (above its top level or at
++    the space cap), "n/a (saturated)" when no set is estimable."""
++    dom = [x for s, x in gaps.items() if (not s.startswith("BOOL")) == real]
++    v = [x for x in dom if np.isfinite(x["gap"])]
++    if not v:
++        return "n/a (saturated)"
++    bound = any(x["extrapolated"] or x["capped_above"] for x in v) or len(v) < len(dom)
++    return ("≥ " if bound else "") + _f(float(np.mean([x["gap"] for x in v])), sign=True)
++
++
++def build(root):
++    root = Path(root)
++    res = dict(label="EXPLORATORY / descriptive on registered records (D100); not confirmatory", restarts={},
++               systems={}, configs={})
++    # 1. restarts on the allocation runs (real sets)
++    a_rows = read_phase("s2_cal_a0", root) + read_phase("s2_cal_a16", root)
++    al_rows = read_phase("s2_cal_alloc", root)
++    real = sorted({r["set"] for r in al_rows if not r["set"].startswith("BOOL")})
++    confirm._load_units(root, real, "calibration")
++    size_of = {(r["set"], r["target_id"]): r["units"]["bits_sem"] for r in confirm._with_units(
++        [dict(set=r["set"], target_id=r["target_id"], K=r.get("K_construction", r["K"]), units=r.get("units") or {},
++              y=0, budget=1) for r in al_rows if r["set"] in real])}
++    for g, (_tids, runs) in sorted(confirm.alloc_runs(a_rows, al_rows).items()):
++        if g not in real:
++            continue
++        by = defaultdict(list)
++        for r in runs:
++            by[r["target_id"]].append(r)
++        sz = {t: size_of[(g, t)] for t in by}
++        curves = {L: restart_curve(by, sz, L) for L in LENGTHS}
++        one = [dict(set=g, target_id=r["target_id"], budget=B, y=int(outcome(r, B * GENS_E0) == "success"),
++                    units={"bits_sem": sz[r["target_id"]]})
++               for r in a_rows if r["set"] == g and r["target_id"] in by and r.get("generations") == 16 * GENS_E0
++               and r.get("terminal_state") != "error" for B in BUDGETS]
++        top = max(sz.values())
++        one_k = {B: law._k50([x for x in one if x["budget"] == B], "bits_sem") for B in BUDGETS}
++        res["restarts"][g] = dict(levels=sorted({round(v, 2) for v in sz.values()}), top=top,
++                                  curves={L: {str(B): v for B, v in c.items()} for L, c in curves.items()},
++                                  rates={L: rate_inside(c) for L, c in curves.items()},
++                                  one_run={str(B): dict(k50=k, extrapolated=bool(np.isfinite(k) and k > top))
++                                           for B, k in one_k.items()})
++    # 2. three systems against the exact null
++    tree_cal = _tidy(root, ("s2_cal_a0", "s2_cal_a16"), "calibration", (1, 16),
++                     lambda r: r.get("algorithm") == "A" and r.get("config") == "base")
++    tree_ho = _tidy(root, ("s2_ho_a0", "s2_ho_a16"), "heldout", (1, 16))
++    for B in (1, 16):
++        res["systems"][f"tree GP, {B} x E0"] = null_gaps(tree_cal + tree_ho, B)
++    reg = json.loads((root / "data/analysis/calibration.json").read_text())["h6c"]["gaps"]["real"]["per_set"]
++    got = res["systems"]["tree GP, 1 x E0"]
++    bad = {g: (got[g]["gap"], v) for g, v in reg.items() if not math.isclose(got[g]["gap"], v, abs_tol=1e-9)}
++    if bad:
++        raise RuntimeError(f"instrument check: real E0 gaps differ from the registered H6c per-set gaps: {bad}")
++    for cfg in ("n100", "n2000"):
++        cg = _tidy(root, ("s2_cal_cgp",), "calibration", (1, 16), lambda r: r.get("config") == cfg) + \
++            _tidy(root, ("s2_ho_cgp",), "heldout", (1, 16), lambda r: r.get("config") == cfg)
++        for B in (1, 16):
++            res["systems"][f"Cartesian GP {cfg}, {B} x E0"] = null_gaps(cg, B)
++    for cfg in ("symbolic", "default"):
++        op = _tidy(root, ("s2_cal_operon",), "calibration", (16,), lambda r: r.get("config") == cfg) + \
++            _tidy(root, ("s2_ho_operon",), "heldout", (16,), lambda r: r.get("config") == cfg)
++        res["systems"][f"Operon {cfg}, 16 x E0"] = null_gaps(op, 16)
++    # 3. H8 configurations (calibration; budgets 1 and 4 x E0)
++    rob = _tidy(root, ("s2_cal_robust",), "calibration", (1, 4))
++    base = [r for r in _tidy(root, ("s2_cal_a0", "s2_cal_a16"), "calibration", (1, 4),
++                             lambda r: r.get("algorithm") == "A" and r.get("config") == "base")
++            if r["set"] in {x["set"] for x in rob}]
++    for cfg in ["base"] + sorted({r["config"] for r in rob}):
++        rr = base if cfg == "base" else [r for r in rob if r["config"] == cfg]
++        res["configs"][cfg] = {str(B): null_gaps(rr, B) for B in (1, 4)}
++    res["built"] = time.strftime("%Y-%m-%d %H:%M:%S")
++    return res
++
++
++def _f(x, d=2, sign=False):
++    if x is None or (isinstance(x, float) and math.isnan(x)):
++        return "n/a"
++    if isinstance(x, float) and math.isinf(x):
++        return "+inf" if x > 0 else "-inf"
++    return f"{x:+.{d}f}" if sign else f"{x:.{d}f}"
++
++
++CONFIG_NAMES = dict(base="base (pop 100, tournament 7)", R1="R1 population 25", R2="R2 population 1,000",
++                    R3="R3 tournament 2", R4="R4 lexicase", R5="R5 crossover 0.5", R6="R6 depth limit 17")
++
++
++def render(res):
++    L = ["# The real-domain loss beside its remedies (EXPLORATORY)", "",
++         f"> Generated by `reach.analysis.s2.remedy` ({res['built']}); every number from data/analysis/remedy.json. Do "
++         "not edit by hand. Descriptive on registered records (D100): no test, no decision; not confirmatory.", "",
++         "## 1. Restarts (Stage 1 allocation runs, real sets, 100 targets x 32 seeds)", "",
++         "K₅₀ (bits_sem) per budget and run length L (R restarts of L generations). Flags: `p` plug-in (R > 32 "
++         "seeds: biased down); `^` above the top tested level (extrapolated; the top level is a lower bound). The "
++         "null's reach is log₂ E exactly.", ""]
++    for g, v in res["restarts"].items():
++        L += [f"**{g}** (levels {', '.join(f'{x:.1f}' for x in v['levels'])} bits)", "",
++              "| budget | null | one run | " + " | ".join(f"L {x}" for x in LENGTHS) + " |",
++              "|---|---|---|" + "---|" * len(LENGTHS)]
++        for B in map(str, BUDGETS):
++            o = v["one_run"][B]
++            cells = []
++            for Lx in LENGTHS:
++                c = v["curves"][Lx][B]
++                cells.append(f"{_f(c['k50'])}{'^' if c['extrapolated'] else ''}{'p' if c['plug_in'] else ''} "
++                             f"(R {c['R']})")
++            L.append(f"| {B} × E₀ | {_f(v['curves'][LENGTHS[0]][B]['null'])} | {_f(o['k50'])}"
++                     f"{'^' if o['extrapolated'] else ''} | " + " | ".join(cells) + " |")
++        L += ["", "Bits per doubling of restarts (bracketed exact points): " + "; ".join(
++            f"L {Lx}: {_f(v['rates'][Lx]['rate'])} ({v['rates'][Lx]['points']} points)" for Lx in LENGTHS), ""]
++    L += ["## 2. Three GP systems against the exact null", "",
++          "Gap = K₅₀ − log₂ E (bits); per domain the mean over sets, the range and the number of sets below 0 (real) or "
++          "above 0 (Boolean). The main and held-out sets (the 6-input size checks left out, as in H6c). Boolean sizes "
++          "capped at 32 bits; `^` sets whose K₅₀ lies above their top tested level (gap a lower bound).", "",
++          "| system and budget | real: mean [min, max], sets below 0 | Boolean: mean [min, max], sets above 0 |",
++          "|---|---|---|"]
++    for name, gaps in res["systems"].items():
++        cells = []
++        for real in (True, False):
++            dom = {s: x for s, x in gaps.items() if (not s.startswith("BOOL")) == real}
++            v = {s: x for s, x in dom.items() if np.isfinite(x["gap"])}
++            if not dom:
++                cells.append("–")
++                continue
++            gs = [x["gap"] for x in v.values()]
++            n = sum(x < 0 for x in gs) if real else sum(x > 0 for x in gs)
++            flags = [f"{sum(x['extrapolated'] for x in v.values())}^", f"{sum(x['capped_above'] for x in v.values())} "
++                     "at the 32-bit cap", f"{len(dom) - len(v)} not estimable (saturated)"]
++            flags = [f for f in flags if not f.startswith("0")]
++            cells.append((f"{_f(float(np.mean(gs)), sign=True)} [{_f(min(gs), sign=True)}, {_f(max(gs), sign=True)}], "
++                          f"{n} of {len(gs)}" if gs else "n/a") + (f" ({'; '.join(flags)})" if flags else ""))
++        L.append(f"| {name} | {cells[0]} | {cells[1]} |")
++    L += ["", "## 3. H8 configurations against the exact null (calibration; 3 sets per domain)", "",
++          "| configuration | real gap at E₀ / 4 × E₀ (mean of 3 sets) | Boolean gap at E₀ / 4 × E₀ (capped) |",
++          "|---|---|---|"]
++    for cfg, by in res["configs"].items():
++        L.append(f"| {CONFIG_NAMES.get(cfg, cfg)} | {_domain_means(by['1'], True)} / {_domain_means(by['4'], True)} | "
++                 f"{_domain_means(by['1'], False)} / {_domain_means(by['4'], False)} |")
++    L += ["", "## 4. Evaluation ratios (Kronberger et al.'s currency)", "",
++          "Evaluations GP needs for exact blind search's reach, as a multiple of blind search's: 2^(−gap).", "",
++          "| real domain | one run, E₀ | one run, 16 × E₀ | best bracketed restarts (L 100), 16 × E₀ |", "|---|---|---|---|"]
++    one = res["systems"]["tree GP, 1 x E0"]
++    one16 = res["systems"]["tree GP, 16 x E0"]
++    for g, v in res["restarts"].items():
++        c = v["curves"][100]["16"]
++        rs = (f"≤ ×{eval_ratio(c['lower_bound'] - c['null']):.1f} (lower bound on reach)" if c["extrapolated"]
++              else f"×{eval_ratio(c['k50'] - c['null']):.1f}")
++        L.append(f"| {g} | ×{eval_ratio(one[g]['gap']):.1f} | ×{eval_ratio(one16[g]['gap']):.1f} | {rs} |")
++    return "\n".join(L) + "\n"
++
++
++def main(argv=None, root=None):
++    from reach.paths import ROOT
++    argparse.ArgumentParser().parse_args(argv)
++    root = Path(root or ROOT)
++    res = build(root)
++    (root / "data/analysis/remedy.json").write_text(json.dumps(res, indent=1, default=float) + "\n")
++    (root / "docs/status/remedy_report.md").write_text(render(res))
++    print("written data/analysis/remedy.json and docs/status/remedy_report.md")
++
++
++if __name__ == "__main__":
++    main()
+diff --git a/src/reach/engines/treegp.py b/src/reach/engines/treegp.py
+index aa11f308a9e545c6f114a9faa4b3f273dce61182..fbcb2c25e65193c73495e6e7e9e47b35a369907c 100644
+--- a/src/reach/engines/treegp.py
++++ b/src/reach/engines/treegp.py
+@@ -61,7 +61,7 @@ def run_gp(g, target_tree, regime, seed, *, val_xs=None, val_target=None, var_no
+            pop_size=POP_SIZE, timeout_seconds=600.0, legacy=False, seed_leaves=None,
+            point_mutation=False, stop_on="tolerance", undefined_penalty="fixed", crossover_mode="subtree",
+            tournament_size=5, selection="tournament", p_crossover=0.75, p_mutation=0.20, init="ramped",
+-           max_depth=MAX_DEPTH, full_expr=False):
++           max_depth=MAX_DEPTH, full_expr=False, counter=None):
+     """One run. regime 'A' = crossover 0.75 + subtree mutation 0.20; 'B' = mutation only.
+     timeout_seconds is CPU time. For Boolean grammars the data arguments are ignored.
+     stop_on: 'tolerance' stops at validation nMSE <= 1e-6 (EML-GP); 'exact' keeps searching until the best
+@@ -74,7 +74,10 @@ def run_gp(g, target_tree, regime, seed, *, val_xs=None, val_target=None, var_no
+     epsilon = the per-case median absolute deviation for real data and 0 for Boolean), p_crossover, p_mutation,
+     init ("ramped" or "uniform") and max_depth. The defaults reproduce the base configuration bit for bit.
+     full_expr (reruns, D091): also return `best_expr_full`, the whole best tree, printed after the search with the
+-    random generators already restored, so the search and every other field are unchanged (REQ-ENG-22)."""
++    random generators already restored, so the search and every other field are unchanged (REQ-ENG-22).
++    counter (H6d re-runs, D098): a `reach.revisit.Counter` shown every evaluated generation; it draws no random number,
++    and its CPU time, measured here around each call, is left out of the soft limit, so the search stops where it would
++    without it (REQ-ENG-23)."""
+     seed_leaves = legacy if seed_leaves is None else seed_leaves
+     plateau = LEGACY_PLATEAU if legacy else None
+     xdepth = None if legacy else max_depth
+@@ -143,7 +146,7 @@ def run_gp(g, target_tree, regime, seed, *, val_xs=None, val_target=None, var_no
+         converged, gens_to_converge, state, gens_run = False, None, "budget_exhausted", generations
+ 
+         for gen in range(generations):
+-            if time.process_time() - c0 > timeout_seconds:
++            if time.process_time() - c0 - (counter.cpu if counter is not None else 0.0) > timeout_seconds:
+                 state, gens_run = "timeout", gen
+                 break
+             if is_bool:
+@@ -157,6 +160,10 @@ def run_gp(g, target_tree, regime, seed, *, val_xs=None, val_target=None, var_no
+                                        for _ in range(BATCH_SIZE)], dtype=np.complex128) for v in g.variables}
+                 b_target = G.evaluate(g, target_tree, bx)
+             scores = [(ind, error(ind, bx, b_target)) for ind in population]
++            if counter is not None:
++                t_c = time.process_time()
++                counter.generation(population)
++                counter.cpu += time.process_time() - t_c
+             scores.sort(key=lambda item: item[1])
+             if selection == "lexicase":
+                 cases = np.array([case_errors(ind, bx, b_target) for ind, _ in scores])
+diff --git a/src/reach/revisit.py b/src/reach/revisit.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..a3e23ce10e5af4dc64c5b0e0afb8aace5e5eee46
+--- /dev/null
++++ b/src/reach/revisit.py
+@@ -0,0 +1,140 @@
++"""Re-run counter for H6d (T25, D098; docs/design/h6_explanation.md; REQ-ENG-23, REQ-ENG-24).
++
++GP's evaluations are counted as the primary null counts functions: one per distinct enumeration key (the truth table;
++for real sets `enumerate.real_keys` of the values on the enumeration grid), functions undefined somewhere on the grid
++or constant included, because `units.bits_sem` and `null.p_hit` count U, not `U_finite_nonconst`. `Lookup` gives a
++key's level (its minimal size) from the set's enumeration up to a bound. `Counter` is shown every evaluated generation
++by `run_gp(counter=...)` and keeps cumulative counts, recorded at budget prefixes and at the stop. It draws no random
++number; `run_gp` times it from outside and leaves that time out of the soft CPU limit.
++"""
++import functools
++import hashlib
++import json
++import math
++from pathlib import Path
++
++import numpy as np
++
++from reach import grammar as G
++from reach.enumerate import _coeffs, real_keys
++
++BOUND_BITS = 23.0                                       # levels with log2 U(<=K) up to this are looked up
++PREFIXES = tuple(5_000 * 2 ** i for i in range(7))      # 1/4 to 16 x E0 (E0 = 20,000 evaluations)
++
++
++@functools.lru_cache(maxsize=None)
++def enum_root(name):
++    """The set's enumeration directory; in a second worktree, whose untracked level files are absent, the main
++    worktree's (pilot re-runs from the dev worktree)."""
++    import subprocess
++    from reach.analysis.s2.phase1 import enum_dir
++    from reach.paths import ROOT
++    d = enum_dir(name)
++    if (d / "level_001.npz").exists():
++        return d
++    r = subprocess.run(["git", "rev-parse", "--git-common-dir"], cwd=ROOT, capture_output=True, text=True)
++    common = r.stdout.strip()
++    if r.returncode or not common:                      # not a git checkout (a release archive): row 157
++        return d
++    return (ROOT / common).resolve().parent / d.relative_to(ROOT)
++
++
++def key_function(g):
++    """tree -> (key, defined): the enumerator's key of the tree's function, and whether the function is finite on the
++    whole grid and not constant (the enumerator's own rule, `Enumerator._viable`; Boolean functions always are)."""
++    if g.kind != "real":
++        return lambda tree: (int(G.evaluate(g, tree)), True)
++    xs, coeffs = G.sample_grid(g), _coeffs(2 * G.N_POINTS)
++
++    def key(tree):
++        with np.errstate(all="ignore"):
++            v = G.evaluate(g, tree, xs)
++            ok = bool(np.isfinite(v).all() and np.abs(v - v.mean()).max() > 1e-6)
++            return int(real_keys(v[None, :], coeffs, G.HASH_PRECISION)[0]), ok
++    return key
++
++
++class Lookup:
++    """Level of a key in a set's enumeration, for the levels with log2 U(<=K) <= bound_bits (the ceiling at most);
++    0 for a key not found there."""
++
++    def __init__(self, g, enum_dir, bound_bits=BOUND_BITS):
++        d = Path(enum_dir)
++        c = json.loads((d / "counts.json").read_text())
++        if c.get("grammar", g.name) != g.name:
++            raise ValueError(f"{d} enumerates {c['grammar']}, not {g.name}")
++        if c.get("hash_precision", G.HASH_PRECISION) != G.HASH_PRECISION:
++            raise ValueError(f"{d}: hash precision {c['hash_precision']}, not {G.HASH_PRECISION}")
++        levels = [st for st in c["levels"] if math.log2(st["U_cum"]) <= bound_bits]
++        keys, lv = [np.empty(0, np.uint64)], [np.empty(0, np.uint8)]
++        for st in levels:
++            with np.load(d / f"level_{st['K']:03d}.npz") as z:
++                k = z["keys"].astype(np.uint64)
++            if len(k) != st["U"]:
++                raise ValueError(f"{d}: level {st['K']} holds {len(k)} keys, counts.json says {st['U']}")
++            keys.append(k)
++            lv.append(np.full(len(k), st["K"], np.uint8))
++        keys, lv = np.concatenate(keys), np.concatenate(lv)
++        order = np.argsort(keys, kind="stable")
++        self.keys, self.lv = keys[order], lv[order]
++        self.top = levels[-1]["K"] if levels else 0
++        self.bound_bits = bound_bits
++        self.sha256 = hashlib.sha256(self.keys.tobytes() + self.lv.tobytes()).hexdigest()
++
++    def levels(self, keys):
++        keys = np.asarray(keys, dtype=np.uint64)
++        if not len(self.keys):
++            return np.zeros(len(keys), int)
++        i = np.minimum(np.searchsorted(self.keys, keys), len(self.keys) - 1)
++        return np.where(self.keys[i] == keys, self.lv[i], 0).astype(int)
++
++    def describe(self):
++        return dict(top=int(self.top), n_keys=int(len(self.keys)), bound_bits=self.bound_bits, sha256=self.sha256)
++
++
++class Counter:
++    """Cumulative counts over the evaluations `run_gp` shows it: n evaluations, d distinct keys, undef evaluations of
++    undefined or constant functions (real), lv distinct keys per level (index 0: not found below the bound) and lv_ok
++    the same for keys whose function is finite on the grid and not constant, the run's own target left out of both;
++    target_first, the evaluation at which a tree with the target's key was first evaluated (None if never). `cpu` is
++    set by run_gp, which times every call."""
++
++    def __init__(self, g, target_tree, lookup, pop_size, prefixes=PREFIXES):
++        if any(p % pop_size for p in prefixes):
++            raise ValueError(f"every prefix must be a whole number of generations of {pop_size}")
++        self.key, self.lookup = key_function(g), lookup
++        self.target = self.key(target_tree)[0] if target_tree is not None else None   # None: no target (control)
++        self.prefixes = {int(p) for p in prefixes}
++        self.seen, self.n, self.undef, self.cpu = set(), 0, 0, 0.0
++        self.lv = np.zeros(lookup.top + 1, np.int64)
++        self.lv_ok = np.zeros(lookup.top + 1, np.int64)
++        self.target_first = None
++        self.snaps = {}
++
++    def generation(self, population):
++        new, new_ok = [], []
++        for tree in population:
++            k, ok = self.key(tree)
++            self.n += 1
++            self.undef += not ok
++            if k not in self.seen:
++                self.seen.add(k)
++                if k == self.target:
++                    self.target_first = self.n
++                else:
++                    new.append(k)
++                    new_ok.append(ok)
++        if new:
++            lv = self.lookup.levels(np.array(new, dtype=np.uint64))
++            np.add.at(self.lv, lv, 1)
++            np.add.at(self.lv_ok, lv[np.array(new_ok, bool)], 1)
++        if self.n in self.prefixes:
++            self.snaps[str(self.n)] = self._snap()
++
++    def _snap(self):
++        return dict(n=self.n, d=len(self.seen), undef=self.undef, lv=self.lv.tolist(), lv_ok=self.lv_ok.tolist())
++
++    def record(self):
++        return dict(prefixes=dict(self.snaps), stop=self._snap(), cpu_seconds=self.cpu, target_first=self.target_first,
++                    target_level=int(self.lookup.levels([self.target])[0]) if self.target is not None else None,
++                    lookup=self.lookup.describe())
+diff --git a/src/reach/runner/phases.py b/src/reach/runner/phases.py
+index 2c0cf89a1d030868b63f4e0eb858b579c10c10b7..92423a07489228fe282fa6d84f28d5d8bc13d777 100644
+--- a/src/reach/runner/phases.py
++++ b/src/reach/runner/phases.py
+@@ -6,6 +6,7 @@ the relative expected cost (used only for the ETA).
+ """
+ import importlib.util
+ import json
++import math
+ from collections import defaultdict
+ 
+ from reach import regression
+@@ -265,6 +266,93 @@ def s2_audit_bigtrees_sample():
+     return bigtree_tasks(sample=3)
+ 
+ 
++# ---------------------------------------------------------------- Phase 7b: H6d re-runs (D098; REQ-RUN-39)
++REVISIT_CPU_FACTOR = 2          # a re-run's hard CPU limit: the original's times this (room for the counter's time)
++REVISIT = {"s2_revisit_a0": ("s2_cal_a0",), "s2_revisit_a16": ("s2_cal_a16",),
++           "s2_revisit_pilot": ("s2_pilot_reach_a", "s2_pilot_reach_b")}
++
++
++def revisit_tasks(sources, root=ROOT, resolve=False):
++    """One task per task of each source manifest, unchanged except for its key (revisit|KEY), `--count_distinct
++    --enum_dir DIR`, the hard CPU limit times REVISIT_CPU_FACTOR and meta `audit_of`, `audit_key`. DIR is the set's
++    enumeration in this checkout (so a registered list hashes alike in every worktree) or, with resolve, the main
++    worktree's when this checkout lacks the untracked level files (the pilot re-run from the dev worktree)."""
++    from reach import revisit
++    from reach.analysis.s2.phase1 import enum_dir
++    tasks = []
++    for src in sources:
++        for o in json.loads((root / f"data/runs/{src}/manifest.json").read_text())["tasks"]:
++            if "reach.tasks.s2_run" not in o["argv"]:
++                raise ValueError(f"{src} {o['key']}: not a tree-GP run task (reach.tasks.s2_run)")
++            t = json.loads(json.dumps(o))
++            d = revisit.enum_root(o["meta"]["set"]) if resolve else enum_dir(o["meta"]["set"])
++            t["key"] = f"revisit|{o['key']}"
++            t["argv"] = o["argv"] + ["--count_distinct", "--enum_dir", str(d)]
++            t["cpu_limit"] = o["cpu_limit"] * REVISIT_CPU_FACTOR
++            t["meta"] = dict(o.get("meta", {}), audit_of=src, audit_key=o["key"])
++            tasks.append(t)
++    return tasks
++
++
++def _spread(tasks):
++    """Order so that the first tasks cover every (set, level) once, then a second task of each, and so on."""
++    import collections
++    seen, ranked = collections.Counter(), []
++    for t in sorted(tasks, key=lambda t: (t["meta"]["set"], t["meta"]["K"], t["meta"]["target_id"], t["meta"]["seed"])):
++        cell = (t["meta"]["set"], t["meta"]["K"])
++        ranked.append(((seen[cell], cell, t["key"]), t))
++        seen[cell] += 1
++    return [t for _, t in sorted(ranked, key=lambda x: x[0])]
++
++
++def _verify_revisit(ph):
++    from reach.analysis.s2.audit import print_revisit_report, revisit_report
++    rep = revisit_report(ROOT, ph.name)
++    print_revisit_report(rep)
++    return 0 if rep["ok"] else 1
++
++
++@phase("s2_revisit_a0", "STAGE 3 (locked until Stage 3; H6d, D098): every s2_cal_a0 task again, same command and seed "
++       "plus --count_distinct (distinct functions per budget prefix); every row must reproduce its original.",
++       verify=_verify_revisit)
++def s2_revisit_a0():
++    from reach.s2_lock import check_stage3
++    check_stage3()
++    return revisit_tasks(REVISIT["s2_revisit_a0"])
++
++
++@phase("s2_revisit_a16", "STAGE 3 (locked until Stage 3; H6d, D098): every s2_cal_a16 task again, same command and "
++       "seed plus --count_distinct; every row must reproduce its original.", verify=_verify_revisit)
++def s2_revisit_a16():
++    from reach.s2_lock import check_stage3
++    check_stage3()
++    return revisit_tasks(REVISIT["s2_revisit_a16"])
++
++
++@phase("s2_revisit_rand", "H6d negative control (D098; a check of the instrument, not a test): trees drawn as the "
++       "random-sampling baseline draws them, counted by the H6d counter: every full set x 25 streams of E0 draws.")
++def s2_revisit_rand():
++    from reach import revisit
++    return [dict(key=f"rand|{g}|{i}", argv=["{python}", "-m", "reach.tasks.s2_revisit_rand", "--set", g, "--enum_dir",
++                                            str(revisit.enum_root(g)), "--seed", str(30_000_000 + 1_000 * j + i),
++                                            "--n", "20000"],
++                 cpu_limit=1800, meta=dict(set=g, stream=i)) for j, g in enumerate(FULL_SETS) for i in range(25)]
++
++
++@phase("s2_revisit_pilot2", "Pilot for H6d with the version 2 counter (D098; never confirmatory): as s2_revisit_pilot, "
++       "with lv_ok and target_first; sets and checks the margins of H6d before the Stage 3 registration.",
++       verify=_verify_revisit)
++def s2_revisit_pilot2():
++    return _spread(revisit_tasks(REVISIT["s2_revisit_pilot"], resolve=True))
++
++
++@phase("s2_revisit_pilot", "Pilot for H6d (D098; never confirmatory): every s2_pilot_reach_a and _b task again plus "
++       "--count_distinct, ordered to cover every set and level first; checks reproduction and overhead and sets the "
++       "margins of H6d before the Stage 3 registration.", verify=_verify_revisit)
++def s2_revisit_pilot():
++    return _spread(revisit_tasks(REVISIT["s2_revisit_pilot"], resolve=True))
++
++
+ def heldout_sets():
+     """The 4 listed held-out sets (Stage 0 draw) and the 8 random ones (first 4 per domain, ceiling >= 10)."""
+     from reach.tasks.s2_random_draw import heldout_from_files
+@@ -374,6 +462,80 @@ def s2_ho_operon():
+     return tasks
+ 
+ 
++# ---------------------------------------------------------------- Stage 4: the remedy test (D100; docs/design/remedy.md)
++REAL_HELDOUT = ("R-ARITH", "R-ELEM6", "RS-add_sqrt", "RS-eml_sin_sqrt_square", "RS-mul_div_eml_sin_square",
++                "RS-mul_eml_sin")
++RESTART_GENERATIONS = 100
++RESTART_TIMEOUT = 900                     # soft CPU limit (s) of a 100-generation run; hard limit + 100
++RESTART_TOP_BITS = math.log2(16 * 20_000) + 2   # the extra-level rule: reach at least 2 bits above 16 x E0's null
++
++
++def restart_extra_levels(g):
++    """The registered rule (REQ-RUN-41): the smallest proven enumeration levels above the set's top proven held-out
++    level, until one lies at or above RESTART_TOP_BITS (bits = log2 of the enumeration's cumulative distinct count)."""
++    from reach.analysis.s2.phase1 import enum_dir
++    held = json.loads((ROOT / f"data/targets_s2/{g}/heldout.json").read_text())
++    proven = [t for t in held if t["K_proven"] == t["K_construction"] and not t.get("constructed")]
++    top_k = max(t["K_construction"] for t in proven)
++    if max(t["units"]["bits_sem"] for t in proven) >= RESTART_TOP_BITS:
++        return []
++    levels = json.loads((enum_dir(g) / "counts.json").read_text())["levels"]
++    out = []
++    for st in sorted((st for st in levels if st["K"] > top_k and st["U"] > 0), key=lambda st: st["K"]):
++        out.append(st["K"])
++        if math.log2(st["U_cum"]) >= RESTART_TOP_BITS:
++            break
++    return out
++
++
++@phase("s4_targets", "STAGE 4 targets (D100): RS-add_sqrt's extra proven levels by the registered rule, 30 targets "
++       "each, seed TARGET_SEEDS['restart'], into data/targets_s2/<set>/restart.json. No search: drawn and checksummed "
++       "before the Stage 4 registration, as the held-out targets before Stage 2. --workers 1.")
++def s4_targets():
++    from reach.seeds import TARGET_SEEDS
++    return [dict(key=g, argv=["{python}", "-m", "reach.tasks.s2_targets", "--grammar", g, "--name", "restart",
++                              "--n", "30", "--seed", str(TARGET_SEEDS["restart"]),
++                              "--levels", ",".join(map(str, restart_extra_levels(g)))],
++                 cpu_limit=6 * 3600, meta=dict(grammar=g)) for g in REAL_HELDOUT if restart_extra_levels(g)]
++
++
++def _s4_task(g, tname, t, seed):
++    """One restart run: as `_s2_task` (unchanged, registered) with 100 generations and its own CPU limit."""
++    from reach.s2_lock import check_search_allowed
++    from reach.tasks.s2_configs import CONFIGS
++    check_search_allowed(g)
++    rel = f"data/targets_s2/{g}/{tname}.json"
++    sha = (ROOT / f"data/targets_s2/{g}/{tname}.sha256").read_text().split()[0]
++    pop, gens = CONFIGS["base"]["pop_size"], RESTART_GENERATIONS
++    return dict(key=f"s4_restart|{g}|{t['target_id']}|A|base|{gens}|{seed}",
++                argv=["{python}", "-m", "reach.tasks.s2_run", "--set", g, "--targets", rel, "--target_id",
++                      t["target_id"], "--targets_sha256", sha, "--algorithm", "A", "--config", "base", "--seed",
++                      str(seed), "--generations", str(gens), "--pop_size", str(pop), "--penalty", "scaled",
++                      "--stop_on", "exact", "--seed_leaves", "off", "--timeout", str(RESTART_TIMEOUT), PRINT_TREE],
++                cpu_limit=RESTART_TIMEOUT + 100, weight=0.5,
++                meta=dict(block="s4_restart", set=g, target_id=t["target_id"], K=t["K_construction"],
++                          K_proven=t["K_proven"], algorithm="A", config="base", generations=gens, budget=0.5,
++                          pop_size=pop, seed=seed, targets=tname))
++
++
++@phase("s4_restart", "STAGE 4 (locked until Stage 4; D100): every proven level of the six real held-out sets (and "
++       "RS-add_sqrt's restart levels) x 64 fresh seeds x 100 generations, regime A base (H11).")
++def s4_restart():
++    from reach.seeds import s2_seeds
++    from reach.s2_lock import check_stage4
++    check_stage4()
++    tasks = []
++    for g in REAL_HELDOUT:
++        for tname in ("heldout", "restart"):
++            p = ROOT / f"data/targets_s2/{g}/{tname}.json"
++            if tname == "restart" and not restart_extra_levels(g):
++                continue
++            for t in json.loads(p.read_text()):
++                if t["K_proven"] == t["K_construction"] and not t.get("constructed"):
++                    tasks += [_s4_task(g, tname, t, s) for s in s2_seeds("restart")]
++    return tasks
++
++
+ # ---------------------------------------------------------------- Study 2, Phase 3 pilot (calibration sets only; C1)
+ # Batch A: sets whose defining enumeration exists once s2_enum_bool ends; batch B: the rest (s2_enum_extra, cap16).
+ PILOT_SETS_A = ["F-EML", "R-ARITH4", "R-ELEM4", "R-HYB", "F-LDE0", "BOOL-NAND-n5", "BOOL-NOR-n5", "BOOL-IMP0-n5",
+diff --git a/src/reach/s2_lock.py b/src/reach/s2_lock.py
+index f319e670ff673eb08cdffa55b0dcbef3263a94d3..ca91de5dcf3e524305221f6e65bbb0ef77ae5317 100644
+--- a/src/reach/s2_lock.py
++++ b/src/reach/s2_lock.py
+@@ -54,6 +54,12 @@ def check_search_allowed(grammar):
+ STAGE1_FILE = _ROOT / "data/registration/stage1_registration.txt"  # the Stage 1 OSF link, recorded by Claude
+ 
+ 
++def check_stage3():
++    """The H6d re-run phases (D098) plan only once the Stage 3 registration is recorded."""
++    if not (STAGE3_FILE.exists() and STAGE3_FILE.read_text().strip()):
++        raise PermissionError(f"H6d re-runs: the Stage 3 registration is not recorded in {STAGE3_FILE}")
++
++
+ def check_stage1():
+     """Every confirmatory phase calls this when it is planned (REQ-RUN-18): no confirmatory run before Stage 1."""
+     if not (STAGE1_FILE.exists() and STAGE1_FILE.read_text().strip()):
+@@ -62,6 +68,9 @@ def check_stage1():
+ 
+ TASKS_FILE = _ROOT / "data/registration/stage1_tasks.json"   # task-list hashes attached to Stage 1 (REQ-RUN-19)
+ TASKS2_FILE = _ROOT / "data/registration/stage2_tasks.json"  # the same for the held-out phases (Stage 2)
++STAGE3_FILE = _ROOT / "data/registration/stage3_registration.txt"  # the Stage 3 OSF link (H6d; D098)
++TASKS3_FILE = _ROOT / "data/registration/stage3_tasks.json"  # the H6d re-run phases (Stage 3)
++STAGE3_PHASES = ("s2_revisit_a0", "s2_revisit_a16")
+ 
+ 
+ # Phases whose task lists are registered with Stage 2 (stage2_tasks.json): the held-out phases and the CGP calibration,
+@@ -69,11 +78,26 @@ TASKS2_FILE = _ROOT / "data/registration/stage2_tasks.json"  # the same for the
+ STAGE2_PHASES = ("s2_cal_cgp", "s2_ho_a0", "s2_ho_a16", "s2_ho_bench", "s2_ho_operon", "s2_ho_cgp")
+ 
+ 
++STAGE4_FILE = _ROOT / "data/registration/stage4_registration.txt"  # the Stage 4 OSF link (H11; D100)
++TASKS4_FILE = _ROOT / "data/registration/stage4_tasks.json"  # the Stage 4 restart phase
++STAGE4_PHASES = ("s4_restart",)
++
++
++def check_stage4():
++    """The Stage 4 phases (remedy test, D100) plan only once the Stage 4 registration is recorded."""
++    if not (STAGE4_FILE.exists() and STAGE4_FILE.read_text().strip()):
++        raise PermissionError(f"Stage 4 phase: the Stage 4 registration is not recorded in {STAGE4_FILE}")
++
++
+ def registered_tasks_file(phase):
+     """The registered task-list file a phase must match when planned: Stage 2 phases (and any other s2_ho_ search
+     phase) -> TASKS2_FILE; the other s2_cal_ phases -> TASKS_FILE (Stage 1); anything else -> None (not checked)."""
+     if phase in STAGE2_PHASES or (phase.startswith("s2_ho_") and phase != "s2_ho_targets"):
+         return TASKS2_FILE
++    if phase in STAGE3_PHASES:
++        return TASKS3_FILE
++    if phase in STAGE4_PHASES:
++        return TASKS4_FILE
+     if phase.startswith("s2_cal_"):
+         return TASKS_FILE
+     return None
+diff --git a/src/reach/seeds.py b/src/reach/seeds.py
+index 9097c21954063eea60b8053f73df7caca39067c4..868875afb753c33a12d3134862892fb27976332b 100644
+--- a/src/reach/seeds.py
++++ b/src/reach/seeds.py
+@@ -27,8 +27,10 @@ S2_SEEDS = _unique(S2_MASTER, 2000, set(SEEDS) | _LEGACY_SEEDS)
+ S2_SLICES = {"pilot": (0, 20), "calibration": (100, 132), "pool": (200, 230), "heldout": (300, 305),
+              "benchmark": (400, 430),
+              "cgp_validation": (500, 700), "cgp_pilot": (700, 710),   # CGP (D072): validation, pilot (new slices)
+-             "cgp_calibration": (710, 715), "cgp_heldout": (715, 720)}  # CGP confirmatory (D076): new slices
+-TARGET_SEEDS = {"pilot": 20261020, "calibration": 20261021, "heldout": 20261022, "pool": 20261023}
++             "cgp_calibration": (710, 715), "cgp_heldout": (715, 720),  # CGP confirmatory (D076): new slices
++             "restart": (720, 784)}                                    # Stage 4 restarts (D100): 64 fresh seeds
++TARGET_SEEDS = {"pilot": 20261020, "calibration": 20261021, "heldout": 20261022, "pool": 20261023,
++                "restart": 20261102}                                   # Stage 4: RS-add_sqrt's extra levels (D100)
+ 
+ 
+ def s2_seeds(name):
+diff --git a/src/reach/tasks/s2_revisit_rand.py b/src/reach/tasks/s2_revisit_rand.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..3c55e25c8c42edd6fa88f7d4e2edeb8ea6b93629
+--- /dev/null
++++ b/src/reach/tasks/s2_revisit_rand.py
+@@ -0,0 +1,30 @@
++"""Negative control for H6d (D098; design 4.5; REQ-RUN-40): trees drawn exactly as the random-sampling baseline draws
++them (`s2_random.draw_trees`, no other random draw), shown to the H6d counter in batches of 100 with no target, so the
++unguided twin of a blind sampler can be set against the sampler's own hit rate (its registered hits, s2_cal_rand).
++
++    python -m reach.tasks.s2_revisit_rand --set S --enum_dir DIR --seed 30000000 --n 20000   -> RESULT line
++"""
++import argparse
++import json
++
++from reach import grammar as G
++from reach import revisit as V
++from reach.tasks.s2_random import draw_trees
++
++ap = argparse.ArgumentParser()
++ap.add_argument("--set", required=True)
++ap.add_argument("--enum_dir", required=True)
++ap.add_argument("--seed", type=int, required=True)
++ap.add_argument("--n", type=int, required=True)
++a = ap.parse_args()
++g = G.get(a.set)
++c = V.Counter(g, None, V.Lookup(g, a.enum_dir), 100, [p for p in V.PREFIXES if p <= a.n])
++batch = []
++for tree in draw_trees(g, a.n, a.seed):
++    batch.append(tree)
++    if len(batch) == 100:
++        c.generation(batch)
++        batch = []
++if batch:
++    c.generation(batch)
++print("RESULT " + json.dumps(dict(set=g.name, domain=g.kind, seed=a.seed, n=a.n, rv=c.record())), flush=True)
+diff --git a/src/reach/tasks/s2_run.py b/src/reach/tasks/s2_run.py
+index 4f68f0ed64919a588cb6e721e0719f974e2cbb8d..a3c82669a2331182d2a09fadb5523131b9177702 100644
+--- a/src/reach/tasks/s2_run.py
++++ b/src/reach/tasks/s2_run.py
+@@ -37,7 +37,12 @@ ap.add_argument("--seed_leaves", choices=["off", "on"], **req)
+ ap.add_argument("--timeout", type=float, help="CPU seconds (soft limit; the queue adds a hard limit)", **req)
+ ap.add_argument("--print_tree", action="store_true",
+                 help="also record best_expr_full, the whole best tree (reruns, D091; changes nothing else)")
++ap.add_argument("--count_distinct", action="store_true",
++                help="also record rv: distinct functions per budget prefix (H6d re-runs, D098; changes nothing else)")
++ap.add_argument("--enum_dir", help="the set's enumeration, for --count_distinct")
+ a = ap.parse_args()
++if a.count_distinct and not a.enum_dir:
++    sys.exit("refused: --count_distinct needs --enum_dir")
+ 
+ try:
+     check_search_allowed(a.set)
+@@ -59,9 +64,15 @@ if g.kind == "real":
+     grid, val = G.sample_grid(g), G.sample_val(g, VAL_SEED)
+     kw = dict(val_xs=val, val_target=G.evaluate(g, tree, val), var_norm=tgt["var_target"], grid_xs=grid,
+               grid_target=G.evaluate(g, tree, grid), grid_scale=tgt["target_scale"])
++counter = None
++if a.count_distinct:
++    from reach import revisit
++    counter = revisit.Counter(g, tree, revisit.Lookup(g, a.enum_dir), a.pop_size,
++                              [p for p in revisit.PREFIXES if p <= a.pop_size * a.generations])
+ r = run_gp(g, tree, ALGORITHMS[a.algorithm]["regime"], a.seed, generations=a.generations, pop_size=a.pop_size,
+            timeout_seconds=a.timeout, legacy=False, seed_leaves=a.seed_leaves == "on", stop_on=a.stop_on,
+            undefined_penalty=a.penalty, crossover_mode=ALGORITHMS[a.algorithm]["crossover_mode"], full_expr=a.print_tree,
++           counter=counter,
+            **cfg["kwargs"], **kw)
+ exact = bool(r["exact_hash_match"]) and r["terminal_state"] == "converged"
+ print("RESULT " + json.dumps(dict(
+@@ -72,5 +83,6 @@ print("RESULT " + json.dumps(dict(
+     gen_exact=r["gens_run"] if exact else None, gen_tol=r["gens_to_converge"], gens_reached=r["gens_run"],
+     terminal_state=r["terminal_state"], final_error=r["final_nmse"], final_tree_size=r["final_tree_size"],
+     cpu_seconds=r["cpu_seconds"], wall_seconds=r["wall_seconds"], best_expr=r["best_expr"], targets_sha256=sha,
+-    **({"best_expr_full": r["best_expr_full"]} if a.print_tree else {})),
++    **({"best_expr_full": r["best_expr_full"]} if a.print_tree else {}),
++    **({"rv": counter.record()} if counter is not None else {})),
+     default=float), flush=True)
+diff --git a/src/reach/units.py b/src/reach/units.py
+index a61269df2ddb60c75b87ef58083bb35e748172b0..568eb9d729fb681a14b3a3355d9e3867b20c3b54 100644
+--- a/src/reach/units.py
++++ b/src/reach/units.py
+@@ -16,6 +16,18 @@ import numpy as np
+ from reach import grammar as G
+ 
+ 
++def space_bits(g):
++    """The largest possible size in bits_sem: a Boolean set with n inputs has 2^(2^n) functions, so 2^n bits; real
++    sets have no bound (REQ-MEA-32). The registered unit below extrapolates above the enumeration ceiling without this
++    bound (guardrail row 154)."""
++    return float(1 << g.n_inputs) if g.kind == "bool" else math.inf
++
++
++def capped(bits, g):
++    """A bits_sem value capped at the set's space bound."""
++    return min(bits, space_bits(g))
++
++
+ class SizeUnits:
+     def __init__(self, g, levels, noise_rows=None, fit_levels=3):
+         a0, a1, a2 = g.arity_counts()

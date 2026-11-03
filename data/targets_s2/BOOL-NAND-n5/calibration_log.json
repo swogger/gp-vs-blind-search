@@ -1,0 +1,82 @@
+{
+ "grammar": "BOOL-NAND-n5",
+ "seed": 20261021,
+ "ceiling": 31,
+ "depth_limit": 10,
+ "levels": {
+  "9": {
+   "proven": true,
+   "n_level": 905,
+   "n_depth_ok": 905,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {}
+  },
+  "15": {
+   "proven": true,
+   "n_level": 44006,
+   "n_depth_ok": 44006,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {}
+  },
+  "21": {
+   "proven": true,
+   "n_level": 1075343,
+   "n_depth_ok": 1075343,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {}
+  },
+  "29": {
+   "proven": true,
+   "n_level": 27691502,
+   "n_depth_ok": 27691502,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {}
+  },
+  "35": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 941
+   }
+  },
+  "45": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 116
+   }
+  },
+  "47": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 96
+   }
+  },
+  "59": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 26
+   }
+  },
+  "61": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 43
+   }
+  },
+  "63": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 35
+   }
+  }
+ }
+}

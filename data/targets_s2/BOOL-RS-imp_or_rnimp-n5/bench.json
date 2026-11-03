@@ -1,0 +1,94 @@
+[
+ {
+  "target_id": "BOOL-RS-imp_or_rnimp-n5_bench_add2_s0",
+  "benchmark": "add2_s0",
+  "expression": "imp(imp(x2, imp(imp(x4, x5), rnimp(x4, x5))), rnimp(x2, imp(imp(x4, x5), rnimp(x4, x5))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 57.0,
+   "bits_syn": 49.75985841021849,
+   "bits_sem": 24.27922898202853,
+   "bits_sem_uncorrected": 24.27922898202853,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  }
+ },
+ {
+  "target_id": "BOOL-RS-imp_or_rnimp-n5_bench_add2_cout",
+  "benchmark": "add2_cout",
+  "expression": "imp(imp(x1, rnimp(x3, x1)), rnimp(imp(or(x1, x3), rnimp(x2, imp(x4, rnimp(x5, x4)))), or(x4, x5)))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 63.0,
+   "bits_syn": 55.45478677644233,
+   "bits_sem": 25.777348033498324,
+   "bits_sem_uncorrected": 25.777348033498324,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 3,
+   "nonlinearity": 8,
+   "weight": 16
+  }
+ },
+ {
+  "target_id": "BOOL-RS-imp_or_rnimp-n5_bench_cmp2_gt",
+  "benchmark": "cmp2_gt",
+  "expression": "imp(imp(x1, x3), rnimp(imp(x2, x4), imp(x3, x1)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 33.0,
+   "bits_syn": 27.281174508988347,
+   "bits_sem": 16.662418040425226,
+   "bits_sem_uncorrected": 16.662418040425226,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 3,
+   "nonlinearity": 8,
+   "weight": 12
+  }
+ },
+ {
+  "target_id": "BOOL-RS-imp_or_rnimp-n5_bench_mux",
+  "benchmark": "mux",
+  "expression": "rnimp(rnimp(x3, x1), or(x1, x2))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 21.0,
+   "bits_syn": 16.40382757100361,
+   "bits_sem": 11.87536540064177,
+   "bits_sem_uncorrected": 11.87536540064177,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 16
+  }
+ }
+]

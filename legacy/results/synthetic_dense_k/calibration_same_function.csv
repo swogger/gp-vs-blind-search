@@ -1,0 +1,5 @@
+target,main_study_test_id,synthetic_target_id,expression,K_eml,regime,real_converged,real_runs,real_conv_rate,synth_runs,synth_converged_nmse_rule,synth_conv_rate_nmse_rule,fisher_p_vs_real_nmse_rule,synth_converged_abs_mse_rule,synth_conv_rate_abs_mse_rule,fisher_p_vs_real_abs_rule,var_target,nmse_equivalent_of_abs_1e-6
+exp(x),1.1,K03_01,"eml(x, 1)",3,A,30,30,1.0,10,10,1.0,1.0,10,1.0,1.0,12.935998848502534,7.730365561340163e-08
+exp(x),1.1,K03_01,"eml(x, 1)",3,B,30,30,1.0,10,9,0.9,0.25,9,0.9,0.25,12.935998848502534,7.730365561340163e-08
+ln(x),1.2,K07_07,"eml(x, eml(eml(x, x), 1))",7,A,23,30,0.7666666666666667,10,4,0.4,0.05195796140692775,10,1.0,0.16115162554791038,0.013314094935341471,7.510837235699436e-05
+ln(x),1.2,K07_07,"eml(x, eml(eml(x, x), 1))",7,B,6,30,0.2,10,4,0.4,0.2322998376066887,10,1.0,9.447178127893198e-06,0.013314094935341471,7.510837235699436e-05

@@ -1,0 +1,3302 @@
+[
+ {
+  "expression": "or(x1, x2)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.509775004326936,
+   "bits_syn": 6.491853096329675,
+   "bits_sem": 5.357552004618084,
+   "bits_sem_uncorrected": 5.357552004618084,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AONX-n5_K03_00"
+ },
+ {
+  "expression": "and(x2, x3)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.509775004326936,
+   "bits_syn": 6.491853096329675,
+   "bits_sem": 5.357552004618084,
+   "bits_sem_uncorrected": 5.357552004618084,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AONX-n5_K03_01"
+ },
+ {
+  "expression": "or(x1, x3)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.509775004326936,
+   "bits_syn": 6.491853096329675,
+   "bits_sem": 5.357552004618084,
+   "bits_sem_uncorrected": 5.357552004618084,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AONX-n5_K03_02"
+ },
+ {
+  "expression": "or(x3, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.509775004326936,
+   "bits_syn": 6.491853096329675,
+   "bits_sem": 5.357552004618084,
+   "bits_sem_uncorrected": 5.357552004618084,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AONX-n5_K03_03"
+ },
+ {
+  "expression": "and(x2, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.509775004326936,
+   "bits_syn": 6.491853096329675,
+   "bits_sem": 5.357552004618084,
+   "bits_sem_uncorrected": 5.357552004618084,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AONX-n5_K03_04"
+ },
+ {
+  "expression": "and(x4, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.509775004326936,
+   "bits_syn": 6.491853096329675,
+   "bits_sem": 5.357552004618084,
+   "bits_sem_uncorrected": 5.357552004618084,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AONX-n5_K03_05"
+ },
+ {
+  "expression": "or(x3, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.509775004326936,
+   "bits_syn": 6.491853096329675,
+   "bits_sem": 5.357552004618084,
+   "bits_sem_uncorrected": 5.357552004618084,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AONX-n5_K03_06"
+ },
+ {
+  "expression": "and(x1, x2)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.509775004326936,
+   "bits_syn": 6.491853096329675,
+   "bits_sem": 5.357552004618084,
+   "bits_sem_uncorrected": 5.357552004618084,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AONX-n5_K03_07"
+ },
+ {
+  "expression": "or(x1, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.509775004326936,
+   "bits_syn": 6.491853096329675,
+   "bits_sem": 5.357552004618084,
+   "bits_sem_uncorrected": 5.357552004618084,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AONX-n5_K03_08"
+ },
+ {
+  "expression": "or(x2, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.509775004326936,
+   "bits_syn": 6.491853096329675,
+   "bits_sem": 5.357552004618084,
+   "bits_sem_uncorrected": 5.357552004618084,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AONX-n5_K03_09"
+ },
+ {
+  "expression": "not(or(x2, x3))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.679700005769249,
+   "bits_syn": 8.321928094887362,
+   "bits_sem": 6.807354922057604,
+   "bits_sem_uncorrected": 6.807354922057604,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AONX-n5_K04_00"
+ },
+ {
+  "expression": "and(x3, not(x1))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.679700005769249,
+   "bits_syn": 8.321928094887362,
+   "bits_sem": 6.807354922057604,
+   "bits_sem_uncorrected": 6.807354922057604,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AONX-n5_K04_01"
+ },
+ {
+  "expression": "not(xor(x2, x5))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.679700005769249,
+   "bits_syn": 8.321928094887362,
+   "bits_sem": 6.807354922057604,
+   "bits_sem_uncorrected": 6.807354922057604,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-AONX-n5_K04_02"
+ },
+ {
+  "expression": "not(and(x3, x5))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.679700005769249,
+   "bits_syn": 8.321928094887362,
+   "bits_sem": 6.807354922057604,
+   "bits_sem_uncorrected": 6.807354922057604,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AONX-n5_K04_03"
+ },
+ {
+  "expression": "and(x5, not(x1))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.679700005769249,
+   "bits_syn": 8.321928094887362,
+   "bits_sem": 6.807354922057604,
+   "bits_sem_uncorrected": 6.807354922057604,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AONX-n5_K04_04"
+ },
+ {
+  "expression": "not(and(x2, x5))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.679700005769249,
+   "bits_syn": 8.321928094887362,
+   "bits_sem": 6.807354922057604,
+   "bits_sem_uncorrected": 6.807354922057604,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AONX-n5_K04_05"
+ },
+ {
+  "expression": "not(and(x1, x5))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.679700005769249,
+   "bits_syn": 8.321928094887362,
+   "bits_sem": 6.807354922057604,
+   "bits_sem_uncorrected": 6.807354922057604,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AONX-n5_K04_06"
+ },
+ {
+  "expression": "or(x3, not(x4))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.679700005769249,
+   "bits_syn": 8.321928094887362,
+   "bits_sem": 6.807354922057604,
+   "bits_sem_uncorrected": 6.807354922057604,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AONX-n5_K04_07"
+ },
+ {
+  "expression": "not(xor(x3, x4))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.679700005769249,
+   "bits_syn": 8.321928094887362,
+   "bits_sem": 6.807354922057604,
+   "bits_sem_uncorrected": 6.807354922057604,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-AONX-n5_K04_08"
+ },
+ {
+  "expression": "or(x5, not(x3))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.679700005769249,
+   "bits_syn": 8.321928094887362,
+   "bits_sem": 6.807354922057604,
+   "bits_sem_uncorrected": 6.807354922057604,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AONX-n5_K04_09"
+ },
+ {
+  "expression": "xor(x5, or(x3, not(x4)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 19.019550008653873,
+   "bits_syn": 13.875557388803728,
+   "bits_sem": 10.144658242831882,
+   "bits_sem_uncorrected": 10.144658242831882,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 16
+  },
+  "target_id": "BOOL-AONX-n5_K06_00"
+ },
+ {
+  "expression": "not(or(x2, xor(x3, x5)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 19.019550008653873,
+   "bits_syn": 13.875557388803728,
+   "bits_sem": 10.144658242831882,
+   "bits_sem_uncorrected": 10.144658242831882,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AONX-n5_K06_01"
+ },
+ {
+  "expression": "or(x3, and(x4, not(x5)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 19.019550008653873,
+   "bits_syn": 13.875557388803728,
+   "bits_sem": 10.144658242831882,
+   "bits_sem_uncorrected": 10.144658242831882,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-AONX-n5_K06_02"
+ },
+ {
+  "expression": "or(not(x4), and(x2, x3))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 19.019550008653873,
+   "bits_syn": 13.875557388803728,
+   "bits_sem": 10.144658242831882,
+   "bits_sem_uncorrected": 10.144658242831882,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-AONX-n5_K06_03"
+ },
+ {
+  "expression": "xor(x5, or(x2, not(x3)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 19.019550008653873,
+   "bits_syn": 13.875557388803728,
+   "bits_sem": 10.144658242831882,
+   "bits_sem_uncorrected": 10.144658242831882,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 16
+  },
+  "target_id": "BOOL-AONX-n5_K06_04"
+ },
+ {
+  "expression": "or(not(x4), xor(x2, x5))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 19.019550008653873,
+   "bits_syn": 13.875557388803728,
+   "bits_sem": 10.144658242831882,
+   "bits_sem_uncorrected": 10.144658242831882,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AONX-n5_K06_05"
+ },
+ {
+  "expression": "or(x3, not(and(x1, x2)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 19.019550008653873,
+   "bits_syn": 13.875557388803728,
+   "bits_sem": 10.144658242831882,
+   "bits_sem_uncorrected": 10.144658242831882,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 28
+  },
+  "target_id": "BOOL-AONX-n5_K06_06"
+ },
+ {
+  "expression": "not(or(x1, and(x3, x4)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 19.019550008653873,
+   "bits_syn": 13.875557388803728,
+   "bits_sem": 10.144658242831882,
+   "bits_sem_uncorrected": 10.144658242831882,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-AONX-n5_K06_07"
+ },
+ {
+  "expression": "or(not(x4), and(x3, x5))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 19.019550008653873,
+   "bits_syn": 13.875557388803728,
+   "bits_sem": 10.144658242831882,
+   "bits_sem_uncorrected": 10.144658242831882,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-AONX-n5_K06_08"
+ },
+ {
+  "expression": "not(and(x4, xor(x2, x5)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 19.019550008653873,
+   "bits_syn": 13.875557388803728,
+   "bits_sem": 10.144658242831882,
+   "bits_sem_uncorrected": 10.144658242831882,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AONX-n5_K06_09"
+ },
+ {
+  "expression": "and(xor(x2, x3), xor(x3, x4))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 22.189475010096185,
+   "bits_syn": 17.034938635239282,
+   "bits_sem": 11.439311461818846,
+   "bits_sem_uncorrected": 11.439311461818846,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AONX-n5_K07_00"
+ },
+ {
+  "expression": "xor(x5, and(x3, or(x1, x2)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 22.189475010096185,
+   "bits_syn": 17.034938635239282,
+   "bits_sem": 11.439311461818846,
+   "bits_sem_uncorrected": 11.439311461818846,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 16
+  },
+  "target_id": "BOOL-AONX-n5_K07_01"
+ },
+ {
+  "expression": "xor(x5, or(x1, or(x2, x3)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 22.189475010096185,
+   "bits_syn": 17.034938635239282,
+   "bits_sem": 11.439311461818846,
+   "bits_sem_uncorrected": 11.439311461818846,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 16
+  },
+  "target_id": "BOOL-AONX-n5_K07_02"
+ },
+ {
+  "expression": "or(x5, and(x2, or(x1, x3)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 22.189475010096185,
+   "bits_syn": 17.034938635239282,
+   "bits_sem": 11.439311461818846,
+   "bits_sem_uncorrected": 11.439311461818846,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 4,
+   "nonlinearity": 6,
+   "weight": 22
+  },
+  "target_id": "BOOL-AONX-n5_K07_03"
+ },
+ {
+  "expression": "or(x3, xor(x4, and(x2, x5)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 22.189475010096185,
+   "bits_syn": 17.034938635239282,
+   "bits_sem": 11.439311461818846,
+   "bits_sem_uncorrected": 11.439311461818846,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 3,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AONX-n5_K07_04"
+ },
+ {
+  "expression": "xor(x3, or(x4, xor(x2, x5)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 22.189475010096185,
+   "bits_syn": 17.034938635239282,
+   "bits_sem": 11.439311461818846,
+   "bits_sem_uncorrected": 11.439311461818846,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 16
+  },
+  "target_id": "BOOL-AONX-n5_K07_05"
+ },
+ {
+  "expression": "or(x3, xor(x5, and(x2, x4)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 22.189475010096185,
+   "bits_syn": 17.034938635239282,
+   "bits_sem": 11.439311461818846,
+   "bits_sem_uncorrected": 11.439311461818846,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 3,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AONX-n5_K07_06"
+ },
+ {
+  "expression": "and(or(x3, x4), xor(x1, x5))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 22.189475010096185,
+   "bits_syn": 17.034938635239282,
+   "bits_sem": 11.439311461818846,
+   "bits_sem_uncorrected": 11.439311461818846,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-AONX-n5_K07_07"
+ },
+ {
+  "expression": "xor(x1, or(x4, and(x2, x5)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 22.189475010096185,
+   "bits_syn": 17.034938635239282,
+   "bits_sem": 11.439311461818846,
+   "bits_sem_uncorrected": 11.439311461818846,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 16
+  },
+  "target_id": "BOOL-AONX-n5_K07_08"
+ },
+ {
+  "expression": "and(x4, xor(x5, and(x2, x3)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 22.189475010096185,
+   "bits_syn": 17.034938635239282,
+   "bits_sem": 11.439311461818846,
+   "bits_sem_uncorrected": 11.439311461818846,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 3,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AONX-n5_K07_09"
+ },
+ {
+  "expression": "xor(x3, and(x5, not(or(x1, x2))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 25.359400011538497,
+   "bits_syn": 19.619059313820138,
+   "bits_sem": 13.252961036393684,
+   "bits_sem_uncorrected": 13.252961036393684,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 16
+  },
+  "target_id": "BOOL-AONX-n5_K08_00"
+ },
+ {
+  "expression": "or(x1, and(x2, or(x3, not(x4))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 25.359400011538497,
+   "bits_syn": 19.619059313820138,
+   "bits_sem": 13.252961036393684,
+   "bits_sem_uncorrected": 13.252961036393684,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 4,
+   "nonlinearity": 6,
+   "weight": 22
+  },
+  "target_id": "BOOL-AONX-n5_K08_01"
+ },
+ {
+  "expression": "xor(xor(x4, x5), and(x1, not(x3)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 25.359400011538497,
+   "bits_syn": 19.619059313820138,
+   "bits_sem": 13.252961036393684,
+   "bits_sem_uncorrected": 13.252961036393684,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 16
+  },
+  "target_id": "BOOL-AONX-n5_K08_02"
+ },
+ {
+  "expression": "or(x1, xor(x2, or(x3, not(x4))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 25.359400011538497,
+   "bits_syn": 19.619059313820138,
+   "bits_sem": 13.252961036393684,
+   "bits_sem_uncorrected": 13.252961036393684,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 3,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AONX-n5_K08_03"
+ },
+ {
+  "expression": "xor(x5, and(x4, not(xor(x2, x3))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 25.359400011538497,
+   "bits_syn": 19.619059313820138,
+   "bits_sem": 13.252961036393684,
+   "bits_sem_uncorrected": 13.252961036393684,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 16
+  },
+  "target_id": "BOOL-AONX-n5_K08_04"
+ },
+ {
+  "expression": "xor(x5, and(not(x3), or(x1, x2)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 25.359400011538497,
+   "bits_syn": 19.619059313820138,
+   "bits_sem": 13.252961036393684,
+   "bits_sem_uncorrected": 13.252961036393684,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 16
+  },
+  "target_id": "BOOL-AONX-n5_K08_05"
+ },
+ {
+  "expression": "not(and(x3, or(x1, xor(x4, x5))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 25.359400011538497,
+   "bits_syn": 19.619059313820138,
+   "bits_sem": 13.252961036393684,
+   "bits_sem_uncorrected": 13.252961036393684,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-AONX-n5_K08_06"
+ },
+ {
+  "expression": "and(not(x4), or(x3, and(x1, x5)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 25.359400011538497,
+   "bits_syn": 19.619059313820138,
+   "bits_sem": 13.252961036393684,
+   "bits_sem_uncorrected": 13.252961036393684,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 4,
+   "nonlinearity": 6,
+   "weight": 10
+  },
+  "target_id": "BOOL-AONX-n5_K08_07"
+ },
+ {
+  "expression": "or(x1, xor(x3, and(x5, not(x4))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 25.359400011538497,
+   "bits_syn": 19.619059313820138,
+   "bits_sem": 13.252961036393684,
+   "bits_sem_uncorrected": 13.252961036393684,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 3,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AONX-n5_K08_08"
+ },
+ {
+  "expression": "or(x5, and(not(x4), or(x1, x2)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 25.359400011538497,
+   "bits_syn": 19.619059313820138,
+   "bits_sem": 13.252961036393684,
+   "bits_sem_uncorrected": 13.252961036393684,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 4,
+   "nonlinearity": 6,
+   "weight": 22
+  },
+  "target_id": "BOOL-AONX-n5_K08_09"
+ },
+ {
+  "expression": "xor(xor(x1, x3), and(not(x4), or(x1, x2)))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 31.69925001442312,
+   "bits_syn": 25.459469329249334,
+   "bits_sem": 16.289658704380788,
+   "bits_sem_uncorrected": 16.289658704380788,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 16
+  },
+  "target_id": "BOOL-AONX-n5_K10_00"
+ },
+ {
+  "expression": "not(and(x1, or(and(x4, x5), xor(x2, x4))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 31.69925001442312,
+   "bits_syn": 25.459469329249334,
+   "bits_sem": 16.289658704380788,
+   "bits_sem_uncorrected": 16.289658704380788,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 4,
+   "nonlinearity": 6,
+   "weight": 22
+  },
+  "target_id": "BOOL-AONX-n5_K10_01"
+ },
+ {
+  "expression": "not(or(and(x1, x2), xor(x1, or(x3, x4))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 31.69925001442312,
+   "bits_syn": 25.459469329249334,
+   "bits_sem": 16.289658704380788,
+   "bits_sem_uncorrected": 16.289658704380788,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 4,
+   "nonlinearity": 10,
+   "weight": 10
+  },
+  "target_id": "BOOL-AONX-n5_K10_02"
+ },
+ {
+  "expression": "xor(x4, and(x3, not(and(x2, xor(x1, x5)))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 31.69925001442312,
+   "bits_syn": 25.459469329249334,
+   "bits_sem": 16.289658704380788,
+   "bits_sem_uncorrected": 16.289658704380788,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 16
+  },
+  "target_id": "BOOL-AONX-n5_K10_03"
+ },
+ {
+  "expression": "and(xor(x2, x4), or(not(x3), and(x1, x2)))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 31.69925001442312,
+   "bits_syn": 25.459469329249334,
+   "bits_sem": 16.289658704380788,
+   "bits_sem_uncorrected": 16.289658704380788,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 4,
+   "nonlinearity": 6,
+   "weight": 10
+  },
+  "target_id": "BOOL-AONX-n5_K10_04"
+ },
+ {
+  "expression": "xor(not(or(x1, x4)), and(x3, or(x1, x5)))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 31.69925001442312,
+   "bits_syn": 25.459469329249334,
+   "bits_sem": 16.289658704380788,
+   "bits_sem_uncorrected": 16.289658704380788,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 3,
+   "nonlinearity": 8,
+   "weight": 16
+  },
+  "target_id": "BOOL-AONX-n5_K10_05"
+ },
+ {
+  "expression": "or(and(x1, not(x3)), xor(x4, or(x1, x2)))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 31.69925001442312,
+   "bits_syn": 25.459469329249334,
+   "bits_sem": 16.289658704380788,
+   "bits_sem_uncorrected": 16.289658704380788,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 3,
+   "nonlinearity": 8,
+   "weight": 20
+  },
+  "target_id": "BOOL-AONX-n5_K10_06"
+ },
+ {
+  "expression": "and(and(x2, not(x1)), xor(x4, or(x3, x5)))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 31.69925001442312,
+   "bits_syn": 25.459469329249334,
+   "bits_sem": 16.289658704380788,
+   "bits_sem_uncorrected": 16.289658704380788,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 4,
+   "weight": 4
+  },
+  "target_id": "BOOL-AONX-n5_K10_07"
+ },
+ {
+  "expression": "and(xor(x2, x3), or(x2, and(x4, not(x1))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 31.69925001442312,
+   "bits_syn": 25.459469329249334,
+   "bits_sem": 16.289658704380788,
+   "bits_sem_uncorrected": 16.289658704380788,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 4,
+   "nonlinearity": 6,
+   "weight": 10
+  },
+  "target_id": "BOOL-AONX-n5_K10_08"
+ },
+ {
+  "expression": "and(not(x5), xor(x4, and(x3, xor(x1, x2))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 31.69925001442312,
+   "bits_syn": 25.459469329249334,
+   "bits_sem": 16.289658704380788,
+   "bits_sem_uncorrected": 16.289658704380788,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 3,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AONX-n5_K10_09"
+ },
+ {
+  "expression": "not(or(x2, and(x4, or(x1, and(x3, not(x5))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 34.86917501586544,
+   "bits_syn": 28.51378839606719,
+   "bits_sem": 17.574246115291338,
+   "bits_sem_uncorrected": 17.574246115291338,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 5,
+   "weight": 11
+  },
+  "target_id": "BOOL-AONX-n5_K11_00"
+ },
+ {
+  "expression": "xor(x3, and(or(x4, x5), or(x1, xor(x2, x4))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 34.86917501586544,
+   "bits_syn": 28.51378839606719,
+   "bits_sem": 17.574246115291338,
+   "bits_sem_uncorrected": 17.574246115291338,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 10,
+   "weight": 16
+  },
+  "target_id": "BOOL-AONX-n5_K11_01"
+ },
+ {
+  "expression": "xor(x1, and(xor(x1, x4), or(x5, xor(x3, x4))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 34.86917501586544,
+   "bits_syn": 28.51378839606719,
+   "bits_sem": 17.574246115291338,
+   "bits_sem_uncorrected": 17.574246115291338,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 16
+  },
+  "target_id": "BOOL-AONX-n5_K11_02"
+ },
+ {
+  "expression": "or(xor(x2, x3), xor(x2, or(x4, xor(x1, x5))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 34.86917501586544,
+   "bits_syn": 28.51378839606719,
+   "bits_sem": 17.574246115291338,
+   "bits_sem_uncorrected": 17.574246115291338,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 3,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AONX-n5_K11_03"
+ },
+ {
+  "expression": "and(x4, or(and(x1, x5), xor(x1, and(x2, x3))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 34.86917501586544,
+   "bits_syn": 28.51378839606719,
+   "bits_sem": 17.574246115291338,
+   "bits_sem_uncorrected": 17.574246115291338,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 7,
+   "weight": 9
+  },
+  "target_id": "BOOL-AONX-n5_K11_04"
+ },
+ {
+  "expression": "or(x3, xor(x4, or(x5, and(x4, xor(x1, x2)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 34.86917501586544,
+   "bits_syn": 28.51378839606719,
+   "bits_sem": 17.574246115291338,
+   "bits_sem_uncorrected": 17.574246115291338,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 6,
+   "weight": 22
+  },
+  "target_id": "BOOL-AONX-n5_K11_05"
+ },
+ {
+  "expression": "or(not(x2), xor(x5, or(not(x1), and(x3, x4))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 34.86917501586544,
+   "bits_syn": 28.51378839606719,
+   "bits_sem": 17.574246115291338,
+   "bits_sem_uncorrected": 17.574246115291338,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AONX-n5_K11_06"
+ },
+ {
+  "expression": "or(x4, xor(or(x1, x3), and(x5, or(x1, x2))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 34.86917501586544,
+   "bits_syn": 28.51378839606719,
+   "bits_sem": 17.574246115291338,
+   "bits_sem_uncorrected": 17.574246115291338,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AONX-n5_K11_07"
+ },
+ {
+  "expression": "xor(x2, and(xor(x1, x5), xor(x1, and(x2, x4))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 34.86917501586544,
+   "bits_syn": 28.51378839606719,
+   "bits_sem": 17.574246115291338,
+   "bits_sem_uncorrected": 17.574246115291338,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 3,
+   "nonlinearity": 8,
+   "weight": 16
+  },
+  "target_id": "BOOL-AONX-n5_K11_08"
+ },
+ {
+  "expression": "or(xor(x2, x3), and(x1, xor(x5, and(x2, x4))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 34.86917501586544,
+   "bits_syn": 28.51378839606719,
+   "bits_sem": 17.574246115291338,
+   "bits_sem_uncorrected": 17.574246115291338,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-AONX-n5_K11_09"
+ },
+ {
+  "expression": "or(or(x3, and(x4, x5)), and(not(x2), or(x1, not(x4))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 41.209025018750054,
+   "bits_syn": 34.39801859746584,
+   "bits_sem": 20.505101124273196,
+   "bits_sem_uncorrected": 20.505101124273196,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 7,
+   "weight": 25
+  },
+  "target_id": "BOOL-AONX-n5_K13_00"
+ },
+ {
+  "expression": "and(xor(x1, and(x2, x4)), xor(x2, and(x5, xor(x1, x3))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 41.209025018750054,
+   "bits_syn": 34.39801859746584,
+   "bits_sem": 20.505101124273196,
+   "bits_sem_uncorrected": 20.505101124273196,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AONX-n5_K13_01"
+ },
+ {
+  "expression": "xor(x1, and(or(x1, not(x3)), or(x5, not(xor(x2, x3)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 41.209025018750054,
+   "bits_syn": 34.39801859746584,
+   "bits_sem": 20.505101124273196,
+   "bits_sem_uncorrected": 20.505101124273196,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 4,
+   "nonlinearity": 10,
+   "weight": 10
+  },
+  "target_id": "BOOL-AONX-n5_K13_02"
+ },
+ {
+  "expression": "and(x5, xor(x2, and(not(x4), or(not(x1), and(x2, x3)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 41.209025018750054,
+   "bits_syn": 34.39801859746584,
+   "bits_sem": 20.505101124273196,
+   "bits_sem_uncorrected": 20.505101124273196,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 7,
+   "weight": 7
+  },
+  "target_id": "BOOL-AONX-n5_K13_03"
+ },
+ {
+  "expression": "and(x4, xor(or(x1, x5), or(and(x2, x3), xor(x1, x3))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 41.209025018750054,
+   "bits_syn": 34.39801859746584,
+   "bits_sem": 20.505101124273196,
+   "bits_sem_uncorrected": 20.505101124273196,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 6,
+   "weight": 6
+  },
+  "target_id": "BOOL-AONX-n5_K13_04"
+ },
+ {
+  "expression": "and(xor(x4, and(x2, x5)), or(and(x3, x5), xor(x1, x3)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 41.209025018750054,
+   "bits_syn": 34.39801859746584,
+   "bits_sem": 20.505101124273196,
+   "bits_sem_uncorrected": 20.505101124273196,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 10,
+   "weight": 10
+  },
+  "target_id": "BOOL-AONX-n5_K13_05"
+ },
+ {
+  "expression": "or(xor(x1, x5), and(x4, and(or(x2, x5), xor(x2, x3))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 41.209025018750054,
+   "bits_syn": 34.39801859746584,
+   "bits_sem": 20.505101124273196,
+   "bits_sem_uncorrected": 20.505101124273196,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 3,
+   "weight": 19
+  },
+  "target_id": "BOOL-AONX-n5_K13_06"
+ },
+ {
+  "expression": "or(xor(x2, x5), and(xor(x1, x3), or(x5, xor(x1, x4))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 41.209025018750054,
+   "bits_syn": 34.39801859746584,
+   "bits_sem": 20.505101124273196,
+   "bits_sem_uncorrected": 20.505101124273196,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 6,
+   "weight": 22
+  },
+  "target_id": "BOOL-AONX-n5_K13_07"
+ },
+ {
+  "expression": "and(or(x1, and(x5, not(x3))), xor(x1, or(x4, not(x2))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 41.209025018750054,
+   "bits_syn": 34.39801859746584,
+   "bits_sem": 20.505101124273196,
+   "bits_sem_uncorrected": 20.505101124273196,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 7,
+   "weight": 7
+  },
+  "target_id": "BOOL-AONX-n5_K13_08"
+ },
+ {
+  "expression": "xor(xor(x2, and(x3, x5)), or(x4, and(x2, or(x3, x5))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 41.209025018750054,
+   "bits_syn": 34.39801859746584,
+   "bits_sem": 20.505101124273196,
+   "bits_sem_uncorrected": 20.505101124273196,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 4,
+   "nonlinearity": 10,
+   "weight": 14
+  },
+  "target_id": "BOOL-AONX-n5_K13_09"
+ },
+ {
+  "expression": "xor(not(x1), or(and(x5, xor(x2, x4)), xor(x1, and(x3, x4))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 44.37895002019237,
+   "bits_syn": 37.31254273864387,
+   "bits_sem": 22.049518886595045,
+   "bits_sem_uncorrected": 22.049518886595045,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 10,
+   "weight": 22
+  },
+  "target_id": "BOOL-AONX-n5_K14_00"
+ },
+ {
+  "expression": "xor(not(and(x3, x4)), and(x1, or(xor(x2, x4), xor(x2, x5))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 44.37895002019237,
+   "bits_syn": 37.31254273864387,
+   "bits_sem": 22.049518886595045,
+   "bits_sem_uncorrected": 22.049518886595045,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 3,
+   "nonlinearity": 10,
+   "weight": 18
+  },
+  "target_id": "BOOL-AONX-n5_K14_01"
+ },
+ {
+  "expression": "xor(x5, or(not(xor(x2, x3)), xor(and(x4, x5), or(x1, x2))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 44.37895002019237,
+   "bits_syn": 37.31254273864387,
+   "bits_sem": 22.049518886595045,
+   "bits_sem_uncorrected": 22.049518886595045,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 3,
+   "nonlinearity": 6,
+   "weight": 18
+  },
+  "target_id": "BOOL-AONX-n5_K14_02"
+ },
+ {
+  "expression": "and(or(x2, xor(x3, x5)), xor(x1, or(x5, not(or(x2, x4)))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 44.37895002019237,
+   "bits_syn": 37.31254273864387,
+   "bits_sem": 22.049518886595045,
+   "bits_sem_uncorrected": 22.049518886595045,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 6,
+   "weight": 12
+  },
+  "target_id": "BOOL-AONX-n5_K14_03"
+ },
+ {
+  "expression": "and(xor(x5, and(x3, x4)), xor(x4, and(x2, not(xor(x1, x3)))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 44.37895002019237,
+   "bits_syn": 37.31254273864387,
+   "bits_sem": 22.049518886595045,
+   "bits_sem_uncorrected": 22.049518886595045,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AONX-n5_K14_04"
+ },
+ {
+  "expression": "xor(and(x1, x5), and(xor(x4, x5), not(and(x3, xor(x1, x2)))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 44.37895002019237,
+   "bits_syn": 37.31254273864387,
+   "bits_sem": 22.049518886595045,
+   "bits_sem_uncorrected": 22.049518886595045,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 3,
+   "nonlinearity": 10,
+   "weight": 14
+  },
+  "target_id": "BOOL-AONX-n5_K14_05"
+ },
+ {
+  "expression": "or(and(x4, not(x3)), xor(or(x2, x3), or(x5, and(x1, x4))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 44.37895002019237,
+   "bits_syn": 37.31254273864387,
+   "bits_sem": 22.049518886595045,
+   "bits_sem_uncorrected": 22.049518886595045,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 10,
+   "weight": 18
+  },
+  "target_id": "BOOL-AONX-n5_K14_06"
+ },
+ {
+  "expression": "xor(xor(not(x1), and(x2, x5)), or(x4, and(x3, xor(x1, x5))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 44.37895002019237,
+   "bits_syn": 37.31254273864387,
+   "bits_sem": 22.049518886595045,
+   "bits_sem_uncorrected": 22.049518886595045,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 3,
+   "nonlinearity": 10,
+   "weight": 18
+  },
+  "target_id": "BOOL-AONX-n5_K14_07"
+ },
+ {
+  "expression": "and(or(x2, xor(x1, x3)), not(and(x4, or(x1, xor(x3, x5)))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 44.37895002019237,
+   "bits_syn": 37.31254273864387,
+   "bits_sem": 22.049518886595045,
+   "bits_sem_uncorrected": 22.049518886595045,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 7,
+   "weight": 15
+  },
+  "target_id": "BOOL-AONX-n5_K14_08"
+ },
+ {
+  "expression": "xor(or(x1, x3), or(x2, not(or(and(x4, x5), xor(x1, x4)))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 44.37895002019237,
+   "bits_syn": 37.31254273864387,
+   "bits_sem": 22.049518886595045,
+   "bits_sem_uncorrected": 22.049518886595045,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 10,
+   "weight": 14
+  },
+  "target_id": "BOOL-AONX-n5_K14_09"
+ },
+ {
+  "expression": "not(and(or(x4, not(x2)), or(and(x2, x5), xor(x5, and(x1, x3)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 47.548875021634686,
+   "bits_syn": 40.34011468365914,
+   "bits_sem": 23.32031771400334,
+   "bits_sem_uncorrected": 23.32031771400334,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 9,
+   "weight": 19
+  },
+  "target_id": "BOOL-AONX-n5_K15_00"
+ },
+ {
+  "expression": "xor(or(x1, x4), and(x5, or(x2, xor(x4, and(x1, xor(x3, x4))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 47.548875021634686,
+   "bits_syn": 40.34011468365914,
+   "bits_sem": 23.32031771400334,
+   "bits_sem_uncorrected": 23.32031771400334,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 8,
+   "weight": 16
+  },
+  "target_id": "BOOL-AONX-n5_K15_01"
+ },
+ {
+  "expression": "xor(or(x1, not(x4)), and(not(x3), or(and(x2, x4), xor(x1, x5))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 47.548875021634686,
+   "bits_syn": 40.34011468365914,
+   "bits_sem": 23.32031771400334,
+   "bits_sem_uncorrected": 23.32031771400334,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 10,
+   "weight": 20
+  },
+  "target_id": "BOOL-AONX-n5_K15_02"
+ },
+ {
+  "expression": "xor(and(x5, xor(x1, or(x2, x4))), and(x2, or(x3, xor(x4, x5))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 47.548875021634686,
+   "bits_syn": 40.34011468365914,
+   "bits_sem": 23.32031771400334,
+   "bits_sem_uncorrected": 23.32031771400334,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 3,
+   "nonlinearity": 10,
+   "weight": 14
+  },
+  "target_id": "BOOL-AONX-n5_K15_03"
+ },
+ {
+  "expression": "xor(and(x1, x2), and(and(x4, not(x5)), xor(x1, or(x3, not(x2)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 47.548875021634686,
+   "bits_syn": 40.34011468365914,
+   "bits_sem": 23.32031771400334,
+   "bits_sem_uncorrected": 23.32031771400334,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 8,
+   "weight": 10
+  },
+  "target_id": "BOOL-AONX-n5_K15_04"
+ },
+ {
+  "expression": "or(and(x1, or(x4, not(x3))), xor(and(x3, x4), and(x5, not(x2))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 47.548875021634686,
+   "bits_syn": 40.34011468365914,
+   "bits_sem": 23.32031771400334,
+   "bits_sem_uncorrected": 23.32031771400334,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 9,
+   "weight": 19
+  },
+  "target_id": "BOOL-AONX-n5_K15_05"
+ },
+ {
+  "expression": "xor(or(x1, xor(x3, or(x2, x5))), xor(x4, or(x3, xor(x2, x5))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 47.548875021634686,
+   "bits_syn": 40.34011468365914,
+   "bits_sem": 23.32031771400334,
+   "bits_sem_uncorrected": 23.32031771400334,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 3,
+   "nonlinearity": 8,
+   "weight": 16
+  },
+  "target_id": "BOOL-AONX-n5_K15_06"
+ },
+ {
+  "expression": "and(or(x2, not(x3)), xor(or(x1, x4), or(not(x5), and(x1, x4))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 47.548875021634686,
+   "bits_syn": 40.34011468365914,
+   "bits_sem": 23.32031771400334,
+   "bits_sem_uncorrected": 23.32031771400334,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 7,
+   "weight": 9
+  },
+  "target_id": "BOOL-AONX-n5_K15_07"
+ },
+ {
+  "expression": "xor(or(x4, not(or(x1, x3))), and(x2, or(x1, and(x5, not(x3)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 47.548875021634686,
+   "bits_syn": 40.34011468365914,
+   "bits_sem": 23.32031771400334,
+   "bits_sem_uncorrected": 23.32031771400334,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 8,
+   "weight": 18
+  },
+  "target_id": "BOOL-AONX-n5_K15_08"
+ },
+ {
+  "expression": "not(and(or(x3, and(x1, x5)), or(x4, xor(x1, and(x5, not(x2))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 47.548875021634686,
+   "bits_syn": 40.34011468365914,
+   "bits_sem": 23.32031771400334,
+   "bits_sem_uncorrected": 23.32031771400334,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 7,
+   "weight": 17
+  },
+  "target_id": "BOOL-AONX-n5_K15_09"
+ },
+ {
+  "expression": "or(and(not(x3), or(x4, x5)), and(or(x2, not(x1)), xor(x1, xor(x3, x4))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 53.8887250245193,
+   "bits_syn": 46.32456006073673,
+   "bits_sem": 25.93097344760131,
+   "bits_sem_uncorrected": 25.93097344760131,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 9,
+   "weight": 19
+  },
+  "target_id": "BOOL-AONX-n5_K17_00"
+ },
+ {
+  "expression": "xor(or(x2, x5), or(not(x4), xor(or(x1, not(x5)), and(x3, or(x1, x2)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 53.8887250245193,
+   "bits_syn": 46.32456006073673,
+   "bits_sem": 25.93097344760131,
+   "bits_sem_uncorrected": 25.93097344760131,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 10,
+   "weight": 14
+  },
+  "target_id": "BOOL-AONX-n5_K17_01"
+ },
+ {
+  "expression": "xor(or(not(x3), and(x4, x5)), or(or(x4, not(x2)), and(x1, xor(x3, x5))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 53.8887250245193,
+   "bits_syn": 46.32456006073673,
+   "bits_sem": 25.93097344760131,
+   "bits_sem_uncorrected": 25.93097344760131,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 10,
+   "weight": 12
+  },
+  "target_id": "BOOL-AONX-n5_K17_02"
+ },
+ {
+  "expression": "and(or(x4, not(xor(x1, x3))), xor(x2, or(x5, not(and(x3, or(x2, x4))))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 53.8887250245193,
+   "bits_syn": 46.32456006073673,
+   "bits_sem": 25.93097344760131,
+   "bits_sem_uncorrected": 25.93097344760131,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 9,
+   "weight": 13
+  },
+  "target_id": "BOOL-AONX-n5_K17_03"
+ },
+ {
+  "expression": "xor(and(x4, or(x1, x2)), and(and(x1, x2), and(xor(x3, x4), xor(x3, x5))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 53.8887250245193,
+   "bits_syn": 46.32456006073673,
+   "bits_sem": 25.93097344760131,
+   "bits_sem_uncorrected": 25.93097344760131,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 6,
+   "weight": 12
+  },
+  "target_id": "BOOL-AONX-n5_K17_04"
+ },
+ {
+  "expression": "xor(x2, or(xor(x5, or(x2, not(x3))), not(or(xor(x1, x2), xor(x1, x4)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 53.8887250245193,
+   "bits_syn": 46.32456006073673,
+   "bits_sem": 25.93097344760131,
+   "bits_sem_uncorrected": 25.93097344760131,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 10,
+   "weight": 16
+  },
+  "target_id": "BOOL-AONX-n5_K17_05"
+ },
+ {
+  "expression": "xor(xor(x1, x3), or(xor(x5, and(x3, x4)), and(x1, xor(x4, and(x2, x5)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 53.8887250245193,
+   "bits_syn": 46.32456006073673,
+   "bits_sem": 25.93097344760131,
+   "bits_sem_uncorrected": 25.93097344760131,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 7,
+   "weight": 15
+  },
+  "target_id": "BOOL-AONX-n5_K17_06"
+ },
+ {
+  "expression": "and(or(x5, or(not(x4), and(x1, x3))), xor(x3, and(x2, or(x1, not(x5)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 53.8887250245193,
+   "bits_syn": 46.32456006073673,
+   "bits_sem": 25.93097344760131,
+   "bits_sem_uncorrected": 25.93097344760131,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 7,
+   "weight": 13
+  },
+  "target_id": "BOOL-AONX-n5_K17_07"
+ },
+ {
+  "expression": "and(xor(x1, and(x5, or(x3, not(x4)))), xor(and(x1, x4), or(x3, not(x2))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 53.8887250245193,
+   "bits_syn": 46.32456006073673,
+   "bits_sem": 25.93097344760131,
+   "bits_sem_uncorrected": 25.93097344760131,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 8,
+   "weight": 10
+  },
+  "target_id": "BOOL-AONX-n5_K17_08"
+ },
+ {
+  "expression": "and(or(x2, x5), xor(or(x4, xor(x1, x5)), or(and(x1, x3), xor(x2, x4))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 53.8887250245193,
+   "bits_syn": 46.32456006073673,
+   "bits_sem": 25.93097344760131,
+   "bits_sem_uncorrected": 25.93097344760131,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 9,
+   "weight": 13
+  },
+  "target_id": "BOOL-AONX-n5_K17_09"
+ },
+ {
+  "expression": "and(or(x4, and(x3, xor(x1, x2))), xor(not(and(x2, x4)), and(x1, and(x3, x5))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 57.05865002596162,
+   "bits_syn": 49.31138801489833,
+   "bits_sem": 27.20198127850194,
+   "bits_sem_uncorrected": 27.20198127850194,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 9,
+   "weight": 11
+  },
+  "target_id": "BOOL-AONX-n5_K18_00"
+ },
+ {
+  "expression": "or(xor(x4, and(x1, xor(x2, x3))), xor(not(and(x1, x5)), or(x2, or(x4, x5))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 57.05865002596162,
+   "bits_syn": 49.31138801489833,
+   "bits_sem": 27.20198127850194,
+   "bits_sem_uncorrected": 27.20198127850194,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 9,
+   "weight": 23
+  },
+  "target_id": "BOOL-AONX-n5_K18_01"
+ },
+ {
+  "expression": "xor(or(x1, x4), and(x3, xor(not(x5), and(x1, and(or(x2, x5), xor(x2, x4))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 57.05865002596162,
+   "bits_syn": 49.31138801489833,
+   "bits_sem": 27.20198127850194,
+   "bits_sem_uncorrected": 27.20198127850194,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 11,
+   "weight": 19
+  },
+  "target_id": "BOOL-AONX-n5_K18_02"
+ },
+ {
+  "expression": "xor(xor(not(x4), and(x3, x5)), or(or(x2, and(x4, x5)), xor(x1, xor(x3, x5))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 57.05865002596162,
+   "bits_syn": 49.31138801489833,
+   "bits_sem": 27.20198127850194,
+   "bits_sem_uncorrected": 27.20198127850194,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 10,
+   "weight": 16
+  },
+  "target_id": "BOOL-AONX-n5_K18_03"
+ },
+ {
+  "expression": "or(and(not(x1), or(x5, xor(x2, x4))), xor(x1, and(xor(x3, x4), xor(x4, x5))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 57.05865002596162,
+   "bits_syn": 49.31138801489833,
+   "bits_sem": 27.20198127850194,
+   "bits_sem_uncorrected": 27.20198127850194,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 7,
+   "weight": 25
+  },
+  "target_id": "BOOL-AONX-n5_K18_04"
+ },
+ {
+  "expression": "xor(x5, and(or(x2, not(x1)), or(xor(x2, x3), and(x4, or(x1, xor(x2, x5))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 57.05865002596162,
+   "bits_syn": 49.31138801489833,
+   "bits_sem": 27.20198127850194,
+   "bits_sem_uncorrected": 27.20198127850194,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 8,
+   "weight": 16
+  },
+  "target_id": "BOOL-AONX-n5_K18_05"
+ },
+ {
+  "expression": "xor(x5, and(not(x1), xor(or(x3, x4), and(x4, and(or(x3, x5), xor(x2, x5))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 57.05865002596162,
+   "bits_syn": 49.31138801489833,
+   "bits_sem": 27.20198127850194,
+   "bits_sem_uncorrected": 27.20198127850194,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 7,
+   "weight": 17
+  },
+  "target_id": "BOOL-AONX-n5_K18_06"
+ },
+ {
+  "expression": "xor(x3, or(xor(x2, x4), xor(and(x2, or(x1, x5)), or(not(x5), and(x2, x3)))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 57.05865002596162,
+   "bits_syn": 49.31138801489833,
+   "bits_sem": 27.20198127850194,
+   "bits_sem_uncorrected": 27.20198127850194,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 8,
+   "weight": 18
+  },
+  "target_id": "BOOL-AONX-n5_K18_07"
+ },
+ {
+  "expression": "xor(and(xor(x2, x3), xor(x4, x5)), or(not(xor(x2, x4)), or(x3, xor(x1, x5))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 57.05865002596162,
+   "bits_syn": 49.31138801489833,
+   "bits_sem": 27.20198127850194,
+   "bits_sem_uncorrected": 27.20198127850194,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 3,
+   "nonlinearity": 10,
+   "weight": 22
+  },
+  "target_id": "BOOL-AONX-n5_K18_08"
+ },
+ {
+  "expression": "or(and(x1, xor(x4, and(x3, not(x5)))), and(or(x2, x5), xor(x1, or(x2, x3))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 57.05865002596162,
+   "bits_syn": 49.31138801489833,
+   "bits_sem": 27.20198127850194,
+   "bits_sem_uncorrected": 27.20198127850194,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 9,
+   "weight": 19
+  },
+  "target_id": "BOOL-AONX-n5_K18_09"
+ },
+ {
+  "expression": "or(not(or(x1, xor(x4, and(x2, x5)))), xor(x5, and(xor(x3, x5), or(x2, xor(x1, x4)))))",
+  "K_construction": 20,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 63.39850002884624,
+   "bits_syn": 55.348512478961794,
+   "bits_sem": 29.641957073854314,
+   "bits_sem_uncorrected": 29.641957073854314,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 6,
+   "weight": 20
+  },
+  "target_id": "BOOL-AONX-n5_K20_00"
+ },
+ {
+  "expression": "xor(or(and(x3, or(x2, x4)), and(x5, not(xor(x1, x3)))), or(xor(x3, x4), xor(x2, x5)))",
+  "K_construction": 20,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 63.39850002884624,
+   "bits_syn": 55.348512478961794,
+   "bits_sem": 29.641957073854314,
+   "bits_sem_uncorrected": 29.641957073854314,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 9,
+   "weight": 17
+  },
+  "target_id": "BOOL-AONX-n5_K20_01"
+ },
+ {
+  "expression": "xor(or(and(x4, xor(x1, x3)), and(x2, xor(x1, x5))), and(not(x5), or(x1, xor(x2, x3))))",
+  "K_construction": 20,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 5,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 63.39850002884624,
+   "bits_syn": 55.348512478961794,
+   "bits_sem": 29.641957073854314,
+   "bits_sem_uncorrected": 29.641957073854314,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 8,
+   "weight": 14
+  },
+  "target_id": "BOOL-AONX-n5_K20_02"
+ },
+ {
+  "expression": "xor(or(not(or(x2, and(x1, x3))), and(x5, or(x3, not(x4)))), xor(not(x1), xor(x2, x3)))",
+  "K_construction": 20,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 63.39850002884624,
+   "bits_syn": 55.348512478961794,
+   "bits_sem": 29.641957073854314,
+   "bits_sem_uncorrected": 29.641957073854314,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 8,
+   "weight": 18
+  },
+  "target_id": "BOOL-AONX-n5_K20_03"
+ },
+ {
+  "expression": "or(and(x4, x5), xor(x3, or(not(or(x4, x5)), and(xor(x2, x5), xor(x1, or(x3, x4))))))",
+  "K_construction": 20,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 63.39850002884624,
+   "bits_syn": 55.348512478961794,
+   "bits_sem": 29.641957073854314,
+   "bits_sem_uncorrected": 29.641957073854314,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 8,
+   "weight": 20
+  },
+  "target_id": "BOOL-AONX-n5_K20_04"
+ },
+ {
+  "expression": "or(xor(x5, or(x1, xor(x2, and(x3, x5)))), xor(or(x3, x4), and(not(x2), or(x1, x4))))",
+  "K_construction": 20,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 63.39850002884624,
+   "bits_syn": 55.348512478961794,
+   "bits_sem": 29.641957073854314,
+   "bits_sem_uncorrected": 29.641957073854314,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 9,
+   "weight": 23
+  },
+  "target_id": "BOOL-AONX-n5_K20_05"
+ },
+ {
+  "expression": "and(not(and(or(x1, xor(x3, x4)), xor(x4, or(and(x1, x5), xor(x2, x5))))), or(x2, x3))",
+  "K_construction": 20,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 63.39850002884624,
+   "bits_syn": 55.348512478961794,
+   "bits_sem": 29.641957073854314,
+   "bits_sem_uncorrected": 29.641957073854314,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 11,
+   "weight": 15
+  },
+  "target_id": "BOOL-AONX-n5_K20_06"
+ },
+ {
+  "expression": "xor(or(x3, xor(x1, x5)), not(and(or(x3, and(x1, x5)), xor(x2, or(x1, and(x4, x5))))))",
+  "K_construction": 20,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 63.39850002884624,
+   "bits_syn": 55.348512478961794,
+   "bits_sem": 29.641957073854314,
+   "bits_sem_uncorrected": 29.641957073854314,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 8,
+   "weight": 14
+  },
+  "target_id": "BOOL-AONX-n5_K20_07"
+ },
+ {
+  "expression": "or(not(xor(and(x5, xor(x1, x2)), or(or(x3, x4), xor(x1, x5)))), and(x1, xor(x2, x3)))",
+  "K_construction": 20,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 63.39850002884624,
+   "bits_syn": 55.348512478961794,
+   "bits_sem": 29.641957073854314,
+   "bits_sem_uncorrected": 29.641957073854314,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 9,
+   "weight": 15
+  },
+  "target_id": "BOOL-AONX-n5_K20_08"
+ },
+ {
+  "expression": "xor(or(x3, xor(x2, xor(x4, x5))), xor(x1, and(x5, or(xor(x3, x4), and(x1, not(x2))))))",
+  "K_construction": 20,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 63.39850002884624,
+   "bits_syn": 55.348512478961794,
+   "bits_sem": 29.641957073854314,
+   "bits_sem_uncorrected": 29.641957073854314,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 10,
+   "weight": 18
+  },
+  "target_id": "BOOL-AONX-n5_K20_09"
+ },
+ {
+  "expression": "xor(xor(x4, and(x2, xor(x5, and(x1, x3)))), or(and(x1, x5), not(or(x3, and(x1, and(x2, x4))))))",
+  "K_construction": 22,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 22.0,
+   "bits_uniform": 69.73835003173087,
+   "bits_syn": 61.405185829540805,
+   "bits_sem": 32.09650999298509,
+   "bits_sem_uncorrected": 32.09650999298509,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 7,
+   "weight": 17
+  },
+  "target_id": "BOOL-AONX-n5_K22_00"
+ },
+ {
+  "expression": "xor(or(xor(x5, or(x2, not(x3))), xor(x4, or(x1, and(x4, x5)))), and(x4, or(x5, and(x2, x3))))",
+  "K_construction": 22,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 22.0,
+   "bits_uniform": 69.73835003173087,
+   "bits_syn": 61.405185829540805,
+   "bits_sem": 32.09650999298509,
+   "bits_sem_uncorrected": 32.09650999298509,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 9,
+   "weight": 23
+  },
+  "target_id": "BOOL-AONX-n5_K22_01"
+ },
+ {
+  "expression": "xor(xor(or(x3, and(x2, x4)), or(x5, and(x1, or(x3, x4)))), or(and(x1, x2), not(and(x3, x4))))",
+  "K_construction": 22,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 22.0,
+   "bits_uniform": 69.73835003173087,
+   "bits_syn": 61.405185829540805,
+   "bits_sem": 32.09650999298509,
+   "bits_sem_uncorrected": 32.09650999298509,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 8,
+   "weight": 18
+  },
+  "target_id": "BOOL-AONX-n5_K22_02"
+ },
+ {
+  "expression": "and(or(xor(x5, and(x1, x4)), xor(x1, xor(x2, x5))), not(and(x2, xor(and(x1, x3), or(x1, x4)))))",
+  "K_construction": 22,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 22.0,
+   "bits_uniform": 69.73835003173087,
+   "bits_syn": 61.405185829540805,
+   "bits_sem": 32.09650999298509,
+   "bits_sem_uncorrected": 32.09650999298509,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 9,
+   "weight": 17
+  },
+  "target_id": "BOOL-AONX-n5_K22_03"
+ },
+ {
+  "expression": "xor(or(x4, not(or(x5, and(x2, x3)))), xor(x4, or(x2, xor(x1, or(xor(x1, x3), xor(x1, x5))))))",
+  "K_construction": 22,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 22.0,
+   "bits_uniform": 69.73835003173087,
+   "bits_syn": 61.405185829540805,
+   "bits_sem": 32.09650999298509,
+   "bits_sem_uncorrected": 32.09650999298509,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AONX-n5_K22_04"
+ },
+ {
+  "expression": "xor(and(not(and(x3, xor(x2, x4))), or(xor(x1, x4), xor(x3, and(x2, xor(x3, x5))))), or(x2, x5))",
+  "K_construction": 22,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 22.0,
+   "bits_uniform": 69.73835003173087,
+   "bits_syn": 61.405185829540805,
+   "bits_sem": 32.09650999298509,
+   "bits_sem_uncorrected": 32.09650999298509,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 9,
+   "weight": 15
+  },
+  "target_id": "BOOL-AONX-n5_K22_05"
+ },
+ {
+  "expression": "xor(or(and(x1, x3), and(x4, xor(x2, x5))), and(or(x4, not(x2)), and(or(x3, x5), xor(x1, x5))))",
+  "K_construction": 22,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 5,
+  "units": {
+   "nodes": 22.0,
+   "bits_uniform": 69.73835003173087,
+   "bits_syn": 61.405185829540805,
+   "bits_sem": 32.09650999298509,
+   "bits_sem_uncorrected": 32.09650999298509,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 9,
+   "weight": 13
+  },
+  "target_id": "BOOL-AONX-n5_K22_06"
+ },
+ {
+  "expression": "and(xor(xor(x1, xor(x2, x3)), or(and(x4, not(x1)), and(x5, xor(x4, and(x2, x3))))), or(x3, x5))",
+  "K_construction": 22,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 22.0,
+   "bits_uniform": 69.73835003173087,
+   "bits_syn": 61.405185829540805,
+   "bits_sem": 32.09650999298509,
+   "bits_sem_uncorrected": 32.09650999298509,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 9,
+   "weight": 13
+  },
+  "target_id": "BOOL-AONX-n5_K22_07"
+ },
+ {
+  "expression": "xor(or(x5, xor(x2, or(xor(x1, x3), xor(x2, xor(x3, x4))))), xor(not(x3), and(x1, xor(x4, x5))))",
+  "K_construction": 22,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 22.0,
+   "bits_uniform": 69.73835003173087,
+   "bits_syn": 61.405185829540805,
+   "bits_sem": 32.09650999298509,
+   "bits_sem_uncorrected": 32.09650999298509,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 3,
+   "nonlinearity": 10,
+   "weight": 18
+  },
+  "target_id": "BOOL-AONX-n5_K22_08"
+ },
+ {
+  "expression": "xor(or(x5, not(or(x1, x4))), xor(x4, or(and(x3, or(x5, not(x2))), or(not(x1), xor(x2, x4)))))",
+  "K_construction": 22,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 22.0,
+   "bits_uniform": 69.73835003173087,
+   "bits_syn": 61.405185829540805,
+   "bits_sem": 32.09650999298509,
+   "bits_sem_uncorrected": 32.09650999298509,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 9,
+   "weight": 13
+  },
+  "target_id": "BOOL-AONX-n5_K22_09"
+ },
+ {
+  "expression": "xor(xor(and(x2, x5), or(not(x4), and(x3, x5))), or(and(not(x1), xor(x2, x3)), and(x4, not(or(x5, xor(x1, x3))))))",
+  "K_construction": 26,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 26.0,
+   "bits_uniform": 82.41805003750011,
+   "bits_syn": 73.56570987678859,
+   "bits_sem": 37.00561583124665,
+   "bits_sem_uncorrected": 37.00561583124665,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 11,
+   "weight": 17
+  },
+  "target_id": "BOOL-AONX-n5_K26_00"
+ },
+ {
+  "expression": "or(and(x4, xor(x1, or(x5, and(x1, x2)))), or(and(not(x4), or(x1, x3)), and(xor(x2, x3), xor(x5, or(x1, x2)))))",
+  "K_construction": 26,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 26.0,
+   "bits_uniform": 82.41805003750011,
+   "bits_syn": 73.56570987678859,
+   "bits_sem": 37.00561583124665,
+   "bits_sem_uncorrected": 37.00561583124665,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 9,
+   "weight": 21
+  },
+  "target_id": "BOOL-AONX-n5_K26_01"
+ },
+ {
+  "expression": "xor(and(xor(x3, or(x1, x5)), not(and(x2, xor(x4, x5)))), or(and(x2, x3), and(x5, xor(or(x3, x4), or(x1, x2)))))",
+  "K_construction": 26,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 26.0,
+   "bits_uniform": 82.41805003750011,
+   "bits_syn": 73.56570987678859,
+   "bits_sem": 37.00561583124665,
+   "bits_sem_uncorrected": 37.00561583124665,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 10,
+   "weight": 20
+  },
+  "target_id": "BOOL-AONX-n5_K26_02"
+ },
+ {
+  "expression": "and(and(or(x3, xor(x4, x5)), xor(x1, or(x2, xor(x3, x5)))), or(x1, xor(not(or(x3, x5)), or(x4, xor(x2, x3)))))",
+  "K_construction": 26,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 26.0,
+   "bits_uniform": 82.41805003750011,
+   "bits_syn": 73.56570987678859,
+   "bits_sem": 37.00561583124665,
+   "bits_sem_uncorrected": 37.00561583124665,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AONX-n5_K26_03"
+ },
+ {
+  "expression": "xor(xor(or(x2, x4), or(x1, and(or(x4, x5), xor(x2, x5)))), or(x2, xor(not(x3), or(x1, and(x5, or(x3, x4))))))",
+  "K_construction": 26,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 26.0,
+   "bits_uniform": 82.41805003750011,
+   "bits_syn": 73.56570987678859,
+   "bits_sem": 37.00561583124665,
+   "bits_sem_uncorrected": 37.00561583124665,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 9,
+   "weight": 17
+  },
+  "target_id": "BOOL-AONX-n5_K26_04"
+ },
+ {
+  "expression": "or(xor(x5, and(or(x4, x5), or(x3, xor(x2, x4)))), and(xor(not(x4), or(x1, x5)), xor(x1, or(x3, and(x2, x4)))))",
+  "K_construction": 26,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 26.0,
+   "bits_uniform": 82.41805003750011,
+   "bits_syn": 73.56570987678859,
+   "bits_sem": 37.00561583124665,
+   "bits_sem_uncorrected": 37.00561583124665,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 9,
+   "weight": 15
+  },
+  "target_id": "BOOL-AONX-n5_K26_05"
+ },
+ {
+  "expression": "and(xor(x1, and(xor(x4, and(x2, not(x3))), xor(and(x2, x5), xor(x1, x3)))), and(not(and(x3, x5)), or(x1, not(x4))))",
+  "K_construction": 26,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 26.0,
+   "bits_uniform": 82.41805003750011,
+   "bits_syn": 73.56570987678859,
+   "bits_sem": 37.00561583124665,
+   "bits_sem_uncorrected": 37.00561583124665,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 8,
+   "weight": 10
+  },
+  "target_id": "BOOL-AONX-n5_K26_06"
+ },
+ {
+  "expression": "xor(not(xor(and(x2, x4), or(x1, x3))), or(and(x2, x3), or(and(x1, xor(x4, x5)), xor(or(x1, x4), xor(x3, x5)))))",
+  "K_construction": 26,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 26.0,
+   "bits_uniform": 82.41805003750011,
+   "bits_syn": 73.56570987678859,
+   "bits_sem": 37.00561583124665,
+   "bits_sem_uncorrected": 37.00561583124665,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 5,
+   "nonlinearity": 9,
+   "weight": 19
+  },
+  "target_id": "BOOL-AONX-n5_K26_07"
+ },
+ {
+  "expression": "xor(xor(or(x1, and(x3, x5)), and(not(x2), or(x4, xor(x3, and(x1, x5))))), and(xor(x1, x2), xor(x5, or(x1, x3))))",
+  "K_construction": 26,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 26.0,
+   "bits_uniform": 82.41805003750011,
+   "bits_syn": 73.56570987678859,
+   "bits_sem": 37.00561583124665,
+   "bits_sem_uncorrected": 37.00561583124665,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 10,
+   "weight": 22
+  },
+  "target_id": "BOOL-AONX-n5_K26_08"
+ },
+ {
+  "expression": "xor(and(xor(not(x2), xor(x3, x4)), or(xor(x1, x3), and(x4, not(x5)))), xor(and(x3, x4), or(not(x2), xor(x1, x5))))",
+  "K_construction": 26,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 26.0,
+   "bits_uniform": 82.41805003750011,
+   "bits_syn": 73.56570987678859,
+   "bits_sem": 37.00561583124665,
+   "bits_sem_uncorrected": 37.00561583124665,
+   "bits_sem_extrapolated": true
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 4,
+   "nonlinearity": 10,
+   "weight": 22
+  },
+  "target_id": "BOOL-AONX-n5_K26_09"
+ }
+]

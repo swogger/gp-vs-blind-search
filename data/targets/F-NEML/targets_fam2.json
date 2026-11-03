@@ -1,0 +1,695 @@
+[
+ {
+  "expression": "neml(x, x)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 12.132399420784443,
+  "target_scale": 18.792344967958226,
+  "target_id": "F-NEML_v2_K03_00"
+ },
+ {
+  "expression": "neml(x, -inf)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 0.01331409493534148,
+  "target_scale": 1.0953065005336102,
+  "target_id": "F-NEML_v2_K03_01"
+ },
+ {
+  "expression": "neml(x, neml(x, -inf))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.02912957741285547,
+  "target_scale": 1.8947925093673799,
+  "target_id": "F-NEML_v2_K05_00"
+ },
+ {
+  "expression": "neml(neml(x, -inf), x)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 12.046971093029862,
+  "target_scale": 19.79661723522752,
+  "target_id": "F-NEML_v2_K05_01"
+ },
+ {
+  "expression": "neml(neml(x, x), -inf)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.08899069055401884,
+  "target_scale": 4.298224166141674,
+  "target_id": "F-NEML_v2_K05_02"
+ },
+ {
+  "expression": "neml(neml(x, -inf), -inf)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.016768306075898066,
+  "target_scale": 1.0,
+  "target_id": "F-NEML_v2_K05_03"
+ },
+ {
+  "expression": "neml(neml(x, x), x)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 10.896148759065026,
+  "target_scale": 17.24281198792265,
+  "target_id": "F-NEML_v2_K05_04"
+ },
+ {
+  "expression": "neml(neml(neml(x, -inf), -inf), -inf)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 3.2879427587026515,
+  "target_scale": 6.966048343398782,
+  "target_id": "F-NEML_v2_K07_00"
+ },
+ {
+  "expression": "neml(x, neml(neml(x, x), -inf))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 12.935998848502534,
+  "target_scale": 19.887651468491836,
+  "target_id": "F-NEML_v2_K07_01"
+ },
+ {
+  "expression": "neml(neml(neml(x, -inf), x), -inf)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.07394038833899023,
+  "target_scale": 4.333922102252135,
+  "target_id": "F-NEML_v2_K07_02"
+ },
+ {
+  "expression": "neml(neml(neml(x, x), x), -inf)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.09475370559046892,
+  "target_scale": 4.106047415525311,
+  "target_id": "F-NEML_v2_K07_03"
+ },
+ {
+  "expression": "neml(neml(neml(x, x), -inf), -inf)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.005651308319663274,
+  "target_scale": 1.6727742655460707,
+  "target_id": "F-NEML_v2_K07_04"
+ },
+ {
+  "expression": "neml(x, neml(x, neml(x, -inf)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.022591172040328254,
+  "target_scale": 1.0,
+  "target_id": "F-NEML_v2_K07_05"
+ },
+ {
+  "expression": "neml(neml(neml(x, -inf), x), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 11.066073314759025,
+  "target_scale": 17.191624537405144,
+  "target_id": "F-NEML_v2_K07_06"
+ },
+ {
+  "expression": "neml(neml(x, neml(x, -inf)), -inf)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.01158793565861967,
+  "target_scale": 3.2059421623031916,
+  "target_id": "F-NEML_v2_K07_07"
+ },
+ {
+  "expression": "neml(neml(x, x), neml(x, -inf))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "var_target": 0.00015662071689903013,
+  "target_scale": 3.1431274755905703,
+  "target_id": "F-NEML_v2_K07_08"
+ },
+ {
+  "expression": "neml(neml(neml(x, -inf), -inf), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 21.77334626545605,
+  "target_scale": 22.28417112198096,
+  "target_id": "F-NEML_v2_K07_09"
+ },
+ {
+  "expression": "neml(x, neml(x, neml(neml(x, -inf), -inf)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.01331409493534148,
+  "target_scale": 1.0,
+  "target_id": "F-NEML_v2_K09_00"
+ },
+ {
+  "expression": "neml(x, neml(neml(x, x), neml(x, -inf)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.016112361026203326,
+  "target_scale": 2.040231797405948,
+  "target_id": "F-NEML_v2_K09_01"
+ },
+ {
+  "expression": "neml(neml(neml(x, neml(x, -inf)), -inf), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 12.902011963913635,
+  "target_scale": 18.772709647694274,
+  "target_id": "F-NEML_v2_K09_02"
+ },
+ {
+  "expression": "neml(neml(x, x), neml(x, neml(x, -inf)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.11102584257798537,
+  "target_scale": 4.197052589200646,
+  "target_id": "F-NEML_v2_K09_03"
+ },
+ {
+  "expression": "neml(neml(x, x), neml(neml(x, x), -inf))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 14.28148274060583,
+  "target_scale": 21.951759706220027,
+  "target_id": "F-NEML_v2_K09_04"
+ },
+ {
+  "expression": "neml(x, neml(neml(x, -inf), neml(x, -inf)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.016112361026203326,
+  "target_scale": 1.0402317974059476,
+  "target_id": "F-NEML_v2_K09_05"
+ },
+ {
+  "expression": "neml(neml(neml(neml(x, -inf), -inf), x), -inf)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.09619059771717653,
+  "target_scale": 4.416294195259146,
+  "target_id": "F-NEML_v2_K09_06"
+ },
+ {
+  "expression": "neml(x, neml(x, neml(x, neml(x, -inf))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.035471719055194154,
+  "target_scale": 1.477396178978194,
+  "target_id": "F-NEML_v2_K09_07"
+ },
+ {
+  "expression": "neml(neml(neml(x, neml(x, -inf)), x), -inf)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.0764470577407723,
+  "target_scale": 4.20756423789933,
+  "target_id": "F-NEML_v2_K09_08"
+ },
+ {
+  "expression": "neml(neml(neml(neml(x, x), -inf), -inf), -inf)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.002055529810870288,
+  "target_scale": 1.0,
+  "target_id": "F-NEML_v2_K09_09"
+ },
+ {
+  "expression": "neml(neml(x, neml(neml(neml(x, -inf), x), -inf)), -inf)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.06877167709282872,
+  "target_scale": 3.0393626601634613,
+  "target_id": "F-NEML_v2_K11_00"
+ },
+ {
+  "expression": "neml(neml(x, neml(x, neml(neml(x, x), -inf))), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 9.011000083281473e-09,
+  "target_scale": 3.141592679169651,
+  "target_id": "F-NEML_v2_K11_01"
+ },
+ {
+  "expression": "neml(x, neml(x, neml(neml(neml(x, x), -inf), -inf)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.005596712894954889,
+  "target_scale": 1.254419108087337,
+  "target_id": "F-NEML_v2_K11_02"
+ },
+ {
+  "expression": "neml(x, neml(neml(neml(x, -inf), x), neml(x, -inf)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.010222653369558611,
+  "target_scale": 2.0907290755214847,
+  "target_id": "F-NEML_v2_K11_03"
+ },
+ {
+  "expression": "neml(neml(neml(neml(x, -inf), -inf), x), neml(x, -inf))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.016652973925089177,
+  "target_scale": 3.1611737862825535,
+  "target_id": "F-NEML_v2_K11_04"
+ },
+ {
+  "expression": "neml(neml(neml(x, x), x), neml(x, neml(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 4,
+  "var_target": 0.009466499676919267,
+  "target_scale": 2.96181183847156,
+  "target_id": "F-NEML_v2_K11_05"
+ },
+ {
+  "expression": "neml(neml(neml(neml(x, neml(x, -inf)), -inf), -inf), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 13.025264218944518,
+  "target_scale": 19.32015160014155,
+  "target_id": "F-NEML_v2_K11_06"
+ },
+ {
+  "expression": "neml(neml(x, x), neml(x, neml(neml(x, x), x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.00019720833498799404,
+  "target_scale": 3.143381600538151,
+  "target_id": "F-NEML_v2_K11_07"
+ },
+ {
+  "expression": "neml(x, neml(neml(neml(neml(x, -inf), x), -inf), -inf))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.02464501994126909,
+  "target_scale": 3.666398469849021,
+  "target_id": "F-NEML_v2_K11_08"
+ },
+ {
+  "expression": "neml(neml(neml(x, -inf), neml(neml(x, x), -inf)), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 10.797779263393208,
+  "target_scale": 16.949369340674448,
+  "target_id": "F-NEML_v2_K11_09"
+ },
+ {
+  "expression": "neml(neml(neml(neml(neml(x, x), x), neml(x, -inf)), -inf), -inf)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.0003238503963281859,
+  "target_scale": 1.216973280735078,
+  "target_id": "F-NEML_v2_K13_00"
+ },
+ {
+  "expression": "neml(neml(x, -inf), neml(neml(neml(x, -inf), -inf), neml(x, -inf)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.013221947507532982,
+  "target_scale": 1.0,
+  "target_id": "F-NEML_v2_K13_01"
+ },
+ {
+  "expression": "neml(neml(neml(neml(x, x), neml(neml(x, -inf), -inf)), -inf), -inf)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.0009733536295597797,
+  "target_scale": 1.0,
+  "target_id": "F-NEML_v2_K13_02"
+ },
+ {
+  "expression": "neml(neml(neml(x, neml(x, neml(x, neml(x, -inf)))), x), -inf)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 0.06972881016201835,
+  "target_scale": 4.2178439272021455,
+  "target_id": "F-NEML_v2_K13_03"
+ },
+ {
+  "expression": "neml(x, neml(neml(neml(neml(x, -inf), x), x), neml(x, -inf)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.028883080109635677,
+  "target_scale": 1.9515913061076455,
+  "target_id": "F-NEML_v2_K13_04"
+ },
+ {
+  "expression": "neml(x, neml(neml(x, -inf), neml(neml(neml(x, x), x), x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 3.981336461852559e-07,
+  "target_scale": 1.0,
+  "target_id": "F-NEML_v2_K13_05"
+ },
+ {
+  "expression": "neml(neml(neml(neml(neml(x, -inf), -inf), -inf), x), neml(x, -inf))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.001894116661254513,
+  "target_scale": 2.978010020610167,
+  "target_id": "F-NEML_v2_K13_06"
+ },
+ {
+  "expression": "neml(x, neml(neml(neml(x, neml(neml(x, x), x)), -inf), -inf))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 0.00021232395873488626,
+  "target_scale": 1.0519508469982595,
+  "target_id": "F-NEML_v2_K13_07"
+ },
+ {
+  "expression": "neml(x, neml(x, neml(x, neml(neml(x, -inf), neml(x, -inf)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.02511711846396111,
+  "target_scale": 1.0,
+  "target_id": "F-NEML_v2_K13_08"
+ },
+ {
+  "expression": "neml(neml(neml(x, x), neml(x, -inf)), neml(neml(x, -inf), -inf))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 4,
+  "var_target": 0.013352733018307077,
+  "target_scale": 1.6632760717729278,
+  "target_id": "F-NEML_v2_K13_09"
+ },
+ {
+  "expression": "neml(neml(x, neml(neml(x, x), -inf)), neml(x, neml(x, neml(x, -inf))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 0.0003332665279949262,
+  "target_scale": 1.0,
+  "target_id": "F-NEML_v2_K15_00"
+ },
+ {
+  "expression": "neml(neml(neml(x, -inf), neml(neml(x, x), -inf)), neml(x, neml(x, -inf)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 0.12183035935315045,
+  "target_scale": 2.787932599888552,
+  "target_id": "F-NEML_v2_K15_01"
+ },
+ {
+  "expression": "neml(neml(neml(x, x), neml(x, -inf)), neml(neml(neml(x, x), -inf), -inf))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 0.08906536581926792,
+  "target_scale": 2.368548006456894,
+  "target_id": "F-NEML_v2_K15_02"
+ },
+ {
+  "expression": "neml(x, neml(neml(x, neml(x, -inf)), neml(neml(neml(x, x), -inf), -inf)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.020297279227211872,
+  "target_scale": 1.0,
+  "target_id": "F-NEML_v2_K15_03"
+ },
+ {
+  "expression": "neml(neml(x, neml(neml(x, -inf), neml(x, neml(neml(x, -inf), -inf)))), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 12.04697109302986,
+  "target_scale": 20.2552923806146,
+  "target_id": "F-NEML_v2_K15_04"
+ },
+ {
+  "expression": "neml(x, neml(neml(neml(x, neml(neml(neml(x, -inf), -inf), -inf)), -inf), -inf))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 0.016692288780742373,
+  "target_scale": 1.0910433334882752,
+  "target_id": "F-NEML_v2_K15_05"
+ },
+ {
+  "expression": "neml(x, neml(neml(neml(neml(x, x), neml(x, -inf)), -inf), neml(x, -inf)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.021995390238942873,
+  "target_scale": 1.0408091136749014,
+  "target_id": "F-NEML_v2_K15_06"
+ },
+ {
+  "expression": "neml(neml(neml(neml(x, -inf), -inf), x), neml(neml(x, x), neml(x, -inf)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 0.10285273742957324,
+  "target_scale": 5.124685482297244,
+  "target_id": "F-NEML_v2_K15_07"
+ },
+ {
+  "expression": "neml(neml(neml(x, neml(neml(x, neml(x, neml(x, -inf))), -inf)), x), -inf)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 0.07034593305873321,
+  "target_scale": 4.4003191079433055,
+  "target_id": "F-NEML_v2_K15_08"
+ },
+ {
+  "expression": "neml(neml(x, neml(neml(neml(x, x), x), neml(neml(x, -inf), -inf))), -inf)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.03622647102379502,
+  "target_scale": 1.929899877582819,
+  "target_id": "F-NEML_v2_K15_09"
+ },
+ {
+  "expression": "neml(x, neml(x, neml(neml(neml(x, -inf), neml(neml(x, neml(x, -inf)), -inf)), -inf)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.04856056021405413,
+  "target_scale": 1.0,
+  "target_id": "F-NEML_v2_K17_00"
+ },
+ {
+  "expression": "neml(neml(neml(neml(x, -inf), neml(x, neml(neml(neml(x, x), -inf), -inf))), x), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 19.82932497808931,
+  "target_scale": 17.12089658890129,
+  "target_id": "F-NEML_v2_K17_01"
+ },
+ {
+  "expression": "neml(neml(neml(neml(x, -inf), -inf), -inf), neml(neml(neml(x, x), -inf), neml(x, -inf)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 5,
+  "var_target": 0.3375257511762569,
+  "target_scale": 3.383518596048277,
+  "target_id": "F-NEML_v2_K17_02"
+ },
+ {
+  "expression": "neml(neml(neml(neml(x, x), -inf), neml(x, -inf)), neml(neml(neml(x, x), -inf), -inf))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 5,
+  "var_target": 0.05883731008531006,
+  "target_scale": 2.431222023305948,
+  "target_id": "F-NEML_v2_K17_03"
+ },
+ {
+  "expression": "neml(x, neml(x, neml(neml(x, -inf), neml(neml(neml(x, x), neml(x, -inf)), -inf))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 1.9601377552220791,
+  "target_scale": 8.434768904600768,
+  "target_id": "F-NEML_v2_K17_04"
+ },
+ {
+  "expression": "neml(neml(neml(x, -inf), x), neml(x, neml(neml(neml(x, x), neml(x, -inf)), -inf)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 0.2992664603944639,
+  "target_scale": 6.905846543166655,
+  "target_id": "F-NEML_v2_K17_05"
+ },
+ {
+  "expression": "neml(neml(x, -inf), neml(neml(neml(neml(neml(x, -inf), x), neml(x, -inf)), x), -inf))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 13.858735872230074,
+  "target_scale": 18.89946672980989,
+  "target_id": "F-NEML_v2_K17_06"
+ },
+ {
+  "expression": "neml(x, neml(x, neml(neml(neml(neml(x, neml(x, -inf)), x), neml(x, -inf)), -inf)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.23940646091218093,
+  "target_scale": 4.133805826494672,
+  "target_id": "F-NEML_v2_K17_07"
+ },
+ {
+  "expression": "neml(neml(neml(neml(x, neml(x, neml(x, -inf))), neml(neml(x, x), -inf)), -inf), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 11.9551777631224,
+  "target_scale": 18.812501497614733,
+  "target_id": "F-NEML_v2_K17_08"
+ },
+ {
+  "expression": "neml(neml(neml(neml(x, neml(neml(neml(x, x), -inf), neml(x, -inf))), -inf), x), -inf)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.0909918786837856,
+  "target_scale": 4.339727428766266,
+  "target_id": "F-NEML_v2_K17_09"
+ },
+ {
+  "expression": "neml(neml(neml(neml(x, neml(neml(x, neml(x, x)), -inf)), neml(x, neml(x, -inf))), x), -inf)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.09569033581883718,
+  "target_scale": 4.105671541686775,
+  "target_id": "F-NEML_v2_K19_00"
+ },
+ {
+  "expression": "neml(x, neml(x, neml(neml(neml(neml(neml(x, -inf), x), -inf), neml(x, neml(x, -inf))), -inf)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.004395185109584752,
+  "target_scale": 1.0,
+  "target_id": "F-NEML_v2_K19_01"
+ },
+ {
+  "expression": "neml(neml(neml(x, neml(neml(neml(x, neml(x, -inf)), -inf), -inf)), -inf), neml(neml(x, x), -inf))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 12.126754177213519,
+  "target_scale": 19.420148480154136,
+  "target_id": "F-NEML_v2_K19_02"
+ },
+ {
+  "expression": "neml(neml(x, neml(neml(neml(neml(x, x), neml(neml(x, neml(x, -inf)), -inf)), -inf), -inf)), -inf)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 0.005302540278736252,
+  "target_scale": 2.4238643553190675,
+  "target_id": "F-NEML_v2_K19_03"
+ },
+ {
+  "expression": "neml(neml(neml(neml(neml(neml(neml(neml(x, -inf), x), x), -inf), -inf), -inf), neml(x, -inf)), -inf)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 0.01264355361000561,
+  "target_scale": 3.1520689366933574,
+  "target_id": "F-NEML_v2_K19_04"
+ },
+ {
+  "expression": "neml(neml(neml(neml(x, neml(x, -inf)), -inf), neml(neml(neml(neml(x, -inf), x), x), -inf)), -inf)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 0.08528176246689716,
+  "target_scale": 2.900526353172439,
+  "target_id": "F-NEML_v2_K19_05"
+ },
+ {
+  "expression": "neml(x, neml(x, neml(neml(neml(neml(x, x), -inf), x), neml(neml(neml(x, x), -inf), -inf))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 0.0009661459281737116,
+  "target_scale": 1.0,
+  "target_id": "F-NEML_v2_K19_06"
+ },
+ {
+  "expression": "neml(neml(neml(x, neml(neml(x, neml(neml(x, x), x)), neml(neml(x, x), x))), x), -inf)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.09367221054153795,
+  "target_scale": 4.713888667032513,
+  "target_id": "F-NEML_v2_K19_07"
+ },
+ {
+  "expression": "neml(neml(neml(x, -inf), neml(x, neml(neml(neml(x, x), neml(neml(x, -inf), x)), -inf))), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 9.359236116883555,
+  "target_scale": 21.273358637163092,
+  "target_id": "F-NEML_v2_K19_08"
+ },
+ {
+  "expression": "neml(neml(neml(neml(neml(x, neml(x, -inf)), neml(neml(neml(x, -inf), x), -inf)), -inf), x), -inf)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.09085687642239229,
+  "target_scale": 4.295753142650483,
+  "target_id": "F-NEML_v2_K19_09"
+ }
+]

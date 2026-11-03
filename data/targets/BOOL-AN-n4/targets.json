@@ -1,0 +1,562 @@
+[
+ {
+  "expression": "not(and(x3, x4))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "depth": 3,
+  "target_id": "BOOL-AN-n4_K04_00"
+ },
+ {
+  "expression": "not(and(x2, x3))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "depth": 3,
+  "target_id": "BOOL-AN-n4_K04_01"
+ },
+ {
+  "expression": "and(x3, not(x1))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "depth": 3,
+  "target_id": "BOOL-AN-n4_K04_02"
+ },
+ {
+  "expression": "and(x4, not(x3))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "depth": 3,
+  "target_id": "BOOL-AN-n4_K04_03"
+ },
+ {
+  "expression": "not(and(x2, x4))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "depth": 3,
+  "target_id": "BOOL-AN-n4_K04_04"
+ },
+ {
+  "expression": "and(x4, not(x1))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "depth": 3,
+  "target_id": "BOOL-AN-n4_K04_05"
+ },
+ {
+  "expression": "and(x3, not(x4))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "depth": 3,
+  "target_id": "BOOL-AN-n4_K04_06"
+ },
+ {
+  "expression": "and(x1, not(x4))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "depth": 3,
+  "target_id": "BOOL-AN-n4_K04_07"
+ },
+ {
+  "expression": "not(and(x1, x4))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "depth": 3,
+  "target_id": "BOOL-AN-n4_K04_08"
+ },
+ {
+  "expression": "not(and(x1, x2))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "depth": 3,
+  "target_id": "BOOL-AN-n4_K04_09"
+ },
+ {
+  "expression": "and(not(x2), not(and(x1, and(x3, x4))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "target_id": "BOOL-AN-n4_K09_00"
+ },
+ {
+  "expression": "and(x3, and(x4, not(and(x1, not(x2)))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 6,
+  "target_id": "BOOL-AN-n4_K09_01"
+ },
+ {
+  "expression": "not(and(not(x2), not(and(x1, not(x4)))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 6,
+  "target_id": "BOOL-AN-n4_K09_02"
+ },
+ {
+  "expression": "not(and(x2, and(x4, not(and(x1, x3)))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 6,
+  "target_id": "BOOL-AN-n4_K09_03"
+ },
+ {
+  "expression": "not(and(x1, and(x2, and(x3, not(x4)))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 6,
+  "target_id": "BOOL-AN-n4_K09_04"
+ },
+ {
+  "expression": "not(and(not(x2), not(and(x3, not(x1)))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 6,
+  "target_id": "BOOL-AN-n4_K09_05"
+ },
+ {
+  "expression": "and(not(x4), not(and(not(x1), not(x3))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "target_id": "BOOL-AN-n4_K09_06"
+ },
+ {
+  "expression": "and(x3, and(not(x4), not(and(x1, x2))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "target_id": "BOOL-AN-n4_K09_07"
+ },
+ {
+  "expression": "not(and(not(x4), not(and(x1, not(x3)))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 6,
+  "target_id": "BOOL-AN-n4_K09_08"
+ },
+ {
+  "expression": "and(not(x3), not(and(not(x1), not(x2))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "target_id": "BOOL-AN-n4_K09_09"
+ },
+ {
+  "expression": "not(and(x4, not(and(not(and(x2, x3)), not(and(x1, not(x2)))))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "depth": 8,
+  "target_id": "BOOL-AN-n4_K14_00"
+ },
+ {
+  "expression": "not(and(x2, and(not(and(x3, x4)), not(and(not(x1), not(x4))))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "depth": 7,
+  "target_id": "BOOL-AN-n4_K14_01"
+ },
+ {
+  "expression": "and(not(and(not(x1), not(x4))), not(and(x1, and(x2, not(x3)))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "depth": 6,
+  "target_id": "BOOL-AN-n4_K14_02"
+ },
+ {
+  "expression": "and(not(and(x4, not(x2))), not(and(x1, not(and(x4, not(x3))))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "depth": 7,
+  "target_id": "BOOL-AN-n4_K14_03"
+ },
+ {
+  "expression": "and(not(x2), not(and(not(and(x1, x4)), not(and(x3, not(x4))))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "depth": 7,
+  "target_id": "BOOL-AN-n4_K14_04"
+ },
+ {
+  "expression": "and(not(and(x3, not(x1))), not(and(x2, not(and(x4, not(x1))))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "depth": 7,
+  "target_id": "BOOL-AN-n4_K14_05"
+ },
+ {
+  "expression": "and(not(and(x3, not(x2))), not(and(x1, not(and(x3, not(x4))))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "depth": 7,
+  "target_id": "BOOL-AN-n4_K14_06"
+ },
+ {
+  "expression": "not(and(not(and(x2, not(x1))), not(and(x1, and(x3, not(x4))))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "depth": 7,
+  "target_id": "BOOL-AN-n4_K14_07"
+ },
+ {
+  "expression": "not(and(not(and(x2, x3)), not(and(x4, not(and(x1, not(x2)))))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "depth": 8,
+  "target_id": "BOOL-AN-n4_K14_08"
+ },
+ {
+  "expression": "and(not(and(not(x2), not(x3))), not(and(x2, and(x4, not(x1)))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "depth": 6,
+  "target_id": "BOOL-AN-n4_K14_09"
+ },
+ {
+  "expression": "not(and(not(and(x1, and(x2, x3))), not(and(not(and(x1, x4)), not(and(x2, not(x4)))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "target_id": "BOOL-AN-n4_K19_00"
+ },
+ {
+  "expression": "and(not(and(x2, and(not(x1), not(x3)))), not(and(x1, and(x3, and(not(x2), not(x4))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "target_id": "BOOL-AN-n4_K19_01"
+ },
+ {
+  "expression": "and(not(and(x2, and(x3, not(x4)))), not(and(not(x2), not(and(x1, not(and(x3, x4)))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "target_id": "BOOL-AN-n4_K19_02"
+ },
+ {
+  "expression": "not(and(not(and(x1, x2)), not(and(not(and(x2, x3)), not(and(x4, not(and(x1, x3))))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "target_id": "BOOL-AN-n4_K19_03"
+ },
+ {
+  "expression": "not(and(not(and(x1, and(x2, and(x3, x4)))), not(and(not(x1), and(not(x2), not(x3))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "target_id": "BOOL-AN-n4_K19_04"
+ },
+ {
+  "expression": "and(not(and(x1, x3)), and(not(and(not(x3), not(x4))), not(and(x2, not(and(x3, x4))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "target_id": "BOOL-AN-n4_K19_05"
+ },
+ {
+  "expression": "and(not(and(x1, not(and(x2, x3)))), not(and(not(and(x2, x4)), not(and(x3, not(x2))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "target_id": "BOOL-AN-n4_K19_06"
+ },
+ {
+  "expression": "and(not(and(x3, and(x4, not(x2)))), not(and(x1, not(and(x3, not(and(x2, not(x4))))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "target_id": "BOOL-AN-n4_K19_07"
+ },
+ {
+  "expression": "and(not(and(x2, not(and(x1, not(x3))))), not(and(x1, and(not(x3), not(and(x2, x4))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "target_id": "BOOL-AN-n4_K19_08"
+ },
+ {
+  "expression": "and(not(and(x1, not(x2))), not(and(x2, and(not(and(x1, x3)), not(and(x4, not(x3)))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "target_id": "BOOL-AN-n4_K19_09"
+ },
+ {
+  "expression": "and(not(and(x1, and(x2, not(x3)))), not(and(x3, and(not(and(x2, x4)), not(and(not(x4), not(and(x2, not(x1)))))))))",
+  "K_construction": 25,
+  "K_proven": 25,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K25_00"
+ },
+ {
+  "expression": "and(not(and(x4, and(not(x3), not(and(not(x1), not(x2)))))), not(and(not(x1), and(not(x2), not(and(x4, not(x3)))))))",
+  "K_construction": 25,
+  "K_proven": 25,
+  "depth": 8,
+  "target_id": "BOOL-AN-n4_K25_01"
+ },
+ {
+  "expression": "and(not(and(x1, and(x3, x4))), not(and(not(x3), and(not(and(x4, not(x2))), not(and(x2, and(not(x1), not(x4))))))))",
+  "K_construction": 25,
+  "K_proven": 25,
+  "depth": 9,
+  "target_id": "BOOL-AN-n4_K25_02"
+ },
+ {
+  "expression": "and(not(and(x2, and(x4, not(x1)))), not(and(x3, and(not(and(x2, not(x1))), not(and(x1, and(not(x2), not(x4))))))))",
+  "K_construction": 25,
+  "K_proven": 25,
+  "depth": 9,
+  "target_id": "BOOL-AN-n4_K25_03"
+ },
+ {
+  "expression": "and(not(and(x3, and(x4, not(x2)))), not(and(x2, and(not(and(x3, not(x1))), not(and(x4, not(and(x1, not(x3)))))))))",
+  "K_construction": 25,
+  "K_proven": 25,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K25_04"
+ },
+ {
+  "expression": "and(not(and(x1, and(x2, not(x3)))), and(not(and(x3, not(and(x1, not(x4))))), not(and(not(x2), not(and(x1, x4))))))",
+  "K_construction": 25,
+  "K_proven": 25,
+  "depth": 8,
+  "target_id": "BOOL-AN-n4_K25_05"
+ },
+ {
+  "expression": "and(not(and(x3, and(not(x1), not(and(x4, not(x2)))))), not(and(not(x2), and(not(x3), not(and(not(x1), not(x4)))))))",
+  "K_construction": 25,
+  "K_proven": 25,
+  "depth": 8,
+  "target_id": "BOOL-AN-n4_K25_06"
+ },
+ {
+  "expression": "and(not(and(x1, not(x2))), and(not(and(x4, not(and(x2, x3)))), not(and(x2, not(and(x1, not(and(x3, not(x4)))))))))",
+  "K_construction": 25,
+  "K_proven": 25,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K25_07"
+ },
+ {
+  "expression": "not(and(not(and(x3, not(x4))), not(and(not(and(x1, not(x4))), and(not(and(x3, not(x2))), not(and(x2, not(x1))))))))",
+  "K_construction": 25,
+  "K_proven": 25,
+  "depth": 9,
+  "target_id": "BOOL-AN-n4_K25_08"
+ },
+ {
+  "expression": "and(not(and(x1, and(x4, not(x3)))), not(and(x3, and(not(and(x1, x2)), not(and(x4, not(and(not(x1), not(x2)))))))))",
+  "K_construction": 25,
+  "K_proven": 25,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K25_09"
+ },
+ {
+  "expression": "and(not(and(x2, x4)), and(not(and(x1, and(x2, x3))), and(not(and(not(x1), not(x3))), not(and(not(x2), and(not(x4), not(and(x1, x3))))))))",
+  "K_construction": 30,
+  "K_proven": 30,
+  "depth": 9,
+  "target_id": "BOOL-AN-n4_K30_00"
+ },
+ {
+  "expression": "and(not(and(x1, and(x2, and(not(x3), not(x4))))), not(and(not(x1), not(and(not(x3), and(not(and(x2, x4)), not(and(not(x2), not(x4)))))))))",
+  "K_construction": 30,
+  "K_proven": 30,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K30_01"
+ },
+ {
+  "expression": "and(not(and(x1, and(x3, and(not(x2), not(x4))))), not(and(not(and(x1, x3)), and(not(and(x2, and(x3, x4))), not(and(not(x2), not(x4)))))))",
+  "K_construction": 30,
+  "K_proven": 30,
+  "depth": 8,
+  "target_id": "BOOL-AN-n4_K30_02"
+ },
+ {
+  "expression": "not(and(not(and(x1, and(not(x4), not(and(x2, x3))))), not(and(x4, and(not(and(x1, and(x2, not(x3)))), not(and(x3, not(and(x1, x2)))))))))",
+  "K_construction": 30,
+  "K_proven": 30,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K30_03"
+ },
+ {
+  "expression": "and(not(and(x1, and(not(x2), not(and(x4, not(x3)))))), not(and(not(and(x1, not(and(x2, not(x3))))), not(and(not(x4), not(and(x2, x3)))))))",
+  "K_construction": 30,
+  "K_proven": 30,
+  "depth": 9,
+  "target_id": "BOOL-AN-n4_K30_04"
+ },
+ {
+  "expression": "not(and(not(and(x2, and(x3, x4))), and(not(and(x1, and(not(x2), not(x3)))), not(and(not(x1), and(not(x4), not(and(not(x2), not(x3)))))))))",
+  "K_construction": 30,
+  "K_proven": 30,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K30_05"
+ },
+ {
+  "expression": "not(and(not(and(x1, and(x2, not(and(not(x3), not(x4)))))), not(and(not(x1), and(not(and(x4, not(x3))), not(and(x2, and(x3, not(x4)))))))))",
+  "K_construction": 30,
+  "K_proven": 30,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K30_06"
+ },
+ {
+  "expression": "and(not(and(x2, and(not(and(x3, x4)), not(and(not(x1), not(x4)))))), not(and(not(x2), and(not(and(x1, not(x3))), not(and(x4, not(x1)))))))",
+  "K_construction": 30,
+  "K_proven": 30,
+  "depth": 8,
+  "target_id": "BOOL-AN-n4_K30_07"
+ },
+ {
+  "expression": "and(not(and(x1, and(not(x2), not(and(x4, not(x3)))))), not(and(not(x1), and(not(and(x3, x4)), not(and(not(x2), and(not(x3), not(x4))))))))",
+  "K_construction": 30,
+  "K_proven": 30,
+  "depth": 9,
+  "target_id": "BOOL-AN-n4_K30_08"
+ },
+ {
+  "expression": "and(not(and(x1, and(not(x3), not(and(x2, not(x4)))))), not(and(not(x1), and(not(x4), and(not(and(x2, x3)), not(and(not(x2), not(x3))))))))",
+  "K_construction": 30,
+  "K_proven": 30,
+  "depth": 9,
+  "target_id": "BOOL-AN-n4_K30_09"
+ },
+ {
+  "expression": "and(not(and(x1, and(not(x2), not(x4)))), not(and(not(and(x1, not(and(x3, x4)))), and(not(and(x2, and(x4, not(x1)))), not(and(not(x2), not(and(x4, not(x3)))))))))",
+  "K_construction": 35,
+  "K_proven": 35,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K35_00"
+ },
+ {
+  "expression": "not(and(not(and(x2, and(not(and(x1, x4)), not(and(not(x4), not(and(x1, x3))))))), not(and(not(x2), and(not(and(x1, x3)), not(and(x4, and(not(x1), not(x3)))))))))",
+  "K_construction": 35,
+  "K_proven": 35,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K35_01"
+ },
+ {
+  "expression": "and(not(and(x1, and(not(x3), and(not(and(x2, x4)), not(and(not(x2), not(x4))))))), not(and(x3, and(not(and(x2, not(x4))), not(and(x4, not(and(x2, not(x1)))))))))",
+  "K_construction": 35,
+  "K_proven": 35,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K35_02"
+ },
+ {
+  "expression": "and(not(and(not(x2), and(not(and(x1, x4)), not(and(x3, not(x1)))))), not(and(x2, and(not(and(x4, not(and(x1, not(x3))))), not(and(x1, and(not(x3), not(x4))))))))",
+  "K_construction": 35,
+  "K_proven": 35,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K35_03"
+ },
+ {
+  "expression": "not(and(not(and(x1, and(x2, and(not(and(x3, not(x4))), not(and(x4, not(x3))))))), not(and(not(x1), and(not(and(x2, and(x3, x4))), not(and(not(x3), not(x4))))))))",
+  "K_construction": 35,
+  "K_proven": 35,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K35_04"
+ },
+ {
+  "expression": "and(not(and(x1, and(x3, not(x4)))), not(and(not(and(x2, and(x3, not(and(x4, not(x1)))))), not(and(not(x2), and(not(and(x1, x4)), not(and(not(x1), not(x4)))))))))",
+  "K_construction": 35,
+  "K_proven": 35,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K35_05"
+ },
+ {
+  "expression": "and(not(and(x4, and(not(x1), and(not(x2), not(x3))))), not(and(not(and(x4, not(x3))), and(not(and(not(x1), not(x2))), not(and(x1, and(x2, and(x3, not(x4)))))))))",
+  "K_construction": 35,
+  "K_proven": 35,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K35_06"
+ },
+ {
+  "expression": "and(not(and(x1, and(x3, not(x2)))), and(not(and(not(x3), not(and(x4, not(and(x1, x2)))))), not(and(not(x1), not(and(not(and(x2, x3)), not(and(x4, not(x2)))))))))",
+  "K_construction": 35,
+  "K_proven": 35,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K35_07"
+ },
+ {
+  "expression": "and(not(and(x1, and(x2, not(and(x4, not(x3)))))), and(not(and(x4, and(not(x1), and(not(x2), not(x3))))), not(and(x3, and(not(x4), not(and(not(x1), not(x2))))))))",
+  "K_construction": 35,
+  "K_proven": 35,
+  "depth": 9,
+  "target_id": "BOOL-AN-n4_K35_08"
+ },
+ {
+  "expression": "and(not(and(x1, and(not(and(x3, x4)), not(and(not(x3), not(x4)))))), not(and(not(x1), and(not(and(x2, and(x4, not(x3)))), not(and(x3, and(not(x2), not(x4))))))))",
+  "K_construction": 35,
+  "K_proven": 35,
+  "depth": 9,
+  "target_id": "BOOL-AN-n4_K35_09"
+ },
+ {
+  "expression": "and(not(and(x1, and(x4, not(and(x2, x3))))), and(not(and(not(x3), not(and(x2, not(and(not(x1), not(x4))))))), not(and(x2, and(x3, and(not(and(x1, x4)), not(and(not(x1), not(x4)))))))))",
+  "K_construction": 40,
+  "K_proven": 40,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K40_00"
+ },
+ {
+  "expression": "not(and(not(and(x2, and(x3, x4))), and(not(and(x4, and(not(x1), and(not(x2), not(x3))))), not(and(not(and(x4, not(x1))), and(not(and(x1, and(x2, x3))), not(and(not(x2), not(x3)))))))))",
+  "K_construction": 40,
+  "K_proven": 40,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K40_01"
+ },
+ {
+  "expression": "and(not(and(not(and(x2, x4)), and(not(and(x1, not(x3))), not(and(x3, not(x1)))))), not(and(not(and(x2, not(and(x4, not(and(x1, x3)))))), not(and(x4, and(not(x1), not(and(x2, x3))))))))",
+  "K_construction": 40,
+  "K_proven": 40,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K40_02"
+ },
+ {
+  "expression": "and(not(and(not(x4), and(not(and(x1, x3)), not(and(not(x1), not(and(x3, not(x2)))))))), not(and(not(and(x3, not(x1))), and(not(and(not(x2), not(x4))), not(and(x1, and(x2, not(x3))))))))",
+  "K_construction": 40,
+  "K_proven": 40,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K40_03"
+ },
+ {
+  "expression": "not(and(not(and(x2, and(x3, x4))), and(not(and(x2, and(not(x1), and(not(x3), not(x4))))), not(and(not(and(x2, not(x1))), and(not(and(x1, and(x3, x4))), not(and(not(x3), not(x4)))))))))",
+  "K_construction": 40,
+  "K_proven": 40,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K40_04"
+ },
+ {
+  "expression": "not(and(not(and(x1, and(x3, x4))), and(not(and(x3, and(not(x1), and(not(x2), not(x4))))), not(and(not(and(x3, not(x2))), and(not(and(x1, and(x2, x4))), not(and(not(x1), not(x4)))))))))",
+  "K_construction": 40,
+  "K_proven": 40,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K40_05"
+ },
+ {
+  "expression": "and(not(and(x3, and(x4, not(and(x1, x2))))), and(not(and(not(x1), not(and(x2, not(and(not(x3), not(x4))))))), not(and(x1, and(x2, and(not(and(x3, x4)), not(and(not(x3), not(x4)))))))))",
+  "K_construction": 40,
+  "K_proven": 40,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K40_06"
+ },
+ {
+  "expression": "and(not(and(not(x3), not(and(x4, not(and(x1, x2)))))), and(not(and(not(x1), and(not(x2), not(and(x3, x4))))), not(and(x3, and(x4, and(not(and(x1, x2)), not(and(not(x1), not(x2)))))))))",
+  "K_construction": 40,
+  "K_proven": 40,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K40_07"
+ },
+ {
+  "expression": "and(not(and(not(x3), and(not(and(x2, not(x4))), not(and(x4, not(and(x2, not(x1)))))))), not(and(not(and(x2, x4)), and(not(and(not(x1), not(x3))), not(and(x1, and(not(x2), not(x4))))))))",
+  "K_construction": 40,
+  "K_proven": 40,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K40_08"
+ },
+ {
+  "expression": "and(not(and(x4, and(not(and(x2, and(x3, not(x1)))), not(and(x1, and(not(x2), not(x3))))))), not(and(not(x4), and(not(and(x1, x2)), not(and(not(and(x2, x3)), not(and(x1, not(x3)))))))))",
+  "K_construction": 40,
+  "K_proven": 40,
+  "depth": 10,
+  "target_id": "BOOL-AN-n4_K40_09"
+ }
+]

@@ -1,0 +1,79 @@
+{
+ "grammar": "ARITH",
+ "seed": 20261013,
+ "ceiling": 23,
+ "levels": {
+  "5": {
+   "found": 10,
+   "rejected": {
+    "variance": 2
+   },
+   "proven": true
+  },
+  "7": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "9": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "11": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "13": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "15": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "17": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "19": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "21": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "23": {
+   "found": 10,
+   "rejected": {
+    "depth": 1
+   },
+   "proven": true
+  },
+  "27": {
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 8,
+    "depth": 2,
+    "dead_subtree": 1
+   },
+   "proven": false
+  },
+  "31": {
+   "found": 10,
+   "rejected": {
+    "depth": 2,
+    "dead_subtree": 2,
+    "smaller_in_enumeration": 4
+   },
+   "proven": false
+  }
+ }
+}

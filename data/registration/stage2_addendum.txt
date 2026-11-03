@@ -1,0 +1,2 @@
+Stage 2 CGP addendum filed on OSF by the author, 2026-10-30 12:16 (public, no embargo), associated project https://osf.io/hjf43, template OSF Preregistration.
+Addendum registration: DOI 10.17605/OSF.IO/BC9G4, https://osf.io/bc9g4. Archived cgp_transfer.json SHA-256 160dc1f47a783b324aa2a067a2f35e766b884206fb9ad28b0423cd80d5ffa363, equal to the repository file (OSF API, checked 2026-10-30). Registered commit a99034ea44962739b93cd5f0ef75bddc14e8f62c.

@@ -1,0 +1,105 @@
+{
+ "ok": true,
+ "s2_cal_a0": {
+  "differing": {},
+  "identical": 227,
+  "labels": {
+   "exact_checked": 227,
+   "exact_disputed": [],
+   "exact_ieee_only": [],
+   "exact_near_miss": [],
+   "failures_checked": 0,
+   "failures_disputed": [],
+   "failures_near": [],
+   "unchecked": []
+  },
+  "missing": [],
+  "planned": 227,
+  "rerun": 227
+ },
+ "s2_cal_a16": {
+  "differing": {},
+  "identical": 374,
+  "labels": {
+   "exact_checked": 374,
+   "exact_disputed": [],
+   "exact_ieee_only": [],
+   "exact_near_miss": [],
+   "failures_checked": 0,
+   "failures_disputed": [],
+   "failures_near": [],
+   "unchecked": []
+  },
+  "missing": [],
+  "planned": 374,
+  "rerun": 374
+ },
+ "s2_cal_alloc": {
+  "differing": {},
+  "identical": 634,
+  "labels": {
+   "exact_checked": 634,
+   "exact_disputed": [],
+   "exact_ieee_only": [],
+   "exact_near_miss": [],
+   "failures_checked": 0,
+   "failures_disputed": [],
+   "failures_near": [],
+   "unchecked": []
+  },
+  "missing": [],
+  "planned": 634,
+  "rerun": 634
+ },
+ "s2_cal_mech": {
+  "differing": {},
+  "identical": 1067,
+  "labels": {
+   "exact_checked": 1067,
+   "exact_disputed": [],
+   "exact_ieee_only": [],
+   "exact_near_miss": [],
+   "failures_checked": 0,
+   "failures_disputed": [],
+   "failures_near": [],
+   "unchecked": []
+  },
+  "missing": [],
+  "planned": 1067,
+  "rerun": 1067
+ },
+ "s2_cal_pool": {
+  "differing": {},
+  "identical": 170,
+  "labels": {
+   "exact_checked": 170,
+   "exact_disputed": [],
+   "exact_ieee_only": [],
+   "exact_near_miss": [],
+   "failures_checked": 0,
+   "failures_disputed": [],
+   "failures_near": [],
+   "unchecked": []
+  },
+  "missing": [],
+  "planned": 170,
+  "rerun": 170
+ },
+ "s2_cal_robust": {
+  "differing": {},
+  "identical": 1008,
+  "labels": {
+   "exact_checked": 1008,
+   "exact_disputed": [],
+   "exact_ieee_only": [],
+   "exact_near_miss": [],
+   "failures_checked": 0,
+   "failures_disputed": [],
+   "failures_near": [],
+   "unchecked": []
+  },
+  "missing": [],
+  "planned": 1008,
+  "rerun": 1008
+ }
+}

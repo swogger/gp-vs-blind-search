@@ -1,0 +1,47 @@
+{
+ "grammar": "BOOL-AON-n4",
+ "seed": 20261013,
+ "ceiling": 35,
+ "levels": {
+  "3": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "8": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "12": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "17": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "21": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "26": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "30": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "35": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  }
+ }
+}

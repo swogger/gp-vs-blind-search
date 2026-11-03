@@ -1,0 +1,55 @@
+{
+ "verdict": "PASS",
+ "settings": {
+  "500": {
+   "n_nodes": 500,
+   "expected": 200,
+   "rows": 200,
+   "distinct_seeds": 200,
+   "successes": 200,
+   "not_succeeded": 0,
+   "complete": true,
+   "all_succeed": true,
+   "median": 1215.5,
+   "q25": 605.25,
+   "q75": 2278.0,
+   "min": 71,
+   "max": 8403,
+   "active_nodes_median": 34.0,
+   "claim_rejected": 0,
+   "cpu_s_mean": 0.121535,
+   "median_ok": true,
+   "ks_D": 0.135,
+   "ks_p": 0.4380791583587595,
+   "ks_ok": true,
+   "passed": true
+  },
+  "3000": {
+   "n_nodes": 3000,
+   "expected": 200,
+   "rows": 200,
+   "distinct_seeds": 200,
+   "successes": 200,
+   "not_succeeded": 0,
+   "complete": true,
+   "all_succeed": true,
+   "median": 1583.0,
+   "q25": 855.5,
+   "q75": 2767.25,
+   "min": 99,
+   "max": 11348,
+   "active_nodes_median": 75.0,
+   "claim_rejected": 0,
+   "cpu_s_mean": 0.13063,
+   "median_ok": true,
+   "ks_ok": true,
+   "passed": true
+  }
+ },
+ "reference": {
+  "n": 50,
+  "median": 1214.0,
+  "min": 214,
+  "max": 3921
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "grammar": "RS-add_sqrt",
+ "seed": 20261102,
+ "ceiling": 20,
+ "depth_limit": 10,
+ "levels": {
+  "18": {
+   "proven": true,
+   "n_level": 276127,
+   "n_depth_ok": 179816,
+   "excluded_share": 0.348792403495493,
+   "found": 30,
+   "rejected": {
+    "near_duplicate": 1
+   }
+  },
+  "19": {
+   "proven": true,
+   "n_level": 625610,
+   "n_depth_ok": 365773,
+   "excluded_share": 0.4153338341778424,
+   "found": 30,
+   "rejected": {}
+  },
+  "20": {
+   "proven": true,
+   "n_level": 1422115,
+   "n_depth_ok": 741087,
+   "excluded_share": 0.47888391585771894,
+   "found": 30,
+   "rejected": {}
+  }
+ }
+}

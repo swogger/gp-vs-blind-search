@@ -1,0 +1,14 @@
+{
+  "what": "Raw evaluations to success of Goldman and Punch (2015), IEEE TEVC 19(3):359-373, all configurations (their make_rdata.py output). The CGP validation uses the 50 rows problem=parity, duplication=single, ordering=normal, genome_size=500 (Table II, Single-Normal, 3-bit parity).",
+  "url": "https://raw.githubusercontent.com/brianwgoldman/Analysis-of-CGPs-Mechanisms/aafeb4da8510b04f4907a0d2d5838b7c2d81efa7/rdata.csv",
+  "repository": "https://github.com/brianwgoldman/Analysis-of-CGPs-Mechanisms",
+  "commit": "aafeb4da8510b04f4907a0d2d5838b7c2d81efa7",
+  "commit_date": "2015-05-11T16:35:50Z",
+  "downloaded": "2026-10-26",
+  "files": {
+    "rdata.csv": "a97e8165852ffb9529067e735f7352d1c9ae4c46df9828c490832bb5d6421b36",
+    "LICENSE.txt": "d97490675d3d2a9339e30b7a76652f18de6df997786c8716359889e07eacd07c"
+  },
+  "licence": "BSD-style (LICENSE.txt, copied unchanged from the same commit)",
+  "counting": "evaluations is the 0-based index of the individual that reached full fitness (main.py: `for evals, individual in generator`, the initial parent is index 0)"
+}

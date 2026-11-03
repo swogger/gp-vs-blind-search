@@ -1,0 +1,5402 @@
+[
+ {
+  "expression": "lde(lde(x, x), lde(lde(x, x), 0))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 63.63451072009495,
+  "target_scale": 52.63877264879073,
+  "target_id": "F-LDE0_K09_00"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, 0), x)), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00017004935496389744,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K09_01"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, x))), 0)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00024661921062750806,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K09_02"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(lde(x, x), x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00013785845029045004,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K09_03"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, x), 0)), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0012193504761428974,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K09_04"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(x, lde(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004151959445442932,
+  "target_scale": 1.2546495478284068,
+  "target_id": "F-LDE0_K09_05"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, x), lde(x, 0)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.032905930627145634,
+  "target_scale": 2.8880715901507807,
+  "target_id": "F-LDE0_K09_06"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(x, 0), 0), 0))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 7561.516631562428,
+  "target_scale": 607.3480261320318,
+  "target_id": "F-LDE0_K09_07"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(x, x), 0), 0))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0005790344558618163,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K09_08"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, x), x)), 0)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.006419169275647153,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K09_09"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, 0))), 0)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.015466316870604008,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K09_10"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(x, lde(x, 0)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.008236505000740696,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K09_11"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, 0), x)), 0)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.01322194750753298,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K09_12"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(lde(x, 0), x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 9.080522483182995e-05,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K09_13"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, x), lde(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 10.103049304967849,
+  "target_scale": 17.026160521257705,
+  "target_id": "F-LDE0_K09_14"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(x, lde(x, 0)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.010349619968401525,
+  "target_scale": 2.009884142272546,
+  "target_id": "F-LDE0_K09_15"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, x), x)), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.4336471149593846e-05,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K09_16"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, x)), lde(x, 0))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00456877792907264,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K09_17"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(lde(x, x), 0))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.403268992061411,
+  "target_scale": 3.842156026042707,
+  "target_id": "F-LDE0_K09_18"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(x, lde(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004005798227599654,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K09_19"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(lde(x, 0), x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.017830051445581734,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K09_20"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(x, lde(x, x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.005725590949185353,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K09_21"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, 0), lde(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00011236463802631496,
+  "target_scale": 1.0048900372929925,
+  "target_id": "F-LDE0_K09_22"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(x, x)), 0))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00015568798960179168,
+  "target_scale": 1.0980598033224447,
+  "target_id": "F-LDE0_K09_23"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(lde(x, 0), 0))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.04396286551960636,
+  "target_scale": 3.394018158840383,
+  "target_id": "F-LDE0_K09_24"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(lde(x, 0), 0))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.028094695715343763,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K09_25"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, 0))), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0005277191464205633,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K09_26"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(x, x), x), 0))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.372614097732742,
+  "target_scale": 7.513827945251148,
+  "target_id": "F-LDE0_K09_27"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(x, 0), x), 0))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1740170.924141089,
+  "target_scale": 9245.333885317928,
+  "target_id": "F-LDE0_K09_28"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(x, lde(x, 0))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 6.894817763307944,
+   "bits_sem_uncorrected": 7.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0006203979624435092,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K09_29"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(x, lde(x, lde(x, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.010006800442135337,
+  "target_scale": 1.9658679650155761,
+  "target_id": "F-LDE0_K11_00"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, x))), lde(x, 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0025649976266173425,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K11_01"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(x, 0), 0))), 0)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.016768306075898062,
+  "target_scale": 1.3594137450320636,
+  "target_id": "F-LDE0_K11_02"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, 0))), lde(x, 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.005487173567421753,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K11_03"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(lde(x, 0), lde(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.026799690130482983,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K11_04"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(lde(x, lde(x, 0)), 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.12284399225866716,
+  "target_scale": 7.914214618499065,
+  "target_id": "F-LDE0_K11_05"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(x, lde(x, 0))), x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.009946830444584616,
+  "target_scale": 1.110572703629113,
+  "target_id": "F-LDE0_K11_06"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(lde(x, lde(x, x)), 0)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0018570165586321973,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K11_07"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(lde(x, x), lde(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 51.34988749781986,
+  "target_scale": 45.064958734831734,
+  "target_id": "F-LDE0_K11_08"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(lde(x, x), lde(x, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.7359701641992065e-07,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K11_09"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(x, lde(x, 0))), 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6.638159604634966e-05,
+  "target_scale": 1.4446671378418385,
+  "target_id": "F-LDE0_K11_10"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(x, lde(x, 0)), x), 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 23.556329730783567,
+  "target_scale": 21.690406719102235,
+  "target_id": "F-LDE0_K11_11"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, 0), lde(x, lde(x, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004010303508874902,
+  "target_scale": 1.06050861622283,
+  "target_id": "F-LDE0_K11_12"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(x, x)), 0)), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 8.140623676407094e-06,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K11_13"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, 0)), lde(lde(x, x), x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.006727785402271089,
+  "target_scale": 1.4526647913149748,
+  "target_id": "F-LDE0_K11_14"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, 0), x)), lde(x, 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0027523305598418112,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K11_15"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(x, x), x))), 0)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.001645182968826841,
+  "target_scale": 1.3183593076687883,
+  "target_id": "F-LDE0_K11_16"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(x, x), 0)), x), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0005464550514078119,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K11_17"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(lde(lde(x, 0), x), 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12856561.220967023,
+  "target_scale": 25116.234830439324,
+  "target_id": "F-LDE0_K11_18"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(lde(x, x), x)), 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.001552405887673807,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K11_19"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(lde(x, lde(x, x)), 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.06849592960823676,
+  "target_scale": 3.726834911969077,
+  "target_id": "F-LDE0_K11_20"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(x, lde(x, x)), 0), 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 17873.509641507306,
+  "target_scale": 1218.553038838463,
+  "target_id": "F-LDE0_K11_21"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(x, lde(lde(x, x), x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0006774349114144749,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K11_22"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, 0), lde(x, 0))), 0)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004983403777172869,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K11_23"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, x)), lde(lde(x, 0), x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.02140220783074247,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K11_24"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(lde(x, 0), lde(x, 0))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0004762166974591083,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K11_25"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(x, x)), lde(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 7.76669398621305e-06,
+  "target_scale": 1.0654973720200227,
+  "target_id": "F-LDE0_K11_26"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(x, lde(lde(x, 0), 0)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0022693434521798782,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K11_27"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(x, 0)), x)), 0)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.010709365485593047,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K11_28"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, lde(x, x)))), 0)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 8.945443836377912,
+   "bits_sem_uncorrected": 9.00842862207058,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.015505387089318218,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K11_29"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(x, x), lde(lde(x, x), 0)), 0))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 5.515192146062316e-06,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K13_00"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(lde(x, lde(x, 0)), lde(x, 0)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0033289260167051267,
+  "target_scale": 4.0562304627341765,
+  "target_id": "F-LDE0_K13_01"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(x, lde(x, x)), x))), 0)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0008182679589323576,
+  "target_scale": 1.101183476010108,
+  "target_id": "F-LDE0_K13_02"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(lde(x, 0), lde(lde(x, x), x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.002908209370550468,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K13_03"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, x), lde(x, lde(x, 0)))), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0004329861900881891,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K13_04"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, 0), lde(lde(x, 0), 0))), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.8074004683292927e-05,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K13_05"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, x), x)), lde(lde(x, 0), 0))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.005957795149697076,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K13_06"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(lde(x, lde(x, x)), x)), 0))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0002962825394936836,
+  "target_scale": 1.001809769223544,
+  "target_id": "F-LDE0_K13_07"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(x, lde(lde(x, lde(x, 0)), x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00290263048580651,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K13_08"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(x, 0)), lde(lde(x, 0), 0)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.014393015886104182,
+  "target_scale": 3.1754286214741545,
+  "target_id": "F-LDE0_K13_09"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, 0)), lde(x, lde(lde(x, 0), 0)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3.384861398983741e-05,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K13_10"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(lde(x, x), 0)), lde(x, x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00020607146700203616,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K13_11"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(lde(x, lde(lde(x, x), x)), x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.021280037649191366,
+  "target_scale": 2.8647497226486465,
+  "target_id": "F-LDE0_K13_12"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, x), lde(lde(x, x), 0))), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.03796632818263799,
+  "target_scale": 3.345856019193165,
+  "target_id": "F-LDE0_K13_13"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(x, lde(lde(x, x), 0)), x), x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.011644026444215376,
+  "target_scale": 1.2047945543187166,
+  "target_id": "F-LDE0_K13_14"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(x, 0)), lde(x, lde(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.009906899081088398,
+  "target_scale": 1.5639316725866408,
+  "target_id": "F-LDE0_K13_15"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(lde(x, lde(lde(x, 0), x)), 0))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.02649594410030269,
+  "target_scale": 3.2344289094653442,
+  "target_id": "F-LDE0_K13_16"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(lde(lde(x, lde(x, 0)), 0), 0)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3141693657618714,
+  "target_scale": 3.2598500535139,
+  "target_id": "F-LDE0_K13_17"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(x, lde(lde(x, lde(x, x)), 0))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0031900601302016413,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K13_18"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, x), 0)), lde(lde(x, x), x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.04200200180804737,
+  "target_scale": 3.459342712196774,
+  "target_id": "F-LDE0_K13_19"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(x, 0)), lde(lde(x, x), x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.025360946678717414,
+  "target_scale": 3.5005127387969823,
+  "target_id": "F-LDE0_K13_20"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(x, lde(lde(x, x), 0))), x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0801772505142834,
+  "target_scale": 2.9637542970100217,
+  "target_id": "F-LDE0_K13_21"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(x, lde(lde(x, 0), x)), x), 0))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1994452.8319409864,
+  "target_scale": 9895.385341492401,
+  "target_id": "F-LDE0_K13_22"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(x, x)), lde(lde(x, x), 0)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 468.45799165021776,
+  "target_scale": 88.47696901349228,
+  "target_id": "F-LDE0_K13_23"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(lde(x, 0), lde(x, x))), 0))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.011454046851940979,
+  "target_scale": 1.0899764749227534,
+  "target_id": "F-LDE0_K13_24"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, x)), lde(lde(x, lde(x, 0)), 0))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1593760947101145,
+  "target_scale": 1.3041409570612936,
+  "target_id": "F-LDE0_K13_25"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, x)), lde(lde(x, x), lde(x, 0)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.19643488743190107,
+  "target_scale": 1.4723606002803318,
+  "target_id": "F-LDE0_K13_26"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(x, lde(x, x)), 0))), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0017569824685299321,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K13_27"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(x, lde(x, lde(x, 0))), x), 0))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 400.4105046263305,
+  "target_scale": 79.131505132515,
+  "target_id": "F-LDE0_K13_28"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(x, lde(lde(x, lde(x, x)), x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 11.10459875356437,
+   "bits_sem_uncorrected": 11.149747119504681,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.001975908154333656,
+  "target_scale": 1.1284342372123708,
+  "target_id": "F-LDE0_K13_29"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(x, x), 0)), x), lde(lde(x, 0), x))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.02274000594442259,
+  "target_scale": 1.886139059111544,
+  "target_id": "F-LDE0_K15_00"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(lde(x, lde(x, lde(x, lde(x, x)))), 0))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.059782441810104725,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K15_01"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, 0))), lde(lde(lde(x, x), x), 0))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.009763429981809107,
+  "target_scale": 2.225994133849903,
+  "target_id": "F-LDE0_K15_02"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(x, lde(lde(x, 0), lde(lde(x, 0), x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.003743189938676717,
+  "target_scale": 1.0660629298292883,
+  "target_id": "F-LDE0_K15_03"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(x, x), 0)), lde(lde(x, x), 0)), 0)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0742297171285396,
+  "target_scale": 3.994371277170283,
+  "target_id": "F-LDE0_K15_04"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(x, lde(x, x)), x))), lde(x, 0))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.003647409643025498,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K15_05"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(lde(x, lde(x, 0)), lde(lde(x, 0), x)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.14195032047868142,
+  "target_scale": 1.0902379589059665,
+  "target_id": "F-LDE0_K15_06"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(x, 0)), lde(lde(x, 0), x))), 0)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.010071163901930262,
+  "target_scale": 1.0907200246713893,
+  "target_id": "F-LDE0_K15_07"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(x, lde(x, lde(lde(x, x), lde(x, x)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.025115004264284396,
+  "target_scale": 2.8990646485729825,
+  "target_id": "F-LDE0_K15_08"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, x)), lde(x, lde(lde(x, x), lde(x, 0))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00019459227054587192,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K15_09"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, lde(x, x)))), lde(lde(x, 0), x))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.017978353087724996,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K15_10"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(x, x), lde(lde(x, 0), x))), 0), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0001804637830525013,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K15_11"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(x, x), lde(x, x))), lde(x, x)), 0)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.020686683488136924,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K15_12"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(lde(x, lde(x, x)), lde(x, x))), 0))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.011726237904543815,
+  "target_scale": 1.0346183541493317,
+  "target_id": "F-LDE0_K15_13"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, 0))), lde(lde(x, lde(x, 0)), 0))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.13281033934984982,
+  "target_scale": 2.0348103221029827,
+  "target_id": "F-LDE0_K15_14"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, lde(lde(x, x), lde(x, 0))))), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00028035402407546484,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K15_15"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, x)), lde(lde(lde(x, lde(x, 0)), 0), 0))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.018364678393239693,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K15_16"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, lde(x, x)))), lde(x, lde(x, x)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.006456795001575543,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K15_17"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(lde(x, lde(x, x)), lde(x, lde(x, 0)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0010010086356218473,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K15_18"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(x, lde(x, 0)), lde(x, lde(x, x))), 0))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.2860124544685613,
+  "target_scale": 3.0752461912179467,
+  "target_id": "F-LDE0_K15_19"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(x, 0), lde(x, lde(x, 0))))), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.001203922193873143,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K15_20"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(x, lde(lde(x, lde(lde(x, x), 0)), x)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0055111891062883875,
+  "target_scale": 1.3900501395358122,
+  "target_id": "F-LDE0_K15_21"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, 0), lde(lde(x, 0), lde(x, 0)))), 0)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0003409549108995224,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K15_22"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, 0)), lde(lde(x, 0), lde(lde(x, x), 0)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 136.19117028178476,
+  "target_scale": 49.30684465952382,
+  "target_id": "F-LDE0_K15_23"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(lde(x, 0), x)), x)), lde(x, 0))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0028396463151704986,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K15_24"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, x), x)), lde(lde(x, 0), lde(x, x)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.005970801455392824,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K15_25"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(lde(x, x), lde(lde(x, x), x))), 0))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3.4732487800767136e-06,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K15_26"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(x, lde(x, x)), lde(lde(x, x), x)), 0))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 13045.541448301934,
+  "target_scale": 1041.3141812353992,
+  "target_id": "F-LDE0_K15_27"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(lde(x, lde(lde(x, x), 0)), x), x), 0))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4.749977610835756,
+  "target_scale": 11.496284593746196,
+  "target_id": "F-LDE0_K15_28"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, 0)), lde(lde(x, lde(x, x)), lde(x, 0)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 13.32037749183128,
+   "bits_sem_uncorrected": 13.363176553811963,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00863992609679972,
+  "target_scale": 1.3248119130911928,
+  "target_id": "F-LDE0_K15_29"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, lde(lde(lde(x, x), 0), 0)))), lde(x, x))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.005504963465933041,
+  "target_scale": 1.4263580397801476,
+  "target_id": "F-LDE0_K17_00"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(x, x), lde(lde(x, lde(x, 0)), x))), 0), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0002827869035054992,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K17_01"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, lde(x, lde(lde(x, x), lde(x, 0)))))), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0006281544857559705,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K17_02"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, x), x)), lde(x, lde(x, lde(lde(x, 0), 0))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0029723927917447808,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K17_03"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, 0), x)), lde(x, lde(x, lde(lde(x, x), x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.007558196583717742,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K17_04"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(x, x), lde(x, lde(x, x)))), x), lde(x, x))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.053915696036031704,
+  "target_scale": 2.7232950732242003,
+  "target_id": "F-LDE0_K17_05"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(x, lde(x, lde(lde(x, lde(x, x)), lde(x, x)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0016230799344281047,
+  "target_scale": 1.9825881006365096,
+  "target_id": "F-LDE0_K17_06"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(lde(x, 0), lde(x, x))), 0)), lde(x, 0))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.002956873155877482,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K17_07"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(x, 0), lde(x, lde(x, lde(x, 0)))))), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0010989976641016066,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K17_08"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(lde(x, lde(lde(x, x), 0)), lde(lde(x, 0), x)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0016637719111844288,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K17_09"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(x, lde(lde(x, lde(x, lde(x, lde(x, 0)))), 0))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.010510018543728745,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K17_10"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(lde(x, lde(lde(x, 0), x)), lde(x, x))), 0))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.009318405760135982,
+  "target_scale": 1.0852647562637097,
+  "target_id": "F-LDE0_K17_11"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(x, 0), x))), lde(lde(x, x), lde(x, 0)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.06540683235937467,
+  "target_scale": 3.5494070455619804,
+  "target_id": "F-LDE0_K17_12"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(lde(x, lde(x, x)), x)), lde(x, 0))), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 7.917226412678633e-05,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K17_13"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(x, 0), x))), lde(lde(x, lde(x, x)), 0))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.04478061300540123,
+  "target_scale": 1.717582013163442,
+  "target_id": "F-LDE0_K17_14"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(x, x), lde(x, lde(lde(x, 0), x))))), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0032839798107550827,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K17_15"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(lde(x, 0), 0), 0))), lde(x, lde(x, 0)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3622.257981099877,
+  "target_scale": 420.40575368746977,
+  "target_id": "F-LDE0_K17_16"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, x), x)), lde(lde(x, lde(x, 0)), lde(x, 0)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013001167491620993,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K17_17"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(lde(x, x), lde(lde(x, lde(x, x)), x))), x))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.014950090587958771,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K17_18"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, 0), x)), lde(lde(x, lde(x, lde(x, 0))), x))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.015196326449234864,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K17_19"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(lde(x, x), lde(lde(x, 0), lde(x, lde(x, x)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 9.450424155439526,
+  "target_scale": 48.00713719171276,
+  "target_id": "F-LDE0_K17_20"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(lde(x, 0), x)), lde(x, lde(x, x)))), 0)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00544615363668952,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K17_21"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(lde(x, x), lde(lde(x, lde(x, x)), 0))), x))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.021425368805955608,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K17_22"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(x, x)), lde(lde(x, 0), lde(lde(x, 0), 0))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.011749516344947737,
+  "target_scale": 1.4896873253971492,
+  "target_id": "F-LDE0_K17_23"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(x, lde(x, 0))), lde(x, lde(lde(x, 0), 0))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.007874737708071088,
+  "target_scale": 1.2120376341817751,
+  "target_id": "F-LDE0_K17_24"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(x, x), lde(x, 0))), x), lde(lde(x, x), 0))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 73.98156058175879,
+  "target_scale": 53.2236112088756,
+  "target_id": "F-LDE0_K17_25"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(x, x)), lde(x, lde(x, lde(lde(x, 0), x)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0009024345452015586,
+  "target_scale": 1.0683866530230395,
+  "target_id": "F-LDE0_K17_26"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(x, x), lde(lde(x, 0), x))), lde(x, 0)), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4.2890959446815505e-06,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K17_27"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(lde(x, lde(lde(x, 0), lde(x, lde(x, x)))), 0))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0005475118992653565,
+  "target_scale": 2.8058041002121024,
+  "target_id": "F-LDE0_K17_28"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, 0)), lde(lde(lde(x, x), lde(lde(x, 0), 0)), 0))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 15.577340309181398,
+   "bits_sem_uncorrected": 15.621136113274641,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00038113411157403564,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K17_29"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(x, lde(lde(x, 0), 0))), lde(x, lde(x, 0)))), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.000166040406778811,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K19_00"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(x, lde(x, 0))), lde(x, 0))), lde(lde(x, 0), x))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.003059369006856107,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K19_01"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(x, x), lde(lde(x, lde(x, x)), x))), lde(x, x)), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00012301690169892634,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K19_02"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, lde(lde(x, lde(lde(x, x), 0)), x)))), lde(x, 0))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.005976544715732968,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K19_03"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(x, x), lde(lde(x, lde(x, lde(x, 0))), x))), 0), 0)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.007913391405996444,
+  "target_scale": 1.1087295036878666,
+  "target_id": "F-LDE0_K19_04"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(lde(lde(x, lde(x, lde(x, lde(x, x)))), lde(x, x)), 0)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 158.26282831268153,
+  "target_scale": 53.636946654772984,
+  "target_id": "F-LDE0_K19_05"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(x, 0)), lde(x, lde(x, lde(lde(x, 0), lde(x, 0))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.036428062562095936,
+  "target_scale": 2.178898030203826,
+  "target_id": "F-LDE0_K19_06"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(lde(x, lde(lde(x, 0), x)), lde(lde(x, x), 0))), x))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.04315500443798074,
+  "target_scale": 1.1798540014089218,
+  "target_id": "F-LDE0_K19_07"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(x, x)), x)), lde(lde(x, lde(lde(x, x), x)), x))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.012530101413011772,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K19_08"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(x, 0), x))), lde(lde(x, 0), lde(x, lde(x, 0))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.017317008881861374,
+  "target_scale": 1.4076369472473196,
+  "target_id": "F-LDE0_K19_09"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(lde(lde(x, lde(lde(x, x), 0)), lde(x, lde(x, x))), 0))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.014754197843006913,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K19_10"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(x, x), lde(x, lde(lde(x, 0), lde(x, x))))), 0), 0)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.04607600708079875,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K19_11"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(lde(x, 0), lde(x, lde(x, lde(x, lde(lde(x, 0), 0))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.02237888609304682,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K19_12"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(lde(lde(x, lde(x, 0)), lde(x, lde(lde(x, x), x))), 0))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.12621625484097967,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K19_13"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(lde(x, lde(x, 0)), lde(x, lde(x, x))), 0))), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0001710762369074017,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K19_14"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, x))), lde(lde(x, lde(lde(x, x), lde(x, 0))), 0))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0010003413565277096,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K19_15"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, lde(lde(x, lde(lde(x, 0), lde(x, x))), 0)))), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0005123984592385538,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K19_16"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, lde(lde(x, 0), lde(x, 0))))), lde(lde(x, 0), x))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013574303186063357,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K19_17"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(lde(x, x), 0)), lde(x, lde(x, lde(x, x))))), 0)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.003764853410342867,
+  "target_scale": 1.9365644265381816,
+  "target_id": "F-LDE0_K19_18"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(x, lde(x, x))), lde(lde(lde(x, x), lde(x, x)), 0)), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0002209562208214841,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K19_19"
+ },
+ {
+  "expression": "lde(lde(lde(lde(x, lde(lde(x, x), lde(lde(x, x), 0))), 0), x), lde(x, 0))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.001173557750149254,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K19_20"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(x, lde(x, lde(x, 0)))), lde(x, lde(lde(x, x), x))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.010643914736274782,
+  "target_scale": 1.3221362941853438,
+  "target_id": "F-LDE0_K19_21"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(x, 0), x)), lde(lde(lde(x, 0), lde(x, x)), 0)), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3.6062043661173186e-06,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K19_22"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(x, x), lde(x, lde(x, lde(lde(x, lde(x, x)), x)))), 0))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0015302204353241965,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K19_23"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(lde(x, lde(lde(x, x), x)), x)), lde(x, 0))), 0)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.005207942385634157,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K19_24"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(x, x)), lde(lde(x, lde(x, x)), lde(x, x)))), 0)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.005629561246484099,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K19_25"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(x, lde(lde(x, lde(x, lde(x, 0))), 0))), lde(x, 0)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00013225347174599235,
+  "target_scale": 1.7211322779490408,
+  "target_id": "F-LDE0_K19_26"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(x, lde(x, lde(lde(lde(x, x), x), 0))), 0), lde(x, 0)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0002605005288174535,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K19_27"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(lde(x, lde(x, x)), x)), lde(lde(lde(x, 0), 0), 0)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1067278808693784,
+  "target_scale": 3.5503083709405607,
+  "target_id": "F-LDE0_K19_28"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, lde(x, lde(lde(x, 0), lde(x, lde(x, 0))))))), 0)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 17.865098908052904,
+   "bits_sem_uncorrected": 17.906244713525744,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0045348643444097945,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K19_29"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, 0), lde(lde(x, lde(x, 0)), lde(x, 0)))), lde(lde(x, x), x))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.011154646981283925,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K21_00"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(lde(x, lde(lde(x, x), lde(lde(x, x), lde(x, x)))), x)), x))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.002772539726266776,
+  "target_scale": 1.2221674252246375,
+  "target_id": "F-LDE0_K21_01"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(x, lde(lde(x, x), lde(x, lde(lde(x, lde(x, 0)), lde(x, x))))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0019209378183126817,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K21_02"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(x, 0), 0))), lde(lde(x, lde(x, 0)), lde(x, lde(x, 0))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08749548650444872,
+  "target_scale": 2.8698449228574607,
+  "target_id": "F-LDE0_K21_03"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(lde(x, x), lde(x, lde(lde(x, 0), 0)))), lde(lde(x, 0), 0)))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0001948205557737584,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K21_04"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(lde(lde(x, lde(lde(x, x), 0)), x), lde(x, 0))), x)), x)",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0002525027497121961,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K21_05"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(lde(x, lde(x, lde(lde(x, lde(x, 0)), lde(x, lde(x, 0))))), 0)))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6.3800695292029745e-06,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K21_06"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(x, lde(x, lde(lde(x, lde(lde(x, lde(x, x)), lde(x, 0))), x))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.009739223721999962,
+  "target_scale": 2.0066824516531403,
+  "target_id": "F-LDE0_K21_07"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(lde(x, lde(x, lde(lde(x, lde(x, 0)), lde(x, 0)))), x)), x))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.011816722578117868,
+  "target_scale": 1.0863378995434958,
+  "target_id": "F-LDE0_K21_08"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(x, lde(x, lde(x, lde(lde(lde(x, x), lde(x, lde(x, x))), 0)))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.06334258644199513,
+  "target_scale": 2.769759300375409,
+  "target_id": "F-LDE0_K21_09"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(x, 0), x))), lde(x, lde(lde(x, lde(x, lde(x, x))), x)))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0024665652627827283,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K21_10"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(x, lde(lde(x, x), 0)), lde(lde(x, 0), 0)), lde(x, lde(x, 0))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.003913304712915854,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K21_11"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(lde(x, lde(lde(x, x), 0)), lde(x, lde(x, x))), x), lde(x, 0)))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.009527254929637276,
+  "target_scale": 7.685312431952124,
+  "target_id": "F-LDE0_K21_12"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(lde(x, lde(lde(x, x), lde(x, lde(lde(x, x), lde(x, 0))))), x))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.019457281556072865,
+  "target_scale": 2.8624951362668583,
+  "target_id": "F-LDE0_K21_13"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, x)), lde(x, lde(lde(lde(x, lde(lde(x, x), lde(x, x))), x), 0)))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4.1894853824726445e-05,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K21_14"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(x, 0), lde(lde(x, 0), lde(lde(x, lde(x, x)), 0)))), 0), x)",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.016912998178711763,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K21_15"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(x, x), lde(x, x)))), lde(lde(x, x), lde(lde(x, 0), x)))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4194.180527134117,
+  "target_scale": 303.44937540861844,
+  "target_id": "F-LDE0_K21_16"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, x), lde(lde(x, lde(x, x)), x))), lde(x, lde(lde(x, x), 0)))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 8.327454394644979e-08,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K21_17"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(x, x), lde(lde(x, 0), x)))), lde(lde(lde(x, x), 0), 0))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.793181772777945,
+  "target_scale": 6.738394325784922,
+  "target_id": "F-LDE0_K21_18"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, lde(lde(x, 0), lde(x, lde(x, lde(lde(x, 0), 0))))))), 0)",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.009357849456943217,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K21_19"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(x, lde(lde(x, 0), lde(lde(x, 0), lde(lde(x, lde(x, 0)), x)))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.009032457620978802,
+  "target_scale": 1.0576414513736347,
+  "target_id": "F-LDE0_K21_20"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, 0)), lde(x, lde(lde(x, lde(x, lde(x, lde(x, x)))), lde(x, x))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00011505853364570054,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K21_21"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(lde(lde(x, lde(lde(x, x), lde(x, x))), lde(x, x)), lde(x, x)))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.005655870084783823,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K21_22"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(lde(x, x), lde(lde(x, lde(x, lde(x, lde(x, lde(x, x))))), 0)))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6015.187840750698,
+  "target_scale": 755.2893323602672,
+  "target_id": "F-LDE0_K21_23"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(lde(x, 0), lde(lde(x, lde(lde(x, 0), lde(lde(x, 0), 0))), 0)))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.026528574584019967,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K21_24"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(x, lde(lde(x, lde(lde(x, lde(lde(x, x), lde(x, 0))), x)), x)))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.003292786130666116,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K21_25"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(lde(x, lde(lde(x, x), lde(x, x))), x), lde(x, lde(x, x)))), 0)",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.01246438961291869,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K21_26"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, 0), lde(lde(x, x), 0))), lde(lde(x, lde(x, 0)), lde(x, 0)))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 5.062481666366819,
+  "target_scale": 5.894177038987733,
+  "target_id": "F-LDE0_K21_27"
+ },
+ {
+  "expression": "lde(lde(lde(x, x), lde(lde(lde(x, lde(x, lde(x, 0))), lde(x, 0)), 0)), lde(x, x))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1968140371857163,
+  "target_scale": 3.264819924921706,
+  "target_id": "F-LDE0_K21_28"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(lde(x, 0), lde(x, 0))), lde(x, lde(lde(x, x), x)))), x)",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 20.177313685467716,
+   "bits_sem_uncorrected": 20.215373025314516,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00014306791336371951,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K21_29"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, x), lde(lde(x, x), 0))), lde(lde(lde(x, lde(lde(x, x), x)), 0), 0))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6011889.423942045,
+  "target_scale": 20115.545422236515,
+  "target_id": "F-LDE0_K23_00"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(lde(x, lde(x, x)), lde(lde(x, lde(x, x)), lde(x, lde(x, lde(x, x))))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.04220421489269476,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K23_01"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(lde(x, x), lde(x, lde(lde(x, lde(lde(x, x), lde(x, x))), 0)))), x))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013513405151025986,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K23_02"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, x), x)), lde(x, lde(x, lde(lde(x, lde(lde(x, x), lde(x, 0))), x))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0029433835638678846,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K23_03"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(lde(lde(x, lde(lde(x, x), 0)), lde(lde(x, 0), lde(lde(x, x), x))), 0))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.01058734135225635,
+  "target_scale": 1.077239937317742,
+  "target_id": "F-LDE0_K23_04"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, 0), lde(lde(x, 0), lde(lde(x, lde(x, lde(x, 0))), lde(x, x))))), 0)",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.007955203714892101,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K23_05"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(lde(lde(x, lde(lde(x, x), lde(x, 0))), 0), 0)), lde(x, lde(x, 0))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.007137535456430555,
+  "target_scale": 1.071118669895599,
+  "target_id": "F-LDE0_K23_06"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(x, lde(lde(x, x), lde(lde(x, 0), lde(x, lde(x, x))))), lde(x, x)), 0))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0007233321771022436,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K23_07"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(lde(x, 0), lde(lde(x, lde(x, x)), x))), lde(lde(x, x), 0))), x)",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0005194614234287972,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K23_08"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(lde(x, lde(lde(x, lde(x, 0)), lde(x, lde(x, lde(x, x))))), 0), 0)), 0)",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.006232768943088319,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K23_09"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, x), lde(lde(x, lde(lde(x, 0), x)), 0))), lde(x, lde(lde(x, 0), 0)))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00022353183066585263,
+  "target_scale": 1.0576589720511376,
+  "target_id": "F-LDE0_K23_10"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(lde(x, lde(x, lde(lde(x, lde(x, x)), x))), lde(lde(x, x), 0))), 0))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 7.09762334751721e-12,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K23_11"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(lde(x, lde(lde(x, x), 0)), lde(lde(x, 0), 0)), x), lde(lde(x, 0), 0)))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.324409253224063,
+  "target_scale": 16.727631236633524,
+  "target_id": "F-LDE0_K23_12"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(lde(x, lde(x, lde(x, lde(x, lde(lde(x, x), x))))), lde(x, lde(x, 0)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.0279845776846751e-05,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K23_13"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(x, lde(lde(x, x), lde(lde(x, 0), lde(lde(x, x), 0)))), lde(x, 0)), 0))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.5397086041653747,
+  "target_scale": 5.068406939430122,
+  "target_id": "F-LDE0_K23_14"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(lde(lde(x, lde(lde(x, x), lde(lde(x, 0), 0))), 0), lde(x, lde(x, x)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0001047538665638985,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K23_15"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(x, lde(x, lde(x, x))), lde(lde(lde(x, x), x), 0)))), lde(x, x))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.016082691998022883,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K23_16"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(x, lde(lde(x, x), lde(x, lde(x, 0)))), lde(x, 0)), lde(lde(x, x), x)))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013241927930472129,
+  "target_scale": 1.647654319324606,
+  "target_id": "F-LDE0_K23_17"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(lde(x, 0), lde(lde(x, 0), lde(x, lde(x, lde(x, 0)))))), lde(x, x)))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.016564933303740488,
+  "target_scale": 1.0913778626190123,
+  "target_id": "F-LDE0_K23_18"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(lde(x, lde(lde(x, x), lde(lde(x, x), 0))), lde(x, x)), 0)), lde(x, 0))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.016619971583960343,
+  "target_scale": 1.7331662185924583,
+  "target_id": "F-LDE0_K23_19"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(lde(lde(x, lde(x, lde(x, x))), lde(lde(x, lde(x, lde(x, 0))), x)), 0)))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.38821503488239695,
+  "target_scale": 3.4330714506231708,
+  "target_id": "F-LDE0_K23_20"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, x), 0)), lde(lde(x, lde(lde(x, 0), lde(x, x))), lde(x, lde(x, 0))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.07261918213601296,
+  "target_scale": 2.9800037623628883,
+  "target_id": "F-LDE0_K23_21"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, x), lde(lde(x, 0), lde(x, lde(lde(x, 0), lde(lde(x, 0), lde(x, 0)))))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 5.276165602347111,
+  "target_scale": 18.081231575292787,
+  "target_id": "F-LDE0_K23_22"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, x), lde(x, x))), lde(lde(x, lde(x, lde(x, 0))), lde(x, lde(x, x))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.02385661906919546,
+  "target_scale": 3.1254617428612885,
+  "target_id": "F-LDE0_K23_23"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(lde(lde(x, lde(lde(x, x), 0)), lde(x, x)), lde(lde(lde(x, x), 0), 0))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0002850492969904498,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K23_24"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(lde(x, 0), lde(lde(x, 0), lde(lde(lde(x, lde(x, lde(x, x))), x), 0)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0027745100822553427,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K23_25"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(lde(lde(x, lde(x, 0)), lde(lde(lde(x, x), x), 0)), x), x)), lde(x, x))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.007480517702563187,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K23_26"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(lde(lde(lde(x, lde(lde(x, x), 0)), lde(lde(x, 0), 0)), 0), x), x)), x)",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6.46428613584794e-05,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K23_27"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(lde(lde(lde(x, lde(lde(x, lde(x, lde(x, 0))), lde(x, x))), x), 0), 0))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4.107546548150526e-06,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K23_28"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(lde(x, lde(x, lde(x, 0))), 0), 0))), lde(x, lde(lde(x, 0), x)))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 22.538428621027133,
+   "bits_sem_uncorrected": 22.54591563307766,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0903871110370841,
+  "target_scale": 1.367971653397914,
+  "target_id": "F-LDE0_K23_29"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(x, lde(x, 0)), lde(x, 0))), x), lde(lde(x, 0), lde(x, lde(lde(x, x), x))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.030647055109239704,
+  "target_scale": 4.362731186056656,
+  "target_id": "F-LDE0_K25_00"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(lde(x, lde(x, lde(lde(x, lde(x, x)), x))), lde(x, 0))), lde(lde(x, 0), x)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.0017065573548803441,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K25_01"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(lde(x, lde(x, lde(lde(x, lde(x, x)), 0))), lde(lde(lde(x, lde(x, 0)), 0), 0)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.001308660174468914,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K25_02"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(x, lde(x, 0)), x))), lde(lde(x, lde(x, x)), lde(x, lde(lde(x, x), x))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.008828127550952464,
+  "target_scale": 1.3844273726710363,
+  "target_id": "F-LDE0_K25_03"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(lde(lde(x, lde(lde(x, 0), lde(x, x))), lde(lde(x, lde(lde(x, 0), x)), 0)), 0))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 12.392412972508167,
+  "target_scale": 20.34698116855224,
+  "target_id": "F-LDE0_K25_04"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, x), x)), lde(lde(x, lde(x, x)), lde(lde(x, lde(lde(lde(x, 0), 0), 0)), 0)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.006388295031838714,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K25_05"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(lde(x, lde(lde(x, lde(x, x)), lde(x, x))), lde(lde(x, x), 0))), x)), x)",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.00011661391216555208,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K25_06"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, lde(lde(x, lde(x, x)), 0)))), lde(lde(x, x), lde(x, lde(lde(x, x), x))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.052535227855599255,
+  "target_scale": 1.468590783234155,
+  "target_id": "F-LDE0_K25_07"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(lde(x, 0), lde(x, lde(x, lde(lde(x, lde(x, 0)), lde(x, lde(x, 0))))))), x))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.012948998827106723,
+  "target_scale": 1.0947322544576041,
+  "target_id": "F-LDE0_K25_08"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(x, lde(lde(lde(x, lde(lde(x, x), lde(lde(x, 0), x))), lde(x, lde(x, x))), 0)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.004873021977741749,
+  "target_scale": 1.2747605760484555,
+  "target_id": "F-LDE0_K25_09"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, lde(lde(x, 0), x)))), lde(lde(x, lde(lde(x, x), lde(lde(x, x), 0))), x))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 5.867308171767948e-06,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K25_10"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(lde(lde(x, lde(lde(x, x), lde(lde(x, x), x))), lde(x, 0)), 0), x)), lde(x, x))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.011982694080684458,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K25_11"
+ },
+ {
+  "expression": "lde(lde(lde(x, 0), lde(lde(x, lde(lde(lde(x, 0), 0), 0)), 0)), lde(lde(x, lde(x, lde(x, x))), 0))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 35.995027252103625,
+  "target_scale": 32.68614435576991,
+  "target_id": "F-LDE0_K25_12"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(x, x)), lde(lde(x, x), 0))), lde(lde(x, lde(x, x)), lde(lde(x, x), 0)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 16996.375120833112,
+  "target_scale": 568.153143659823,
+  "target_id": "F-LDE0_K25_13"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, x), lde(lde(x, 0), lde(x, lde(lde(x, x), lde(x, lde(x, lde(lde(x, 0), 0))))))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 12.791956887655676,
+  "target_scale": 19.885034598650897,
+  "target_id": "F-LDE0_K25_14"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(lde(x, x), lde(x, lde(x, lde(lde(x, 0), 0)))), 0))), lde(lde(x, x), 0))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 11.158613009788036,
+  "target_scale": 11.917014489708228,
+  "target_id": "F-LDE0_K25_15"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, x)), lde(lde(lde(lde(x, lde(x, lde(lde(lde(x, x), x), 0))), x), lde(x, 0)), 0))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.05431993088383465,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K25_16"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, x), lde(x, x))), lde(lde(x, x), lde(lde(x, lde(x, lde(lde(x, x), x))), 0)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 41139231.756081246,
+  "target_scale": 34216.03975718672,
+  "target_id": "F-LDE0_K25_17"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(x, lde(lde(lde(x, x), 0), 0))), lde(lde(x, 0), lde(x, lde(x, x))))), x)",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 4.280290433666628e-05,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K25_18"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, 0), lde(lde(lde(x, lde(lde(x, x), lde(x, x))), x), x))), lde(lde(x, 0), 0))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.0010243804906518337,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K25_19"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, lde(x, lde(x, 0))))), lde(lde(x, lde(lde(x, lde(x, 0)), x)), lde(x, x)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.027993467279577258,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K25_20"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(lde(lde(x, lde(lde(x, x), lde(lde(x, x), x))), lde(lde(lde(x, x), x), 0)), 0))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.00014856842383116623,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K25_21"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(lde(x, lde(x, lde(x, x))), lde(lde(x, lde(x, x)), lde(lde(x, lde(x, 0)), 0))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 325.7459394080887,
+  "target_scale": 92.69214427411336,
+  "target_id": "F-LDE0_K25_22"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(x, lde(lde(x, 0), lde(x, 0)))), x)), lde(x, lde(lde(x, lde(x, x)), x)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.0016482721102891854,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K25_23"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(lde(x, lde(x, 0)), x)), x)), lde(x, lde(x, lde(x, lde(x, lde(x, x))))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.005735854458935621,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K25_24"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(lde(x, lde(x, lde(lde(x, lde(x, x)), 0))), x)), lde(x, lde(lde(x, x), x))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.008076465267489138,
+  "target_scale": 1.0530849667643651,
+  "target_id": "F-LDE0_K25_25"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(x, x), 0)), x), lde(lde(x, lde(lde(lde(x, x), lde(lde(x, x), 0)), 0)), 0))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 166.0678711276962,
+  "target_scale": 91.06086019632876,
+  "target_id": "F-LDE0_K25_26"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(x, lde(x, lde(x, 0))), lde(lde(x, 0), lde(lde(x, lde(x, 0)), 0)))), 0), 0)",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.24040324144422087,
+  "target_scale": 1.1850253357835712,
+  "target_id": "F-LDE0_K25_27"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(lde(x, x), lde(x, 0))), lde(x, lde(lde(x, 0), 0)))), lde(lde(x, x), 0))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.20930319996734392,
+  "target_scale": 7.064604377380768,
+  "target_id": "F-LDE0_K25_28"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(lde(x, lde(lde(x, lde(lde(x, lde(x, 0)), x)), 0)), lde(x, lde(lde(x, x), x))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 24.866943451156814,
+   "bits_sem_uncorrected": 24.862182043524562,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.01784843879378953,
+  "target_scale": 2.9405870878062617,
+  "target_id": "F-LDE0_K25_29"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(x, lde(x, 0)), lde(x, lde(x, lde(lde(x, x), x))))), lde(lde(x, 0), 0)), lde(x, 0))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.001232266799538549,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K27_00"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(lde(lde(lde(lde(x, lde(lde(x, x), 0)), lde(lde(x, lde(x, lde(x, x))), 0)), x), 0), 0))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.006373175489827054,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K27_01"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(x, lde(lde(x, lde(lde(x, lde(x, 0)), lde(lde(x, x), x))), lde(x, lde(x, lde(x, 0))))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.007344161693554265,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K27_02"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(lde(lde(x, lde(lde(x, x), 0)), lde(lde(lde(x, lde(lde(x, lde(x, x)), 0)), x), 0)), 0))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 4.041271512690287e-07,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K27_03"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, 0)), lde(lde(x, x), lde(x, lde(lde(x, 0), lde(lde(x, 0), lde(lde(x, 0), lde(x, x)))))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.04885763951921139,
+  "target_scale": 2.895014640274444,
+  "target_id": "F-LDE0_K27_04"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, x), lde(lde(x, lde(x, x)), lde(x, 0)))), lde(x, lde(x, lde(lde(x, lde(x, x)), 0))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.0007044784022195156,
+  "target_scale": 2.066944025734676,
+  "target_id": "F-LDE0_K27_05"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(x, 0)), x)), lde(lde(x, x), lde(lde(x, lde(x, x)), lde(x, lde(x, lde(x, 0))))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 3.9447327583722176,
+  "target_scale": 4.951272223369895,
+  "target_id": "F-LDE0_K27_06"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(lde(x, x), lde(x, lde(x, lde(lde(x, 0), 0))))), 0)), lde(lde(x, lde(x, x)), x))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.00044240311009551567,
+  "target_scale": 1.9473837552466613,
+  "target_id": "F-LDE0_K27_07"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(lde(x, lde(x, 0)), lde(x, lde(lde(x, 0), lde(lde(x, 0), lde(x, lde(x, lde(x, x))))))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.05766449938955279,
+  "target_scale": 4.186336207427132,
+  "target_id": "F-LDE0_K27_08"
+ },
+ {
+  "expression": "lde(lde(lde(lde(x, lde(x, lde(lde(lde(x, lde(x, 0)), x), 0))), lde(lde(x, lde(x, 0)), 0)), x), lde(x, x))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.025260210833506408,
+  "target_scale": 1.497886705811011,
+  "target_id": "F-LDE0_K27_09"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(x, lde(x, 0)), lde(x, 0)))), lde(x, lde(x, lde(x, lde(lde(lde(x, x), 0), 0)))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 7.618438129603781e-05,
+  "target_scale": 1.17221949452685,
+  "target_id": "F-LDE0_K27_10"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(x, lde(lde(x, lde(lde(x, lde(x, lde(x, x))), lde(lde(x, lde(lde(x, 0), x)), 0))), x)))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.005671061538109496,
+  "target_scale": 1.2865837738056676,
+  "target_id": "F-LDE0_K27_11"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(lde(x, 0), lde(lde(x, 0), lde(x, lde(x, 0))))), x)), lde(x, lde(x, lde(x, x))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.008242915125940163,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K27_12"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(x, lde(x, lde(lde(x, 0), x)))), lde(lde(x, x), lde(x, x)))), lde(lde(x, 0), x))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.1713123683518043,
+  "target_scale": 5.932088947086186,
+  "target_id": "F-LDE0_K27_13"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(x, 0), lde(x, 0)))), lde(x, lde(lde(lde(x, x), lde(x, lde(lde(x, 0), 0))), 0)))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.0002784640690347129,
+  "target_scale": 2.718280107868331,
+  "target_id": "F-LDE0_K27_14"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(lde(x, lde(x, x)), lde(lde(lde(x, x), x), 0))), 0)), lde(lde(lde(x, x), 0), 0))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.04044929568112879,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K27_15"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(x, lde(lde(lde(x, lde(lde(x, lde(x, lde(x, 0))), 0)), lde(x, x)), lde(lde(x, 0), x))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.00012198231808788818,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K27_16"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, x))), lde(lde(lde(x, lde(x, lde(lde(x, lde(x, lde(x, 0))), x))), lde(x, 0)), 0))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.08527150404776655,
+  "target_scale": 2.773192860878131,
+  "target_id": "F-LDE0_K27_17"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(x, 0)), lde(lde(lde(x, x), x), 0)), lde(lde(x, lde(lde(lde(x, x), lde(x, x)), 0)), 0))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.11737910972627684,
+  "target_scale": 4.834539010868462,
+  "target_id": "F-LDE0_K27_18"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(x, 0), x))), lde(lde(x, 0), lde(lde(x, lde(x, lde(lde(x, x), lde(x, 0)))), 0)))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1087.3423030882504,
+  "target_scale": 158.7379660122364,
+  "target_id": "F-LDE0_K27_19"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(lde(x, lde(lde(x, x), 0)), x), lde(x, 0))), lde(lde(lde(x, 0), lde(lde(x, 0), 0)), 0))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 3022.7994896524337,
+  "target_scale": 384.91912828753385,
+  "target_id": "F-LDE0_K27_20"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(x, lde(lde(lde(x, lde(x, 0)), 0), 0))), 0)), lde(lde(x, lde(x, x)), lde(x, x)))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.00032446061416141833,
+  "target_scale": 1.064204266983812,
+  "target_id": "F-LDE0_K27_21"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(x, x), 0)), lde(x, x)), lde(x, lde(lde(lde(x, lde(x, lde(lde(x, x), x))), 0), 0)))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.22337889951246687,
+  "target_scale": 2.6397884962078035,
+  "target_id": "F-LDE0_K27_22"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(lde(lde(x, lde(lde(x, lde(lde(x, lde(x, 0)), lde(x, 0))), x)), lde(x, lde(x, 0))), 0))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 26.156530828841188,
+  "target_scale": 46.76919191197106,
+  "target_id": "F-LDE0_K27_23"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(x, lde(lde(x, lde(x, lde(lde(x, lde(lde(x, x), x)), lde(x, 0)))), lde(x, lde(x, 0)))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.0006928096210687735,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K27_24"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, lde(x, lde(lde(x, lde(x, lde(x, 0))), x))))), lde(lde(x, 0), lde(lde(x, x), 0)))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 89.35001701935265,
+  "target_scale": 40.297665167459,
+  "target_id": "F-LDE0_K27_25"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, 0), lde(lde(x, lde(x, lde(lde(x, x), lde(x, 0)))), x))), lde(x, lde(lde(x, x), x)))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.0002862639909831026,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K27_26"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, 0)), lde(lde(lde(x, lde(lde(x, 0), x)), lde(lde(lde(x, lde(x, x)), lde(x, 0)), 0)), 0))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 5.140283591028818,
+  "target_scale": 15.290729871228882,
+  "target_id": "F-LDE0_K27_27"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(x, x), 0)), x), lde(lde(x, lde(lde(lde(x, lde(x, 0)), lde(lde(x, 0), 0)), 0)), 0))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.12120074748404969,
+  "target_scale": 2.8466602050488854,
+  "target_id": "F-LDE0_K27_28"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, lde(x, x)), lde(x, x))), lde(lde(x, lde(lde(x, x), lde(lde(x, lde(x, x)), x))), 0))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 42.793987519471216,
+   "bits_syn": 33.72076945682369,
+   "bits_sem": 27.203608307643925,
+   "bits_sem_uncorrected": 27.182017503300518,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1.1964324391389457e-06,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_K27_29"
+ }
+]

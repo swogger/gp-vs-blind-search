@@ -1,0 +1,47 @@
+{
+ "grammar": "BOOL-AONX-n4",
+ "seed": 20261013,
+ "ceiling": 17,
+ "levels": {
+  "3": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "5": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "7": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "9": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "11": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "13": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "15": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "17": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  }
+ }
+}

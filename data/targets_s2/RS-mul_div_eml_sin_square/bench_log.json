@@ -1,0 +1,105 @@
+{
+ "grammar": "RS-mul_div_eml_sin_square",
+ "benchmarks": {
+  "N1": "not within the ceiling",
+  "N2": "not within the ceiling",
+  "N3": "not within the ceiling",
+  "N4": "not within the ceiling",
+  "N5": "not within the ceiling",
+  "N6": "not within the ceiling",
+  "N7": "not within the ceiling",
+  "N8": "not within the ceiling",
+  "K2": "not within the ceiling",
+  "K3": "not within the ceiling",
+  "feynman_I_6_2a": "not within the ceiling",
+  "eml_1_1": "proven K=3",
+  "eml_1_2": "proven K=7",
+  "eml_1_4": "proven K=8",
+  "eml_2_1": "not within the ceiling",
+  "eml_3_1": "not within the ceiling",
+  "eml_3_2": "not within the ceiling",
+  "eml_3_3": "filtered: dead_subtree",
+  "eml_3_4": "proven K=11",
+  "eml_3_5": "not within the ceiling",
+  "eml_4_1": "not within the ceiling"
+ },
+ "noise_rows": [
+  {
+   "K": 1,
+   "U": 2,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 2,
+   "U": 3,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 3,
+   "U": 11,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 4,
+   "U": 43,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 5,
+   "U": 184,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 6,
+   "U": 802,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 7,
+   "U": 3572,
+   "candidates": 6,
+   "noise": 6,
+   "share": 0.00168
+  },
+  {
+   "K": 8,
+   "U": 16405,
+   "candidates": 79,
+   "noise": 69,
+   "share": 0.00421
+  },
+  {
+   "K": 9,
+   "U": 76752,
+   "candidates": 567,
+   "noise": 508,
+   "share": 0.00662
+  },
+  {
+   "K": 10,
+   "U": 365069,
+   "candidates": 3744,
+   "noise": 3303,
+   "share": 0.00905
+  },
+  {
+   "K": 11,
+   "U": 1757166,
+   "candidates": 23149,
+   "noise": 20275,
+   "share": 0.01154
+  }
+ ]
+}

@@ -1,0 +1,333 @@
+{
+ "phase": "s2_enum_random",
+ "description": "Study 2 (T26, D064): enumerate the random held-out candidates of data/registration/random_draw.json in draw order, alternating domains (first 6 per domain), with the listed sets' caps (real 8 GB and 4 CPU-h, Boolean 10 GB and 6 CPU-h). Not a search. --workers 1 next to GP runs (memory).",
+ "created": "2026-10-21 14:13:04",
+ "git": "8a91fa3",
+ "n_tasks": 12,
+ "tasks": [
+  {
+   "key": "RS-mul_eml_sin",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "RS-mul_eml_sin",
+    "--root",
+    "data/enumeration_s2/random",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8",
+    "--cpu_budget",
+    "13800",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "RS-mul_eml_sin",
+    "root": "data/enumeration_s2/random"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-RS-imp_or_rnimp-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-RS-imp_or_rnimp-n5",
+    "--root",
+    "data/enumeration_s2/random",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "10",
+    "--cpu_budget",
+    "21000",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-RS-imp_or_rnimp-n5",
+    "root": "data/enumeration_s2/random"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "RS-eml_sin_sqrt_square",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "RS-eml_sin_sqrt_square",
+    "--root",
+    "data/enumeration_s2/random",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8",
+    "--cpu_budget",
+    "13800",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "RS-eml_sin_sqrt_square",
+    "root": "data/enumeration_s2/random"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-RS-imp_nimp_rimp_rnimp-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-RS-imp_nimp_rimp_rnimp-n5",
+    "--root",
+    "data/enumeration_s2/random",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "10",
+    "--cpu_budget",
+    "21000",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-RS-imp_nimp_rimp_rnimp-n5",
+    "root": "data/enumeration_s2/random"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "RS-mul_div_eml_sin_square",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "RS-mul_div_eml_sin_square",
+    "--root",
+    "data/enumeration_s2/random",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8",
+    "--cpu_budget",
+    "13800",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "RS-mul_div_eml_sin_square",
+    "root": "data/enumeration_s2/random"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-RS-nand_rimp_c1-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-RS-nand_rimp_c1-n5",
+    "--root",
+    "data/enumeration_s2/random",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "10",
+    "--cpu_budget",
+    "21000",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-RS-nand_rimp_c1-n5",
+    "root": "data/enumeration_s2/random"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "RS-add_sqrt",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "RS-add_sqrt",
+    "--root",
+    "data/enumeration_s2/random",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8",
+    "--cpu_budget",
+    "13800",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "RS-add_sqrt",
+    "root": "data/enumeration_s2/random"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-RS-rimp_c0-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-RS-rimp_c0-n5",
+    "--root",
+    "data/enumeration_s2/random",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "10",
+    "--cpu_budget",
+    "21000",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-RS-rimp_c0-n5",
+    "root": "data/enumeration_s2/random"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "RS-mul_square",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "RS-mul_square",
+    "--root",
+    "data/enumeration_s2/random",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8",
+    "--cpu_budget",
+    "13800",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "RS-mul_square",
+    "root": "data/enumeration_s2/random"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-RS-not_or_c1-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-RS-not_or_c1-n5",
+    "--root",
+    "data/enumeration_s2/random",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "10",
+    "--cpu_budget",
+    "21000",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-RS-not_or_c1-n5",
+    "root": "data/enumeration_s2/random"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "RS-mul_div_eml_exp_sqrt",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "RS-mul_div_eml_exp_sqrt",
+    "--root",
+    "data/enumeration_s2/random",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8",
+    "--cpu_budget",
+    "13800",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "RS-mul_div_eml_exp_sqrt",
+    "root": "data/enumeration_s2/random"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-RS-and_nimp_or_xnor-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-RS-and_nimp_or_xnor-n5",
+    "--root",
+    "data/enumeration_s2/random",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "10",
+    "--cpu_budget",
+    "21000",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-RS-and_nimp_or_xnor-n5",
+    "root": "data/enumeration_s2/random"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

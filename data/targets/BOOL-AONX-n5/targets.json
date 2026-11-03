@@ -1,0 +1,982 @@
+[
+ {
+  "expression": "and(x3, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-AONX-n5_K03_00"
+ },
+ {
+  "expression": "or(x1, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-AONX-n5_K03_01"
+ },
+ {
+  "expression": "xor(x1, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-AONX-n5_K03_02"
+ },
+ {
+  "expression": "xor(x2, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-AONX-n5_K03_03"
+ },
+ {
+  "expression": "and(x2, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-AONX-n5_K03_04"
+ },
+ {
+  "expression": "xor(x2, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-AONX-n5_K03_05"
+ },
+ {
+  "expression": "or(x3, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-AONX-n5_K03_06"
+ },
+ {
+  "expression": "or(x1, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-AONX-n5_K03_07"
+ },
+ {
+  "expression": "xor(x3, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-AONX-n5_K03_08"
+ },
+ {
+  "expression": "xor(x1, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-AONX-n5_K03_09"
+ },
+ {
+  "expression": "and(x2, or(x1, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "target_id": "BOOL-AONX-n5_K05_00"
+ },
+ {
+  "expression": "or(x1, or(x4, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "target_id": "BOOL-AONX-n5_K05_01"
+ },
+ {
+  "expression": "xor(x2, or(x1, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "target_id": "BOOL-AONX-n5_K05_02"
+ },
+ {
+  "expression": "xor(x2, and(x3, x4))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "target_id": "BOOL-AONX-n5_K05_03"
+ },
+ {
+  "expression": "and(x1, and(x2, x3))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "target_id": "BOOL-AONX-n5_K05_04"
+ },
+ {
+  "expression": "or(x5, xor(x1, x2))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "target_id": "BOOL-AONX-n5_K05_05"
+ },
+ {
+  "expression": "and(x5, xor(x1, x2))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "target_id": "BOOL-AONX-n5_K05_06"
+ },
+ {
+  "expression": "xor(x3, or(x2, x4))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "target_id": "BOOL-AONX-n5_K05_07"
+ },
+ {
+  "expression": "xor(x5, and(x1, x3))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "target_id": "BOOL-AONX-n5_K05_08"
+ },
+ {
+  "expression": "xor(x3, and(x4, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "target_id": "BOOL-AONX-n5_K05_09"
+ },
+ {
+  "expression": "xor(x1, or(x5, xor(x1, x2)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "target_id": "BOOL-AONX-n5_K07_00"
+ },
+ {
+  "expression": "xor(x2, and(x5, or(x2, x4)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "target_id": "BOOL-AONX-n5_K07_01"
+ },
+ {
+  "expression": "or(x3, xor(x2, or(x1, x4)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "target_id": "BOOL-AONX-n5_K07_02"
+ },
+ {
+  "expression": "not(and(x5, or(x2, not(x3))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 5,
+  "target_id": "BOOL-AONX-n5_K07_03"
+ },
+ {
+  "expression": "and(x2, or(x3, xor(x4, x5)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "target_id": "BOOL-AONX-n5_K07_04"
+ },
+ {
+  "expression": "and(x1, and(x5, xor(x2, x3)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "target_id": "BOOL-AONX-n5_K07_05"
+ },
+ {
+  "expression": "or(x2, and(x3, xor(x4, x5)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "target_id": "BOOL-AONX-n5_K07_06"
+ },
+ {
+  "expression": "xor(x2, or(x1, xor(x4, x5)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "target_id": "BOOL-AONX-n5_K07_07"
+ },
+ {
+  "expression": "not(and(x3, or(x5, not(x2))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 5,
+  "target_id": "BOOL-AONX-n5_K07_08"
+ },
+ {
+  "expression": "or(x2, or(x3, xor(x4, x5)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "target_id": "BOOL-AONX-n5_K07_09"
+ },
+ {
+  "expression": "and(or(x3, x4), xor(x2, or(x1, x4)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "target_id": "BOOL-AONX-n5_K09_00"
+ },
+ {
+  "expression": "and(x5, xor(x1, or(x3, and(x2, x4))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "target_id": "BOOL-AONX-n5_K09_01"
+ },
+ {
+  "expression": "xor(and(x2, x5), or(x1, and(x4, x5)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "target_id": "BOOL-AONX-n5_K09_02"
+ },
+ {
+  "expression": "and(xor(x3, x5), xor(x2, or(x1, x5)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "target_id": "BOOL-AONX-n5_K09_03"
+ },
+ {
+  "expression": "or(and(x2, x5), and(x4, or(x1, x3)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "target_id": "BOOL-AONX-n5_K09_04"
+ },
+ {
+  "expression": "xor(or(x2, x5), and(x3, xor(x4, x5)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "target_id": "BOOL-AONX-n5_K09_05"
+ },
+ {
+  "expression": "not(and(x4, xor(x5, or(x3, not(x1)))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K09_06"
+ },
+ {
+  "expression": "and(xor(x2, x3), xor(x5, and(x3, x4)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "target_id": "BOOL-AONX-n5_K09_07"
+ },
+ {
+  "expression": "and(or(x2, x4), or(x1, or(x3, x5)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "target_id": "BOOL-AONX-n5_K09_08"
+ },
+ {
+  "expression": "not(xor(x3, and(x1, or(x5, not(x4)))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K09_09"
+ },
+ {
+  "expression": "not(xor(x4, or(x1, and(x5, or(x2, xor(x3, x4))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K12_00"
+ },
+ {
+  "expression": "or(and(x3, x5), and(not(x2), xor(x5, and(x1, x4))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "depth": 5,
+  "target_id": "BOOL-AONX-n5_K12_01"
+ },
+ {
+  "expression": "not(or(and(x1, xor(x3, x4)), and(x3, xor(x1, x5))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "depth": 5,
+  "target_id": "BOOL-AONX-n5_K12_02"
+ },
+ {
+  "expression": "and(x3, or(xor(x1, x4), not(xor(x5, and(x2, x4)))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K12_03"
+ },
+ {
+  "expression": "or(x4, or(and(x2, x5), xor(x3, or(x1, not(x2)))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K12_04"
+ },
+ {
+  "expression": "xor(x1, and(x2, xor(x1, and(x4, or(x3, not(x1))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K12_05"
+ },
+ {
+  "expression": "xor(and(x2, xor(x3, x5)), or(x5, and(x4, not(x3))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "depth": 5,
+  "target_id": "BOOL-AONX-n5_K12_06"
+ },
+ {
+  "expression": "xor(x1, xor(x2, and(or(x1, x4), or(x5, not(x3)))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K12_07"
+ },
+ {
+  "expression": "xor(and(x3, x5), or(xor(x4, x5), not(or(x1, x2))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "depth": 5,
+  "target_id": "BOOL-AONX-n5_K12_08"
+ },
+ {
+  "expression": "and(x5, xor(x3, and(x2, or(not(x4), xor(x1, x3)))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K12_09"
+ },
+ {
+  "expression": "not(and(xor(x2, or(x3, x4)), xor(x4, and(x1, or(x3, x5)))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K14_00"
+ },
+ {
+  "expression": "and(or(x4, x5), or(not(xor(x3, x4)), xor(x1, xor(x2, x5))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "depth": 5,
+  "target_id": "BOOL-AONX-n5_K14_01"
+ },
+ {
+  "expression": "xor(or(x3, and(x4, x5)), or(xor(x2, x3), not(xor(x1, x4))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "depth": 5,
+  "target_id": "BOOL-AONX-n5_K14_02"
+ },
+ {
+  "expression": "xor(and(x4, x5), and(xor(x1, x2), or(x3, not(or(x1, x4)))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K14_03"
+ },
+ {
+  "expression": "xor(x2, and(xor(x1, or(x3, x5)), xor(x4, or(x2, not(x3)))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K14_04"
+ },
+ {
+  "expression": "xor(x4, and(xor(x1, x3), xor(or(x1, x5), and(x2, not(x4)))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K14_05"
+ },
+ {
+  "expression": "or(xor(x5, or(x1, not(x4))), and(x3, or(x2, and(x4, x5))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "depth": 5,
+  "target_id": "BOOL-AONX-n5_K14_06"
+ },
+ {
+  "expression": "xor(x1, or(xor(x1, xor(x2, x4)), not(and(x5, or(x3, x4)))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K14_07"
+ },
+ {
+  "expression": "xor(x1, and(xor(x3, and(x1, x4)), or(x2, not(or(x3, x5)))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K14_08"
+ },
+ {
+  "expression": "and(x1, not(xor(x4, or(and(x3, x5), and(x2, xor(x4, x5))))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K14_09"
+ },
+ {
+  "expression": "xor(x2, and(not(and(x4, x5)), xor(x2, and(xor(x1, x3), xor(x1, x5)))))",
+  "K_construction": 16,
+  "K_proven": 16,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K16_00"
+ },
+ {
+  "expression": "and(xor(x3, or(x1, x4)), or(and(x4, x5), xor(x1, or(x5, not(x2)))))",
+  "K_construction": 16,
+  "K_proven": 16,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K16_01"
+ },
+ {
+  "expression": "and(or(x5, xor(x4, and(x2, x3))), xor(x1, or(x4, not(or(x2, x3)))))",
+  "K_construction": 16,
+  "K_proven": 16,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K16_02"
+ },
+ {
+  "expression": "or(not(or(x1, x2)), xor(x4, or(x3, xor(x1, and(x2, xor(x4, x5))))))",
+  "K_construction": 16,
+  "K_proven": 16,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K16_03"
+ },
+ {
+  "expression": "xor(and(x1, x3), or(and(x1, x2), not(or(x5, xor(x4, or(x1, x3))))))",
+  "K_construction": 16,
+  "K_proven": 16,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K16_04"
+ },
+ {
+  "expression": "not(or(and(x2, x4), xor(x3, xor(or(x1, x2), and(x1, or(x4, x5))))))",
+  "K_construction": 16,
+  "K_proven": 16,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K16_05"
+ },
+ {
+  "expression": "xor(x2, or(xor(x2, x3), xor(and(x4, x5), or(x3, not(xor(x1, x5))))))",
+  "K_construction": 16,
+  "K_proven": 16,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K16_06"
+ },
+ {
+  "expression": "not(xor(or(x3, x4), and(xor(x2, and(x1, x4)), xor(x5, and(x2, x3)))))",
+  "K_construction": 16,
+  "K_proven": 16,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K16_07"
+ },
+ {
+  "expression": "or(not(or(x3, xor(x4, x5))), xor(x5, or(x1, and(x4, or(x2, x5)))))",
+  "K_construction": 16,
+  "K_proven": 16,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K16_08"
+ },
+ {
+  "expression": "and(or(x3, xor(x1, x2)), xor(x5, or(x4, and(x3, or(x2, not(x1))))))",
+  "K_construction": 16,
+  "K_proven": 16,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K16_09"
+ },
+ {
+  "expression": "not(xor(and(x5, or(x1, x4)), or(x5, and(or(x3, x4), xor(x2, or(x1, x3))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K18_00"
+ },
+ {
+  "expression": "xor(or(x4, x5), and(or(x2, or(x4, x5)), or(x3, not(xor(x1, and(x2, x5))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K18_01"
+ },
+ {
+  "expression": "and(or(xor(x2, x4), not(xor(x3, x5))), xor(x3, and(or(x1, x4), xor(x2, x3))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "depth": 5,
+  "target_id": "BOOL-AONX-n5_K18_02"
+ },
+ {
+  "expression": "or(not(or(x2, xor(x3, x5))), xor(x4, and(xor(x3, x4), xor(x1, and(x2, x4)))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K18_03"
+ },
+ {
+  "expression": "xor(x2, xor(x4, and(or(x1, x3), xor(x5, and(x2, not(or(x3, and(x4, x5))))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "depth": 9,
+  "target_id": "BOOL-AONX-n5_K18_04"
+ },
+ {
+  "expression": "not(xor(and(x4, xor(x2, or(x1, x5))), and(xor(x1, x5), or(x3, xor(x1, x2)))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K18_05"
+ },
+ {
+  "expression": "xor(x2, xor(x5, or(xor(x4, and(x1, x2)), xor(x1, or(not(x5), xor(x3, x4))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K18_06"
+ },
+ {
+  "expression": "or(not(or(x2, x5)), and(xor(x3, and(x1, x2)), xor(x5, and(x1, xor(x2, x4)))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K18_07"
+ },
+ {
+  "expression": "xor(x1, or(and(x2, x4), xor(and(x2, x3), or(not(x5), xor(x1, xor(x2, x4))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K18_08"
+ },
+ {
+  "expression": "not(xor(x1, xor(x3, or(xor(x1, and(x2, x5)), and(xor(x2, x4), xor(x3, x5))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K18_09"
+ },
+ {
+  "expression": "xor(xor(x5, or(and(x2, x3), xor(x1, and(x5, not(x4))))), or(x3, or(x5, xor(x1, x4))))",
+  "K_construction": 20,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K20_00"
+ },
+ {
+  "expression": "xor(xor(or(x1, x5), and(xor(x3, and(x1, x4)), not(and(x2, xor(x3, x5))))), xor(x1, x4))",
+  "K_construction": 20,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K20_01"
+ },
+ {
+  "expression": "xor(xor(x1, and(x4, not(or(x3, x5)))), and(xor(x2, x4), xor(and(x1, x5), and(x2, x3))))",
+  "K_construction": 20,
+  "K_proven": null,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K20_02"
+ },
+ {
+  "expression": "xor(and(not(or(x2, x4)), or(x5, xor(x1, x3))), or(xor(x1, x5), xor(x1, and(x2, x3))))",
+  "K_construction": 20,
+  "K_proven": null,
+  "depth": 5,
+  "target_id": "BOOL-AONX-n5_K20_03"
+ },
+ {
+  "expression": "xor(or(and(x1, or(x2, not(x3))), xor(x2, and(or(x2, x5), xor(x3, and(x4, x5))))), x1)",
+  "K_construction": 20,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K20_04"
+ },
+ {
+  "expression": "xor(or(x1, xor(x2, and(x3, x5))), or(not(xor(x2, x4)), xor(x5, and(x1, or(x3, x5)))))",
+  "K_construction": 20,
+  "K_proven": null,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K20_05"
+ },
+ {
+  "expression": "xor(not(x2), xor(x4, and(not(and(x3, or(x1, x4))), or(x1, and(not(x2), xor(x4, x5))))))",
+  "K_construction": 20,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K20_06"
+ },
+ {
+  "expression": "xor(xor(x2, and(x3, x5)), not(or(and(x5, not(x2)), and(x4, or(x2, and(x3, not(x1)))))))",
+  "K_construction": 20,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-AONX-n5_K20_07"
+ },
+ {
+  "expression": "xor(not(or(xor(x1, x5), and(xor(x1, x2), xor(x1, x3)))), and(x4, xor(x3, and(x2, x5))))",
+  "K_construction": 20,
+  "K_proven": null,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K20_08"
+ },
+ {
+  "expression": "xor(not(x3), or(and(x1, not(xor(x2, x4))), xor(x2, or(x3, and(not(x5), or(x1, x2))))))",
+  "K_construction": 20,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K20_09"
+ },
+ {
+  "expression": "xor(and(or(x3, xor(x2, or(x4, x5))), or(x1, and(x5, xor(x3, x4)))), and(x3, xor(x2, x4)))",
+  "K_construction": 21,
+  "K_proven": null,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K21_00"
+ },
+ {
+  "expression": "or(and(xor(x5, or(x3, x4)), xor(x5, or(not(x2), xor(x1, x3)))), not(or(x1, or(x4, x5))))",
+  "K_construction": 21,
+  "K_proven": null,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K21_01"
+ },
+ {
+  "expression": "xor(or(not(xor(x4, or(x2, x5))), xor(x3, or(x4, and(x1, x3)))), and(not(x5), xor(x1, x3)))",
+  "K_construction": 21,
+  "K_proven": null,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K21_02"
+ },
+ {
+  "expression": "xor(and(or(x5, and(x2, x4)), not(and(x1, xor(x2, x3)))), xor(or(x1, x2), and(x3, not(x5))))",
+  "K_construction": 21,
+  "K_proven": null,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K21_03"
+ },
+ {
+  "expression": "xor(xor(x5, or(x1, not(x4))), or(not(or(x2, x4)), and(xor(x1, x3), xor(x2, xor(x3, x5)))))",
+  "K_construction": 21,
+  "K_proven": null,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K21_04"
+ },
+ {
+  "expression": "xor(or(x5, xor(x1, x3)), not(xor(x2, and(x1, xor(x3, and(x4, or(x2, not(and(x3, x5)))))))))",
+  "K_construction": 21,
+  "K_proven": null,
+  "depth": 10,
+  "target_id": "BOOL-AONX-n5_K21_05"
+ },
+ {
+  "expression": "xor(and(not(x4), xor(x2, and(x5, xor(x1, x3)))), or(x2, not(and(x3, xor(x1, and(x4, x5))))))",
+  "K_construction": 21,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K21_06"
+ },
+ {
+  "expression": "and(xor(x2, and(or(x1, x3), or(x4, and(x2, x5)))), xor(x2, xor(x5, and(x1, xor(x2, x3)))))",
+  "K_construction": 21,
+  "K_proven": null,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K21_07"
+ },
+ {
+  "expression": "and(xor(x3, and(x4, xor(and(x1, x2), or(x3, x5)))), or(and(x2, x4), xor(x1, and(x3, x5))))",
+  "K_construction": 21,
+  "K_proven": null,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K21_08"
+ },
+ {
+  "expression": "xor(and(or(x1, x2), xor(x4, or(x1, not(and(x3, xor(x4, x5)))))), xor(x5, or(x4, not(x3))))",
+  "K_construction": 21,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-AONX-n5_K21_09"
+ },
+ {
+  "expression": "xor(and(or(x1, x2), or(x3, not(x4))), xor(x4, and(xor(x2, and(x3, x4)), not(and(x5, or(x4, not(x1)))))))",
+  "K_construction": 24,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-AONX-n5_K24_00"
+ },
+ {
+  "expression": "xor(and(x1, xor(x4, x5)), not(or(xor(x2, or(x1, x3)), xor(x1, or(xor(x1, x4), xor(x2, and(x3, x5)))))))",
+  "K_construction": 24,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-AONX-n5_K24_01"
+ },
+ {
+  "expression": "and(or(and(x2, x4), xor(and(x5, not(x4)), and(x1, xor(x3, x4)))), xor(x3, and(x1, xor(x2, xor(x3, x5)))))",
+  "K_construction": 24,
+  "K_proven": null,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K24_02"
+ },
+ {
+  "expression": "xor(not(and(x3, xor(x2, or(not(x4), and(x1, or(x2, x5)))))), and(or(x2, x3), not(and(x5, or(x1, x4)))))",
+  "K_construction": 24,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-AONX-n5_K24_03"
+ },
+ {
+  "expression": "and(xor(x2, xor(and(x3, x5), or(x1, or(x4, not(or(x2, x3)))))), xor(x5, and(x2, xor(x3, and(x1, x4)))))",
+  "K_construction": 24,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-AONX-n5_K24_04"
+ },
+ {
+  "expression": "xor(and(x4, not(and(x1, x2))), not(xor(x1, or(and(x3, not(x2)), and(or(x4, x5), xor(x1, and(x4, x5)))))))",
+  "K_construction": 24,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-AONX-n5_K24_05"
+ },
+ {
+  "expression": "and(or(and(x4, x5), xor(x1, x5)), xor(or(x4, xor(x2, and(x1, x3))), or(and(x1, x2), and(x5, not(x3)))))",
+  "K_construction": 24,
+  "K_proven": null,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K24_06"
+ },
+ {
+  "expression": "xor(xor(x2, or(x5, xor(x1, or(x4, xor(x2, x3))))), xor(x4, and(x3, xor(or(x2, x5), or(x1, not(x4))))))",
+  "K_construction": 24,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K24_07"
+ },
+ {
+  "expression": "or(or(and(x1, x3), xor(x2, or(x4, xor(x5, and(or(x2, x5), xor(x1, x3)))))), and(x5, not(or(x2, x3))))",
+  "K_construction": 24,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-AONX-n5_K24_08"
+ },
+ {
+  "expression": "and(not(and(xor(x1, x5), xor(x2, and(x5, xor(x3, x4))))), or(and(x1, xor(x2, x4)), xor(x2, xor(x3, x5))))",
+  "K_construction": 24,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K24_09"
+ },
+ {
+  "expression": "xor(xor(x5, and(xor(x2, x5), or(x4, and(x1, not(and(x3, x5)))))), and(xor(x3, x5), xor(x3, or(x1, not(x4)))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-AONX-n5_K25_00"
+ },
+ {
+  "expression": "and(not(or(and(x1, x2), xor(x2, xor(x5, and(xor(x2, x4), or(x1, xor(x3, x4))))))), or(not(x3), and(x4, x5)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "depth": 9,
+  "target_id": "BOOL-AONX-n5_K25_01"
+ },
+ {
+  "expression": "xor(not(xor(x2, or(and(x3, x5), xor(x5, xor(and(x3, x4), or(x2, and(x1, x4))))))), xor(x2, and(x3, not(x1))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "depth": 9,
+  "target_id": "BOOL-AONX-n5_K25_02"
+ },
+ {
+  "expression": "xor(or(and(x2, and(x3, x4)), xor(x1, xor(x5, and(x2, or(x4, x5))))), and(xor(x1, x4), xor(x2, or(x4, x5))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K25_03"
+ },
+ {
+  "expression": "xor(and(x2, not(xor(x4, or(and(x4, not(x3)), and(x1, xor(x3, x5)))))), xor(and(x3, x5), or(x1, and(x2, x5))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-AONX-n5_K25_04"
+ },
+ {
+  "expression": "and(xor(or(x1, x3), or(x2, and(not(x5), or(x3, x4)))), not(xor(x2, xor(x4, or(xor(x3, x4), xor(x2, x5))))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K25_05"
+ },
+ {
+  "expression": "xor(xor(x5, and(x4, or(x1, x2))), or(xor(x1, or(x4, not(x5))), xor(x4, and(x2, xor(x1, or(x3, not(x4)))))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-AONX-n5_K25_06"
+ },
+ {
+  "expression": "or(xor(x1, and(x2, xor(x4, x5))), and(not(xor(x3, xor(x4, or(x2, x5)))), or(x1, xor(x2, or(x5, not(x4))))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K25_07"
+ },
+ {
+  "expression": "and(or(x4, and(x2, or(x1, not(x5)))), or(and(x2, or(x5, not(x1))), xor(x3, xor(x4, and(x5, xor(x1, x4))))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K25_08"
+ },
+ {
+  "expression": "or(xor(and(not(x3), xor(x2, x5)), and(x4, or(x5, xor(x3, and(x1, x2))))), and(xor(x2, x3), not(and(x1, x5))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K25_09"
+ },
+ {
+  "expression": "xor(xor(x4, or(x3, and(x5, not(and(x1, or(x2, x4)))))), or(and(x2, not(xor(x3, x4))), xor(x4, and(x1, or(x5, not(x3))))))",
+  "K_construction": 28,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-AONX-n5_K28_00"
+ },
+ {
+  "expression": "xor(and(or(x1, not(x4)), xor(x3, or(x5, not(x2)))), not(or(and(x1, or(x2, not(x5))), xor(and(x2, x5), and(x4, not(x3))))))",
+  "K_construction": 28,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K28_01"
+ },
+ {
+  "expression": "xor(xor(x2, or(not(xor(x1, x4)), and(or(x1, x5), xor(x2, and(x1, x3))))), or(not(x3), and(x1, or(x5, and(x4, not(x2))))))",
+  "K_construction": 28,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K28_02"
+ },
+ {
+  "expression": "xor(and(or(x4, x5), or(x2, xor(x3, x5))), and(not(and(x2, x3)), xor(x1, and(or(x2, x4), or(x5, xor(x1, and(x2, x4)))))))",
+  "K_construction": 28,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-AONX-n5_K28_03"
+ },
+ {
+  "expression": "xor(xor(or(x2, x4), and(or(x5, not(xor(x1, x4))), or(not(x3), xor(x1, x2)))), not(and(x5, xor(x4, or(x3, xor(x2, x4))))))",
+  "K_construction": 28,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K28_04"
+ },
+ {
+  "expression": "xor(not(and(or(x2, not(and(x5, or(x1, x3)))), or(x1, xor(x4, or(x5, not(x2)))))), xor(x3, or(x4, xor(x5, and(x2, x3)))))",
+  "K_construction": 28,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-AONX-n5_K28_05"
+ },
+ {
+  "expression": "and(not(xor(x5, or(xor(x1, x3), xor(x1, or(x5, and(x4, or(x1, x2))))))), xor(x1, and(xor(x3, x4), xor(x4, and(x2, x5)))))",
+  "K_construction": 28,
+  "K_proven": null,
+  "depth": 9,
+  "target_id": "BOOL-AONX-n5_K28_06"
+ },
+ {
+  "expression": "xor(or(x4, and(x2, or(x5, xor(x1, x3)))), or(not(or(x5, xor(x2, x4))), and(or(x4, and(x3, x5)), xor(x1, xor(x3, x5)))))",
+  "K_construction": 28,
+  "K_proven": null,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K28_07"
+ },
+ {
+  "expression": "xor(not(and(or(x3, x4), or(and(x1, not(and(x2, x3))), and(x5, not(xor(x2, x3)))))), xor(x2, and(xor(x3, x4), xor(x3, x5))))",
+  "K_construction": 28,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-AONX-n5_K28_08"
+ },
+ {
+  "expression": "xor(or(and(x2, x4), xor(x2, and(x5, xor(x3, and(x2, not(x1)))))), not(and(x5, xor(x1, or(xor(x2, x4), and(x3, not(x1)))))))",
+  "K_construction": 28,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-AONX-n5_K28_09"
+ },
+ {
+  "expression": "xor(xor(or(x1, x5), or(x3, not(and(x2, xor(x1, xor(x4, x5)))))), and(x3, xor(x1, xor(x2, or(x5, or(not(x4), and(x1, x2)))))))",
+  "K_construction": 29,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-AONX-n5_K29_00"
+ },
+ {
+  "expression": "xor(xor(x2, and(x1, or(x3, and(x5, xor(x2, x4))))), xor(x4, or(and(x1, x4), and(xor(x2, x3), or(xor(x2, x4), xor(x3, x5))))))",
+  "K_construction": 29,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K29_01"
+ },
+ {
+  "expression": "xor(xor(x4, or(x3, and(or(x2, x5), xor(x1, or(x5, not(x4)))))), xor(or(x3, and(x1, x2)), and(xor(x2, x5), or(x1, not(x4)))))",
+  "K_construction": 29,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-AONX-n5_K29_02"
+ },
+ {
+  "expression": "xor(not(xor(or(x3, and(x4, x5)), or(x1, xor(x5, or(x2, x3))))), xor(x2, xor(or(x3, xor(x1, x2)), and(not(x5), or(x1, x4)))))",
+  "K_construction": 29,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K29_03"
+ },
+ {
+  "expression": "xor(not(xor(or(x1, x5), or(x3, and(or(x1, x4), or(x2, xor(x1, x5)))))), not(xor(x4, or(and(x2, x3), xor(x5, or(x1, x4))))))",
+  "K_construction": 29,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-AONX-n5_K29_04"
+ },
+ {
+  "expression": "and(or(and(x2, x4), xor(and(x1, x2), or(x5, not(x3)))), xor(x1, and(or(x2, x4), or(and(x3, x4), xor(x5, or(x1, not(x3)))))))",
+  "K_construction": 29,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-AONX-n5_K29_05"
+ },
+ {
+  "expression": "and(not(xor(x4, or(and(x2, x5), and(not(x1), xor(x3, x4))))), xor(or(x4, not(x5)), or(and(x3, x4), xor(x2, or(x3, not(x1))))))",
+  "K_construction": 29,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K29_06"
+ },
+ {
+  "expression": "xor(not(and(x2, xor(x4, or(x1, xor(x3, x4))))), and(not(and(x1, xor(x4, or(x3, x5)))), or(xor(x1, x4), xor(x5, or(x2, x3)))))",
+  "K_construction": 29,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K29_07"
+ },
+ {
+  "expression": "xor(xor(x1, or(and(x1, or(x2, x5)), xor(or(x4, x5), or(x2, x3)))), and(xor(x4, x5), xor(x3, and(or(x2, x4), xor(x1, x3)))))",
+  "K_construction": 29,
+  "K_proven": null,
+  "depth": 6,
+  "target_id": "BOOL-AONX-n5_K29_08"
+ },
+ {
+  "expression": "xor(xor(x1, or(x4, and(or(x2, x3), or(x1, x5)))), xor(x4, xor(or(x5, xor(x3, and(x1, x4))), or(x3, xor(x1, and(x2, x4))))))",
+  "K_construction": 29,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-AONX-n5_K29_09"
+ }
+]

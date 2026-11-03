@@ -1,0 +1,81 @@
+{
+ "grammar": "BOOL-NAND-n6",
+ "seed": 20261021,
+ "ceiling": 21,
+ "depth_limit": 10,
+ "levels": {
+  "11": {
+   "proven": true,
+   "n_level": 15121,
+   "n_depth_ok": 15121,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {}
+  },
+  "15": {
+   "proven": true,
+   "n_level": 396512,
+   "n_depth_ok": 396512,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {}
+  },
+  "19": {
+   "proven": true,
+   "n_level": 9199133,
+   "n_depth_ok": 9199133,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {}
+  },
+  "25": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 33
+   }
+  },
+  "29": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 12
+   }
+  },
+  "35": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 9
+   }
+  },
+  "37": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 3
+   }
+  },
+  "39": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 1
+   }
+  },
+  "41": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 2
+   }
+  },
+  "43": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 1
+   }
+  }
+ }
+}

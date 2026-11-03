@@ -1,0 +1,3 @@
+Stage 1 filed on OSF by the author, 2026-10-20, in project https://osf.io/hjf43 (registration link to be added). Registered commit 3b8aa5e055f0f380c90d85890e3dd0f60ff213e3.
+OSF submission time: 2026-10-20 13:45:55 (pending approval). First calibration run: 2026-10-20 13:47:30.
+Stage 1 registration: DOI 10.17605/OSF.IO/A3SPG, https://osf.io/a3spg. Stage 0: DOI 10.17605/OSF.IO/XH9AG, https://osf.io/xh9ag.

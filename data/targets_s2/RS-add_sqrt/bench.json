@@ -1,0 +1,21 @@
+[
+ {
+  "target_id": "RS-add_sqrt_bench_N8",
+  "benchmark": "N8",
+  "expression": "sqrt(x)",
+  "K_construction": 2,
+  "K_proven": 2,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 2.0,
+   "bits_uniform": 4.0,
+   "bits_syn": 2.0,
+   "bits_sem": 1.584962500721156,
+   "bits_sem_uncorrected": 1.584962500721156,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.008222486138986336,
+  "target_scale": 1.729190275794133
+ }
+]

@@ -1,0 +1,562 @@
+[
+ {
+  "expression": "nand(x4, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-NAND-n4_K03_00"
+ },
+ {
+  "expression": "nand(x2, x2)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-NAND-n4_K03_01"
+ },
+ {
+  "expression": "nand(x1, x1)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-NAND-n4_K03_02"
+ },
+ {
+  "expression": "nand(x2, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-NAND-n4_K03_03"
+ },
+ {
+  "expression": "nand(x1, x2)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-NAND-n4_K03_04"
+ },
+ {
+  "expression": "nand(x2, x3)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-NAND-n4_K03_05"
+ },
+ {
+  "expression": "nand(x1, x3)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-NAND-n4_K03_06"
+ },
+ {
+  "expression": "nand(x3, x3)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-NAND-n4_K03_07"
+ },
+ {
+  "expression": "nand(x1, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-NAND-n4_K03_08"
+ },
+ {
+  "expression": "nand(x3, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-NAND-n4_K03_09"
+ },
+ {
+  "expression": "nand(nand(x4, x4), nand(x3, nand(x2, x2)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "target_id": "BOOL-NAND-n4_K09_00"
+ },
+ {
+  "expression": "nand(x1, nand(x2, nand(x1, nand(x3, x4))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "target_id": "BOOL-NAND-n4_K09_01"
+ },
+ {
+  "expression": "nand(x3, nand(x2, nand(x4, nand(x1, x2))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "target_id": "BOOL-NAND-n4_K09_02"
+ },
+ {
+  "expression": "nand(x3, nand(nand(x1, x3), nand(x3, x4)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "target_id": "BOOL-NAND-n4_K09_03"
+ },
+ {
+  "expression": "nand(nand(x1, x1), nand(x3, nand(x2, x2)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "target_id": "BOOL-NAND-n4_K09_04"
+ },
+ {
+  "expression": "nand(nand(x1, x2), nand(x4, nand(x1, x1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "target_id": "BOOL-NAND-n4_K09_05"
+ },
+ {
+  "expression": "nand(nand(x1, x1), nand(x2, nand(x4, x4)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "target_id": "BOOL-NAND-n4_K09_06"
+ },
+ {
+  "expression": "nand(x2, nand(nand(x1, x2), nand(x2, x3)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "target_id": "BOOL-NAND-n4_K09_07"
+ },
+ {
+  "expression": "nand(x1, nand(nand(x2, x3), nand(x3, x4)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "target_id": "BOOL-NAND-n4_K09_08"
+ },
+ {
+  "expression": "nand(nand(x3, x4), nand(x4, nand(x1, x2)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "target_id": "BOOL-NAND-n4_K09_09"
+ },
+ {
+  "expression": "nand(nand(x1, x2), nand(nand(x2, x3), nand(x4, nand(x2, x2))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "target_id": "BOOL-NAND-n4_K13_00"
+ },
+ {
+  "expression": "nand(nand(x2, nand(x1, x1)), nand(nand(x2, x3), nand(x4, x4)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 4,
+  "target_id": "BOOL-NAND-n4_K13_01"
+ },
+ {
+  "expression": "nand(nand(x3, x3), nand(nand(x2, x4), nand(x1, nand(x2, x2))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "target_id": "BOOL-NAND-n4_K13_02"
+ },
+ {
+  "expression": "nand(nand(x2, x4), nand(nand(x3, x3), nand(x2, nand(x1, x1))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "target_id": "BOOL-NAND-n4_K13_03"
+ },
+ {
+  "expression": "nand(nand(x3, nand(x4, x4)), nand(x3, nand(x4, nand(x1, x2))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "target_id": "BOOL-NAND-n4_K13_04"
+ },
+ {
+  "expression": "nand(nand(x3, x4), nand(nand(x4, x4), nand(x3, nand(x2, x2))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "target_id": "BOOL-NAND-n4_K13_05"
+ },
+ {
+  "expression": "nand(nand(x1, nand(x2, x2)), nand(x3, nand(x2, nand(x1, x4))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "target_id": "BOOL-NAND-n4_K13_06"
+ },
+ {
+  "expression": "nand(nand(x2, x4), nand(nand(x4, x4), nand(x2, nand(x3, x3))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "target_id": "BOOL-NAND-n4_K13_07"
+ },
+ {
+  "expression": "nand(nand(x4, x4), nand(nand(x3, x3), nand(x2, nand(x1, x1))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "target_id": "BOOL-NAND-n4_K13_08"
+ },
+ {
+  "expression": "nand(nand(x2, nand(x1, x1)), nand(nand(x3, x3), nand(x4, x4)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 4,
+  "target_id": "BOOL-NAND-n4_K13_09"
+ },
+ {
+  "expression": "nand(nand(x2, nand(x1, x1)), nand(x1, nand(nand(x3, x4), nand(nand(x2, x3), nand(x4, x4)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "target_id": "BOOL-NAND-n4_K19_00"
+ },
+ {
+  "expression": "nand(nand(nand(x4, x4), nand(x1, nand(x2, x2))), nand(nand(x1, x2), nand(x3, nand(x1, x4))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 5,
+  "target_id": "BOOL-NAND-n4_K19_01"
+ },
+ {
+  "expression": "nand(nand(x1, nand(x4, x4)), nand(nand(x1, x3), nand(nand(x2, x3), nand(x4, nand(x2, x2)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "target_id": "BOOL-NAND-n4_K19_02"
+ },
+ {
+  "expression": "nand(nand(x1, nand(x3, nand(x1, x2))), nand(nand(x1, x3), nand(x4, nand(x3, nand(x2, x4)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "target_id": "BOOL-NAND-n4_K19_03"
+ },
+ {
+  "expression": "nand(nand(x4, nand(x2, x3)), nand(nand(x1, x3), nand(nand(x1, x2), nand(x3, nand(x2, x2)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "target_id": "BOOL-NAND-n4_K19_04"
+ },
+ {
+  "expression": "nand(nand(x2, nand(x1, x1)), nand(x3, nand(x3, nand(nand(x1, x2), nand(x4, nand(x1, x1))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "target_id": "BOOL-NAND-n4_K19_05"
+ },
+ {
+  "expression": "nand(nand(x2, nand(x2, nand(x4, nand(x1, x3)))), nand(nand(x4, x4), nand(x2, nand(x1, x3))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "target_id": "BOOL-NAND-n4_K19_06"
+ },
+ {
+  "expression": "nand(nand(x1, nand(x1, nand(x2, x3))), nand(nand(x2, x3), nand(x1, nand(x4, nand(x1, x3)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "target_id": "BOOL-NAND-n4_K19_07"
+ },
+ {
+  "expression": "nand(nand(x3, nand(x4, nand(x1, nand(x2, x4)))), nand(nand(x1, x2), nand(x4, nand(x2, x3))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "target_id": "BOOL-NAND-n4_K19_08"
+ },
+ {
+  "expression": "nand(nand(x2, nand(x4, nand(x1, x3))), nand(nand(x1, x3), nand(x4, nand(x1, nand(x2, x4)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "target_id": "BOOL-NAND-n4_K19_09"
+ },
+ {
+  "expression": "nand(nand(x1, nand(x1, nand(x3, x4))), nand(nand(x1, x2), nand(nand(x2, x3), nand(nand(x3, x3), nand(x2, x4)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 6,
+  "target_id": "BOOL-NAND-n4_K23_00"
+ },
+ {
+  "expression": "nand(nand(nand(x2, x3), nand(x4, x4)), nand(x3, nand(x3, nand(nand(x1, x2), nand(nand(x1, x1), nand(x2, x4))))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 7,
+  "target_id": "BOOL-NAND-n4_K23_01"
+ },
+ {
+  "expression": "nand(nand(x4, nand(x1, x1)), nand(nand(x2, x3), nand(nand(x3, nand(x1, x4)), nand(x2, nand(x1, nand(x2, x4))))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 7,
+  "target_id": "BOOL-NAND-n4_K23_02"
+ },
+ {
+  "expression": "nand(nand(x2, nand(x2, nand(x3, x4))), nand(nand(x2, x2), nand(nand(x3, nand(x1, x4)), nand(x4, nand(x1, x3)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 6,
+  "target_id": "BOOL-NAND-n4_K23_03"
+ },
+ {
+  "expression": "nand(nand(x1, nand(x1, nand(x4, nand(x1, x2)))), nand(nand(x1, x4), nand(nand(x1, x3), nand(x2, nand(x3, x3)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 6,
+  "target_id": "BOOL-NAND-n4_K23_04"
+ },
+ {
+  "expression": "nand(nand(x2, nand(x3, x4)), nand(nand(x1, x2), nand(nand(x1, x3), nand(nand(x1, x1), nand(x3, nand(x4, x4))))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 7,
+  "target_id": "BOOL-NAND-n4_K23_05"
+ },
+ {
+  "expression": "nand(nand(nand(x1, x1), nand(x2, x2)), nand(nand(x2, nand(x3, nand(x1, x4))), nand(nand(x1, x2), nand(x4, x4))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 6,
+  "target_id": "BOOL-NAND-n4_K23_06"
+ },
+ {
+  "expression": "nand(nand(x1, x3), nand(nand(x3, nand(x2, x4)), nand(nand(x4, nand(x1, x2)), nand(nand(x1, x1), nand(x2, x2)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 6,
+  "target_id": "BOOL-NAND-n4_K23_07"
+ },
+ {
+  "expression": "nand(nand(x1, nand(x1, x1)), nand(nand(x3, x4), nand(nand(x4, nand(x1, x2)), nand(x3, nand(x1, nand(x2, x3))))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 7,
+  "target_id": "BOOL-NAND-n4_K23_08"
+ },
+ {
+  "expression": "nand(nand(x2, nand(nand(x1, x3), nand(x4, nand(x3, x3)))), nand(nand(x1, x1), nand(x4, nand(x3, nand(x2, x4)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 6,
+  "target_id": "BOOL-NAND-n4_K23_09"
+ },
+ {
+  "expression": "nand(nand(x1, nand(nand(x2, x3), nand(x4, nand(x3, x3)))), nand(nand(x1, x1), nand(nand(x2, x4), nand(nand(x2, x2), nand(x4, nand(x3, x3))))))",
+  "K_construction": 29,
+  "K_proven": 29,
+  "depth": 7,
+  "target_id": "BOOL-NAND-n4_K29_00"
+ },
+ {
+  "expression": "nand(nand(x1, nand(x1, x1)), nand(nand(x2, nand(x3, x4)), nand(nand(x1, x2), nand(nand(x1, x3), nand(nand(x1, x1), nand(x3, nand(x4, x4)))))))",
+  "K_construction": 29,
+  "K_proven": 29,
+  "depth": 8,
+  "target_id": "BOOL-NAND-n4_K29_01"
+ },
+ {
+  "expression": "nand(nand(nand(x3, x3), nand(nand(x1, x2), nand(x2, x4))), nand(nand(x1, x1), nand(nand(x1, x4), nand(nand(x2, x2), nand(x4, nand(x3, x3))))))",
+  "K_construction": 29,
+  "K_proven": 29,
+  "depth": 7,
+  "target_id": "BOOL-NAND-n4_K29_02"
+ },
+ {
+  "expression": "nand(nand(x2, nand(x2, nand(x4, nand(x1, nand(x3, x4))))), nand(nand(x1, x3), nand(nand(x1, nand(x2, x4)), nand(nand(x2, x2), nand(x4, x4)))))",
+  "K_construction": 29,
+  "K_proven": 29,
+  "depth": 7,
+  "target_id": "BOOL-NAND-n4_K29_03"
+ },
+ {
+  "expression": "nand(nand(x1, nand(x1, x1)), nand(nand(x3, x4), nand(nand(x1, nand(x2, x2)), nand(nand(x2, nand(x1, x1)), nand(nand(x3, x3), nand(x4, x4))))))",
+  "K_construction": 29,
+  "K_proven": 29,
+  "depth": 7,
+  "target_id": "BOOL-NAND-n4_K29_04"
+ },
+ {
+  "expression": "nand(nand(x2, nand(x2, nand(x3, nand(x2, x4)))), nand(nand(x2, nand(x1, nand(x2, x3))), nand(nand(x2, x4), nand(x4, nand(x1, nand(x3, x4))))))",
+  "K_construction": 29,
+  "K_proven": 29,
+  "depth": 7,
+  "target_id": "BOOL-NAND-n4_K29_05"
+ },
+ {
+  "expression": "nand(nand(x1, nand(nand(x2, x4), nand(nand(x3, x3), nand(x4, x4)))), nand(nand(x1, x1), nand(nand(x3, nand(x2, x2)), nand(x4, nand(x2, x2)))))",
+  "K_construction": 29,
+  "K_proven": 29,
+  "depth": 6,
+  "target_id": "BOOL-NAND-n4_K29_06"
+ },
+ {
+  "expression": "nand(nand(x2, nand(x3, x3)), nand(nand(x1, x4), nand(nand(x1, nand(x2, x3)), nand(nand(x2, x4), nand(nand(x4, x4), nand(x3, nand(x1, x2)))))))",
+  "K_construction": 29,
+  "K_proven": 29,
+  "depth": 8,
+  "target_id": "BOOL-NAND-n4_K29_07"
+ },
+ {
+  "expression": "nand(nand(x2, nand(x2, nand(x3, nand(x1, x2)))), nand(nand(x3, nand(x1, nand(x2, x3))), nand(nand(x2, x4), nand(nand(x2, x2), nand(x1, x4)))))",
+  "K_construction": 29,
+  "K_proven": 29,
+  "depth": 6,
+  "target_id": "BOOL-NAND-n4_K29_08"
+ },
+ {
+  "expression": "nand(nand(x1, x2), nand(nand(x1, nand(x4, x4)), nand(nand(x1, x4), nand(nand(x3, x3), nand(nand(x2, x4), nand(nand(x2, x2), nand(x4, x4)))))))",
+  "K_construction": 29,
+  "K_proven": 29,
+  "depth": 8,
+  "target_id": "BOOL-NAND-n4_K29_09"
+ },
+ {
+  "expression": "nand(nand(x4, nand(x1, x3)), nand(nand(nand(x2, x3), nand(nand(x1, x2), nand(x1, x3))), nand(nand(x1, x1), nand(nand(x2, x3), nand(nand(x2, x2), nand(x3, x3))))))",
+  "K_construction": 33,
+  "K_proven": 33,
+  "depth": 7,
+  "target_id": "BOOL-NAND-n4_K33_00"
+ },
+ {
+  "expression": "nand(nand(x4, nand(x4, nand(nand(x2, x4), nand(x1, nand(x3, x3))))), nand(nand(x1, x3), nand(nand(x1, nand(x4, nand(x1, x2))), nand(x2, nand(x4, nand(x2, x3))))))",
+  "K_construction": 33,
+  "K_proven": 33,
+  "depth": 7,
+  "target_id": "BOOL-NAND-n4_K33_01"
+ },
+ {
+  "expression": "nand(nand(x1, nand(x1, x1)), nand(nand(x1, x2), nand(nand(x2, nand(x3, x3)), nand(nand(x1, x3), nand(nand(x1, nand(x4, x4)), nand(x3, nand(x2, nand(x3, x4))))))))",
+  "K_construction": 33,
+  "K_proven": 33,
+  "depth": 9,
+  "target_id": "BOOL-NAND-n4_K33_02"
+ },
+ {
+  "expression": "nand(nand(nand(x1, x1), nand(nand(x2, x4), nand(x3, x4))), nand(nand(x2, nand(x1, x1)), nand(nand(x2, x3), nand(nand(x3, x3), nand(x4, nand(x1, nand(x2, x4)))))))",
+  "K_construction": 33,
+  "K_proven": 33,
+  "depth": 8,
+  "target_id": "BOOL-NAND-n4_K33_03"
+ },
+ {
+  "expression": "nand(nand(x1, nand(x1, x1)), nand(nand(x4, nand(x2, nand(x1, nand(x2, x3)))), nand(nand(x2, x4), nand(nand(x1, x3), nand(nand(x1, x1), nand(x3, nand(x2, x2)))))))",
+  "K_construction": 33,
+  "K_proven": 33,
+  "depth": 8,
+  "target_id": "BOOL-NAND-n4_K33_04"
+ },
+ {
+  "expression": "nand(nand(x4, nand(x2, nand(x1, nand(x2, x3)))), nand(nand(x2, nand(x3, nand(x1, x2))), nand(nand(x1, x3), nand(nand(x1, x1), nand(x3, nand(x2, nand(x3, x4)))))))",
+  "K_construction": 33,
+  "K_proven": 33,
+  "depth": 8,
+  "target_id": "BOOL-NAND-n4_K33_05"
+ },
+ {
+  "expression": "nand(nand(x1, nand(x1, x1)), nand(nand(nand(x2, x4), nand(nand(x2, x3), nand(x3, x4))), nand(nand(x1, x3), nand(nand(x2, x4), nand(nand(x2, x2), nand(x4, x4))))))",
+  "K_construction": 33,
+  "K_proven": 33,
+  "depth": 7,
+  "target_id": "BOOL-NAND-n4_K33_06"
+ },
+ {
+  "expression": "nand(nand(x2, nand(x2, nand(x3, x4))), nand(nand(x3, nand(x1, x4)), nand(nand(x1, nand(x2, x2)), nand(nand(x2, x4), nand(nand(x4, x4), nand(x2, nand(x1, x1)))))))",
+  "K_construction": 33,
+  "K_proven": 33,
+  "depth": 8,
+  "target_id": "BOOL-NAND-n4_K33_07"
+ },
+ {
+  "expression": "nand(nand(nand(x2, x3), nand(nand(x1, x2), nand(x3, nand(x1, x4)))), nand(nand(x1, nand(x2, x4)), nand(nand(x1, x4), nand(nand(x4, x4), nand(x2, nand(x3, x3))))))",
+  "K_construction": 33,
+  "K_proven": 33,
+  "depth": 7,
+  "target_id": "BOOL-NAND-n4_K33_08"
+ },
+ {
+  "expression": "nand(nand(x1, nand(x1, x1)), nand(nand(x2, nand(nand(x1, x4), nand(x3, nand(x1, x1)))), nand(nand(x2, x2), nand(nand(x1, x3), nand(nand(x3, x3), nand(x1, x4))))))",
+  "K_construction": 33,
+  "K_proven": 33,
+  "depth": 7,
+  "target_id": "BOOL-NAND-n4_K33_09"
+ },
+ {
+  "expression": "nand(nand(x2, nand(x2, nand(x3, x4))), nand(nand(x3, x3), nand(nand(nand(x2, x4), nand(nand(x1, x2), nand(x1, x4))), nand(nand(x1, x1), nand(nand(x2, x4), nand(nand(x2, x2), nand(x4, x4)))))))",
+  "K_construction": 39,
+  "K_proven": 39,
+  "depth": 8,
+  "target_id": "BOOL-NAND-n4_K39_00"
+ },
+ {
+  "expression": "nand(nand(x1, nand(x1, x1)), nand(nand(nand(x1, x1), nand(nand(x2, x4), nand(x3, x4))), nand(nand(x3, nand(x2, x2)), nand(nand(x1, nand(x2, x4)), nand(nand(x4, x4), nand(x2, nand(x3, x3)))))))",
+  "K_construction": 39,
+  "K_proven": 39,
+  "depth": 8,
+  "target_id": "BOOL-NAND-n4_K39_01"
+ },
+ {
+  "expression": "nand(nand(x1, nand(x1, nand(nand(x2, x3), nand(x1, x4)))), nand(nand(x1, nand(x3, x4)), nand(nand(x2, nand(x4, nand(x1, x3))), nand(nand(x3, x4), nand(nand(x3, x3), nand(x4, nand(x2, x2)))))))",
+  "K_construction": 39,
+  "K_proven": 39,
+  "depth": 8,
+  "target_id": "BOOL-NAND-n4_K39_02"
+ },
+ {
+  "expression": "nand(nand(nand(x1, x1), nand(nand(x2, nand(x3, x4)), nand(nand(x3, x3), nand(x4, x4)))), nand(nand(nand(x1, x3), nand(x4, nand(x2, x2))), nand(nand(x1, nand(x3, x4)), nand(x3, nand(x1, x4)))))",
+  "K_construction": 39,
+  "K_proven": 39,
+  "depth": 6,
+  "target_id": "BOOL-NAND-n4_K39_03"
+ },
+ {
+  "expression": "nand(nand(x1, nand(x1, nand(x3, nand(x1, x4)))), nand(nand(nand(x1, x4), nand(nand(x1, x2), nand(x2, x4))), nand(nand(x2, nand(x3, x3)), nand(nand(x1, x4), nand(nand(x1, x1), nand(x3, x4))))))",
+  "K_construction": 39,
+  "K_proven": 39,
+  "depth": 7,
+  "target_id": "BOOL-NAND-n4_K39_04"
+ },
+ {
+  "expression": "nand(nand(x1, nand(x1, x1)), nand(nand(x1, nand(nand(x2, x3), nand(x3, x4))), nand(nand(x1, x3), nand(nand(nand(x2, x2), nand(x4, x4)), nand(nand(x1, nand(x2, x4)), nand(x3, nand(x2, x4)))))))",
+  "K_construction": 39,
+  "K_proven": 39,
+  "depth": 8,
+  "target_id": "BOOL-NAND-n4_K39_05"
+ },
+ {
+  "expression": "nand(nand(nand(x1, x1), nand(nand(x2, x4), nand(x3, x4))), nand(nand(x2, nand(x1, x3)), nand(nand(x2, nand(x4, x4)), nand(nand(x3, x3), nand(nand(x1, x4), nand(nand(x1, x1), nand(x4, x4)))))))",
+  "K_construction": 39,
+  "K_proven": 39,
+  "depth": 8,
+  "target_id": "BOOL-NAND-n4_K39_06"
+ },
+ {
+  "expression": "nand(nand(x4, nand(nand(x1, x2), nand(nand(x1, x1), nand(x2, x2)))), nand(nand(x4, x4), nand(nand(x2, nand(x1, nand(x2, x3))), nand(nand(x1, x3), nand(nand(x3, x3), nand(x1, nand(x2, x2)))))))",
+  "K_construction": 39,
+  "K_proven": 39,
+  "depth": 8,
+  "target_id": "BOOL-NAND-n4_K39_07"
+ },
+ {
+  "expression": "nand(nand(x1, nand(x1, x1)), nand(nand(x1, nand(x3, x4)), nand(nand(x1, nand(x2, x2)), nand(nand(x3, nand(x2, nand(x3, x4))), nand(nand(x2, x4), nand(nand(x4, x4), nand(x2, nand(x3, x3))))))))",
+  "K_construction": 39,
+  "K_proven": 39,
+  "depth": 9,
+  "target_id": "BOOL-NAND-n4_K39_08"
+ },
+ {
+  "expression": "nand(nand(x1, nand(x1, nand(nand(x1, x2), nand(x1, x4)))), nand(nand(x1, nand(x2, x4)), nand(nand(x3, nand(x2, nand(x1, x4))), nand(nand(x2, x4), nand(nand(x4, x4), nand(x2, nand(x3, x3)))))))",
+  "K_construction": 39,
+  "K_proven": 39,
+  "depth": 8,
+  "target_id": "BOOL-NAND-n4_K39_09"
+ }
+]

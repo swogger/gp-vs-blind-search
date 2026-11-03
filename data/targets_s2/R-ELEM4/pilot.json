@@ -1,0 +1,2612 @@
+[
+ {
+  "expression": "+(x, x)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.459431618637297,
+   "bits_sem": 3.807354922057604,
+   "bits_sem_uncorrected": 3.807354922057604,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3267326732673266,
+  "target_scale": 5.98019801980198,
+  "target_id": "R-ELEM4_K03_00"
+ },
+ {
+  "expression": "exp(exp(x))",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.459431618637297,
+   "bits_sem": 3.807354922057604,
+   "bits_sem_uncorrected": 3.807354922057604,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 5252163430033231.0,
+  "target_scale": 433608004.5042443,
+  "target_id": "R-ELEM4_K03_01"
+ },
+ {
+  "expression": "log(log(x))",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.459431618637297,
+   "bits_sem": 3.807354922057604,
+   "bits_sem_uncorrected": 3.807354922057604,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.016768306075898066,
+  "target_scale": 1.0,
+  "target_id": "R-ELEM4_K03_02"
+ },
+ {
+  "expression": "+(x, 1)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.459431618637297,
+   "bits_sem": 3.807354922057604,
+   "bits_sem_uncorrected": 3.807354922057604,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683164,
+  "target_scale": 3.99009900990099,
+  "target_id": "R-ELEM4_K03_03"
+ },
+ {
+  "expression": "*(x, x)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.459431618637297,
+   "bits_sem": 3.807354922057604,
+   "bits_sem_uncorrected": 3.807354922057604,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.0474153184360673,
+  "target_scale": 8.94069208901088,
+  "target_id": "R-ELEM4_K03_04"
+ },
+ {
+  "expression": "log(+(x, x))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 10.339850002884624,
+   "bits_syn": 6.426264754702098,
+   "bits_sem": 5.129283016944966,
+   "bits_sem_uncorrected": 5.129283016944966,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.01331409493534148,
+  "target_scale": 1.7884536810935554,
+  "target_id": "R-ELEM4_K04_00"
+ },
+ {
+  "expression": "*(x, log(x))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 10.339850002884624,
+   "bits_syn": 6.426264754702098,
+   "bits_sem": 5.129283016944966,
+   "bits_sem_uncorrected": 5.129283016944966,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.2989341599534127,
+  "target_scale": 3.275074882783666,
+  "target_id": "R-ELEM4_K04_01"
+ },
+ {
+  "expression": "exp(*(x, x))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 10.339850002884624,
+   "bits_syn": 6.426264754702098,
+   "bits_sem": 5.129283016944966,
+   "bits_sem_uncorrected": 5.129283016944966,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3407154.321255218,
+  "target_scale": 7636.480351313683,
+  "target_id": "R-ELEM4_K04_02"
+ },
+ {
+  "expression": "log(+(x, 1))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 10.339850002884624,
+   "bits_syn": 6.426264754702098,
+   "bits_sem": 5.129283016944966,
+   "bits_sem_uncorrected": 5.129283016944966,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.006730997949333938,
+  "target_scale": 1.3838160451054236,
+  "target_id": "R-ELEM4_K04_03"
+ },
+ {
+  "expression": "+(x, exp(x))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 10.339850002884624,
+   "bits_syn": 6.426264754702098,
+   "bits_sem": 5.129283016944966,
+   "bits_sem_uncorrected": 5.129283016944966,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 15.057083499587243,
+  "target_scale": 22.877750478392826,
+  "target_id": "R-ELEM4_K04_04"
+ },
+ {
+  "expression": "*(x, exp(1))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 10.339850002884624,
+   "bits_syn": 6.426264754702098,
+   "bits_sem": 5.129283016944966,
+   "bits_sem_uncorrected": 5.129283016944966,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.6035615130314637,
+  "target_scale": 8.127931803907243,
+  "target_id": "R-ELEM4_K04_05"
+ },
+ {
+  "expression": "+(1, log(x))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 10.339850002884624,
+   "bits_syn": 6.426264754702098,
+   "bits_sem": 5.129283016944966,
+   "bits_sem_uncorrected": 5.129283016944966,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.01331409493534148,
+  "target_scale": 2.09530650053361,
+  "target_id": "R-ELEM4_K04_06"
+ },
+ {
+  "expression": "+(1, exp(x))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 10.339850002884624,
+   "bits_syn": 6.426264754702098,
+   "bits_sem": 5.129283016944966,
+   "bits_sem_uncorrected": 5.129283016944966,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.935998848502534,
+  "target_scale": 20.887651468491836,
+  "target_id": "R-ELEM4_K04_07"
+ },
+ {
+  "expression": "+(x, log(x))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 10.339850002884624,
+   "bits_syn": 6.426264754702098,
+   "bits_sem": 5.129283016944966,
+   "bits_sem_uncorrected": 5.129283016944966,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.16086494909149077,
+  "target_scale": 4.0854055104346,
+  "target_id": "R-ELEM4_K04_08"
+ },
+ {
+  "expression": "exp(+(x, x))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 10.339850002884624,
+   "bits_syn": 6.426264754702098,
+   "bits_sem": 5.129283016944966,
+   "bits_sem_uncorrected": 5.129283016944966,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 9286.937946984115,
+  "target_scale": 395.51868093220537,
+  "target_id": "R-ELEM4_K04_09"
+ },
+ {
+  "expression": "*(log(x), log(x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 6.3750394313469245,
+   "bits_sem_uncorrected": 6.442943495848728,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.043440524158358834,
+  "target_scale": 1.1996963301111836,
+  "target_id": "R-ELEM4_K05_00"
+ },
+ {
+  "expression": "*(x, *(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 6.3750394313469245,
+   "bits_sem_uncorrected": 6.442943495848728,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 29.469305779619386,
+  "target_scale": 26.73355456318105,
+  "target_id": "R-ELEM4_K05_01"
+ },
+ {
+  "expression": "log(*(x, log(x)))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 6.3750394313469245,
+   "bits_sem_uncorrected": 6.442943495848728,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.05991469271483713,
+  "target_scale": 1.1863407337979275,
+  "target_id": "R-ELEM4_K05_02"
+ },
+ {
+  "expression": "*(x, +(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 6.3750394313469245,
+   "bits_sem_uncorrected": 6.442943495848728,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 8.189661273744269,
+  "target_scale": 17.88138417802176,
+  "target_id": "R-ELEM4_K05_03"
+ },
+ {
+  "expression": "+(exp(x), log(x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 6.3750394313469245,
+   "bits_sem_uncorrected": 6.442943495848728,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 13.7662264660913,
+  "target_scale": 20.982957969025446,
+  "target_id": "R-ELEM4_K05_04"
+ },
+ {
+  "expression": "*(x, exp(exp(1)))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 6.3750394313469245,
+   "bits_sem_uncorrected": 6.442943495848728,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 18.75867553157498,
+  "target_scale": 45.3127445240271,
+  "target_id": "R-ELEM4_K05_05"
+ },
+ {
+  "expression": "+(x, +(x, 1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 6.3750394313469245,
+   "bits_sem_uncorrected": 6.442943495848728,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3267326732673266,
+  "target_scale": 6.98019801980198,
+  "target_id": "R-ELEM4_K05_06"
+ },
+ {
+  "expression": "log(log(+(x, 1)))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 6.3750394313469245,
+   "bits_sem_uncorrected": 6.442943495848728,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004366687743713311,
+  "target_scale": 1.0,
+  "target_id": "R-ELEM4_K05_07"
+ },
+ {
+  "expression": "log(+(x, exp(x)))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 6.3750394313469245,
+   "bits_sem_uncorrected": 6.442943495848728,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.06600234428470411,
+  "target_scale": 3.130164843425979,
+  "target_id": "R-ELEM4_K05_08"
+ },
+ {
+  "expression": "log(log(*(x, x)))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 6.3750394313469245,
+   "bits_sem_uncorrected": 6.442943495848728,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.016768306075898066,
+  "target_scale": 1.0,
+  "target_id": "R-ELEM4_K05_09"
+ },
+ {
+  "expression": "+(log(x), +(x, 1))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 7.7073591320808825,
+   "bits_sem_uncorrected": 7.768184324776926,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.16086494909149082,
+  "target_scale": 5.0854055104346,
+  "target_id": "R-ELEM4_K06_00"
+ },
+ {
+  "expression": "*(exp(x), *(x, x))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 7.7073591320808825,
+   "bits_sem_uncorrected": 7.768184324776926,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1797.0370726509216,
+  "target_scale": 177.8093681533506,
+  "target_id": "R-ELEM4_K06_01"
+ },
+ {
+  "expression": "+(x, *(x, log(x)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 7.7073591320808825,
+   "bits_sem_uncorrected": 7.768184324776926,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.6930288261089025,
+  "target_scale": 6.265173892684656,
+  "target_id": "R-ELEM4_K06_02"
+ },
+ {
+  "expression": "log(+(x, +(1, 1)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 7.7073591320808825,
+   "bits_sem_uncorrected": 7.768184324776926,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00405667697464123,
+  "target_scale": 1.607455751230109,
+  "target_id": "R-ELEM4_K06_03"
+ },
+ {
+  "expression": "*(x, log(+(x, x)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 7.7073591320808825,
+   "bits_sem_uncorrected": 7.768184324776926,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5547262332589977,
+  "target_scale": 5.347653581091621,
+  "target_id": "R-ELEM4_K06_04"
+ },
+ {
+  "expression": "exp(*(x, log(log(x))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 7.7073591320808825,
+   "bits_sem_uncorrected": 7.768184324776926,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.05704514502650184,
+  "target_scale": 1.3128513445555678,
+  "target_id": "R-ELEM4_K06_05"
+ },
+ {
+  "expression": "+(exp(1), +(x, 1))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 7.7073591320808825,
+   "bits_sem_uncorrected": 7.768184324776926,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683164,
+  "target_scale": 6.708380838360036,
+  "target_id": "R-ELEM4_K06_06"
+ },
+ {
+  "expression": "+(1, exp(+(x, 1)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 7.7073591320808825,
+   "bits_sem_uncorrected": 7.768184324776926,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 95.58482118728747,
+  "target_scale": 55.0602415975282,
+  "target_id": "R-ELEM4_K06_07"
+ },
+ {
+  "expression": "*(exp(1), +(x, x))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 7.7073591320808825,
+   "bits_sem_uncorrected": 7.768184324776926,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.4142460521258546,
+  "target_scale": 16.255863607814486,
+  "target_id": "R-ELEM4_K06_08"
+ },
+ {
+  "expression": "*(log(x), +(x, 1))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 7.7073591320808825,
+   "bits_sem_uncorrected": 7.768184324776926,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.43803439812048217,
+  "target_scale": 4.370381383317277,
+  "target_id": "R-ELEM4_K06_09"
+ },
+ {
+  "expression": "*(exp(x), log(*(x, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 9.147204924942228,
+   "bits_sem_uncorrected": 9.199672344836364,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 91.70536971375923,
+  "target_scale": 43.566147867571814,
+  "target_id": "R-ELEM4_K07_00"
+ },
+ {
+  "expression": "*(x, exp(+(1, exp(1))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 9.147204924942228,
+   "bits_sem_uncorrected": 9.199672344836364,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 138.60890584444522,
+  "target_scale": 123.17281003726997,
+  "target_id": "R-ELEM4_K07_01"
+ },
+ {
+  "expression": "log(*(log(x), +(x, 1)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 9.147204924942228,
+   "bits_sem_uncorrected": 9.199672344836364,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.04468981606671828,
+  "target_scale": 1.474850278369741,
+  "target_id": "R-ELEM4_K07_02"
+ },
+ {
+  "expression": "log(log(log(+(x, exp(1)))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 9.147204924942228,
+   "bits_sem_uncorrected": 9.199672344836364,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00448748482863175,
+  "target_scale": 1.0,
+  "target_id": "R-ELEM4_K07_03"
+ },
+ {
+  "expression": "log(log(+(1, *(x, x))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 9.147204924942228,
+   "bits_sem_uncorrected": 9.199672344836364,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.010304126165349304,
+  "target_scale": 1.0,
+  "target_id": "R-ELEM4_K07_04"
+ },
+ {
+  "expression": "exp(+(exp(1), *(x, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 9.147204924942228,
+   "bits_sem_uncorrected": 9.199672344836364,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 782458659.66563,
+  "target_scale": 115725.22584571117,
+  "target_id": "R-ELEM4_K07_05"
+ },
+ {
+  "expression": "+(1, log(*(x, log(x))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 9.147204924942228,
+   "bits_sem_uncorrected": 9.199672344836364,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.05991469271483713,
+  "target_scale": 2.1863407337979277,
+  "target_id": "R-ELEM4_K07_06"
+ },
+ {
+  "expression": "log(+(x, log(+(x, x))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 9.147204924942228,
+   "bits_sem_uncorrected": 9.199672344836364,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.009725260951727844,
+  "target_scale": 1.5641377163441756,
+  "target_id": "R-ELEM4_K07_07"
+ },
+ {
+  "expression": "log(*(x, log(+(1, 1))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 9.147204924942228,
+   "bits_sem_uncorrected": 9.199672344836364,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013314094935341478,
+  "target_scale": 1.0,
+  "target_id": "R-ELEM4_K07_08"
+ },
+ {
+  "expression": "*(log(log(x)), +(x, 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 9.147204924942228,
+   "bits_sem_uncorrected": 9.199672344836364,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.17453849771669092,
+  "target_scale": 1.0817997870272014,
+  "target_id": "R-ELEM4_K07_09"
+ },
+ {
+  "expression": "+(*(x, x), log(+(x, x)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 10.63026712502677,
+   "bits_sem_uncorrected": 10.711666973564347,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.389199403056302,
+  "target_scale": 10.729145770104436,
+  "target_id": "R-ELEM4_K08_00"
+ },
+ {
+  "expression": "+(log(x), exp(exp(+(1, 1))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 10.63026712502677,
+   "bits_sem_uncorrected": 10.711666973564347,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013314094935342245,
+  "target_scale": 1619.2732984131874,
+  "target_id": "R-ELEM4_K08_01"
+ },
+ {
+  "expression": "*(exp(x), +(1, *(x, x)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 10.63026712502677,
+   "bits_sem_uncorrected": 10.711666973564347,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2114.0481980867357,
+  "target_scale": 197.6970196218424,
+  "target_id": "R-ELEM4_K08_02"
+ },
+ {
+  "expression": "*(+(x, x), exp(+(x, x)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 10.63026712502677,
+   "bits_sem_uncorrected": 10.711666973564347,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 363156.8517618297,
+  "target_scale": 2365.280032505466,
+  "target_id": "R-ELEM4_K08_03"
+ },
+ {
+  "expression": "*(x, exp(+(x, +(x, 1))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 10.63026712502677,
+   "bits_sem_uncorrected": 10.711666973564347,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 670846.5875948005,
+  "target_scale": 3214.748865788314,
+  "target_id": "R-ELEM4_K08_04"
+ },
+ {
+  "expression": "*(log(x), +(x, +(1, 1)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 10.63026712502677,
+   "bits_sem_uncorrected": 10.711666973564347,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.6037628261582345,
+  "target_scale": 5.465687883850887,
+  "target_id": "R-ELEM4_K08_05"
+ },
+ {
+  "expression": "*(x, *(exp(1), *(x, x)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 10.63026712502677,
+   "bits_sem_uncorrected": 10.711666973564347,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 217.75035360214886,
+  "target_scale": 72.66933557921344,
+  "target_id": "R-ELEM4_K08_06"
+ },
+ {
+  "expression": "*(exp(x), +(1, log(log(x))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 10.63026712502677,
+   "bits_sem_uncorrected": 10.711666973564347,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 23.85160661402133,
+  "target_scale": 21.698108571353966,
+  "target_id": "R-ELEM4_K08_07"
+ },
+ {
+  "expression": "+(1, *(exp(1), log(log(x))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 10.63026712502677,
+   "bits_sem_uncorrected": 10.711666973564347,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.12390195427885047,
+  "target_scale": 1.247456702050096,
+  "target_id": "R-ELEM4_K08_08"
+ },
+ {
+  "expression": "log(*(x, log(log(+(x, x)))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 10.63026712502677,
+   "bits_sem_uncorrected": 10.711666973564347,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.07590042713304966,
+  "target_scale": 1.0,
+  "target_id": "R-ELEM4_K08_09"
+ },
+ {
+  "expression": "+(exp(1), *(+(x, 1), +(x, 1)))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 13.732167425663386,
+   "bits_sem_uncorrected": 13.866602800787206,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4.007811358040028,
+  "target_scale": 18.639171937271907,
+  "target_id": "R-ELEM4_K10_00"
+ },
+ {
+  "expression": "+(x, log(log(+(x, log(*(x, x))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 13.732167425663386,
+   "bits_sem_uncorrected": 13.866602800787206,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.13675705594797646,
+  "target_scale": 3.4878044395137078,
+  "target_id": "R-ELEM4_K10_01"
+ },
+ {
+  "expression": "+(x, log(*(log(x), +(x, exp(1)))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 13.732167425663386,
+   "bits_sem_uncorrected": 13.866602800787206,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.22056052755183933,
+  "target_scale": 4.823068660659333,
+  "target_id": "R-ELEM4_K10_02"
+ },
+ {
+  "expression": "+(1, *(+(x, 1), +(x, log(x))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 13.732167425663386,
+   "bits_sem_uncorrected": 13.866602800787206,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 5.654917785084573,
+  "target_scale": 17.30117248222915,
+  "target_id": "R-ELEM4_K10_03"
+ },
+ {
+  "expression": "*(x, log(+(log(log(x)), *(x, x))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 13.732167425663386,
+   "bits_sem_uncorrected": 13.866602800787206,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.3296103351141824,
+  "target_scale": 6.580441036609842,
+  "target_id": "R-ELEM4_K10_04"
+ },
+ {
+  "expression": "+(1, *(log(log(x)), +(x, exp(1))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 13.732167425663386,
+   "bits_sem_uncorrected": 13.866602800787206,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.4094911271716563,
+  "target_scale": 1.5196580728008273,
+  "target_id": "R-ELEM4_K10_05"
+ },
+ {
+  "expression": "exp(*(log(+(x, x)), log(+(x, x))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 13.732167425663386,
+   "bits_sem_uncorrected": 13.866602800787206,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 25.913841012547977,
+  "target_scale": 24.497389709790223,
+  "target_id": "R-ELEM4_K10_06"
+ },
+ {
+  "expression": "*(+(x, 1), log(*(x, *(x, x))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 13.732167425663386,
+   "bits_sem_uncorrected": 13.866602800787206,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3.9423095830843393,
+  "target_scale": 13.111144149951828,
+  "target_id": "R-ELEM4_K10_07"
+ },
+ {
+  "expression": "exp(+(x, *(exp(1), log(+(x, x)))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 13.732167425663386,
+   "bits_sem_uncorrected": 13.866602800787206,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 410620.4071305798,
+  "target_scale": 2569.89456629115,
+  "target_id": "R-ELEM4_K10_08"
+ },
+ {
+  "expression": "+(1, log(+(1, log(log(+(x, x))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 13.732167425663386,
+   "bits_sem_uncorrected": 13.866602800787206,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.002479852588048692,
+  "target_scale": 1.4582797860282486,
+  "target_id": "R-ELEM4_K10_09"
+ },
+ {
+  "expression": "+(1, *(log(log(x)), log(log(+(x, 1)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 15.32333628928017,
+   "bits_sem_uncorrected": 15.484004665261676,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0004370759569056705,
+  "target_scale": 1.029572009403195,
+  "target_id": "R-ELEM4_K11_00"
+ },
+ {
+  "expression": "+(exp(1), log(log(+(x, exp(+(x, x))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 15.32333628928017,
+   "bits_sem_uncorrected": 15.484004665261676,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.012834594331950689,
+  "target_scale": 4.507994125403211,
+  "target_id": "R-ELEM4_K11_01"
+ },
+ {
+  "expression": "log(+(1, log(log(+(x, exp(+(x, x)))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 15.32333628928017,
+   "bits_sem_uncorrected": 15.484004665261676,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0019045961687722116,
+  "target_scale": 1.0259384711412551,
+  "target_id": "R-ELEM4_K11_02"
+ },
+ {
+  "expression": "log(log(+(exp(exp(exp(1))), exp(+(x, x)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 15.32333628928017,
+   "bits_sem_uncorrected": 15.484004665261676,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.779252349866991e-12,
+  "target_scale": 2.7182886706585285,
+  "target_id": "R-ELEM4_K11_03"
+ },
+ {
+  "expression": "exp(+(x, *(x, log(log(+(x, exp(1)))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 15.32333628928017,
+   "bits_sem_uncorrected": 15.484004665261676,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 603.0996562513791,
+  "target_scale": 104.5425749226451,
+  "target_id": "R-ELEM4_K11_04"
+ },
+ {
+  "expression": "*(x, exp(exp(+(1, *(log(x), log(x))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 15.32333628928017,
+   "bits_sem_uncorrected": 15.484004665261676,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 33216111.81181415,
+  "target_scale": 24774.738179285174,
+  "target_id": "R-ELEM4_K11_05"
+ },
+ {
+  "expression": "log(log(log(+(x, log(+(1, exp(exp(1))))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 15.32333628928017,
+   "bits_sem_uncorrected": 15.484004665261676,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004186693471497569,
+  "target_scale": 1.0,
+  "target_id": "R-ELEM4_K11_06"
+ },
+ {
+  "expression": "+(exp(+(x, x)), +(log(x), *(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 15.32333628928017,
+   "bits_sem_uncorrected": 15.484004665261676,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 9581.051686683046,
+  "target_scale": 405.55467952174985,
+  "target_id": "R-ELEM4_K11_07"
+ },
+ {
+  "expression": "log(*(log(x), *(+(x, 1), *(x, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 15.32333628928017,
+   "bits_sem_uncorrected": 15.484004665261676,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1954730672305351,
+  "target_scale": 3.6654632794369615,
+  "target_id": "R-ELEM4_K11_08"
+ },
+ {
+  "expression": "*(+(x, +(x, x)), +(exp(1), exp(1)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 15.32333628928017,
+   "bits_sem_uncorrected": 15.484004665261676,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 21.728214469132684,
+  "target_scale": 48.767590823443456,
+  "target_id": "R-ELEM4_K11_09"
+ },
+ {
+  "expression": "exp(*(log(+(1, log(x))), +(1, +(1, 1))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 16.92963984007133,
+   "bits_sem_uncorrected": 17.119326183270235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.5787031623393357,
+  "target_scale": 9.199043680971474,
+  "target_id": "R-ELEM4_K12_00"
+ },
+ {
+  "expression": "+(x, log(log(+(exp(x), +(exp(x), exp(1))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 16.92963984007133,
+   "bits_sem_uncorrected": 17.119326183270235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1322912425909797,
+  "target_scale": 4.31168233309416,
+  "target_id": "R-ELEM4_K12_01"
+ },
+ {
+  "expression": "*(x, log(+(exp(x), *(x, log(+(x, x))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 16.92963984007133,
+   "bits_sem_uncorrected": 17.119326183270235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.1045750586737197,
+  "target_scale": 9.652769212254844,
+  "target_id": "R-ELEM4_K12_02"
+ },
+ {
+  "expression": "*(exp(x), +(log(x), *(exp(x), log(log(x)))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 16.92963984007133,
+   "bits_sem_uncorrected": 17.119326183270235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 411.27847719127664,
+  "target_scale": 57.788813794163424,
+  "target_id": "R-ELEM4_K12_03"
+ },
+ {
+  "expression": "log(log(*(x, +(x, log(log(log(+(x, x))))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 16.92963984007133,
+   "bits_sem_uncorrected": 17.119326183270235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.09850988142411385,
+  "target_scale": 1.0,
+  "target_id": "R-ELEM4_K12_04"
+ },
+ {
+  "expression": "*(*(x, x), +(exp(x), +(exp(1), log(x))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 16.92963984007133,
+   "bits_sem_uncorrected": 17.119326183270235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2329.726620787404,
+  "target_scale": 211.90548715711944,
+  "target_id": "R-ELEM4_K12_05"
+ },
+ {
+  "expression": "*(x, *(+(x, log(x)), *(exp(1), log(x))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 16.92963984007133,
+   "bits_sem_uncorrected": 17.119326183270235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 57.96457519449593,
+  "target_scale": 36.37063525649664,
+  "target_id": "R-ELEM4_K12_06"
+ },
+ {
+  "expression": "exp(*(log(+(x, log(x))), log(+(1, exp(x)))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 16.92963984007133,
+   "bits_sem_uncorrected": 17.119326183270235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 317.3163091143427,
+  "target_scale": 72.05105541037737,
+  "target_id": "R-ELEM4_K12_07"
+ },
+ {
+  "expression": "+(x, *(x, log(log(+(log(x), *(x, x))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 16.92963984007133,
+   "bits_sem_uncorrected": 17.119326183270235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5690518022396105,
+  "target_scale": 5.488601284752315,
+  "target_id": "R-ELEM4_K12_08"
+ },
+ {
+  "expression": "+(1, *(+(1, log(x)), *(x, +(x, x))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 16.92963984007133,
+   "bits_sem_uncorrected": 17.119326183270235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 48.09443590093817,
+  "target_scale": 38.46698050674784,
+  "target_id": "R-ELEM4_K12_09"
+ },
+ {
+  "expression": "log(*(+(x, +(x, 1)), log(+(exp(x), exp(1)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 18.554498920244352,
+   "bits_sem_uncorrected": 18.769821705144263,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.03318221283722935,
+  "target_scale": 3.0803371771488135,
+  "target_id": "R-ELEM4_K13_00"
+ },
+ {
+  "expression": "log(log(+(*(x, x), *(log(log(x)), log(log(x))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 18.554498920244352,
+   "bits_sem_uncorrected": 18.769821705144263,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.015539335414895699,
+  "target_scale": 1.0,
+  "target_id": "R-ELEM4_K13_01"
+ },
+ {
+  "expression": "+(+(x, x), *(log(x), exp(+(1, +(1, 1)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 18.554498920244352,
+   "bits_sem_uncorrected": 18.769821705144263,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 8.343997601420956,
+  "target_scale": 27.980017178477283,
+  "target_id": "R-ELEM4_K13_02"
+ },
+ {
+  "expression": "*(+(1, log(log(x))), +(+(1, 1), +(1, 1)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 18.554498920244352,
+   "bits_sem_uncorrected": 18.769821705144263,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.26829289721436905,
+  "target_scale": 4.36413693305727,
+  "target_id": "R-ELEM4_K13_03"
+ },
+ {
+  "expression": "*(+(x, 1), *(log(+(x, 1)), log(+(x, 1))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 18.554498920244352,
+   "bits_sem_uncorrected": 18.769821705144263,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.3552371956194846,
+  "target_scale": 7.6408275169956426,
+  "target_id": "R-ELEM4_K13_04"
+ },
+ {
+  "expression": "exp(*(x, log(+(log(x), *(exp(1), +(x, x))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 18.554498920244352,
+   "bits_sem_uncorrected": 18.769821705144263,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1725687.2085872157,
+  "target_scale": 5078.269219516602,
+  "target_id": "R-ELEM4_K13_05"
+ },
+ {
+  "expression": "+(exp(exp(exp(1))), log(+(x, +(exp(x), log(x)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 18.554498920244352,
+   "bits_sem_uncorrected": 18.769821705144263,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.06227757436520175,
+  "target_scale": 3814282.281690788,
+  "target_id": "R-ELEM4_K13_06"
+ },
+ {
+  "expression": "+(1, *(exp(x), log(+(exp(x), log(*(x, x))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 18.554498920244352,
+   "bits_sem_uncorrected": 18.769821705144263,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 170.46261147640283,
+  "target_scale": 62.54419927953235,
+  "target_id": "R-ELEM4_K13_07"
+ },
+ {
+  "expression": "exp(*(exp(1), log(+(x, log(+(x, exp(exp(1))))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 18.554498920244352,
+   "bits_sem_uncorrected": 18.769821705144263,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 218.37585187110767,
+  "target_scale": 123.90290174892826,
+  "target_id": "R-ELEM4_K13_08"
+ },
+ {
+  "expression": "*(x, +(x, log(+(exp(x), exp(exp(+(1, 1)))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 18.554498920244352,
+   "bits_sem_uncorrected": 18.769821705144263,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.598046304042462,
+  "target_scale": 31.071226191566865,
+  "target_id": "R-ELEM4_K13_09"
+ },
+ {
+  "expression": "*(x, +(exp(1), log(+(x, *(exp(1), +(x, 1))))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 20.19187851963554,
+   "bits_sem_uncorrected": 20.433613964868897,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.9160041909666474,
+  "target_scale": 15.983808428729848,
+  "target_id": "R-ELEM4_K14_00"
+ },
+ {
+  "expression": "*(log(x), exp(*(exp(1), log(log(+(exp(x), exp(1)))))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 20.19187851963554,
+   "bits_sem_uncorrected": 20.433613964868897,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 25.11450251028465,
+  "target_scale": 24.10518902806943,
+  "target_id": "R-ELEM4_K14_01"
+ },
+ {
+  "expression": "*(exp(x), log(log(+(exp(exp(1)), +(x, *(x, x))))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 20.19187851963554,
+   "bits_sem_uncorrected": 20.433613964868897,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 19.857826309317897,
+  "target_scale": 23.738178179715415,
+  "target_id": "R-ELEM4_K14_02"
+ },
+ {
+  "expression": "*(+(1, 1), exp(*(log(+(x, 1)), +(x, exp(1)))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 20.19187851963554,
+   "bits_sem_uncorrected": 20.433613964868897,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1927421.9532096852,
+  "target_scale": 5391.053914599876,
+  "target_id": "R-ELEM4_K14_03"
+ },
+ {
+  "expression": "*(log(+(x, exp(1))), +(x, log(+(exp(x), log(x)))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 20.19187851963554,
+   "bits_sem_uncorrected": 20.433613964868897,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.4485020327301164,
+  "target_scale": 10.51050663224418,
+  "target_id": "R-ELEM4_K14_04"
+ },
+ {
+  "expression": "+(exp(1), log(*(+(x, log(x)), +(1, *(x, x)))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 20.19187851963554,
+   "bits_sem_uncorrected": 20.433613964868897,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.10040927899241506,
+  "target_scale": 6.422339464910213,
+  "target_id": "R-ELEM4_K14_05"
+ },
+ {
+  "expression": "log(+(1, *(log(x), *(exp(exp(1)), log(+(x, 1))))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 20.19187851963554,
+   "bits_sem_uncorrected": 20.433613964868897,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.03397696398544204,
+  "target_scale": 3.176776195504277,
+  "target_id": "R-ELEM4_K14_06"
+ },
+ {
+  "expression": "*(+(x, x), +(1, *(exp(1), log(+(x, exp(x))))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 20.19187851963554,
+   "bits_sem_uncorrected": 20.433613964868897,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 68.03936667495937,
+  "target_scale": 56.863730784510686,
+  "target_id": "R-ELEM4_K14_07"
+ },
+ {
+  "expression": "*(x, +(x, exp(*(log(*(x, x)), log(*(x, x))))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 20.19187851963554,
+   "bits_sem_uncorrected": 20.433613964868897,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 9312.924899901232,
+  "target_scale": 371.82781182055066,
+  "target_id": "R-ELEM4_K14_08"
+ },
+ {
+  "expression": "*(+(log(x), +(x, 1)), +(log(x), exp(+(x, 1))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 20.19187851963554,
+   "bits_sem_uncorrected": 20.433613964868897,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3424.5774893588195,
+  "target_scale": 280.48832822892416,
+  "target_id": "R-ELEM4_K14_09"
+ },
+ {
+  "expression": "*(exp(exp(1)), log(+(+(x, x), *(exp(x), +(x, 1)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 38.77443751081734,
+   "bits_syn": 32.088075310266774,
+   "bits_sem": 21.857986688335124,
+   "bits_sem_uncorrected": 22.10818846824241,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 26.714435287280708,
+  "target_scale": 67.3845144486119,
+  "target_id": "R-ELEM4_K15_00"
+ },
+ {
+  "expression": "log(*(*(x, log(x)), log(*(+(x, x), log(+(1, 1))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 38.77443751081734,
+   "bits_syn": 32.088075310266774,
+   "bits_sem": 21.857986688335124,
+   "bits_sem_uncorrected": 22.10818846824241,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.11512764814952588,
+  "target_scale": 1.5383634050368669,
+  "target_id": "R-ELEM4_K15_01"
+ },
+ {
+  "expression": "+(x, +(exp(+(1, exp(1))), *(log(x), exp(+(x, x)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 38.77443751081734,
+   "bits_syn": 32.088075310266774,
+   "bits_sem": 21.857986688335124,
+   "bits_sem_uncorrected": 22.10818846824241,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12429.028517431436,
+  "target_scale": 477.39783699214047,
+  "target_id": "R-ELEM4_K15_02"
+ },
+ {
+  "expression": "+(1, log(*(x, +(x, log(*(+(x, x), *(x, x)))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 38.77443751081734,
+   "bits_syn": 32.088075310266774,
+   "bits_sem": 21.857986688335124,
+   "bits_sem_uncorrected": 22.10818846824241,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.049889250323916265,
+  "target_scale": 4.036802018293778,
+  "target_id": "R-ELEM4_K15_03"
+ },
+ {
+  "expression": "*(log(+(x, 1)), +(1, *(exp(1), log(log(*(x, x))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 38.77443751081734,
+   "bits_syn": 32.088075310266774,
+   "bits_sem": 21.857986688335124,
+   "bits_sem_uncorrected": 22.10818846824241,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.419346694375114,
+  "target_scale": 4.333594427033958,
+  "target_id": "R-ELEM4_K15_04"
+ },
+ {
+  "expression": "+(exp(exp(1)), log(log(+(+(x, x), log(*(x, log(x)))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 38.77443751081734,
+   "bits_syn": 32.088075310266774,
+   "bits_sem": 21.857986688335124,
+   "bits_sem_uncorrected": 22.10818846824241,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.006906251271876501,
+  "target_scale": 15.832002745343818,
+  "target_id": "R-ELEM4_K15_05"
+ },
+ {
+  "expression": "log(log(*(log(x), +(1, log(*(+(x, 1), *(x, x)))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 38.77443751081734,
+   "bits_syn": 32.088075310266774,
+   "bits_sem": 21.857986688335124,
+   "bits_sem_uncorrected": 22.10818846824241,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.027685148435894032,
+  "target_scale": 1.0,
+  "target_id": "R-ELEM4_K15_06"
+ },
+ {
+  "expression": "log(+(exp(x), log(+(x, exp(*(x, log(+(1, exp(1)))))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 38.77443751081734,
+   "bits_syn": 32.088075310266774,
+   "bits_sem": 21.857986688335124,
+   "bits_sem_uncorrected": 22.10818846824241,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.06088738645996144,
+  "target_scale": 3.172693194189147,
+  "target_id": "R-ELEM4_K15_07"
+ },
+ {
+  "expression": "+(x, exp(exp(exp(*(log(log(x)), exp(*(log(x), log(x))))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 38.77443751081734,
+   "bits_syn": 32.088075310266774,
+   "bits_sem": 21.857986688335124,
+   "bits_sem_uncorrected": 22.10818846824241,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 98.37461021748342,
+  "target_scale": 50.84224326205375,
+  "target_id": "R-ELEM4_K15_08"
+ },
+ {
+  "expression": "exp(exp(*(log(x), log(log(+(1, exp(*(exp(1), log(x)))))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 38.77443751081734,
+   "bits_syn": 32.088075310266774,
+   "bits_sem": 21.857986688335124,
+   "bits_sem_uncorrected": 22.10818846824241,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 43.20386744954696,
+  "target_scale": 28.905463852254716,
+  "target_id": "R-ELEM4_K15_09"
+ },
+ {
+  "expression": "*(x, *(x, log(+(exp(x), *(x, log(+(1, *(x, exp(x)))))))))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 43.94436251225965,
+   "bits_syn": 36.99311500053945,
+   "bits_sem": 25.156686361541173,
+   "bits_sem_uncorrected": 25.444758190732415,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 36.30701386183213,
+  "target_scale": 31.028802019678505,
+  "target_id": "R-ELEM4_K17_00"
+ },
+ {
+  "expression": "+(log(x), *(log(x), +(+(1, exp(1)), log(+(x, *(x, x))))))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 43.94436251225965,
+   "bits_syn": 36.99311500053945,
+   "bits_sem": 25.156686361541173,
+   "bits_sem_uncorrected": 25.444758190732415,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.9415772551492547,
+  "target_scale": 7.883363797918666,
+  "target_id": "R-ELEM4_K17_01"
+ },
+ {
+  "expression": "+(exp(1), +(x, log(+(1, exp(*(log(log(x)), log(+(x, x))))))))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 43.94436251225965,
+   "bits_syn": 36.99311500053945,
+   "bits_sem": 25.156686361541173,
+   "bits_sem_uncorrected": 25.444758190732415,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.14019491299051898,
+  "target_scale": 6.486243028364557,
+  "target_id": "R-ELEM4_K17_02"
+ },
+ {
+  "expression": "+(exp(x), *(log(log(+(1, exp(1)))), log(*(log(x), +(x, 1)))))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 43.94436251225965,
+   "bits_syn": 36.99311500053945,
+   "bits_sem": 25.156686361541173,
+   "bits_sem_uncorrected": 25.444758190732415,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 13.344851223167616,
+  "target_scale": 20.28956864101069,
+  "target_id": "R-ELEM4_K17_03"
+ },
+ {
+  "expression": "*(log(log(*(x, x))), log(+(+(1, exp(1)), +(exp(x), log(x)))))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 43.94436251225965,
+   "bits_syn": 36.99311500053945,
+   "bits_sem": 25.156686361541173,
+   "bits_sem_uncorrected": 25.444758190732415,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.23840044199042945,
+  "target_scale": 2.5147548618436217,
+  "target_id": "R-ELEM4_K17_04"
+ },
+ {
+  "expression": "+(+(exp(1), log(+(*(x, exp(x)), log(+(x, +(x, 1)))))), 1)",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 43.94436251225965,
+   "bits_syn": 36.99311500053945,
+   "bits_sem": 25.156686361541173,
+   "bits_sem_uncorrected": 25.444758190732415,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.14521945210347403,
+  "target_scale": 7.835840256010904,
+  "target_id": "R-ELEM4_K17_05"
+ },
+ {
+  "expression": "+(+(x, 1), +(exp(1), exp(+(1, *(log(log(x)), +(x, x))))))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 43.94436251225965,
+   "bits_syn": 36.99311500053945,
+   "bits_sem": 25.156686361541173,
+   "bits_sem_uncorrected": 25.444758190732415,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 2.0279762317359458,
+  "target_scale": 11.393553370461728,
+  "target_id": "R-ELEM4_K17_06"
+ },
+ {
+  "expression": "*(x, +(1, log(log(+(log(log(+(1, 1))), +(1, *(x, x)))))))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 43.94436251225965,
+   "bits_syn": 36.99311500053945,
+   "bits_sem": 25.156686361541173,
+   "bits_sem_uncorrected": 25.444758190732415,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.5514492493554335,
+  "target_scale": 5.4268895803115145,
+  "target_id": "R-ELEM4_K17_07"
+ },
+ {
+  "expression": "+(+(*(x, exp(x)), log(*(log(x), +(1, *(x, x))))), exp(1))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 43.94436251225965,
+   "bits_syn": 36.99311500053945,
+   "bits_sem": 25.156686361541173,
+   "bits_sem_uncorrected": 25.444758190732415,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 172.84863638139103,
+  "target_scale": 64.57199967182248,
+  "target_id": "R-ELEM4_K17_08"
+ },
+ {
+  "expression": "*(x, +(1, *(log(log(+(1, 1))), +(log(x), exp(+(x, 1))))))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 43.94436251225965,
+   "bits_syn": 36.99311500053945,
+   "bits_sem": 25.156686361541173,
+   "bits_sem_uncorrected": 25.444758190732415,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 161.215775868819,
+  "target_scale": 57.45541334604292,
+  "target_id": "R-ELEM4_K17_09"
+ },
+ {
+  "expression": "*(log(log(+(+(x, x), *(log(x), +(x, exp(x)))))), *(exp(1), log(x)))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 49.11428751370197,
+   "bits_syn": 41.92717382558139,
+   "bits_sem": 28.46017412963195,
+   "bits_sem_uncorrected": 28.783124953830573,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.35501680627316873,
+  "target_scale": 3.6742961218563694,
+  "target_id": "R-ELEM4_K19_00"
+ },
+ {
+  "expression": "+(+(exp(1), *(x, exp(exp(1)))), +(+(x, log(x)), exp(+(x, exp(1)))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 49.11428751370197,
+   "bits_syn": 41.92717382558139,
+   "bits_sem": 28.46017412963195,
+   "bits_sem_uncorrected": 28.783124953830573,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 3504.8043660015264,
+  "target_scale": 353.49911758358627,
+  "target_id": "R-ELEM4_K19_01"
+ },
+ {
+  "expression": "*(log(*(log(+(x, x)), +(x, *(exp(1), log(x))))), log(*(x, log(x))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 49.11428751370197,
+   "bits_syn": 41.92717382558139,
+   "bits_sem": 28.46017412963195,
+   "bits_sem_uncorrected": 28.783124953830573,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.42730930285453056,
+  "target_scale": 2.8088648008840016,
+  "target_id": "R-ELEM4_K19_02"
+ },
+ {
+  "expression": "*(log(log(+(exp(x), log(log(+(x, exp(1))))))), +(+(x, x), +(x, x)))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 49.11428751370197,
+   "bits_syn": 41.92717382558139,
+   "bits_sem": 28.46017412963195,
+   "bits_sem_uncorrected": 28.783124953830573,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 4.635525182649277,
+  "target_scale": 13.209893129791608,
+  "target_id": "R-ELEM4_K19_03"
+ },
+ {
+  "expression": "+(+(1, *(exp(1), +(exp(1), +(x, 1)))), exp(exp(+(1, +(1, 1)))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 49.11428751370197,
+   "bits_syn": 41.92717382558139,
+   "bits_sem": 28.46017412963195,
+   "bits_sem_uncorrected": 28.783124953830573,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.6035615135105017,
+  "target_scale": 528491330.72076404,
+  "target_id": "R-ELEM4_K19_04"
+ },
+ {
+  "expression": "+(log(log(+(exp(1), log(log(+(log(x), +(x, x))))))), log(+(x, exp(1))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 49.11428751370197,
+   "bits_syn": 41.92717382558139,
+   "bits_sem": 28.46017412963195,
+   "bits_sem_uncorrected": 28.783124953830573,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.00519247857562535,
+  "target_scale": 1.9413478731474991,
+  "target_id": "R-ELEM4_K19_05"
+ },
+ {
+  "expression": "*(+(exp(x), log(log(*(x, x)))), *(*(x, x), log(+(exp(x), exp(x)))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 49.11428751370197,
+   "bits_syn": 41.92717382558139,
+   "bits_sem": 28.46017412963195,
+   "bits_sem_uncorrected": 28.783124953830573,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 28946.506725715917,
+  "target_scale": 680.739375716346,
+  "target_id": "R-ELEM4_K19_06"
+ },
+ {
+  "expression": "*(log(log(*(x, +(log(x), +(x, x))))), +(exp(x), *(log(x), log(x))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 49.11428751370197,
+   "bits_syn": 41.92717382558139,
+   "bits_sem": 28.46017412963195,
+   "bits_sem_uncorrected": 28.783124953830573,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 24.40470699595687,
+  "target_scale": 23.528823525440124,
+  "target_id": "R-ELEM4_K19_07"
+ },
+ {
+  "expression": "*(*(*(x, x), log(+(1, 1))), +(+(x, exp(1)), +(exp(x), exp(1))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 5,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 49.11428751370197,
+   "bits_syn": 41.92717382558139,
+   "bits_sem": 28.46017412963195,
+   "bits_sem_uncorrected": 28.783124953830573,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1480.4172890966247,
+  "target_scale": 175.46990682061048,
+  "target_id": "R-ELEM4_K19_08"
+ },
+ {
+  "expression": "*(+(exp(+(x, x)), *(x, log(+(x, 1)))), +(x, *(exp(1), log(x))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 49.11428751370197,
+   "bits_syn": 41.92717382558139,
+   "bits_sem": 28.46017412963195,
+   "bits_sem_uncorrected": 28.783124953830573,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 369896.5490676731,
+  "target_scale": 2384.9300572769566,
+  "target_id": "R-ELEM4_K19_09"
+ },
+ {
+  "expression": "*(+(x, *(exp(1), *(log(x), +(x, 1)))), +(1, *(log(x), +(exp(x), +(x, 1)))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 59.45413751658659,
+   "bits_syn": 51.860896216681,
+   "bits_sem": 35.06714966581351,
+   "bits_sem_uncorrected": 35.459858480026895,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 9536.404696486505,
+  "target_scale": 403.7726220612393,
+  "target_id": "R-ELEM4_K23_00"
+ },
+ {
+  "expression": "+(*(exp(+(x, 1)), +(+(x, exp(x)), log(*(x, log(x))))), +(exp(x), exp(*(x, x))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 59.45413751658659,
+   "bits_syn": 51.860896216681,
+   "bits_sem": 35.06714966581351,
+   "bits_sem_uncorrected": 35.459858480026895,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 4596487.731392182,
+  "target_scale": 8957.278587538161,
+  "target_id": "R-ELEM4_K23_01"
+ },
+ {
+  "expression": "+(+(x, log(+(log(x), exp(exp(1))))), *(*(x, exp(1)), log(log(+(exp(1), exp(exp(1)))))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 59.45413751658659,
+   "bits_syn": 51.860896216681,
+   "bits_sem": 35.06714966581351,
+   "bits_sem_uncorrected": 35.459858480026895,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1.2446709296738008,
+  "target_scale": 14.385023941561267,
+  "target_id": "R-ELEM4_K23_02"
+ },
+ {
+  "expression": "*(+(log(log(+(x, exp(exp(1))))), *(log(x), log(+(x, x)))), *(exp(x), +(x, log(x))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 59.45413751658659,
+   "bits_syn": 51.860896216681,
+   "bits_sem": 35.06714966581351,
+   "bits_sem_uncorrected": 35.459858480026895,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 3469.03949890938,
+  "target_scale": 245.62015059125946,
+  "target_id": "R-ELEM4_K23_03"
+ },
+ {
+  "expression": "*(exp(*(x, log(+(1, log(log(x)))))), +(exp(1), *(exp(x), log(log(+(1, *(x, x)))))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 59.45413751658659,
+   "bits_syn": 51.860896216681,
+   "bits_sem": 35.06714966581351,
+   "bits_sem_uncorrected": 35.459858480026895,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 40.480483911681574,
+  "target_scale": 24.983691268613605,
+  "target_id": "R-ELEM4_K23_04"
+ },
+ {
+  "expression": "+(*(x, +(exp(1), log(*(log(x), +(1, log(x)))))), *(exp(x), +(1, log(*(x, x)))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 59.45413751658659,
+   "bits_syn": 51.860896216681,
+   "bits_sem": 35.06714966581351,
+   "bits_sem_uncorrected": 35.459858480026895,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 211.99469309709812,
+  "target_scale": 74.06570828082502,
+  "target_id": "R-ELEM4_K23_05"
+ },
+ {
+  "expression": "+(log(log(+(x, +(x, 1)))), exp(*(x, log(*(+(x, log(x)), log(log(+(1, exp(x)))))))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 59.45413751658659,
+   "bits_syn": 51.860896216681,
+   "bits_sem": 35.06714966581351,
+   "bits_sem_uncorrected": 35.459858480026895,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 570.6199148150977,
+  "target_scale": 92.92601180674826,
+  "target_id": "R-ELEM4_K23_06"
+ },
+ {
+  "expression": "+(exp(*(log(log(x)), *(x, x))), *(+(1, log(log(x))), +(x, log(*(x, +(x, x))))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 59.45413751658659,
+   "bits_syn": 51.860896216681,
+   "bits_sem": 35.06714966581351,
+   "bits_sem_uncorrected": 35.459858480026895,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 2.597727700553873,
+  "target_scale": 8.665293826035617,
+  "target_id": "R-ELEM4_K23_07"
+ },
+ {
+  "expression": "+(+(x, *(exp(1), +(x, exp(1)))), *(+(x, exp(x)), +(exp(x), +(exp(x), log(x)))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 59.45413751658659,
+   "bits_syn": 51.860896216681,
+   "bits_sem": 35.06714966581351,
+   "bits_sem_uncorrected": 35.459858480026895,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 50466.728447720314,
+  "target_scale": 953.5346915241062,
+  "target_id": "R-ELEM4_K23_08"
+ },
+ {
+  "expression": "*(+(1, log(+(1, log(+(x, x))))), *(x, log(log(log(*(+(x, 1), log(+(x, x))))))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 59.45413751658659,
+   "bits_syn": 51.860896216681,
+   "bits_sem": 35.06714966581351,
+   "bits_sem_uncorrected": 35.459858480026895,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.17243300999715327,
+  "target_scale": 3.8526037246105007,
+  "target_id": "R-ELEM4_K23_09"
+ }
+]

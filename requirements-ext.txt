@@ -1,0 +1,14 @@
+# Study 2 external-system environment (.venv-ext, Python 3.11 via uv; D049, approved 2026-10-19). Setup: docs/runbooks/setup.md.
+# pyoperon 0.6.2 macOS arm64 wheel needs libxxhash and libc++ from conda-forge (xxhash 0.8.3 h579eaed_1, libcxx 23.1.3
+# h32743e6_0) in .venv-ext/operon-libs, used via DYLD_LIBRARY_PATH (the wheel does not bundle them).
+cloudpickle==3.1.2
+joblib==1.6.0
+narwhals==2.27.1
+numpy==2.4.6
+pandas==3.0.6
+pyoperon==0.6.2
+python-dateutil==2.9.0.post0
+scikit-learn==1.9.1
+scipy==1.17.1
+six==1.17.0
+threadpoolctl==3.7.0

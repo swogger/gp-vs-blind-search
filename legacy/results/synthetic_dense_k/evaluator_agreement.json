@@ -1,0 +1,103 @@
+{
+ "description": "vectorised numpy evaluator vs ga-lib Node.evaluate (cmath), random trees from the GP's own generator, nMSE units",
+ "n_trees_compared": 18355,
+ "n_disagreements": 823,
+ "disagreement_rate": 0.044837918823208936,
+ "worst_relative_nmse_difference": 1.0,
+ "min_nmse_among_disagreements": 0.295716424622846,
+ "convergence_threshold": 1e-06,
+ "orders_of_magnitude_above_threshold": 5.470875446693762,
+ "per_target": [
+  {
+   "target_id": "K07_26",
+   "K": 7,
+   "n_compared": 1399,
+   "n_disagreements": 53,
+   "min_nmse_among_disagreements": 3.432280865976591
+  },
+  {
+   "target_id": "K09_13",
+   "K": 9,
+   "n_compared": 1403,
+   "n_disagreements": 69,
+   "min_nmse_among_disagreements": 3.9375648269253998
+  },
+  {
+   "target_id": "K11_04",
+   "K": 11,
+   "n_compared": 1415,
+   "n_disagreements": 70,
+   "min_nmse_among_disagreements": 2.1194310030398844
+  },
+  {
+   "target_id": "K13_00",
+   "K": 13,
+   "n_compared": 1411,
+   "n_disagreements": 63,
+   "min_nmse_among_disagreements": 1.2087729461536634
+  },
+  {
+   "target_id": "K15_19",
+   "K": 15,
+   "n_compared": 1403,
+   "n_disagreements": 56,
+   "min_nmse_among_disagreements": 1.2919594101338556
+  },
+  {
+   "target_id": "K17_12",
+   "K": 17,
+   "n_compared": 1424,
+   "n_disagreements": 66,
+   "min_nmse_among_disagreements": 463.06761011701144
+  },
+  {
+   "target_id": "K19_12",
+   "K": 19,
+   "n_compared": 1435,
+   "n_disagreements": 68,
+   "min_nmse_among_disagreements": 1.5843596277601144
+  },
+  {
+   "target_id": "K21_10",
+   "K": 21,
+   "n_compared": 1423,
+   "n_disagreements": 71,
+   "min_nmse_among_disagreements": 0.295716424622846
+  },
+  {
+   "target_id": "K23_08",
+   "K": 23,
+   "n_compared": 1408,
+   "n_disagreements": 73,
+   "min_nmse_among_disagreements": 66.00421844709133
+  },
+  {
+   "target_id": "K25_05",
+   "K": 25,
+   "n_compared": 1396,
+   "n_disagreements": 69,
+   "min_nmse_among_disagreements": 199.85012660181584
+  },
+  {
+   "target_id": "K27_16",
+   "K": 27,
+   "n_compared": 1426,
+   "n_disagreements": 40,
+   "min_nmse_among_disagreements": 3.640333066990476
+  },
+  {
+   "target_id": "K29_15",
+   "K": 29,
+   "n_compared": 1406,
+   "n_disagreements": 69,
+   "min_nmse_among_disagreements": 73.18561746331957
+  },
+  {
+   "target_id": "K31_00",
+   "K": 31,
+   "n_compared": 1406,
+   "n_disagreements": 56,
+   "min_nmse_among_disagreements": 3.3368942753721
+  }
+ ]
+}

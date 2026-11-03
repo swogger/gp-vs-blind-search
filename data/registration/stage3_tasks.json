@@ -1,0 +1,12 @@
+{
+ "s2_revisit_a0": {
+  "n_tasks": 12000,
+  "sha256": "463e2cc324a73684ede68bc04f2e940d014e0debfc147b71bf29d1490ace8ab5",
+  "sha256_full": "3195ddbe50895917ed48afd9d5e3632297f86186bdad0648999a91545b82ab31"
+ },
+ "s2_revisit_a16": {
+  "n_tasks": 12000,
+  "sha256": "95f12b35526c13777b3b09dd9807a528bec839136d992d24feb5ae95fa8a474a",
+  "sha256_full": "c01753b06f4953a8f7ede8b43a21c588865eb8edc798c1219e3d1b1f49814b8d"
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "grammar": "F-LDE0",
+ "seed": 20261013,
+ "ceiling": 23,
+ "levels": {
+  "3": {
+   "found": 2,
+   "rejected": {
+    "nonfinite": 1
+   },
+   "proven": true
+  },
+  "5": {
+   "found": 6,
+   "rejected": {
+    "nonfinite": 2
+   },
+   "proven": true
+  },
+  "7": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "9": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "11": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "13": {
+   "found": 10,
+   "rejected": {
+    "nonfinite": 1
+   },
+   "proven": true
+  },
+  "15": {
+   "found": 10,
+   "rejected": {
+    "nonfinite": 2
+   },
+   "proven": true
+  },
+  "17": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "19": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "21": {
+   "found": 10,
+   "rejected": {
+    "nonfinite": 1
+   },
+   "proven": true
+  },
+  "23": {
+   "found": 10,
+   "rejected": {
+    "variance": 2,
+    "dead_subtree": 1
+   },
+   "proven": true
+  },
+  "25": {
+   "found": 10,
+   "rejected": {
+    "nonfinite": 5,
+    "depth": 1
+   },
+   "proven": false
+  }
+ }
+}

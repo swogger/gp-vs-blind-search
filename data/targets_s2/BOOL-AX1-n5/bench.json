@@ -1,0 +1,140 @@
+[
+ {
+  "target_id": "BOOL-AX1-n5_bench_parity5",
+  "benchmark": "parity5",
+  "expression": "xor(x1, xor(xor(x2, x3), xor(x4, x5)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 27.0,
+   "bits_syn": 20.775930116945066,
+   "bits_sem": 12.068106475858773,
+   "bits_sem_uncorrected": 12.068106475858773,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  }
+ },
+ {
+  "target_id": "BOOL-AX1-n5_bench_add2_s0",
+  "benchmark": "add2_s0",
+  "expression": "xor(x2, xor(x4, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 15.0,
+   "bits_syn": 10.818582177480858,
+   "bits_sem": 7.247927513443585,
+   "bits_sem_uncorrected": 7.247927513443585,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  }
+ },
+ {
+  "target_id": "BOOL-AX1-n5_bench_add2_s1",
+  "benchmark": "add2_s1",
+  "expression": "xor(and(x5, xor(x2, x4)), xor(and(x2, x4), xor(x1, x3)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 39.0,
+   "bits_syn": 31.17795317719231,
+   "bits_sem": 16.838809985708558,
+   "bits_sem_uncorrected": 16.838809985708558,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 16
+  }
+ },
+ {
+  "target_id": "BOOL-AX1-n5_bench_add2_cout",
+  "benchmark": "add2_cout",
+  "expression": "xor(x1, and(xor(x1, x3), xor(xor(x1, x2), and(xor(x2, x4), xor(x2, x5)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 51.0,
+   "bits_syn": 41.78301240684361,
+   "bits_sem": 21.406304153241884,
+   "bits_sem_uncorrected": 21.406304153241884,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 3,
+   "nonlinearity": 8,
+   "weight": 16
+  }
+ },
+ {
+  "target_id": "BOOL-AX1-n5_bench_cmp2_gt",
+  "benchmark": "cmp2_gt",
+  "expression": "xor(x1, and(xor(x1, xor(x3, 1)), xor(and(x2, x4), xor(x2, x3))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 45.0,
+   "bits_syn": 36.46204309894673,
+   "bits_sem": 19.152908676186094,
+   "bits_sem_uncorrected": 19.152908676186094,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 3,
+   "nonlinearity": 8,
+   "weight": 12
+  }
+ },
+ {
+  "target_id": "BOOL-AX1-n5_bench_mux",
+  "benchmark": "mux",
+  "expression": "xor(x2, and(x1, xor(x2, x3)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 21.0,
+   "bits_syn": 15.711182983051263,
+   "bits_sem": 9.64745842645492,
+   "bits_sem_uncorrected": 9.64745842645492,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 16
+  }
+ }
+]

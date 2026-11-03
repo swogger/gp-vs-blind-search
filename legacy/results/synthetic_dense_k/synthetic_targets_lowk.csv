@@ -1,0 +1,14 @@
+target_id,K_construction,K_proven,m_operators,expression,alpha_rigidity,gradient_absence_g,best_proper_subtree_nmse,n_crit,rigid_subset,overflow_fraction,domain_lo,domain_hi,n_points
+K03_00,3,3,1,"eml(x, x)",0.0,true,inf,0.0,false,0.0,2.0,3.0,100
+K03_01,3,3,1,"eml(x, 1)",0.0,true,inf,0.0,false,0.0,2.0,3.0,100
+K03_02,3,3,1,"eml(1, x)",1.0,true,inf,1.0,true,0.0,2.0,3.0,100
+K05_00,5,5,2,"eml(x, eml(x, x))",0.0,false,0.21297925309956792,0.0,false,0.0,2.0,3.0,100
+K05_01,5,5,2,"eml(x, eml(x, 1))",0.0,false,0.576746344628174,0.0,false,0.0,2.0,3.0,100
+K05_02,5,5,2,"eml(x, eml(1, x))",0.0,true,8.964392720507872,0.0,false,0.0,2.0,3.0,100
+K05_03,5,5,2,"eml(x, eml(1, 1))",0.0,false,7.21700359966711,0.0,false,0.0,2.0,3.0,100
+K05_04,5,5,2,"eml(1, eml(x, x))",1.0,true,1641.483166939231,2.0,true,0.0,2.0,3.0,100
+K05_05,5,5,2,"eml(1, eml(x, 1))",1.0,true,2087.4007165230314,2.0,true,0.0,2.0,3.0,100
+K05_06,5,5,2,"eml(1, eml(1, x))",1.0,false,33.00653517343157,2.0,false,0.0,2.0,3.0,100
+K05_07,5,5,2,"eml(eml(1, x), x)",1.0,true,17.813452553038328,2.0,true,0.0,2.0,3.0,100
+K05_08,5,5,2,"eml(eml(1, x), 1)",1.0,true,37.59730362953126,2.0,true,0.0,2.0,3.0,100
+K05_09,5,5,2,"eml(eml(1, 1), x)",1.0,false,9979.571848327536,2.0,false,0.0,2.0,3.0,100

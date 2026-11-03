@@ -1,0 +1,119 @@
+{
+ "grammar": "R-HYB",
+ "seed": 20261020,
+ "ceiling": 15,
+ "depth_limit": 10,
+ "levels": {
+  "3": {
+   "proven": true,
+   "n_level": 8,
+   "n_depth_ok": 8,
+   "excluded_share": 0.0,
+   "found": 6,
+   "rejected": {
+    "variance": 2
+   }
+  },
+  "5": {
+   "proven": true,
+   "n_level": 52,
+   "n_depth_ok": 52,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 1
+   }
+  },
+  "7": {
+   "proven": true,
+   "n_level": 425,
+   "n_depth_ok": 425,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 2
+   }
+  },
+  "9": {
+   "proven": true,
+   "n_level": 3812,
+   "n_depth_ok": 3812,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 8,
+    "variance": 1
+   }
+  },
+  "11": {
+   "proven": true,
+   "n_level": 36155,
+   "n_depth_ok": 36155,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 17,
+    "complex": 2,
+    "nonfinite": 3,
+    "magnitude_ratio": 2
+   }
+  },
+  "13": {
+   "proven": true,
+   "n_level": 356608,
+   "n_depth_ok": 356608,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 21,
+    "magnitude_ratio": 2,
+    "nonfinite": 2,
+    "complex": 1
+   }
+  },
+  "15": {
+   "proven": true,
+   "n_level": 3618729,
+   "n_depth_ok": 3618729,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {
+    "complex": 4,
+    "dead_subtree": 10
+   }
+  },
+  "17": {
+   "proven": false,
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 7,
+    "dead_subtree": 16,
+    "magnitude_ratio": 3,
+    "complex": 3,
+    "nonfinite": 1
+   }
+  },
+  "19": {
+   "proven": false,
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 9,
+    "dead_subtree": 33,
+    "complex": 6,
+    "magnitude_ratio": 4,
+    "nonfinite": 2
+   }
+  },
+  "23": {
+   "proven": false,
+   "found": 10,
+   "rejected": {
+    "complex": 3,
+    "dead_subtree": 9,
+    "magnitude_ratio": 8,
+    "nonfinite": 2,
+    "smaller_in_enumeration": 6
+   }
+  }
+ }
+}

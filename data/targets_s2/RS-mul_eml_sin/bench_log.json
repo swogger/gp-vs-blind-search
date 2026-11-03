@@ -1,0 +1,119 @@
+{
+ "grammar": "RS-mul_eml_sin",
+ "benchmarks": {
+  "N1": "not within the ceiling",
+  "N2": "not within the ceiling",
+  "N3": "not within the ceiling",
+  "N4": "not within the ceiling",
+  "N5": "not within the ceiling",
+  "N6": "not within the ceiling",
+  "N7": "not within the ceiling",
+  "N8": "not within the ceiling",
+  "K2": "not within the ceiling",
+  "K3": "not within the ceiling",
+  "feynman_I_6_2a": "not within the ceiling",
+  "eml_1_1": "proven K=3",
+  "eml_1_2": "proven K=7",
+  "eml_1_4": "not within the ceiling",
+  "eml_2_1": "not within the ceiling",
+  "eml_3_1": "not within the ceiling",
+  "eml_3_2": "not within the ceiling",
+  "eml_3_3": "filtered: dead_subtree",
+  "eml_3_4": "not within the ceiling",
+  "eml_3_5": "not within the ceiling",
+  "eml_4_1": "not within the ceiling"
+ },
+ "noise_rows": [
+  {
+   "K": 1,
+   "U": 2,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 2,
+   "U": 2,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 3,
+   "U": 7,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 4,
+   "U": 17,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 5,
+   "U": 59,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 6,
+   "U": 184,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 7,
+   "U": 635,
+   "candidates": 1,
+   "noise": 1,
+   "share": 0.00157
+  },
+  {
+   "K": 8,
+   "U": 2184,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 9,
+   "U": 7754,
+   "candidates": 19,
+   "noise": 17,
+   "share": 0.00219
+  },
+  {
+   "K": 10,
+   "U": 27926,
+   "candidates": 75,
+   "noise": 65,
+   "share": 0.00233
+  },
+  {
+   "K": 11,
+   "U": 101862,
+   "candidates": 407,
+   "noise": 349,
+   "share": 0.00343
+  },
+  {
+   "K": 12,
+   "U": 376170,
+   "candidates": 1949,
+   "noise": 1627,
+   "share": 0.00433
+  },
+  {
+   "K": 13,
+   "U": 1401060,
+   "candidates": 9006,
+   "noise": 7299,
+   "share": 0.00521
+  }
+ ]
+}

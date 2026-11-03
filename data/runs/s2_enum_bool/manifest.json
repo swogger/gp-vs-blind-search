@@ -1,0 +1,225 @@
+{
+ "phase": "s2_enum_bool",
+ "description": "Study 2: enumerate the 8 Boolean sets (n = 5) until the 10 GB memory cap or 6 CPU-hours (clean stop). --workers 2. Launched by the author (long).",
+ "created": "2026-10-19 18:10:10",
+ "git": "58cc994",
+ "n_tasks": 8,
+ "tasks": [
+  {
+   "key": "BOOL-NAND-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-NAND-n5",
+    "--root",
+    "data/enumeration_s2",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "10",
+    "--cpu_budget",
+    "21000",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-NAND-n5",
+    "root": "data/enumeration_s2"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-NOR-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-NOR-n5",
+    "--root",
+    "data/enumeration_s2",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "10",
+    "--cpu_budget",
+    "21000",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-NOR-n5",
+    "root": "data/enumeration_s2"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AON-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-AON-n5",
+    "--root",
+    "data/enumeration_s2",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "10",
+    "--cpu_budget",
+    "21000",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-AON-n5",
+    "root": "data/enumeration_s2"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AN-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-AN-n5",
+    "--root",
+    "data/enumeration_s2",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "10",
+    "--cpu_budget",
+    "21000",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-AN-n5",
+    "root": "data/enumeration_s2"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AONX-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-AONX-n5",
+    "--root",
+    "data/enumeration_s2",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "10",
+    "--cpu_budget",
+    "21000",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-AONX-n5",
+    "root": "data/enumeration_s2"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AX1-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-AX1-n5",
+    "--root",
+    "data/enumeration_s2",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "10",
+    "--cpu_budget",
+    "21000",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-AX1-n5",
+    "root": "data/enumeration_s2"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-RICH-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-RICH-n5",
+    "--root",
+    "data/enumeration_s2",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "10",
+    "--cpu_budget",
+    "21000",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-RICH-n5",
+    "root": "data/enumeration_s2"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-IMP0-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-IMP0-n5",
+    "--root",
+    "data/enumeration_s2",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "10",
+    "--cpu_budget",
+    "21000",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-IMP0-n5",
+    "root": "data/enumeration_s2"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

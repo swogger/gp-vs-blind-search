@@ -1,0 +1,13 @@
+{
+ "grammar": "BOOL-AX1-n5",
+ "benchmarks": {
+  "parity5": "proven K=9",
+  "majority5": "not within the ceiling",
+  "add2_s0": "proven K=5",
+  "add2_s1": "proven K=13",
+  "add2_cout": "proven K=17",
+  "cmp2_gt": "proven K=15",
+  "mux": "proven K=7"
+ },
+ "noise_rows": null
+}

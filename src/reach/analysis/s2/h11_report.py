@@ -1,0 +1,148 @@
+"""H11 driver, Stage 4 (D100; REQ-ANA-96; docs/design/remedy.md).
+
+    python -m reach.analysis.s2.h11_report [--boot B]
+
+Refuses unless s4_restart holds exactly the registered tasks (data/registration/stage4_tasks.json) and every target
+file matches its .sha256. Sizes (bits_sem) of both arms come from the same registered target files, proven levels only.
+Restart arm: every s4_restart row per (set, target). One-run arm: s2_ho_a16 at 16 x E0 (`tidy`), checked against
+data/analysis/remedy.json (instrument check). Then `remedy.h11` with its registered constants, and the descriptive
+outputs. Writes data/analysis/h11.json and docs/status/h11_report.md.
+"""
+import argparse
+import hashlib
+import json
+import math
+import time
+from collections import defaultdict
+from pathlib import Path
+
+from reach import s2_lock as L
+from reach.analysis.s2 import law, remedy
+from reach.analysis.s2.load import read_phase, tidy
+
+SETS = ("R-ARITH", "R-ELEM6", "RS-add_sqrt", "RS-eml_sin_sqrt_square", "RS-mul_div_eml_sin_square", "RS-mul_eml_sin")
+TARGET_FILES = ("heldout", "restart")
+
+
+def check_complete(rows, registered):
+    """Refuse unless the rows' keys are exactly the registered task list (count and key hash)."""
+    if len(rows) != registered["n_tasks"] or L.task_list_hash(rows) != registered["sha256"]:
+        raise RuntimeError(f"s4_restart: {len(rows)} rows, key hash {L.task_list_hash(rows)[:16]}; registered "
+                           f"{registered['n_tasks']} tasks, {registered['sha256'][:16]}: incomplete or not the "
+                           "registered tasks")
+
+
+def load_sizes(root, sets):
+    """{set: {target_id: bits_sem}} over the registered target files present, proven levels only; each file checked
+    against its .sha256."""
+    out = {}
+    for g in sets:
+        out[g] = {}
+        for name in TARGET_FILES:
+            p = Path(root) / f"data/targets_s2/{g}/{name}.json"
+            if not p.exists():
+                continue
+            want = (p.parent / f"{name}.sha256").read_text().split()[0]
+            if hashlib.sha256(p.read_bytes()).hexdigest() != want:
+                raise RuntimeError(f"{p}: SHA-256 differs from {name}.sha256")
+            for t in json.loads(p.read_text()):
+                if t["K_proven"] == t["K_construction"] and not t.get("constructed"):
+                    out[g][t["target_id"]] = t["units"]["bits_sem"]
+    return out
+
+
+def build(root, sets=SETS, boot=remedy.H11_BOOT):
+    root = Path(root)
+    rows = read_phase("s4_restart", root)
+    check_complete(rows, json.loads((root / "data/registration/stage4_tasks.json").read_text())["s4_restart"])
+    sizes = load_sizes(root, sets)
+    restart = {}
+    for g in sets:
+        by = defaultdict(list)
+        for r in rows:
+            if r["set"] == g:
+                if r["target_id"] not in sizes[g]:
+                    raise RuntimeError(f"{g} {r['target_id']}: not a proven target of the registered files")
+                by[r["target_id"]].append(r)
+        restart[g] = (dict(by), {t: sizes[g][t] for t in by})
+    one = {}
+    recs = tidy([r for r in read_phase("s2_ho_a16", root) if r.get("set") in sets], (16,))
+    for g in sets:
+        rr = [r for r in recs if r["set"] == g]
+        missing = {r["target_id"] for r in rr} - set(sizes[g])
+        if missing:
+            raise RuntimeError(f"{g}: one-run targets not in the registered proven files: {sorted(missing)[:3]}")
+        one[g] = [dict(target_id=r["target_id"], y=r["y"], units={"bits_sem": sizes[g][r["target_id"]]}) for r in rr]
+    ref = json.loads((root / "data/analysis/remedy.json").read_text())["systems"]["tree GP, 16 x E0"]
+    for g in sets:                                           # instrument check of the one-run arm
+        k = law._k50(one[g], "bits_sem")
+        if not math.isclose(k, ref[g]["k50"], abs_tol=1e-9):
+            raise RuntimeError(f"instrument check: {g} one-run K50 {k} differs from remedy.json's {ref[g]['k50']}")
+    res = dict(label="STAGE 4 (H11; confirmatory once registered)", sets=list(sets), rows=len(rows),
+               h11=remedy.h11(restart, one, boot=boot), descriptive={})
+    null = res["h11"]["null"]
+    for g in sets:
+        runs, size = restart[g]
+        dr = {str(R): remedy.restart_k50(runs, size, R=R, L=100) for R in (2, 4, 8, 16, 32)}
+        l50 = remedy.restart_k50(runs, size, R=64, L=50)
+        gap = res["h11"]["per_set"][g]["gap"]
+        res["descriptive"][g] = dict(restarts_L100=dr, restarts_L50_R64=l50, eval_ratio=remedy.eval_ratio(gap),
+                                     gap_L50=l50["k50"] - null)
+    res["built"] = time.strftime("%Y-%m-%d %H:%M:%S")
+    return res
+
+
+def _f(x, d=2, sign=False):
+    if x is None or (isinstance(x, float) and math.isnan(x)):
+        return "n/a"
+    return f"{x:+.{d}f}" if sign else f"{x:.{d}f}"
+
+
+def render(res):
+    h = res["h11"]
+    L_ = [f"# H11 report: {res['label']}", "",
+          f"> Generated by `reach.analysis.s2.h11_report` ({res['built']}); every number from data/analysis/h11.json. "
+          f"Do not edit by hand. Rows {res['rows']}; bootstrap {h['boot']} replicates. The null's reach at 16 × E₀: "
+          f"{h['null']:.2f} bits.", "", "## Tests (Holm over the two)", "",
+          "| Test | estimate | 90% interval | margin | p | Holm threshold | estimable | supported |",
+          "|---|---|---|---|---|---|---|---|"]
+    for k in ("H11-1", "H11-2"):
+        t = h["tests"][k]
+        iv = f"[{_f(t.get('lo90'), sign=True)}, {_f(t.get('hi90'), sign=True)}]" if "lo90" in t else "per set"
+        L_.append(f"| {k} | {_f(t['estimate'], sign=True)} | {iv} | {t['margin']:+.0f} | {t['p']:.4f} | "
+                  f"{t['threshold']:.4f} | {'yes' if t['estimable'] else 'no'} | {'yes' if t['supported'] else 'no'} |")
+    sl = h["set_level"]
+    L_ += ["", f"Set level (descriptive): mean gap {_f(sl['mean'], sign=True)}, SE {_f(sl['se'])} over {sl['n_sets']} "
+           "sets.", "", "## Per set at 16 × E₀ (bits)", "",
+           "| set | restarted K₅₀ (32 × 100) | flag | one run K₅₀ | gap to null | gain | gain p | evaluation ratio |",
+           "|---|---|---|---|---|---|---|---|"]
+    for g, v in h["per_set"].items():
+        L_.append(f"| {g} | {_f(v['k50'])} | {'lower bound' if v['extrapolated'] else ''} | {_f(v['one_run'])} | "
+                  f"{_f(v['gap'], sign=True)} | {_f(v['gain'], sign=True)} | {h['per_set_gain_tests'][g]['p']:.4f} | "
+                  f"×{res['descriptive'][g]['eval_ratio']:.2f} |")
+    L_ += ["", "## Descriptive (no test)", "",
+           "| set | K₅₀ at R = 2, 4, 8, 16, 32 (L 100) | 64 × 50 generations: K₅₀ (gap) |", "|---|---|---|"]
+    for g, v in res["descriptive"].items():
+        ks = ", ".join(_f(v["restarts_L100"][R]["k50"]) + ("^" if v["restarts_L100"][R]["extrapolated"] else "")
+                       for R in ("2", "4", "8", "16", "32"))
+        L_.append(f"| {g} | {ks} | {_f(v['restarts_L50_R64']['k50'])} ({_f(v['gap_L50'], sign=True)}) |")
+    L_ += ["", "`^`: above the top tested level, replaced by it (a lower bound)."]
+    return "\n".join(L_) + "\n"
+
+
+def main(argv=None, root=None):
+    from reach.paths import ROOT
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--boot", type=int, default=remedy.H11_BOOT)
+    a = ap.parse_args(argv)
+    root = Path(root or ROOT)
+    res = build(root, boot=a.boot)
+    (root / "data/analysis/h11.json").write_text(json.dumps(res, indent=1, default=float) + "\n")
+    (root / "docs/status/h11_report.md").write_text(render(res))
+    t = res["h11"]["tests"]
+    print(f"written data/analysis/h11.json; H11-1 supported: {t['H11-1']['supported']}; "
+          f"H11-2 supported: {t['H11-2']['supported']}")
+
+
+if __name__ == "__main__":
+    main()

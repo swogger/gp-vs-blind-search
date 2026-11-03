@@ -1,0 +1,100 @@
+{
+ "grammar": "RS-add_sqrt",
+ "seed": 20261022,
+ "ceiling": 20,
+ "depth_limit": 10,
+ "levels": {
+  "8": {
+   "proven": true,
+   "n_level": 105,
+   "n_depth_ok": 105,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {}
+  },
+  "9": {
+   "proven": true,
+   "n_level": 226,
+   "n_depth_ok": 226,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "variance": 1
+   }
+  },
+  "10": {
+   "proven": true,
+   "n_level": 477,
+   "n_depth_ok": 477,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "variance": 2
+   }
+  },
+  "11": {
+   "proven": true,
+   "n_level": 1037,
+   "n_depth_ok": 1036,
+   "excluded_share": 0.0009643201542912649,
+   "found": 30,
+   "rejected": {
+    "variance": 2
+   }
+  },
+  "12": {
+   "proven": true,
+   "n_level": 2252,
+   "n_depth_ok": 2230,
+   "excluded_share": 0.009769094138543544,
+   "found": 30,
+   "rejected": {
+    "variance": 1
+   }
+  },
+  "13": {
+   "proven": true,
+   "n_level": 4953,
+   "n_depth_ok": 4756,
+   "excluded_share": 0.03977387441954372,
+   "found": 30,
+   "rejected": {}
+  },
+  "14": {
+   "proven": true,
+   "n_level": 10944,
+   "n_depth_ok": 9945,
+   "excluded_share": 0.09128289473684215,
+   "found": 30,
+   "rejected": {}
+  },
+  "15": {
+   "proven": true,
+   "n_level": 24357,
+   "n_depth_ok": 20718,
+   "excluded_share": 0.14940263579258528,
+   "found": 30,
+   "rejected": {
+    "variance": 1
+   }
+  },
+  "16": {
+   "proven": true,
+   "n_level": 54444,
+   "n_depth_ok": 42852,
+   "excluded_share": 0.212916023804276,
+   "found": 30,
+   "rejected": {}
+  },
+  "17": {
+   "proven": true,
+   "n_level": 122385,
+   "n_depth_ok": 87985,
+   "excluded_share": 0.2810801977366507,
+   "found": 30,
+   "rejected": {
+    "dead_subtree": 1
+   }
+  }
+ }
+}

@@ -1,0 +1,94 @@
+[
+ {
+  "target_id": "BOOL-AN-n5_bench_add2_s0",
+  "benchmark": "add2_s0",
+  "expression": "and(not(and(not(and(not(x4), not(x5))), and(x2, not(and(x4, x5))))), not(and(not(x2), and(not(and(x4, not(x5))), not(and(x5, not(x4)))))))",
+  "K_construction": 30,
+  "K_proven": 30,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 30.0,
+   "bits_uniform": 84.22064766172812,
+   "bits_syn": 66.45220231359134,
+   "bits_sem": 24.48101940964434,
+   "bits_sem_uncorrected": 24.48101940964434,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  }
+ },
+ {
+  "target_id": "BOOL-AN-n5_bench_add2_cout",
+  "benchmark": "add2_cout",
+  "expression": "and(not(and(not(x1), not(x3))), not(and(and(not(and(x2, x4)), not(and(x2, x5))), and(not(and(x1, x3)), not(and(x4, x5))))))",
+  "K_construction": 27,
+  "K_proven": 27,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 75.79858289555531,
+   "bits_syn": 59.3215821403888,
+   "bits_sem": 22.891584592224405,
+   "bits_sem_uncorrected": 22.891584592224405,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 5,
+   "degree": 3,
+   "nonlinearity": 8,
+   "weight": 16
+  }
+ },
+ {
+  "target_id": "BOOL-AN-n5_bench_cmp2_gt",
+  "benchmark": "cmp2_gt",
+  "expression": "and(not(and(x3, not(x1))), not(and(not(and(x2, not(x4))), not(and(x1, not(x3))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 50.53238859703688,
+   "bits_syn": 38.11888161374552,
+   "bits_sem": 17.17666014793095,
+   "bits_sem_uncorrected": 17.17666014793095,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 3,
+   "nonlinearity": 8,
+   "weight": 12
+  }
+ },
+ {
+  "target_id": "BOOL-AN-n5_bench_mux",
+  "benchmark": "mux",
+  "expression": "not(and(not(and(x1, x3)), not(and(x2, not(x1)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 30.880904142633646,
+   "bits_syn": 22.006563726432805,
+   "bits_sem": 11.947271652460348,
+   "bits_sem_uncorrected": 11.947271652460348,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 16
+  }
+ }
+]

@@ -1,0 +1,31 @@
+{
+ "genome_length": {
+  "bool": 2000,
+  "real": 100
+ },
+ "levels": "all",
+ "levels_rule": "all 10 registered levels (main and budget) unless the projected CGP calibration cost exceeds 100 CPU-h, then the 5 budget levels; the same choice for the held-out levels",
+ "pilot_error_rows": 0,
+ "pilot_manifest_sha256": "4302511ac4f81c9af1aa8a88ffbc8c096f00d4d5927248c67202b417533dd67f",
+ "pilot_phase": "s2_pilot_cgp",
+ "pilot_results_sha256": "3139bc514b4863bf045a84c56469e3011b4df9ae0575de150f774fae9ddf93f6",
+ "pilot_rows": 5112,
+ "projected_cal_cpu_h": 13.986851844941956,
+ "rule": "per domain, the genome length (100, 500 or 2,000 nodes) with the highest mean exact recovery, averaged over budgets 1/4, 1, 4, 16 x E0 and over the two pilot sets with equal weight; a difference below 0.02 goes to the shorter genome (the shortest length less than 0.02 below the best); CPU stops count as failures",
+ "scores": {
+  "bool": {
+   "100": 0.8988888888888888,
+   "500": 0.9322222222222223,
+   "2000": 0.9675
+  },
+  "real": {
+   "100": 0.25840575647135783,
+   "500": 0.20586393794972432,
+   "2000": 0.14173208111391458
+  }
+ },
+ "soft_cpu_limit_s": {
+  "bool": 600,
+  "real": 600
+ }
+}

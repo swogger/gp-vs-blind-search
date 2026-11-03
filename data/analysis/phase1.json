@@ -1,0 +1,402 @@
+{
+ "sets": [
+  {
+   "set": "F-EML",
+   "ceiling": 21,
+   "keys_only_last": true,
+   "stop": "memory",
+   "U": 14869568,
+   "bits_per_node": 1.281,
+   "depth_excluded": 0.0255,
+   "depth_excluded_top": 0.0305,
+   "cpu_h": 0.02
+  },
+  {
+   "set": "F-EML-R",
+   "ceiling": 19,
+   "keys_only_last": true,
+   "stop": "memory",
+   "U": 2445243,
+   "bits_per_node": 1.261,
+   "depth_excluded": 0.0,
+   "depth_excluded_top": 0.0,
+   "cpu_h": 0.01
+  },
+  {
+   "set": "R-ARITH",
+   "ceiling": 23,
+   "keys_only_last": true,
+   "stop": "memory",
+   "U": 1763058,
+   "bits_per_node": 0.938,
+   "depth_excluded": 0.0,
+   "depth_excluded_top": 0.0,
+   "cpu_h": 0.01
+  },
+  {
+   "set": "R-ARITH4",
+   "ceiling": 17,
+   "keys_only_last": true,
+   "stop": "memory",
+   "U": 844680,
+   "bits_per_node": 1.208,
+   "depth_excluded": 0.0,
+   "depth_excluded_top": 0.0,
+   "cpu_h": 0.0
+  },
+  {
+   "set": "R-ELEM6",
+   "ceiling": 13,
+   "keys_only_last": true,
+   "stop": "memory",
+   "U": 19893284,
+   "bits_per_node": 2.114,
+   "depth_excluded": 0.0006,
+   "depth_excluded_top": 0.0008,
+   "cpu_h": 0.04
+  },
+  {
+   "set": "R-ELEM4",
+   "ceiling": 15,
+   "keys_only_last": true,
+   "stop": "memory",
+   "U": 4520931,
+   "bits_per_node": 1.656,
+   "depth_excluded": 0.0228,
+   "depth_excluded_top": 0.0288,
+   "cpu_h": 0.01
+  },
+  {
+   "set": "R-HYB",
+   "ceiling": 15,
+   "keys_only_last": true,
+   "stop": "memory",
+   "U": 4015791,
+   "bits_per_node": 1.627,
+   "depth_excluded": 0.0,
+   "depth_excluded_top": 0.0,
+   "cpu_h": 0.01
+  },
+  {
+   "set": "R-TRIG",
+   "ceiling": 13,
+   "keys_only_last": true,
+   "stop": "memory",
+   "U": 6505162,
+   "bits_per_node": 1.952,
+   "depth_excluded": 0.0535,
+   "depth_excluded_top": 0.0643,
+   "cpu_h": 0.01
+  },
+  {
+   "set": "F-LDE0",
+   "ceiling": 23,
+   "keys_only_last": true,
+   "stop": "memory",
+   "U": 6123460,
+   "bits_per_node": 1.148,
+   "depth_excluded": 0.0845,
+   "depth_excluded_top": 0.0987,
+   "cpu_h": 0.01
+  },
+  {
+   "set": "R-SRB",
+   "ceiling": 9,
+   "keys_only_last": true,
+   "stop": "memory",
+   "U": 10967307,
+   "bits_per_node": 2.938,
+   "depth_excluded": 0.0,
+   "depth_excluded_top": 0.0,
+   "cpu_h": 0.01
+  },
+  {
+   "set": "BOOL-NAND-n5",
+   "ceiling": 32,
+   "keys_only_last": false,
+   "stop": "memory",
+   "U": 104747949,
+   "bits_per_node": 0.571,
+   "depth_excluded": 0.0,
+   "depth_excluded_top": 0.0,
+   "cpu_h": 0.75
+  },
+  {
+   "set": "BOOL-NOR-n5",
+   "ceiling": 32,
+   "keys_only_last": false,
+   "stop": "memory",
+   "U": 104747949,
+   "bits_per_node": 0.571,
+   "depth_excluded": 0.0,
+   "depth_excluded_top": 0.0,
+   "cpu_h": 0.84
+  },
+  {
+   "set": "BOOL-IMP0-n5",
+   "ceiling": 30,
+   "keys_only_last": false,
+   "stop": "memory",
+   "U": 109402101,
+   "bits_per_node": 0.634,
+   "depth_excluded": 0.0,
+   "depth_excluded_top": 0.0,
+   "cpu_h": 0.94
+  },
+  {
+   "set": "BOOL-IMP0R-n5",
+   "ceiling": 30,
+   "keys_only_last": false,
+   "stop": "cpu",
+   "U": 109402101,
+   "bits_per_node": 0.634,
+   "depth_excluded": 0.0,
+   "depth_excluded_top": 0.0,
+   "cpu_h": 1.74
+  },
+  {
+   "set": "BOOL-AON-n5",
+   "ceiling": 26,
+   "keys_only_last": false,
+   "stop": "cpu",
+   "U": 143884126,
+   "bits_per_node": 0.63,
+   "depth_excluded": 0.0,
+   "depth_excluded_top": 0.0,
+   "cpu_h": 3.9
+  },
+  {
+   "set": "BOOL-AN-n5",
+   "ceiling": 36,
+   "keys_only_last": false,
+   "stop": "cpu",
+   "U": 151550310,
+   "bits_per_node": 0.429,
+   "depth_excluded": 0.1012,
+   "depth_excluded_top": 0.1326,
+   "cpu_h": 4.04
+  },
+  {
+   "set": "BOOL-AONX-n5",
+   "ceiling": 18,
+   "keys_only_last": false,
+   "stop": "memory",
+   "U": 154387561,
+   "bits_per_node": 1.292,
+   "depth_excluded": 0.0,
+   "depth_excluded_top": 0.0,
+   "cpu_h": 0.57
+  },
+  {
+   "set": "BOOL-AX1-n5",
+   "ceiling": 23,
+   "keys_only_last": true,
+   "stop": "memory",
+   "U": 178818595,
+   "bits_per_node": 1.035,
+   "depth_excluded": 0.0,
+   "depth_excluded_top": 0.0,
+   "cpu_h": 0.7
+  },
+  {
+   "set": "BOOL-RICH-n5",
+   "ceiling": 16,
+   "keys_only_last": false,
+   "stop": "completed",
+   "U": 51009836,
+   "bits_per_node": 1.423,
+   "depth_excluded": 0.0,
+   "depth_excluded_top": 0.0,
+   "cpu_h": 0.23
+  },
+  {
+   "set": "BOOL-NAND-n6",
+   "ceiling": 22,
+   "keys_only_last": false,
+   "stop": "memory",
+   "U": 52990919,
+   "bits_per_node": 1.138,
+   "depth_excluded": 0.0,
+   "depth_excluded_top": 0.0,
+   "cpu_h": 0.03
+  },
+  {
+   "set": "BOOL-AON-n6",
+   "ceiling": 19,
+   "keys_only_last": false,
+   "stop": "memory",
+   "U": 191078644,
+   "bits_per_node": 1.26,
+   "depth_excluded": 0.0,
+   "depth_excluded_top": 0.0,
+   "cpu_h": 0.39
+  }
+ ],
+ "ieee": [
+  {
+   "guarded": "R-ELEM6",
+   "ieee": "ELEM6",
+   "up_to_K": 12,
+   "common": 4381071,
+   "size_differs": 2150,
+   "guarded_smaller": 2061,
+   "ieee_smaller": 89,
+   "only_guarded": 143003,
+   "only_ieee": 148077
+  },
+  {
+   "guarded": "R-HYB",
+   "ieee": "HYB",
+   "up_to_K": 15,
+   "common": 3910108,
+   "size_differs": 1769,
+   "guarded_smaller": 1757,
+   "ieee_smaller": 12,
+   "only_guarded": 105683,
+   "only_ieee": 110394
+  },
+  {
+   "guarded": "F-EML",
+   "ieee": "EML",
+   "up_to_K": 21,
+   "common": 13223869,
+   "size_differs": 4327,
+   "guarded_smaller": 673,
+   "ieee_smaller": 3654,
+   "only_guarded": 1645699,
+   "only_ieee": 1750877
+  }
+ ],
+ "precision": {
+  "F-EML": {
+   "up_to_K": 13,
+   "p7": {
+    "checked": 652,
+    "changed": 0,
+    "absent": 0
+   },
+   "p11": {
+    "checked": 652,
+    "changed": 0,
+    "absent": 0
+   }
+  },
+  "F-EML-R": {
+   "up_to_K": 13,
+   "p7": {
+    "checked": 665,
+    "changed": 0,
+    "absent": 0
+   },
+   "p11": {
+    "checked": 665,
+    "changed": 0,
+    "absent": 0
+   }
+  },
+  "R-ARITH": {
+   "up_to_K": 13,
+   "p7": {
+    "checked": 658,
+    "changed": 0,
+    "absent": 0
+   },
+   "p11": {
+    "checked": 658,
+    "changed": 0,
+    "absent": 0
+   }
+  },
+  "R-ARITH4": {
+   "up_to_K": 13,
+   "p7": {
+    "checked": 816,
+    "changed": 1,
+    "absent": 0
+   },
+   "p11": {
+    "checked": 816,
+    "changed": 0,
+    "absent": 0
+   }
+  },
+  "R-ELEM6": {
+   "up_to_K": 12,
+   "p7": {
+    "checked": 1571,
+    "changed": 16,
+    "absent": 2
+   },
+   "p11": {
+    "checked": 1571,
+    "changed": 0,
+    "absent": 0
+   }
+  },
+  "R-ELEM4": {
+   "up_to_K": 13,
+   "p7": {
+    "checked": 1529,
+    "changed": 17,
+    "absent": 4
+   },
+   "p11": {
+    "checked": 1529,
+    "changed": 0,
+    "absent": 0
+   }
+  },
+  "R-HYB": {
+   "up_to_K": 13,
+   "p7": {
+    "checked": 856,
+    "changed": 2,
+    "absent": 0
+   },
+   "p11": {
+    "checked": 856,
+    "changed": 0,
+    "absent": 1
+   }
+  },
+  "R-TRIG": {
+   "up_to_K": 13,
+   "p7": {
+    "checked": 1778,
+    "changed": 1,
+    "absent": 0
+   },
+   "p11": {
+    "checked": 1778,
+    "changed": 0,
+    "absent": 0
+   }
+  },
+  "F-LDE0": {
+   "up_to_K": 13,
+   "p7": {
+    "checked": 507,
+    "changed": 0,
+    "absent": 0
+   },
+   "p11": {
+    "checked": 507,
+    "changed": 0,
+    "absent": 0
+   }
+  },
+  "R-SRB": {
+   "up_to_K": 9,
+   "p7": {
+    "checked": 1252,
+    "changed": 0,
+    "absent": 0
+   },
+   "p11": {
+    "checked": 1252,
+    "changed": 0,
+    "absent": 0
+   }
+  }
+ }
+}

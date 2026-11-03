@@ -1,0 +1,5402 @@
+[
+ {
+  "expression": "eml(eml(+(1, 1), x), 1)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 5805.661404015911,
+  "target_scale": 805.1033358777246,
+  "target_id": "R-HYB_K07_00"
+ },
+ {
+  "expression": "+(1, eml(x, +(x, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.132399420784443,
+  "target_scale": 19.099197787398282,
+  "target_id": "R-HYB_K07_01"
+ },
+ {
+  "expression": "*(x, eml(eml(1, x), x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.2989341599534126,
+  "target_scale": 13.751179579828696,
+  "target_id": "R-HYB_K07_02"
+ },
+ {
+  "expression": "eml(eml(1, *(x, x)), 1)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.34651690595263007,
+  "target_scale": 3.7513317266939246,
+  "target_id": "R-HYB_K07_03"
+ },
+ {
+  "expression": "eml(+(1, 1), *(x, x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.053256379741365906,
+  "target_scale": 5.992885174529595,
+  "target_id": "R-HYB_K07_04"
+ },
+ {
+  "expression": "eml(1, eml(+(x, 1), x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08420501330566392,
+  "target_scale": 1.2513482641944331,
+  "target_id": "R-HYB_K07_05"
+ },
+ {
+  "expression": "*(+(x, x), +(x, x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 32.758645094977076,
+  "target_scale": 35.76276835604352,
+  "target_id": "R-HYB_K07_06"
+ },
+ {
+  "expression": "*(+(x, x), *(x, x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 117.87722311847754,
+  "target_scale": 53.4671091263621,
+  "target_id": "R-HYB_K07_07"
+ },
+ {
+  "expression": "+(1, *(x, eml(1, 1)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.6035615130314637,
+  "target_scale": 9.127931803907243,
+  "target_id": "R-HYB_K07_08"
+ },
+ {
+  "expression": "eml(1, *(x, eml(x, 1)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.16086494909149077,
+  "target_scale": 1.367123681975555,
+  "target_id": "R-HYB_K07_09"
+ },
+ {
+  "expression": "+(1, eml(+(x, 1), x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 93.37753409817155,
+  "target_scale": 53.96493509699459,
+  "target_id": "R-HYB_K07_10"
+ },
+ {
+  "expression": "+(1, eml(+(x, x), 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 9286.937946984115,
+  "target_scale": 396.51868093220537,
+  "target_id": "R-HYB_K07_11"
+ },
+ {
+  "expression": "eml(1, +(1, *(x, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.03913684224721307,
+  "target_scale": 1.1009348770920135,
+  "target_id": "R-HYB_K07_12"
+ },
+ {
+  "expression": "eml(1, +(x, eml(1, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0015667880290039572,
+  "target_scale": 1.3244912948871574,
+  "target_id": "R-HYB_K07_13"
+ },
+ {
+  "expression": "+(1, *(x, +(x, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 8.189661273744269,
+  "target_scale": 18.88138417802176,
+  "target_id": "R-HYB_K07_14"
+ },
+ {
+  "expression": "+(1, eml(x, +(1, 1)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.935998848502534,
+  "target_scale": 20.194504287931892,
+  "target_id": "R-HYB_K07_15"
+ },
+ {
+  "expression": "*(*(x, x), eml(1, 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 15.128466645734061,
+  "target_scale": 24.303320839405817,
+  "target_id": "R-HYB_K07_16"
+ },
+ {
+  "expression": "+(+(1, 1), *(x, x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.0474153184360673,
+  "target_scale": 10.94069208901088,
+  "target_id": "R-HYB_K07_17"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(x, 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683166,
+  "target_scale": 13.144361251380253,
+  "target_id": "R-HYB_K07_18"
+ },
+ {
+  "expression": "+(x, eml(eml(1, 1), x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.029129577412855476,
+  "target_scale": 17.049054750846643,
+  "target_id": "R-HYB_K07_19"
+ },
+ {
+  "expression": "eml(1, eml(+(x, 1), 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683164,
+  "target_scale": 1.271817181441945,
+  "target_id": "R-HYB_K07_20"
+ },
+ {
+  "expression": "+(eml(x, x), eml(x, 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 50.12348244363859,
+  "target_scale": 38.67999643645006,
+  "target_id": "R-HYB_K07_21"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, 1), x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.993420611089588,
+  "target_scale": 17.244391856493078,
+  "target_id": "R-HYB_K07_22"
+ },
+ {
+  "expression": "eml(+(x, eml(1, 1)), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2958.4072544851924,
+  "target_scale": 300.28737922013187,
+  "target_id": "R-HYB_K07_23"
+ },
+ {
+  "expression": "+(1, eml(eml(1, x), x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.686941844091526,
+  "target_scale": 7.84171988947142,
+  "target_id": "R-HYB_K07_24"
+ },
+ {
+  "expression": "eml(eml(1, x), +(x, x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.6869418440915258,
+  "target_scale": 6.148572708911475,
+  "target_id": "R-HYB_K07_25"
+ },
+ {
+  "expression": "eml(x, eml(1, +(1, 1)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.935998848502534,
+  "target_scale": 19.182015277354203,
+  "target_id": "R-HYB_K07_26"
+ },
+ {
+  "expression": "+(x, eml(1, eml(1, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.12214139864602398,
+  "target_scale": 5.224119751467811,
+  "target_id": "R-HYB_K07_27"
+ },
+ {
+  "expression": "*(x, eml(1, *(x, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.10085315769212079,
+  "target_scale": 2.6573120150868497,
+  "target_id": "R-HYB_K07_28"
+ },
+ {
+  "expression": "*(+(x, 1), eml(x, 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.178664851006472,
+   "bits_sem": 8.92481250360578,
+   "bits_sem_uncorrected": 8.927777962082342,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 269.72047616820873,
+  "target_scale": 79.35369843368524,
+  "target_id": "R-HYB_K07_29"
+ },
+ {
+  "expression": "eml(1, +(eml(x, x), eml(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08899069055401884,
+  "target_scale": 1.0,
+  "target_id": "R-HYB_K09_00"
+ },
+ {
+  "expression": "*(+(1, 1), eml(eml(1, x), x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.747767376366104,
+  "target_scale": 13.68343977894284,
+  "target_id": "R-HYB_K09_01"
+ },
+ {
+  "expression": "eml(1, *(*(x, x), eml(x, 1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.2666749197368328,
+  "target_scale": 2.462430182509166,
+  "target_id": "R-HYB_K09_02"
+ },
+ {
+  "expression": "eml(x, +(x, eml(1, +(1, 1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.489861813071151,
+  "target_scale": 18.275171456378636,
+  "target_id": "R-HYB_K09_03"
+ },
+ {
+  "expression": "+(eml(1, x), eml(x, +(x, 1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 11.575736954321005,
+  "target_scale": 20.126810751311847,
+  "target_id": "R-HYB_K09_04"
+ },
+ {
+  "expression": "+(x, eml(+(1, 1), eml(1, 1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683164,
+  "target_scale": 9.37915510883164,
+  "target_id": "R-HYB_K09_05"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(+(x, x), 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3267326732673266,
+  "target_scale": 11.134460261281243,
+  "target_id": "R-HYB_K09_06"
+ },
+ {
+  "expression": "*(+(x, x), eml(+(x, 1), x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4713.931987922641,
+  "target_scale": 316.74079998598745,
+  "target_id": "R-HYB_K09_07"
+ },
+ {
+  "expression": "eml(eml(1, eml(*(x, x), x)), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.03343877373294088,
+  "target_scale": 1.0933217594691405,
+  "target_id": "R-HYB_K09_08"
+ },
+ {
+  "expression": "*(eml(1, x), eml(eml(1, 1), x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3.4381036505554317,
+  "target_scale": 29.204315799489656,
+  "target_id": "R-HYB_K09_09"
+ },
+ {
+  "expression": "*(x, eml(1, eml(x, +(1, 1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.46534519445466443,
+  "target_scale": 1.619708366497491,
+  "target_id": "R-HYB_K09_10"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(x, eml(1, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.09414623320990774,
+  "target_scale": 13.243330520686664,
+  "target_id": "R-HYB_K09_11"
+ },
+ {
+  "expression": "*(eml(x, 1), eml(x, eml(1, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 9045.990852331965,
+  "target_scale": 385.88786521633983,
+  "target_id": "R-HYB_K09_12"
+ },
+ {
+  "expression": "eml(x, *(x, eml(eml(1, 1), x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.187952805012513,
+  "target_scale": 16.149085355959468,
+  "target_id": "R-HYB_K09_13"
+ },
+ {
+  "expression": "eml(eml(1, +(x, +(x, 1))), 1)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.06028592313248361,
+  "target_scale": 3.018896422858788,
+  "target_id": "R-HYB_K09_14"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, 1)), +(x, 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0067309979493339386,
+  "target_scale": 4.473034340195918,
+  "target_id": "R-HYB_K09_15"
+ },
+ {
+  "expression": "*(x, eml(1, eml(x, eml(x, x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.47897589767291876,
+  "target_scale": 2.0185904946517734,
+  "target_id": "R-HYB_K09_16"
+ },
+ {
+  "expression": "*(eml(x, x), +(1, eml(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 8190.790189786643,
+  "target_scale": 371.94457436270307,
+  "target_id": "R-HYB_K09_17"
+ },
+ {
+  "expression": "eml(+(x, eml(1, eml(1, x))), 1)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1402.1944468727193,
+  "target_scale": 185.69763848838483,
+  "target_id": "R-HYB_K09_18"
+ },
+ {
+  "expression": "eml(1, eml(eml(1, x), eml(1, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013493637626107462,
+  "target_scale": 1.1957346706825493,
+  "target_id": "R-HYB_K09_19"
+ },
+ {
+  "expression": "eml(+(+(1, 1), eml(1, 1)), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013314094935341476,
+  "target_scale": 111.27760837799623,
+  "target_id": "R-HYB_K09_20"
+ },
+ {
+  "expression": "+(1, eml(eml(1, x), +(1, 1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5091769317007915,
+  "target_scale": 7.8466581711120025,
+  "target_id": "R-HYB_K09_21"
+ },
+ {
+  "expression": "eml(x, eml(+(1, 1), +(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 13.077641346381492,
+  "target_scale": 18.164777301922697,
+  "target_id": "R-HYB_K09_22"
+ },
+ {
+  "expression": "eml(eml(eml(1, 1), 1), eml(x, 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316833093985,
+  "target_scale": 3814277.0948592243,
+  "target_id": "R-HYB_K09_23"
+ },
+ {
+  "expression": "eml(+(x, 1), *(x, eml(1, 1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 93.37753409817155,
+  "target_scale": 51.96493509699459,
+  "target_id": "R-HYB_K09_24"
+ },
+ {
+  "expression": "*(x, eml(eml(1, 1), *(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 10.485680640387908,
+  "target_scale": 38.76259475845977,
+  "target_id": "R-HYB_K09_25"
+ },
+ {
+  "expression": "+(x, eml(1, eml(+(1, 1), x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0921589799158617,
+  "target_scale": 3.8688238246851068,
+  "target_id": "R-HYB_K09_26"
+ },
+ {
+  "expression": "eml(1, *(x, eml(+(x, 1), x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.16439471285302493,
+  "target_scale": 2.346654764728043,
+  "target_id": "R-HYB_K09_27"
+ },
+ {
+  "expression": "+(x, *(+(x, x), eml(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 617.7804802614555,
+  "target_scale": 115.37204317472047,
+  "target_id": "R-HYB_K09_28"
+ },
+ {
+  "expression": "+(x, +(+(x, x), +(1, 1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 12.055621374781708,
+   "bits_sem_uncorrected": 12.069785394983302,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.7351485148514848,
+  "target_scale": 10.97029702970297,
+  "target_id": "R-HYB_K09_29"
+ },
+ {
+  "expression": "eml(+(x, eml(1, eml(1, +(x, x)))), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4707.8567692192055,
+  "target_scale": 323.0319922638478,
+  "target_id": "R-HYB_K11_00"
+ },
+ {
+  "expression": "+(+(1, +(1, 1)), eml(+(x, x), 1))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 9286.937946984115,
+  "target_scale": 398.51868093220537,
+  "target_id": "R-HYB_K11_01"
+ },
+ {
+  "expression": "eml(eml(1, eml(+(x, 1), eml(x, 1))), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.07243804822542188,
+  "target_scale": 1.0,
+  "target_id": "R-HYB_K11_02"
+ },
+ {
+  "expression": "+(1, eml(1, +(1, eml(1, +(x, x)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0029650287555900313,
+  "target_scale": 3.0608508723226064,
+  "target_id": "R-HYB_K11_03"
+ },
+ {
+  "expression": "eml(eml(1, *(+(x, 1), +(x, 1))), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.043368706045819855,
+  "target_scale": 1.6727474585064273,
+  "target_id": "R-HYB_K11_04"
+ },
+ {
+  "expression": "*(x, eml(eml(eml(1, 1), x), eml(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.073865513530765,
+  "target_scale": 3814275.262457996,
+  "target_id": "R-HYB_K11_05"
+ },
+ {
+  "expression": "*(eml(1, 1), eml(+(x, 1), eml(x, 1)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 665.9226936888158,
+  "target_scale": 138.82304057275945,
+  "target_id": "R-HYB_K11_06"
+ },
+ {
+  "expression": "+(+(1, 1), eml(+(1, 1), +(x, 1)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.006730997949333936,
+  "target_scale": 8.287148914365687,
+  "target_id": "R-HYB_K11_07"
+ },
+ {
+  "expression": "+(*(x, eml(x, 1)), eml(1, +(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 161.6830113056584,
+  "target_scale": 60.3958751125589,
+  "target_id": "R-HYB_K11_08"
+ },
+ {
+  "expression": "eml(x, *(+(1, 1), eml(eml(1, x), 1)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 13.7662264660913,
+  "target_scale": 17.571528960006454,
+  "target_id": "R-HYB_K11_09"
+ },
+ {
+  "expression": "*(x, eml(eml(1, x), *(x, *(x, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.690407439580714,
+  "target_scale": 10.945014256527562,
+  "target_id": "R-HYB_K11_10"
+ },
+ {
+  "expression": "eml(1, *(eml(1, x), +(1, eml(1, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.010964641232603618,
+  "target_scale": 1.2697114467783863,
+  "target_id": "R-HYB_K11_11"
+ },
+ {
+  "expression": "eml(x, +(+(x, x), eml(x, +(1, 1))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 11.237467697350837,
+  "target_scale": 16.661811854873356,
+  "target_id": "R-HYB_K11_12"
+ },
+ {
+  "expression": "eml(1, +(x, eml(+(1, 1), eml(x, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.8091974458873632e-06,
+  "target_scale": 1.0,
+  "target_id": "R-HYB_K11_13"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, x)), +(1, eml(x, 1)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.4591300203133221,
+  "target_scale": 2.232752012216429,
+  "target_id": "R-HYB_K11_14"
+ },
+ {
+  "expression": "+(x, eml(x, +(x, eml(eml(1, x), x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 15.588716910014893,
+  "target_scale": 20.937148705972206,
+  "target_id": "R-HYB_K11_15"
+ },
+ {
+  "expression": "+(x, eml(x, eml(1, eml(1, +(1, 1)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 15.057083499587245,
+  "target_scale": 22.178300384329678,
+  "target_id": "R-HYB_K11_16"
+ },
+ {
+  "expression": "*(eml(1, +(1, 1)), eml(eml(1, x), 1))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.0882213311836653,
+  "target_scale": 15.269121056085918,
+  "target_id": "R-HYB_K11_17"
+ },
+ {
+  "expression": "*(x, eml(x, *(x, eml(1, +(x, 1)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 151.74023475188397,
+  "target_scale": 55.32823567702197,
+  "target_id": "R-HYB_K11_18"
+ },
+ {
+  "expression": "+(eml(x, x), *(x, +(x, eml(1, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 26.401068297325924,
+  "target_scale": 32.585893978092685,
+  "target_id": "R-HYB_K11_19"
+ },
+ {
+  "expression": "+(*(x, eml(1, x)), eml(x, +(x, 1)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 14.006196445831254,
+  "target_scale": 23.35669234450999,
+  "target_id": "R-HYB_K11_20"
+ },
+ {
+  "expression": "eml(+(1, 1), +(x, eml(eml(1, x), 1)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.002431166746035312,
+  "target_scale": 5.302360144767405,
+  "target_id": "R-HYB_K11_21"
+ },
+ {
+  "expression": "+(x, eml(*(+(x, 1), eml(1, x)), x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3901.188223564021,
+  "target_scale": 651.1541408067886,
+  "target_id": "R-HYB_K11_22"
+ },
+ {
+  "expression": "*(eml(x, eml(1, x)), eml(+(1, 1), x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 495.7141400315329,
+  "target_scale": 122.12008042173355,
+  "target_id": "R-HYB_K11_23"
+ },
+ {
+  "expression": "*(*(x, eml(1, x)), eml(+(x, 1), x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2638.429970645412,
+  "target_scale": 257.03125186231125,
+  "target_id": "R-HYB_K11_24"
+ },
+ {
+  "expression": "+(+(x, eml(1, x)), *(x, eml(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 155.148282173589,
+  "target_scale": 60.80404642023617,
+  "target_id": "R-HYB_K11_25"
+ },
+ {
+  "expression": "+(eml(1, x), *(x, +(x, +(x, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 17.45464199180527,
+  "target_scale": 28.445051594958077,
+  "target_id": "R-HYB_K11_26"
+ },
+ {
+  "expression": "+(1, *(x, eml(1, eml(1, +(1, 1)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.33087747828503455,
+  "target_scale": 7.018009727436299,
+  "target_id": "R-HYB_K11_27"
+ },
+ {
+  "expression": "eml(1, +(1, eml(eml(1, x), eml(1, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.009688752028262148,
+  "target_scale": 1.0,
+  "target_id": "R-HYB_K11_28"
+ },
+ {
+  "expression": "+(*(x, x), eml(eml(1, eml(1, 1)), x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 15.271207673963957,
+   "bits_sem_uncorrected": 15.303994739679444,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.732259423686516,
+  "target_scale": 13.420327113238152,
+  "target_id": "R-HYB_K11_29"
+ },
+ {
+  "expression": "*(eml(x, 1), eml(eml(1, eml(1, *(x, x))), x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 16971.243996933972,
+  "target_scale": 549.3757099010443,
+  "target_id": "R-HYB_K13_00"
+ },
+ {
+  "expression": "eml(1, *(+(x, x), eml(x, eml(+(x, x), 1))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.27237255690445505,
+  "target_scale": 1.7025967683871497,
+  "target_id": "R-HYB_K13_01"
+ },
+ {
+  "expression": "+(+(1, 1), eml(eml(+(1, 1), 1), eml(1, x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004057505669662137,
+  "target_scale": 1619.6937308257616,
+  "target_id": "R-HYB_K13_02"
+ },
+ {
+  "expression": "eml(eml(1, *(x, eml(1, *(x, x)))), +(1, 1))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.215491110976621,
+  "target_scale": 8.911640979802218,
+  "target_id": "R-HYB_K13_03"
+ },
+ {
+  "expression": "eml(+(1, eml(1, *(+(x, x), +(x, x)))), 1)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.16002705358199124,
+  "target_scale": 2.5492942162984966,
+  "target_id": "R-HYB_K13_04"
+ },
+ {
+  "expression": "+(x, eml(eml(1, 1), +(1, *(x, +(x, x)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.005417199732878923,
+  "target_scale": 15.206184778836413,
+  "target_id": "R-HYB_K13_05"
+ },
+ {
+  "expression": "+(1, eml(1, *(x, eml(x, *(x, eml(1, x))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.19121681496115198,
+  "target_scale": 1.218272354521647,
+  "target_id": "R-HYB_K13_06"
+ },
+ {
+  "expression": "+(+(x, eml(x, x)), eml(eml(1, 1), +(x, x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 13.344777462343114,
+  "target_scale": 35.148252538244925,
+  "target_id": "R-HYB_K13_07"
+ },
+ {
+  "expression": "+(eml(1, x), eml(+(x, 1), eml(1, eml(1, 1))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 93.37753409817158,
+  "target_scale": 55.14189207084072,
+  "target_id": "R-HYB_K13_08"
+ },
+ {
+  "expression": "+(eml(x, x), eml(eml(1, *(x, eml(1, x))), x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 10.235324581134014,
+  "target_scale": 20.819789145590214,
+  "target_id": "R-HYB_K13_09"
+ },
+ {
+  "expression": "*(eml(1, eml(1, 1)), eml(+(1, eml(1, x)), x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.467415066907018,
+  "target_scale": 34.01722127654284,
+  "target_id": "R-HYB_K13_10"
+ },
+ {
+  "expression": "+(x, eml(1, +(x, eml(1, eml(+(1, 1), x)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.03792661921294114,
+  "target_scale": 4.355430298781772,
+  "target_id": "R-HYB_K13_11"
+ },
+ {
+  "expression": "eml(1, *(eml(1, eml(1, 1)), eml(x, eml(1, 1))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.09747021424762135,
+  "target_scale": 1.0,
+  "target_id": "R-HYB_K13_12"
+ },
+ {
+  "expression": "+(eml(1, +(x, x)), *(x, eml(x, eml(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 127.35810259822503,
+  "target_scale": 51.62457035497011,
+  "target_id": "R-HYB_K13_13"
+ },
+ {
+  "expression": "*(x, eml(eml(1, x), eml(1, eml(eml(1, x), x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.14997568878287876,
+  "target_scale": 15.61474653657182,
+  "target_id": "R-HYB_K13_14"
+ },
+ {
+  "expression": "+(eml(1, x), eml(x, *(+(x, x), eml(1, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 11.78318956062556,
+  "target_scale": 19.23791202843149,
+  "target_id": "R-HYB_K13_15"
+ },
+ {
+  "expression": "eml(1, +(x, eml(eml(eml(1, +(1, 1)), x), x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013210734417928143,
+  "target_scale": 4.1621129427100225,
+  "target_id": "R-HYB_K13_16"
+ },
+ {
+  "expression": "eml(x, +(x, eml(1, *(+(x, x), +(x, 1)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.668080504365177,
+  "target_scale": 18.957019618933025,
+  "target_id": "R-HYB_K13_17"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, *(x, x))), *(x, x)), 1)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5202297035367485,
+  "target_scale": 3.009852576674213,
+  "target_id": "R-HYB_K13_18"
+ },
+ {
+  "expression": "eml(eml(1, *(x, eml(1, x))), eml(1, eml(1, 1)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.03104229213844136,
+  "target_scale": 3.190889239819873,
+  "target_id": "R-HYB_K13_19"
+ },
+ {
+  "expression": "*(+(x, eml(x, x)), eml(1, eml(1, *(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 220.0983576936158,
+  "target_scale": 73.13604211946006,
+  "target_id": "R-HYB_K13_20"
+ },
+ {
+  "expression": "*(eml(x, *(x, x)), eml(+(x, eml(1, 1)), 1))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1732023.1999249854,
+  "target_scale": 5333.58098261436,
+  "target_id": "R-HYB_K13_21"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, *(+(x, x), eml(x, 1)))), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.7978433538338485,
+  "target_scale": 3.033163626525782,
+  "target_id": "R-HYB_K13_22"
+ },
+ {
+  "expression": "+(x, eml(eml(1, eml(+(1, 1), +(x, x))), 1))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.11418073736811453,
+  "target_scale": 5.6959261889942905,
+  "target_id": "R-HYB_K13_23"
+ },
+ {
+  "expression": "+(1, *(eml(1, x), eml(x, +(1, +(1, 1)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 26.17548202757702,
+  "target_scale": 31.494147024278252,
+  "target_id": "R-HYB_K13_24"
+ },
+ {
+  "expression": "+(+(1, eml(x, x)), *(x, eml(eml(1, 1), x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 52.5755868933981,
+  "target_scale": 61.830014609201655,
+  "target_id": "R-HYB_K13_25"
+ },
+ {
+  "expression": "*(eml(1, +(x, x)), eml(x, +(x, *(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6.387382289624392,
+  "target_scale": 16.186940196694763,
+  "target_id": "R-HYB_K13_26"
+ },
+ {
+  "expression": "*(eml(x, +(x, 1)), +(x, eml(x, eml(1, 1))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 9912.719940241945,
+  "target_scale": 404.82229428609423,
+  "target_id": "R-HYB_K13_27"
+ },
+ {
+  "expression": "eml(*(x, eml(1, eml(x, +(x, +(1, 1))))), 1)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.903166891396796,
+  "target_scale": 6.28171664113856,
+  "target_id": "R-HYB_K13_28"
+ },
+ {
+  "expression": "eml(+(1, eml(1, eml(1, eml(+(1, 1), 1)))), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 18.546819116643526,
+   "bits_sem_uncorrected": 18.599004771751463,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013314094935341456,
+  "target_scale": 56.65204375252578,
+  "target_id": "R-HYB_K13_29"
+ },
+ {
+  "expression": "eml(eml(1, x), *(x, +(eml(x, x), eml(x, eml(1, 1)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.283915829073849,
+  "target_scale": 4.259454294806885,
+  "target_id": "R-HYB_K15_00"
+ },
+ {
+  "expression": "+(x, eml(*(*(x, x), eml(1, *(x, eml(1, 1)))), 1))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3770.169957393986,
+  "target_scale": 265.37974201392194,
+  "target_id": "R-HYB_K15_01"
+ },
+ {
+  "expression": "eml(1, +(1, eml(1, eml(x, *(x, eml(x, eml(1, 1)))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.05346445527004721,
+  "target_scale": 2.7644615884064905,
+  "target_id": "R-HYB_K15_02"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, x), x)), eml(x, +(1, +(1, 1))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.023028997722581743,
+  "target_scale": 1.0,
+  "target_id": "R-HYB_K15_03"
+ },
+ {
+  "expression": "*(eml(1, eml(1, 1)), eml(x, +(*(x, x), eml(x, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 32.64290143583443,
+  "target_scale": 28.46338504085738,
+  "target_id": "R-HYB_K15_04"
+ },
+ {
+  "expression": "eml(1, +(x, *(*(x, x), +(*(x, x), eml(1, 1)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1426433057467755,
+  "target_scale": 1.9566885885584342,
+  "target_id": "R-HYB_K15_05"
+ },
+ {
+  "expression": "eml(x, +(eml(x, x), eml(eml(1, eml(1, +(1, 1))), 1)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 11.68287065840282,
+  "target_scale": 16.619017046114237,
+  "target_id": "R-HYB_K15_06"
+ },
+ {
+  "expression": "+(+(x, 1), eml(x, +(*(x, x), eml(1, eml(1, x)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 13.718606835541308,
+  "target_scale": 21.464097035710832,
+  "target_id": "R-HYB_K15_07"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(+(+(x, 1), eml(1, *(x, x))), x))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0031220728407433057,
+  "target_scale": 10.831466282483586,
+  "target_id": "R-HYB_K15_08"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, +(1, eml(x, x))), x), 1), eml(1, x))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 47.27512537733411,
+  "target_scale": 32.515662209403374,
+  "target_id": "R-HYB_K15_09"
+ },
+ {
+  "expression": "+(1, eml(eml(1, +(eml(x, x), eml(eml(1, 1), 1))), 1))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.005196707027061348,
+  "target_scale": 1.6913833422005906,
+  "target_id": "R-HYB_K15_10"
+ },
+ {
+  "expression": "eml(eml(1, 1), +(1, *(+(x, x), +(x, eml(x, 1)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1346216793827959,
+  "target_scale": 11.48871560324092,
+  "target_id": "R-HYB_K15_11"
+ },
+ {
+  "expression": "*(eml(+(x, 1), x), +(x, eml(+(1, +(1, 1)), x)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 46480.99412647335,
+  "target_scale": 1164.186721805838,
+  "target_id": "R-HYB_K15_12"
+ },
+ {
+  "expression": "+(x, eml(+(1, 1), eml(+(1, 1), eml(eml(1, x), x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.06672077305041986,
+  "target_scale": 8.58580112950747,
+  "target_id": "R-HYB_K15_13"
+ },
+ {
+  "expression": "+(1, *(x, eml(eml(1, +(1, *(x, eml(x, 1)))), 1)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.11271587705431899,
+  "target_scale": 2.9037741922015226,
+  "target_id": "R-HYB_K15_14"
+ },
+ {
+  "expression": "eml(+(+(1, 1), eml(1, +(1, +(1, 1)))), eml(x, 1))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683162,
+  "target_scale": 35.315330289966596,
+  "target_id": "R-HYB_K15_15"
+ },
+ {
+  "expression": "*(eml(1, x), +(eml(x, +(x, 1)), eml(x, eml(x, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 94.45520860773875,
+  "target_scale": 57.54751969430358,
+  "target_id": "R-HYB_K15_16"
+ },
+ {
+  "expression": "+(1, eml(1, *(+(x, x), +(1, eml(x, eml(x, 1))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.17088820950313438,
+  "target_scale": 1.0,
+  "target_id": "R-HYB_K15_17"
+ },
+ {
+  "expression": "eml(eml(1, eml(+(x, 1), +(x, eml(1, x)))), eml(x, 1))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.18767297692765972,
+  "target_scale": 2.701618643712927,
+  "target_id": "R-HYB_K15_18"
+ },
+ {
+  "expression": "+(1, *(eml(x, 1), eml(1, +(1, eml(1, eml(x, 1))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 158.26430583085738,
+  "target_scale": 61.36866704917264,
+  "target_id": "R-HYB_K15_19"
+ },
+ {
+  "expression": "+(1, eml(+(eml(1, x), eml(1, 1)), +(x, eml(1, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 117.78470152339496,
+  "target_scale": 113.86639701537352,
+  "target_id": "R-HYB_K15_20"
+ },
+ {
+  "expression": "+(1, *(eml(1, eml(x, 1)), +(1, eml(1, *(x, x)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3591086209909905,
+  "target_scale": 2.6449388689815776,
+  "target_id": "R-HYB_K15_21"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(eml(x, eml(eml(x, x), x)), eml(x, x)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.02788417760999304,
+  "target_scale": 18.025135627896717,
+  "target_id": "R-HYB_K15_22"
+ },
+ {
+  "expression": "+(+(x, eml(x, x)), *(+(x, 1), eml(x, eml(1, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 409.7823120671081,
+  "target_scale": 99.20389272820222,
+  "target_id": "R-HYB_K15_23"
+ },
+ {
+  "expression": "+(x, eml(1, +(1, eml(eml(1, eml(1, x)), eml(x, x)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0634988580778778,
+  "target_scale": 3.70637609658174,
+  "target_id": "R-HYB_K15_24"
+ },
+ {
+  "expression": "*(eml(1, 1), eml(eml(1, +(1, eml(x, 1))), eml(x, 1)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.612629189974578,
+  "target_scale": 6.155783056746515,
+  "target_id": "R-HYB_K15_25"
+ },
+ {
+  "expression": "+(+(1, 1), eml(x, eml(1, eml(1, +(x, +(x, 1))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.674317150411328,
+  "target_scale": 20.79811013444477,
+  "target_id": "R-HYB_K15_26"
+ },
+ {
+  "expression": "*(eml(eml(1, 1), 1), +(x, eml(x, eml(x, +(x, 1)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2929.678701203832,
+  "target_scale": 302.4756259513852,
+  "target_id": "R-HYB_K15_27"
+ },
+ {
+  "expression": "eml(x, +(x, eml(eml(x, eml(+(x, x), eml(1, x))), 1)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.34557611705592883,
+  "target_scale": 5.97897017585629,
+  "target_id": "R-HYB_K15_28"
+ },
+ {
+  "expression": "*(eml(eml(1, 1), 1), +(eml(1, 1), *(x, eml(x, 1))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 21.93217617664184,
+   "bits_sem_uncorrected": 21.93725275616522,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 37792.25854014365,
+  "target_scale": 942.3576258493791,
+  "target_id": "R-HYB_K15_29"
+ },
+ {
+  "expression": "+(*(+(x, eml(+(1, 1), 1)), *(+(x, 1), eml(1, x))), 1)",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 8.622345278649481,
+  "target_scale": 68.21366737165374,
+  "target_id": "R-HYB_K17_00"
+ },
+ {
+  "expression": "+(*(x, x), eml(x, eml(+(1, *(x, eml(1, eml(x, x)))), 1)))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 32.377616299279396,
+  "target_scale": 28.47171651118426,
+  "target_id": "R-HYB_K17_01"
+ },
+ {
+  "expression": "+(*(+(x, x), eml(eml(x, eml(eml(x, x), 1)), x)), eml(1, x))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 2.736528140866905,
+  "target_scale": 12.954209740379863,
+  "target_id": "R-HYB_K17_02"
+ },
+ {
+  "expression": "eml(1, +(*(x, x), eml(eml(eml(1, eml(x, eml(1, 1))), x), x)))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.00539447245469251,
+  "target_scale": 1.0,
+  "target_id": "R-HYB_K17_03"
+ },
+ {
+  "expression": "+(+(eml(1, 1), eml(1, +(1, eml(eml(1, +(x, x)), 1)))), x)",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.1389070127775965,
+  "target_scale": 7.16421145189297,
+  "target_id": "R-HYB_K17_04"
+ },
+ {
+  "expression": "+(eml(1, eml(x, eml(1, x))), +(1, *(x, +(x, eml(1, 1)))))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 3.6124562470359423,
+  "target_scale": 17.821457908638852,
+  "target_id": "R-HYB_K17_05"
+ },
+ {
+  "expression": "*(+(1, +(1, 1)), *(eml(x, eml(1, 1)), eml(1, eml(x, 1))))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 70.68187220588783,
+  "target_scale": 15.401964558669793,
+  "target_id": "R-HYB_K17_06"
+ },
+ {
+  "expression": "*(eml(1, x), +(1, *(x, eml(eml(1, +(x, eml(x, 1))), x))))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 3.2327794236292697,
+  "target_scale": 5.681594567847709,
+  "target_id": "R-HYB_K17_07"
+ },
+ {
+  "expression": "*(eml(1, 1), eml(+(1, 1), +(+(1, 1), eml(+(x, x), 1))))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 2.344365468288173,
+  "target_scale": 9.062672557566433,
+  "target_id": "R-HYB_K17_08"
+ },
+ {
+  "expression": "+(eml(eml(+(1, 1), +(1, *(x, eml(1, 1)))), +(x, x)), 1)",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 452.1806889573512,
+  "target_scale": 249.96595238238805,
+  "target_id": "R-HYB_K17_09"
+ },
+ {
+  "expression": "+(*(x, +(*(x, x), eml(eml(1, eml(1, x)), +(1, 1)))), 1)",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 80.48300122254827,
+  "target_scale": 53.5805281491016,
+  "target_id": "R-HYB_K17_10"
+ },
+ {
+  "expression": "*(*(*(x, x), +(x, eml(1, x))), *(x, eml(1, eml(1, 1))))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 2051.1973032319765,
+  "target_scale": 211.90517259307325,
+  "target_id": "R-HYB_K17_11"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, *(x, eml(1, +(x, x))))), +(x, x)), x)",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.48431890705448966,
+  "target_scale": 1.8794512197049271,
+  "target_id": "R-HYB_K17_12"
+ },
+ {
+  "expression": "+(*(x, eml(x, +(x, +(1, 1)))), eml(+(x, 1), eml(1, 1)))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 484.80545704721646,
+  "target_scale": 107.7198367125088,
+  "target_id": "R-HYB_K17_13"
+ },
+ {
+  "expression": "+(x, +(1, *(eml(+(x, 1), 1), +(x, eml(1, eml(1, 1))))))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 2698.344680652172,
+  "target_scale": 258.52630466481685,
+  "target_id": "R-HYB_K17_14"
+ },
+ {
+  "expression": "*(+(x, x), +(x, *(eml(x, x), +(+(1, 1), +(x, 1)))))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 24731.214710587064,
+  "target_scale": 691.0603566504553,
+  "target_id": "R-HYB_K17_15"
+ },
+ {
+  "expression": "*(eml(eml(+(1, 1), x), +(x, eml(x, 1))), +(x, +(x, x)))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 17.949196791049914,
+  "target_scale": 4840.976847700784,
+  "target_id": "R-HYB_K17_16"
+ },
+ {
+  "expression": "*(+(eml(1, x), eml(+(1, eml(1, +(1, 1))), x)), eml(1, x))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 8.418663451983763,
+  "target_scale": 44.280459387833425,
+  "target_id": "R-HYB_K17_17"
+ },
+ {
+  "expression": "+(+(eml(eml(1, 1), 1), eml(+(1, 1), eml(1, +(x, 1)))), 1)",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.003116152858806081,
+  "target_scale": 23.254787290925922,
+  "target_id": "R-HYB_K17_18"
+ },
+ {
+  "expression": "*(x, eml(1, +(+(x, 1), eml(x, +(x, eml(+(1, 1), 1))))))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.4448351487434894,
+  "target_scale": 1.2265768960754015,
+  "target_id": "R-HYB_K17_19"
+ },
+ {
+  "expression": "+(+(x, x), eml(eml(1, eml(x, +(x, *(x, eml(1, x))))), 1))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.010411240337744203,
+  "target_scale": 6.830222246771954,
+  "target_id": "R-HYB_K17_20"
+ },
+ {
+  "expression": "+(eml(x, x), *(x, eml(1, +(eml(1, x), eml(+(x, x), 1)))))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 2.023860786251602,
+  "target_scale": 9.026648096484776,
+  "target_id": "R-HYB_K17_21"
+ },
+ {
+  "expression": "*(eml(+(1, 1), +(1, +(1, 1))), eml(x, eml(x, eml(1, 1))))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 427.7138361683851,
+  "target_scale": 106.61763243736084,
+  "target_id": "R-HYB_K17_22"
+ },
+ {
+  "expression": "*(x, eml(+(eml(1, +(x, 1)), eml(1, eml(1, eml(1, x)))), 1))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.08357102192464977,
+  "target_scale": 77.12122390129643,
+  "target_id": "R-HYB_K17_23"
+ },
+ {
+  "expression": "+(*(x, +(x, eml(eml(1, x), eml(x, +(x, x))))), eml(1, 1))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.0015821939045872467,
+  "target_scale": 18.287228242013548,
+  "target_id": "R-HYB_K17_24"
+ },
+ {
+  "expression": "+(+(eml(1, 1), *(eml(x, x), eml(x, x))), +(x, +(x, x)))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 7722.145264684665,
+  "target_scale": 364.84080825290687,
+  "target_id": "R-HYB_K17_25"
+ },
+ {
+  "expression": "*(+(x, x), +(x, *(+(x, x), *(+(x, x), eml(x, x)))))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1046230.7448990114,
+  "target_scale": 4036.9708207462786,
+  "target_id": "R-HYB_K17_26"
+ },
+ {
+  "expression": "+(eml(1, 1), *(*(x, +(x, x)), +(x, eml(x, +(x, 1)))))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 8280.410178700373,
+  "target_scale": 387.05958092728156,
+  "target_id": "R-HYB_K17_27"
+ },
+ {
+  "expression": "*(eml(x, +(*(x, x), eml(eml(eml(1, *(x, x)), x), x))), x)",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 159.88189786075864,
+  "target_scale": 52.68238544135856,
+  "target_id": "R-HYB_K17_28"
+ },
+ {
+  "expression": "+(1, eml(1, eml(eml(+(1, eml(x, eml(eml(x, 1), x))), 1), 1)))",
+  "K_construction": 17,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 25.244369491761002,
+   "bits_sem_uncorrected": 25.246675439017817,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 6.660295982099911e-08,
+  "target_scale": 1.0,
+  "target_id": "R-HYB_K17_29"
+ },
+ {
+  "expression": "+(eml(1, 1), *(x, eml(*(x, eml(eml(1, +(x, *(x, x))), x)), x)))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 401.3517753702246,
+  "target_scale": 77.24483233991134,
+  "target_id": "R-HYB_K19_00"
+ },
+ {
+  "expression": "*(eml(1, eml(1, *(x, x))), *(+(x, 1), eml(x, eml(eml(1, x), x))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 3506.7919102025808,
+  "target_scale": 247.95450429566492,
+  "target_id": "R-HYB_K19_01"
+ },
+ {
+  "expression": "*(+(x, eml(eml(1, *(x, x)), eml(eml(1, x), 1))), eml(x, eml(x, x)))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 81.13336958920094,
+  "target_scale": 51.91546320421606,
+  "target_id": "R-HYB_K19_02"
+ },
+ {
+  "expression": "+(eml(x, +(1, *(x, eml(1, *(*(x, x), eml(1, x)))))), eml(1, 1))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 14.393600493410425,
+  "target_scale": 22.483898475723336,
+  "target_id": "R-HYB_K19_03"
+ },
+ {
+  "expression": "*(*(+(1, eml(x, *(x, x))), eml(eml(1, *(x, x)), 1)), eml(x, 1))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 15418.544321370759,
+  "target_scale": 630.2603436327967,
+  "target_id": "R-HYB_K19_04"
+ },
+ {
+  "expression": "*(eml(1, eml(x, x)), eml(+(1, 1), eml(x, eml(eml(1, +(x, 1)), x))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 2.5488078630212643,
+  "target_scale": 4.5153592702455745,
+  "target_id": "R-HYB_K19_05"
+ },
+ {
+  "expression": "+(*(+(1, 1), +(1, eml(1, *(x, x)))), eml(1, eml(+(1, 1), x)))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.1969204485192821,
+  "target_scale": 5.46174468525653,
+  "target_id": "R-HYB_K19_06"
+ },
+ {
+  "expression": "*(+(eml(x, 1), eml(x, +(1, eml(eml(1, x), 1)))), *(x, *(x, x)))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 67512.78319603672,
+  "target_scale": 1015.1332065664833,
+  "target_id": "R-HYB_K19_07"
+ },
+ {
+  "expression": "+(eml(x, +(1, eml(x, +(x, 1)))), eml(1, eml(x, +(x, +(1, 1)))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 8.985660923444689,
+  "target_scale": 16.72950388974075,
+  "target_id": "R-HYB_K19_08"
+ },
+ {
+  "expression": "*(*(x, eml(1, eml(x, x))), eml(x, eml(eml(1, 1), *(x, eml(x, 1)))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 31.464234642506067,
+  "target_scale": 11.248421331867217,
+  "target_id": "R-HYB_K19_09"
+ },
+ {
+  "expression": "*(+(1, eml(x, 1)), eml(eml(1, eml(1, eml(+(1, *(x, x)), x))), x))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 9.320556448915776,
+  "target_scale": 66.70575234560619,
+  "target_id": "R-HYB_K19_10"
+ },
+ {
+  "expression": "+(eml(x, eml(+(x, 1), 1)), +(eml(1, x), *(x, eml(x, eml(x, x)))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 213.06036765980727,
+  "target_scale": 68.2152699941209,
+  "target_id": "R-HYB_K19_11"
+ },
+ {
+  "expression": "+(eml(+(x, 1), +(+(1, 1), *(x, x))), eml(eml(1, +(x, 1)), 1))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 5,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 85.64158496216515,
+  "target_scale": 55.46571900775322,
+  "target_id": "R-HYB_K19_12"
+ },
+ {
+  "expression": "eml(+(x, *(eml(1, eml(1, 1)), eml(1, eml(x, eml(x, x))))), *(x, x))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 57.938377336181745,
+  "target_scale": 40.517479159712416,
+  "target_id": "R-HYB_K19_13"
+ },
+ {
+  "expression": "*(eml(x, eml(x, eml(1, 1))), *(eml(x, *(x, x)), eml(1, +(x, 1))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 5,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 9623.940826854989,
+  "target_scale": 400.27252838618557,
+  "target_id": "R-HYB_K19_14"
+ },
+ {
+  "expression": "+(eml(x, 1), eml(1, eml(eml(eml(1, +(eml(x, 1), eml(x, 1))), 1), 1)))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 14.248723321397813,
+  "target_scale": 22.224936519491052,
+  "target_id": "R-HYB_K19_15"
+ },
+ {
+  "expression": "+(eml(eml(eml(1, *(x, eml(1, x))), eml(x, *(x, x))), 1), eml(1, 1))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 2.469657073455043,
+  "target_scale": 9.603986714329814,
+  "target_id": "R-HYB_K19_16"
+ },
+ {
+  "expression": "*(*(+(x, 1), eml(1, *(x, eml(1, eml(1, +(x, x)))))), +(x, 1))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.06141592250022074,
+  "target_scale": 10.369920666443507,
+  "target_id": "R-HYB_K19_17"
+ },
+ {
+  "expression": "*(eml(eml(1, eml(1, eml(1, 1))), eml(1, +(x, 1))), *(x, eml(1, 1)))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 48.06930318362201,
+  "target_scale": 69.33854566781584,
+  "target_id": "R-HYB_K19_18"
+ },
+ {
+  "expression": "+(+(x, +(1, 1)), *(x, eml(1, +(1, *(+(x, 1), eml(x, x))))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.8551095534696507,
+  "target_scale": 3.3199834906724175,
+  "target_id": "R-HYB_K19_19"
+ },
+ {
+  "expression": "eml(eml(1, +(x, eml(x, 1))), eml(x, +(x, *(x, eml(1, eml(x, 1))))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.3567731066015917,
+  "target_scale": 2.287786348363304,
+  "target_id": "R-HYB_K19_20"
+ },
+ {
+  "expression": "eml(eml(eml(1, +(x, x)), *(+(x, x), eml(eml(1, x), x))), +(1, 1))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.08423105915959608,
+  "target_scale": 1.0,
+  "target_id": "R-HYB_K19_21"
+ },
+ {
+  "expression": "+(+(x, eml(1, eml(x, eml(+(x, 1), 1)))), *(x, eml(1, *(x, x))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.16064679172070387,
+  "target_scale": 5.891989243908446,
+  "target_id": "R-HYB_K19_22"
+ },
+ {
+  "expression": "+(eml(+(1, 1), x), *(*(x, eml(x, x)), eml(eml(1, +(x, 1)), x)))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 724.3424846610604,
+  "target_scale": 158.1588403486261,
+  "target_id": "R-HYB_K19_23"
+ },
+ {
+  "expression": "*(eml(eml(eml(1, +(1, *(x, x))), x), eml(x, 1)), +(x, eml(x, 1)))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 891.0220682915455,
+  "target_scale": 76.28520447539864,
+  "target_id": "R-HYB_K19_24"
+ },
+ {
+  "expression": "+(+(x, eml(+(x, 1), x)), *(+(x, x), *(eml(1, x), eml(1, x))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 5,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 94.99627891288247,
+  "target_scale": 71.70716821276709,
+  "target_id": "R-HYB_K19_25"
+ },
+ {
+  "expression": "eml(+(1, eml(eml(1, eml(eml(1, 1), *(x, x))), 1)), +(x, *(x, x)))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.000985770329460782,
+  "target_scale": 6.378272036817943,
+  "target_id": "R-HYB_K19_26"
+ },
+ {
+  "expression": "+(eml(+(1, 1), +(1, eml(1, x))), eml(1, +(x, *(x, eml(x, 1)))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.1142113549416425,
+  "target_scale": 6.168276706464764,
+  "target_id": "R-HYB_K19_27"
+ },
+ {
+  "expression": "*(+(1, *(x, eml(*(x, eml(1, +(x, 1))), *(x, x)))), eml(x, 1))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 611404.5851090393,
+  "target_scale": 3104.645283538228,
+  "target_id": "R-HYB_K19_28"
+ },
+ {
+  "expression": "*(eml(x, 1), eml(eml(eml(1, x), *(+(x, x), +(x, x))), +(x, x)))",
+  "K_construction": 19,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 28.57485374309994,
+   "bits_sem_uncorrected": 28.563304447260705,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 43933.489568233,
+  "target_scale": 858.5291238250401,
+  "target_id": "R-HYB_K19_29"
+ },
+ {
+  "expression": "*(+(*(x, eml(x, x)), *(eml(1, x), eml(x, +(x, 1)))), *(x, eml(x, 1)))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1752571.8074677172,
+  "target_scale": 5127.295799839251,
+  "target_id": "R-HYB_K21_00"
+ },
+ {
+  "expression": "+(*(+(x, eml(x, 1)), eml(1, eml(x, eml(1, eml(1, x))))), +(x, eml(x, 1)))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.2594110757658338,
+  "target_scale": 18.905240678737986,
+  "target_id": "R-HYB_K21_01"
+ },
+ {
+  "expression": "*(eml(+(1, 1), +(x, 1)), *(eml(1, x), +(+(x, x), eml(+(x, 1), x))))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 6354.772302794552,
+  "target_scale": 574.500278091288,
+  "target_id": "R-HYB_K21_02"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, *(+(x, x), +(x, x)))), eml(*(x, eml(1, *(x, x))), 1))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.13349417354145598,
+  "target_scale": 1.0,
+  "target_id": "R-HYB_K21_03"
+ },
+ {
+  "expression": "*(+(1, eml(eml(1, x), +(1, eml(1, x)))), eml(1, +(x, eml(1, +(1, 1)))))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1.4628600485001135,
+  "target_scale": 9.837804407402317,
+  "target_id": "R-HYB_K21_04"
+ },
+ {
+  "expression": "*(eml(x, +(eml(eml(1, 1), x), *(+(x, x), eml(1, 1)))), eml(eml(1, x), 1))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 223.40355276079325,
+  "target_scale": 83.50286996080882,
+  "target_id": "R-HYB_K21_05"
+ },
+ {
+  "expression": "+(*(+(x, 1), eml(1, +(1, eml(eml(1, *(x, x)), 1)))), eml(+(x, x), x))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 9451.509031704774,
+  "target_scale": 401.31384598668416,
+  "target_id": "R-HYB_K21_06"
+ },
+ {
+  "expression": "*(*(x, eml(*(x, eml(eml(1, +(x, x)), x)), eml(1, 1))), +(x, +(1, 1)))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 671254.0439987103,
+  "target_scale": 3861.517472156683,
+  "target_id": "R-HYB_K21_07"
+ },
+ {
+  "expression": "+(eml(eml(1, eml(1, 1)), eml(1, x)), +(*(x, x), eml(x, eml(x, eml(1, x)))))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 22.878263267515013,
+  "target_scale": 30.953576182633054,
+  "target_id": "R-HYB_K21_08"
+ },
+ {
+  "expression": "*(+(x, eml(x, 1)), eml(*(eml(1, eml(x, 1)), eml(x, eml(+(x, x), x))), 1))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 2293.2753861300257,
+  "target_scale": 124.07378489947135,
+  "target_id": "R-HYB_K21_09"
+ },
+ {
+  "expression": "eml(eml(1, eml(+(+(x, x), eml(1, +(1, eml(x, x)))), x)), eml(eml(1, 1), x))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.00032022058637629574,
+  "target_scale": 2.593036470016002,
+  "target_id": "R-HYB_K21_10"
+ },
+ {
+  "expression": "eml(eml(eml(eml(eml(1, eml(+(1, 1), x)), eml(x, 1)), x), x), +(x, eml(1, x)))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.4452171698231121,
+  "target_scale": 1.6410274346594402,
+  "target_id": "R-HYB_K21_11"
+ },
+ {
+  "expression": "*(eml(eml(1, eml(x, x)), x), *(+(1, *(x, x)), eml(+(x, eml(1, 1)), 1)))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 252311.80092270742,
+  "target_scale": 878.9490966600375,
+  "target_id": "R-HYB_K21_12"
+ },
+ {
+  "expression": "*(eml(x, eml(eml(x, 1), eml(1, x))), eml(eml(1, x), eml(1, +(x, +(1, 1)))))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 4.2575670789140915e-07,
+  "target_scale": 1.0,
+  "target_id": "R-HYB_K21_13"
+ },
+ {
+  "expression": "*(*(+(x, +(x, 1)), eml(+(x, x), 1)), +(x, eml(x, eml(eml(1, x), 1))))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 238185372.60042894,
+  "target_scale": 58680.15588981736,
+  "target_id": "R-HYB_K21_14"
+ },
+ {
+  "expression": "*(eml(x, eml(1, +(x, x))), +(1, eml(1, +(x, +(+(x, x), +(x, 1))))))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 12.526252683880271,
+  "target_scale": 23.08188685364164,
+  "target_id": "R-HYB_K21_15"
+ },
+ {
+  "expression": "*(eml(eml(1, x), +(x, *(x, x))), *(+(x, eml(1, x)), eml(+(x, 1), 1)))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 5,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 2750.329223752912,
+  "target_scale": 645.6611261183997,
+  "target_id": "R-HYB_K21_16"
+ },
+ {
+  "expression": "eml(eml(eml(1, *(+(x, +(x, x)), eml(x, +(1, 1)))), 1), +(x, eml(1, x)))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.019311147707122365,
+  "target_scale": 1.0,
+  "target_id": "R-HYB_K21_17"
+ },
+ {
+  "expression": "*(eml(+(1, 1), 1), eml(+(1, 1), *(eml(x, 1), eml(+(x, 1), eml(1, x)))))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 18.307246128583724,
+  "target_scale": 17.767238756068487,
+  "target_id": "R-HYB_K21_18"
+ },
+ {
+  "expression": "eml(+(1, *(+(1, eml(1, 1)), eml(1, eml(x, +(x, 1))))), +(1, eml(x, 1)))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 321.16321188914964,
+  "target_scale": 66.44555741330616,
+  "target_id": "R-HYB_K21_19"
+ },
+ {
+  "expression": "*(eml(+(1, 1), 1), eml(eml(1, eml(x, +(x, eml(x, x)))), *(x, eml(x, x))))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 51.93234259013868,
+  "target_scale": 23.106081494321504,
+  "target_id": "R-HYB_K21_20"
+ },
+ {
+  "expression": "*(+(x, *(*(x, x), eml(x, eml(1, x)))), +(1, eml(1, eml(x, +(x, 1)))))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 703.1818921610958,
+  "target_scale": 141.22948144299426,
+  "target_id": "R-HYB_K21_21"
+ },
+ {
+  "expression": "*(eml(x, *(x, x)), eml(1, +(x, *(eml(1, 1), eml(1, eml(x, eml(x, 1)))))))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 45.72109119845963,
+  "target_scale": 30.56654772689135,
+  "target_id": "R-HYB_K21_22"
+ },
+ {
+  "expression": "+(eml(eml(1, *(x, x)), eml(x, x)), *(x, eml(eml(eml(1, 1), x), *(x, x))))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 3.8965828178111535,
+  "target_scale": 3814278.138239308,
+  "target_id": "R-HYB_K21_23"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, 1), +(1, eml(1, +(x, *(x, x)))))), +(1, +(1, 1)))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 7.900401758384148e-05,
+  "target_scale": 1.0,
+  "target_id": "R-HYB_K21_24"
+ },
+ {
+  "expression": "*(+(x, +(x, 1)), +(1, eml(eml(1, *(x, eml(x, eml(x, 1)))), +(1, 1))))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1.489085524326247,
+  "target_scale": 8.481578006735658,
+  "target_id": "R-HYB_K21_25"
+ },
+ {
+  "expression": "*(eml(x, *(eml(1, 1), +(x, +(x, 1)))), *(x, eml(x, +(x, +(1, 1)))))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 59067.44586164168,
+  "target_scale": 926.1835642123417,
+  "target_id": "R-HYB_K21_26"
+ },
+ {
+  "expression": "*(*(*(x, x), eml(+(x, x), 1)), eml(1, *(+(1, 1), eml(x, +(x, x)))))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 718483.9428773657,
+  "target_scale": 3079.09527545685,
+  "target_id": "R-HYB_K21_27"
+ },
+ {
+  "expression": "+(*(x, eml(1, +(+(x, x), eml(x, x)))), eml(+(1, eml(1, x)), eml(x, x)))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 8.167020671620243,
+  "target_scale": 19.2673786394689,
+  "target_id": "R-HYB_K21_28"
+ },
+ {
+  "expression": "eml(+(1, eml(1, *(x, eml(+(1, 1), x)))), eml(1, eml(eml(1, 1), eml(1, x))))",
+  "K_construction": 21,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 31.905337994438884,
+   "bits_sem_uncorrected": 31.879933455503597,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.020583437083555044,
+  "target_scale": 6.109871012396347,
+  "target_id": "R-HYB_K21_29"
+ },
+ {
+  "expression": "+(*(*(x, *(x, x)), eml(1, *(+(x, 1), eml(1, x)))), *(eml(x, x), eml(x, x)))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 8363.720255263757,
+  "target_scale": 375.8812230374684,
+  "target_id": "R-HYB_K23_00"
+ },
+ {
+  "expression": "*(+(x, eml(1, +(1, +(+(1, 1), eml(x, x))))), eml(*(eml(1, x), eml(1, x)), x))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 934.3193166662443,
+  "target_scale": 143.3357753606311,
+  "target_id": "R-HYB_K23_01"
+ },
+ {
+  "expression": "*(*(+(x, 1), +(x, 1)), +(+(x, x), *(+(1, *(x, x)), eml(x, +(x, 1)))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 586239.8106544676,
+  "target_scale": 3023.7134150665074,
+  "target_id": "R-HYB_K23_02"
+ },
+ {
+  "expression": "+(+(x, eml(eml(1, +(x, x)), 1)), eml(+(x, eml(1, +(x, 1))), eml(1, eml(1, x))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 119.20162695551029,
+  "target_scale": 80.25300307177537,
+  "target_id": "R-HYB_K23_03"
+ },
+ {
+  "expression": "*(eml(eml(1, 1), +(1, 1)), *(x, eml(eml(+(1, 1), x), *(+(x, x), +(x, x)))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 464.0259397292648,
+  "target_scale": 23319.784637211837,
+  "target_id": "R-HYB_K23_04"
+ },
+ {
+  "expression": "+(*(x, +(eml(x, 1), eml(+(x, 1), +(x, +(1, 1))))), eml(1, +(1, eml(1, 1))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 2219.9952774666385,
+  "target_scale": 217.71009013169882,
+  "target_id": "R-HYB_K23_05"
+ },
+ {
+  "expression": "*(*(x, eml(1, +(x, *(x, eml(1, +(x, *(x, x))))))), +(x, eml(x, +(x, x))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 366.14949526219084,
+  "target_scale": 88.82138146752402,
+  "target_id": "R-HYB_K23_06"
+ },
+ {
+  "expression": "*(eml(1, eml(+(x, 1), 1)), +(1, eml(eml(1, x), eml(eml(1, +(1, +(1, 1))), 1))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1.102733136457732,
+  "target_scale": 5.657650454232019,
+  "target_id": "R-HYB_K23_07"
+ },
+ {
+  "expression": "*(eml(+(eml(1, x), eml(1, eml(1, eml(1, x)))), eml(x, x)), eml(x, eml(1, eml(1, 1))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 4453.90723358836,
+  "target_scale": 608.3613812725092,
+  "target_id": "R-HYB_K23_08"
+ },
+ {
+  "expression": "*(*(x, eml(1, +(x, *(x, eml(1, 1))))), eml(eml(1, eml(eml(1, x), eml(x, 1))), x))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.6719956719096616,
+  "target_scale": 5.739104914110615,
+  "target_id": "R-HYB_K23_09"
+ },
+ {
+  "expression": "+(+(x, eml(x, +(1, eml(*(x, eml(1, eml(x, x))), x)))), eml(x, eml(x, +(1, 1))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 62.38377643595127,
+  "target_scale": 40.65425886244695,
+  "target_id": "R-HYB_K23_10"
+ },
+ {
+  "expression": "*(+(1, eml(x, +(1, eml(1, 1)))), *(eml(1, eml(1, x)), +(1, eml(1, +(x, 1)))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 347.61175691261536,
+  "target_scale": 102.08523805137793,
+  "target_id": "R-HYB_K23_11"
+ },
+ {
+  "expression": "+(eml(1, eml(x, eml(x, +(x, 1)))), +(x, eml(eml(1, 1), eml(x, +(1, +(1, 1))))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.12418527143919077,
+  "target_scale": 16.306806899044137,
+  "target_id": "R-HYB_K23_12"
+ },
+ {
+  "expression": "+(eml(x, eml(1, eml(eml(1, +(1, 1)), *(x, +(x, x))))), +(eml(1, x), eml(x, x)))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 47.961478168197836,
+  "target_scale": 40.14414851473846,
+  "target_id": "R-HYB_K23_13"
+ },
+ {
+  "expression": "*(+(1, eml(x, +(eml(x, x), eml(x, 1)))), eml(+(1, 1), *(x, eml(1, +(x, 1)))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 380.9727312732352,
+  "target_scale": 103.48390109141293,
+  "target_id": "R-HYB_K23_14"
+ },
+ {
+  "expression": "+(+(x, eml(1, eml(+(1, 1), eml(1, x)))), +(eml(x, 1), *(x, eml(1, eml(x, x)))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 10.275404981123561,
+  "target_scale": 23.02044325363773,
+  "target_id": "R-HYB_K23_15"
+ },
+ {
+  "expression": "*(eml(eml(1, +(x, +(1, 1))), 1), eml(eml(1, +(x, 1)), eml(eml(1, eml(1, 1)), x)))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 3.0709715851317174,
+  "target_scale": 13.03942508993699,
+  "target_id": "R-HYB_K23_16"
+ },
+ {
+  "expression": "*(eml(eml(eml(1, *(x, eml(x, x))), +(x, x)), *(x, x)), eml(+(1, +(1, 1)), 1))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 56.49739929593369,
+  "target_scale": 39.60124888269141,
+  "target_id": "R-HYB_K23_17"
+ },
+ {
+  "expression": "+(+(eml(1, x), eml(1, x)), *(+(x, 1), +(x, *(eml(1, 1), eml(1, +(x, x))))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1.588183906961824,
+  "target_scale": 25.261856482476205,
+  "target_id": "R-HYB_K23_18"
+ },
+ {
+  "expression": "*(+(eml(1, x), eml(1, eml(eml(1, *(x, x)), x))), eml(eml(1, 1), eml(+(x, x), 1)))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1.3134533136695359,
+  "target_scale": 44.51836743714499,
+  "target_id": "R-HYB_K23_19"
+ },
+ {
+  "expression": "*(eml(eml(1, +(x, eml(1, x))), eml(x, x)), eml(eml(+(1, 1), *(x, *(x, x))), 1))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 9543.762921047348,
+  "target_scale": 368.4186859103898,
+  "target_id": "R-HYB_K23_20"
+ },
+ {
+  "expression": "+(eml(1, +(eml(eml(1, x), 1), eml(+(x, +(x, 1)), 1))), eml(eml(1, x), +(x, 1)))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1.8321780569366026,
+  "target_scale": 4.087771956177166,
+  "target_id": "R-HYB_K23_21"
+ },
+ {
+  "expression": "+(+(1, *(+(1, 1), +(1, eml(+(x, 1), 1)))), *(x, eml(1, eml(x, +(1, 1)))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 356.1346886450455,
+  "target_scale": 110.41379669279281,
+  "target_id": "R-HYB_K23_22"
+ },
+ {
+  "expression": "*(*(x, eml(x, eml(x, +(x, x)))), +(x, eml(*(x, eml(1, +(x, x))), *(x, x))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 40059.733549563985,
+  "target_scale": 859.8084320712395,
+  "target_id": "R-HYB_K23_23"
+ },
+ {
+  "expression": "*(*(x, eml(x, +(1, *(eml(1, x), eml(x, 1))))), eml(1, eml(+(1, 1), +(x, 1))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 114.04244170409167,
+  "target_scale": 45.34398558506016,
+  "target_id": "R-HYB_K23_24"
+ },
+ {
+  "expression": "+(eml(*(eml(1, +(x, 1)), eml(1, +(x, x))), *(x, x)), eml(+(1, 1), eml(x, 1)))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 3.8087318132511734,
+  "target_scale": 12.525099353099414,
+  "target_id": "R-HYB_K23_25"
+ },
+ {
+  "expression": "+(+(eml(x, x), eml(+(+(1, 1), eml(1, 1)), x)), eml(+(x, 1), *(x, *(x, x))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 163.99348008135314,
+  "target_scale": 180.44705440354875,
+  "target_id": "R-HYB_K23_26"
+ },
+ {
+  "expression": "*(+(x, eml(*(x, eml(eml(1, eml(+(1, 1), 1)), x)), 1)), eml(x, +(x, eml(1, x))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 6210.2254143980945,
+  "target_scale": 374.6142763588178,
+  "target_id": "R-HYB_K23_27"
+ },
+ {
+  "expression": "+(eml(x, eml(eml(eml(1, +(1, eml(1, eml(1, x)))), 1), 1)), eml(+(1, 1), eml(x, 1)))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 11.632940449579614,
+  "target_scale": 19.600719550471617,
+  "target_id": "R-HYB_K23_28"
+ },
+ {
+  "expression": "+(eml(eml(1, x), eml(x, x)), +(eml(x, eml(x, 1)), eml(1, eml(+(1, 1), eml(x, x)))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 35.235822245777825,
+   "bits_sem_uncorrected": 35.19656246374648,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 5.727620978821628,
+  "target_scale": 20.256368799008115,
+  "target_id": "R-HYB_K23_29"
+ },
+ {
+  "expression": "*(eml(eml(1, +(1, 1)), +(x, eml(1, 1))), eml(eml(1, 1), eml(eml(1, +(x, x)), eml(1, 1))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.05099787576483237,
+  "target_scale": 85.93104978599378,
+  "target_id": "R-HYB_K25_00"
+ },
+ {
+  "expression": "+(eml(eml(1, +(1, +(1, 1))), eml(+(x, 1), 1)), eml(eml(1, x), +(1, *(x, *(x, x)))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1.7476328956049454,
+  "target_scale": 7.370920983403264,
+  "target_id": "R-HYB_K25_01"
+ },
+ {
+  "expression": "+(eml(eml(1, *(eml(1, 1), eml(eml(1, 1), x))), 1), eml(eml(1, +(x, 1)), eml(+(1, 1), 1)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.12649985477927067,
+  "target_scale": 3.420448486583363,
+  "target_id": "R-HYB_K25_02"
+ },
+ {
+  "expression": "*(*(x, eml(1, *(eml(x, x), eml(1, +(x, x))))), *(eml(1, x), eml(+(x, eml(1, 1)), x)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 16708.889745381817,
+  "target_scale": 238.96422837977946,
+  "target_id": "R-HYB_K25_03"
+ },
+ {
+  "expression": "+(eml(x, eml(eml(1, x), eml(1, x))), *(eml(1, 1), eml(1, +(1, eml(+(1, 1), +(x, x))))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 14.110943547134953,
+  "target_scale": 20.624325172624893,
+  "target_id": "R-HYB_K25_04"
+ },
+ {
+  "expression": "eml(+(1, eml(+(1, 1), +(1, +(1, 1)))), eml(x, +(x, eml(eml(eml(1, +(x, x)), 1), 1))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.19280585375296017,
+  "target_scale": 1464.9272676669605,
+  "target_id": "R-HYB_K25_05"
+ },
+ {
+  "expression": "*(+(1, *(+(x, x), +(x, eml(+(x, 1), 1)))), *(+(x, x), +(1, eml(+(x, 1), x))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 825518272.1756446,
+  "target_scale": 110426.19709572315,
+  "target_id": "R-HYB_K25_06"
+ },
+ {
+  "expression": "*(eml(eml(1, x), +(+(x, x), +(x, x))), +(x, eml(+(x, eml(1, eml(1, 1))), +(x, 1))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 305.7390954033366,
+  "target_scale": 290.9315806186311,
+  "target_id": "R-HYB_K25_07"
+ },
+ {
+  "expression": "+(eml(eml(1, eml(1, x)), *(*(x, x), *(x, x))), *(x, eml(1, +(1, eml(x, eml(1, x))))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.3356434035570808,
+  "target_scale": 6.054424297750961,
+  "target_id": "R-HYB_K25_08"
+ },
+ {
+  "expression": "+(eml(+(1, eml(1, eml(1, eml(eml(1, x), x)))), +(x, x)), eml(+(1, 1), eml(x, *(x, x))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 40.860907620025216,
+  "target_scale": 55.99503764919862,
+  "target_id": "R-HYB_K25_09"
+ },
+ {
+  "expression": "*(eml(x, +(+(1, 1), eml(1, x))), *(+(1, +(1, 1)), +(*(x, x), eml(eml(1, x), 1))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 26910.811365766855,
+  "target_scale": 781.7081940652132,
+  "target_id": "R-HYB_K25_10"
+ },
+ {
+  "expression": "+(eml(x, *(eml(1, eml(1, 1)), *(+(x, 1), eml(1, x)))), +(x, eml(1, eml(+(1, 1), 1))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 14.91772440918781,
+  "target_scale": 21.186630320241306,
+  "target_id": "R-HYB_K25_11"
+ },
+ {
+  "expression": "+(+(+(x, eml(1, x)), eml(eml(+(1, 1), 1), x)), eml(*(eml(1, x), eml(1, x)), *(x, x)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 162.59555135729647,
+  "target_scale": 1679.3299265977446,
+  "target_id": "R-HYB_K25_12"
+ },
+ {
+  "expression": "*(*(+(1, 1), eml(1, eml(1, eml(1, 1)))), *(eml(1, x), eml(x, eml(eml(1, 1), *(x, x)))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 535.9791773268172,
+  "target_scale": 122.42710841331989,
+  "target_id": "R-HYB_K25_13"
+ },
+ {
+  "expression": "*(+(eml(1, x), eml(x, +(x, 1))), eml(x, +(+(x, eml(1, 1)), *(x, eml(eml(1, x), x)))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 7428.733471367371,
+  "target_scale": 342.56756058427004,
+  "target_id": "R-HYB_K25_14"
+ },
+ {
+  "expression": "*(+(+(x, x), eml(x, eml(eml(1, eml(1, x)), eml(1, x)))), *(eml(1, x), eml(1, +(x, 1))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 33.90501396040462,
+  "target_scale": 51.30160791564495,
+  "target_id": "R-HYB_K25_15"
+ },
+ {
+  "expression": "*(+(+(x, x), eml(+(x, *(x, eml(1, *(x, x)))), 1)), eml(+(x, eml(1, +(x, x))), 1))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 372404.15579004,
+  "target_scale": 5156.595459699412,
+  "target_id": "R-HYB_K25_16"
+ },
+ {
+  "expression": "*(*(*(x, x), eml(1, +(x, eml(1, eml(+(1, 1), x))))), *(+(x, x), eml(x, eml(x, x))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 96603.87738114085,
+  "target_scale": 1237.6621108387642,
+  "target_id": "R-HYB_K25_17"
+ },
+ {
+  "expression": "+(+(x, eml(eml(1, eml(x, eml(1, x))), x)), eml(+(x, eml(1, eml(x, +(1, *(x, x))))), x))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1.0335785574462102,
+  "target_scale": 22.20306167421939,
+  "target_id": "R-HYB_K25_18"
+ },
+ {
+  "expression": "*(*(eml(x, eml(1, +(x, x))), *(eml(1, x), eml(1, x))), eml(+(x, eml(1, +(x, x))), 1))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 275436.9101796034,
+  "target_scale": 2649.6954578589516,
+  "target_id": "R-HYB_K25_19"
+ },
+ {
+  "expression": "*(+(1, eml(1, +(1, eml(1, eml(x, x))))), *(+(1, +(1, 1)), eml(eml(1, eml(x, x)), 1)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 11.046455031246394,
+  "target_scale": 21.014846249319866,
+  "target_id": "R-HYB_K25_20"
+ },
+ {
+  "expression": "*(eml(*(+(1, eml(1, x)), eml(1, +(1, eml(1, 1)))), x), eml(x, eml(+(x, 1), +(1, 1))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 7970.836471139973,
+  "target_scale": 616.7385316055113,
+  "target_id": "R-HYB_K25_21"
+ },
+ {
+  "expression": "+(eml(x, *(eml(1, +(1, 1)), +(x, eml(eml(1, x), x)))), *(+(1, 1), eml(+(1, 1), 1)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 13.428027381596335,
+  "target_scale": 32.01952570279488,
+  "target_id": "R-HYB_K25_22"
+ },
+ {
+  "expression": "*(+(1, *(+(x, x), eml(1, x))), *(+(x, x), +(x, eml(1, +(x, eml(eml(1, x), 1))))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1704.956950953166,
+  "target_scale": 231.86855530880916,
+  "target_id": "R-HYB_K25_23"
+ },
+ {
+  "expression": "*(*(x, eml(eml(1, 1), eml(1, 1))), *(*(x, x), eml(1, *(eml(1, 1), eml(x, +(1, 1))))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 16748.04662625315,
+  "target_scale": 467.8241417571852,
+  "target_id": "R-HYB_K25_24"
+ },
+ {
+  "expression": "*(eml(x, *(x, +(x, eml(1, x)))), +(1, +(eml(1, eml(x, x)), eml(eml(1, x), +(1, 1)))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 155.14751612628447,
+  "target_scale": 89.07651008837016,
+  "target_id": "R-HYB_K25_25"
+ },
+ {
+  "expression": "*(+(x, *(x, eml(1, eml(1, x)))), eml(eml(1, eml(+(1, 1), eml(1, x))), +(x, eml(x, 1))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 7.164086686756782,
+  "target_scale": 9.04555229999402,
+  "target_id": "R-HYB_K25_26"
+ },
+ {
+  "expression": "*(eml(x, *(eml(1, 1), eml(x, +(1, 1)))), +(*(x, x), eml(1, +(x, eml(*(x, x), 1)))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 81.00774902667804,
+  "target_scale": 43.30422160250026,
+  "target_id": "R-HYB_K25_27"
+ },
+ {
+  "expression": "*(eml(x, eml(+(x, eml(1, 1)), 1)), eml(eml(eml(1, *(x, eml(1, +(x, x)))), eml(x, x)), 1))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 248.68562242988992,
+  "target_scale": 175.7318840448462,
+  "target_id": "R-HYB_K25_28"
+ },
+ {
+  "expression": "+(+(x, eml(1, *(eml(1, 1), eml(eml(1, 1), eml(x, 1))))), eml(+(1, 1), eml(eml(1, x), x)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 38.56630649711677,
+   "bits_sem_uncorrected": 38.513191471989366,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.21741319683245058,
+  "target_scale": 8.219461341419283,
+  "target_id": "R-HYB_K25_29"
+ }
+]

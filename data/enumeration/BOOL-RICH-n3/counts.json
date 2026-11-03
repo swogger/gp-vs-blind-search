@@ -1,0 +1,97 @@
+{
+ "grammar": "BOOL-RICH-n3",
+ "levels": [
+  {
+   "K": 1,
+   "N_syntactic": 3,
+   "candidates": 3,
+   "U": 3,
+   "U_cum": 3,
+   "U_finite_nonconst": 3,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 2,
+   "N_syntactic": 3,
+   "candidates": 3,
+   "U": 3,
+   "U_cum": 6,
+   "U_finite_nonconst": 3,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 3,
+   "N_syntactic": 57,
+   "candidates": 57,
+   "U": 20,
+   "U_cum": 26,
+   "U_finite_nonconst": 20,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 4,
+   "N_syntactic": 165,
+   "candidates": 128,
+   "U": 12,
+   "U_cum": 38,
+   "U_finite_nonconst": 12,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 5,
+   "N_syntactic": 2271,
+   "candidates": 786,
+   "U": 78,
+   "U_cum": 116,
+   "U_finite_nonconst": 78,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 6,
+   "N_syntactic": 10263,
+   "candidates": 1230,
+   "U": 36,
+   "U_cum": 152,
+   "U_finite_nonconst": 36,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 7,
+   "N_syntactic": 117453,
+   "candidates": 5676,
+   "U": 68,
+   "U_cum": 220,
+   "U_finite_nonconst": 68,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 8,
+   "N_syntactic": 681537,
+   "candidates": 7052,
+   "U": 12,
+   "U_cum": 232,
+   "U_finite_nonconst": 12,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 9,
+   "N_syntactic": 6996027,
+   "candidates": 23340,
+   "U": 24,
+   "U_cum": 256,
+   "U_finite_nonconst": 24,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  }
+ ],
+ "hash_precision": 9,
+ "sample": "full truth table"
+}

@@ -1,0 +1,2 @@
+Stage 2 filed on OSF by the author, 2026-10-28 16:27 (registered at once; public, no embargo), in project https://osf.io/hjf43. Registered commit 3079021f9dccd72e2282a6f37d54b4e6ccb085f6.
+Stage 2 registration: DOI 10.17605/OSF.IO/DG7F3, https://osf.io/dg7f3. Its 11 archived files match the repository byte for byte (SHA-256 from the OSF API, checked 2026-10-28).

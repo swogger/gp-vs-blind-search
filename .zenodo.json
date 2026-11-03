@@ -1,0 +1,16 @@
+{
+  "title": "Cross-representation mechanics of genetic-programming search: code, data and results",
+  "upload_type": "software",
+  "creators": [{"name": "Kazakov, Dimitar Georgiev", "affiliation": "Technical University of Varna"}],
+  "description": "Code, data and results of a preregistered study comparing genetic programming with exact, size-ordered blind search in real-valued symbolic regression and Boolean synthesis: grammars and exhaustive enumerators, tree GP, Cartesian GP and Operon runs, every run record, the registered analyses and their outputs, and a script that checks the code and data against the versions registered on OSF.",
+  "license": "MIT",
+  "keywords": ["genetic programming", "symbolic regression", "Boolean synthesis", "blind search", "preregistration"],
+  "related_identifiers": [
+    {"identifier": "10.17605/OSF.IO/XH9AG", "relation": "isSupplementTo", "scheme": "doi"},
+    {"identifier": "10.17605/OSF.IO/A3SPG", "relation": "isSupplementTo", "scheme": "doi"},
+    {"identifier": "10.17605/OSF.IO/DG7F3", "relation": "isSupplementTo", "scheme": "doi"},
+    {"identifier": "10.17605/OSF.IO/BC9G4", "relation": "isSupplementTo", "scheme": "doi"},
+    {"identifier": "10.17605/OSF.IO/HB238", "relation": "isSupplementTo", "scheme": "doi"},
+    {"identifier": "10.17605/OSF.IO/S5FJM", "relation": "isSupplementTo", "scheme": "doi"}
+  ]
+}

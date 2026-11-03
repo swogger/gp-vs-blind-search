@@ -1,0 +1,93 @@
+{
+ "grammar": "BOOL-RICH-n5",
+ "seed": 20261013,
+ "ceiling": 16,
+ "levels": {
+  "3": {
+   "found": 10,
+   "rejected": {
+    "constant": 1
+   },
+   "proven": true
+  },
+  "5": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "7": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "9": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "10": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "12": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "14": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "16": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "18": {
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 61,
+    "constant": 1
+   },
+   "proven": false
+  },
+  "19": {
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 18,
+    "constant": 2
+   },
+   "proven": false
+  },
+  "22": {
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 11
+   },
+   "proven": false
+  },
+  "23": {
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 8
+   },
+   "proven": false
+  },
+  "26": {
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 11
+   },
+   "proven": false
+  },
+  "27": {
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 8
+   },
+   "proven": false
+  }
+ }
+}

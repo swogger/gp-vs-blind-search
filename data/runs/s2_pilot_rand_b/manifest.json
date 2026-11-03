@@ -1,0 +1,129 @@
+{
+ "phase": "s2_pilot_rand_b",
+ "description": "Pilot: random sampling, 2.5e5 trees per set of batch B.",
+ "created": "2026-10-20 08:22:14",
+ "git": "039fce4",
+ "n_tasks": 5,
+ "tasks": [
+  {
+   "key": "F-EML-R",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "F-EML-R",
+    "--targets",
+    "data/targets_s2/F-EML-R/pilot.json",
+    "--targets_sha256",
+    "54cfec21cc713da01cf29efd57478b35d3a50f57d350ca5189016d62ed204417",
+    "--n",
+    "250000",
+    "--seed",
+    "20261025"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "F-EML-R"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-TRIG",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "R-TRIG",
+    "--targets",
+    "data/targets_s2/R-TRIG/pilot.json",
+    "--targets_sha256",
+    "2bddb3e12881e89c1b1132fea1218042d3fdd8689171953517c8bf68de790989",
+    "--n",
+    "250000",
+    "--seed",
+    "20261026"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "R-TRIG"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-IMP0R-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-IMP0R-n5",
+    "--targets",
+    "data/targets_s2/BOOL-IMP0R-n5/pilot.json",
+    "--targets_sha256",
+    "71518b7ceb4704083c5428e684c54ebb6bd229b451f44766f6b861d7fef3da22",
+    "--n",
+    "250000",
+    "--seed",
+    "20261027"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-IMP0R-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-NAND-n6",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-NAND-n6",
+    "--targets",
+    "data/targets_s2/BOOL-NAND-n6/pilot.json",
+    "--targets_sha256",
+    "5ec7b247cb96c6deef8784abf0d35a8391f5b0a164e34233986a7ae171646ad8",
+    "--n",
+    "250000",
+    "--seed",
+    "20261028"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-NAND-n6"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AON-n6",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-AON-n6",
+    "--targets",
+    "data/targets_s2/BOOL-AON-n6/pilot.json",
+    "--targets_sha256",
+    "31a6e85a9f9685fdc809b35eca7f626382a36ff434cdd126594ebe734373052e",
+    "--n",
+    "250000",
+    "--seed",
+    "20261029"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-AON-n6"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

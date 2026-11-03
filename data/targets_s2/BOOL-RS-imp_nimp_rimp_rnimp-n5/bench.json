@@ -1,0 +1,71 @@
+[
+ {
+  "target_id": "BOOL-RS-imp_nimp_rimp_rnimp-n5_bench_add2_s0",
+  "benchmark": "add2_s0",
+  "expression": "imp(imp(x2, imp(imp(x4, x5), nimp(x5, x4))), rnimp(x2, imp(imp(x4, x5), nimp(x5, x4))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 60.228575027403934,
+   "bits_syn": 53.48799523975984,
+   "bits_sem": 23.82273185926204,
+   "bits_sem_uncorrected": 23.82273185926204,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  }
+ },
+ {
+  "target_id": "BOOL-RS-imp_nimp_rimp_rnimp-n5_bench_cmp2_gt",
+  "benchmark": "cmp2_gt",
+  "expression": "imp(imp(x1, x3), nimp(imp(x3, x1), imp(x2, x4)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 34.86917501586544,
+   "bits_syn": 29.348163672721153,
+   "bits_sem": 16.18526261240324,
+   "bits_sem_uncorrected": 16.18526261240324,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 3,
+   "nonlinearity": 8,
+   "weight": 12
+  }
+ },
+ {
+  "target_id": "BOOL-RS-imp_nimp_rimp_rnimp-n5_bench_mux",
+  "benchmark": "mux",
+  "expression": "imp(imp(x2, x1), nimp(x1, nimp(x1, x3)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 28.52932501298081,
+   "bits_syn": 23.443049891858713,
+   "bits_sem": 13.993646060016596,
+   "bits_sem_uncorrected": 13.993646060016596,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 16
+  }
+ }
+]

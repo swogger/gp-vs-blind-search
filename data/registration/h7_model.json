@@ -1,0 +1,101 @@
+{
+ "bool": {
+  "baseline": {
+   "budget_term": true,
+   "feature": null,
+   "params": [
+    0.89366710003176,
+    -0.035753555136927004,
+    0.444758416031155
+   ],
+   "unit": "nodes"
+  },
+  "budget_term": true,
+  "calibration_sha256": "170c499a7a65a8958eb9e16555feb10f6797027f24dfd15f49689cc86a3f9b8e",
+  "domain": "bool",
+  "feature": "neutral_share_mutation",
+  "fit_records": {
+   "algorithm": "A",
+   "budgets": [
+    1,
+    2,
+    4,
+    8,
+    16
+   ],
+   "censored": "failure",
+   "n": 31500,
+   "phases": [
+    "s2_cal_a0",
+    "s2_cal_a16"
+   ],
+   "sets": [
+    "BOOL-AON-n5",
+    "BOOL-AONX-n5",
+    "BOOL-IMP0-n5",
+    "BOOL-IMP0R-n5",
+    "BOOL-NAND-n5",
+    "BOOL-NOR-n5",
+    "BOOL-RICH-n5"
+   ]
+  },
+  "params": [
+   4.1563943540359585,
+   -0.09546364274166584,
+   0.5178494769052063,
+   -4.744856945944403
+  ],
+  "rule6": true,
+  "unit": "bits_sem",
+  "unit_source": "no preferred unit, rule 6: bits_sem; D082"
+ },
+ "real": {
+  "baseline": {
+   "budget_term": true,
+   "feature": null,
+   "params": [
+    2.40716305261257,
+    -0.30291323534839143,
+    0.19266339894773352
+   ],
+   "unit": "nodes"
+  },
+  "budget_term": true,
+  "calibration_sha256": "170c499a7a65a8958eb9e16555feb10f6797027f24dfd15f49689cc86a3f9b8e",
+  "domain": "real",
+  "feature": null,
+  "fit_records": {
+   "algorithm": "A",
+   "budgets": [
+    1,
+    2,
+    4,
+    8,
+    16
+   ],
+   "censored": "failure",
+   "n": 31500,
+   "phases": [
+    "s2_cal_a0",
+    "s2_cal_a16"
+   ],
+   "sets": [
+    "F-EML",
+    "F-EML-R",
+    "F-LDE0",
+    "R-ARITH4",
+    "R-ELEM4",
+    "R-HYB",
+    "R-TRIG"
+   ]
+  },
+  "params": [
+   3.8521842739386782,
+   -0.3768183945262654,
+   0.15826696307482876
+  ],
+  "rule6": true,
+  "unit": "bits_sem",
+  "unit_source": "no preferred unit, rule 6: bits_sem; D082"
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "phase": "s4_targets",
+ "description": "STAGE 4 targets (D100): RS-add_sqrt's extra proven levels by the registered rule, 30 targets each, seed TARGET_SEEDS['restart'], into data/targets_s2/<set>/restart.json. No search: drawn and checksummed before the Stage 4 registration, as the held-out targets before Stage 2. --workers 1.",
+ "created": "2026-11-02 19:23:59",
+ "git": "fc49ff6",
+ "n_tasks": 1,
+ "tasks": [
+  {
+   "key": "RS-add_sqrt",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "RS-add_sqrt",
+    "--name",
+    "restart",
+    "--n",
+    "30",
+    "--seed",
+    "20261102",
+    "--levels",
+    "18,19,20"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "RS-add_sqrt"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

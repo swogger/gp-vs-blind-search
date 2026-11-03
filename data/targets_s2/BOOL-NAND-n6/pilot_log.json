@@ -1,0 +1,111 @@
+{
+ "grammar": "BOOL-NAND-n6",
+ "seed": 20261020,
+ "ceiling": 21,
+ "depth_limit": 10,
+ "levels": {
+  "3": {
+   "proven": true,
+   "n_level": 21,
+   "n_depth_ok": 21,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {}
+  },
+  "5": {
+   "proven": true,
+   "n_level": 91,
+   "n_depth_ok": 91,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {
+    "constant": 1
+   }
+  },
+  "7": {
+   "proven": true,
+   "n_level": 515,
+   "n_depth_ok": 515,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {}
+  },
+  "9": {
+   "proven": true,
+   "n_level": 2790,
+   "n_depth_ok": 2790,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {}
+  },
+  "11": {
+   "proven": true,
+   "n_level": 15121,
+   "n_depth_ok": 15121,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {}
+  },
+  "13": {
+   "proven": true,
+   "n_level": 77740,
+   "n_depth_ok": 77740,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {}
+  },
+  "15": {
+   "proven": true,
+   "n_level": 396512,
+   "n_depth_ok": 396512,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {}
+  },
+  "17": {
+   "proven": true,
+   "n_level": 1924291,
+   "n_depth_ok": 1924291,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {}
+  },
+  "19": {
+   "proven": true,
+   "n_level": 9199133,
+   "n_depth_ok": 9199133,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {}
+  },
+  "21": {
+   "proven": true,
+   "n_level": 41374699,
+   "n_depth_ok": 41374699,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {}
+  },
+  "23": {
+   "proven": false,
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 32
+   }
+  },
+  "25": {
+   "proven": false,
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 21
+   }
+  },
+  "29": {
+   "proven": false,
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 2
+   }
+  }
+ }
+}

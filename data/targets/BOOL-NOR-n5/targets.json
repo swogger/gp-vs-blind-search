@@ -1,0 +1,772 @@
+[
+ {
+  "expression": "nor(x2, x2)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-NOR-n5_K03_00"
+ },
+ {
+  "expression": "nor(x4, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-NOR-n5_K03_01"
+ },
+ {
+  "expression": "nor(x1, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-NOR-n5_K03_02"
+ },
+ {
+  "expression": "nor(x1, x2)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-NOR-n5_K03_03"
+ },
+ {
+  "expression": "nor(x3, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-NOR-n5_K03_04"
+ },
+ {
+  "expression": "nor(x3, x3)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-NOR-n5_K03_05"
+ },
+ {
+  "expression": "nor(x1, x1)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-NOR-n5_K03_06"
+ },
+ {
+  "expression": "nor(x2, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-NOR-n5_K03_07"
+ },
+ {
+  "expression": "nor(x1, x3)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-NOR-n5_K03_08"
+ },
+ {
+  "expression": "nor(x4, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "target_id": "BOOL-NOR-n5_K03_09"
+ },
+ {
+  "expression": "nor(nor(x1, x2), nor(x2, x3))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "target_id": "BOOL-NOR-n5_K07_00"
+ },
+ {
+  "expression": "nor(nor(x1, x2), nor(x1, x5))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "target_id": "BOOL-NOR-n5_K07_01"
+ },
+ {
+  "expression": "nor(x5, nor(x3, nor(x1, x4)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "target_id": "BOOL-NOR-n5_K07_02"
+ },
+ {
+  "expression": "nor(nor(x1, x3), nor(x4, x5))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "target_id": "BOOL-NOR-n5_K07_03"
+ },
+ {
+  "expression": "nor(x2, nor(x2, nor(x4, x5)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "target_id": "BOOL-NOR-n5_K07_04"
+ },
+ {
+  "expression": "nor(nor(x1, x1), nor(x4, x5))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "target_id": "BOOL-NOR-n5_K07_05"
+ },
+ {
+  "expression": "nor(x1, nor(x1, nor(x2, x3)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "target_id": "BOOL-NOR-n5_K07_06"
+ },
+ {
+  "expression": "nor(x2, nor(x1, nor(x4, x5)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "target_id": "BOOL-NOR-n5_K07_07"
+ },
+ {
+  "expression": "nor(x2, nor(x1, nor(x1, x3)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "target_id": "BOOL-NOR-n5_K07_08"
+ },
+ {
+  "expression": "nor(x2, nor(x5, nor(x4, x5)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "target_id": "BOOL-NOR-n5_K07_09"
+ },
+ {
+  "expression": "nor(nor(x1, x5), nor(x2, nor(x4, nor(x1, x3))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "target_id": "BOOL-NOR-n5_K11_00"
+ },
+ {
+  "expression": "nor(nor(x1, x1), nor(x5, nor(x3, nor(x2, x3))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "target_id": "BOOL-NOR-n5_K11_01"
+ },
+ {
+  "expression": "nor(nor(x4, x4), nor(x3, nor(x1, nor(x1, x2))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "target_id": "BOOL-NOR-n5_K11_02"
+ },
+ {
+  "expression": "nor(nor(x1, x3), nor(nor(x2, x5), nor(x3, x5)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 4,
+  "target_id": "BOOL-NOR-n5_K11_03"
+ },
+ {
+  "expression": "nor(nor(x2, x2), nor(x4, nor(x5, nor(x1, x5))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "target_id": "BOOL-NOR-n5_K11_04"
+ },
+ {
+  "expression": "nor(nor(x1, nor(x3, x4)), nor(x5, nor(x3, x4)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 4,
+  "target_id": "BOOL-NOR-n5_K11_05"
+ },
+ {
+  "expression": "nor(nor(x1, x3), nor(nor(x2, x2), nor(x3, x5)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 4,
+  "target_id": "BOOL-NOR-n5_K11_06"
+ },
+ {
+  "expression": "nor(x1, nor(nor(x2, x5), nor(x4, nor(x1, x3))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "target_id": "BOOL-NOR-n5_K11_07"
+ },
+ {
+  "expression": "nor(nor(x1, x1), nor(x4, nor(x2, nor(x2, x3))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "target_id": "BOOL-NOR-n5_K11_08"
+ },
+ {
+  "expression": "nor(nor(x2, nor(x3, x5)), nor(x5, nor(x1, x2)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 4,
+  "target_id": "BOOL-NOR-n5_K11_09"
+ },
+ {
+  "expression": "nor(nor(x1, nor(x1, nor(x3, x4))), nor(nor(x1, x4), nor(x3, x3)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "target_id": "BOOL-NOR-n5_K15_00"
+ },
+ {
+  "expression": "nor(nor(x3, nor(x1, x3)), nor(nor(x1, x2), nor(x5, nor(x2, x4))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "target_id": "BOOL-NOR-n5_K15_01"
+ },
+ {
+  "expression": "nor(nor(x2, nor(x1, x4)), nor(nor(x1, x4), nor(x3, nor(x3, x5))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "target_id": "BOOL-NOR-n5_K15_02"
+ },
+ {
+  "expression": "nor(nor(x2, nor(x2, x3)), nor(x3, nor(x3, nor(x5, nor(x1, x4)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "target_id": "BOOL-NOR-n5_K15_03"
+ },
+ {
+  "expression": "nor(nor(x1, x2), nor(nor(x4, nor(x2, x3)), nor(x5, nor(x2, x3))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "target_id": "BOOL-NOR-n5_K15_04"
+ },
+ {
+  "expression": "nor(nor(x3, nor(x1, x3)), nor(nor(x3, x4), nor(x5, nor(x2, x4))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "target_id": "BOOL-NOR-n5_K15_05"
+ },
+ {
+  "expression": "nor(nor(x3, x4), nor(nor(x1, x1), nor(x5, nor(x2, nor(x2, x4)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "target_id": "BOOL-NOR-n5_K15_06"
+ },
+ {
+  "expression": "nor(nor(x1, nor(x1, nor(x4, x5))), nor(nor(x2, x5), nor(x3, x3)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "target_id": "BOOL-NOR-n5_K15_07"
+ },
+ {
+  "expression": "nor(nor(x5, nor(x2, x4)), nor(nor(x1, x3), nor(x4, nor(x2, x4))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "target_id": "BOOL-NOR-n5_K15_08"
+ },
+ {
+  "expression": "nor(nor(x2, x5), nor(nor(x1, nor(x3, x5)), nor(x4, nor(x1, x4))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "target_id": "BOOL-NOR-n5_K15_09"
+ },
+ {
+  "expression": "nor(nor(x1, nor(x1, nor(x3, x4))), nor(nor(x2, x5), nor(nor(x1, x2), nor(x3, x4))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 5,
+  "target_id": "BOOL-NOR-n5_K19_00"
+ },
+ {
+  "expression": "nor(nor(x3, nor(x1, x3)), nor(nor(x2, nor(x1, x5)), nor(nor(x1, x4), nor(x4, x5))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 5,
+  "target_id": "BOOL-NOR-n5_K19_01"
+ },
+ {
+  "expression": "nor(nor(x5, nor(x4, nor(x2, x4))), nor(nor(x2, x4), nor(x1, nor(x3, nor(x2, x3)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "target_id": "BOOL-NOR-n5_K19_02"
+ },
+ {
+  "expression": "nor(nor(x2, nor(x1, x2)), nor(nor(x1, x3), nor(nor(x2, x5), nor(x4, nor(x1, x5)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "target_id": "BOOL-NOR-n5_K19_03"
+ },
+ {
+  "expression": "nor(nor(x5, nor(x2, x5)), nor(nor(x1, x5), nor(nor(x1, x3), nor(x2, nor(x1, x4)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "target_id": "BOOL-NOR-n5_K19_04"
+ },
+ {
+  "expression": "nor(nor(x2, nor(x2, x4)), nor(nor(x1, x3), nor(nor(x3, x4), nor(x5, nor(x3, x5)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "target_id": "BOOL-NOR-n5_K19_05"
+ },
+ {
+  "expression": "nor(nor(x3, nor(x4, nor(x1, x2))), nor(nor(x1, x2), nor(nor(x1, x1), nor(x2, x4))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 5,
+  "target_id": "BOOL-NOR-n5_K19_06"
+ },
+ {
+  "expression": "nor(nor(nor(x2, x4), nor(x4, x5)), nor(nor(x3, x3), nor(nor(x1, x4), nor(x2, x5))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 5,
+  "target_id": "BOOL-NOR-n5_K19_07"
+ },
+ {
+  "expression": "nor(nor(x3, nor(x1, nor(x1, x2))), nor(nor(x1, x2), nor(nor(x1, x5), nor(x4, x4))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 5,
+  "target_id": "BOOL-NOR-n5_K19_08"
+ },
+ {
+  "expression": "nor(nor(x1, nor(x1, x2)), nor(nor(x1, x1), nor(nor(x2, x5), nor(x3, nor(x3, x4)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "target_id": "BOOL-NOR-n5_K19_09"
+ },
+ {
+  "expression": "nor(nor(nor(x1, x1), nor(x3, nor(x4, x5))), nor(x1, nor(x1, nor(x3, nor(x4, nor(x2, nor(x3, x5)))))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 8,
+  "target_id": "BOOL-NOR-n5_K23_00"
+ },
+ {
+  "expression": "nor(nor(nor(x1, x5), nor(nor(x1, x2), nor(x5, x5))), nor(nor(x2, x3), nor(x4, nor(x3, nor(x1, x3)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 6,
+  "target_id": "BOOL-NOR-n5_K23_01"
+ },
+ {
+  "expression": "nor(nor(x3, nor(x3, x4)), nor(nor(x2, x4), nor(nor(x2, nor(x2, x5)), nor(x4, nor(x3, nor(x1, x3))))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K23_02"
+ },
+ {
+  "expression": "nor(nor(x1, x4), nor(nor(nor(x3, x5), nor(x4, x4)), nor(x5, nor(nor(x3, x4), nor(x1, nor(x2, x3))))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K23_03"
+ },
+ {
+  "expression": "nor(nor(x2, nor(x2, nor(x5, nor(x3, x4)))), nor(nor(x1, x5), nor(nor(x1, x4), nor(x3, nor(x1, x2)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 6,
+  "target_id": "BOOL-NOR-n5_K23_04"
+ },
+ {
+  "expression": "nor(nor(x2, nor(x2, x4)), nor(x5, nor(x5, nor(nor(x1, x3), nor(nor(x1, x2), nor(x3, nor(x2, x3)))))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 8,
+  "target_id": "BOOL-NOR-n5_K23_05"
+ },
+ {
+  "expression": "nor(nor(x4, x5), nor(nor(x5, nor(x1, x3)), nor(nor(x3, x3), nor(nor(x1, x4), nor(x2, nor(x2, x4))))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K23_06"
+ },
+ {
+  "expression": "nor(nor(x2, nor(x3, nor(x1, x4))), nor(nor(x3, nor(x3, x5)), nor(nor(x1, x3), nor(x4, nor(x1, x5)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 6,
+  "target_id": "BOOL-NOR-n5_K23_07"
+ },
+ {
+  "expression": "nor(nor(x1, nor(x1, x2)), nor(nor(x1, x5), nor(nor(x2, nor(x4, x5)), nor(x4, nor(x2, nor(x3, x5))))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K23_08"
+ },
+ {
+  "expression": "nor(nor(x2, nor(x2, x5)), nor(nor(x4, nor(x4, x5)), nor(nor(x3, nor(x3, x5)), nor(x4, nor(x2, x3)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 6,
+  "target_id": "BOOL-NOR-n5_K23_09"
+ },
+ {
+  "expression": "nor(nor(x2, nor(x5, nor(x1, x5))), nor(nor(x2, nor(x5, nor(x3, x4))), nor(nor(x3, nor(x4, x5)), nor(x4, nor(x1, x3)))))",
+  "K_construction": 27,
+  "K_proven": 27,
+  "depth": 6,
+  "target_id": "BOOL-NOR-n5_K27_00"
+ },
+ {
+  "expression": "nor(nor(x1, nor(x1, nor(x3, nor(x3, x4)))), nor(nor(x2, nor(x3, x4)), nor(nor(x3, nor(x3, x5)), nor(x4, nor(x1, x3)))))",
+  "K_construction": 27,
+  "K_proven": 27,
+  "depth": 6,
+  "target_id": "BOOL-NOR-n5_K27_01"
+ },
+ {
+  "expression": "nor(nor(x1, nor(x4, nor(x2, x3))), nor(nor(x1, x5), nor(nor(nor(x4, x4), nor(x5, x5)), nor(nor(x2, x5), nor(x3, x3)))))",
+  "K_construction": 27,
+  "K_proven": 27,
+  "depth": 6,
+  "target_id": "BOOL-NOR-n5_K27_02"
+ },
+ {
+  "expression": "nor(nor(x1, nor(x1, nor(x3, nor(x2, x5)))), nor(nor(x3, x5), nor(nor(x5, nor(x4, x5)), nor(x4, nor(x2, nor(x1, x2))))))",
+  "K_construction": 27,
+  "K_proven": 27,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K27_03"
+ },
+ {
+  "expression": "nor(nor(nor(x5, x5), nor(x1, nor(x2, x4))), nor(nor(x5, nor(x2, x5)), nor(nor(x3, x4), nor(nor(x1, x4), nor(x3, x3)))))",
+  "K_construction": 27,
+  "K_proven": 27,
+  "depth": 6,
+  "target_id": "BOOL-NOR-n5_K27_04"
+ },
+ {
+  "expression": "nor(nor(x3, x5), nor(nor(x1, x3), nor(nor(nor(x1, x1), nor(x2, x5)), nor(nor(x4, nor(x1, x5)), nor(x5, nor(x2, x5))))))",
+  "K_construction": 27,
+  "K_proven": 27,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K27_05"
+ },
+ {
+  "expression": "nor(nor(x5, nor(nor(x2, x2), nor(x3, x4))), nor(nor(x4, nor(x2, x3)), nor(nor(x1, x3), nor(nor(x1, x2), nor(x5, x5)))))",
+  "K_construction": 27,
+  "K_proven": 27,
+  "depth": 6,
+  "target_id": "BOOL-NOR-n5_K27_06"
+ },
+ {
+  "expression": "nor(nor(x5, nor(x4, nor(x2, nor(x1, x5)))), nor(nor(x5, nor(x3, nor(x1, x3))), nor(nor(x1, x3), nor(x4, nor(x1, x4)))))",
+  "K_construction": 27,
+  "K_proven": 27,
+  "depth": 6,
+  "target_id": "BOOL-NOR-n5_K27_07"
+ },
+ {
+  "expression": "nor(nor(x2, nor(x2, nor(x3, nor(x3, x5)))), nor(nor(x1, x2), nor(nor(x2, x5), nor(x5, nor(x4, nor(x1, nor(x3, x5)))))))",
+  "K_construction": 27,
+  "K_proven": 27,
+  "depth": 8,
+  "target_id": "BOOL-NOR-n5_K27_08"
+ },
+ {
+  "expression": "nor(nor(x3, x5), nor(nor(x2, nor(x2, x3)), nor(nor(x5, nor(x1, x5)), nor(nor(x1, x4), nor(nor(x1, x2), nor(x4, x4))))))",
+  "K_construction": 27,
+  "K_proven": 27,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K27_09"
+ },
+ {
+  "expression": "nor(nor(nor(x2, x4), nor(x3, x3)), nor(nor(x5, x5), nor(nor(x4, nor(x1, nor(x2, x3))), nor(x1, nor(x1, nor(nor(x2, x2), nor(x4, x4)))))))",
+  "K_construction": 31,
+  "K_proven": 31,
+  "depth": 8,
+  "target_id": "BOOL-NOR-n5_K31_00"
+ },
+ {
+  "expression": "nor(nor(nor(x1, x5), nor(nor(x4, x5), nor(x1, nor(x2, x4)))), nor(nor(x1, nor(x1, x5)), nor(nor(x2, x3), nor(nor(x2, x5), nor(x3, x4)))))",
+  "K_construction": 31,
+  "K_proven": 31,
+  "depth": 6,
+  "target_id": "BOOL-NOR-n5_K31_01"
+ },
+ {
+  "expression": "nor(nor(x1, nor(x1, nor(x4, nor(x3, x4)))), nor(nor(x1, x2), nor(nor(x3, nor(x1, x5)), nor(nor(x4, x5), nor(nor(x2, x5), nor(x4, x4))))))",
+  "K_construction": 31,
+  "K_proven": 31,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K31_02"
+ },
+ {
+  "expression": "nor(nor(x1, nor(x1, x1)), nor(nor(nor(x2, x3), nor(nor(x1, x4), nor(x2, x4))), nor(nor(x1, nor(x3, x5)), nor(x4, nor(x3, nor(x2, x5))))))",
+  "K_construction": 31,
+  "K_proven": 31,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K31_03"
+ },
+ {
+  "expression": "nor(nor(x1, nor(x1, nor(x2, x3))), nor(nor(x4, x5), nor(nor(x5, nor(x2, x5)), nor(nor(x1, nor(x2, x4)), nor(nor(x2, x2), nor(x4, x4))))))",
+  "K_construction": 31,
+  "K_proven": 31,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K31_04"
+ },
+ {
+  "expression": "nor(nor(x3, nor(x3, nor(x5, nor(x2, x4)))), nor(nor(x1, x2), nor(nor(x2, nor(x2, x4)), nor(x1, nor(x1, nor(nor(x3, x3), nor(x5, x5)))))))",
+  "K_construction": 31,
+  "K_proven": 31,
+  "depth": 8,
+  "target_id": "BOOL-NOR-n5_K31_05"
+ },
+ {
+  "expression": "nor(nor(x1, nor(x1, nor(x2, x4))), nor(nor(x1, nor(x2, nor(x3, x5))), nor(nor(x1, x3), nor(nor(x2, x4), nor(nor(x1, x5), nor(x3, x4))))))",
+  "K_construction": 31,
+  "K_proven": 31,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K31_06"
+ },
+ {
+  "expression": "nor(nor(x1, nor(x1, nor(x4, nor(x3, x4)))), nor(nor(x1, nor(x2, x3)), nor(nor(x5, nor(x2, x4)), nor(nor(x4, x4), nor(x3, nor(x1, x3))))))",
+  "K_construction": 31,
+  "K_proven": 31,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K31_07"
+ },
+ {
+  "expression": "nor(nor(nor(x3, x3), nor(nor(x1, x4), nor(nor(x1, x2), nor(x4, x4)))), nor(nor(x3, nor(x1, nor(x2, x5))), nor(nor(x2, x3), nor(x4, x5))))",
+  "K_construction": 31,
+  "K_proven": 31,
+  "depth": 6,
+  "target_id": "BOOL-NOR-n5_K31_08"
+ },
+ {
+  "expression": "nor(nor(x2, nor(x2, nor(x3, nor(x4, nor(x2, x5))))), nor(nor(x1, x3), nor(nor(x1, x3), nor(nor(x2, nor(x1, x2)), nor(x5, nor(x4, x5))))))",
+  "K_construction": 31,
+  "K_proven": 31,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K31_09"
+ },
+ {
+  "expression": "nor(nor(nor(x1, nor(x4, nor(x2, x3))), nor(nor(x4, nor(x2, x5)), nor(nor(x5, nor(x2, x5)), nor(x2, nor(x3, nor(x3, x4)))))), nor(x1, nor(x3, nor(x3, x5))))",
+  "K_construction": 35,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-NOR-n5_K35_00"
+ },
+ {
+  "expression": "nor(nor(nor(x4, nor(x3, x5)), nor(x5, nor(x1, x2))), nor(nor(x2, nor(x4, x5)), nor(nor(x1, nor(x4, x5)), nor(nor(x1, x1), nor(nor(x2, x2), nor(x3, x4))))))",
+  "K_construction": 35,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K35_01"
+ },
+ {
+  "expression": "nor(nor(nor(x3, nor(x2, x4)), nor(x1, nor(x5, nor(x2, x4)))), nor(nor(nor(x4, x4), nor(x3, nor(x1, x2))), nor(nor(x1, nor(x1, x4)), nor(x2, nor(x3, x5)))))",
+  "K_construction": 35,
+  "K_proven": null,
+  "depth": 6,
+  "target_id": "BOOL-NOR-n5_K35_02"
+ },
+ {
+  "expression": "nor(nor(nor(x2, x5), nor(nor(x1, nor(x4, nor(x4, x5))), nor(x3, nor(x4, nor(x2, x4))))), nor(nor(x2, x4), nor(nor(x2, nor(x2, x3)), nor(x4, nor(x3, x4)))))",
+  "K_construction": 35,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K35_03"
+ },
+ {
+  "expression": "nor(nor(nor(nor(x1, nor(x3, x4)), nor(x2, nor(x1, x5))), nor(nor(x3, x5), nor(nor(x3, x4), nor(x5, nor(x1, x2))))), nor(nor(x4, x4), nor(x5, nor(x2, x5))))",
+  "K_construction": 35,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K35_04"
+ },
+ {
+  "expression": "nor(nor(nor(nor(x2, x4), nor(x3, nor(x2, x5))), nor(nor(x5, nor(x3, x4)), nor(nor(x1, x3), nor(nor(x1, x1), nor(x2, x3))))), nor(x1, nor(x4, nor(x3, x5))))",
+  "K_construction": 35,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K35_05"
+ },
+ {
+  "expression": "nor(nor(nor(nor(x3, x4), nor(x2, nor(x1, nor(x4, x5)))), nor(nor(x5, nor(x2, x4)), nor(nor(x2, x3), nor(x5, nor(x1, x2))))), nor(nor(x2, x2), nor(x5, x5)))",
+  "K_construction": 35,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K35_06"
+ },
+ {
+  "expression": "nor(nor(nor(x4, nor(x2, x4)), nor(nor(x1, nor(x1, x3)), nor(x3, nor(x1, nor(x1, x5))))), nor(x2, nor(x2, nor(nor(x3, nor(x2, x4)), nor(x5, nor(x1, x2))))))",
+  "K_construction": 35,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K35_07"
+ },
+ {
+  "expression": "nor(nor(x2, nor(nor(x4, x5), nor(nor(x2, x5), nor(x2, nor(x1, x3))))), nor(nor(x3, nor(x5, nor(x2, x5))), nor(nor(x3, x4), nor(nor(x1, x5), nor(x2, x4)))))",
+  "K_construction": 35,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K35_08"
+ },
+ {
+  "expression": "nor(nor(nor(x3, x4), nor(nor(x3, x5), nor(nor(x1, x2), nor(nor(x2, x3), nor(x4, x5))))), nor(nor(x1, nor(x2, x3)), nor(nor(x4, x5), nor(x4, nor(x2, x3)))))",
+  "K_construction": 35,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K35_09"
+ },
+ {
+  "expression": "nor(nor(nor(x4, x5), nor(nor(x2, nor(x1, x4)), nor(nor(x5, x5), nor(nor(x1, x3), nor(nor(x1, x1), nor(x4, x4)))))), nor(x5, nor(nor(x3, nor(x2, x5)), nor(x4, nor(x1, x3)))))",
+  "K_construction": 39,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-NOR-n5_K39_00"
+ },
+ {
+  "expression": "nor(nor(nor(nor(x2, x4), nor(x3, x5)), nor(nor(x5, nor(x3, x4)), nor(nor(x1, x3), nor(nor(x1, x1), nor(x3, nor(x2, x5)))))), nor(nor(x2, x2), nor(x4, nor(x5, nor(x1, x5)))))",
+  "K_construction": 39,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-NOR-n5_K39_01"
+ },
+ {
+  "expression": "nor(nor(x1, nor(nor(x2, x4), nor(nor(x1, x5), nor(x2, nor(x2, x3))))), nor(nor(x1, nor(x1, x3)), nor(nor(x1, x4), nor(x5, nor(nor(x2, x3), nor(nor(x3, x5), nor(x4, x5)))))))",
+  "K_construction": 39,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-NOR-n5_K39_02"
+ },
+ {
+  "expression": "nor(nor(nor(x3, nor(x5, nor(x2, x4))), nor(nor(x4, x5), nor(x2, nor(x1, nor(x1, x3))))), nor(nor(x3, x3), nor(nor(x2, nor(x1, x2)), nor(nor(x2, x4), nor(x5, nor(x4, x5))))))",
+  "K_construction": 39,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K39_03"
+ },
+ {
+  "expression": "nor(nor(nor(x3, nor(x1, x2)), nor(nor(x4, x5), nor(x1, nor(x1, nor(nor(x2, x5), nor(x4, nor(x2, nor(x2, x3)))))))), nor(x5, nor(nor(x2, x4), nor(nor(x1, x2), nor(x3, x5)))))",
+  "K_construction": 39,
+  "K_proven": null,
+  "depth": 10,
+  "target_id": "BOOL-NOR-n5_K39_04"
+ },
+ {
+  "expression": "nor(nor(nor(x2, nor(x1, nor(x3, x4))), nor(nor(x4, nor(x3, x5)), nor(x3, nor(x1, nor(x2, nor(x3, x5)))))), nor(nor(x4, x4), nor(nor(x1, x2), nor(x5, nor(x3, nor(x1, x3))))))",
+  "K_construction": 39,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-NOR-n5_K39_05"
+ },
+ {
+  "expression": "nor(nor(nor(x3, nor(x3, x4)), nor(nor(x1, nor(x4, x5)), nor(nor(x4, x4), nor(x5, nor(x2, x5))))), nor(nor(nor(x1, x1), nor(x2, x5)), nor(x4, nor(nor(x1, x2), nor(x3, x5)))))",
+  "K_construction": 39,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K39_06"
+ },
+ {
+  "expression": "nor(nor(nor(nor(x1, x3), nor(x5, nor(x2, x5))), nor(nor(x4, x4), nor(x3, nor(x1, x3)))), nor(nor(x2, x4), nor(nor(x1, x4), nor(x3, nor(nor(x4, x4), nor(x2, nor(x1, x5)))))))",
+  "K_construction": 39,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-NOR-n5_K39_07"
+ },
+ {
+  "expression": "nor(nor(nor(nor(x3, x5), nor(x4, nor(x1, x5))), nor(nor(x1, x2), nor(nor(x3, x5), nor(nor(x2, x5), nor(x3, x3))))), nor(nor(x4, nor(x1, x5)), nor(x2, nor(x3, nor(x3, x5)))))",
+  "K_construction": 39,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K39_08"
+ },
+ {
+  "expression": "nor(nor(nor(x2, nor(nor(x1, x5), nor(x4, nor(x1, x3)))), nor(nor(x2, nor(x3, x5)), nor(nor(x1, x3), nor(x5, x5)))), nor(nor(x3, nor(x1, x4)), nor(nor(x2, x3), nor(x4, x5))))",
+  "K_construction": 39,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K39_09"
+ },
+ {
+  "expression": "nor(nor(nor(x2, nor(nor(x3, x5), nor(x1, nor(x2, x3)))), nor(nor(x2, nor(x3, x4)), nor(x1, nor(x3, nor(x3, x5))))), nor(nor(x1, nor(x4, nor(x2, x5))), nor(x5, nor(x4, nor(x3, nor(x1, x5))))))",
+  "K_construction": 43,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K43_00"
+ },
+ {
+  "expression": "nor(nor(nor(x1, nor(x5, nor(x2, x4))), nor(nor(x2, nor(x2, x5)), nor(x4, nor(x3, x5)))), nor(nor(x4, nor(x3, x4)), nor(nor(x5, x5), nor(nor(x1, x4), nor(nor(x1, x1), nor(x3, nor(x2, x3)))))))",
+  "K_construction": 43,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-NOR-n5_K43_01"
+ },
+ {
+  "expression": "nor(nor(nor(nor(x2, x5), nor(x4, x4)), nor(nor(x3, nor(x1, x4)), nor(nor(x2, x5), nor(nor(x1, x2), nor(x5, nor(x1, nor(x3, x4))))))), nor(x3, nor(x3, nor(nor(x1, x5), nor(x4, nor(x1, x2))))))",
+  "K_construction": 43,
+  "K_proven": null,
+  "depth": 9,
+  "target_id": "BOOL-NOR-n5_K43_02"
+ },
+ {
+  "expression": "nor(nor(nor(nor(x1, x1), nor(x2, x2)), nor(x2, nor(x2, nor(nor(x3, x5), nor(nor(x1, x3), nor(x2, x5)))))), nor(nor(x5, nor(x4, x5)), nor(nor(x3, nor(x2, x3)), nor(x4, nor(x1, nor(x1, x2))))))",
+  "K_construction": 43,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-NOR-n5_K43_03"
+ },
+ {
+  "expression": "nor(nor(nor(x2, x2), nor(nor(x4, x4), nor(nor(x3, x3), nor(x5, nor(x1, x5))))), nor(nor(nor(x3, x5), nor(x2, nor(x4, x5))), nor(nor(x4, x4), nor(nor(x1, nor(x3, x5)), nor(x3, nor(x1, x2))))))",
+  "K_construction": 43,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K43_04"
+ },
+ {
+  "expression": "nor(nor(x4, nor(nor(x2, nor(x3, x5)), nor(nor(x3, x4), nor(x5, nor(x1, x5))))), nor(nor(nor(x3, x4), nor(x2, nor(x1, x4))), nor(nor(x5, nor(x1, x2)), nor(nor(x5, x5), nor(x3, nor(x1, x2))))))",
+  "K_construction": 43,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K43_05"
+ },
+ {
+  "expression": "nor(nor(nor(nor(x1, x5), nor(x3, x3)), nor(nor(nor(x2, x5), nor(x4, nor(x1, x2))), nor(nor(x2, x3), nor(x1, nor(x2, x4))))), nor(x2, nor(nor(x4, x5), nor(nor(x1, x5), nor(x4, nor(x1, x3))))))",
+  "K_construction": 43,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K43_06"
+ },
+ {
+  "expression": "nor(nor(nor(x4, x5), nor(nor(x4, x4), nor(nor(x5, nor(x2, x5)), nor(nor(x1, x1), nor(x3, x3))))), nor(nor(x2, nor(x1, x3)), nor(nor(x5, nor(x1, x5)), nor(x4, nor(x5, nor(x3, nor(x2, x4)))))))",
+  "K_construction": 43,
+  "K_proven": null,
+  "depth": 8,
+  "target_id": "BOOL-NOR-n5_K43_07"
+ },
+ {
+  "expression": "nor(nor(nor(x5, nor(x3, x5)), nor(nor(x2, x2), nor(x4, nor(x1, x4)))), nor(nor(x4, nor(x3, x4)), nor(nor(x3, nor(x3, x4)), nor(nor(x2, x5), nor(nor(x5, x5), nor(x1, nor(x3, nor(x2, x4))))))))",
+  "K_construction": 43,
+  "K_proven": null,
+  "depth": 9,
+  "target_id": "BOOL-NOR-n5_K43_08"
+ },
+ {
+  "expression": "nor(nor(nor(nor(x4, x4), nor(x3, nor(x1, x2))), nor(nor(x2, nor(x1, x4)), nor(x5, nor(x4, nor(x1, x3))))), nor(nor(x1, nor(x5, nor(x4, nor(x1, x3)))), nor(nor(x2, x4), nor(x1, nor(x2, x5)))))",
+  "K_construction": 43,
+  "K_proven": null,
+  "depth": 7,
+  "target_id": "BOOL-NOR-n5_K43_09"
+ }
+]

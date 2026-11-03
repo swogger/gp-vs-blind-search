@@ -1,0 +1,106 @@
+{
+ "grammar": "F-NEML",
+ "seed": 20261013,
+ "ceiling": 23,
+ "levels": {
+  "3": {
+   "found": 2,
+   "rejected": {
+    "nonfinite": 1
+   },
+   "proven": true
+  },
+  "5": {
+   "found": 5,
+   "rejected": {
+    "nonfinite": 2,
+    "dead_subtree": 1
+   },
+   "proven": true
+  },
+  "7": {
+   "found": 10,
+   "rejected": {
+    "nonfinite": 2,
+    "dead_subtree": 8,
+    "variance": 1
+   },
+   "proven": true
+  },
+  "9": {
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 19,
+    "nonfinite": 3
+   },
+   "proven": true
+  },
+  "11": {
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 9
+   },
+   "proven": true
+  },
+  "13": {
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 19,
+    "nonfinite": 2
+   },
+   "proven": true
+  },
+  "15": {
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 32,
+    "nonfinite": 4
+   },
+   "proven": true
+  },
+  "17": {
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 65,
+    "nonfinite": 8
+   },
+   "proven": true
+  },
+  "19": {
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 25,
+    "nonfinite": 6
+   },
+   "proven": true
+  },
+  "21": {
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 66,
+    "depth": 4,
+    "nonfinite": 13
+   },
+   "proven": true
+  },
+  "23": {
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 107,
+    "nonfinite": 20,
+    "depth": 21
+   },
+   "proven": true
+  },
+  "25": {
+   "found": 10,
+   "rejected": {
+    "nonfinite": 60,
+    "depth": 38,
+    "dead_subtree": 125,
+    "smaller_in_enumeration": 2
+   },
+   "proven": false
+  }
+ }
+}

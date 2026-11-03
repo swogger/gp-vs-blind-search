@@ -1,0 +1,1 @@
+{"grammar": "RS-add_sqrt", "terminal_state": "completed", "targets": 90, "file": "data/targets_s2/RS-add_sqrt/restart.json", "found": {"18": 30, "19": 30, "20": 30}, "key": "RS-add_sqrt", "queue_status": "ok", "exit": 0, "signal": 0, "cpu_s": 35.101, "wall_s": 35.883, "cpu_limit": 21600, "finished": "2026-11-02 19:24:35", "code_hash": "047410336510", "git": "fc49ff6"}

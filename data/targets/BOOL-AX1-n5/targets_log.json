@@ -1,0 +1,85 @@
+{
+ "grammar": "BOOL-AX1-n5",
+ "seed": 20261013,
+ "ceiling": 24,
+ "levels": {
+  "3": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "5": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "9": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "11": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "15": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "17": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "21": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "23": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "26": {
+   "found": 0,
+   "rejected": {},
+   "proven": false
+  },
+  "27": {
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 35,
+    "constant": 1,
+    "depth": 1
+   },
+   "proven": false
+  },
+  "30": {
+   "found": 0,
+   "rejected": {},
+   "proven": false
+  },
+  "31": {
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 14
+   },
+   "proven": false
+  },
+  "34": {
+   "found": 0,
+   "rejected": {},
+   "proven": false
+  },
+  "35": {
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 13
+   },
+   "proven": false
+  }
+ }
+}

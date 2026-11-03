@@ -1,0 +1,170 @@
+[
+ {
+  "expression": "*(+(x, x), +(+(x, 1), *(x, *(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "var_target": 1631.7410401487668,
+  "target_scale": 183.73353225882724,
+  "pool_id": "pool000",
+  "target_id": "R-TRIG_pool000",
+  "size_spread": 0,
+  "n_sets": 4,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  }
+ },
+ {
+  "expression": "+(1, *(+(1, *(x, x)), +(x, *(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "var_target": 656.5168652087615,
+  "target_scale": 119.60032069259468,
+  "pool_id": "pool001",
+  "target_id": "R-TRIG_pool001",
+  "size_spread": 0,
+  "n_sets": 4,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  }
+ },
+ {
+  "expression": "+(1, *(+(x, x), *(+(x, 1), +(x, 1))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "var_target": 293.9715413808105,
+  "target_scale": 96.2100755022076,
+  "pool_id": "pool002",
+  "target_id": "R-TRIG_pool002",
+  "size_spread": 0,
+  "n_sets": 4,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  }
+ },
+ {
+  "expression": "*(+(x, +(x, 1)), +(x, *(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "var_target": 238.10471916089617,
+  "target_scale": 83.27928440329573,
+  "pool_id": "pool003",
+  "target_id": "R-TRIG_pool003",
+  "size_spread": 0,
+  "n_sets": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  }
+ },
+ {
+  "expression": "+(x, *(+(x, 1), +(1, +(1, 1))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "var_target": 1.3069306930693063,
+  "target_scale": 14.96039603960396,
+  "pool_id": "pool004",
+  "target_id": "R-TRIG_pool004",
+  "size_spread": 0,
+  "n_sets": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  }
+ },
+ {
+  "expression": "*(x, x)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "var_target": 2.0474153184360673,
+  "target_scale": 8.94069208901088,
+  "pool_id": "pool029",
+  "target_id": "R-TRIG_pool029",
+  "size_spread": 16,
+  "n_sets": 6,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.459431618637297,
+   "bits_sem": 4.169925001442312,
+   "bits_sem_uncorrected": 4.169925001442312,
+   "bits_sem_extrapolated": false
+  }
+ },
+ {
+  "expression": "+(x, 1)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "var_target": 0.08168316831683164,
+  "target_scale": 3.99009900990099,
+  "pool_id": "pool033",
+  "target_id": "R-TRIG_pool033",
+  "size_spread": 20,
+  "n_sets": 6,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.459431618637297,
+   "bits_sem": 4.169925001442312,
+   "bits_sem_uncorrected": 4.169925001442312,
+   "bits_sem_extrapolated": false
+  }
+ },
+ {
+  "expression": "+(x, x)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "var_target": 0.3267326732673266,
+  "target_scale": 5.98019801980198,
+  "pool_id": "pool038",
+  "target_id": "R-TRIG_pool038",
+  "size_spread": 16,
+  "n_sets": 6,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.459431618637297,
+   "bits_sem": 4.169925001442312,
+   "bits_sem_uncorrected": 4.169925001442312,
+   "bits_sem_extrapolated": false
+  }
+ }
+]

@@ -1,0 +1,140 @@
+{
+ "grammar": "F-LDE0",
+ "seed": 20261021,
+ "ceiling": 23,
+ "depth_limit": 10,
+ "levels": {
+  "9": {
+   "proven": true,
+   "n_level": 93,
+   "n_depth_ok": 93,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "complex": 32,
+    "nonfinite": 5
+   }
+  },
+  "11": {
+   "proven": true,
+   "n_level": 386,
+   "n_depth_ok": 386,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "complex": 67,
+    "magnitude_ratio": 1,
+    "nonfinite": 6
+   }
+  },
+  "13": {
+   "proven": true,
+   "n_level": 1757,
+   "n_depth_ok": 1757,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "complex": 74,
+    "nonfinite": 4,
+    "variance": 1
+   }
+  },
+  "15": {
+   "proven": true,
+   "n_level": 8265,
+   "n_depth_ok": 8265,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "complex": 137,
+    "nonfinite": 10,
+    "variance": 1,
+    "magnitude_ratio": 1
+   }
+  },
+  "17": {
+   "proven": true,
+   "n_level": 39863,
+   "n_depth_ok": 39863,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "complex": 208,
+    "nonfinite": 11,
+    "dead_subtree": 3,
+    "variance": 1,
+    "magnitude_ratio": 1
+   }
+  },
+  "19": {
+   "proven": true,
+   "n_level": 195250,
+   "n_depth_ok": 195250,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "complex": 227,
+    "magnitude_ratio": 3,
+    "nonfinite": 14,
+    "variance": 1,
+    "dead_subtree": 1
+   }
+  },
+  "21": {
+   "proven": true,
+   "n_level": 971751,
+   "n_depth_ok": 938747,
+   "excluded_share": 0.033963433019364,
+   "found": 30,
+   "rejected": {
+    "complex": 459,
+    "magnitude_ratio": 11,
+    "dead_subtree": 3,
+    "nonfinite": 44,
+    "near_duplicate": 1,
+    "variance": 2
+   }
+  },
+  "23": {
+   "proven": true,
+   "n_level": 4906059,
+   "n_depth_ok": 4421658,
+   "excluded_share": 0.098735257770035,
+   "found": 30,
+   "rejected": {
+    "complex": 658,
+    "magnitude_ratio": 14,
+    "nonfinite": 43,
+    "dead_subtree": 5,
+    "variance": 2
+   }
+  },
+  "25": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "complex": 1182,
+    "smaller_in_enumeration": 410,
+    "nonfinite": 75,
+    "depth": 385,
+    "magnitude_ratio": 27,
+    "near_duplicate": 2,
+    "dead_subtree": 4,
+    "variance": 2
+   }
+  },
+  "27": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "complex": 1373,
+    "smaller_in_enumeration": 492,
+    "variance": 12,
+    "depth": 338,
+    "magnitude_ratio": 38,
+    "nonfinite": 64,
+    "dead_subtree": 8
+   }
+  }
+ }
+}

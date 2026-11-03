@@ -1,0 +1,78 @@
+[
+ {
+  "target_id": "RS-mul_div_eml_sin_square_bench_eml_1_1",
+  "benchmark": "eml_1_1",
+  "expression": "eml(x, 1)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 4.700439718141092,
+   "bits_sem": 4.0,
+   "bits_sem_uncorrected": 4.0,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.935998848502534,
+  "target_scale": 19.887651468491836
+ },
+ {
+  "target_id": "RS-mul_div_eml_sin_square_bench_eml_1_2",
+  "benchmark": "eml_1_2",
+  "expression": "eml(x, eml(eml(x, x), 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 19.651484454403228,
+   "bits_syn": 14.040460970956584,
+   "bits_sem": 12.170863950411928,
+   "bits_sem_uncorrected": 12.172740017049366,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013314094935341471,
+  "target_scale": 1.09530650053361
+ },
+ {
+  "target_id": "RS-mul_div_eml_sin_square_bench_eml_1_4",
+  "benchmark": "eml_1_4",
+  "expression": "/(eml(x, 1), eml(square(x), 1))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 22.458839376460833,
+   "bits_syn": 16.54668348888783,
+   "bits_sem": 14.354456017505626,
+   "bits_sem_uncorrected": 14.359612311115082,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.001296954261315362,
+  "target_scale": 1.0
+ },
+ {
+  "target_id": "RS-mul_div_eml_sin_square_bench_eml_3_4",
+  "benchmark": "eml_3_4",
+  "expression": "/(eml(x, 1), eml(x, /(1, eml(1, 1))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 30.880904142633646,
+   "bits_syn": 24.24024528711191,
+   "bits_sem": 21.06634676153804,
+   "bits_sem_uncorrected": 21.08213409465138,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00041757939074508365,
+  "target_scale": 1.0
+ }
+]

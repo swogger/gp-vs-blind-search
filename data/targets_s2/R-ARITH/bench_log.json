@@ -1,0 +1,182 @@
+{
+ "grammar": "R-ARITH",
+ "benchmarks": {
+  "N1": "proven K=9",
+  "N2": "proven K=11",
+  "N3": "proven K=15",
+  "N4": "proven K=17",
+  "N5": "not within the ceiling",
+  "N6": "not within the ceiling",
+  "N7": "not within the ceiling",
+  "N8": "not within the ceiling",
+  "K2": "proven K=13",
+  "K3": "proven K=15",
+  "feynman_I_6_2a": "not within the ceiling",
+  "eml_1_1": "not within the ceiling",
+  "eml_1_2": "not within the ceiling",
+  "eml_1_4": "not within the ceiling",
+  "eml_2_1": "not within the ceiling",
+  "eml_3_1": "not within the ceiling",
+  "eml_3_2": "not within the ceiling",
+  "eml_3_3": "not within the ceiling",
+  "eml_3_4": "not within the ceiling",
+  "eml_3_5": "proven K=9",
+  "eml_4_1": "not within the ceiling"
+ },
+ "noise_rows": [
+  {
+   "K": 1,
+   "U": 2,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 2,
+   "U": 0,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 3,
+   "U": 7,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 4,
+   "U": 0,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 5,
+   "U": 18,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 6,
+   "U": 0,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 7,
+   "U": 53,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 8,
+   "U": 0,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 9,
+   "U": 178,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 10,
+   "U": 0,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 11,
+   "U": 590,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 12,
+   "U": 0,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 13,
+   "U": 1966,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 14,
+   "U": 0,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 15,
+   "U": 6921,
+   "candidates": 3,
+   "noise": 3,
+   "share": 0.00043
+  },
+  {
+   "K": 16,
+   "U": 0,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 17,
+   "U": 24780,
+   "candidates": 36,
+   "noise": 36,
+   "share": 0.00145
+  },
+  {
+   "K": 18,
+   "U": 0,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 19,
+   "U": 90717,
+   "candidates": 193,
+   "noise": 193,
+   "share": 0.00213
+  },
+  {
+   "K": 20,
+   "U": 0,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 21,
+   "U": 339521,
+   "candidates": 1179,
+   "noise": 1179,
+   "share": 0.00347
+  },
+  {
+   "K": 22,
+   "U": 0,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  }
+ ]
+}

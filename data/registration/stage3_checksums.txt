@@ -1,0 +1,2 @@
+7abf7de819d6d3be93e275195f935fb3c3a1fb657f7d4c775691a50342ffecd7  data/registration/stage3_tasks.json
+bfb5f8975b22dfad19a099d82a7b0a2cabb3fd8eb73238417afa91edfde930ce  data/registration/stage3_lookups.json

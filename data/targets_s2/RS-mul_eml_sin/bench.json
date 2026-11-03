@@ -1,0 +1,40 @@
+[
+ {
+  "target_id": "RS-mul_eml_sin_bench_eml_1_1",
+  "benchmark": "eml_1_1",
+  "expression": "eml(x, 1)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 6.965784284662087,
+   "bits_syn": 3.807354922057604,
+   "bits_sem": 3.4594316186372973,
+   "bits_sem_uncorrected": 3.4594316186372973,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.935998848502534,
+  "target_scale": 19.887651468491836
+ },
+ {
+  "target_id": "RS-mul_eml_sin_bench_eml_1_2",
+  "benchmark": "eml_1_2",
+  "expression": "eml(x, eml(eml(x, x), 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013314094935341471,
+  "target_scale": 1.09530650053361
+ }
+]

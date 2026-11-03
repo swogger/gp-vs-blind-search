@@ -1,0 +1,273 @@
+{
+ "phase": "s2_pilot_rand_a",
+ "description": "Pilot: random sampling, 2.5e5 trees per set of batch A, hits on the pilot targets.",
+ "created": "2026-10-20 08:03:13",
+ "git": "039fce4",
+ "n_tasks": 11,
+ "tasks": [
+  {
+   "key": "F-EML",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "F-EML",
+    "--targets",
+    "data/targets_s2/F-EML/pilot.json",
+    "--targets_sha256",
+    "5bf135a6de7ac4e5ca9d7a245676aeedd3ba17ccce03b67aec0679fba148e827",
+    "--n",
+    "250000",
+    "--seed",
+    "20261025"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "F-EML"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ARITH4",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "R-ARITH4",
+    "--targets",
+    "data/targets_s2/R-ARITH4/pilot.json",
+    "--targets_sha256",
+    "7ac28a0d6029403dbc59f3ddd09df3426b9fde5c326fa983a98d60d8ad5b09b7",
+    "--n",
+    "250000",
+    "--seed",
+    "20261026"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "R-ARITH4"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ELEM4",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "R-ELEM4",
+    "--targets",
+    "data/targets_s2/R-ELEM4/pilot.json",
+    "--targets_sha256",
+    "a4af6fea44b95f3475677d577508120274cf492429feaaf32cb238722739fede",
+    "--n",
+    "250000",
+    "--seed",
+    "20261027"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "R-ELEM4"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-HYB",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "R-HYB",
+    "--targets",
+    "data/targets_s2/R-HYB/pilot.json",
+    "--targets_sha256",
+    "a78f86bb7c9625759b997b4df9f0ca1830007bb09ac5e9621332bf3bf6f5c69d",
+    "--n",
+    "250000",
+    "--seed",
+    "20261028"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "R-HYB"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-LDE0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "F-LDE0",
+    "--targets",
+    "data/targets_s2/F-LDE0/pilot.json",
+    "--targets_sha256",
+    "14ff0c1394b954b53bc49ac2580b5405053d8957776dc51fb1344b2c14cec0ec",
+    "--n",
+    "250000",
+    "--seed",
+    "20261029"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "F-LDE0"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-NAND-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-NAND-n5",
+    "--targets",
+    "data/targets_s2/BOOL-NAND-n5/pilot.json",
+    "--targets_sha256",
+    "a2877593729132ea872517ed5edad61e1fef9cf804f605310d1639f16eda3249",
+    "--n",
+    "250000",
+    "--seed",
+    "20261030"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-NAND-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-NOR-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-NOR-n5",
+    "--targets",
+    "data/targets_s2/BOOL-NOR-n5/pilot.json",
+    "--targets_sha256",
+    "28bb35c67df6ca85336c5327f612577402050edbd46ef0f93237873b24c7fc1a",
+    "--n",
+    "250000",
+    "--seed",
+    "20261031"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-NOR-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-IMP0-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-IMP0-n5",
+    "--targets",
+    "data/targets_s2/BOOL-IMP0-n5/pilot.json",
+    "--targets_sha256",
+    "8eeafde4088f1a74872e966d7bb03302f83f5239df2cb16044852fb1641faffd",
+    "--n",
+    "250000",
+    "--seed",
+    "20261032"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-IMP0-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AON-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-AON-n5",
+    "--targets",
+    "data/targets_s2/BOOL-AON-n5/pilot.json",
+    "--targets_sha256",
+    "0201129c60e0cd53666e3a42b71a45dcd0e5835b235f8a6fbc4c3e9fe4624495",
+    "--n",
+    "250000",
+    "--seed",
+    "20261033"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-AON-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AONX-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-AONX-n5",
+    "--targets",
+    "data/targets_s2/BOOL-AONX-n5/pilot.json",
+    "--targets_sha256",
+    "2531b93f79af61108fba802cd7760f6f2ba9b5a7cc0d3180f00c8077127e5523",
+    "--n",
+    "250000",
+    "--seed",
+    "20261034"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-AONX-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-RICH-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-RICH-n5",
+    "--targets",
+    "data/targets_s2/BOOL-RICH-n5/pilot.json",
+    "--targets_sha256",
+    "7e919b89c4f7eaeb9270ad892ca6a0ef0cf68687a6f5e8628f5838125f37fa7e",
+    "--n",
+    "250000",
+    "--seed",
+    "20261035"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-RICH-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

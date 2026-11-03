@@ -1,0 +1,704 @@
+[
+ {
+  "expression": "lde(x, 0)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 0.01331409493534148,
+  "target_scale": 1.0953065005336102,
+  "target_id": "F-LDE0_v2_K03_00"
+ },
+ {
+  "expression": "lde(x, x)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 0.00013408402570922828,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K03_01"
+ },
+ {
+  "expression": "lde(x, lde(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.013627336281333044,
+  "target_scale": 1.0366138940193914,
+  "target_id": "F-LDE0_v2_K05_00"
+ },
+ {
+  "expression": "lde(lde(x, x), 0)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.02488022805747804,
+  "target_scale": 2.899064776636673,
+  "target_id": "F-LDE0_v2_K05_01"
+ },
+ {
+  "expression": "lde(lde(x, 0), x)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.0002198072969875693,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K05_02"
+ },
+ {
+  "expression": "lde(lde(x, 0), 0)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.016768306075898066,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K05_03"
+ },
+ {
+  "expression": "lde(lde(x, x), x)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.002437965101048883,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K05_04"
+ },
+ {
+  "expression": "lde(x, lde(x, 0))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 3.2334199255500363e-05,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K05_05"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, 0)), 0)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.00025010930764195747,
+  "target_scale": 1.0574992072325915,
+  "target_id": "F-LDE0_v2_K07_00"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, x)), 0)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.019873685602119814,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K07_01"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, 0)), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.0006785207755601552,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K07_02"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, 0), x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.010850810907483393,
+  "target_scale": 1.0903042745535076,
+  "target_id": "F-LDE0_v2_K07_03"
+ },
+ {
+  "expression": "lde(lde(lde(x, 0), x), 0)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 3.842208488555,
+  "target_scale": 9.466762005472617,
+  "target_id": "F-LDE0_v2_K07_04"
+ },
+ {
+  "expression": "lde(lde(lde(x, 0), 0), 0)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 3.2879427587026515,
+  "target_scale": 6.966048343398782,
+  "target_id": "F-LDE0_v2_K07_05"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, x), 0))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 12.935998848502532,
+  "target_scale": 19.887651468491836,
+  "target_id": "F-LDE0_v2_K07_06"
+ },
+ {
+  "expression": "lde(lde(lde(x, 0), 0), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.02449301764967604,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K07_07"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(x, 0))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 3,
+  "var_target": 0.0035245336528983533,
+  "target_scale": 1.178821616986396,
+  "target_id": "F-LDE0_v2_K07_08"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(x, 0)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.005979363712205813,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K07_09"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(lde(x, x), x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.0023343036645322936,
+  "target_scale": 3.354022249442678,
+  "target_id": "F-LDE0_v2_K09_00"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(x, x), 0), x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.018517233054618505,
+  "target_scale": 1.0382267175564837,
+  "target_id": "F-LDE0_v2_K09_01"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(x, lde(x, x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.005725590949185353,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K09_02"
+ },
+ {
+  "expression": "lde(lde(lde(x, x), lde(x, 0)), 0)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.0031267476261582073,
+  "target_scale": 3.1458972787206254,
+  "target_id": "F-LDE0_v2_K09_03"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, 0)), lde(x, x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 6.418383419353264e-05,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K09_04"
+ },
+ {
+  "expression": "lde(lde(lde(lde(x, x), x), 0), 0)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.004149980557994403,
+  "target_scale": 2.489652494256103,
+  "target_id": "F-LDE0_v2_K09_05"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, 0), lde(x, 0)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.004453333441589082,
+  "target_scale": 1.062462162647788,
+  "target_id": "F-LDE0_v2_K09_06"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, x), lde(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 10.103049304967849,
+  "target_scale": 17.026160521257705,
+  "target_id": "F-LDE0_v2_K09_07"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, x), x)), 0)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.006419169275647153,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K09_08"
+ },
+ {
+  "expression": "lde(lde(lde(lde(x, x), x), x), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.0019748846051147436,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K09_09"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(x, lde(x, 0)))), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.0005243049277944605,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K11_00"
+ },
+ {
+  "expression": "lde(lde(x, x), lde(lde(lde(x, 0), x), x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.3934049891315283,
+  "target_scale": 4.957149784071804,
+  "target_id": "F-LDE0_v2_K11_01"
+ },
+ {
+  "expression": "lde(lde(lde(x, 0), lde(lde(x, 0), 0)), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.025473206672946346,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K11_02"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, x), lde(x, lde(x, 0))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 1.6679892148624316,
+  "target_scale": 8.17367296802917,
+  "target_id": "F-LDE0_v2_K11_03"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(x, lde(lde(x, 0), x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.003353815977842676,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K11_04"
+ },
+ {
+  "expression": "lde(lde(lde(lde(x, 0), x), x), lde(x, 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.004849231512314168,
+  "target_scale": 1.1937120219136397,
+  "target_id": "F-LDE0_v2_K11_05"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(x, 0), 0), lde(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 3515.8931457161684,
+  "target_scale": 403.8560027106734,
+  "target_id": "F-LDE0_v2_K11_06"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(lde(lde(x, x), x), 0)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 199525.58835389014,
+  "target_scale": 2007.935138036922,
+  "target_id": "F-LDE0_v2_K11_07"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(x, x), x)), x), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.054138636559386694,
+  "target_scale": 1.1285203434688214,
+  "target_id": "F-LDE0_v2_K11_08"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, 0)), lde(lde(x, 0), 0))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 4,
+  "var_target": 0.02809469571534375,
+  "target_scale": 1.514856367154686,
+  "target_id": "F-LDE0_v2_K11_09"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(lde(x, 0), lde(x, 0))), x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.01196155642336131,
+  "target_scale": 1.0919746567347661,
+  "target_id": "F-LDE0_v2_K13_00"
+ },
+ {
+  "expression": "lde(lde(lde(lde(x, x), lde(x, 0)), x), lde(x, x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.07954553475806064,
+  "target_scale": 2.2995385547356286,
+  "target_id": "F-LDE0_v2_K13_01"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(x, 0), x), lde(lde(x, 0), 0)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 1733623.1177414127,
+  "target_scale": 9107.27585525484,
+  "target_id": "F-LDE0_v2_K13_02"
+ },
+ {
+  "expression": "lde(lde(lde(lde(lde(x, 0), x), x), x), lde(x, x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.03630614239987101,
+  "target_scale": 2.500044980484106,
+  "target_id": "F-LDE0_v2_K13_03"
+ },
+ {
+  "expression": "lde(lde(lde(lde(lde(x, x), 0), 0), x), lde(x, x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.08470116219661776,
+  "target_scale": 2.434213051445561,
+  "target_id": "F-LDE0_v2_K13_04"
+ },
+ {
+  "expression": "lde(lde(lde(x, x), lde(lde(x, lde(x, x)), 0)), 0)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.006733268688757518,
+  "target_scale": 3.4059214226125354,
+  "target_id": "F-LDE0_v2_K13_05"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(x, x), lde(lde(x, x), 0)), 0))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 5.515192146062316e-06,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K13_06"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(x, lde(x, lde(lde(x, 0), 0)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 7,
+  "var_target": 0.0011954638614722144,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K13_07"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(x, x), lde(x, x))), x), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 0.0007208860580464465,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K13_08"
+ },
+ {
+  "expression": "lde(lde(lde(lde(x, x), lde(x, x)), lde(x, x)), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 0.0017501649248049729,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K13_09"
+ },
+ {
+  "expression": "lde(lde(lde(x, x), lde(lde(lde(x, 0), 0), 0)), lde(x, 0))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.37545175905511313,
+  "target_scale": 2.9554717006374136,
+  "target_id": "F-LDE0_v2_K15_00"
+ },
+ {
+  "expression": "lde(lde(lde(lde(x, lde(lde(x, x), 0)), lde(x, x)), x), 0)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.017406494775642004,
+  "target_scale": 2.9506554394611353,
+  "target_id": "F-LDE0_v2_K15_01"
+ },
+ {
+  "expression": "lde(lde(lde(lde(lde(x, 0), 0), lde(lde(x, x), x)), x), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.0007303699665041564,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K15_02"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(x, 0), lde(x, 0))), 0), lde(x, x))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 2.7469752594934964,
+  "target_scale": 6.906589353156534,
+  "target_id": "F-LDE0_v2_K15_03"
+ },
+ {
+  "expression": "lde(lde(lde(lde(x, x), 0), x), lde(x, lde(lde(x, x), 0)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 4.2781023589704485e-08,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K15_04"
+ },
+ {
+  "expression": "lde(lde(x, 0), lde(x, lde(lde(lde(lde(x, x), 0), x), x)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.0030049310369432048,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K15_05"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(lde(x, lde(x, 0)), x), 0))), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 0.01953501518788396,
+  "target_scale": 1.0952243902139507,
+  "target_id": "F-LDE0_v2_K15_06"
+ },
+ {
+  "expression": "lde(lde(lde(lde(lde(x, 0), lde(lde(x, x), x)), x), 0), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 0.0024353401788725867,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K15_07"
+ },
+ {
+  "expression": "lde(lde(lde(x, x), x), lde(lde(lde(x, 0), 0), lde(x, x)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 45102.30109236001,
+  "target_scale": 1444.4099514517693,
+  "target_id": "F-LDE0_v2_K15_08"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, 0), lde(lde(x, x), 0))), lde(x, 0))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 0.39870467536709986,
+  "target_scale": 1.7327929575471672,
+  "target_id": "F-LDE0_v2_K15_09"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(x, x)), x), lde(x, lde(lde(lde(x, x), x), x)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 0.212115142750708,
+  "target_scale": 3.119261235962294,
+  "target_id": "F-LDE0_v2_K17_00"
+ },
+ {
+  "expression": "lde(lde(lde(lde(x, x), x), 0), lde(lde(x, x), lde(lde(x, 0), x)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 5,
+  "var_target": 26.887090367163573,
+  "target_scale": 44.610443495903766,
+  "target_id": "F-LDE0_v2_K17_01"
+ },
+ {
+  "expression": "lde(lde(lde(lde(lde(lde(x, x), x), 0), lde(x, x)), lde(x, 0)), 0)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.009586147911524028,
+  "target_scale": 1.18909182911585,
+  "target_id": "F-LDE0_v2_K17_02"
+ },
+ {
+  "expression": "lde(x, lde(lde(lde(x, lde(lde(x, 0), x)), x), lde(x, lde(x, 0))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 9595.33393029251,
+  "target_scale": 583.2609145583363,
+  "target_id": "F-LDE0_v2_K17_03"
+ },
+ {
+  "expression": "lde(lde(lde(x, x), 0), lde(lde(lde(x, lde(x, x)), x), lde(x, x)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 18697646.68040012,
+  "target_scale": 38745.710511433055,
+  "target_id": "F-LDE0_v2_K17_04"
+ },
+ {
+  "expression": "lde(x, lde(lde(x, lde(x, lde(lde(x, x), lde(x, lde(x, x))))), 0))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 8.228984424932113,
+  "target_scale": 21.378733595420936,
+  "target_id": "F-LDE0_v2_K17_05"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, x)), lde(lde(lde(x, lde(x, 0)), lde(x, 0)), 0))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 0.0815516235411562,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K17_06"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(x, lde(lde(x, x), lde(x, x))), x))), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.0004961780472517425,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K17_07"
+ },
+ {
+  "expression": "lde(lde(lde(x, x), x), lde(x, lde(lde(x, lde(x, x)), lde(x, x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 0.006068861893337361,
+  "target_scale": 1.2783455035140276,
+  "target_id": "F-LDE0_v2_K17_08"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(x, x), lde(lde(x, lde(x, lde(x, x))), x))), 0)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 0.05356699858812022,
+  "target_scale": 3.131267557173396,
+  "target_id": "F-LDE0_v2_K17_09"
+ },
+ {
+  "expression": "lde(lde(lde(x, x), lde(lde(x, lde(x, lde(x, x))), 0)), lde(lde(x, 0), 0))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 0.26745005232879066,
+  "target_scale": 5.2282668827669685,
+  "target_id": "F-LDE0_v2_K19_00"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, 0)), lde(lde(x, lde(lde(x, lde(lde(x, x), 0)), x)), x))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.0016440054715613067,
+  "target_scale": 1.1504576847304346,
+  "target_id": "F-LDE0_v2_K19_01"
+ },
+ {
+  "expression": "lde(lde(x, lde(lde(lde(x, lde(x, x)), lde(lde(x, x), x)), x)), lde(x, 0))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 0.008376889872030844,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K19_02"
+ },
+ {
+  "expression": "lde(lde(x, lde(x, lde(lde(lde(x, x), 0), lde(lde(x, 0), lde(x, x))))), 0)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 0.060138820627770595,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K19_03"
+ },
+ {
+  "expression": "lde(lde(lde(x, 0), x), lde(lde(x, lde(x, lde(x, 0))), lde(lde(x, x), x)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 10.121314134032852,
+  "target_scale": 14.741384778071334,
+  "target_id": "F-LDE0_v2_K19_04"
+ },
+ {
+  "expression": "lde(x, lde(x, lde(lde(lde(lde(lde(x, 0), x), 0), lde(lde(x, x), x)), x)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 2.1549035856790613e-05,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K19_05"
+ },
+ {
+  "expression": "lde(lde(lde(lde(x, 0), x), lde(x, lde(x, lde(x, lde(x, x))))), lde(x, 0))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 0.0049412186214417035,
+  "target_scale": 1.284160785864002,
+  "target_id": "F-LDE0_v2_K19_06"
+ },
+ {
+  "expression": "lde(lde(lde(lde(lde(lde(lde(x, x), 0), lde(x, 0)), lde(x, x)), x), 0), 0)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.00793477655675815,
+  "target_scale": 2.844509268480629,
+  "target_id": "F-LDE0_v2_K19_07"
+ },
+ {
+  "expression": "lde(lde(lde(lde(lde(lde(lde(x, x), lde(x, 0)), 0), 0), 0), 0), lde(x, 0))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.005016171757121708,
+  "target_scale": 1.0,
+  "target_id": "F-LDE0_v2_K19_08"
+ },
+ {
+  "expression": "lde(lde(lde(x, lde(lde(lde(lde(x, 0), lde(x, x)), lde(x, 0)), x)), 0), 0)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 0.3348695838061655,
+  "target_scale": 2.693012534608411,
+  "target_id": "F-LDE0_v2_K19_09"
+ }
+]

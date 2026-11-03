@@ -1,0 +1,44 @@
+target_id,K_construction,K_proven,m_operators,expression,alpha_rigidity,gradient_absence_g,best_proper_subtree_nmse,n_crit,rigid_subset,overflow_fraction,domain_lo,domain_hi,n_points
+K11_RS00,11,11,5,"eml(1, eml(eml(1, x), eml(eml(1, x), 1)))",0.6,true,19.362803658932457,3.0,true,0.0,2.0,3.0,100
+K11_RS01,11,11,5,"eml(1, eml(1, eml(eml(1, x), eml(1, x))))",0.8,true,59.814166466173276,4.0,true,0.0,2.0,3.0,100
+K11_RS02,11,11,5,"eml(1, eml(1, eml(eml(1, eml(1, x)), 1)))",1.0,true,107.5318444136303,5.0,true,0.0,2.0,3.0,100
+K11_RS03,11,11,5,"eml(1, eml(eml(eml(1, eml(x, x)), x), 1))",0.8,true,9.244302545045656,4.0,true,0.0,2.0,3.0,100
+K11_RS04,11,11,5,"eml(1, eml(eml(eml(1, eml(x, x)), 1), x))",0.8,true,3.065135439764065,4.0,true,0.0,2.0,3.0,100
+K13_RS00,13,,6,"eml(1, eml(eml(1, eml(x, eml(1, eml(1, x)))), 1))",0.6666666666666666,true,1.6486383827303999,4.0,true,0.0,2.0,3.0,100
+K13_RS01,13,,6,"eml(1, eml(eml(1, 1), eml(1, eml(eml(1, x), x))))",1.0,true,11894.59272664471,6.0,true,0.0,2.0,3.0,100
+K13_RS02,13,,6,"eml(1, eml(eml(1, eml(x, x)), eml(1, eml(x, 1))))",0.8333333333333334,true,8.463936491938165,5.0,true,0.0,2.0,3.0,100
+K15_RS00,15,,7,"eml(1, eml(eml(eml(x, eml(eml(x, x), x)), eml(x, x)), 1))",1.0,true,14771.089046448928,7.0,true,0.0,2.0,3.0,100
+K15_RS01,15,,7,"eml(eml(1, x), eml(eml(eml(1, eml(x, eml(x, 1))), 1), x))",1.0,true,10599.930049487904,7.0,true,0.0,2.0,3.0,100
+K15_RS02,15,,7,"eml(eml(1, eml(eml(eml(1, x), eml(1, eml(1, x))), 1)), 1)",0.5714285714285714,true,903.6153005914988,4.0,true,0.0,2.0,3.0,100
+K19_RS00,19,,9,"eml(1, eml(eml(x, eml(eml(x, eml(eml(eml(1, x), x), 1)), eml(1, 1))), x))",0.8888888888888888,true,23.27028136656466,8.0,true,0.0,2.0,3.0,100
+K19_RS01,19,,9,"eml(1, eml(eml(eml(1, eml(x, eml(1, eml(x, x)))), eml(x, 1)), eml(x, x)))",0.7777777777777778,true,160.95164037008325,7.0,true,0.0,2.0,3.0,100
+K19_RS02,19,,9,"eml(1, eml(eml(1, eml(1, eml(x, eml(eml(x, eml(x, eml(x, x))), 1)))), x))",0.8888888888888888,true,273.2367253957765,8.0,true,0.0,2.0,3.0,100
+K19_RS03,19,,9,"eml(1, eml(eml(1, eml(x, 1)), eml(eml(eml(eml(1, eml(x, 1)), 1), 1), x)))",1.0,true,57.51295190866267,9.0,true,0.0,2.0,3.0,100
+K21_RS00,21,,10,"eml(x, eml(eml(eml(1, eml(eml(1, eml(x, eml(x, 1))), 1)), eml(x, eml(x, 1))), 1))",0.8,true,16.701355959452513,8.0,true,0.0,2.0,3.0,100
+K21_RS01,21,,10,"eml(1, eml(1, eml(eml(1, eml(x, 1)), eml(x, eml(x, eml(eml(1, eml(x, 1)), 1))))))",0.6,true,8.349151619652185,6.0,true,0.0,2.0,3.0,100
+K21_RS02,21,,10,"eml(1, eml(eml(eml(eml(eml(1, eml(x, x)), eml(eml(1, 1), x)), eml(1, 1)), 1), 1))",1.0,true,50.50214990091774,10.0,true,0.0,2.0,3.0,100
+K21_RS03,21,,10,"eml(eml(eml(eml(1, eml(eml(1, eml(1, 1)), 1)), eml(x, x)), eml(1, 1)), eml(1, x))",0.6,true,1.005573467258168,6.0,true,0.0,2.0,3.0,100
+K21_RS04,21,,10,"eml(1, eml(eml(eml(x, eml(eml(x, eml(eml(1, eml(1, x)), eml(x, 1))), x)), 1), x))",1.0,true,406.5800762262736,10.0,true,0.0,2.0,3.0,100
+K21_RS05,21,,10,"eml(eml(eml(1, eml(x, 1)), 1), eml(eml(1, eml(x, eml(eml(eml(1, x), 1), 1))), 1))",0.7,true,2.829702928912906,7.0,true,0.0,2.0,3.0,100
+K23_RS00,23,,11,"eml(1, eml(eml(eml(eml(eml(eml(1, eml(eml(1, 1), eml(x, x))), x), x), x), eml(x, x)), x))",0.7272727272727273,true,1.9171034871579011,8.0,true,0.0,2.0,3.0,100
+K23_RS01,23,,11,"eml(eml(1, eml(x, eml(x, 1))), eml(eml(1, eml(eml(1, 1), 1)), eml(x, eml(x, eml(1, 1)))))",0.7272727272727273,true,16.962532904401634,8.0,true,0.0,2.0,3.0,100
+K23_RS02,23,,11,"eml(1, eml(eml(1, eml(1, eml(eml(1, eml(1, eml(1, x))), eml(eml(1, 1), 1)))), eml(x, x)))",0.9090909090909091,true,102.61019919616851,10.0,true,0.0,2.0,3.0,100
+K23_RS03,23,,11,"eml(eml(eml(1, x), eml(eml(eml(1, x), 1), 1)), eml(1, eml(eml(1, x), eml(eml(1, 1), x))))",0.8181818181818182,true,20.578253345818307,9.0,true,0.0,2.0,3.0,100
+K25_RS00,25,,12,"eml(1, eml(eml(x, eml(eml(x, eml(1, 1)), eml(eml(1, eml(x, x)), eml(1, eml(x, x))))), eml(1, 1)))",0.75,true,834100.7893553702,9.0,true,0.0,2.0,3.0,100
+K25_RS01,25,,12,"eml(1, eml(eml(eml(eml(eml(1, eml(x, x)), eml(eml(1, x), 1)), 1), eml(eml(1, eml(1, 1)), 1)), 1))",0.6666666666666666,true,1.4849935346853154,8.0,true,0.0,2.0,3.0,100
+K25_RS02,25,,12,"eml(1, eml(eml(eml(x, eml(eml(x, 1), x)), eml(eml(1, eml(1, eml(1, x))), x)), eml(1, eml(1, x))))",1.0,true,26546.850929142376,12.0,true,0.0,2.0,3.0,100
+K27_RS00,27,,13,"eml(x, eml(eml(eml(x, eml(eml(x, eml(x, eml(x, 1))), 1)), eml(1, eml(eml(1, x), eml(x, eml(1, x))))), 1))",0.8461538461538461,true,1.5634156485064201,11.0,true,0.0,2.0,3.0,100
+K27_RS01,27,,13,"eml(eml(eml(eml(eml(1, eml(x, eml(1, 1))), x), eml(eml(eml(1, eml(1, x)), eml(x, x)), 1)), eml(1, x)), 1)",0.6923076923076923,true,44.361837442955164,9.0,true,0.0,2.0,3.0,100
+K27_RS02,27,,13,"eml(1, eml(eml(eml(eml(1, eml(x, 1)), eml(eml(1, 1), x)), x), eml(eml(eml(1, eml(x, x)), eml(x, 1)), x)))",0.7692307692307693,true,9.328543437756247,10.0,true,0.0,2.0,3.0,100
+K27_RS03,27,,13,"eml(1, eml(eml(x, eml(eml(x, eml(x, x)), x)), eml(eml(eml(eml(x, eml(eml(x, eml(1, x)), 1)), 1), x), 1)))",0.6923076923076923,true,1.0767044934056484,9.0,true,0.0,2.0,3.0,100
+K27_RS04,27,,13,"eml(eml(1, eml(eml(1, x), eml(1, eml(1, 1)))), eml(1, eml(eml(1, x), eml(1, eml(eml(1, eml(x, x)), x)))))",0.6923076923076923,true,1.4430754439164362,9.0,true,0.0,2.0,3.0,100
+K27_RS05,27,,13,"eml(1, eml(1, eml(eml(eml(eml(1, eml(x, 1)), eml(x, 1)), 1), eml(eml(eml(1, eml(x, 1)), 1), eml(x, x)))))",0.6153846153846154,true,5.438435349266912,8.0,true,0.0,2.0,3.0,100
+K29_RS00,29,,14,"eml(1, eml(eml(x, eml(eml(x, eml(x, x)), eml(1, eml(x, 1)))), eml(eml(x, eml(1, x)), eml(eml(1, eml(x, x)), 1))))",0.6428571428571429,true,15.843586388311962,9.0,true,0.0,2.0,3.0,100
+K29_RS01,29,,14,"eml(eml(eml(eml(1, eml(1, x)), eml(eml(x, eml(x, eml(x, eml(eml(1, 1), x)))), 1)), eml(eml(x, eml(x, x)), 1)), x)",0.5714285714285714,true,70.64287523669792,8.0,true,0.0,2.0,3.0,100
+K29_RS02,29,,14,"eml(1, eml(eml(1, eml(1, eml(eml(eml(1, eml(x, 1)), eml(1, eml(1, 1))), eml(eml(1, eml(1, 1)), eml(x, 1))))), 1))",0.5714285714285714,true,6.631635127283253,8.0,true,0.0,2.0,3.0,100
+K31_RS00,31,,15,"eml(eml(eml(eml(eml(eml(1, eml(eml(1, eml(1, x)), x)), eml(x, 1)), eml(x, eml(eml(1, eml(x, x)), 1))), 1), eml(1, x)), x)",0.8,true,1.5661304139191563,12.0,true,0.0,2.0,3.0,100
+K31_RS01,31,,15,"eml(eml(eml(eml(1, x), eml(eml(1, eml(eml(1, x), eml(eml(eml(1, x), 1), x))), 1)), eml(1, eml(1, eml(1, eml(1, x))))), 1)",1.0,true,17037307.505370036,15.0,true,0.0,2.0,3.0,100
+K31_RS02,31,,15,"eml(1, eml(eml(1, eml(x, x)), eml(eml(eml(eml(1, eml(eml(1, 1), 1)), eml(x, x)), x), eml(x, eml(eml(x, eml(x, 1)), 1)))))",0.8,true,16.45679439233903,12.0,true,0.0,2.0,3.0,100
+K31_RS03,31,,15,"eml(1, eml(eml(eml(1, eml(x, 1)), eml(1, eml(eml(1, eml(eml(1, eml(x, 1)), eml(x, 1))), eml(1, eml(1, 1))))), eml(1, 1)))",0.8,true,60.28593968487405,12.0,true,0.0,2.0,3.0,100
+K31_RS04,31,,15,"eml(eml(eml(1, eml(eml(eml(eml(x, eml(eml(x, 1), 1)), 1), 1), eml(eml(1, eml(eml(eml(1, x), eml(x, 1)), 1)), 1))), x), 1)",0.9333333333333333,true,1.4218523976849011,14.0,true,0.0,2.0,3.0,100
+K31_RS05,31,,15,"eml(1, eml(1, eml(eml(eml(eml(eml(1, eml(x, x)), eml(eml(1, 1), x)), x), eml(1, x)), eml(eml(1, eml(x, x)), eml(1, 1)))))",0.6666666666666666,true,2.1822688099147696,10.0,true,0.0,2.0,3.0,100

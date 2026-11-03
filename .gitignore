@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+.venv-ext/
+.pytest_cache/
+*.egg-info/
+rust/cgp/target/
+data/runs/*/logs/
+data/runs/*/code/
+data/runs/*/status.json
+data/runs/*/console.log
+data/runs/*/queue.pid
+data/runs/*.log
+data/enumeration/*/level_*.npz
+data/enumeration_s2/**/level_*.npz

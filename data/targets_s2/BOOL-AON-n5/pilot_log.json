@@ -1,0 +1,125 @@
+{
+ "grammar": "BOOL-AON-n5",
+ "seed": 20261020,
+ "ceiling": 26,
+ "depth_limit": 10,
+ "levels": {
+  "3": {
+   "proven": true,
+   "n_level": 20,
+   "n_depth_ok": 20,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {}
+  },
+  "5": {
+   "proven": true,
+   "n_level": 80,
+   "n_depth_ok": 80,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {}
+  },
+  "7": {
+   "proven": true,
+   "n_level": 380,
+   "n_depth_ok": 380,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {}
+  },
+  "9": {
+   "proven": true,
+   "n_level": 2402,
+   "n_depth_ok": 2402,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {}
+  },
+  "11": {
+   "proven": true,
+   "n_level": 13990,
+   "n_depth_ok": 13990,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {}
+  },
+  "13": {
+   "proven": true,
+   "n_level": 65360,
+   "n_depth_ok": 65360,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {}
+  },
+  "16": {
+   "proven": true,
+   "n_level": 358834,
+   "n_depth_ok": 358834,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {}
+  },
+  "18": {
+   "proven": true,
+   "n_level": 1202090,
+   "n_depth_ok": 1202090,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {}
+  },
+  "20": {
+   "proven": true,
+   "n_level": 3630442,
+   "n_depth_ok": 3630442,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {}
+  },
+  "22": {
+   "proven": true,
+   "n_level": 9912570,
+   "n_depth_ok": 9912570,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {}
+  },
+  "24": {
+   "proven": true,
+   "n_level": 23601632,
+   "n_depth_ok": 23601152,
+   "excluded_share": 2.033757665576008e-05,
+   "found": 10,
+   "rejected": {}
+  },
+  "26": {
+   "proven": true,
+   "n_level": 48776536,
+   "n_depth_ok": 48776056,
+   "excluded_share": 9.840797222659958e-06,
+   "found": 10,
+   "rejected": {}
+  },
+  "28": {
+   "proven": false,
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 1193
+   }
+  },
+  "30": {
+   "proven": false,
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 638
+   }
+  },
+  "34": {
+   "proven": false,
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 383
+   }
+  }
+ }
+}

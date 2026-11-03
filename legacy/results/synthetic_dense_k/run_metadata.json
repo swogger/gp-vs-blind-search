@@ -1,0 +1,519 @@
+{
+ "experiment": "Dense-K synthetic-target experiment (R3.8 / R3.6 / R3.5)",
+ "git_commit": "54c6e15c07c433719221611e5812e828edf78b26",
+ "git_worktree_dirty": true,
+ "eml_gp_version": {
+  "note": "EML-GP has no version string; the search is ga-lib + the reference-cell loop of research/deduce_formula.py, pinned by these source hashes.",
+  "ga-lib/node.py": "d068e6c4a75e2ab45a0e0c588d2b3ebcc5c2a540",
+  "ga-lib/generator.py": "c23f05adf35c14d8aa441737e4b161ab10b603f7",
+  "ga-lib/evolution.py": "9c42b2e2b59ba7402aa6751fa9bc2d080e95fbea",
+  "research/deduce_formula.py": "b3faf1703a29820c1c91fcd9406bec5996f2b73e",
+  "research/synthetic/eml_synth_core.py": "7136cef71de30c897e498cd378ddd26379d9ed42",
+  "research/synthetic/make_targets.py": "557a350ddecb3501ec7d4090635b3634af260a3e"
+ },
+ "generation_rng_seed": 20260721,
+ "k_levels": [
+  7,
+  9,
+  11,
+  13,
+  15,
+  17,
+  19,
+  21,
+  23,
+  25,
+  27,
+  29,
+  31
+ ],
+ "targets_per_k": 30,
+ "seeds_per_target_regime": 10,
+ "seed_set": [
+  128182595,
+  1845143962,
+  1683375127,
+  893706906,
+  1753007184,
+  2107424273,
+  418825361,
+  215858185,
+  449904892,
+  1667643188
+ ],
+ "seed_source": "research/seeds.py (the main study's seed list), SEEDS[1:11]; the same 10 seeds are used for regime A and regime B, so runs are paired within (target, seed).",
+ "population": 100,
+ "generations": 200,
+ "node_cap": 2000,
+ "max_depth": 10,
+ "timeout_seconds": 600.0,
+ "batch_size": 75,
+ "plateau_patience_generations": 600,
+ "plateau_note": "eml_plateau_mult for the Phase-1 EML operator set is 12, so patience = max(50, 200//10) * 12 = 600 generations > the 200-generation budget: plateau stopping never fires, exactly as at the main study's reference cell. terminal_state 'early_stopped' is therefore expected to be absent.",
+ "domain": {
+  "lo": 2.0,
+  "hi": 3.0,
+  "variable": "x",
+  "note": "open interval (2, 3)"
+ },
+ "n_points": 100,
+ "definition_sample": "100 evenly spaced points on (2, 3), endpoints excluded (x_i = 2 + (i+1)/101). Used for target viability, the novelty hash, all structural measurements (alpha, g, best_proper_subtree_nmse) and exact_hash_match.",
+ "training_sample": "Per generation, BATCH_SIZE=75 points drawn uniformly at random from (2, 3) by the run's evolution RNG -- the reference implementation's stochastic mini-batch, with the domain changed to (2, 3). The target is an exact expression, so it is evaluated pointwise on each batch.",
+ "validation_sample": "One held-out sample of N=100 points drawn uniformly at random from (2, 3) by random.Random(generation_rng_seed+1), i.e. seed 20260722. It is identical for every target, regime and seed, is disjoint from the definition grid, and is never used for selection -- only for the convergence test and final_nmse. (The reference implementation redraws validation per master seed; a single fixed held-out sample was used instead so final_nmse is directly comparable across all runs. The per-run validation seed is still drawn and discarded so the pop/evo RNG streams match the reference derivation exactly.)",
+ "convergence_metric": "nMSE = MSE / Var(target), where MSE is mean |prediction - target|^2 over the held-out validation sample with non-finite residuals charged 1000 each (deduce_formula._mse semantics), and Var(target) = mean |t - mean(t)|^2 on the definition grid.",
+ "convergence_threshold": 1e-06,
+ "fitness_normalisation": "Selection fitness is the same nMSE. Normalising by a per-target constant does not change selection order; it makes the reference cell's absolute thresholds (parsimony bonus at 1e-5, convergence at 1e-6) mean the same thing for targets whose magnitudes span many orders of magnitude.",
+ "exact_hash_match": "sha1 of the candidate's output on the definition grid, real and imaginary parts each divided by the target scale max(1, max|target|) and rounded to 9 decimals, compared with the same hash of the target. Relative (not absolute) rounding, so it means 'same function to ~9 significant digits' regardless of target magnitude.",
+ "audit_minimality_max_k": 11,
+ "audit_minimality_tool": "eml-skill/.../eml_core/minimality.audit_minimality, leaves ('1','x'), precision 9, exhaustive over every EML tree with fewer operators. K_proven is populated only for K <= 11; above that K_construction is an upper bound.",
+ "target_generation": {
+  "sampling": "Uniform over EML trees with exactly m = (K-1)/2 operators, leaves i.i.d. uniform on {x, 1}, subject to ga-lib depth <= 10. The depth bound is the GP's own limit (mutate enforces absolute_max_depth = MAX_DEPTH = 10), so it guarantees every target lies inside the reachable search space. For m <= 6 the space is enumerated exhaustively and shuffled; above that it is sampled with Catalan-weighted, depth-bounded uniform sampling.",
+  "acceptance_filters": [
+   "viability: <=5% non-finite on the definition grid, Var >= 1e-12, max|v|/min|v| <= 1e6",
+   "self-consistency (strengthening of viability): the ground-truth tree must be finite on every definition and validation point, so the target itself scores nMSE = 0. Without this a target could be unconvergeable by construction and a 0% result would not be attributable to search. All accepted targets therefore have overflow_fraction = 0.",
+   "novelty: sha1 of the round-9 output vector on the definition grid, deduplicated globally across all K levels",
+   "irreducibility (dead-subtree): for every proper subtree, substitute each probe in {x, 1, 2.5, 0.5, eml(x,x)} whose own output differs from the subtree's; if any substitution leaves nMSE <= 1e-6 the subtree is dead at the experiment's own convergence tolerance and the target is rejected",
+   "minimality (K <= 11 only): exhaustive audit over all smaller EML trees; targets provably expressible with fewer operators are rejected and resampled, so every accepted K <= 11 target has K_proven == K_construction"
+  ],
+  "log": {
+   "design": "full",
+   "k_levels": [
+    7,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19,
+    21,
+    23,
+    25,
+    27,
+    29,
+    31
+   ],
+   "targets_per_k": 30,
+   "generation_rng_seed": 20260721,
+   "rigid_oversample_min": 8,
+   "per_k": {
+    "7": {
+     "source": "exhaustive_enumeration",
+     "candidates_screened": 55,
+     "accepted": 30,
+     "quota": 30,
+     "rigid_in_sample": 11,
+     "rigid_oversample_added": 0,
+     "rejections": {
+      "viability_overflow": 7,
+      "viability_variance": 2,
+      "viability_magnitude_ratio": 0,
+      "not_self_consistent": 0,
+      "duplicate": 2,
+      "dead_subtree": 14,
+      "not_minimal": 0
+     }
+    },
+    "9": {
+     "source": "exhaustive_enumeration",
+     "candidates_screened": 75,
+     "accepted": 30,
+     "quota": 30,
+     "rigid_in_sample": 12,
+     "rigid_oversample_added": 0,
+     "rejections": {
+      "viability_overflow": 13,
+      "viability_variance": 1,
+      "viability_magnitude_ratio": 0,
+      "not_self_consistent": 0,
+      "duplicate": 1,
+      "dead_subtree": 29,
+      "not_minimal": 1
+     }
+    },
+    "11": {
+     "source": "exhaustive_enumeration",
+     "candidates_screened": 157,
+     "accepted": 30,
+     "quota": 30,
+     "rigid_in_sample": 3,
+     "rigid_oversample_added": 5,
+     "rejections": {
+      "viability_overflow": 49,
+      "viability_variance": 2,
+      "viability_magnitude_ratio": 5,
+      "not_self_consistent": 0,
+      "duplicate": 0,
+      "dead_subtree": 54,
+      "not_minimal": 2
+     }
+    },
+    "13": {
+     "source": "exhaustive_enumeration",
+     "candidates_screened": 297,
+     "accepted": 30,
+     "quota": 30,
+     "rigid_in_sample": 5,
+     "rigid_oversample_added": 3,
+     "rejections": {
+      "viability_overflow": 106,
+      "viability_variance": 15,
+      "viability_magnitude_ratio": 6,
+      "not_self_consistent": 0,
+      "duplicate": 0,
+      "dead_subtree": 112,
+      "not_minimal": 0
+     }
+    },
+    "15": {
+     "source": "uniform_random_sampling",
+     "candidates_screened": 422,
+     "accepted": 30,
+     "quota": 30,
+     "rigid_in_sample": 5,
+     "rigid_oversample_added": 3,
+     "rejections": {
+      "viability_overflow": 163,
+      "viability_variance": 21,
+      "viability_magnitude_ratio": 8,
+      "not_self_consistent": 2,
+      "duplicate": 2,
+      "dead_subtree": 168,
+      "not_minimal": 0
+     }
+    },
+    "17": {
+     "source": "uniform_random_sampling",
+     "candidates_screened": 293,
+     "accepted": 30,
+     "quota": 30,
+     "rigid_in_sample": 8,
+     "rigid_oversample_added": 0,
+     "rejections": {
+      "viability_overflow": 124,
+      "viability_variance": 13,
+      "viability_magnitude_ratio": 8,
+      "not_self_consistent": 1,
+      "duplicate": 0,
+      "dead_subtree": 117,
+      "not_minimal": 0
+     }
+    },
+    "19": {
+     "source": "uniform_random_sampling",
+     "candidates_screened": 957,
+     "accepted": 30,
+     "quota": 30,
+     "rigid_in_sample": 4,
+     "rigid_oversample_added": 4,
+     "rejections": {
+      "viability_overflow": 387,
+      "viability_variance": 43,
+      "viability_magnitude_ratio": 19,
+      "not_self_consistent": 3,
+      "duplicate": 1,
+      "dead_subtree": 436,
+      "not_minimal": 0
+     }
+    },
+    "21": {
+     "source": "uniform_random_sampling",
+     "candidates_screened": 1270,
+     "accepted": 30,
+     "quota": 30,
+     "rigid_in_sample": 2,
+     "rigid_oversample_added": 6,
+     "rejections": {
+      "viability_overflow": 526,
+      "viability_variance": 61,
+      "viability_magnitude_ratio": 26,
+      "not_self_consistent": 6,
+      "duplicate": 0,
+      "dead_subtree": 576,
+      "not_minimal": 0
+     }
+    },
+    "23": {
+     "source": "uniform_random_sampling",
+     "candidates_screened": 3070,
+     "accepted": 30,
+     "quota": 30,
+     "rigid_in_sample": 4,
+     "rigid_oversample_added": 4,
+     "rejections": {
+      "viability_overflow": 1389,
+      "viability_variance": 139,
+      "viability_magnitude_ratio": 63,
+      "not_self_consistent": 14,
+      "duplicate": 2,
+      "dead_subtree": 1357,
+      "not_minimal": 0
+     }
+    },
+    "25": {
+     "source": "uniform_random_sampling",
+     "candidates_screened": 2333,
+     "accepted": 30,
+     "quota": 30,
+     "rigid_in_sample": 5,
+     "rigid_oversample_added": 3,
+     "rejections": {
+      "viability_overflow": 1098,
+      "viability_variance": 92,
+      "viability_magnitude_ratio": 47,
+      "not_self_consistent": 17,
+      "duplicate": 3,
+      "dead_subtree": 1022,
+      "not_minimal": 0
+     }
+    },
+    "27": {
+     "source": "uniform_random_sampling",
+     "candidates_screened": 3236,
+     "accepted": 30,
+     "quota": 30,
+     "rigid_in_sample": 2,
+     "rigid_oversample_added": 6,
+     "rejections": {
+      "viability_overflow": 1563,
+      "viability_variance": 149,
+      "viability_magnitude_ratio": 57,
+      "not_self_consistent": 11,
+      "duplicate": 5,
+      "dead_subtree": 1397,
+      "not_minimal": 0
+     }
+    },
+    "29": {
+     "source": "uniform_random_sampling",
+     "candidates_screened": 7462,
+     "accepted": 30,
+     "quota": 30,
+     "rigid_in_sample": 5,
+     "rigid_oversample_added": 3,
+     "rejections": {
+      "viability_overflow": 3908,
+      "viability_variance": 319,
+      "viability_magnitude_ratio": 149,
+      "not_self_consistent": 46,
+      "duplicate": 5,
+      "dead_subtree": 2938,
+      "not_minimal": 0
+     }
+    },
+    "31": {
+     "source": "uniform_random_sampling",
+     "candidates_screened": 17321,
+     "accepted": 30,
+     "quota": 30,
+     "rigid_in_sample": 2,
+     "rigid_oversample_added": 6,
+     "rejections": {
+      "viability_overflow": 9329,
+      "viability_variance": 677,
+      "viability_magnitude_ratio": 326,
+      "not_self_consistent": 88,
+      "duplicate": 6,
+      "dead_subtree": 6770,
+      "not_minimal": 0
+     }
+    }
+   },
+   "reviewer_ce": {
+    "expression": "eml(x, eml(eml(x, x), x))",
+    "passed_pipeline_unforced": false,
+    "filter_rejections": {
+     "dead_subtree": 1
+    }
+   }
+  }
+ },
+ "rigid_oversample": {
+  "note": "The pre-registered 30-targets-per-K random sample yields only 2-6 rigid targets (alpha >= 0.5 and g) at several K. Extra rigid-only targets were collected after each K's quota was filled, to a floor of 8 rigid targets per K, and written to SEPARATE files so Files 1-2 remain exactly the pre-registered design.",
+  "files": [
+   "synthetic_targets_rigid_oversample.csv",
+   "synthetic_runs_rigid_oversample.csv",
+   "synthetic_summary_by_K_rigid_oversample.csv"
+  ],
+  "warning": "Do NOT pool these with File 1 / File 2 when computing the P(converge) vs K curve -- they are selected on rigidity and would bias it. Use them only to strengthen the rigid-subset arm."
+ },
+ "alpha_rigidity_definition": "For each internal (operator) node, apply every applicable single local edit -- swap the node's two children, collapse the node to its left child, collapse to its right child, flip a leaf child 1<->x -- discarding edits whose subtree output is unchanged, and take the MEDIAN resulting whole-tree nMSE. The node is rigid if that median > 10, i.e. more than one order of magnitude worse than the mean-predictor baseline nMSE = 1 (nMSE(T*) = 0 exactly, so the baseline must be the trivial predictor, not T*). alpha = rigid nodes / m. synthetic_targets_extra.csv also carries the min-over-edits and swap-only variants.",
+ "gradient_absence_g_definition": "g = 1 iff best_proper_subtree_nmse >= trivial_leaf_nmse, where the minimum runs over proper subtrees rooted at operator nodes and trivial_leaf_nmse = min(nMSE(x), nMSE(1)). i.e. no partial structure beats the trivial leaves.",
+ "n_crit_definition": "alpha_rigidity * m_operators.",
+ "evaluator": {
+  "note": "Search operators are ga-lib verbatim. Fitness evaluation is vectorised with numpy over the sample instead of looping cmath per point; this keeps the 200-generation budget (not wall clock) the binding constraint, so no run is truncated by the 600 s timeout.",
+  "agreement": {
+   "description": "vectorised numpy evaluator vs ga-lib Node.evaluate (cmath), random trees from the GP's own generator, nMSE units",
+   "n_trees_compared": 18355,
+   "n_disagreements": 823,
+   "disagreement_rate": 0.044837918823208936,
+   "worst_relative_nmse_difference": 1.0,
+   "min_nmse_among_disagreements": 0.295716424622846,
+   "convergence_threshold": 1e-06,
+   "orders_of_magnitude_above_threshold": 5.470875446693762,
+   "per_target": [
+    {
+     "target_id": "K07_26",
+     "K": 7,
+     "n_compared": 1399,
+     "n_disagreements": 53,
+     "min_nmse_among_disagreements": 3.432280865976591
+    },
+    {
+     "target_id": "K09_13",
+     "K": 9,
+     "n_compared": 1403,
+     "n_disagreements": 69,
+     "min_nmse_among_disagreements": 3.9375648269253998
+    },
+    {
+     "target_id": "K11_04",
+     "K": 11,
+     "n_compared": 1415,
+     "n_disagreements": 70,
+     "min_nmse_among_disagreements": 2.1194310030398844
+    },
+    {
+     "target_id": "K13_00",
+     "K": 13,
+     "n_compared": 1411,
+     "n_disagreements": 63,
+     "min_nmse_among_disagreements": 1.2087729461536634
+    },
+    {
+     "target_id": "K15_19",
+     "K": 15,
+     "n_compared": 1403,
+     "n_disagreements": 56,
+     "min_nmse_among_disagreements": 1.2919594101338556
+    },
+    {
+     "target_id": "K17_12",
+     "K": 17,
+     "n_compared": 1424,
+     "n_disagreements": 66,
+     "min_nmse_among_disagreements": 463.06761011701144
+    },
+    {
+     "target_id": "K19_12",
+     "K": 19,
+     "n_compared": 1435,
+     "n_disagreements": 68,
+     "min_nmse_among_disagreements": 1.5843596277601144
+    },
+    {
+     "target_id": "K21_10",
+     "K": 21,
+     "n_compared": 1423,
+     "n_disagreements": 71,
+     "min_nmse_among_disagreements": 0.295716424622846
+    },
+    {
+     "target_id": "K23_08",
+     "K": 23,
+     "n_compared": 1408,
+     "n_disagreements": 73,
+     "min_nmse_among_disagreements": 66.00421844709133
+    },
+    {
+     "target_id": "K25_05",
+     "K": 25,
+     "n_compared": 1396,
+     "n_disagreements": 69,
+     "min_nmse_among_disagreements": 199.85012660181584
+    },
+    {
+     "target_id": "K27_16",
+     "K": 27,
+     "n_compared": 1426,
+     "n_disagreements": 40,
+     "min_nmse_among_disagreements": 3.640333066990476
+    },
+    {
+     "target_id": "K29_15",
+     "K": 29,
+     "n_compared": 1406,
+     "n_disagreements": 69,
+     "min_nmse_among_disagreements": 73.18561746331957
+    },
+    {
+     "target_id": "K31_00",
+     "K": 31,
+     "n_compared": 1406,
+     "n_disagreements": 56,
+     "min_nmse_among_disagreements": 3.3368942753721
+    }
+   ]
+  }
+ },
+ "confound_direction": "Construction-K over-estimates true K for K > 11 (no minimality proof is available there), and over-estimated targets are easier than their nominal K implies. Any observed drop in convergence with K is therefore a conservative estimate of the boundary: the true K50 can only be lower, not higher.",
+ "reviewer_ce": {
+  "expression": "eml(x, eml(eml(x, x), x))",
+  "target_id": "reviewer_ce",
+  "K_construction": 7,
+  "K_proven": 7,
+  "forced_inclusion": true,
+  "measured": {
+   "alpha_rigidity": 1.0,
+   "alpha_min_rule": 0.6666666666666666,
+   "alpha_swap_rule": 0.6666666666666666,
+   "gradient_absence_g": true,
+   "rigid_subset": true,
+   "conv_rate_A": 0.7,
+   "conv_rate_B": 0.3,
+   "percentile_within_K7_A": 45,
+   "percentile_within_K7_B": 32
+  },
+  "finding": "It is an unremarkable member of the K = 7 band: 7/10 in regime A and 3/10 in regime B, ranking 17th and 19th of 31 targets, below the band median in both. It is rigid (alpha >= 0.5 under all three rules) and gradient-free (g = true), so conditions (i)-(iii) hold for it empirically. It is NOT an outlier and should not be presented as easier or harder than a generic K = 7 target.",
+  "footnote": "One neutral caveat: it is the one target exempted from the dead-subtree filter. Substituting the constant 2.5 for the x at path RR leaves nMSE = 2.7e-7, below the 1e-6 threshold, because that leaf contributes -ln(x) ~ 1 to a quantity of magnitude 1e3-1e8 that is then passed through a logarithm. It is exactly minimal at K = 7 under the 1e-9 audit -- this is a property of the working tolerance, not a defect in the counterexample."
+ },
+ "rigidity_does_not_predict_beyond_scale": {
+  "warning": "The alpha_rigidity, gradient_absence_g and n_crit columns are reported as measured, but they do NOT carry predictive weight beyond K in this data. Do not write condition (ii)/(iii) as if they do.",
+  "conv_K_auc": 0.9136,
+  "conv_n_crit_auc": 0.747,
+  "conv_K_deviance": 3075.9,
+  "conv_n_crit_deviance": 4426.0,
+  "alpha_coefficient_given_K": "+0.69 (cluster-robust p = 0.022) -- POSITIVE, i.e. the opposite sign from what condition (ii) predicts",
+  "g_coefficient_given_K": "~0 (p = 0.79 / 0.69 / 0.99)",
+  "K_by_rigid_interaction": "coef -0.072, se 0.138, p = 0.604 -- there is no evidence the rigid subset declines faster with K. A separately fitted rigid-subset slope looks steeper only because the rigid subset is 39-40% of targets at K = 7/9 but 7-17% at higher K.",
+  "high_K_floor": "At K >= 21, rigid targets converge at 0.000 and non-rigid at 0.005: non-rigid targets fail at ~0% too.",
+  "robustness": "Holds under all three alpha rules (n_crit AUC 0.747 / 0.574 / 0.802 for median / min / swap-only, vs 0.914 for K alone).",
+  "caveat": "alpha is measured only on accepted targets, and the dead-subtree filter removes the most reducible ones, restricting alpha's range. That is an attenuation argument; it does not explain the sign.",
+  "detail": "analysis_scale_vs_rigidity.txt"
+ },
+ "low_k_extension": {
+  "note": "POST-HOC, outside the pre-registration. K = 3 and K = 5 were added after the main run to anchor the upper asymptote of the logistic fit and to give the main study's K = 3 flagship a synthetic counterpart. Both spaces are tiny (4 and 16 trees), enumerated exhaustively with no quota and no sampling, so there is no RNG dependence.",
+  "files": [
+   "synthetic_targets_lowk.csv",
+   "synthetic_runs_lowk.csv",
+   "synthetic_summary_by_K_lowk.csv"
+  ],
+  "results": {
+   "K3_A": 1.0,
+   "K3_B": 0.833,
+   "K5_A": 0.94,
+   "K5_B": 0.53
+  },
+  "warning": "Keep separate from Files 1-2 when reporting the pre-registered curve; label as post-hoc wherever plotted."
+ },
+ "calibration_against_real_targets": {
+  "note": "Two of the main study's real targets have an EXACT synthetic counterpart -- exp(x) = eml(x, 1) = K03_01 and ln(x) = eml(x, eml(eml(x, x), 1)) = K07_07 -- so they can be compared function-for-function at the same reference cell, not just by band placement. x1+x2 has no counterpart: it is two-variable, while every synthetic target is univariate over {x, 1}.",
+  "result": "exp(x) agrees (A 1.00 vs 1.00; B 1.00 vs 0.90, p = 0.25). For ln(x) the synthetic criterion is 75x stricter in absolute terms (Var = 0.0133, so nMSE <= 1e-6 means absolute MSE <= 1.3e-8 where the main study allows 1e-6). Re-scored under the main study's own absolute rule, synthetic ln(x) is 10/10 in both regimes: regime A then agrees with the real 23/30 (p = 0.16), regime B does not (real 6/30, p < 0.001).",
+  "interpretation": "The instrument reproduces the phenomenon and the location of the transition, but per-target rates are domain- and threshold-sensitive. The real ln(x) is sampled on (0.1, 5.0), which includes the steep near-zero region, versus the benign (2, 3) here. Present the overlay as 'same phenomenon, same transition location', NOT as 'identical rates'.",
+  "files": [
+   "calibration_same_function.csv",
+   "calibration_real_targets.csv"
+  ]
+ },
+ "terminal_states": [
+  "converged",
+  "early_stopped",
+  "timeout",
+  "budget_exhausted"
+ ],
+ "files": {
+  "synthetic_runs.csv": "File 1 (contract) -- one row per run",
+  "synthetic_targets.csv": "File 2 (contract) -- one row per target",
+  "synthetic_summary_by_K.csv": "File 3 (contract) -- one row per (K, regime)",
+  "synthetic_targets_extra.csv": "supplementary per-target diagnostics (alpha variants, Var(target), depth, hash)"
+ }
+}

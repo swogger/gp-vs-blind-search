@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+title: "Cross-representation mechanics of genetic-programming search: code, data and results"
+authors:
+  - family-names: Kazakov
+    given-names: Dimitar Georgiev
+    affiliation: Technical University of Varna
+    email: dimitar.kazakov@gmail.com
+type: software
+license: MIT
+repository-code: "https://github.com/swogger/gp-vs-blind-search"
+date-released: 2026-11-03

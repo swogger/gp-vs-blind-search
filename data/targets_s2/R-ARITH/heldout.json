@@ -1,0 +1,5402 @@
+[
+ {
+  "expression": "+(1, +(-(1, x), -(1, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3267326732673266,
+  "target_scale": 2.98019801980198,
+  "target_id": "R-ARITH_K09_00"
+ },
+ {
+  "expression": "-(1, *(+(x, 1), *(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 47.03243932020605,
+  "target_scale": 34.67424665219193,
+  "target_id": "R-ARITH_K09_01"
+ },
+ {
+  "expression": "+(1, *(+(x, 1), *(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 47.03243932020605,
+  "target_scale": 36.67424665219193,
+  "target_id": "R-ARITH_K09_02"
+ },
+ {
+  "expression": "-(*(+(x, x), *(x, x)), 1)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 117.87722311847752,
+  "target_scale": 52.4671091263621,
+  "target_id": "R-ARITH_K09_03"
+ },
+ {
+  "expression": "*(*(x, x), +(1, *(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 396.58618413607144,
+  "target_scale": 88.87666711951263,
+  "target_id": "R-ARITH_K09_04"
+ },
+ {
+  "expression": "*(x, *(-(x, 1), -(1, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 8.162685723926929,
+  "target_scale": 11.842269395060278,
+  "target_id": "R-ARITH_K09_05"
+ },
+ {
+  "expression": "*(x, -(*(x, x), +(x, 1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 13.812382414505699,
+  "target_scale": 14.802763464269178,
+  "target_id": "R-ARITH_K09_06"
+ },
+ {
+  "expression": "*(-(1, x), +(x, +(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 11.810401232261245,
+  "target_scale": 17.851779237329673,
+  "target_id": "R-ARITH_K09_07"
+ },
+ {
+  "expression": "*(+(x, x), -(1, +(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 26.550724302897883,
+  "target_scale": 29.782570336241545,
+  "target_id": "R-ARITH_K09_08"
+ },
+ {
+  "expression": "*(x, +(+(x, x), +(x, 1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 20.958916083746388,
+  "target_scale": 29.81217527693363,
+  "target_id": "R-ARITH_K09_09"
+ },
+ {
+  "expression": "-(x, +(+(1, 1), +(1, 1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683164,
+  "target_scale": 1.99009900990099,
+  "target_id": "R-ARITH_K09_10"
+ },
+ {
+  "expression": "-(-(x, 1), *(x, +(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6.637681075724471,
+  "target_scale": 15.89128516812077,
+  "target_id": "R-ARITH_K09_11"
+ },
+ {
+  "expression": "*(x, +(+(x, x), -(x, 1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 16.05792598473649,
+  "target_scale": 23.831977257131655,
+  "target_id": "R-ARITH_K09_12"
+ },
+ {
+  "expression": "+(-(x, 1), *(x, *(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 32.638124260820504,
+  "target_scale": 28.72365357308204,
+  "target_id": "R-ARITH_K09_13"
+ },
+ {
+  "expression": "+(+(1, 1), *(x, *(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 29.469305779619376,
+  "target_scale": 28.73355456318105,
+  "target_id": "R-ARITH_K09_14"
+ },
+ {
+  "expression": "+(x, *(+(x, x), +(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 36.10765499596718,
+  "target_scale": 38.75286736594451,
+  "target_id": "R-ARITH_K09_15"
+ },
+ {
+  "expression": "-(*(x, *(x, x)), +(x, 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 26.46385363505192,
+  "target_scale": 22.743455553280057,
+  "target_id": "R-ARITH_K09_16"
+ },
+ {
+  "expression": "-(1, *(+(x, 1), +(x, 1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4.007811358040027,
+  "target_scale": 14.920890108812861,
+  "target_id": "R-ARITH_K09_17"
+ },
+ {
+  "expression": "*(x, *(+(x, x), *(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1367.534057635308,
+  "target_scale": 159.8719500610035,
+  "target_id": "R-ARITH_K09_18"
+ },
+ {
+  "expression": "-(x, *(*(x, x), *(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 331.51463652750886,
+  "target_scale": 76.94587602060076,
+  "target_id": "R-ARITH_K09_19"
+ },
+ {
+  "expression": "-(*(-(x, 1), *(x, x)), 1)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 16.00100287590484,
+  "target_scale": 16.792862474170168,
+  "target_id": "R-ARITH_K09_20"
+ },
+ {
+  "expression": "+(1, *(-(1, x), *(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 16.00100287590484,
+  "target_scale": 16.792862474170168,
+  "target_id": "R-ARITH_K09_21"
+ },
+ {
+  "expression": "+(x, *(+(x, 1), +(x, 1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 5.233058882792502,
+  "target_scale": 18.91098911871385,
+  "target_id": "R-ARITH_K09_22"
+ },
+ {
+  "expression": "+(-(1, x), *(x, *(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 26.46385363505192,
+  "target_scale": 24.743455553280057,
+  "target_id": "R-ARITH_K09_23"
+ },
+ {
+  "expression": "+(1, *(+(x, 1), +(x, 1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4.007811358040026,
+  "target_scale": 16.920890108812863,
+  "target_id": "R-ARITH_K09_24"
+ },
+ {
+  "expression": "*(+(x, 1), +(x, +(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 26.513371529290943,
+  "target_scale": 35.79237329673561,
+  "target_id": "R-ARITH_K09_25"
+ },
+ {
+  "expression": "-(*(-(x, 1), -(x, 1)), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3320687837826032,
+  "target_scale": 1.0,
+  "target_id": "R-ARITH_K09_26"
+ },
+ {
+  "expression": "*(x, -(*(x, x), +(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6.627530609062437,
+  "target_scale": 8.852170385159287,
+  "target_id": "R-ARITH_K09_27"
+ },
+ {
+  "expression": "*(x, -(-(1, x), +(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 16.05792598473649,
+  "target_scale": 23.831977257131655,
+  "target_id": "R-ARITH_K09_28"
+ },
+ {
+  "expression": "*(*(x, x), -(1, *(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.236537462730777,
+   "bits_sem": 8.011227255423254,
+   "bits_sem_uncorrected": 8.011227255423254,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 291.2756753184547,
+  "target_scale": 70.99528294149087,
+  "target_id": "R-ARITH_K09_29"
+ },
+ {
+  "expression": "*(+(x, +(x, x)), *(x, *(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3076.9516296794436,
+  "target_scale": 239.8079250915052,
+  "target_id": "R-ARITH_K11_00"
+ },
+ {
+  "expression": "-(*(x, x), +(+(x, x), +(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0870192788321082,
+  "target_scale": 3.999901970395059,
+  "target_id": "R-ARITH_K11_01"
+ },
+ {
+  "expression": "+(+(1, 1), +(+(1, 1), +(x, 1)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683164,
+  "target_scale": 7.99009900990099,
+  "target_id": "R-ARITH_K11_02"
+ },
+ {
+  "expression": "+(1, *(x, -(-(1, x), +(x, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 16.05792598473649,
+  "target_scale": 22.831977257131655,
+  "target_id": "R-ARITH_K11_03"
+ },
+ {
+  "expression": "*(+(x, x), *(+(x, 1), +(x, 1)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 293.9715413808105,
+  "target_scale": 95.2100755022076,
+  "target_id": "R-ARITH_K11_04"
+ },
+ {
+  "expression": "*(-(x, 1), *(-(1, x), *(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 82.41307909641704,
+  "target_scale": 35.40955799315053,
+  "target_id": "R-ARITH_K11_05"
+ },
+ {
+  "expression": "+(+(1, 1), *(*(x, x), *(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 341.883514408827,
+  "target_scale": 81.93597503050175,
+  "target_id": "R-ARITH_K11_06"
+ },
+ {
+  "expression": "*(x, -(*(-(x, 1), -(1, x)), 1))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 9.861207175425081,
+  "target_scale": 14.832368404961267,
+  "target_id": "R-ARITH_K11_07"
+ },
+ {
+  "expression": "-(*(*(x, x), -(*(x, x), 1)), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 291.2756753184547,
+  "target_scale": 69.99528294149087,
+  "target_id": "R-ARITH_K11_08"
+ },
+ {
+  "expression": "*(x, +(x, *(+(x, x), +(x, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 535.6191806809486,
+  "target_scale": 115.87491034173507,
+  "target_id": "R-ARITH_K11_09"
+ },
+ {
+  "expression": "+(x, *(*(x, x), +(x, -(x, 1))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 94.33232410352946,
+  "target_scale": 47.5165160472522,
+  "target_id": "R-ARITH_K11_10"
+ },
+ {
+  "expression": "+(+(x, 1), *(+(x, x), +(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 36.10765499596718,
+  "target_scale": 39.75286736594451,
+  "target_id": "R-ARITH_K11_11"
+ },
+ {
+  "expression": "+(x, *(+(1, 1), +(x, +(1, 1))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.735148514851485,
+  "target_scale": 12.97029702970297,
+  "target_id": "R-ARITH_K11_12"
+ },
+ {
+  "expression": "*(+(x, 1), *(*(x, x), *(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6096.567781919697,
+  "target_scale": 318.9524548246753,
+  "target_id": "R-ARITH_K11_13"
+ },
+ {
+  "expression": "*(+(1, 1), +(+(1, 1), *(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 8.189661273744269,
+  "target_scale": 21.88138417802176,
+  "target_id": "R-ARITH_K11_14"
+ },
+ {
+  "expression": "-(x, *(x, *(+(x, x), +(x, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 459.2420343906898,
+  "target_scale": 103.9441192428232,
+  "target_id": "R-ARITH_K11_15"
+ },
+ {
+  "expression": "-(1, *(x, *(+(x, x), *(x, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1367.534057635308,
+  "target_scale": 158.8719500610035,
+  "target_id": "R-ARITH_K11_16"
+ },
+ {
+  "expression": "*(+(x, 1), -(+(x, 1), *(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 23.621767827118127,
+  "target_scale": 19.75335654337907,
+  "target_id": "R-ARITH_K11_17"
+ },
+ {
+  "expression": "*(-(x, 1), -(*(x, *(x, x)), 1))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 163.56163176309718,
+  "target_scale": 51.21232145741971,
+  "target_id": "R-ARITH_K11_18"
+ },
+ {
+  "expression": "*(*(x, x), +(+(x, 1), *(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 642.0806539947569,
+  "target_scale": 115.61022168269369,
+  "target_id": "R-ARITH_K11_19"
+ },
+ {
+  "expression": "-(x, *(x, *(+(x, 1), +(x, 1))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 68.69040349766487,
+  "target_scale": 44.61493874120281,
+  "target_id": "R-ARITH_K11_20"
+ },
+ {
+  "expression": "*(x, -(*(-(1, x), *(x, x)), 1))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 178.28848323659855,
+  "target_scale": 56.19251947722169,
+  "target_id": "R-ARITH_K11_21"
+ },
+ {
+  "expression": "*(+(1, *(x, x)), +(x, +(x, 1)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 165.26501217235594,
+  "target_scale": 69.38799923517496,
+  "target_id": "R-ARITH_K11_22"
+ },
+ {
+  "expression": "-(*(x, *(+(x, 1), +(x, 1))), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 73.49288534520262,
+  "target_scale": 46.6050377511038,
+  "target_id": "R-ARITH_K11_23"
+ },
+ {
+  "expression": "*(+(x, -(x, 1)), +(x, +(1, 1)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 13.825799887605656,
+  "target_scale": 24.851681207724734,
+  "target_id": "R-ARITH_K11_24"
+ },
+ {
+  "expression": "*(+(x, x), +(+(x, x), +(1, 1)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 47.13488271873945,
+  "target_scale": 47.72316439564749,
+  "target_id": "R-ARITH_K11_25"
+ },
+ {
+  "expression": "-(*(+(x, x), +(1, +(1, 1))), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.94059405940594,
+  "target_scale": 16.94059405940594,
+  "target_id": "R-ARITH_K11_26"
+ },
+ {
+  "expression": "+(1, *(+(x, x), +(x, +(x, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 73.70695146369845,
+  "target_scale": 54.644152534065284,
+  "target_id": "R-ARITH_K11_27"
+ },
+ {
+  "expression": "-(*(*(x, x), +(x, +(x, 1))), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 150.9560748812148,
+  "target_scale": 61.40780121537298,
+  "target_id": "R-ARITH_K11_28"
+ },
+ {
+  "expression": "*(+(x, +(x, 1)), -(1, *(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.399974633775464,
+   "bits_sem": 9.727920454563199,
+   "bits_sem_uncorrected": 9.727920454563199,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 137.30060293660833,
+  "target_scale": 55.427603195571,
+  "target_id": "R-ARITH_K11_29"
+ },
+ {
+  "expression": "+(-(1, +(x, x)), -(-(1, x), *(x, x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 5.233058882792501,
+  "target_scale": 15.910989118713852,
+  "target_id": "R-ARITH_K13_00"
+ },
+ {
+  "expression": "-(x, *(+(x, x), +(+(x, x), +(x, 1))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 78.68962473102516,
+  "target_scale": 56.63425154396627,
+  "target_id": "R-ARITH_K13_01"
+ },
+ {
+  "expression": "+(1, *(+(1, -(1, x)), -(1, *(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 5.255741830831611,
+  "target_scale": 8.862071375258298,
+  "target_id": "R-ARITH_K13_02"
+ },
+ {
+  "expression": "+(x, *(+(x, x), -(1, *(x, +(x, x)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 435.19841723415004,
+  "target_scale": 97.96392122302123,
+  "target_id": "R-ARITH_K13_03"
+ },
+ {
+  "expression": "*(+(1, -(1, x)), +(+(x, x), -(x, 1)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 5.275747766914715,
+  "target_scale": 7.891383197725713,
+  "target_id": "R-ARITH_K13_04"
+ },
+ {
+  "expression": "-(+(1, +(1, 1)), *(+(x, 1), *(x, x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 47.03243932020606,
+  "target_scale": 32.67424665219193,
+  "target_id": "R-ARITH_K13_05"
+ },
+ {
+  "expression": "+(x, *(+(x, -(x, 1)), -(1, *(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 73.55603367966306,
+  "target_scale": 36.55612000764825,
+  "target_id": "R-ARITH_K13_06"
+ },
+ {
+  "expression": "*(*(x, x), -(x, *(*(x, x), *(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 32673.68306314862,
+  "target_scale": 687.9493850193973,
+  "target_id": "R-ARITH_K13_07"
+ },
+ {
+  "expression": "*(*(x, x), +(x, *(+(x, x), -(1, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 429.7011345103904,
+  "target_scale": 79.67128637146035,
+  "target_id": "R-ARITH_K13_08"
+ },
+ {
+  "expression": "-(-(1, x), *(+(x, 1), +(x, +(1, 1))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6.62167274417864,
+  "target_scale": 21.90108812861484,
+  "target_id": "R-ARITH_K13_09"
+ },
+ {
+  "expression": "*(x, +(+(1, 1), *(+(x, 1), *(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 599.2643914436677,
+  "target_scale": 112.64972761348479,
+  "target_id": "R-ARITH_K13_10"
+ },
+ {
+  "expression": "*(+(x, *(x, x)), -(-(1, x), +(x, x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 355.6943364865497,
+  "target_scale": 95.09194885766392,
+  "target_id": "R-ARITH_K13_11"
+ },
+ {
+  "expression": "-(1, *(+(x, 1), +(+(x, x), +(x, 1))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 29.53564875701371,
+  "target_scale": 38.7824723066366,
+  "target_id": "R-ARITH_K13_12"
+ },
+ {
+  "expression": "*(+(x, +(1, 1)), *(-(1, x), *(x, x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 443.70998205718803,
+  "target_scale": 88.78814541566103,
+  "target_id": "R-ARITH_K13_13"
+ },
+ {
+  "expression": "-(*(*(x, x), +(+(1, 1), *(x, x))), 1)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 455.38368450018817,
+  "target_scale": 96.81735920852351,
+  "target_id": "R-ARITH_K13_14"
+ },
+ {
+  "expression": "+(x, *(+(x, 1), +(+(x, x), *(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 111.79123791401501,
+  "target_scale": 62.52592785991666,
+  "target_id": "R-ARITH_K13_15"
+ },
+ {
+  "expression": "*(*(x, x), +(-(1, x), *(x, *(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3093.5086559329206,
+  "target_scale": 221.22361732000334,
+  "target_id": "R-ARITH_K13_16"
+ },
+ {
+  "expression": "*(+(1, +(1, 1)), *(+(x, x), -(x, 1)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 47.24160492904499,
+  "target_scale": 35.703558474659346,
+  "target_id": "R-ARITH_K13_17"
+ },
+ {
+  "expression": "*(+(1, 1), +(x, +(+(1, 1), *(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 11.783720679684862,
+  "target_scale": 27.861582197823743,
+  "target_id": "R-ARITH_K13_18"
+ },
+ {
+  "expression": "+(+(x, 1), *(x, *(-(x, 1), *(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 178.28848323659855,
+  "target_scale": 57.19251947722169,
+  "target_id": "R-ARITH_K13_19"
+ },
+ {
+  "expression": "-(1, *(+(x, x), +(+(x, x), *(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 274.7616139906595,
+  "target_scale": 88.22987748240563,
+  "target_id": "R-ARITH_K13_20"
+ },
+ {
+  "expression": "*(x, -(*(*(x, x), +(x, +(x, x))), x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2921.0332817714543,
+  "target_scale": 230.86723300249434,
+  "target_id": "R-ARITH_K13_21"
+ },
+ {
+  "expression": "+(*(x, *(x, x)), *(+(x, x), -(x, 1)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 59.57553881249034,
+  "target_scale": 38.63474072140083,
+  "target_id": "R-ARITH_K13_22"
+ },
+ {
+  "expression": "-(x, *(+(x, 1), +(1, *(x, *(x, x)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 571.8622660453618,
+  "target_scale": 107.6695295936828,
+  "target_id": "R-ARITH_K13_23"
+ },
+ {
+  "expression": "*(+(1, *(x, x)), -(-(x, 1), *(x, x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 244.39670204382037,
+  "target_scale": 69.09370563544147,
+  "target_id": "R-ARITH_K13_24"
+ },
+ {
+  "expression": "+(x, *(+(x, -(x, 1)), *(x, *(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1013.8801416557994,
+  "target_scale": 136.12849450772345,
+  "target_id": "R-ARITH_K13_25"
+ },
+ {
+  "expression": "*(*(x, +(x, x)), +(+(x, x), -(x, 1)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 882.8960506742347,
+  "target_scale": 142.51994320106454,
+  "target_id": "R-ARITH_K13_26"
+ },
+ {
+  "expression": "*(+(x, -(x, 1)), +(1, *(x, *(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1031.9391779471357,
+  "target_scale": 138.11859351762442,
+  "target_id": "R-ARITH_K13_27"
+ },
+ {
+  "expression": "*(+(1, -(1, x)), -(*(x, +(x, x)), 1))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 23.684861711471267,
+  "target_scale": 16.714241760417586,
+  "target_id": "R-ARITH_K13_28"
+ },
+ {
+  "expression": "+(1, *(-(x, 1), +(+(x, x), -(x, 1))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.63300384736784,
+   "bits_sem": 11.458406613236532,
+   "bits_sem_uncorrected": 11.458406613236532,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 9.931688360974118,
+  "target_scale": 16.861680227428685,
+  "target_id": "R-ARITH_K13_29"
+ },
+ {
+  "expression": "-(*(+(1, *(x, x)), +(x, -(x, 1))), +(1, 1))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 99.93481255108023,
+  "target_scale": 47.5066150571532,
+  "target_id": "R-ARITH_K15_00"
+ },
+ {
+  "expression": "*(+(1, *(x, x)), +(1, +(-(1, x), *(x, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 290.9564831394902,
+  "target_scale": 79.03439772445235,
+  "target_id": "R-ARITH_K15_01"
+ },
+ {
+  "expression": "*(x, +(x, *(+(x, x), -(+(1, 1), *(x, x)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 892.1668965081258,
+  "target_scale": 115.16848961594911,
+  "target_id": "R-ARITH_K15_02"
+ },
+ {
+  "expression": "*(-(1, *(x, +(x, x))), *(+(x, x), +(x, 1)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 8507.910625457649,
+  "target_scale": 402.81653617690745,
+  "target_id": "R-ARITH_K15_03"
+ },
+ {
+  "expression": "-(*(+(1, 1), -(-(x, 1), +(1, 1))), *(x, x))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.7404846253667614,
+  "target_scale": 8.9604940692089,
+  "target_id": "R-ARITH_K15_04"
+ },
+ {
+  "expression": "*(+(x, *(x, x)), +(1, *(+(x, x), +(x, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 9479.576862869622,
+  "target_scale": 438.6089094736431,
+  "target_id": "R-ARITH_K15_05"
+ },
+ {
+  "expression": "*(*(x, x), +(+(x, +(1, 1)), *(x, +(x, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2047.8643704820372,
+  "target_scale": 204.48688880220632,
+  "target_id": "R-ARITH_K15_06"
+ },
+ {
+  "expression": "-(*(x, x), *(+(x, x), +(+(x, x), +(x, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 100.32335060336729,
+  "target_scale": 62.584844623076165,
+  "target_id": "R-ARITH_K15_07"
+ },
+ {
+  "expression": "*(-(x, +(1, 1)), +(x, +(+(1, 1), +(x, 1))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6.637681075724471,
+  "target_scale": 8.891285168120772,
+  "target_id": "R-ARITH_K15_08"
+ },
+ {
+  "expression": "*(-(x, 1), +(1, *(+(x, x), -(*(x, x), 1))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 583.0197266895831,
+  "target_scale": 96.49375378632261,
+  "target_id": "R-ARITH_K15_09"
+ },
+ {
+  "expression": "*(-(x, 1), -(-(1, x), *(+(x, x), *(x, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 728.9393513778036,
+  "target_scale": 110.36533500385029,
+  "target_id": "R-ARITH_K15_10"
+ },
+ {
+  "expression": "-(*(+(x, x), -(*(+(x, x), +(x, x)), 1)), 1)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1836.968137562759,
+  "target_scale": 206.8882384856464,
+  "target_id": "R-ARITH_K15_11"
+ },
+ {
+  "expression": "*(x, *(+(x, +(x, 1)), +(+(x, 1), *(x, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3342.50891936725,
+  "target_scale": 269.88478902748034,
+  "target_id": "R-ARITH_K15_12"
+ },
+ {
+  "expression": "*(+(x, 1), -(1, *(+(x, x), +(x, +(x, 1)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 934.9242957880869,
+  "target_scale": 162.5684697966905,
+  "target_id": "R-ARITH_K15_13"
+ },
+ {
+  "expression": "+(1, *(*(x, +(x, x)), +(+(x, x), -(x, 1))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 882.8960506742347,
+  "target_scale": 143.51994320106454,
+  "target_id": "R-ARITH_K15_14"
+ },
+ {
+  "expression": "+(1, +(*(x, *(x, x)), *(+(x, x), +(x, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 124.29082376319887,
+  "target_scale": 63.49632291922457,
+  "target_id": "R-ARITH_K15_15"
+ },
+ {
+  "expression": "+(x, *(-(1, *(x, x)), *(-(x, 1), *(x, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1360.8597273271384,
+  "target_scale": 138.2975432796006,
+  "target_id": "R-ARITH_K15_16"
+ },
+ {
+  "expression": "-(x, *(*(x, x), +(x, *(+(x, x), +(x, x)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6256.835623405408,
+  "target_scale": 343.48735567528706,
+  "target_id": "R-ARITH_K15_17"
+ },
+ {
+  "expression": "*(+(x, +(x, 1)), +(1, *(+(x, x), *(x, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 7288.3687828369175,
+  "target_scale": 380.19120726817107,
+  "target_id": "R-ARITH_K15_18"
+ },
+ {
+  "expression": "+(x, *(+(1, -(1, x)), +(+(x, x), +(x, 1))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6.6643616283008535,
+  "target_scale": 6.881482207626703,
+  "target_id": "R-ARITH_K15_19"
+ },
+ {
+  "expression": "*(+(x, 1), *(+(x, +(x, x)), +(x, +(x, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3809.627584936691,
+  "target_scale": 321.06821986972733,
+  "target_id": "R-ARITH_K15_20"
+ },
+ {
+  "expression": "-(*(+(x, +(1, 1)), +(-(x, 1), -(x, 1))), 1)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 11.783720679684862,
+  "target_scale": 18.861582197823743,
+  "target_id": "R-ARITH_K15_21"
+ },
+ {
+  "expression": "-(+(1, 1), *(+(x, +(x, x)), *(x, +(x, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1060.8950080662976,
+  "target_scale": 158.40132737908627,
+  "target_id": "R-ARITH_K15_22"
+ },
+ {
+  "expression": "+(*(x, x), *(+(x, x), +(+(1, 1), +(1, 1))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 13.809791556059823,
+  "target_scale": 32.8614841682188,
+  "target_id": "R-ARITH_K15_23"
+ },
+ {
+  "expression": "-(-(x, +(1, 1)), *(x, *(+(x, x), +(x, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 459.2420343906898,
+  "target_scale": 105.9441192428232,
+  "target_id": "R-ARITH_K15_24"
+ },
+ {
+  "expression": "+(x, *(+(x, 1), +(+(x, 1), *(x, *(x, x)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 685.8793866466712,
+  "target_scale": 125.58051871239665,
+  "target_id": "R-ARITH_K15_25"
+ },
+ {
+  "expression": "*(+(-(x, 1), -(x, 1)), +(+(1, 1), +(x, 1)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 16.031245432160105,
+  "target_scale": 23.841780217625722,
+  "target_id": "R-ARITH_K15_26"
+ },
+ {
+  "expression": "*(x, -(x, *(+(1, *(x, x)), +(x, +(x, x)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3401.0728174060387,
+  "target_scale": 257.68930926952703,
+  "target_id": "R-ARITH_K15_27"
+ },
+ {
+  "expression": "-(1, *(*(x, +(x, x)), +(+(1, 1), +(x, 1))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 377.77279324798315,
+  "target_scale": 106.11126166042739,
+  "target_id": "R-ARITH_K15_28"
+ },
+ {
+  "expression": "+(+(x, 1), *(-(x, 1), *(*(x, x), *(x, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 27.915668329648696,
+   "bits_sem": 13.24852060493843,
+   "bits_sem_uncorrected": 13.248965263607657,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1716.0587040746257,
+  "target_scale": 163.0706037735728,
+  "target_id": "R-ARITH_K15_29"
+ },
+ {
+  "expression": "-(*(-(*(x, x), 1), +(+(x, x), +(x, 1))), +(1, 1))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 284.3187576508502,
+  "target_scale": 77.17105874885105,
+  "target_id": "R-ARITH_K17_00"
+ },
+ {
+  "expression": "-(-(x, x), *(+(1, *(x, x)), +(+(x, x), +(1, 1))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 204.07235793830202,
+  "target_scale": 79.32869132418584,
+  "target_id": "R-ARITH_K17_01"
+ },
+ {
+  "expression": "*(-(*(x, x), +(x, 1)), +(1, *(x, +(x, +(x, x)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1302.567882461978,
+  "target_scale": 137.73577821403933,
+  "target_id": "R-ARITH_K17_02"
+ },
+ {
+  "expression": "*(-(x, *(x, *(x, x))), -(x, *(*(x, x), *(x, x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 243670.36799807558,
+  "target_scale": 1826.960987303332,
+  "target_id": "R-ARITH_K17_03"
+ },
+ {
+  "expression": "*(*(-(x, 1), *(x, x)), +(x, *(+(x, x), +(x, x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 31556.51942440498,
+  "target_scale": 689.5244395220078,
+  "target_id": "R-ARITH_K17_04"
+ },
+ {
+  "expression": "*(+(x, x), -(*(+(x, x), -(+(1, 1), *(x, x))), 1))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3987.0645839789267,
+  "target_scale": 254.19856142972193,
+  "target_id": "R-ARITH_K17_05"
+ },
+ {
+  "expression": "*(+(x, x), *(+(x, -(x, 1)), +(+(1, 1), -(1, x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.340054629435738,
+  "target_scale": 12.096107836447795,
+  "target_id": "R-ARITH_K17_06"
+ },
+ {
+  "expression": "*(+(x, +(1, 1)), -(+(x, x), *(*(x, x), *(x, x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 8574.631332699599,
+  "target_scale": 369.04664963755135,
+  "target_id": "R-ARITH_K17_07"
+ },
+ {
+  "expression": "+(1, *(+(x, x), +(1, *(x, *(+(x, x), +(x, x))))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 22048.08063163236,
+  "target_scale": 646.467998263816,
+  "target_id": "R-ARITH_K17_08"
+ },
+ {
+  "expression": "*(+(x, x), *(-(1, +(x, x)), *(+(x, x), +(x, 1))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 26867.895094518834,
+  "target_scale": 710.6592501406948,
+  "target_id": "R-ARITH_K17_09"
+ },
+ {
+  "expression": "+(1, *(+(1, -(1, x)), +(1, *(+(x, x), +(x, 1)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 51.117338240174995,
+  "target_scale": 23.61542791863737,
+  "target_id": "R-ARITH_K17_10"
+ },
+ {
+  "expression": "-(*(+(1, 1), -(*(-(x, 1), *(x, x)), +(1, 1))), 1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 64.00401150361938,
+  "target_scale": 30.585724948340335,
+  "target_id": "R-ARITH_K17_11"
+ },
+ {
+  "expression": "+(*(x, x), *(+(x, +(x, x)), *(+(x, x), +(x, x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4431.816066249433,
+  "target_scale": 329.74334684718343,
+  "target_id": "R-ARITH_K17_12"
+ },
+ {
+  "expression": "*(-(x, 1), *(+(1, +(1, 1)), +(+(1, 1), *(x, x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 187.81508527743702,
+  "target_scale": 65.31918148191644,
+  "target_id": "R-ARITH_K17_13"
+ },
+ {
+  "expression": "+(-(1, x), *(+(x, *(x, x)), *(+(x, 1), *(x, x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 10341.322994494867,
+  "target_scale": 423.63188540845715,
+  "target_id": "R-ARITH_K17_14"
+ },
+ {
+  "expression": "*(x, -(*(+(x, x), -(1, +(x, x))), *(x, *(x, x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1394.1835969893216,
+  "target_scale": 168.98880910520418,
+  "target_id": "R-ARITH_K17_15"
+ },
+ {
+  "expression": "*(x, -(*(+(x, +(x, x)), *(+(x, 1), +(x, 1))), 1))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 8466.38031180673,
+  "target_scale": 424.04122972772313,
+  "target_id": "R-ARITH_K17_16"
+ },
+ {
+  "expression": "+(-(1, *(x, *(x, x))), *(+(1, 1), +(1, +(1, 1))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 29.469305779619386,
+  "target_scale": 19.73355456318105,
+  "target_id": "R-ARITH_K17_17"
+ },
+ {
+  "expression": "-(-(x, +(1, 1)), *(x, +(x, *(+(x, x), +(x, x)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 522.53549091456,
+  "target_scale": 114.88481133183409,
+  "target_id": "R-ARITH_K17_18"
+ },
+ {
+  "expression": "*(+(x, x), *(-(1, *(x, x)), +(-(x, 1), -(x, 1))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2278.0724909633363,
+  "target_scale": 189.00730955284325,
+  "target_id": "R-ARITH_K17_19"
+ },
+ {
+  "expression": "*(+(1, 1), +(1, *(+(x, x), -(*(x, +(x, x)), 1))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1788.5541705764124,
+  "target_scale": 203.90804046584444,
+  "target_id": "R-ARITH_K17_20"
+ },
+ {
+  "expression": "*(*(x, x), -(1, *(+(1, *(x, x)), +(1, *(x, x)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 49719.11268756097,
+  "target_scale": 874.5548896435818,
+  "target_id": "R-ARITH_K17_21"
+ },
+ {
+  "expression": "*(+(x, 1), -(-(x, +(x, 1)), *(*(x, x), *(x, x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6140.512747689986,
+  "target_scale": 322.9425538345763,
+  "target_id": "R-ARITH_K17_22"
+ },
+ {
+  "expression": "*(x, *(-(+(x, x), *(x, x)), *(-(x, 1), -(1, x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 100.03466400847789,
+  "target_scale": 35.05896831005003,
+  "target_id": "R-ARITH_K17_23"
+ },
+ {
+  "expression": "-(*(*(x, -(x, 1)), +(x, *(*(x, x), *(x, x)))), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 16977.892905371413,
+  "target_scale": 490.469223252674,
+  "target_id": "R-ARITH_K17_24"
+ },
+ {
+  "expression": "-(*(-(x, 1), *(+(x, +(1, 1)), +(x, +(1, 1)))), 1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 94.4431983119958,
+  "target_scale": 48.555630830213694,
+  "target_id": "R-ARITH_K17_25"
+ },
+ {
+  "expression": "-(*(-(x, 1), -(1, *(+(x, x), *(x, x)))), +(1, 1))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 668.7283290209396,
+  "target_scale": 106.41474192474041,
+  "target_id": "R-ARITH_K17_26"
+ },
+ {
+  "expression": "*(+(x, +(x, x)), *(*(x, *(x, x)), -(*(x, x), 1)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 253199.5068006712,
+  "target_scale": 1904.2408936562294,
+  "target_id": "R-ARITH_K17_27"
+ },
+ {
+  "expression": "+(1, *(+(+(x, x), -(x, 1)), *(+(x, x), -(1, x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 471.4781632801628,
+  "target_scale": 93.85598868680124,
+  "target_id": "R-ARITH_K17_28"
+ },
+ {
+  "expression": "*(-(-(1, x), +(x, x)), +(x, +(+(1, 1), +(1, 1))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 39.47277761308516,
+   "bits_syn": 32.23560491154339,
+   "bits_sem": 15.07330477825368,
+   "bits_sem_uncorrected": 15.074935863832609,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 55.26584677681568,
+  "target_scale": 55.71316537594353,
+  "target_id": "R-ARITH_K17_29"
+ },
+ {
+  "expression": "+(*(x, x), *(+(x, 1), *(+(x, +(x, 1)), +(x, +(x, x)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2277.388167880759,
+  "target_scale": 258.77854529889805,
+  "target_id": "R-ARITH_K19_00"
+ },
+ {
+  "expression": "-(*(+(x, 1), -(*(+(x, x), -(x, +(1, 1))), +(x, 1))), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 21.14569786517781,
+  "target_scale": 10.94961084188019,
+  "target_id": "R-ARITH_K19_01"
+ },
+ {
+  "expression": "-(-(x, 1), *(+(+(x, x), *(x, x)), *(+(x, 1), +(x, 1))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2267.171153643685,
+  "target_scale": 235.56375273818134,
+  "target_id": "R-ARITH_K19_02"
+ },
+ {
+  "expression": "-(*(+(1, 1), -(x, +(+(1, 1), +(1, 1)))), *(x, *(x, x)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 23.621767827118127,
+  "target_scale": 28.75335654337907,
+  "target_id": "R-ARITH_K19_03"
+ },
+ {
+  "expression": "-(*(*(x, x), -(*(+(x, x), +(x, x)), +(x, +(1, 1)))), 1)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4315.546815340768,
+  "target_scale": 274.1289613808042,
+  "target_id": "R-ARITH_K19_04"
+ },
+ {
+  "expression": "+(x, *(+(1, +(1, 1)), -(-(x, 1), *(x, +(x, +(x, x))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 137.7416308923314,
+  "target_scale": 71.50583276149396,
+  "target_id": "R-ARITH_K19_05"
+ },
+ {
+  "expression": "+(1, *(x, -(*(*(x, x), *(x, x)), *(+(x, x), +(x, 1)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2115.200643851794,
+  "target_scale": 168.66798648978968,
+  "target_id": "R-ARITH_K19_06"
+ },
+ {
+  "expression": "-(+(1, 1), *(+(x, +(x, x)), +(+(x, 1), *(x, *(x, x)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3671.4173403347254,
+  "target_scale": 273.60029838824084,
+  "target_id": "R-ARITH_K19_07"
+ },
+ {
+  "expression": "*(+(1, -(1, x)), +(1, *(+(x, x), *(+(x, 1), +(x, 1)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 762.1127087073769,
+  "target_scale": 95.25750049723524,
+  "target_id": "R-ARITH_K19_08"
+ },
+ {
+  "expression": "-(*(*(+(x, x), -(1, x)), +(1, +(+(1, 1), *(x, x)))), 1)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1087.9284276540543,
+  "target_scale": 143.10839940930077,
+  "target_id": "R-ARITH_K19_09"
+ },
+ {
+  "expression": "-(x, *(+(1, *(x, x)), *(+(1, *(x, x)), +(x, +(x, x)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 44869.78147866424,
+  "target_scale": 883.4309647814089,
+  "target_id": "R-ARITH_K19_10"
+ },
+ {
+  "expression": "+(x, *(*(+(x, x), -(1, x)), -(*(x, *(x, x)), +(1, 1))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6004.6930277324445,
+  "target_scale": 291.36853820100305,
+  "target_id": "R-ARITH_K19_11"
+ },
+ {
+  "expression": "*(+(x, x), *(+(+(1, 1), +(1, 1)), +(+(x, x), +(x, x))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2096.553286078533,
+  "target_scale": 286.1021468483482,
+  "target_id": "R-ARITH_K19_12"
+ },
+ {
+  "expression": "+(*(x, x), *(+(+(x, x), +(x, x)), *(+(x, 1), +(x, 1))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1276.022425557931,
+  "target_scale": 199.36084309342607,
+  "target_id": "R-ARITH_K19_13"
+ },
+ {
+  "expression": "+(1, *(*(x, x), +(-(1, +(x, x)), *(+(x, 1), *(x, x)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4717.537886018109,
+  "target_scale": 275.42603778732405,
+  "target_id": "R-ARITH_K19_14"
+ },
+ {
+  "expression": "*(-(x, 1), -(*(-(1, x), +(x, *(+(x, x), *(x, x)))), 1))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3518.5514046332046,
+  "target_scale": 225.58853699766345,
+  "target_id": "R-ARITH_K19_15"
+ },
+ {
+  "expression": "*(+(1, -(1, x)), -(*(+(1, +(1, 1)), +(1, +(1, 1))), x))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.9459301699212164,
+  "target_scale": 5.950397019900009,
+  "target_id": "R-ARITH_K19_16"
+ },
+ {
+  "expression": "*(x, -(+(1, -(1, x)), *(+(x, x), *(+(x, 1), *(x, x)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 24654.387297109,
+  "target_scale": 640.8654037185596,
+  "target_id": "R-ARITH_K19_17"
+ },
+ {
+  "expression": "+(x, *(+(1, *(x, x)), *(+(x, -(x, 1)), +(x, -(x, 1)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3427.5916604248723,
+  "target_scale": 249.54284528463427,
+  "target_id": "R-ARITH_K19_18"
+ },
+ {
+  "expression": "+(+(1, -(1, x)), *(*(x, x), -(*(*(x, x), *(x, x)), 1)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 34021.52774045746,
+  "target_scale": 704.7521484836665,
+  "target_id": "R-ARITH_K19_19"
+ },
+ {
+  "expression": "*(+(1, *(*(x, x), *(x, x))), *(+(x, 1), +(x, +(1, 1))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 163216.9620451164,
+  "target_scale": 1611.5153181448163,
+  "target_id": "R-ARITH_K19_20"
+ },
+ {
+  "expression": "+(+(x, 1), *(x, *(-(1, *(x, x)), *(-(1, x), *(x, x)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12969.937886560341,
+  "target_scale": 426.45413833098496,
+  "target_id": "R-ARITH_K19_21"
+ },
+ {
+  "expression": "*(+(x, +(x, x)), -(*(*(x, x), +(1, *(x, x))), +(x, 1)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 36078.3685917972,
+  "target_scale": 761.4577297753282,
+  "target_id": "R-ARITH_K19_22"
+ },
+ {
+  "expression": "-(*(+(x, x), *(+(x, +(1, 1)), +(+(x, x), -(x, 1)))), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2065.1660689019172,
+  "target_scale": 234.85775321969015,
+  "target_id": "R-ARITH_K19_23"
+ },
+ {
+  "expression": "-(*(+(1, *(x, x)), +(+(1, 1), *(*(x, x), *(x, x)))), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 42884.10875155789,
+  "target_scale": 811.5101997812009,
+  "target_id": "R-ARITH_K19_24"
+ },
+ {
+  "expression": "*(+(1, *(x, *(x, x))), -(*(+(x, x), +(x, x)), +(1, 1)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 54419.90702649543,
+  "target_scale": 936.3615784063755,
+  "target_id": "R-ARITH_K19_25"
+ },
+ {
+  "expression": "*(+(x, *(x, x)), *(-(1, *(x, x)), +(+(1, 1), -(1, x))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 32.922692102680514,
+  "target_scale": 23.31359226076729,
+  "target_id": "R-ARITH_K19_26"
+ },
+ {
+  "expression": "+(-(1, x), *(+(-(1, x), *(x, x)), -(-(1, x), +(x, x))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 143.80625368356306,
+  "target_scale": 57.38839038300457,
+  "target_id": "R-ARITH_K19_27"
+ },
+ {
+  "expression": "-(1, *(x, +(x, *(+(1, *(x, x)), +(1, *(x, *(x, x)))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 44781.48450245158,
+  "target_scale": 832.2832602751728,
+  "target_id": "R-ARITH_K19_28"
+ },
+ {
+  "expression": "+(1, *(-(x, 1), *(+(x, -(x, 1)), +(-(1, x), *(x, x)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 44.11663380285988,
+   "bits_syn": 36.584587312291006,
+   "bits_sem": 16.931568569324174,
+   "bits_sem_uncorrected": 16.934243729538608,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 299.11188941915543,
+  "target_scale": 69.88793373955957,
+  "target_id": "R-ARITH_K19_29"
+ },
+ {
+  "expression": "*(+(1, 1), -(*(-(x, 1), +(x, *(+(x, x), +(x, +(1, 1))))), 1))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 753.2660845954356,
+  "target_scale": 128.6773806877796,
+  "target_id": "R-ARITH_K21_00"
+ },
+ {
+  "expression": "-(*(+(+(x, x), +(x, x)), +(+(x, x), *(+(x, 1), +(x, 1)))), 1)",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2091.6315036331725,
+  "target_scale": 260.9456877165023,
+  "target_id": "R-ARITH_K21_01"
+ },
+ {
+  "expression": "*(+(x, +(+(1, 1), *(x, x))), *(+(x, x), +(+(x, x), -(x, 1))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 21244.653670184736,
+  "target_scale": 663.9965932862397,
+  "target_id": "R-ARITH_K21_02"
+ },
+ {
+  "expression": "*(x, +(x, *(+(x, x), +(1, *(*(x, x), -(-(1, x), *(x, x)))))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 202785.93018284196,
+  "target_scale": 1720.7048124254677,
+  "target_id": "R-ARITH_K21_03"
+ },
+ {
+  "expression": "*(-(1, x), +(x, *(+(x, +(x, 1)), +(1, +(+(1, 1), +(1, 1))))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 196.7669565010612,
+  "target_scale": 75.40701891971375,
+  "target_id": "R-ARITH_K21_04"
+ },
+ {
+  "expression": "*(x, +(+(x, x), *(-(x, 1), -(1, *(+(x, x), +(1, *(x, x)))))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 7447.621438114251,
+  "target_scale": 329.9147572185523,
+  "target_id": "R-ARITH_K21_05"
+ },
+ {
+  "expression": "*(+(x, x), +(*(x, x), -(*(+(x, x), +(x, x)), +(x, +(1, 1)))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2529.1620464357143,
+  "target_scale": 237.4937654141848,
+  "target_id": "R-ARITH_K21_06"
+ },
+ {
+  "expression": "+(1, *(*(x, x), +(x, *(*(x, *(x, x)), -(-(x, 1), +(1, 1))))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 220.53461881838106,
+  "target_scale": 32.970311367915,
+  "target_id": "R-ARITH_K21_07"
+ },
+ {
+  "expression": "*(+(x, *(-(x, 1), -(1, x))), *(+(x, 1), +(+(1, 1), -(1, x))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.1121816746655935,
+  "target_scale": 2.9503019116753166,
+  "target_id": "R-ARITH_K21_08"
+ },
+ {
+  "expression": "*(+(1, *(x, +(x, x))), *(*(x, +(x, x)), +(+(1, 1), +(x, 1))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 229947.69304243897,
+  "target_scale": 2022.4088812031425,
+  "target_id": "R-ARITH_K21_09"
+ },
+ {
+  "expression": "*(-(1, *(+(x, 1), *(x, x))), *(+(x, x), +(+(1, 1), *(x, x))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 330382.9505470649,
+  "target_scale": 2268.649451962269,
+  "target_id": "R-ARITH_K21_10"
+ },
+ {
+  "expression": "*(+(x, +(1, 1)), -(-(-(x, 1), *(x, x)), +(+(1, 1), +(x, 1))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 88.88052890761786,
+  "target_scale": 64.57533478080677,
+  "target_id": "R-ARITH_K21_11"
+ },
+ {
+  "expression": "+(-(1, x), *(+(+(x, x), +(x, x)), -(*(+(x, x), -(x, 1)), x)))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 676.5410072872381,
+  "target_scale": 104.59003242741684,
+  "target_id": "R-ARITH_K21_12"
+ },
+ {
+  "expression": "+(+(x, 1), *(-(1, *(x, *(x, x))), +(1, +(+(1, 1), *(x, x)))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 5495.574974264421,
+  "target_scale": 303.28635238480484,
+  "target_id": "R-ARITH_K21_13"
+ },
+ {
+  "expression": "*(+(1, *(-(1, x), *(x, x))), *(+(x, +(x, 1)), *(x, -(x, 1))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 36150.38229440817,
+  "target_scale": 697.513676318367,
+  "target_id": "R-ARITH_K21_14"
+ },
+ {
+  "expression": "*(-(1, *(+(x, x), *(x, x))), *(+(1, +(1, 1)), +(x, +(x, x))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 109083.88411505279,
+  "target_scale": 1411.9366594599223,
+  "target_id": "R-ARITH_K21_15"
+ },
+ {
+  "expression": "*(-(*(+(x, x), -(x, 1)), x), *(+(x, x), *(*(x, x), *(x, x))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1356718.9583576631,
+  "target_scale": 4259.793362660516,
+  "target_id": "R-ARITH_K21_16"
+ },
+ {
+  "expression": "*(+(1, +(1, 1)), +(1, *(+(x, x), +(1, *(x, +(x, +(x, x)))))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 9884.406280447589,
+  "target_scale": 502.14457619666484,
+  "target_id": "R-ARITH_K21_17"
+ },
+ {
+  "expression": "*(+(x, x), +(1, *(*(x, *(x, x)), +(x, *(+(x, x), -(1, x))))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 149812.32900751877,
+  "target_scale": 1418.65268154547,
+  "target_id": "R-ARITH_K21_18"
+ },
+ {
+  "expression": "+(1, *(-(1, *(+(x, x), +(x, x))), *(+(x, 1), +(x, +(x, 1)))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 46229.96654780106,
+  "target_scale": 967.2015421505055,
+  "target_id": "R-ARITH_K21_19"
+ },
+ {
+  "expression": "-(*(+(x, -(x, 1)), -(1, *(x, *(*(x, x), *(x, x))))), +(1, 1))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 97454.06065064615,
+  "target_scale": 1187.3692013511811,
+  "target_id": "R-ARITH_K21_20"
+ },
+ {
+  "expression": "*(-(*(-(x, 1), -(x, 1)), x), *(*(x, x), +(+(1, 1), +(x, 1))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 437.9958816285091,
+  "target_scale": 51.9701195557578,
+  "target_id": "R-ARITH_K21_21"
+ },
+ {
+  "expression": "-(*(+(x, +(x, 1)), -(*(+(x, 1), *(x, x)), 1)), +(1, +(1, 1)))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2928.0875768269643,
+  "target_scale": 239.03310781975557,
+  "target_id": "R-ARITH_K21_22"
+ },
+ {
+  "expression": "-(*(-(+(x, 1), *(x, *(x, x))), *(+(1, 1), +(1, +(1, 1)))), 1)",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 952.698730861869,
+  "target_scale": 137.46073331968034,
+  "target_id": "R-ARITH_K21_23"
+ },
+ {
+  "expression": "-(x, *(*(+(x, 1), +(x, 1)), +(x, *(+(x, x), +(x, +(x, x))))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 37199.97745941923,
+  "target_scale": 898.6775962164511,
+  "target_id": "R-ARITH_K21_24"
+ },
+ {
+  "expression": "+(x, *(+(1, +(1, 1)), +(+(1, 1), *(*(x, x), +(1, *(x, x))))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3603.15951859137,
+  "target_scale": 275.6201003684389,
+  "target_id": "R-ARITH_K21_25"
+ },
+ {
+  "expression": "*(+(1, *(x, *(x, x))), -(*(+(x, 1), -(*(x, x), +(1, 1))), 1))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 39588.15048556393,
+  "target_scale": 740.3208542585951,
+  "target_id": "R-ARITH_K21_26"
+ },
+ {
+  "expression": "*(+(1, 1), -(-(x, +(1, 1)), *(+(1, *(x, x)), *(x, *(x, x)))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 16760.472982915624,
+  "target_scale": 529.5198706949072,
+  "target_id": "R-ARITH_K21_27"
+ },
+ {
+  "expression": "-(*(+(+(x, x), +(x, 1)), -(*(x, x), +(+(x, x), +(x, x)))), 1)",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.144205214232328,
+  "target_scale": 33.03459959759332,
+  "target_id": "R-ARITH_K21_28"
+ },
+ {
+  "expression": "+(+(1, *(x, x)), *(+(1, +(1, 1)), -(1, *(+(x, x), +(x, x)))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 48.760489992634604,
+   "bits_syn": 40.956854282793856,
+   "bits_sem": 18.821717936962056,
+   "bits_sem_uncorrected": 18.826104652268288,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 247.73725353076418,
+  "target_scale": 94.34761297911969,
+  "target_id": "R-ARITH_K21_29"
+ },
+ {
+  "expression": "*(+(+(1, 1), +(1, 1)), +(x, *(+(1, *(x, x)), -(-(1, x), +(x, x)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3807.0383016447217,
+  "target_scale": 304.960678481337,
+  "target_id": "R-ARITH_K23_00"
+ },
+ {
+  "expression": "-(*(+(-(x, 1), *(x, *(x, x))), *(+(1, 1), +(x, -(x, 1)))), +(x, 1))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4466.790229772506,
+  "target_scale": 282.10886628238154,
+  "target_id": "R-ARITH_K23_01"
+ },
+ {
+  "expression": "*(+(-(1, x), *(x, x)), +(-(1, x), *(+(1, *(x, x)), *(x, *(x, x)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 236746.9898324712,
+  "target_scale": 1833.2879811724833,
+  "target_id": "R-ARITH_K23_02"
+ },
+ {
+  "expression": "*(-(*(+(x, x), +(x, x)), x), +(1, *(+(x, +(x, 1)), +(x, +(x, x)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 227947.95591582582,
+  "target_scale": 2084.815321190238,
+  "target_id": "R-ARITH_K23_03"
+ },
+ {
+  "expression": "*(+(1, *(+(x, 1), -(1, *(x, x)))), +(-(x, 1), *(+(x, 1), *(x, x))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 90982.88727974735,
+  "target_scale": 1155.6983431459396,
+  "target_id": "R-ARITH_K23_04"
+ },
+ {
+  "expression": "+(1, *(-(*(-(x, 1), *(x, x)), 1), +(+(1, 1), *(+(x, x), +(x, x)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 27856.338639735663,
+  "target_scale": 635.144975646984,
+  "target_id": "R-ARITH_K23_05"
+ },
+ {
+  "expression": "*(-(x, 1), +(x, *(+(x, +(x, 1)), +(1, *(+(x, x), -(1, *(x, x)))))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 28507.395306094804,
+  "target_scale": 639.8123456871975,
+  "target_id": "R-ARITH_K23_06"
+ },
+ {
+  "expression": "*(+(1, *(-(1, x), +(1, *(x, x)))), *(+(x, x), +(+(1, 1), +(x, 1))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 29223.213674011902,
+  "target_scale": 672.8428375168397,
+  "target_id": "R-ARITH_K23_07"
+ },
+ {
+  "expression": "*(+(+(x, 1), *(x, *(x, x))), +(1, *(x, -(*(+(x, x), *(x, x)), x))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1524381.2349066108,
+  "target_scale": 4667.883336854061,
+  "target_id": "R-ARITH_K23_08"
+ },
+ {
+  "expression": "-(*(+(x, -(x, 1)), -(1, *(+(x, x), +(1, *(x, *(x, x)))))), *(x, x))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 43033.63442302951,
+  "target_scale": 829.9370335211412,
+  "target_id": "R-ARITH_K23_09"
+ },
+ {
+  "expression": "+(1, *(*(x, +(x, x)), +(+(+(1, 1), +(x, 1)), *(-(1, x), *(x, x)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3981.986005251591,
+  "target_scale": 210.04974786691616,
+  "target_id": "R-ARITH_K23_10"
+ },
+ {
+  "expression": "*(+(+(x, x), -(x, 1)), +(+(1, 1), *(+(x, +(1, 1)), +(x, +(1, 1)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1296.4413702174686,
+  "target_scale": 214.4096628072767,
+  "target_id": "R-ARITH_K23_11"
+ },
+ {
+  "expression": "*(+(1, *(x, *(+(x, 1), +(x, 1)))), -(*(+(x, x), +(x, -(x, 1))), x))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 102757.07554750764,
+  "target_scale": 1302.2490802621487,
+  "target_id": "R-ARITH_K23_12"
+ },
+ {
+  "expression": "+(1, *(+(+(x, x), *(x, x)), +(+(x, +(x, x)), *(+(x, 1), *(x, x)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 22699.88768218958,
+  "target_scale": 667.1363302356493,
+  "target_id": "R-ARITH_K23_13"
+ },
+ {
+  "expression": "*(+(x, *(-(x, 1), -(1, x))), -(*(+(1, 1), -(-(1, x), +(x, x))), x))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 79.54914853847025,
+  "target_scale": 18.370251023729956,
+  "target_id": "R-ARITH_K23_14"
+ },
+ {
+  "expression": "*(x, -(1, *(+(1, *(x, x)), +(x, *(+(x, x), +(+(x, x), +(1, 1)))))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 129068.1981669516,
+  "target_scale": 1504.3933740170805,
+  "target_id": "R-ARITH_K23_15"
+ },
+ {
+  "expression": "-(*(-(x, *(x, x)), +(x, *(-(x, 1), -(1, *(x, *(x, x)))))), +(1, 1))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6204.879169272916,
+  "target_scale": 284.9508231555025,
+  "target_id": "R-ARITH_K23_16"
+ },
+ {
+  "expression": "*(+(+(x, x), -(x, 1)), +(x, *(+(x, *(x, x)), +(+(1, 1), -(1, x)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 29.034032216663263,
+  "target_scale": 45.23980558176016,
+  "target_id": "R-ARITH_K23_17"
+ },
+ {
+  "expression": "-(*(+(+(x, 1), *(x, x)), -(*(+(x, +(x, 1)), +(x, +(x, x))), 1)), x)",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 29395.052787885354,
+  "target_scale": 793.7334769736281,
+  "target_id": "R-ARITH_K23_18"
+ },
+ {
+  "expression": "+(+(x, 1), *(+(x, +(x, x)), +(+(1, 1), *(x, *(-(x, 1), -(x, 1))))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 852.6757513630079,
+  "target_scale": 128.15936704875853,
+  "target_id": "R-ARITH_K23_19"
+ },
+ {
+  "expression": "+(+(x, x), *(+(1, *(x, +(x, x))), +(-(x, 1), *(+(x, x), +(x, 1)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 11646.925298760652,
+  "target_scale": 494.0957225505983,
+  "target_id": "R-ARITH_K23_20"
+ },
+ {
+  "expression": "*(*(x, *(x, x)), +(-(x, 1), *(x, *(+(x, +(x, 1)), +(x, +(x, x))))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1712137.1558318269,
+  "target_scale": 5058.349497345311,
+  "target_id": "R-ARITH_K23_21"
+ },
+ {
+  "expression": "*(+(x, 1), +(1, *(*(x, x), +(-(x, 1), *(+(x, x), -(1, +(x, x)))))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 61119.143662669005,
+  "target_scale": 987.4853781599437,
+  "target_id": "R-ARITH_K23_22"
+ },
+ {
+  "expression": "-(+(x, -(x, 1)), *(*(x, x), *(+(x, +(x, x)), +(+(1, 1), *(x, x)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 44394.73757252696,
+  "target_scale": 872.4705687418049,
+  "target_id": "R-ARITH_K23_23"
+ },
+ {
+  "expression": "*(+(+(x, x), *(x, x)), +(x, *(-(x, *(x, x)), *(+(x, x), -(x, 1)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 75761.02887392581,
+  "target_scale": 1012.0693084936677,
+  "target_id": "R-ARITH_K23_24"
+ },
+ {
+  "expression": "*(x, +(+(+(x, x), +(x, x)), *(+(x, -(x, 1)), *(-(1, x), *(x, x)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4046.6692736696796,
+  "target_scale": 229.19582070397936,
+  "target_id": "R-ARITH_K23_25"
+ },
+ {
+  "expression": "-(*(+(+(1, 1), -(1, x)), -(*(-(x, 1), +(1, *(x, x))), +(1, 1))), x)",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.6781411849418304,
+  "target_scale": 2.814030084316127,
+  "target_id": "R-ARITH_K23_26"
+ },
+ {
+  "expression": "*(+(x, x), +(-(x, 1), *(+(-(x, 1), *(x, x)), +(+(1, 1), -(1, x)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 15.53439070803262,
+  "target_scale": 27.358861321320486,
+  "target_id": "R-ARITH_K23_27"
+ },
+ {
+  "expression": "+(1, *(-(1, *(x, +(x, x))), +(x, *(+(1, +(1, 1)), +(x, -(x, 1))))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4282.140698886379,
+  "target_scale": 301.6949182811625,
+  "target_id": "R-ARITH_K23_28"
+ },
+ {
+  "expression": "*(-(x, 1), +(*(x, x), *(+(x, x), +(1, *(+(x, x), +(1, *(x, x)))))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 53.40434618240933,
+   "bits_syn": 45.348209936028546,
+   "bits_sem": 20.748493434348624,
+   "bits_sem_uncorrected": 20.74964850565895,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 34881.0708963677,
+  "target_scale": 737.1875175837579,
+  "target_id": "R-ARITH_K23_29"
+ },
+ {
+  "expression": "*(*(-(x, 1), -(*(x, x), 1)), *(+(x, x), -(*(x, *(+(x, x), -(x, 1))), 1)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 800689.2643709567,
+  "target_scale": 3268.477410710228,
+  "target_id": "R-ARITH_K25_00"
+ },
+ {
+  "expression": "*(+(-(x, 1), *(+(1, *(x, *(x, x))), +(1, *(+(x, 1), +(x, 1))))), +(1, 1))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 48096.10762564598,
+  "target_scale": 942.533056200506,
+  "target_id": "R-ARITH_K25_01"
+ },
+ {
+  "expression": "-(+(1, +(1, 1)), *(+(x, x), -(1, +(*(x, *(x, x)), *(+(x, x), +(x, x))))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 6370.851084710173,
+  "target_scale": 370.7601885466499,
+  "target_id": "R-ARITH_K25_02"
+ },
+ {
+  "expression": "+(1, -(*(*(x, x), +(*(x, x), *(+(x, +(x, x)), +(-(x, 1), *(x, x))))), x))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 55796.60334035788,
+  "target_scale": 954.6025768050835,
+  "target_id": "R-ARITH_K25_03"
+ },
+ {
+  "expression": "*(-(*(*(x, x), +(+(x, x), +(x, 1))), 1), *(*(x, +(x, x)), -(*(x, x), 1)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 11319868.139997693,
+  "target_scale": 12515.240984690106,
+  "target_id": "R-ARITH_K25_04"
+ },
+ {
+  "expression": "*(*(+(x, +(1, 1)), -(*(+(+(1, 1), +(1, 1)), +(+(x, 1), *(x, x))), x)), x)",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 22552.67867875985,
+  "target_scale": 727.1407132863153,
+  "target_id": "R-ARITH_K25_05"
+ },
+ {
+  "expression": "*(+(1, 1), *(+(+(x, x), +(1, 1)), +(-(x, +(1, 1)), *(+(x, x), +(x, x)))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 13066.521974060193,
+  "target_scale": 586.5903187515104,
+  "target_id": "R-ARITH_K25_06"
+ },
+ {
+  "expression": "*(+(1, 1), *(+(x, x), -(1, *(x, +(+(x, *(x, x)), *(+(x, x), +(x, x)))))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 152381.5382062741,
+  "target_scale": 1693.6933228231553,
+  "target_id": "R-ARITH_K25_07"
+ },
+ {
+  "expression": "-(-(1, x), -(*(+(+(1, 1), +(x, 1)), -(*(-(x, 1), -(1, *(x, x))), 1)), 1))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 532.4032337114807,
+  "target_scale": 99.66011778101834,
+  "target_id": "R-ARITH_K25_08"
+ },
+ {
+  "expression": "*(-(-(x, +(1, 1)), *(+(x, x), +(x, x))), *(+(x, x), +(-(1, x), *(x, x))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 5,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 129917.86782467092,
+  "target_scale": 1445.3580954384443,
+  "target_id": "R-ARITH_K25_09"
+ },
+ {
+  "expression": "*(*(x, -(*(+(x, x), -(x, 1)), x)), *(*(x, x), -(*(x, *(x, x)), +(x, 1))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 2197484.915265852,
+  "target_scale": 5418.060483757531,
+  "target_id": "R-ARITH_K25_10"
+ },
+ {
+  "expression": "-(x, *(+(x, 1), -(*(-(1, *(x, x)), -(*(-(1, x), *(x, x)), +(1, 1))), x)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 26168.508315546023,
+  "target_scale": 612.1990867863547,
+  "target_id": "R-ARITH_K25_11"
+ },
+ {
+  "expression": "*(*(-(1, x), *(x, x)), -(*(*(x, x), -(*(x, x), +(x, +(x, 1)))), +(1, 1)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 7015.862488820374,
+  "target_scale": 276.29066116759645,
+  "target_id": "R-ARITH_K25_12"
+ },
+ {
+  "expression": "+(1, +(x, *(*(-(1, x), +(1, *(x, x))), +(+(1, 1), +(+(1, 1), -(1, x))))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 48.69285210398442,
+  "target_scale": 35.77169486402421,
+  "target_id": "R-ARITH_K25_13"
+ },
+ {
+  "expression": "-(x, +(+(1, 1), *(+(x, x), -(*(+(1, -(1, x)), +(+(1, 1), *(x, x))), x))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 477.98762891200545,
+  "target_scale": 83.65119127303767,
+  "target_id": "R-ARITH_K25_14"
+ },
+ {
+  "expression": "*(*(x, x), *(x, +(x, *(+(+(1, 1), *(x, x)), -(*(-(1, x), *(x, x)), 1)))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 2124056.7503415034,
+  "target_scale": 5416.667887504846,
+  "target_id": "R-ARITH_K25_15"
+ },
+ {
+  "expression": "+(*(-(x, 1), -(-(1, x), *(+(+(1, 1), *(x, x)), *(+(x, x), +(x, 1))))), x)",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 16764.029493213337,
+  "target_scale": 520.5100677344133,
+  "target_id": "R-ARITH_K25_16"
+ },
+ {
+  "expression": "-(1, *(x, -(*(+(x, x), -(1, +(x, x))), *(+(1, *(x, x)), +(x, +(1, 1))))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 2518.772864354153,
+  "target_scale": 238.37680834037914,
+  "target_id": "R-ARITH_K25_17"
+ },
+ {
+  "expression": "-(+(1, -(1, x)), *(+(x, 1), -(x, *(+(1, +(1, 1)), +(+(1, 1), +(1, 1))))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 2.047415318436068,
+  "target_scale": 34.96029800999902,
+  "target_id": "R-ARITH_K25_18"
+ },
+ {
+  "expression": "*(*(x, -(*(+(x, x), +(x, 1)), 1)), +(+(x, +(1, 1)), *(+(x, x), *(x, x))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1037816.2323378319,
+  "target_scale": 3996.0408831333243,
+  "target_id": "R-ARITH_K25_19"
+ },
+ {
+  "expression": "*(+(1, 1), *(+(-(1, x), *(x, x)), +(+(1, 1), *(x, *(-(x, 1), *(x, x))))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 40619.6567385187,
+  "target_scale": 767.3791233005469,
+  "target_id": "R-ARITH_K25_20"
+ },
+ {
+  "expression": "*(+(x, x), -(*(-(x, *(x, x)), -(*(+(x, x), -(*(x, +(x, x)), 1)), x)), x))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 879238.5213274199,
+  "target_scale": 3503.998539681336,
+  "target_id": "R-ARITH_K25_21"
+ },
+ {
+  "expression": "+(1, *(-(x, 1), -(*(-(*(x, +(x, x)), 1), +(1, *(+(x, x), *(x, x)))), 1)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 237954.98226255513,
+  "target_scale": 1828.8665251475159,
+  "target_id": "R-ARITH_K25_22"
+ },
+ {
+  "expression": "*(*(x, x), *(-(x, 1), +(+(1, 1), *(+(1, *(x, x)), +(1, *(x, +(x, x)))))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 815101.3730696511,
+  "target_scale": 3375.199722626362,
+  "target_id": "R-ARITH_K25_23"
+ },
+ {
+  "expression": "*(+(x, x), *(+(x, 1), -(*(+(+(1, 1), +(1, 1)), -(*(x, x), +(x, 1))), 1)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 14280.703986300987,
+  "target_scale": 448.65435254280817,
+  "target_id": "R-ARITH_K25_24"
+ },
+ {
+  "expression": "+(*(+(1, -(-(1, x), +(x, x))), +(+(1, +(1, 1)), *(+(x, x), +(x, 1)))), 1)",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1358.097743431982,
+  "target_scale": 186.233206606613,
+  "target_id": "R-ARITH_K25_25"
+ },
+ {
+  "expression": "*(+(+(x, 1), *(+(x, +(x, x)), *(x, -(x, 1)))), *(+(x, 1), +(x, +(x, 1))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 156330.04589250014,
+  "target_scale": 1597.814365821448,
+  "target_id": "R-ARITH_K25_26"
+ },
+ {
+  "expression": "-(*(-(x, 1), -(1, x)), *(+(1, +(1, 1)), +(+(1, 1), *(+(x, x), +(x, x)))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 325.10229772658647,
+  "target_scale": 117.24879913733947,
+  "target_id": "R-ARITH_K25_27"
+ },
+ {
+  "expression": "*(*(x, *(x, x)), -(*(-(1, *(x, +(x, x))), *(-(x, 1), -(1, +(x, x)))), x))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1430168.6947302117,
+  "target_scale": 4392.931758158338,
+  "target_id": "R-ARITH_K25_28"
+ },
+ {
+  "expression": "+(-(x, 1), *(+(x, 1), +(x, *(*(x, x), -(*(+(x, x), +(x, -(x, 1))), x)))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 58.04820237218406,
+   "bits_syn": 49.75550190650801,
+   "bits_sem": 22.65085151190274,
+   "bits_sem_uncorrected": 22.652070405275627,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 58884.130603742895,
+  "target_scale": 969.7221206264657,
+  "target_id": "R-ARITH_K25_29"
+ },
+ {
+  "expression": "*(+(x, *(+(+(1, 1), +(x, 1)), +(x, *(+(x, +(x, 1)), +(x, *(x, x)))))), *(x, x))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1320944.4203616185,
+  "target_scale": 4646.944804590505,
+  "target_id": "R-ARITH_K27_00"
+ },
+ {
+  "expression": "*(-(*(x, *(x, x)), 1), -(*(-(x, 1), -(*(*(x, x), *(x, x)), +(1, 1))), +(x, x)))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1106549.2740128192,
+  "target_scale": 3837.3904543182903,
+  "target_id": "R-ARITH_K27_01"
+ },
+ {
+  "expression": "*(-(*(+(x, +(x, x)), +(*(x, x), *(+(x, x), +(x, +(x, 1))))), x), +(x, +(1, 1)))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 237917.7563036898,
+  "target_scale": 2253.8150046913615,
+  "target_id": "R-ARITH_K27_02"
+ },
+ {
+  "expression": "+(+(1, *(*(x, x), -(*(+(x, 1), *(+(x, +(1, 1)), +(x, +(x, x)))), x))), *(x, x))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 139598.547435511,
+  "target_scale": 1580.0816795619523,
+  "target_id": "R-ARITH_K27_03"
+ },
+ {
+  "expression": "*(*(-(x, *(x, x)), -(*(+(x, x), *(+(x, x), +(x, 1))), x)), +(+(1, 1), *(x, x)))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 5882218.123506438,
+  "target_scale": 9095.422253115219,
+  "target_id": "R-ARITH_K27_04"
+ },
+ {
+  "expression": "-(-(x, 1), -(*(+(x, *(-(x, 1), -(1, x))), *(+(x, 1), +(+(x, x), *(x, x)))), x))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 591.3437689260523,
+  "target_scale": 62.75347218765857,
+  "target_id": "R-ARITH_K27_05"
+ },
+ {
+  "expression": "*(-(*(+(+(1, 1), +(x, 1)), +(1, +(+(1, 1), +(1, 1)))), *(x, x)), +(x, +(x, 1)))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 145.69932539732616,
+  "target_scale": 146.65258502127048,
+  "target_id": "R-ARITH_K27_06"
+ },
+ {
+  "expression": "*(*(+(x, *(x, x)), -(*(x, x), 1)), *(x, -(*(-(1, x), +(+(1, 1), *(x, x))), x)))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 3579059.9716158397,
+  "target_scale": 7014.863452946586,
+  "target_id": "R-ARITH_K27_07"
+ },
+ {
+  "expression": "+(-(*(+(x, x), +(x, 1)), 1), *(+(1, +(1, 1)), +(-(x, 1), *(x, +(x, +(x, x))))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 294.7050753129424,
+  "target_scale": 109.29810802862465,
+  "target_id": "R-ARITH_K27_08"
+ },
+ {
+  "expression": "*(+(1, -(1, x)), *(+(1, +(-(1, x), *(x, x))), +(1, *(x, *(-(1, x), *(x, x))))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 13176.354986703229,
+  "target_scale": 410.9308939408559,
+  "target_id": "R-ARITH_K27_09"
+ },
+ {
+  "expression": "*(+(1, 1), *(*(x, +(+(x, x), +(x, 1))), -(*(-(1, x), +(1, *(x, x))), +(x, x))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 136667.20365438305,
+  "target_scale": 1536.111653634129,
+  "target_id": "R-ARITH_K27_10"
+ },
+ {
+  "expression": "*(*(+(x, +(1, 1)), +(-(x, 1), *(+(x, x), *(+(x, x), *(x, x))))), +(x, +(x, x)))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 13556615.33620998,
+  "target_scale": 14401.672935948272,
+  "target_id": "R-ARITH_K27_11"
+ },
+ {
+  "expression": "+(+(1, 1), -(*(+(x, -(+(x, x), *(x, x))), -(x, *(*(x, x), +(x, +(x, x))))), x))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 185.90218639600658,
+  "target_scale": 56.69983905037828,
+  "target_id": "R-ARITH_K27_12"
+ },
+ {
+  "expression": "-(+(x, *(+(x, x), +(1, -(1, x)))), -(*(-(1, x), *(*(x, x), *(x, x))), +(x, 1)))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1599.9083009774522,
+  "target_scale": 160.139714645056,
+  "target_id": "R-ARITH_K27_13"
+ },
+ {
+  "expression": "*(*(+(1, *(x, x)), -(*(-(x, 1), -(+(x, x), *(x, x))), +(x, 1))), +(x, -(x, 1)))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 15876.834118014795,
+  "target_scale": 489.21324713819865,
+  "target_id": "R-ARITH_K27_14"
+ },
+ {
+  "expression": "*(*(*(+(x, x), +(x, 1)), +(1, *(+(x, x), -(1, +(x, x))))), -(1, *(x, *(x, x))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 22571857.72989217,
+  "target_scale": 17673.745261873373,
+  "target_id": "R-ARITH_K27_15"
+ },
+ {
+  "expression": "*(+(+(x, x), *(+(x, 1), *(x, x))), *(+(-(x, 1), *(x, x)), -(+(x, 1), *(x, x))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 5,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 380479.0079121919,
+  "target_scale": 2254.084402028804,
+  "target_id": "R-ARITH_K27_16"
+ },
+ {
+  "expression": "+(+(1, *(x, x)), *(+(x, +(+(x, x), +(x, x))), +(+(x, +(x, 1)), *(x, *(x, x)))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 11999.095954258957,
+  "target_scale": 513.9779831811334,
+  "target_id": "R-ARITH_K27_17"
+ },
+ {
+  "expression": "*(-(*(*(x, *(x, x)), -(*(x, x), +(x, 1))), x), -(*(+(x, x), +(x, +(x, x))), x))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 3277829.663830316,
+  "target_scale": 6552.448863925489,
+  "target_id": "R-ARITH_K27_18"
+ },
+ {
+  "expression": "+(+(1, 1), +(1, *(+(x, +(x, 1)), +(-(x, 1), *(+(x, +(x, x)), -(*(x, x), 1))))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 14491.5613654545,
+  "target_scale": 514.093349476906,
+  "target_id": "R-ARITH_K27_19"
+ },
+ {
+  "expression": "-(+(x, 1), -(*(*(-(x, 1), +(x, -(x, 1))), +(+(x, x), +(+(x, x), -(x, 1)))), 1))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1023.8604840767541,
+  "target_scale": 133.27447318793244,
+  "target_id": "R-ARITH_K27_20"
+ },
+ {
+  "expression": "*(*(x, x), +(1, *(+(x, +(x, 1)), +(+(x, 1), *(+(x, +(x, 1)), *(x, *(x, x)))))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 9849621.61606744,
+  "target_scale": 11903.59323620904,
+  "target_id": "R-ARITH_K27_21"
+ },
+ {
+  "expression": "*(-(-(x, 1), +(1, 1)), *(+(x, *(x, x)), +(-(1, x), *(x, *(+(x, 1), *(x, x))))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 2670.3549112907344,
+  "target_scale": 233.56502134597454,
+  "target_id": "R-ARITH_K27_22"
+ },
+ {
+  "expression": "+(+(x, +(1, 1)), +(1, *(+(+(1, 1), *(x, x)), +(+(x, 1), *(+(x, x), -(1, x))))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 529.78893160648,
+  "target_scale": 80.56266956918608,
+  "target_id": "R-ARITH_K27_23"
+ },
+ {
+  "expression": "-(*(+(x, 1), +(x, 1)), *(+(x, x), -(*(-(1, *(x, x)), -(-(x, 1), +(1, 1))), x)))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 67.36818823510822,
+  "target_scale": 33.33210685013601,
+  "target_id": "R-ARITH_K27_24"
+ },
+ {
+  "expression": "*(-(x, 1), *(*(+(x, x), -(x, +(1, 1))), +(x, *(+(x, x), +(+(1, 1), *(x, x))))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 52470.554831603346,
+  "target_scale": 806.1887562340484,
+  "target_id": "R-ARITH_K27_25"
+ },
+ {
+  "expression": "*(*(+(1, *(-(x, 1), -(x, 1))), -(*(+(x, 1), -(*(x, x), 1)), x)), +(1, -(1, x)))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1584.7130093385294,
+  "target_scale": 140.92738422035853,
+  "target_id": "R-ARITH_K27_26"
+ },
+ {
+  "expression": "*(-(*(*(x, x), +(x, *(+(x, *(x, x)), +(+(1, 1), -(1, x))))), 1), -(x, +(1, 1)))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 99.28729812520578,
+  "target_scale": 30.23115250790772,
+  "target_id": "R-ARITH_K27_27"
+ },
+ {
+  "expression": "*(+(-(1, x), -(1, x)), +(x, *(*(+(x, x), +(x, 1)), -(*(x, *(x, x)), +(x, 1)))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 342135.5865305528,
+  "target_scale": 2171.934090387442,
+  "target_id": "R-ARITH_K27_28"
+ },
+ {
+  "expression": "+(*(-(x, *(x, x)), +(-(x, 1), *(*(x, +(x, x)), +(+(1, 1), -(1, x))))), -(1, x))",
+  "K_construction": 27,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 27.0,
+   "bits_uniform": 62.69205856195878,
+   "bits_syn": 54.17630091231182,
+   "bits_sem": 24.559313944414967,
+   "bits_sem_uncorrected": 24.559772793335803,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 17.346185336156406,
+  "target_scale": 30.824225536109356,
+  "target_id": "R-ARITH_K27_29"
+ }
+]

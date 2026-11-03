@@ -1,0 +1,83 @@
+{
+ "grammar": "BOOL-NOR-n5",
+ "seed": 20261021,
+ "ceiling": 31,
+ "depth_limit": 10,
+ "levels": {
+  "7": {
+   "proven": true,
+   "n_level": 225,
+   "n_depth_ok": 225,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {}
+  },
+  "13": {
+   "proven": true,
+   "n_level": 12680,
+   "n_depth_ok": 12680,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {}
+  },
+  "19": {
+   "proven": true,
+   "n_level": 415505,
+   "n_depth_ok": 415505,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {}
+  },
+  "25": {
+   "proven": true,
+   "n_level": 6286462,
+   "n_depth_ok": 6286462,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {}
+  },
+  "31": {
+   "proven": true,
+   "n_level": 52371861,
+   "n_depth_ok": 52371861,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {}
+  },
+  "39": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 310
+   }
+  },
+  "43": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 166
+   }
+  },
+  "51": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 104
+   }
+  },
+  "57": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 65
+   }
+  },
+  "63": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 32
+   }
+  }
+ }
+}

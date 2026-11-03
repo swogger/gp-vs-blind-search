@@ -1,0 +1,33 @@
+{
+ "note": "post-hoc, outside pre-registration",
+ "per_k": {
+  "3": {
+   "source": "exhaustive_enumeration",
+   "candidates_screened": 4,
+   "accepted": 3,
+   "rejections": {
+    "viability_overflow": 0,
+    "viability_variance": 1,
+    "viability_magnitude_ratio": 0,
+    "not_self_consistent": 0,
+    "duplicate": 0,
+    "dead_subtree": 0,
+    "not_minimal": 0
+   }
+  },
+  "5": {
+   "source": "exhaustive_enumeration",
+   "candidates_screened": 16,
+   "accepted": 10,
+   "rejections": {
+    "viability_overflow": 0,
+    "viability_variance": 2,
+    "viability_magnitude_ratio": 0,
+    "not_self_consistent": 0,
+    "duplicate": 0,
+    "dead_subtree": 4,
+    "not_minimal": 0
+   }
+  }
+ }
+}

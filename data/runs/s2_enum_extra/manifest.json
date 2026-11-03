@@ -1,0 +1,144 @@
+{
+ "phase": "s2_enum_extra",
+ "description": "Study 2 (D052): enumerate the added sets: F-EML-R and R-SRB (8 GB, 4 h) and IMP0-R (n = 5) and NAND and AON (n = 6) (10 GB, 6 h). --workers 2; launch only after s2_enum_bool (memory).",
+ "created": "2026-10-20 01:39:03",
+ "git": "41c1bcc",
+ "n_tasks": 5,
+ "tasks": [
+  {
+   "key": "F-EML-R",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "F-EML-R",
+    "--root",
+    "data/enumeration_s2",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8",
+    "--cpu_budget",
+    "13800",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "F-EML-R",
+    "root": "data/enumeration_s2"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-SRB",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "R-SRB",
+    "--root",
+    "data/enumeration_s2",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8",
+    "--cpu_budget",
+    "13800",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "R-SRB",
+    "root": "data/enumeration_s2"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-IMP0R-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-IMP0R-n5",
+    "--root",
+    "data/enumeration_s2",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "10",
+    "--cpu_budget",
+    "21000",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-IMP0R-n5",
+    "root": "data/enumeration_s2"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-NAND-n6",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-NAND-n6",
+    "--root",
+    "data/enumeration_s2",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "10",
+    "--cpu_budget",
+    "21000",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-NAND-n6",
+    "root": "data/enumeration_s2"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AON-n6",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-AON-n6",
+    "--root",
+    "data/enumeration_s2",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "10",
+    "--cpu_budget",
+    "21000",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-AON-n6",
+    "root": "data/enumeration_s2"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

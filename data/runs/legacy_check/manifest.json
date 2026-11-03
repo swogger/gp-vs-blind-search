@@ -1,0 +1,3669 @@
+{
+ "phase": "legacy_check",
+ "description": "Legacy EML engine on every K = 7 and K = 13 target, both regimes, first P1 seed (122 runs, about 25 CPU-minutes). Checks the queue end to end against stored P1 rows.",
+ "created": "2026-10-12 20:15:20",
+ "git": "4236b0a+dirty",
+ "n_tasks": 122,
+ "tasks": [
+  {
+   "key": "reviewer_ce|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "reviewer_ce",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "reviewer_ce",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "reviewer_ce|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "reviewer_ce",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "reviewer_ce",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_00|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_00",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_00",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_00|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_00",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_00",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_01|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_01",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_01",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_01|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_01",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_01",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_02|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_02",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_02",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_02|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_02",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_02",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_03|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_03",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_03",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_03|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_03",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_03",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_04|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_04",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_04",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_04|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_04",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_04",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_05|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_05",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_05",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_05|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_05",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_05",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_06|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_06",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_06",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_06|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_06",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_06",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_07|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_07",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_07",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_07|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_07",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_07",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_08|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_08",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_08",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_08|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_08",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_08",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_09|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_09",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_09",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_09|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_09",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_09",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_10|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_10",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_10",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_10|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_10",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_10",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_11|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_11",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_11",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_11|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_11",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_11",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_12|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_12",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_12",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_12|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_12",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_12",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_13|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_13",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_13",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_13|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_13",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_13",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_14|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_14",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_14",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_14|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_14",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_14",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_15|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_15",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_15",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_15|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_15",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_15",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_16|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_16",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_16",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_16|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_16",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_16",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_17|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_17",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_17",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_17|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_17",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_17",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_18|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_18",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_18",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_18|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_18",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_18",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_19|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_19",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_19",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_19|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_19",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_19",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_20|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_20",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_20",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_20|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_20",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_20",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_21|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_21",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_21",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_21|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_21",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_21",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_22|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_22",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_22",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_22|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_22",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_22",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_23|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_23",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_23",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_23|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_23",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_23",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_24|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_24",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_24",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_24|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_24",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_24",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_25|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_25",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_25",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_25|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_25",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_25",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_26|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_26",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_26",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_26|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_26",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_26",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_27|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_27",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_27",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_27|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_27",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_27",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_28|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_28",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_28",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_28|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_28",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_28",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_29|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_29",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K07_29",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K07_29|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K07_29",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K07_29",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_00|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_00",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_00",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_00|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_00",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_00",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_01|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_01",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_01",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_01|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_01",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_01",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_02|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_02",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_02",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_02|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_02",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_02",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_03|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_03",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_03",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_03|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_03",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_03",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_04|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_04",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_04",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_04|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_04",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_04",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_05|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_05",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_05",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_05|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_05",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_05",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_06|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_06",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_06",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_06|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_06",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_06",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_07|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_07",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_07",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_07|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_07",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_07",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_08|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_08",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_08",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_08|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_08",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_08",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_09|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_09",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_09",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_09|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_09",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_09",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_10|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_10",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_10",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_10|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_10",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_10",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_11|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_11",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_11",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_11|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_11",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_11",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_12|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_12",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_12",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_12|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_12",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_12",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_13|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_13",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_13",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_13|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_13",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_13",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_14|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_14",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_14",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_14|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_14",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_14",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_15|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_15",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_15",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_15|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_15",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_15",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_16|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_16",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_16",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_16|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_16",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_16",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_17|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_17",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_17",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_17|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_17",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_17",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_18|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_18",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_18",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_18|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_18",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_18",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_19|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_19",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_19",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_19|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_19",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_19",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_20|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_20",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_20",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_20|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_20",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_20",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_21|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_21",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_21",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_21|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_21",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_21",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_22|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_22",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_22",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_22|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_22",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_22",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_23|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_23",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_23",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_23|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_23",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_23",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_24|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_24",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_24",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_24|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_24",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_24",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_25|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_25",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_25",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_25|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_25",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_25",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_26|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_26",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_26",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_26|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_26",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_26",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_27|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_27",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_27",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_27|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_27",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_27",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_28|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_28",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_28",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_28|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_28",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_28",
+    "regime": "B",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_29|A|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_29",
+    "--regime",
+    "A",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 4.0,
+   "meta": {
+    "target_id": "K13_29",
+    "regime": "A",
+    "seed": 128182595
+   }
+  },
+  {
+   "key": "K13_29|B|128182595",
+   "cwd": "legacy",
+   "argv": [
+    "{python}",
+    "-u",
+    "research/rerun/synth_task.py",
+    "--targets",
+    "results/synthetic_dense_k/targets.json",
+    "--target_id",
+    "K13_29",
+    "--regime",
+    "B",
+    "--seed",
+    "128182595",
+    "--generations",
+    "200",
+    "--timeout",
+    "600",
+    "--no_size_penalty",
+    "--cpu_clock"
+   ],
+   "cpu_limit": 700,
+   "weight": 1.0,
+   "meta": {
+    "target_id": "K13_29",
+    "regime": "B",
+    "seed": 128182595
+   }
+  }
+ ]
+}

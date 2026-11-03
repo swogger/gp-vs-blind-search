@@ -1,0 +1,49 @@
+{
+ "grammar": "BOOL-AX1-n4",
+ "seed": 20261013,
+ "ceiling": 25,
+ "levels": {
+  "3": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "7": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "9": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "13": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "15": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "19": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "21": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "25": {
+   "found": 10,
+   "rejected": {
+    "depth": 4
+   },
+   "proven": true
+  }
+ }
+}

@@ -1,0 +1,5402 @@
+[
+ {
+  "expression": "sin(*(x, cos(1)))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0012270626722020606,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K05_00"
+ },
+ {
+  "expression": "sin(sin(+(x, 1)))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.059238539112080026,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K05_01"
+ },
+ {
+  "expression": "cos(sin(sin(cos(x))))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.003080982523160047,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K05_02"
+ },
+ {
+  "expression": "cos(+(x, cos(x)))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.01425699902957856,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K05_03"
+ },
+ {
+  "expression": "+(x, +(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.735148514851485,
+  "target_scale": 8.97029702970297,
+  "target_id": "R-TRIG_K05_04"
+ },
+ {
+  "expression": "cos(sin(cos(cos(x))))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0026126370011534694,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K05_05"
+ },
+ {
+  "expression": "+(1, *(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.0474153184360673,
+  "target_scale": 9.94069208901088,
+  "target_id": "R-TRIG_K05_06"
+ },
+ {
+  "expression": "*(sin(x), cos(1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.014706734913006593,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K05_07"
+ },
+ {
+  "expression": "+(x, cos(sin(1)))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683164,
+  "target_scale": 3.656465755293871,
+  "target_id": "R-TRIG_K05_08"
+ },
+ {
+  "expression": "sin(+(x, sin(x)))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004308310132901108,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K05_09"
+ },
+ {
+  "expression": "sin(cos(sin(cos(x))))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0028445897201303865,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K05_10"
+ },
+ {
+  "expression": "cos(+(1, sin(x)))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.048871932202444686,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K05_11"
+ },
+ {
+  "expression": "cos(+(x, cos(1)))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0020701278267259387,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K05_12"
+ },
+ {
+  "expression": "sin(cos(+(x, x)))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.20831874721588814,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K05_13"
+ },
+ {
+  "expression": "+(x, cos(cos(x)))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.030344730272390142,
+  "target_scale": 3.540003230596205,
+  "target_id": "R-TRIG_K05_14"
+ },
+ {
+  "expression": "*(x, *(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 29.469305779619386,
+  "target_scale": 26.73355456318105,
+  "target_id": "R-TRIG_K05_15"
+ },
+ {
+  "expression": "+(sin(x), sin(1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.050378197237237604,
+  "target_scale": 1.7466036445731905,
+  "target_id": "R-TRIG_K05_16"
+ },
+ {
+  "expression": "*(x, sin(sin(x)))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.11915672459055965,
+  "target_scale": 1.5969540223532592,
+  "target_id": "R-TRIG_K05_17"
+ },
+ {
+  "expression": "cos(sin(sin(sin(x))))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00528806461238899,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K05_18"
+ },
+ {
+  "expression": "+(cos(1), cos(x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.028682450334859694,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K05_19"
+ },
+ {
+  "expression": "+(sin(1), cos(x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.028682450334859694,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K05_20"
+ },
+ {
+  "expression": "+(x, +(x, 1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3267326732673266,
+  "target_scale": 6.98019801980198,
+  "target_id": "R-TRIG_K05_21"
+ },
+ {
+  "expression": "cos(cos(cos(cos(x))))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0025052276887918582,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K05_22"
+ },
+ {
+  "expression": "*(sin(1), cos(x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.020309280653066045,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K05_23"
+ },
+ {
+  "expression": "sin(cos(cos(sin(x))))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004256367611034753,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K05_24"
+ },
+ {
+  "expression": "cos(sin(+(x, 1)))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.007288000077439944,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K05_25"
+ },
+ {
+  "expression": "cos(cos(cos(sin(x))))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.002790301109996406,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K05_26"
+ },
+ {
+  "expression": "cos(sin(*(x, x)))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.023755411655141882,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K05_27"
+ },
+ {
+  "expression": "*(sin(x), sin(1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.035671462324231004,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K05_28"
+ },
+ {
+  "expression": "+(cos(x), cos(x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.546894459887637,
+   "bits_sem": 7.475733430966398,
+   "bits_sem_uncorrected": 7.475733430966398,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1147298013394388,
+  "target_scale": 1.9770935354715486,
+  "target_id": "R-TRIG_K05_29"
+ },
+ {
+  "expression": "+(x, sin(cos(sin(x))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1335481145306906,
+  "target_scale": 3.8253746723686883,
+  "target_id": "R-TRIG_K06_00"
+ },
+ {
+  "expression": "*(sin(x), *(x, x))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5473181816141856,
+  "target_scale": 3.9452879094823263,
+  "target_id": "R-TRIG_K06_01"
+ },
+ {
+  "expression": "cos(sin(*(x, sin(x))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.010254397691274533,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K06_02"
+ },
+ {
+  "expression": "cos(*(sin(1), cos(x)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.006747247304813645,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K06_03"
+ },
+ {
+  "expression": "*(cos(1), +(x, 1))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0238454881113172,
+  "target_scale": 2.1558596956916865,
+  "target_id": "R-TRIG_K06_04"
+ },
+ {
+  "expression": "*(x, sin(+(1, 1)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.06753742510952868,
+  "target_scale": 2.7188893356569888,
+  "target_id": "R-TRIG_K06_05"
+ },
+ {
+  "expression": "+(1, *(x, sin(1)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.05783768020551444,
+  "target_scale": 3.5160815585345024,
+  "target_id": "R-TRIG_K06_06"
+ },
+ {
+  "expression": "sin(+(cos(1), cos(x)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.027179168829282573,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K06_07"
+ },
+ {
+  "expression": "cos(cos(sin(cos(cos(x)))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.001315181005983567,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K06_08"
+ },
+ {
+  "expression": "cos(*(x, cos(cos(x))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.005630541251257599,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K06_09"
+ },
+ {
+  "expression": "+(cos(1), *(x, x))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.0474153184360677,
+  "target_scale": 9.480994394879021,
+  "target_id": "R-TRIG_K06_10"
+ },
+ {
+  "expression": "sin(sin(sin(*(x, x))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.37513259771459395,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K06_11"
+ },
+ {
+  "expression": "cos(sin(+(x, sin(1))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.003327730357423039,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K06_12"
+ },
+ {
+  "expression": "cos(cos(*(x, sin(x))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.011475172745500379,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K06_13"
+ },
+ {
+  "expression": "sin(+(x, cos(sin(1))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.07772561679210693,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K06_14"
+ },
+ {
+  "expression": "+(1, sin(cos(sin(x))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.006411434557767405,
+  "target_scale": 1.8352756624676982,
+  "target_id": "R-TRIG_K06_15"
+ },
+ {
+  "expression": "sin(cos(+(x, sin(1))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0016412604503849126,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K06_16"
+ },
+ {
+  "expression": "cos(cos(sin(+(x, 1))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0043484744050843425,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K06_17"
+ },
+ {
+  "expression": "*(x, cos(+(x, 1)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.011875811635621741,
+  "target_scale": 2.3416887537533024,
+  "target_id": "R-TRIG_K06_18"
+ },
+ {
+  "expression": "sin(cos(*(x, cos(x))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.22727173354450428,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K06_19"
+ },
+ {
+  "expression": "*(sin(x), sin(sin(x)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.04706662129062712,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K06_20"
+ },
+ {
+  "expression": "cos(cos(cos(sin(cos(x)))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.001182712732429515,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K06_21"
+ },
+ {
+  "expression": "sin(cos(cos(cos(cos(x)))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00138117660821467,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K06_22"
+ },
+ {
+  "expression": "sin(+(sin(x), cos(1)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.010957024615824389,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K06_23"
+ },
+ {
+  "expression": "cos(sin(sin(cos(sin(x)))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0013384638991554597,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K06_24"
+ },
+ {
+  "expression": "sin(sin(*(x, sin(x))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.010655167422105451,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K06_25"
+ },
+ {
+  "expression": "+(sin(x), +(x, x))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1217087696648667,
+  "target_scale": 6.131112856710593,
+  "target_id": "R-TRIG_K06_26"
+ },
+ {
+  "expression": "cos(*(x, *(x, x)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5026273849414651,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K06_27"
+ },
+ {
+  "expression": "cos(cos(+(1, sin(x))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00045492712852346866,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K06_28"
+ },
+ {
+  "expression": "cos(*(x, cos(sin(1))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 15.509775004326936,
+   "bits_syn": 10.746514321138463,
+   "bits_sem": 9.233619676759702,
+   "bits_sem_uncorrected": 9.233619676759702,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.03517205004396759,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K06_29"
+ },
+ {
+  "expression": "*(sin(x), cos(sin(cos(1))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.038183030070949996,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K07_00"
+ },
+ {
+  "expression": "sin(sin(sin(cos(*(x, x)))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.2041398592353569,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K07_01"
+ },
+ {
+  "expression": "+(1, *(sin(x), cos(1)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.01470673491300659,
+  "target_scale": 1.4890452631877507,
+  "target_id": "R-TRIG_K07_02"
+ },
+ {
+  "expression": "cos(+(1, cos(+(x, x))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1879507037305754,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K07_03"
+ },
+ {
+  "expression": "cos(cos(*(sin(1), cos(x))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0034542027793097833,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K07_04"
+ },
+ {
+  "expression": "sin(cos(+(x, sin(cos(1)))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0009161851702983003,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K07_05"
+ },
+ {
+  "expression": "*(+(x, x), *(x, x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 117.87722311847754,
+  "target_scale": 53.4671091263621,
+  "target_id": "R-TRIG_K07_06"
+ },
+ {
+  "expression": "+(x, cos(cos(sin(cos(1)))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683164,
+  "target_scale": 3.634474170148206,
+  "target_id": "R-TRIG_K07_07"
+ },
+ {
+  "expression": "*(cos(x), +(x, sin(x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3184583916361433,
+  "target_scale": 3.105039085676943,
+  "target_id": "R-TRIG_K07_08"
+ },
+ {
+  "expression": "sin(cos(+(cos(1), cos(x))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00038987840462423285,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K07_09"
+ },
+ {
+  "expression": "*(sin(x), cos(cos(sin(x))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.039471244017906706,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K07_10"
+ },
+ {
+  "expression": "sin(+(x, cos(sin(cos(1)))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.07383132817973073,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K07_11"
+ },
+ {
+  "expression": "*(sin(sin(1)), cos(cos(x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0070488476037214665,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K07_12"
+ },
+ {
+  "expression": "cos(cos(+(1, sin(cos(x)))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0011961035007117087,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K07_13"
+ },
+ {
+  "expression": "+(x, cos(cos(cos(sin(1)))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683164,
+  "target_scale": 3.696728669563843,
+  "target_id": "R-TRIG_K07_14"
+ },
+ {
+  "expression": "sin(+(sin(x), sin(cos(1))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.012008589929334616,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K07_15"
+ },
+ {
+  "expression": "+(x, *(x, sin(cos(x))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.044642663623484014,
+  "target_scale": 1.1809404038293867,
+  "target_id": "R-TRIG_K07_16"
+ },
+ {
+  "expression": "cos(+(x, sin(cos(sin(x)))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0038707314445282446,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K07_17"
+ },
+ {
+  "expression": "*(cos(sin(x)), cos(cos(x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00011043902457916991,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K07_18"
+ },
+ {
+  "expression": "sin(*(x, sin(+(1, 1))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.027587743818915246,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K07_19"
+ },
+ {
+  "expression": "cos(sin(+(1, sin(sin(x)))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00030508134861339663,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K07_20"
+ },
+ {
+  "expression": "*(x, *(sin(1), cos(x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.2814058728136247,
+  "target_scale": 2.487264292048872,
+  "target_id": "R-TRIG_K07_21"
+ },
+ {
+  "expression": "cos(sin(*(sin(x), sin(1))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004862976542817528,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K07_22"
+ },
+ {
+  "expression": "*(x, cos(cos(cos(sin(x)))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.12437213855110381,
+  "target_scale": 2.5493961968163017,
+  "target_id": "R-TRIG_K07_23"
+ },
+ {
+  "expression": "*(x, +(x, sin(cos(x))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.8888836151779895,
+  "target_scale": 6.443278503585766,
+  "target_id": "R-TRIG_K07_24"
+ },
+ {
+  "expression": "cos(+(sin(x), cos(sin(1))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0429554246546081,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K07_25"
+ },
+ {
+  "expression": "+(1, sin(sin(+(x, 1))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.05923853911208003,
+  "target_scale": 1.1309343108996313,
+  "target_id": "R-TRIG_K07_26"
+ },
+ {
+  "expression": "sin(+(sin(x), sin(sin(x))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.04346067874344541,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K07_27"
+ },
+ {
+  "expression": "sin(+(x, sin(+(x, x))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.019339224548402513,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K07_28"
+ },
+ {
+  "expression": "cos(sin(+(x, sin(sin(1)))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.009478745888066,
+   "bits_sem": 11.055960234452295,
+   "bits_sem_uncorrected": 11.055960234452295,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.001747318275257919,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K07_29"
+ },
+ {
+  "expression": "sin(+(+(1, 1), +(x, 1)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.03969957232944951,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K08_00"
+ },
+ {
+  "expression": "*(cos(sin(x)), +(1, sin(x)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.002601176361001689,
+  "target_scale": 1.3217824844927986,
+  "target_id": "R-TRIG_K08_01"
+ },
+ {
+  "expression": "+(sin(1), *(x, +(x, x)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 8.189661273744266,
+  "target_scale": 18.722855162829656,
+  "target_id": "R-TRIG_K08_02"
+ },
+ {
+  "expression": "sin(sin(sin(sin(*(x, sin(x))))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004244479646640373,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K08_03"
+ },
+ {
+  "expression": "*(sin(cos(1)), +(x, sin(x)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0011537502067798927,
+  "target_scale": 1.615722629755673,
+  "target_id": "R-TRIG_K08_04"
+ },
+ {
+  "expression": "sin(*(x, *(sin(1), cos(x))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013756354509675111,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K08_05"
+ },
+ {
+  "expression": "*(cos(x), cos(cos(sin(sin(x)))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00451674510716032,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K08_06"
+ },
+ {
+  "expression": "*(x, sin(sin(cos(cos(sin(1))))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.03451106955935745,
+  "target_scale": 1.9435624119628585,
+  "target_id": "R-TRIG_K08_07"
+ },
+ {
+  "expression": "*(cos(cos(x)), +(1, sin(x)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.11254904687915751,
+  "target_scale": 1.7355481109030189,
+  "target_id": "R-TRIG_K08_08"
+ },
+ {
+  "expression": "sin(*(cos(1), +(x, cos(1))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0002332149406047888,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K08_09"
+ },
+ {
+  "expression": "sin(sin(+(x, *(x, sin(1)))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.007667017200522415,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K08_10"
+ },
+ {
+  "expression": "+(x, cos(cos(sin(+(x, 1)))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.122357779943019,
+  "target_scale": 3.7342798981089507,
+  "target_id": "R-TRIG_K08_11"
+ },
+ {
+  "expression": "sin(cos(*(x, sin(cos(sin(1))))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.030039957675038195,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K08_12"
+ },
+ {
+  "expression": "cos(*(x, cos(sin(+(x, 1)))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0057067750626990125,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K08_13"
+ },
+ {
+  "expression": "sin(+(x, cos(*(x, sin(1)))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0013324407129606632,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K08_14"
+ },
+ {
+  "expression": "+(+(x, 1), cos(cos(sin(1))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683164,
+  "target_scale": 4.776171697587797,
+  "target_id": "R-TRIG_K08_15"
+ },
+ {
+  "expression": "sin(cos(+(sin(1), sin(cos(x)))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00020103485874022268,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K08_16"
+ },
+ {
+  "expression": "cos(+(x, cos(+(x, cos(x)))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.015973856414547894,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K08_17"
+ },
+ {
+  "expression": "cos(sin(+(1, sin(*(x, x)))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.037492628888168636,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K08_18"
+ },
+ {
+  "expression": "*(cos(1), +(1, sin(cos(x))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004573919469982395,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K08_19"
+ },
+ {
+  "expression": "cos(sin(*(sin(x), sin(sin(1)))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.003313088713920365,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K08_20"
+ },
+ {
+  "expression": "+(x, sin(cos(cos(cos(sin(1))))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683166,
+  "target_scale": 3.6393731459909953,
+  "target_id": "R-TRIG_K08_21"
+ },
+ {
+  "expression": "cos(cos(*(x, cos(+(1, 1)))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0023859985736416236,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K08_22"
+ },
+ {
+  "expression": "+(1, cos(sin(sin(sin(cos(x))))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.001860664899355767,
+  "target_scale": 1.9248344903920325,
+  "target_id": "R-TRIG_K08_23"
+ },
+ {
+  "expression": "*(x, sin(cos(sin(+(1, 1)))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.02713693117058368,
+  "target_scale": 1.723453809616517,
+  "target_id": "R-TRIG_K08_24"
+ },
+ {
+  "expression": "cos(*(x, sin(sin(cos(cos(x))))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0002437919025034148,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K08_25"
+ },
+ {
+  "expression": "cos(sin(sin(+(sin(x), sin(x)))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.008136103449949956,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K08_26"
+ },
+ {
+  "expression": "+(cos(1), sin(cos(cos(sin(x)))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004256367611034753,
+  "target_scale": 1.2682209165825045,
+  "target_id": "R-TRIG_K08_27"
+ },
+ {
+  "expression": "sin(+(cos(x), cos(sin(sin(x)))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00677242449216267,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K08_28"
+ },
+ {
+  "expression": "sin(cos(*(cos(x), cos(sin(1)))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 20.67970000576925,
+   "bits_syn": 15.31479563956952,
+   "bits_sem": 12.92425580090125,
+   "bits_sem_uncorrected": 12.92425580090125,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.001158666087766203,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K08_29"
+ },
+ {
+  "expression": "+(x, *(x, sin(cos(+(1, 1)))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.02899188745417801,
+  "target_scale": 1.7813839162041163,
+  "target_id": "R-TRIG_K09_00"
+ },
+ {
+  "expression": "+(sin(+(x, 1)), cos(sin(cos(1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.06836122430360266,
+  "target_scale": 1.0019017647788622,
+  "target_id": "R-TRIG_K09_01"
+ },
+ {
+  "expression": "cos(cos(cos(*(sin(x), cos(sin(1))))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0005906007195359024,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K09_02"
+ },
+ {
+  "expression": "sin(sin(sin(cos(sin(*(x, sin(x)))))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.002732915860513774,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K09_03"
+ },
+ {
+  "expression": "sin(+(+(1, 1), cos(cos(sin(x)))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.005646104415218975,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K09_04"
+ },
+ {
+  "expression": "sin(cos(*(x, sin(+(1, cos(1))))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.015716076066222592,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K09_05"
+ },
+ {
+  "expression": "cos(cos(cos(+(sin(1), sin(cos(x))))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0001213578606610779,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K09_06"
+ },
+ {
+  "expression": "*(cos(x), cos(sin(sin(+(1, 1)))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.014235841625456214,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K09_07"
+ },
+ {
+  "expression": "+(cos(1), cos(sin(+(x, cos(x)))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0004160239393157779,
+  "target_scale": 1.1551130332371735,
+  "target_id": "R-TRIG_K09_08"
+ },
+ {
+  "expression": "*(cos(sin(1)), cos(+(1, sin(x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.02170131950992972,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K09_09"
+ },
+ {
+  "expression": "cos(+(cos(1), sin(cos(sin(sin(x))))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0032104415358745046,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K09_10"
+ },
+ {
+  "expression": "+(sin(sin(cos(x))), *(x, sin(1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.021646775952037945,
+  "target_scale": 1.7746322239183936,
+  "target_id": "R-TRIG_K09_11"
+ },
+ {
+  "expression": "cos(+(cos(sin(x)), +(x, sin(1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.10657607877918857,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K09_12"
+ },
+ {
+  "expression": "*(sin(cos(sin(x))), cos(+(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.13930765881861706,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K09_13"
+ },
+ {
+  "expression": "sin(*(sin(x), sin(*(x, sin(1)))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.046459346100574936,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K09_14"
+ },
+ {
+  "expression": "+(+(x, 1), sin(+(1, cos(1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683166,
+  "target_scale": 4.989634103272345,
+  "target_id": "R-TRIG_K09_15"
+ },
+ {
+  "expression": "+(cos(1), cos(+(1, sin(cos(x)))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0018856362194520657,
+  "target_scale": 1.5267580395525704,
+  "target_id": "R-TRIG_K09_16"
+ },
+ {
+  "expression": "sin(sin(+(x, cos(cos(+(1, 1))))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.06514668099724126,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K09_17"
+ },
+ {
+  "expression": "cos(cos(sin(sin(+(x, sin(cos(x)))))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00016706173708936397,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K09_18"
+ },
+ {
+  "expression": "cos(cos(+(x, *(x, cos(sin(x))))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.022778552822168924,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K09_19"
+ },
+ {
+  "expression": "sin(cos(sin(*(cos(1), cos(sin(x))))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00020519012799551616,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K09_20"
+ },
+ {
+  "expression": "sin(+(x, cos(*(cos(x), cos(x)))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.02125175868904543,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K09_21"
+ },
+ {
+  "expression": "sin(cos(+(x, +(sin(x), sin(x)))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0022257206759748473,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K09_22"
+ },
+ {
+  "expression": "+(1, sin(cos(cos(cos(+(x, x))))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.005340337838552653,
+  "target_scale": 1.742989052955517,
+  "target_id": "R-TRIG_K09_23"
+ },
+ {
+  "expression": "+(sin(cos(x)), +(sin(1), cos(1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.015668047229315762,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K09_24"
+ },
+ {
+  "expression": "*(sin(sin(x)), +(1, cos(sin(1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.09946754621701367,
+  "target_scale": 1.31060925988587,
+  "target_id": "R-TRIG_K09_25"
+ },
+ {
+  "expression": "*(cos(cos(x)), +(cos(x), cos(x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.008662704869201723,
+  "target_scale": 1.1221885480549325,
+  "target_id": "R-TRIG_K09_26"
+ },
+ {
+  "expression": "+(sin(x), cos(+(sin(1), sin(1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0503781972372376,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K09_27"
+ },
+ {
+  "expression": "cos(sin(+(cos(1), sin(cos(sin(x))))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00040905063009913985,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K09_28"
+ },
+ {
+  "expression": "+(sin(sin(sin(x))), +(x, cos(1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 23.264662506490403,
+   "bits_syn": 17.653222958866863,
+   "bits_sem": 14.825107853726452,
+   "bits_sem_uncorrected": 14.825107853726452,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.01638134894859188,
+  "target_scale": 3.6801782261420577,
+  "target_id": "R-TRIG_K09_29"
+ },
+ {
+  "expression": "+(cos(+(1, 1)), sin(+(x, sin(1))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.07475736942597011,
+  "target_scale": 1.0526665430341016,
+  "target_id": "R-TRIG_K10_00"
+ },
+ {
+  "expression": "+(sin(x), sin(+(1, sin(cos(cos(1))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.05037819723723758,
+  "target_scale": 1.887986478290884,
+  "target_id": "R-TRIG_K10_01"
+ },
+ {
+  "expression": "+(*(x, x), sin(sin(cos(+(x, x)))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3.4226114015625537,
+  "target_scale": 9.669100176865905,
+  "target_id": "R-TRIG_K10_02"
+ },
+ {
+  "expression": "sin(sin(cos(*(x, cos(sin(cos(cos(x))))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.06845293687558214,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K10_03"
+ },
+ {
+  "expression": "+(x, *(x, cos(*(x, +(x, x)))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.9936768740313466,
+  "target_scale": 5.021131768145164,
+  "target_id": "R-TRIG_K10_04"
+ },
+ {
+  "expression": "cos(sin(+(cos(x), sin(cos(cos(cos(x)))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 7.749083943189161e-05,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K10_05"
+ },
+ {
+  "expression": "sin(sin(cos(*(x, *(cos(1), cos(x))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.05256077887158799,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K10_06"
+ },
+ {
+  "expression": "cos(sin(sin(+(cos(x), *(x, sin(1))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4.3093981118301926e-05,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K10_07"
+ },
+ {
+  "expression": "*(x, sin(cos(cos(sin(*(x, sin(x)))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.020600538306354957,
+  "target_scale": 1.9733276632046222,
+  "target_id": "R-TRIG_K10_08"
+ },
+ {
+  "expression": "+(x, sin(*(cos(x), +(1, cos(x)))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1341924166405539,
+  "target_scale": 2.9787771960582443,
+  "target_id": "R-TRIG_K10_09"
+ },
+ {
+  "expression": "+(cos(cos(x)), sin(+(sin(x), cos(x))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.22996532675003728,
+  "target_scale": 1.3727676496462546,
+  "target_id": "R-TRIG_K10_10"
+ },
+ {
+  "expression": "+(cos(+(x, 1)), *(sin(x), cos(x)))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.03911558182598317,
+  "target_scale": 1.484665805336368,
+  "target_id": "R-TRIG_K10_11"
+ },
+ {
+  "expression": "+(1, cos(sin(sin(*(sin(x), sin(x))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004994456566189286,
+  "target_scale": 1.9997407439976078,
+  "target_id": "R-TRIG_K10_12"
+ },
+ {
+  "expression": "+(sin(x), cos(cos(cos(*(x, cos(1))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.06229621975868275,
+  "target_scale": 1.5319443524130358,
+  "target_id": "R-TRIG_K10_13"
+ },
+ {
+  "expression": "cos(sin(+(x, *(x, cos(sin(sin(1)))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.016297726479189437,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K10_14"
+ },
+ {
+  "expression": "*(x, cos(*(x, cos(sin(cos(cos(x)))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.7749720584179233,
+  "target_scale": 2.548183054810564,
+  "target_id": "R-TRIG_K10_15"
+ },
+ {
+  "expression": "cos(*(sin(*(x, x)), +(x, sin(1))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.39119209958958967,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K10_16"
+ },
+ {
+  "expression": "+(sin(1), sin(sin(+(x, sin(sin(1))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.07288594720779916,
+  "target_scale": 1.2091837793606794,
+  "target_id": "R-TRIG_K10_17"
+ },
+ {
+  "expression": "sin(*(sin(+(x, x)), sin(sin(cos(1)))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.008224341919750909,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K10_18"
+ },
+ {
+  "expression": "+(1, sin(+(1, *(x, cos(sin(1))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.02810164452380242,
+  "target_scale": 1.7189298380791667,
+  "target_id": "R-TRIG_K10_19"
+ },
+ {
+  "expression": "cos(sin(sin(cos(cos(*(sin(x), sin(x)))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0006916249402124425,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K10_20"
+ },
+ {
+  "expression": "*(x, cos(sin(cos(cos(sin(+(x, x)))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.09267933472523597,
+  "target_scale": 2.556196074219269,
+  "target_id": "R-TRIG_K10_21"
+ },
+ {
+  "expression": "+(+(x, x), sin(cos(sin(sin(cos(1))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3267326732673266,
+  "target_scale": 6.751819152807725,
+  "target_id": "R-TRIG_K10_22"
+ },
+ {
+  "expression": "*(*(x, x), cos(cos(sin(sin(sin(1))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.0377105152923656,
+  "target_scale": 6.365115269885728,
+  "target_id": "R-TRIG_K10_23"
+ },
+ {
+  "expression": "*(cos(x), sin(*(x, cos(cos(cos(1))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.024978569554525886,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K10_24"
+ },
+ {
+  "expression": "sin(sin(+(sin(1), *(x, sin(cos(x))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0648143687578068,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K10_25"
+ },
+ {
+  "expression": "+(cos(cos(sin(1))), +(sin(x), cos(1)))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0503781972372376,
+  "target_scale": 2.231507653320241,
+  "target_id": "R-TRIG_K10_26"
+ },
+ {
+  "expression": "*(cos(cos(cos(1))), cos(cos(+(x, x))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.007263018670870239,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K10_27"
+ },
+ {
+  "expression": "*(sin(sin(1)), +(cos(1), cos(cos(x))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.007048847603721464,
+  "target_scale": 1.0821151784874392,
+  "target_id": "R-TRIG_K10_28"
+ },
+ {
+  "expression": "+(+(x, 1), cos(sin(cos(sin(sin(1))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 25.84962500721156,
+   "bits_syn": 20.017229802726206,
+   "bits_sem": 16.75002650671987,
+   "bits_sem_uncorrected": 16.75002650671987,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683164,
+  "target_scale": 4.773710542426219,
+  "target_id": "R-TRIG_K10_29"
+ },
+ {
+  "expression": "cos(+(cos(x), cos(+(x, sin(*(x, x))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.29190110818238646,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K11_00"
+ },
+ {
+  "expression": "+(1, sin(cos(*(sin(cos(x)), +(x, x)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.11215316787697274,
+  "target_scale": 1.2751041791567874,
+  "target_id": "R-TRIG_K11_01"
+ },
+ {
+  "expression": "sin(sin(*(cos(1), cos(*(x, +(x, x))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1151612083402233,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K11_02"
+ },
+ {
+  "expression": "sin(+(cos(1), cos(sin(*(x, cos(sin(x)))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0019864626214517434,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K11_03"
+ },
+ {
+  "expression": "cos(cos(sin(cos(+(x, cos(sin(sin(sin(x)))))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0007892092484912277,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K11_04"
+ },
+ {
+  "expression": "sin(+(cos(x), cos(sin(cos(*(x, sin(x)))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.053012372689250985,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K11_05"
+ },
+ {
+  "expression": "cos(cos(sin(+(1, cos(sin(cos(cos(sin(x)))))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.568285005099466e-05,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K11_06"
+ },
+ {
+  "expression": "*(x, cos(*(cos(1), sin(+(x, cos(1))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08967546523659221,
+  "target_scale": 2.927598076501603,
+  "target_id": "R-TRIG_K11_07"
+ },
+ {
+  "expression": "*(+(1, sin(x)), cos(*(x, cos(cos(x)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.02368203987470382,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K11_08"
+ },
+ {
+  "expression": "sin(+(x, cos(cos(sin(*(x, cos(cos(1))))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.04932481940765917,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K11_09"
+ },
+ {
+  "expression": "*(+(1, sin(x)), sin(sin(cos(cos(sin(x))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.04516791764820864,
+  "target_scale": 1.2675175146441147,
+  "target_id": "R-TRIG_K11_10"
+ },
+ {
+  "expression": "cos(cos(+(x, sin(*(sin(1), sin(cos(1)))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.003053562353687611,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K11_11"
+ },
+ {
+  "expression": "*(+(x, cos(x)), sin(sin(*(x, cos(x)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08252240084923416,
+  "target_scale": 1.3838057598687012,
+  "target_id": "R-TRIG_K11_12"
+ },
+ {
+  "expression": "+(sin(x), cos(*(x, sin(sin(cos(cos(1)))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.17280149032936357,
+  "target_scale": 1.0955764821676048,
+  "target_id": "R-TRIG_K11_13"
+ },
+ {
+  "expression": "cos(sin(cos(+(sin(x), sin(sin(sin(sin(1))))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004111073057524084,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K11_14"
+ },
+ {
+  "expression": "sin(sin(sin(cos(+(cos(1), sin(cos(cos(x))))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004102432993451909,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K11_15"
+ },
+ {
+  "expression": "sin(sin(cos(sin(*(cos(sin(x)), +(x, 1))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004839477052370474,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K11_16"
+ },
+ {
+  "expression": "+(1, sin(cos(+(cos(x), sin(cos(sin(x)))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4.470314212692841e-06,
+  "target_scale": 1.8414705995755467,
+  "target_id": "R-TRIG_K11_17"
+ },
+ {
+  "expression": "+(sin(x), *(sin(1), sin(cos(cos(sin(1))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0503781972372376,
+  "target_scale": 1.5005437124937346,
+  "target_id": "R-TRIG_K11_18"
+ },
+ {
+  "expression": "+(sin(1), sin(+(sin(cos(x)), cos(sin(x)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0005393267012159613,
+  "target_scale": 1.0451778832593832,
+  "target_id": "R-TRIG_K11_19"
+ },
+ {
+  "expression": "+(sin(sin(x)), cos(+(sin(x), +(1, 1))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004264350232180169,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K11_20"
+ },
+ {
+  "expression": "*(sin(cos(x)), +(x, sin(+(x, cos(x)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3624857656500651,
+  "target_scale": 3.2563435651113277,
+  "target_id": "R-TRIG_K11_21"
+ },
+ {
+  "expression": "+(cos(cos(cos(1))), cos(cos(+(x, sin(x)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3.0258029606398852e-05,
+  "target_scale": 1.215917050278112,
+  "target_id": "R-TRIG_K11_22"
+ },
+ {
+  "expression": "cos(cos(+(sin(sin(cos(x))), cos(sin(cos(1))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0004993267061896624,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K11_23"
+ },
+ {
+  "expression": "+(sin(1), sin(+(x, cos(sin(+(x, x))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.13626331894194935,
+  "target_scale": 1.2432880722658468,
+  "target_id": "R-TRIG_K11_24"
+ },
+ {
+  "expression": "+(cos(1), sin(cos(cos(sin(*(x, cos(1)))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00010967042450184451,
+  "target_scale": 1.2965456815133618,
+  "target_id": "R-TRIG_K11_25"
+ },
+ {
+  "expression": "sin(+(x, sin(*(sin(x), sin(cos(sin(x)))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.029440378996375444,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K11_26"
+ },
+ {
+  "expression": "sin(+(sin(cos(sin(x))), cos(*(x, cos(1)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.001824717538350526,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K11_27"
+ },
+ {
+  "expression": "sin(+(x, sin(sin(cos(sin(+(x, sin(x))))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.07799918508169854,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K11_28"
+ },
+ {
+  "expression": "sin(+(+(x, x), cos(*(sin(1), cos(x)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 28.43458750793272,
+   "bits_syn": 22.40202682263997,
+   "bits_sem": 18.695228291495752,
+   "bits_sem_uncorrected": 18.695228291495752,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.16483504877412167,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K11_29"
+ },
+ {
+  "expression": "sin(cos(cos(cos(cos(sin(sin(+(sin(1), cos(x)))))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.7296325997792076e-05,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K12_00"
+ },
+ {
+  "expression": "cos(sin(*(x, sin(sin(sin(sin(*(x, cos(x)))))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.006189028251334598,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K12_01"
+ },
+ {
+  "expression": "+(*(x, cos(1)), cos(sin(sin(cos(sin(cos(x)))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.031903465013290624,
+  "target_scale": 2.4506583452155235,
+  "target_id": "R-TRIG_K12_02"
+ },
+ {
+  "expression": "cos(sin(+(x, *(x, cos(sin(cos(+(1, 1))))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00907204509135756,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K12_03"
+ },
+ {
+  "expression": "sin(sin(+(1, *(cos(1), cos(sin(+(x, x)))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4.687559773651688e-05,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K12_04"
+ },
+ {
+  "expression": "+(sin(sin(x)), cos(cos(sin(sin(sin(cos(sin(x))))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.028994617700360825,
+  "target_scale": 1.4331254432134002,
+  "target_id": "R-TRIG_K12_05"
+ },
+ {
+  "expression": "+(cos(sin(+(x, 1))), cos(*(sin(x), sin(1))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0008673119105416513,
+  "target_scale": 1.8149632318099416,
+  "target_id": "R-TRIG_K12_06"
+ },
+ {
+  "expression": "*(sin(sin(1)), cos(sin(+(sin(x), cos(sin(1))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.002136163923773205,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K12_07"
+ },
+ {
+  "expression": "sin(cos(+(cos(1), cos(cos(*(sin(x), cos(x)))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0005098797179970833,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K12_08"
+ },
+ {
+  "expression": "cos(cos(+(cos(x), *(sin(x), sin(cos(sin(1)))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.007882510611171257,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K12_09"
+ },
+ {
+  "expression": "cos(+(cos(cos(+(1, 1))), +(x, *(x, x))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.4676245618240716,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K12_10"
+ },
+ {
+  "expression": "+(+(sin(x), sin(1)), cos(sin(sin(sin(sin(1))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.05037819723723758,
+  "target_scale": 2.5560593118354764,
+  "target_id": "R-TRIG_K12_11"
+ },
+ {
+  "expression": "+(x, cos(+(cos(sin(x)), cos(sin(cos(cos(1)))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.029062740017565078,
+  "target_scale": 2.845353113136787,
+  "target_id": "R-TRIG_K12_12"
+ },
+ {
+  "expression": "cos(cos(*(cos(x), cos(+(sin(1), cos(sin(1)))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.717597169610201e-07,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K12_13"
+ },
+ {
+  "expression": "*(*(x, +(x, x)), +(1, sin(cos(sin(1)))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 21.443464061671513,
+  "target_scale": 28.934476974255627,
+  "target_id": "R-TRIG_K12_14"
+ },
+ {
+  "expression": "+(sin(x), *(*(x, x), cos(+(x, sin(x)))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.8170920492145717,
+  "target_scale": 8.789775754459098,
+  "target_id": "R-TRIG_K12_15"
+ },
+ {
+  "expression": "sin(cos(+(+(x, sin(x)), sin(+(1, sin(1))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0016197195151092226,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K12_16"
+ },
+ {
+  "expression": "cos(sin(cos(cos(+(1, cos(sin(cos(+(x, 1)))))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 8.538183974731008e-06,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K12_17"
+ },
+ {
+  "expression": "+(cos(sin(x)), cos(*(cos(1), sin(sin(sin(1))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013548843260777044,
+  "target_scale": 1.9222006141512482,
+  "target_id": "R-TRIG_K12_18"
+ },
+ {
+  "expression": "*(cos(cos(cos(1))), sin(cos(*(cos(1), cos(x)))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00019867233154108522,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K12_19"
+ },
+ {
+  "expression": "sin(+(sin(sin(*(x, x))), cos(cos(sin(sin(1))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.21526186109549697,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K12_20"
+ },
+ {
+  "expression": "cos(+(sin(sin(1)), *(sin(1), sin(*(x, x)))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.16116774672206965,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K12_21"
+ },
+ {
+  "expression": "*(*(x, +(x, x)), +(1, cos(sin(cos(x)))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 17.15186804090186,
+  "target_scale": 29.879951310577066,
+  "target_id": "R-TRIG_K12_22"
+ },
+ {
+  "expression": "sin(+(1, sin(cos(sin(+(cos(x), +(1, 1)))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.560326048257582e-07,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K12_23"
+ },
+ {
+  "expression": "sin(sin(+(sin(1), cos(sin(+(cos(x), cos(x)))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 8.349922538632474e-06,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K12_24"
+ },
+ {
+  "expression": "cos(*(x, sin(cos(cos(cos(cos(+(x, sin(x)))))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.028673027717693977,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K12_25"
+ },
+ {
+  "expression": "sin(cos(cos(sin(sin(+(sin(x), sin(sin(cos(x)))))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0007016494137431397,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K12_26"
+ },
+ {
+  "expression": "cos(+(sin(1), *(cos(sin(1)), cos(+(x, x)))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.07114577005650478,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K12_27"
+ },
+ {
+  "expression": "+(sin(cos(1)), cos(sin(sin(sin(+(1, cos(x)))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.001309514487454512,
+  "target_scale": 1.5143296795784171,
+  "target_id": "R-TRIG_K12_28"
+ },
+ {
+  "expression": "sin(+(+(x, 1), *(x, sin(+(x, cos(1))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 31.019550008653873,
+   "bits_syn": 24.803944556855384,
+   "bits_sem": 20.657173628448145,
+   "bits_sem_uncorrected": 20.657173628448145,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.11567809729008459,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K12_29"
+ },
+ {
+  "expression": "sin(+(+(x, x), cos(+(sin(sin(x)), sin(sin(x))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.2729398837080898,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K13_00"
+ },
+ {
+  "expression": "sin(+(cos(sin(1)), *(x, cos(cos(+(1, sin(1)))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.07229912637401012,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K13_01"
+ },
+ {
+  "expression": "*(+(x, +(x, 1)), cos(*(x, cos(+(x, x)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 16.706689109091876,
+  "target_scale": 6.693316252963075,
+  "target_id": "R-TRIG_K13_02"
+ },
+ {
+  "expression": "sin(+(sin(sin(sin(sin(x)))), +(x, cos(cos(sin(x))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0035453210107019057,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K13_03"
+ },
+ {
+  "expression": "*(x, sin(cos(sin(+(x, sin(sin(+(x, sin(1)))))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.045797856356328506,
+  "target_scale": 2.0995442466867402,
+  "target_id": "R-TRIG_K13_04"
+ },
+ {
+  "expression": "*(sin(cos(+(1, 1))), +(1, cos(+(x, cos(x)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0023297261389562084,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K13_05"
+ },
+ {
+  "expression": "sin(cos(*(sin(cos(sin(x))), sin(*(x, *(x, x))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.003988316106026435,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K13_06"
+ },
+ {
+  "expression": "cos(cos(cos(+(1, *(x, +(cos(x), sin(cos(1))))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.006136258318467955,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K13_07"
+ },
+ {
+  "expression": "cos(*(x, cos(+(1, sin(+(cos(x), cos(cos(x))))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3638462951197722,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K13_08"
+ },
+ {
+  "expression": "+(x, cos(sin(*(x, cos(cos(+(sin(x), cos(x))))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.09560422846832693,
+  "target_scale": 3.745272660799087,
+  "target_id": "R-TRIG_K13_09"
+ },
+ {
+  "expression": "cos(sin(+(1, cos(+(cos(x), sin(sin(cos(sin(1)))))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 7.379565273644467e-05,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K13_10"
+ },
+ {
+  "expression": "cos(+(+(1, cos(x)), cos(*(sin(x), cos(cos(x))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004344392941087288,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K13_11"
+ },
+ {
+  "expression": "+(1, *(sin(cos(x)), cos(sin(sin(sin(sin(cos(x))))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.007298995198110909,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K13_12"
+ },
+ {
+  "expression": "+(x, *(sin(1), sin(+(cos(sin(1)), cos(cos(x))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.07201586895992879,
+  "target_scale": 3.779240061291247,
+  "target_id": "R-TRIG_K13_13"
+ },
+ {
+  "expression": "*(cos(cos(1)), cos(cos(*(x, sin(+(x, cos(1)))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.010915617364362641,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K13_14"
+ },
+ {
+  "expression": "cos(*(+(1, cos(1)), cos(+(cos(x), +(1, 1)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.011477366564230033,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K13_15"
+ },
+ {
+  "expression": "+(1, sin(+(1, *(*(x, x), sin(cos(cos(1)))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5029193583400479,
+  "target_scale": 1.9957122070613318,
+  "target_id": "R-TRIG_K13_16"
+ },
+ {
+  "expression": "+(x, sin(*(cos(x), sin(sin(sin(sin(+(x, 1))))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.23146132453544913,
+  "target_scale": 3.5402821187695417,
+  "target_id": "R-TRIG_K13_17"
+ },
+ {
+  "expression": "sin(cos(+(cos(x), *(sin(cos(x)), +(x, sin(1))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.039025865910465106,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K13_18"
+ },
+ {
+  "expression": "sin(+(1, cos(*(x, *(sin(sin(1)), sin(cos(1)))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.277754942683725e-05,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K13_19"
+ },
+ {
+  "expression": "sin(+(x, sin(*(cos(cos(cos(x))), +(x, cos(1))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0027538212297900278,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K13_20"
+ },
+ {
+  "expression": "sin(+(cos(1), cos(+(sin(1), cos(+(1, sin(x)))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004521990350878936,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K13_21"
+ },
+ {
+  "expression": "sin(cos(cos(+(+(1, 1), sin(*(x, cos(sin(x))))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004784075680288031,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K13_22"
+ },
+ {
+  "expression": "sin(sin(+(sin(cos(cos(sin(x)))), *(sin(x), cos(1)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0064973628933940675,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K13_23"
+ },
+ {
+  "expression": "cos(cos(sin(*(x, cos(sin(cos(+(sin(1), cos(x)))))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0001333979243138841,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K13_24"
+ },
+ {
+  "expression": "*(sin(+(x, 1)), cos(cos(cos(sin(sin(sin(cos(x))))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.03970170064698352,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K13_25"
+ },
+ {
+  "expression": "cos(cos(*(*(x, cos(x)), +(x, sin(sin(sin(x)))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.025346193504977344,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K13_26"
+ },
+ {
+  "expression": "sin(cos(sin(cos(+(cos(cos(x)), sin(sin(cos(sin(x)))))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.9757244571403182e-05,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K13_27"
+ },
+ {
+  "expression": "+(+(1, cos(sin(1))), cos(cos(cos(+(1, cos(x))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00042637912664321334,
+  "target_scale": 2.5238915710473724,
+  "target_id": "R-TRIG_K13_28"
+ },
+ {
+  "expression": "cos(sin(+(x, cos(+(+(1, 1), sin(sin(cos(x))))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 33.60451250937503,
+   "bits_syn": 27.22026781170688,
+   "bits_sem": 22.633153554581842,
+   "bits_sem_uncorrected": 22.633153554581842,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.016019907011241598,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K13_29"
+ },
+ {
+  "expression": "+(cos(x), sin(+(x, cos(sin(sin(*(cos(1), cos(1))))))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.18801665599847872,
+  "target_scale": 1.7117941407592532,
+  "target_id": "R-TRIG_K14_00"
+ },
+ {
+  "expression": "*(sin(+(1, *(x, sin(cos(+(x, x)))))), sin(sin(x)))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.056055062993964816,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K14_01"
+ },
+ {
+  "expression": "+(cos(cos(x)), *(x, cos(*(cos(1), cos(+(1, 1))))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.027895734105528966,
+  "target_scale": 3.46473841857655,
+  "target_id": "R-TRIG_K14_02"
+ },
+ {
+  "expression": "+(cos(sin(sin(*(sin(x), +(x, x))))), sin(sin(sin(x))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.07183953817231457,
+  "target_scale": 1.604465381776396,
+  "target_id": "R-TRIG_K14_03"
+ },
+ {
+  "expression": "+(sin(1), +(cos(cos(1)), *(sin(x), +(1, cos(1)))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.11952384441576303,
+  "target_scale": 3.093202123607335,
+  "target_id": "R-TRIG_K14_04"
+ },
+ {
+  "expression": "sin(sin(+(x, cos(+(cos(x), cos(+(sin(1), cos(x))))))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.07719380164028034,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K14_05"
+ },
+ {
+  "expression": "+(sin(sin(sin(+(cos(1), sin(cos(cos(x))))))), sin(sin(1)))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.00017355542914548503,
+  "target_scale": 1.4805718324454802,
+  "target_id": "R-TRIG_K14_06"
+ },
+ {
+  "expression": "*(+(1, cos(sin(sin(cos(cos(x)))))), +(1, cos(sin(1))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.003989786129579531,
+  "target_scale": 3.1294279626173265,
+  "target_id": "R-TRIG_K14_07"
+ },
+ {
+  "expression": "*(*(cos(x), cos(sin(x))), sin(sin(+(x, cos(cos(1))))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.04466259705667697,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K14_08"
+ },
+ {
+  "expression": "sin(cos(cos(+(1, cos(cos(+(cos(1), sin(*(x, x)))))))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.00042091561252339865,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K14_09"
+ },
+ {
+  "expression": "+(*(+(x, 1), sin(sin(+(sin(1), +(1, 1))))), x)",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.1362133453969398,
+  "target_scale": 4.152609318914569,
+  "target_id": "R-TRIG_K14_10"
+ },
+ {
+  "expression": "*(*(x, +(sin(x), sin(cos(cos(x))))), cos(sin(sin(x))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.02764640852929519,
+  "target_scale": 2.6283375925139567,
+  "target_id": "R-TRIG_K14_11"
+ },
+ {
+  "expression": "*(sin(cos(1)), cos(+(x, cos(*(x, sin(cos(sin(1))))))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.0010857383922957113,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K14_12"
+ },
+ {
+  "expression": "*(cos(*(cos(1), cos(cos(+(1, *(x, cos(1))))))), x)",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.08930926699775522,
+  "target_scale": 2.8082611915077917,
+  "target_id": "R-TRIG_K14_13"
+ },
+ {
+  "expression": "+(1, *(x, sin(*(cos(+(x, x)), +(x, cos(x))))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 2.734732244446135,
+  "target_scale": 3.872668563472591,
+  "target_id": "R-TRIG_K14_14"
+ },
+ {
+  "expression": "*(cos(cos(sin(sin(sin(cos(cos(cos(1)))))))), cos(sin(cos(x))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.0024347606828454566,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K14_15"
+ },
+ {
+  "expression": "*(*(x, cos(sin(sin(x)))), +(x, sin(sin(cos(sin(1))))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 4.252584495804,
+  "target_scale": 10.553101803526415,
+  "target_id": "R-TRIG_K14_16"
+ },
+ {
+  "expression": "+(sin(cos(+(cos(1), sin(+(x, x))))), cos(+(1, 1)))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.00044512742088961366,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K14_17"
+ },
+ {
+  "expression": "cos(sin(+(sin(cos(x)), sin(cos(+(x, sin(sin(cos(x)))))))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.012698097939908046,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K14_18"
+ },
+ {
+  "expression": "+(*(*(x, sin(1)), sin(+(sin(x), +(x, x)))), x)",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.45812820110621433,
+  "target_scale": 2.6089453900953914,
+  "target_id": "R-TRIG_K14_19"
+ },
+ {
+  "expression": "+(sin(sin(sin(sin(x)))), +(sin(cos(1)), +(x, cos(1))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.021423823235585383,
+  "target_scale": 4.194014118478379,
+  "target_id": "R-TRIG_K14_20"
+ },
+ {
+  "expression": "*(+(sin(x), sin(1)), *(cos(1), cos(+(x, sin(x)))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.013620892940460491,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K14_21"
+ },
+ {
+  "expression": "+(*(sin(*(x, cos(1))), +(cos(x), sin(cos(x)))), x)",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.005181549345027493,
+  "target_scale": 1.2688641650778356,
+  "target_id": "R-TRIG_K14_22"
+ },
+ {
+  "expression": "cos(*(x, +(cos(sin(+(1, 1))), +(x, sin(cos(1))))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.48594527662243153,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K14_23"
+ },
+ {
+  "expression": "cos(+(x, cos(+(+(1, 1), cos(+(x, cos(cos(1))))))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.0026076078104315696,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K14_24"
+ },
+ {
+  "expression": "*(cos(1), sin(cos(sin(+(1, +(cos(1), *(x, x)))))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.0034965320671567664,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K14_25"
+ },
+ {
+  "expression": "+(+(cos(x), cos(cos(sin(cos(cos(cos(*(x, x)))))))), x)",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.01678941002821827,
+  "target_scale": 2.7327362866241547,
+  "target_id": "R-TRIG_K14_26"
+ },
+ {
+  "expression": "*(+(x, sin(x)), sin(*(cos(cos(1)), sin(sin(sin(1))))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.001316696600655535,
+  "target_scale": 1.726051577110218,
+  "target_id": "R-TRIG_K14_27"
+ },
+ {
+  "expression": "sin(cos(+(cos(1), sin(*(sin(1), +(x, +(x, x)))))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.06573936617179908,
+  "target_scale": 1.0,
+  "target_id": "R-TRIG_K14_28"
+ },
+ {
+  "expression": "*(*(x, cos(sin(x))), sin(cos(+(cos(x), +(x, x)))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 36.18947501009619,
+   "bits_syn": 29.64887066213331,
+   "bits_sem": 24.599777087928,
+   "bits_sem_uncorrected": 24.599777087928,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.30083616943727043,
+  "target_scale": 1.09147547172837,
+  "target_id": "R-TRIG_K14_29"
+ }
+]

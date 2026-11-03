@@ -1,0 +1,1 @@
+[{"target_id": "BOOL-AONN-n3_even3", "expression": "or(and(and(or(x1, x2), nand(x1, x2)), x3), nor(and(or(x1, x2), nand(x1, x2)), x3))", "K_construction": null, "K_proven": null, "units": null, "note": "even-3 parity (1 when the number of ones is even): Goldman and Punch (2015) Table II validation target; the expression is one construction, not a minimal one"}]

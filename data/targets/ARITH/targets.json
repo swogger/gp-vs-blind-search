@@ -1,0 +1,1082 @@
+[
+ {
+  "expression": "-(x, +(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.08168316831683164,
+  "target_scale": 2.99009900990099,
+  "target_id": "ARITH_K05_00"
+ },
+ {
+  "expression": "+(x, +(x, 1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.3267326732673266,
+  "target_scale": 6.98019801980198,
+  "target_id": "ARITH_K05_01"
+ },
+ {
+  "expression": "-(*(x, x), 1)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 2.0474153184360673,
+  "target_scale": 7.940692089010881,
+  "target_id": "ARITH_K05_02"
+ },
+ {
+  "expression": "+(x, -(x, 1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.3267326732673266,
+  "target_scale": 4.98019801980198,
+  "target_id": "ARITH_K05_03"
+ },
+ {
+  "expression": "+(1, -(1, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.08168316831683164,
+  "target_scale": 1.0,
+  "target_id": "ARITH_K05_04"
+ },
+ {
+  "expression": "-(x, +(1, 1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.08168316831683164,
+  "target_scale": 1.0,
+  "target_id": "ARITH_K05_05"
+ },
+ {
+  "expression": "+(x, *(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 2.9459301699212155,
+  "target_scale": 11.930791098911872,
+  "target_id": "ARITH_K05_06"
+ },
+ {
+  "expression": "*(x, -(x, 1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 1.312266803584583,
+  "target_scale": 5.9505930791098915,
+  "target_id": "ARITH_K05_07"
+ },
+ {
+  "expression": "-(x, *(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 1.3122668035845826,
+  "target_scale": 5.950593079109891,
+  "target_id": "ARITH_K05_08"
+ },
+ {
+  "expression": "-(1, +(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.3267326732673266,
+  "target_scale": 4.98019801980198,
+  "target_id": "ARITH_K05_09"
+ },
+ {
+  "expression": "+(x, +(x, +(x, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 1.3069306930693063,
+  "target_scale": 11.96039603960396,
+  "target_id": "ARITH_K07_00"
+ },
+ {
+  "expression": "+(x, -(1, *(x, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 1.3122668035845826,
+  "target_scale": 4.950593079109891,
+  "target_id": "ARITH_K07_01"
+ },
+ {
+  "expression": "*(x, *(x, +(x, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 117.87722311847754,
+  "target_scale": 53.4671091263621,
+  "target_id": "ARITH_K07_02"
+ },
+ {
+  "expression": "-(1, +(x, +(x, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.735148514851485,
+  "target_scale": 7.970297029702969,
+  "target_id": "ARITH_K07_03"
+ },
+ {
+  "expression": "*(x, -(x, +(1, 1)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.7404846253667614,
+  "target_scale": 2.960494069208901,
+  "target_id": "ARITH_K07_04"
+ },
+ {
+  "expression": "-(1, +(x, *(x, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 2.945930169921216,
+  "target_scale": 10.930791098911872,
+  "target_id": "ARITH_K07_05"
+ },
+ {
+  "expression": "+(1, +(1, -(1, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.08168316831683164,
+  "target_scale": 1.0,
+  "target_id": "ARITH_K07_06"
+ },
+ {
+  "expression": "-(x, +(x, +(x, 1)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.08168316831683164,
+  "target_scale": 3.99009900990099,
+  "target_id": "ARITH_K07_07"
+ },
+ {
+  "expression": "+(x, -(x, *(x, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.7404846253667613,
+  "target_scale": 2.9604940692089006,
+  "target_id": "ARITH_K07_08"
+ },
+ {
+  "expression": "+(1, -(1, *(x, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 2.0474153184360673,
+  "target_scale": 6.940692089010881,
+  "target_id": "ARITH_K07_09"
+ },
+ {
+  "expression": "+(x, *(x, -(x, *(x, x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 13.812382414505699,
+  "target_scale": 14.802763464269177,
+  "target_id": "ARITH_K09_00"
+ },
+ {
+  "expression": "-(*(x, *(x, *(x, x))), 1)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 341.883514408827,
+  "target_scale": 78.93597503050175,
+  "target_id": "ARITH_K09_01"
+ },
+ {
+  "expression": "*(x, *(+(x, x), +(x, 1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 188.12975728082426,
+  "target_scale": 71.34849330438387,
+  "target_id": "ARITH_K09_02"
+ },
+ {
+  "expression": "-(*(x, *(x, x)), +(1, 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 29.469305779619386,
+  "target_scale": 24.73355456318105,
+  "target_id": "ARITH_K09_03"
+ },
+ {
+  "expression": "+(x, *(x, *(x, *(x, x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 352.4157586267788,
+  "target_scale": 82.92607404040274,
+  "target_id": "ARITH_K09_04"
+ },
+ {
+  "expression": "-(x, +(x, +(1, *(x, x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 2.0474153184360673,
+  "target_scale": 9.94069208901088,
+  "target_id": "ARITH_K09_05"
+ },
+ {
+  "expression": "+(x, +(x, +(x, -(x, 1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 1.3069306930693063,
+  "target_scale": 10.96039603960396,
+  "target_id": "ARITH_K09_06"
+ },
+ {
+  "expression": "-(*(x, +(x, *(x, x))), 1)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 47.03243932020605,
+  "target_scale": 34.67424665219193,
+  "target_id": "ARITH_K09_07"
+ },
+ {
+  "expression": "*(x, -(x, *(x, +(x, x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 88.89320199261238,
+  "target_scale": 44.526417037351216,
+  "target_id": "ARITH_K09_08"
+ },
+ {
+  "expression": "+(1, +(1, *(x, -(x, 1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 1.312266803584583,
+  "target_scale": 7.9505930791098915,
+  "target_id": "ARITH_K09_09"
+ },
+ {
+  "expression": "*(x, *(-(1, x), +(1, *(x, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 201.9317515850227,
+  "target_scale": 59.15301354643059,
+  "target_id": "ARITH_K11_00"
+ },
+ {
+  "expression": "+(x, *(x, -(x, *(x, *(x, x)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 281.7236291203049,
+  "target_scale": 68.00518393158988,
+  "target_id": "ARITH_K11_01"
+ },
+ {
+  "expression": "*(x, *(+(x, x), +(x, +(x, 1))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 603.8242995248593,
+  "target_scale": 124.81560243074597,
+  "target_id": "ARITH_K11_02"
+ },
+ {
+  "expression": "*(+(1, -(1, x)), -(*(x, x), 1))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 4,
+  "var_target": 5.255741830831611,
+  "target_scale": 7.862071375258298,
+  "target_id": "ARITH_K11_03"
+ },
+ {
+  "expression": "*(+(1, *(x, x)), +(x, +(x, 1)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 4,
+  "var_target": 165.26501217235594,
+  "target_scale": 69.38799923517496,
+  "target_id": "ARITH_K11_04"
+ },
+ {
+  "expression": "-(1, +(x, *(x, *(x, +(x, x)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 124.13317691256294,
+  "target_scale": 55.457208136263084,
+  "target_id": "ARITH_K11_05"
+ },
+ {
+  "expression": "+(1, *(x, -(x, *(x, +(x, x)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 88.89320199261238,
+  "target_scale": 43.526417037351216,
+  "target_id": "ARITH_K11_06"
+ },
+ {
+  "expression": "*(+(x, x), +(x, +(x, -(x, 1))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 64.23170393894596,
+  "target_scale": 47.66395451426331,
+  "target_id": "ARITH_K11_07"
+ },
+ {
+  "expression": "*(x, +(x, -(*(x, +(x, x)), 1)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 144.0466557405947,
+  "target_scale": 59.41770220547199,
+  "target_id": "ARITH_K11_08"
+ },
+ {
+  "expression": "*(+(x, +(x, 1)), +(1, -(1, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 4,
+  "var_target": 4.0238196895858565,
+  "target_scale": 6.911087148318792,
+  "target_id": "ARITH_K11_09"
+ },
+ {
+  "expression": "*(x, *(+(x, x), +(x, +(x, +(x, 1)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 1255.2732880058495,
+  "target_scale": 178.28271155710803,
+  "target_id": "ARITH_K13_00"
+ },
+ {
+  "expression": "*(+(x, 1), -(*(+(x, x), +(x, x)), x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 661.4068958729166,
+  "target_scale": 130.76619550985586,
+  "target_id": "ARITH_K13_01"
+ },
+ {
+  "expression": "*(+(x, 1), -(*(x, +(x, +(x, x))), 1))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 411.6617360620135,
+  "target_scale": 103.0326409466748,
+  "target_id": "ARITH_K13_02"
+ },
+ {
+  "expression": "*(-(x, 1), -(x, +(1, *(x, +(x, x)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 50.98393547729309,
+  "target_scale": 31.625230879131433,
+  "target_id": "ARITH_K13_03"
+ },
+ {
+  "expression": "+(1, *(x, *(+(x, 1), +(x, +(x, 1)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 238.10471916089614,
+  "target_scale": 84.27928440329573,
+  "target_id": "ARITH_K13_04"
+ },
+ {
+  "expression": "+(x, *(+(x, x), +(1, +(1, *(x, x)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 150.7906554552412,
+  "target_scale": 68.41760417586704,
+  "target_id": "ARITH_K13_05"
+ },
+ {
+  "expression": "+(x, +(x, *(+(x, 1), -(1, *(x, x)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 36.05568684689971,
+  "target_scale": 25.70394962248896,
+  "target_id": "ARITH_K13_06"
+ },
+ {
+  "expression": "*(-(1, *(x, x)), -(*(x, x), +(x, 1)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 4,
+  "var_target": 110.56540877069061,
+  "target_scale": 39.311135299199925,
+  "target_id": "ARITH_K13_07"
+ },
+ {
+  "expression": "-(1, *(+(1, 1), +(1, +(1, *(x, x)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 6,
+  "var_target": 8.189661273744269,
+  "target_scale": 20.88138417802176,
+  "target_id": "ARITH_K13_08"
+ },
+ {
+  "expression": "*(+(x, x), *(-(x, 1), -(*(x, x), 1)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "depth": 5,
+  "var_target": 569.5181227408341,
+  "target_scale": 94.50365477642163,
+  "target_id": "ARITH_K13_09"
+ },
+ {
+  "expression": "+(x, *(x, *(+(x, 1), -(1, *(x, *(x, x))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 5791.434620467425,
+  "target_scale": 304.03156471586243,
+  "target_id": "ARITH_K15_00"
+ },
+ {
+  "expression": "-(*(+(x, +(x, 1)), -(*(x, *(x, x)), 1)), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 1726.7926314071467,
+  "target_scale": 176.63520759448156,
+  "target_id": "ARITH_K15_01"
+ },
+ {
+  "expression": "*(+(x, x), +(x, -(x, +(1, *(x, *(x, x))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 1014.6449908662788,
+  "target_scale": 130.08937972476195,
+  "target_id": "ARITH_K15_02"
+ },
+ {
+  "expression": "-(1, *(+(x, 1), *(+(x, 1), +(x, +(x, x)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 661.4359681068236,
+  "target_scale": 141.8151132533114,
+  "target_id": "ARITH_K15_03"
+ },
+ {
+  "expression": "+(1, +(1, *(x, *(x, -(x, *(x, +(x, x)))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 995.9844717010968,
+  "target_scale": 131.13839549782244,
+  "target_id": "ARITH_K15_04"
+ },
+ {
+  "expression": "-(x, +(1, *(+(x, x), +(1, *(x, *(x, x))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 7,
+  "var_target": 1388.5168629028951,
+  "target_scale": 163.86204907090448,
+  "target_id": "ARITH_K15_05"
+ },
+ {
+  "expression": "+(1, -(1, *(x, +(x, +(x, *(x, *(x, x)))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 8,
+  "var_target": 455.3836845001881,
+  "target_scale": 95.8173592085235,
+  "target_id": "ARITH_K15_06"
+ },
+ {
+  "expression": "*(+(x, -(x, 1)), -(1, *(+(x, x), +(x, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 1379.7584530142633,
+  "target_scale": 173.1254701296029,
+  "target_id": "ARITH_K15_07"
+ },
+ {
+  "expression": "+(1, *(+(x, 1), +(1, *(+(x, x), +(x, 1)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 6,
+  "var_target": 303.82155458083645,
+  "target_scale": 100.2001745121086,
+  "target_id": "ARITH_K15_08"
+ },
+ {
+  "expression": "*(-(x, 1), *(+(1, +(1, 1)), -(1, *(x, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 124.31144173055127,
+  "target_scale": 47.40829039280754,
+  "target_id": "ARITH_K15_09"
+ },
+ {
+  "expression": "*(+(x, x), -(x, +(1, *(+(x, 1), +(x, +(x, x))))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 1509.9379003861145,
+  "target_scale": 202.14429375493182,
+  "target_id": "ARITH_K17_00"
+ },
+ {
+  "expression": "-(*(+(1, -(1, *(x, x))), +(x, +(x, -(x, 1)))), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 180.5432205990566,
+  "target_scale": 58.309476551027316,
+  "target_id": "ARITH_K17_01"
+ },
+ {
+  "expression": "+(1, *(x, +(x, *(x, *(+(x, x), -(1, +(x, x)))))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 3806.395720931891,
+  "target_scale": 256.33609890663405,
+  "target_id": "ARITH_K17_02"
+ },
+ {
+  "expression": "+(1, *(+(x, x), +(x, +(x, +(x, +(x, -(x, 1)))))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 8,
+  "var_target": 188.73163085350782,
+  "target_scale": 84.42672287030683,
+  "target_id": "ARITH_K17_03"
+ },
+ {
+  "expression": "*(+(1, 1), -(1, *(+(1, +(1, 1)), +(x, +(1, 1)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 2.94059405940594,
+  "target_scale": 27.94059405940594,
+  "target_id": "ARITH_K17_04"
+ },
+ {
+  "expression": "-(*(x, +(x, +(x, +(x, *(x, *(x, *(x, x))))))), 1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 9,
+  "var_target": 4077.6120042114258,
+  "target_scale": 264.8385560612062,
+  "target_id": "ARITH_K17_05"
+ },
+ {
+  "expression": "+(x, *(x, *(x, *(-(x, 1), -(*(x, x), +(1, 1))))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 1120.430183823409,
+  "target_scale": 126.48487882523246,
+  "target_id": "ARITH_K17_06"
+ },
+ {
+  "expression": "*(-(x, 1), *(+(x, +(1, 1)), -(x, +(1, +(1, 1)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 1.402250084244936,
+  "target_scale": 4.060669648966661,
+  "target_id": "ARITH_K17_07"
+ },
+ {
+  "expression": "+(x, *(-(*(x, x), 1), +(x, *(+(x, x), +(x, x)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 5429.855021413955,
+  "target_scale": 310.71468632914446,
+  "target_id": "ARITH_K17_08"
+ },
+ {
+  "expression": "+(1, *(+(x, 1), *(+(1, +(1, 1)), +(x, +(x, x)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 6,
+  "var_target": 238.62034376361848,
+  "target_scale": 108.37711989020683,
+  "target_id": "ARITH_K17_09"
+ },
+ {
+  "expression": "*(+(x, +(1, +(1, 1))), -(*(+(1, 1), -(x, +(1, 1))), 1))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 9.905007808397738,
+  "target_scale": 5.8714831879227525,
+  "target_id": "ARITH_K19_00"
+ },
+ {
+  "expression": "*(+(x, x), -(*(-(x, 1), +(1, *(x, +(x, x)))), +(1, 1)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 2855.2163362508722,
+  "target_scale": 212.75047198789864,
+  "target_id": "ARITH_K19_01"
+ },
+ {
+  "expression": "*(+(x, +(x, +(x, -(x, 1)))), -(*(x, +(x, *(x, x))), 1))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 7686.672232734514,
+  "target_scale": 380.04347568293537,
+  "target_id": "ARITH_K19_02"
+ },
+ {
+  "expression": "*(x, *(x, *(-(1, x), *(+(x, +(x, 1)), +(x, +(1, 1))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 24205.24035054671,
+  "target_scale": 619.7588368122874,
+  "target_id": "ARITH_K19_03"
+ },
+ {
+  "expression": "*(+(x, +(1, 1)), +(1, *(x, *(x, *(+(x, x), +(x, 1))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 63519.72435683478,
+  "target_scale": 1069.573127033983,
+  "target_id": "ARITH_K19_04"
+ },
+ {
+  "expression": "+(1, *(+(x, x), +(x, *(+(1, -(1, x)), +(1, -(1, x))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 20.80952290271538,
+  "target_scale": 24.743748671504736,
+  "target_id": "ARITH_K19_05"
+ },
+ {
+  "expression": "*(x, *(+(x, 1), +(x, *(-(x, 1), -(1, *(x, *(x, x)))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 24299.770748669176,
+  "target_scale": 575.3292623466047,
+  "target_id": "ARITH_K19_06"
+ },
+ {
+  "expression": "*(+(x, +(x, 1)), -(*(+(1, 1), -(1, +(x, x))), *(x, x)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 6,
+  "var_target": 563.00079191051,
+  "target_scale": 131.93333792746003,
+  "target_id": "ARITH_K19_07"
+ },
+ {
+  "expression": "*(x, *(x, +(x, *(+(1, 1), -(*(+(x, x), +(x, x)), 1)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 8,
+  "var_target": 22648.763949088385,
+  "target_scale": 648.3399706291732,
+  "target_id": "ARITH_K19_08"
+ },
+ {
+  "expression": "+(1, *(+(1, *(x, x)), +(1, *(+(x, x), +(1, +(1, 1))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 7,
+  "var_target": 1275.0151881398874,
+  "target_scale": 189.2826135275031,
+  "target_id": "ARITH_K19_09"
+ },
+ {
+  "expression": "+(x, *(+(x, +(x, x)), +(1, *(x, *(-(x, 1), -(1, *(x, x)))))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "depth": 8,
+  "var_target": 12186.233757503504,
+  "target_scale": 411.9025308289009,
+  "target_id": "ARITH_K21_00"
+ },
+ {
+  "expression": "-(*(-(x, +(1, 1)), +(1, *(+(x, 1), +(1, +(1, *(x, x)))))), 1)",
+  "K_construction": 21,
+  "K_proven": 21,
+  "depth": 8,
+  "var_target": 163.56163176309718,
+  "target_scale": 43.21232145741971,
+  "target_id": "ARITH_K21_01"
+ },
+ {
+  "expression": "-(*(x, *(-(1, *(x, x)), +(x, -(*(x, *(x, +(x, x))), 1)))), 1)",
+  "K_construction": 21,
+  "K_proven": 21,
+  "depth": 9,
+  "var_target": 120659.7725051713,
+  "target_scale": 1317.7457564923639,
+  "target_id": "ARITH_K21_02"
+ },
+ {
+  "expression": "*(+(1, -(1, x)), +(1, *(+(x, x), -(x, *(+(x, x), +(x, x))))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "depth": 7,
+  "var_target": 3124.613169218277,
+  "target_scale": 193.05648745289767,
+  "target_id": "ARITH_K21_03"
+ },
+ {
+  "expression": "+(x, *(+(1, -(1, x)), +(1, *(+(x, 1), -(1, *(x, *(x, x)))))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "depth": 8,
+  "var_target": 856.6200557852482,
+  "target_scale": 103.6628025581998,
+  "target_id": "ARITH_K21_04"
+ },
+ {
+  "expression": "+(x, *(x, *(-(1, *(x, x)), +(x, -(*(x, x), +(1, +(1, 1)))))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "depth": 8,
+  "var_target": 3093.820096000947,
+  "target_scale": 209.0577425027422,
+  "target_id": "ARITH_K21_05"
+ },
+ {
+  "expression": "+(x, +(x, *(x, *(+(x, 1), -(1, +(x, *(+(x, x), +(x, x))))))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "depth": 9,
+  "var_target": 10046.079178395992,
+  "target_scale": 444.4413759082093,
+  "target_id": "ARITH_K21_06"
+ },
+ {
+  "expression": "*(+(1, 1), *(+(x, -(x, 1)), -(*(x, x), +(x, +(x, +(1, 1))))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "depth": 7,
+  "var_target": 40.20772844514588,
+  "target_scale": 11.959019742774197,
+  "target_id": "ARITH_K21_07"
+ },
+ {
+  "expression": "+(x, +(x, +(1, *(+(x, +(1, 1)), -(1, *(x, *(x, *(x, x))))))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "depth": 9,
+  "var_target": 9161.78840346425,
+  "target_scale": 386.9181328254741,
+  "target_id": "ARITH_K21_08"
+ },
+ {
+  "expression": "-(*(+(1, -(1, x)), *(+(x, +(1, 1)), +(1, *(x, *(x, x))))), x)",
+  "K_construction": 21,
+  "K_proven": 21,
+  "depth": 7,
+  "var_target": 1578.4858624329413,
+  "target_scale": 140.01305264036122,
+  "target_id": "ARITH_K21_09"
+ },
+ {
+  "expression": "*(x, +(x, -(*(x, *(+(x, 1), -(1, *(x, *(+(x, 1), +(x, 1)))))), 1)))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 10,
+  "var_target": 174439.27315370349,
+  "target_scale": 1656.6490188884834,
+  "target_id": "ARITH_K23_00"
+ },
+ {
+  "expression": "-(*(+(x, +(x, x)), +(1, *(x, -(*(+(x, x), +(x, +(x, x))), 1)))), 1)",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 9,
+  "var_target": 108503.01562829688,
+  "target_scale": 1419.9957713117017,
+  "target_id": "ARITH_K23_01"
+ },
+ {
+  "expression": "*(x, *(x, *(x, *(x, *(+(x, +(x, 1)), -(x, +(1, +(1, *(x, x)))))))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 10,
+  "var_target": 1365598.4881656105,
+  "target_scale": 4436.183949938939,
+  "target_id": "ARITH_K23_02"
+ },
+ {
+  "expression": "-(*(+(1, -(1, x)), +(1, *(x, -(*(x, *(x, x)), +(1, 1))))), +(x, x))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 8,
+  "var_target": 478.329343240545,
+  "target_scale": 80.19383862445521,
+  "target_id": "ARITH_K23_03"
+ },
+ {
+  "expression": "*(+(x, +(x, 1)), -(*(+(1, +(1, 1)), +(1, *(+(x, x), -(1, x)))), x))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 7,
+  "var_target": 3169.9065988219554,
+  "target_scale": 249.14879729321817,
+  "target_id": "ARITH_K23_04"
+ },
+ {
+  "expression": "+(x, +(*(-(x, 1), +(1, +(1, 1))), *(x, *(x, *(x, *(x, *(x, x)))))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 8,
+  "var_target": 35059.2591213596,
+  "target_scale": 723.6433356221822,
+  "target_id": "ARITH_K23_05"
+ },
+ {
+  "expression": "*(x, *(+(x, x), *(+(x, 1), -(*(+(x, 1), -(*(x, *(x, x)), 1)), 1))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 9,
+  "var_target": 3718376.577069098,
+  "target_scale": 7254.67417220052,
+  "target_id": "ARITH_K23_06"
+ },
+ {
+  "expression": "*(x, *(x, *(x, *(+(1, *(x, x)), -(*(-(1, x), +(1, *(x, x))), x)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 9,
+  "var_target": 2632655.7836802336,
+  "target_scale": 6051.941608695213,
+  "target_id": "ARITH_K23_07"
+ },
+ {
+  "expression": "*(+(1, *(x, -(*(x, x), 1))), +(1, +(1, *(+(x, 1), +(x, +(1, 1))))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 7,
+  "var_target": 16426.810559102953,
+  "target_scale": 542.1535853872992,
+  "target_id": "ARITH_K23_08"
+ },
+ {
+  "expression": "+(*(x, +(x, *(x, +(x, *(x, x))))), *(+(1, 1), +(1, +(1, +(1, 1)))))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 7,
+  "var_target": 642.080653994757,
+  "target_scale": 123.61022168269368,
+  "target_id": "ARITH_K23_09"
+ },
+ {
+  "expression": "*(*(+(x, +(1, *(x, *(x, x)))), +(x, *(+(x, x), +(x, +(x, 1))))), +(x, +(1, 1)))",
+  "K_construction": 27,
+  "K_proven": null,
+  "depth": 7,
+  "var_target": 2859361.0302982368,
+  "target_scale": 6858.208464391547,
+  "target_id": "ARITH_K27_00"
+ },
+ {
+  "expression": "*(*(x, +(x, -(*(x, *(x, x)), 1))), *(x, +(x, *(x, +(x, *(x, *(x, -(x, 1))))))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "depth": 9,
+  "var_target": 20299390.431927938,
+  "target_scale": 16726.817222149068,
+  "target_id": "ARITH_K27_01"
+ },
+ {
+  "expression": "+(*(+(x, x), *(+(1, *(x, x)), -(*(+(1, 1), +(1, +(1, +(1, 1)))), x))), +(x, x))",
+  "K_construction": 27,
+  "K_proven": null,
+  "depth": 9,
+  "var_target": 2727.615943861145,
+  "target_scale": 303.80532095008937,
+  "target_id": "ARITH_K27_02"
+ },
+ {
+  "expression": "*(*(-(x, 1), +(x, -(*(+(x, x), +(x, x)), 1))), +(1, *(+(x, x), +(1, *(x, x)))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "depth": 7,
+  "var_target": 1429569.9646635181,
+  "target_scale": 4541.523693394516,
+  "target_id": "ARITH_K27_03"
+ },
+ {
+  "expression": "*(-(x, +(1, +(1, *(x, x)))), *(+(x, 1), -(1, +(x, *(+(x, x), +(x, +(x, 1)))))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "depth": 8,
+  "var_target": 106985.58430358213,
+  "target_scale": 1387.372615986367,
+  "target_id": "ARITH_K27_04"
+ },
+ {
+  "expression": "*(*(x, x), -(*(-(1, *(x, *(x, x))), +(1, +(1, +(1, -(1, x))))), +(x, +(x, 1))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "depth": 8,
+  "var_target": 4243.159357295745,
+  "target_scale": 294.7615670166264,
+  "target_id": "ARITH_K27_05"
+ },
+ {
+  "expression": "*(+(1, *(+(x, x), -(*(x, *(+(x, x), -(1, +(x, x)))), +(x, 1)))), +(x, *(x, x)))",
+  "K_construction": 27,
+  "K_proven": null,
+  "depth": 9,
+  "var_target": 2934581.4071641658,
+  "target_scale": 6626.5422971081525,
+  "target_id": "ARITH_K27_06"
+ },
+ {
+  "expression": "*(+(1, -(1, x)), +(x, -(*(-(1, *(x, x)), -(*(x, *(x, +(x, -(x, 1)))), 1)), 1)))",
+  "K_construction": 27,
+  "K_proven": null,
+  "depth": 10,
+  "var_target": 9278.25867240763,
+  "target_scale": 340.2374023976063,
+  "target_id": "ARITH_K27_07"
+ },
+ {
+  "expression": "+(+(x, -(x, *(x, x))), *(+(1, +(1, -(1, *(x, x)))), -(1, *(+(x, x), +(x, x)))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "depth": 7,
+  "var_target": 2983.7953200030647,
+  "target_scale": 203.55440889565665,
+  "target_id": "ARITH_K27_08"
+ },
+ {
+  "expression": "*(+(1, *(x, -(*(x, x), 1))), *(x, +(x, *(+(x, x), +(x, *(+(x, 1), +(x, 1)))))))",
+  "K_construction": 27,
+  "K_proven": null,
+  "depth": 8,
+  "var_target": 5117715.9098996725,
+  "target_scale": 8588.338457202206,
+  "target_id": "ARITH_K27_09"
+ },
+ {
+  "expression": "-(+(x, -(1, *(x, x))), -(*(x, *(+(x, x), +(x, +(*(x, x), -(*(+(x, x), +(x, x)), 1))))), 1))",
+  "K_construction": 31,
+  "K_proven": null,
+  "depth": 10,
+  "var_target": 37651.09964965491,
+  "target_scale": 838.8960683324677,
+  "target_id": "ARITH_K31_00"
+ },
+ {
+  "expression": "*(*(-(x, 1), -(*(+(x, x), +(x, +(x, -(*(x, x), +(1, 1))))), 1)), +(1, +(1, +(1, +(1, 1)))))",
+  "K_construction": 31,
+  "K_proven": null,
+  "depth": 9,
+  "var_target": 34752.63621899848,
+  "target_scale": 758.9190975249078,
+  "target_id": "ARITH_K31_01"
+ },
+ {
+  "expression": "*(*(+(x, +(x, x)), +(1, *(-(x, 1), -(*(x, x), +(1, +(1, 1)))))), -(x, +(x, *(x, *(x, x)))))",
+  "K_construction": 31,
+  "K_proven": null,
+  "depth": 8,
+  "var_target": 702761.5380164748,
+  "target_scale": 3074.952813587713,
+  "target_id": "ARITH_K31_02"
+ },
+ {
+  "expression": "-(+(1, *(+(x, +(x, x)), -(*(x, *(x, *(-(x, 1), -(1, x)))), 1))), *(x, *(-(x, 1), -(x, 1))))",
+  "K_construction": 31,
+  "K_proven": null,
+  "depth": 9,
+  "var_target": 7738.872045364296,
+  "target_scale": 337.44681931381655,
+  "target_id": "ARITH_K31_03"
+ },
+ {
+  "expression": "-(*(-(x, 1), -(1, x)), *(+(1, 1), *(+(1, 1), *(+(x, 1), +(x, *(+(1, 1), -(x, +(1, 1))))))))",
+  "K_construction": 31,
+  "K_proven": null,
+  "depth": 9,
+  "var_target": 285.2409115879727,
+  "target_scale": 83.28840309773553,
+  "target_id": "ARITH_K31_04"
+ },
+ {
+  "expression": "*(+(1, *(+(x, +(x, 1)), -(1, *(x, *(+(1, *(x, x)), +(x, +(x, 1))))))), +(1, +(1, *(x, x))))",
+  "K_construction": 31,
+  "K_proven": null,
+  "depth": 9,
+  "var_target": 16590872.417840105,
+  "target_scale": 15757.33464175947,
+  "target_id": "ARITH_K31_05"
+ },
+ {
+  "expression": "+(*(x, *(+(x, x), -(*(x, +(x, x)), 1))), *(+(x, +(1, 1)), -(*(x, *(x, -(x, +(1, 1)))), 1)))",
+  "K_construction": 31,
+  "K_proven": null,
+  "depth": 8,
+  "var_target": 6993.867047439274,
+  "target_scale": 341.04562360854254,
+  "target_id": "ARITH_K31_06"
+ },
+ {
+  "expression": "+(+(x, +(x, +(1, 1))), *(+(x, x), -(*(-(1, x), *(+(1, +(1, 1)), +(1, +(1, 1)))), *(x, x))))",
+  "K_construction": 31,
+  "K_proven": null,
+  "depth": 8,
+  "var_target": 954.9340911599523,
+  "target_scale": 152.59758653053817,
+  "target_id": "ARITH_K31_07"
+ },
+ {
+  "expression": "-(-(1, +(x, +(x, *(x, *(x, *(x, x)))))), *(+(1, 1), +(x, *(+(x, 1), +(x, +(x, +(x, 1)))))))",
+  "K_construction": 31,
+  "K_proven": null,
+  "depth": 8,
+  "var_target": 927.5029823467387,
+  "target_scale": 170.4613156833789,
+  "target_id": "ARITH_K31_08"
+ },
+ {
+  "expression": "+(+(1, *(+(x, +(x, 1)), +(x, +(1, +(1, +(1, *(x, x))))))), *(+(x, x), *(+(x, 1), +(x, 1))))",
+  "K_construction": 31,
+  "K_proven": null,
+  "depth": 9,
+  "var_target": 1175.485957234596,
+  "target_scale": 200.42995396490926,
+  "target_id": "ARITH_K31_09"
+ }
+]

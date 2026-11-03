@@ -1,0 +1,2 @@
+Stage 3 (H6d) filed on OSF by the author, 2026-10-30 17:30 (registered at once; public, no embargo, CC0), associated project https://osf.io/hjf43. Registered commit 80bc061ced0cb85dcbfda9810afc78aa22e5bade (src/reach code hash bd1c3a171c76).
+Stage 3 registration: DOI 10.17605/OSF.IO/HB238, https://osf.io/hb238. Its stage3_tasks.json, stage3_lookups.json and stage3_checksums.txt match the repository by SHA-256 (OSF API, checked 2026-10-30).

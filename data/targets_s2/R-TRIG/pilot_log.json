@@ -1,0 +1,140 @@
+{
+ "grammar": "R-TRIG",
+ "seed": 20261020,
+ "ceiling": 13,
+ "depth_limit": 10,
+ "levels": {
+  "3": {
+   "proven": true,
+   "n_level": 12,
+   "n_depth_ok": 12,
+   "excluded_share": 0.0,
+   "found": 7,
+   "rejected": {
+    "variance": 5
+   }
+  },
+  "4": {
+   "proven": true,
+   "n_level": 36,
+   "n_depth_ok": 36,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {
+    "variance": 4
+   }
+  },
+  "5": {
+   "proven": true,
+   "n_level": 124,
+   "n_depth_ok": 124,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {
+    "variance": 5
+   }
+  },
+  "6": {
+   "proven": true,
+   "n_level": 424,
+   "n_depth_ok": 424,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {
+    "variance": 5
+   }
+  },
+  "7": {
+   "proven": true,
+   "n_level": 1527,
+   "n_depth_ok": 1527,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {
+    "variance": 1
+   }
+  },
+  "8": {
+   "proven": true,
+   "n_level": 5644,
+   "n_depth_ok": 5644,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {
+    "variance": 1
+   }
+  },
+  "9": {
+   "proven": true,
+   "n_level": 21254,
+   "n_depth_ok": 21254,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {
+    "variance": 1
+   }
+  },
+  "10": {
+   "proven": true,
+   "n_level": 81193,
+   "n_depth_ok": 81193,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {
+    "variance": 1
+   }
+  },
+  "11": {
+   "proven": true,
+   "n_level": 314228,
+   "n_depth_ok": 312180,
+   "excluded_share": 0.006517560497473207,
+   "found": 10,
+   "rejected": {
+    "variance": 1
+   }
+  },
+  "12": {
+   "proven": true,
+   "n_level": 1229146,
+   "n_depth_ok": 1195389,
+   "excluded_share": 0.02746378379785641,
+   "found": 10,
+   "rejected": {}
+  },
+  "13": {
+   "proven": true,
+   "n_level": 4851568,
+   "n_depth_ok": 4539612,
+   "excluded_share": 0.06430003660672179,
+   "found": 10,
+   "rejected": {
+    "variance": 1
+   }
+  },
+  "15": {
+   "proven": false,
+   "found": 10,
+   "rejected": {
+    "depth": 1,
+    "near_duplicate": 1,
+    "dead_subtree": 1,
+    "smaller_in_enumeration": 1
+   }
+  },
+  "17": {
+   "proven": false,
+   "found": 10,
+   "rejected": {
+    "depth": 1
+   }
+  },
+  "21": {
+   "proven": false,
+   "found": 10,
+   "rejected": {
+    "depth": 1
+   }
+  }
+ }
+}

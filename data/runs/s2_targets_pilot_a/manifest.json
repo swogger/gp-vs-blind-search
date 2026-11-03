@@ -1,0 +1,262 @@
+{
+ "phase": "s2_targets_pilot_a",
+ "description": "Study 2 pilot targets, batch A (sets enumerated by the end of s2_enum_bool). Real sets load their values (up to about 8 GB): --workers 2, never alongside an enumeration.",
+ "created": "2026-10-20 01:32:03",
+ "git": "7c26c87",
+ "n_tasks": 11,
+ "tasks": [
+  {
+   "key": "F-EML",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "F-EML",
+    "--name",
+    "pilot",
+    "--n",
+    "10",
+    "--seed",
+    "20261020"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "F-EML",
+    "out": "data/targets_s2/F-EML"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ARITH4",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "R-ARITH4",
+    "--name",
+    "pilot",
+    "--n",
+    "10",
+    "--seed",
+    "20261020"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "R-ARITH4",
+    "out": "data/targets_s2/R-ARITH4"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ELEM4",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "R-ELEM4",
+    "--name",
+    "pilot",
+    "--n",
+    "10",
+    "--seed",
+    "20261020"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "R-ELEM4",
+    "out": "data/targets_s2/R-ELEM4"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-HYB",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "R-HYB",
+    "--name",
+    "pilot",
+    "--n",
+    "10",
+    "--seed",
+    "20261020"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "R-HYB",
+    "out": "data/targets_s2/R-HYB"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-LDE0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "F-LDE0",
+    "--name",
+    "pilot",
+    "--n",
+    "10",
+    "--seed",
+    "20261020"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "F-LDE0",
+    "out": "data/targets_s2/F-LDE0"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-NAND-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-NAND-n5",
+    "--name",
+    "pilot",
+    "--n",
+    "10",
+    "--seed",
+    "20261020"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "BOOL-NAND-n5",
+    "out": "data/targets_s2/BOOL-NAND-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-NOR-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-NOR-n5",
+    "--name",
+    "pilot",
+    "--n",
+    "10",
+    "--seed",
+    "20261020"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "BOOL-NOR-n5",
+    "out": "data/targets_s2/BOOL-NOR-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-IMP0-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-IMP0-n5",
+    "--name",
+    "pilot",
+    "--n",
+    "10",
+    "--seed",
+    "20261020"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "BOOL-IMP0-n5",
+    "out": "data/targets_s2/BOOL-IMP0-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AON-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-AON-n5",
+    "--name",
+    "pilot",
+    "--n",
+    "10",
+    "--seed",
+    "20261020"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "BOOL-AON-n5",
+    "out": "data/targets_s2/BOOL-AON-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AONX-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-AONX-n5",
+    "--name",
+    "pilot",
+    "--n",
+    "10",
+    "--seed",
+    "20261020"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "BOOL-AONX-n5",
+    "out": "data/targets_s2/BOOL-AONX-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-RICH-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-RICH-n5",
+    "--name",
+    "pilot",
+    "--n",
+    "10",
+    "--seed",
+    "20261020"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "BOOL-RICH-n5",
+    "out": "data/targets_s2/BOOL-RICH-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

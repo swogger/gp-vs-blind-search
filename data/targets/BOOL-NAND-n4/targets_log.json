@@ -1,0 +1,47 @@
+{
+ "grammar": "BOOL-NAND-n4",
+ "seed": 20261013,
+ "ceiling": 40,
+ "levels": {
+  "3": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "9": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "13": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "19": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "23": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "29": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "33": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "39": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  }
+ }
+}

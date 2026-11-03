@@ -1,0 +1,108 @@
+{
+ "grammar": "R-TRIG",
+ "seed": 20261021,
+ "ceiling": 13,
+ "depth_limit": 10,
+ "levels": {
+  "5": {
+   "proven": true,
+   "n_level": 124,
+   "n_depth_ok": 124,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "variance": 9
+   }
+  },
+  "6": {
+   "proven": true,
+   "n_level": 424,
+   "n_depth_ok": 424,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "variance": 9
+   }
+  },
+  "7": {
+   "proven": true,
+   "n_level": 1527,
+   "n_depth_ok": 1527,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "variance": 4
+   }
+  },
+  "8": {
+   "proven": true,
+   "n_level": 5644,
+   "n_depth_ok": 5644,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "variance": 2
+   }
+  },
+  "9": {
+   "proven": true,
+   "n_level": 21254,
+   "n_depth_ok": 21254,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "variance": 4
+   }
+  },
+  "10": {
+   "proven": true,
+   "n_level": 81193,
+   "n_depth_ok": 81193,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "variance": 2
+   }
+  },
+  "11": {
+   "proven": true,
+   "n_level": 314228,
+   "n_depth_ok": 312180,
+   "excluded_share": 0.006517560497473207,
+   "found": 30,
+   "rejected": {
+    "variance": 3
+   }
+  },
+  "12": {
+   "proven": true,
+   "n_level": 1229146,
+   "n_depth_ok": 1195389,
+   "excluded_share": 0.02746378379785641,
+   "found": 30,
+   "rejected": {
+    "near_duplicate": 1
+   }
+  },
+  "13": {
+   "proven": true,
+   "n_level": 4851568,
+   "n_depth_ok": 4539612,
+   "excluded_share": 0.06430003660672179,
+   "found": 30,
+   "rejected": {
+    "near_duplicate": 2,
+    "variance": 3
+   }
+  },
+  "14": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "depth": 1,
+    "smaller_in_enumeration": 2,
+    "magnitude_ratio": 1
+   }
+  }
+ }
+}

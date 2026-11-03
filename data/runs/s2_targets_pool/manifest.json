@@ -1,0 +1,49 @@
+{
+ "phase": "s2_targets_pool",
+ "description": "Study 2 shared-function pool for H3 (T12): 40 functions per domain over the full sets that s2_cal_pool runs, seed TARGET_SEEDS['pool']. Loads every real set's values: --workers 1.",
+ "created": "2026-10-20 10:12:33",
+ "git": "fbe4d61",
+ "n_tasks": 2,
+ "tasks": [
+  {
+   "key": "real",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_pool",
+    "--domain",
+    "real",
+    "--n",
+    "40",
+    "--seed",
+    "20261023"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "domain": "real"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "bool",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_pool",
+    "--domain",
+    "bool",
+    "--n",
+    "40",
+    "--seed",
+    "20261023"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "domain": "bool"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

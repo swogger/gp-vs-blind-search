@@ -1,0 +1,1622 @@
+[
+ {
+  "expression": "+(sqrt(sqrt(x)), sqrt(+(+(sqrt(x), sqrt(x)), sqrt(sqrt(+(x, sqrt(sqrt(x))))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.007354679815643501,
+  "target_scale": 3.5283149425149807,
+  "target_id": "RS-add_sqrt_K18_00"
+ },
+ {
+  "expression": "+(+(x, sqrt(x)), sqrt(sqrt(+(sqrt(sqrt(x)), +(sqrt(sqrt(x)), +(x, 1))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.15985343573189956,
+  "target_scale": 6.323331110304546,
+  "target_id": "RS-add_sqrt_K18_01"
+ },
+ {
+  "expression": "+(1, sqrt(+(sqrt(+(1, 1)), sqrt(sqrt(+(1, +(sqrt(x), +(1, 1))))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4.565105205964102e-06,
+  "target_scale": 2.699673453935974,
+  "target_id": "RS-add_sqrt_K18_02"
+ },
+ {
+  "expression": "+(+(x, sqrt(sqrt(x))), sqrt(sqrt(sqrt(+(+(1, 1), sqrt(sqrt(+(x, 1))))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.10442027390789661,
+  "target_scale": 5.470948501161978,
+  "target_id": "RS-add_sqrt_K18_03"
+ },
+ {
+  "expression": "+(sqrt(+(x, +(x, 1))), sqrt(+(1, sqrt(sqrt(+(sqrt(x), +(x, 1)))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.015818085585803384,
+  "target_scale": 4.237766035920293,
+  "target_id": "RS-add_sqrt_K18_04"
+ },
+ {
+  "expression": "sqrt(+(sqrt(+(x, +(sqrt(x), sqrt(x)))), sqrt(+(1, sqrt(sqrt(+(x, x)))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0007946510099508496,
+  "target_scale": 2.0348390894368547,
+  "target_id": "RS-add_sqrt_K18_05"
+ },
+ {
+  "expression": "sqrt(sqrt(+(x, sqrt(+(sqrt(sqrt(+(x, x))), +(+(x, x), +(1, 1)))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0007644798028208836,
+  "target_scale": 1.5702390881112327,
+  "target_id": "RS-add_sqrt_K18_06"
+ },
+ {
+  "expression": "+(x, sqrt(+(+(1, 1), sqrt(+(sqrt(sqrt(x)), sqrt(+(1, sqrt(sqrt(x)))))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08386440307095336,
+  "target_scale": 4.909523318284369,
+  "target_id": "RS-add_sqrt_K18_07"
+ },
+ {
+  "expression": "sqrt(+(1, sqrt(sqrt(+(+(sqrt(x), sqrt(x)), sqrt(+(1, sqrt(+(x, x)))))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.6911312923141497e-05,
+  "target_scale": 1.5869256767149325,
+  "target_id": "RS-add_sqrt_K18_08"
+ },
+ {
+  "expression": "+(sqrt(+(1, sqrt(+(x, 1)))), +(sqrt(+(x, 1)), sqrt(sqrt(+(x, 1)))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.01615806314033573,
+  "target_scale": 5.142196510402393,
+  "target_id": "RS-add_sqrt_K18_09"
+ },
+ {
+  "expression": "+(sqrt(+(x, sqrt(sqrt(+(1, 1))))), sqrt(sqrt(+(+(x, x), +(1, 1)))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.011624441717597458,
+  "target_scale": 3.725086279997965,
+  "target_id": "RS-add_sqrt_K18_10"
+ },
+ {
+  "expression": "+(x, sqrt(+(x, sqrt(+(+(1, 1), sqrt(sqrt(+(sqrt(x), +(x, x)))))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1271424966770889,
+  "target_scale": 5.2047906971176605,
+  "target_id": "RS-add_sqrt_K18_11"
+ },
+ {
+  "expression": "+(1, sqrt(+(sqrt(x), sqrt(+(sqrt(sqrt(sqrt(x))), sqrt(+(x, +(x, x))))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0012865038706112537,
+  "target_scale": 2.9401868976531986,
+  "target_id": "RS-add_sqrt_K18_12"
+ },
+ {
+  "expression": "+(+(x, x), sqrt(sqrt(+(sqrt(sqrt(x)), +(sqrt(sqrt(x)), sqrt(+(x, x)))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.344826550856366,
+  "target_scale": 7.481153989504374,
+  "target_id": "RS-add_sqrt_K18_13"
+ },
+ {
+  "expression": "+(+(x, 1), sqrt(+(sqrt(sqrt(+(x, x))), +(sqrt(x), sqrt(+(1, 1))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.10071973955200024,
+  "target_scale": 6.159706230822007,
+  "target_id": "RS-add_sqrt_K18_14"
+ },
+ {
+  "expression": "sqrt(sqrt(+(sqrt(sqrt(sqrt(sqrt(sqrt(x))))), +(sqrt(sqrt(x)), +(x, +(1, 1))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0003759715044964835,
+  "target_scale": 1.6459727250234908,
+  "target_id": "RS-add_sqrt_K18_15"
+ },
+ {
+  "expression": "+(+(sqrt(x), +(1, 1)), sqrt(sqrt(+(sqrt(x), sqrt(sqrt(sqrt(+(x, x))))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.010650998534045672,
+  "target_scale": 5.043033011421519,
+  "target_id": "RS-add_sqrt_K18_16"
+ },
+ {
+  "expression": "+(sqrt(sqrt(sqrt(+(1, 1)))), sqrt(sqrt(+(1, sqrt(+(sqrt(x), +(x, x)))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0001563368898736669,
+  "target_scale": 2.48454578861536,
+  "target_id": "RS-add_sqrt_K18_17"
+ },
+ {
+  "expression": "+(x, sqrt(sqrt(+(sqrt(x), sqrt(+(x, sqrt(+(+(x, x), +(x, 1)))))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.09143947669034828,
+  "target_scale": 4.422403900271107,
+  "target_id": "RS-add_sqrt_K18_18"
+ },
+ {
+  "expression": "+(1, sqrt(sqrt(+(sqrt(sqrt(+(x, 1))), +(x, +(sqrt(x), +(1, 1)))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0005050277433129392,
+  "target_scale": 2.6887202539568698,
+  "target_id": "RS-add_sqrt_K18_19"
+ },
+ {
+  "expression": "sqrt(+(sqrt(+(1, sqrt(sqrt(sqrt(x))))), sqrt(sqrt(sqrt(+(1, sqrt(+(1, 1))))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.9882998810002386e-06,
+  "target_scale": 1.6067487868156365,
+  "target_id": "RS-add_sqrt_K18_20"
+ },
+ {
+  "expression": "sqrt(sqrt(sqrt(+(sqrt(sqrt(+(x, sqrt(x)))), +(+(x, 1), sqrt(+(x, 1)))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 8.588276834563206e-05,
+  "target_scale": 1.2855928772249172,
+  "target_id": "RS-add_sqrt_K18_21"
+ },
+ {
+  "expression": "+(sqrt(+(1, sqrt(sqrt(sqrt(sqrt(x)))))), +(1, sqrt(sqrt(+(x, +(x, 1))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0016070694025299248,
+  "target_scale": 4.064471286921411,
+  "target_id": "RS-add_sqrt_K18_22"
+ },
+ {
+  "expression": "+(sqrt(+(x, +(sqrt(x), sqrt(x)))), sqrt(+(x, sqrt(sqrt(sqrt(sqrt(sqrt(x))))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.030839046065148444,
+  "target_scale": 4.545605960238547,
+  "target_id": "RS-add_sqrt_K18_23"
+ },
+ {
+  "expression": "+(sqrt(sqrt(sqrt(x))), sqrt(+(sqrt(+(1, 1)), sqrt(sqrt(+(x, +(x, x)))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0008842167480396419,
+  "target_scale": 2.920096582058881,
+  "target_id": "RS-add_sqrt_K18_24"
+ },
+ {
+  "expression": "sqrt(+(sqrt(+(1, 1)), sqrt(+(1, sqrt(+(sqrt(x), sqrt(sqrt(+(x, 1)))))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 9.012885963761225e-06,
+  "target_scale": 1.7548109587467493,
+  "target_id": "RS-add_sqrt_K18_25"
+ },
+ {
+  "expression": "sqrt(+(+(x, 1), sqrt(+(sqrt(+(x, sqrt(x))), +(sqrt(x), +(x, 1))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.005691436531894867,
+  "target_scale": 2.6075491836860776,
+  "target_id": "RS-add_sqrt_K18_26"
+ },
+ {
+  "expression": "+(+(x, +(x, x)), sqrt(+(1, sqrt(sqrt(+(x, sqrt(sqrt(+(1, 1)))))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.750164123514436,
+  "target_scale": 10.52907940048604,
+  "target_id": "RS-add_sqrt_K18_27"
+ },
+ {
+  "expression": "sqrt(sqrt(sqrt(+(sqrt(+(1, +(1, 1))), sqrt(+(x, sqrt(sqrt(+(x, x)))))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.062805241083461e-05,
+  "target_scale": 1.1841541182120205,
+  "target_id": "RS-add_sqrt_K18_28"
+ },
+ {
+  "expression": "+(1, sqrt(sqrt(+(sqrt(sqrt(x)), sqrt(sqrt(+(x, +(sqrt(x), +(x, x)))))))))",
+  "K_construction": 18,
+  "K_proven": 18,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 18.0,
+   "bits_uniform": 36.0,
+   "bits_syn": 28.41365518776464,
+   "bits_sem": 18.92407598642546,
+   "bits_sem_uncorrected": 18.92407598642546,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 8.093233206220647e-05,
+  "target_scale": 2.3294228413375295,
+  "target_id": "RS-add_sqrt_K18_29"
+ },
+ {
+  "expression": "+(sqrt(+(1, 1)), sqrt(+(+(1, sqrt(x)), sqrt(+(1, sqrt(sqrt(+(x, 1))))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0006052930358346943,
+  "target_scale": 3.4836778281821035,
+  "target_id": "RS-add_sqrt_K19_00"
+ },
+ {
+  "expression": "+(+(1, sqrt(+(x, x))), sqrt(sqrt(+(+(1, 1), sqrt(+(1, +(1, 1)))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.01644497227797266,
+  "target_scale": 4.835355003475883,
+  "target_id": "RS-add_sqrt_K19_01"
+ },
+ {
+  "expression": "+(+(sqrt(x), sqrt(x)), sqrt(sqrt(sqrt(+(+(x, sqrt(x)), sqrt(+(1, sqrt(x))))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.037038641201756324,
+  "target_scale": 4.71883930334656,
+  "target_id": "RS-add_sqrt_K19_02"
+ },
+ {
+  "expression": "+(x, sqrt(+(sqrt(sqrt(+(x, x))), sqrt(+(sqrt(x), sqrt(+(x, sqrt(sqrt(x)))))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.09620632890615184,
+  "target_scale": 4.864716758268353,
+  "target_id": "RS-add_sqrt_K19_03"
+ },
+ {
+  "expression": "+(+(x, sqrt(sqrt(+(1, 1)))), sqrt(sqrt(+(x, sqrt(sqrt(+(x, +(x, x))))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.09893090181797111,
+  "target_scale": 5.653321578062515,
+  "target_id": "RS-add_sqrt_K19_04"
+ },
+ {
+  "expression": "sqrt(sqrt(sqrt(+(sqrt(+(1, sqrt(x))), sqrt(+(+(x, x), sqrt(sqrt(+(1, 1)))))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.739319720560147e-05,
+  "target_scale": 1.201035873309095,
+  "target_id": "RS-add_sqrt_K19_05"
+ },
+ {
+  "expression": "+(sqrt(+(x, +(x, x))), sqrt(+(x, sqrt(+(1, sqrt(+(x, +(x, 1))))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.05437507933634169,
+  "target_scale": 5.208301650488115,
+  "target_id": "RS-add_sqrt_K19_06"
+ },
+ {
+  "expression": "+(sqrt(sqrt(sqrt(+(1, sqrt(+(x, x)))))), sqrt(sqrt(sqrt(sqrt(sqrt(sqrt(sqrt(sqrt(x)))))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3.8524325416403506e-05,
+  "target_scale": 2.171515593454452,
+  "target_id": "RS-add_sqrt_K19_07"
+ },
+ {
+  "expression": "+(sqrt(sqrt(+(1, +(sqrt(x), sqrt(x))))), sqrt(+(x, +(sqrt(x), +(x, x)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.03006378100112812,
+  "target_scale": 4.724102999947056,
+  "target_id": "RS-add_sqrt_K19_08"
+ },
+ {
+  "expression": "sqrt(+(+(1, sqrt(sqrt(sqrt(+(x, x))))), sqrt(+(1, sqrt(sqrt(+(1, sqrt(x))))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3.0473231147998733e-05,
+  "target_scale": 1.9396497858550081,
+  "target_id": "RS-add_sqrt_K19_09"
+ },
+ {
+  "expression": "sqrt(sqrt(+(sqrt(sqrt(+(1, sqrt(sqrt(x))))), sqrt(sqrt(+(sqrt(sqrt(x)), sqrt(sqrt(x))))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3.1244729405795065e-06,
+  "target_scale": 1.2583079038898317,
+  "target_id": "RS-add_sqrt_K19_10"
+ },
+ {
+  "expression": "+(sqrt(sqrt(+(x, sqrt(x)))), sqrt(+(+(x, x), sqrt(+(x, sqrt(+(1, 1)))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.02405646986839467,
+  "target_scale": 4.316234472772145,
+  "target_id": "RS-add_sqrt_K19_11"
+ },
+ {
+  "expression": "sqrt(+(+(x, sqrt(sqrt(x))), sqrt(+(+(x, x), sqrt(sqrt(+(x, sqrt(sqrt(x)))))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0077725799652049905,
+  "target_scale": 2.65125833922329,
+  "target_id": "RS-add_sqrt_K19_12"
+ },
+ {
+  "expression": "+(sqrt(+(sqrt(x), sqrt(+(x, x)))), sqrt(sqrt(sqrt(sqrt(+(sqrt(x), sqrt(sqrt(x))))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0035006459309365624,
+  "target_scale": 3.1152467741342553,
+  "target_id": "RS-add_sqrt_K19_13"
+ },
+ {
+  "expression": "+(+(sqrt(x), sqrt(x)), sqrt(sqrt(+(sqrt(sqrt(+(1, 1))), sqrt(sqrt(+(x, 1)))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.03415864498977982,
+  "target_scale": 4.728514577779311,
+  "target_id": "RS-add_sqrt_K19_14"
+ },
+ {
+  "expression": "+(sqrt(+(x, 1)), sqrt(sqrt(+(+(x, x), sqrt(sqrt(+(x, sqrt(+(1, 1)))))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.012938450928296636,
+  "target_scale": 3.6484608389371993,
+  "target_id": "RS-add_sqrt_K19_15"
+ },
+ {
+  "expression": "sqrt(sqrt(+(+(1, 1), sqrt(+(x, sqrt(+(sqrt(+(x, x)), sqrt(+(1, 1)))))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4.374455104625934e-05,
+  "target_scale": 1.4337723621363996,
+  "target_id": "RS-add_sqrt_K19_16"
+ },
+ {
+  "expression": "sqrt(sqrt(+(+(sqrt(x), +(1, 1)), sqrt(sqrt(+(+(1, 1), sqrt(+(x, 1))))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 5.3645268733117484e-05,
+  "target_scale": 1.5059412650120692,
+  "target_id": "RS-add_sqrt_K19_17"
+ },
+ {
+  "expression": "+(sqrt(+(1, +(1, 1))), sqrt(+(x, sqrt(sqrt(+(sqrt(sqrt(x)), +(x, 1)))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.006095389154715813,
+  "target_scale": 3.8551980401310137,
+  "target_id": "RS-add_sqrt_K19_18"
+ },
+ {
+  "expression": "+(sqrt(sqrt(+(sqrt(x), +(x, 1)))), sqrt(+(x, sqrt(+(x, sqrt(sqrt(sqrt(x))))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013255784567350336,
+  "target_scale": 3.7878808956793955,
+  "target_id": "RS-add_sqrt_K19_19"
+ },
+ {
+  "expression": "+(sqrt(+(x, sqrt(+(x, x)))), sqrt(sqrt(+(sqrt(x), sqrt(+(x, +(x, x)))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013488677873643422,
+  "target_scale": 3.8057150714331662,
+  "target_id": "RS-add_sqrt_K19_20"
+ },
+ {
+  "expression": "+(+(+(1, 1), sqrt(+(x, x))), sqrt(sqrt(+(sqrt(x), sqrt(sqrt(sqrt(sqrt(x))))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.019637221665780448,
+  "target_scale": 5.739018205424032,
+  "target_id": "RS-add_sqrt_K19_21"
+ },
+ {
+  "expression": "sqrt(+(x, sqrt(+(sqrt(+(x, +(x, 1))), sqrt(+(1, sqrt(sqrt(+(x, x)))))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.005638509617825528,
+  "target_scale": 2.24722044077782,
+  "target_id": "RS-add_sqrt_K19_22"
+ },
+ {
+  "expression": "+(sqrt(sqrt(+(x, 1))), sqrt(+(sqrt(x), sqrt(sqrt(+(sqrt(sqrt(x)), +(1, 1)))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0030964128753113735,
+  "target_scale": 3.1679108818202097,
+  "target_id": "RS-add_sqrt_K19_23"
+ },
+ {
+  "expression": "sqrt(sqrt(+(+(x, 1), sqrt(+(+(1, +(1, 1)), sqrt(+(1, sqrt(sqrt(x)))))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0003915874896463106,
+  "target_scale": 1.5726259578718664,
+  "target_id": "RS-add_sqrt_K19_24"
+ },
+ {
+  "expression": "+(x, sqrt(+(+(1, sqrt(sqrt(x))), sqrt(+(+(1, 1), sqrt(sqrt(+(x, 1))))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08798455533725053,
+  "target_scale": 5.0303217471157975,
+  "target_id": "RS-add_sqrt_K19_25"
+ },
+ {
+  "expression": "sqrt(+(sqrt(sqrt(sqrt(+(sqrt(x), sqrt(x))))), +(1, sqrt(sqrt(+(1, +(1, 1)))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4.98797540888179e-06,
+  "target_scale": 1.8665071145272358,
+  "target_id": "RS-add_sqrt_K19_26"
+ },
+ {
+  "expression": "+(sqrt(sqrt(+(x, +(x, 1)))), +(sqrt(+(x, sqrt(x))), +(1, sqrt(sqrt(x)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.027895854283365516,
+  "target_scale": 6.112804324856836,
+  "target_id": "RS-add_sqrt_K19_27"
+ },
+ {
+  "expression": "sqrt(+(+(x, sqrt(sqrt(x))), sqrt(+(sqrt(sqrt(sqrt(x))), +(1, sqrt(+(x, x)))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0054537207746083146,
+  "target_scale": 2.5392954589907424,
+  "target_id": "RS-add_sqrt_K19_28"
+ },
+ {
+  "expression": "sqrt(sqrt(+(+(x, sqrt(sqrt(+(1, 1)))), sqrt(+(+(1, 1), sqrt(+(x, 1)))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 38.0,
+   "bits_syn": 30.234263356197758,
+   "bits_sem": 20.098952190423226,
+   "bits_sem_uncorrected": 20.098952190423226,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0004341387324224358,
+  "target_scale": 1.5766091615966102,
+  "target_id": "RS-add_sqrt_K19_29"
+ },
+ {
+  "expression": "+(+(1, sqrt(x)), sqrt(+(sqrt(x), sqrt(sqrt(+(+(x, 1), sqrt(sqrt(+(1, 1)))))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.01515409951019379,
+  "target_scale": 4.528570366498587,
+  "target_id": "RS-add_sqrt_K20_00"
+ },
+ {
+  "expression": "sqrt(sqrt(+(sqrt(+(x, sqrt(sqrt(+(x, x))))), +(1, +(sqrt(sqrt(x)), sqrt(sqrt(x)))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00011601434446575074,
+  "target_scale": 1.5494594222406741,
+  "target_id": "RS-add_sqrt_K20_01"
+ },
+ {
+  "expression": "sqrt(+(+(x, sqrt(sqrt(sqrt(+(x, x))))), sqrt(sqrt(+(+(x, x), sqrt(+(x, 1)))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0054816583929626905,
+  "target_scale": 2.4333590544177124,
+  "target_id": "RS-add_sqrt_K20_02"
+ },
+ {
+  "expression": "sqrt(+(+(1, +(1, 1)), sqrt(+(sqrt(sqrt(+(1, 1))), +(1, sqrt(+(x, x)))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4.563397371491931e-05,
+  "target_scale": 2.2699832741731507,
+  "target_id": "RS-add_sqrt_K20_03"
+ },
+ {
+  "expression": "+(+(sqrt(x), sqrt(+(sqrt(x), sqrt(x)))), sqrt(+(x, +(+(1, 1), +(x, 1)))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0590356486351539,
+  "target_scale": 6.585560290793595,
+  "target_id": "RS-add_sqrt_K20_04"
+ },
+ {
+  "expression": "sqrt(+(sqrt(sqrt(sqrt(+(sqrt(x), sqrt(sqrt(x)))))), +(1, sqrt(sqrt(+(sqrt(x), sqrt(x)))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4.717647550633975e-05,
+  "target_scale": 1.8742995631062176,
+  "target_id": "RS-add_sqrt_K20_05"
+ },
+ {
+  "expression": "+(x, sqrt(sqrt(+(+(sqrt(x), sqrt(+(1, 1))), sqrt(+(x, sqrt(+(1, sqrt(x)))))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08902002206691835,
+  "target_scale": 4.50724449830771,
+  "target_id": "RS-add_sqrt_K20_06"
+ },
+ {
+  "expression": "+(sqrt(sqrt(+(sqrt(sqrt(x)), +(x, 1)))), +(sqrt(x), sqrt(+(x, sqrt(+(x, 1))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.04103086854938621,
+  "target_scale": 5.480143945685386,
+  "target_id": "RS-add_sqrt_K20_07"
+ },
+ {
+  "expression": "sqrt(+(+(1, 1), sqrt(+(sqrt(+(x, sqrt(x))), +(+(x, x), sqrt(+(x, 1)))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0007808467335647393,
+  "target_scale": 2.2772624615271466,
+  "target_id": "RS-add_sqrt_K20_08"
+ },
+ {
+  "expression": "sqrt(sqrt(sqrt(sqrt(+(+(x, sqrt(+(1, sqrt(x)))), sqrt(sqrt(+(sqrt(x), +(x, 1)))))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.8128276032964742e-05,
+  "target_scale": 1.1206613937830197,
+  "target_id": "RS-add_sqrt_K20_09"
+ },
+ {
+  "expression": "sqrt(+(sqrt(+(x, sqrt(sqrt(sqrt(+(x, x)))))), +(+(x, 1), sqrt(sqrt(+(x, 1))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.005682400313115749,
+  "target_scale": 2.7317965008087715,
+  "target_id": "RS-add_sqrt_K20_10"
+ },
+ {
+  "expression": "+(sqrt(+(x, sqrt(x))), +(sqrt(sqrt(+(1, sqrt(x)))), sqrt(sqrt(+(sqrt(x), sqrt(x))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.015325202506899673,
+  "target_scale": 4.821402178057319,
+  "target_id": "RS-add_sqrt_K20_11"
+ },
+ {
+  "expression": "sqrt(+(sqrt(sqrt(+(x, sqrt(x)))), sqrt(sqrt(sqrt(+(sqrt(sqrt(x)), sqrt(sqrt(+(x, x)))))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00013429853125803123,
+  "target_scale": 1.6171601734978287,
+  "target_id": "RS-add_sqrt_K20_12"
+ },
+ {
+  "expression": "+(+(1, sqrt(sqrt(+(1, sqrt(x))))), sqrt(+(sqrt(sqrt(sqrt(x))), sqrt(sqrt(sqrt(sqrt(x)))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0003691338544239305,
+  "target_scale": 3.77446679065096,
+  "target_id": "RS-add_sqrt_K20_13"
+ },
+ {
+  "expression": "sqrt(sqrt(+(sqrt(sqrt(x)), +(sqrt(sqrt(+(1, sqrt(x)))), sqrt(+(1, sqrt(+(x, 1))))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3.53210328822445e-05,
+  "target_scale": 1.4426565180171558,
+  "target_id": "RS-add_sqrt_K20_14"
+ },
+ {
+  "expression": "+(+(x, sqrt(sqrt(sqrt(sqrt(sqrt(x)))))), sqrt(sqrt(+(x, sqrt(sqrt(+(x, sqrt(sqrt(x)))))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.10117371046408667,
+  "target_scale": 5.475741973403911,
+  "target_id": "RS-add_sqrt_K20_15"
+ },
+ {
+  "expression": "+(sqrt(+(x, +(1, 1))), sqrt(sqrt(sqrt(sqrt(sqrt(+(sqrt(sqrt(x)), sqrt(+(1, 1)))))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004606199990986239,
+  "target_scale": 3.2657256143763433,
+  "target_id": "RS-add_sqrt_K20_16"
+ },
+ {
+  "expression": "sqrt(+(+(x, 1), sqrt(+(x, sqrt(+(sqrt(sqrt(+(1, 1))), sqrt(sqrt(+(1, 1)))))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0057959392961593244,
+  "target_scale": 2.473665546062362,
+  "target_id": "RS-add_sqrt_K20_17"
+ },
+ {
+  "expression": "sqrt(+(sqrt(+(1, sqrt(sqrt(x)))), +(+(1, sqrt(x)), +(+(x, x), +(x, 1)))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.01837689316165893,
+  "target_scale": 3.771073503940881,
+  "target_id": "RS-add_sqrt_K20_18"
+ },
+ {
+  "expression": "+(+(sqrt(sqrt(x)), sqrt(+(x, x))), sqrt(sqrt(+(sqrt(x), sqrt(+(1, sqrt(sqrt(x))))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.030781769391836137,
+  "target_scale": 5.103178064770718,
+  "target_id": "RS-add_sqrt_K20_19"
+ },
+ {
+  "expression": "+(+(x, 1), sqrt(+(+(sqrt(x), +(x, 1)), sqrt(+(x, sqrt(sqrt(+(x, 1))))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.13830258488365835,
+  "target_scale": 6.78611868005267,
+  "target_id": "RS-add_sqrt_K20_20"
+ },
+ {
+  "expression": "+(+(1, 1), +(sqrt(+(sqrt(x), +(x, x))), sqrt(+(+(1, 1), +(x, 1)))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.036264977223418,
+  "target_scale": 7.224046400413036,
+  "target_id": "RS-add_sqrt_K20_21"
+ },
+ {
+  "expression": "sqrt(+(sqrt(sqrt(sqrt(sqrt(sqrt(sqrt(x)))))), +(sqrt(sqrt(x)), sqrt(sqrt(+(sqrt(x), sqrt(x)))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00022711509247529086,
+  "target_scale": 1.9224843875888553,
+  "target_id": "RS-add_sqrt_K20_22"
+ },
+ {
+  "expression": "sqrt(+(+(x, x), sqrt(sqrt(sqrt(+(+(x, +(x, x)), sqrt(+(x, +(1, 1)))))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013706697776530266,
+  "target_scale": 2.7079156752926252,
+  "target_id": "RS-add_sqrt_K20_23"
+ },
+ {
+  "expression": "+(+(sqrt(x), +(1, 1)), sqrt(+(sqrt(+(1, 1)), sqrt(+(1, sqrt(+(x, x)))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.01012862045710705,
+  "target_scale": 5.537616214809819,
+  "target_id": "RS-add_sqrt_K20_24"
+ },
+ {
+  "expression": "+(sqrt(+(sqrt(x), sqrt(sqrt(x)))), sqrt(sqrt(+(sqrt(sqrt(sqrt(x))), +(sqrt(x), sqrt(x))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.002954556019991731,
+  "target_scale": 3.209663791453596,
+  "target_id": "RS-add_sqrt_K20_25"
+ },
+ {
+  "expression": "sqrt(+(1, sqrt(+(sqrt(sqrt(+(x, 1))), sqrt(+(+(1, 1), sqrt(sqrt(+(x, x)))))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.0781465192928802e-05,
+  "target_scale": 1.6783633424703246,
+  "target_id": "RS-add_sqrt_K20_26"
+ },
+ {
+  "expression": "+(1, sqrt(+(1, +(sqrt(sqrt(+(x, +(x, x)))), sqrt(sqrt(+(x, +(1, 1))))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00030480231796843843,
+  "target_scale": 3.055535917921859,
+  "target_id": "RS-add_sqrt_K20_27"
+ },
+ {
+  "expression": "sqrt(+(sqrt(+(sqrt(x), sqrt(sqrt(sqrt(x))))), +(+(1, 1), sqrt(+(1, sqrt(sqrt(x)))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 9.666277297163546e-05,
+  "target_scale": 2.284154448130617,
+  "target_id": "RS-add_sqrt_K20_28"
+ },
+ {
+  "expression": "+(sqrt(sqrt(x)), sqrt(+(1, sqrt(+(x, sqrt(+(sqrt(+(x, 1)), sqrt(+(1, 1)))))))))",
+  "K_construction": 20,
+  "K_proven": 20,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 20.0,
+   "bits_uniform": 40.0,
+   "bits_syn": 32.06082009137737,
+   "bits_sem": 21.279310751623203,
+   "bits_sem_uncorrected": 21.279310751623203,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0032786719457343033,
+  "target_scale": 3.1036624961506027,
+  "target_id": "RS-add_sqrt_K20_29"
+ }
+]

@@ -1,0 +1,169 @@
+{
+ "grammar": "F-LDE0",
+ "seed": 20261020,
+ "ceiling": 23,
+ "depth_limit": 10,
+ "levels": {
+  "3": {
+   "proven": true,
+   "n_level": 3,
+   "n_depth_ok": 3,
+   "excluded_share": 0.0,
+   "found": 2,
+   "rejected": {
+    "nonfinite": 1
+   }
+  },
+  "5": {
+   "proven": true,
+   "n_level": 8,
+   "n_depth_ok": 8,
+   "excluded_share": 0.0,
+   "found": 6,
+   "rejected": {
+    "nonfinite": 2
+   }
+  },
+  "7": {
+   "proven": true,
+   "n_level": 23,
+   "n_depth_ok": 23,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {
+    "complex": 5,
+    "variance": 1
+   }
+  },
+  "9": {
+   "proven": true,
+   "n_level": 93,
+   "n_depth_ok": 93,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {
+    "complex": 13,
+    "nonfinite": 2
+   }
+  },
+  "11": {
+   "proven": true,
+   "n_level": 386,
+   "n_depth_ok": 386,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {
+    "complex": 38,
+    "nonfinite": 2
+   }
+  },
+  "13": {
+   "proven": true,
+   "n_level": 1757,
+   "n_depth_ok": 1757,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {
+    "complex": 21
+   }
+  },
+  "15": {
+   "proven": true,
+   "n_level": 8265,
+   "n_depth_ok": 8265,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {
+    "complex": 49,
+    "dead_subtree": 1,
+    "nonfinite": 1
+   }
+  },
+  "17": {
+   "proven": true,
+   "n_level": 39863,
+   "n_depth_ok": 39863,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {
+    "complex": 49,
+    "nonfinite": 4
+   }
+  },
+  "19": {
+   "proven": true,
+   "n_level": 195250,
+   "n_depth_ok": 195250,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {
+    "complex": 135,
+    "nonfinite": 7,
+    "magnitude_ratio": 2
+   }
+  },
+  "21": {
+   "proven": true,
+   "n_level": 971751,
+   "n_depth_ok": 938747,
+   "excluded_share": 0.033963433019364,
+   "found": 10,
+   "rejected": {
+    "complex": 110,
+    "magnitude_ratio": 1,
+    "nonfinite": 4
+   }
+  },
+  "23": {
+   "proven": true,
+   "n_level": 4906059,
+   "n_depth_ok": 4421658,
+   "excluded_share": 0.098735257770035,
+   "found": 10,
+   "rejected": {
+    "complex": 201,
+    "nonfinite": 5,
+    "dead_subtree": 2,
+    "magnitude_ratio": 2
+   }
+  },
+  "25": {
+   "proven": false,
+   "found": 10,
+   "rejected": {
+    "complex": 396,
+    "depth": 172,
+    "smaller_in_enumeration": 139,
+    "nonfinite": 34,
+    "dead_subtree": 3,
+    "magnitude_ratio": 9,
+    "variance": 2
+   }
+  },
+  "27": {
+   "proven": false,
+   "found": 10,
+   "rejected": {
+    "complex": 317,
+    "smaller_in_enumeration": 111,
+    "nonfinite": 19,
+    "depth": 82,
+    "magnitude_ratio": 11,
+    "dead_subtree": 2
+   }
+  },
+  "31": {
+   "proven": false,
+   "found": 10,
+   "rejected": {
+    "complex": 683,
+    "magnitude_ratio": 14,
+    "depth": 108,
+    "smaller_in_enumeration": 57,
+    "nonfinite": 38,
+    "variance": 3,
+    "dead_subtree": 1
+   }
+  }
+ }
+}

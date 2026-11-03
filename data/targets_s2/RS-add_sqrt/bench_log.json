@@ -1,0 +1,161 @@
+{
+ "grammar": "RS-add_sqrt",
+ "benchmarks": {
+  "N1": "not within the ceiling",
+  "N2": "not within the ceiling",
+  "N3": "not within the ceiling",
+  "N4": "not within the ceiling",
+  "N5": "not within the ceiling",
+  "N6": "not within the ceiling",
+  "N7": "not within the ceiling",
+  "N8": "proven K=2",
+  "K2": "not within the ceiling",
+  "K3": "not within the ceiling",
+  "feynman_I_6_2a": "not within the ceiling",
+  "eml_1_1": "not within the ceiling",
+  "eml_1_2": "not within the ceiling",
+  "eml_1_4": "not within the ceiling",
+  "eml_2_1": "not within the ceiling",
+  "eml_3_1": "not within the ceiling",
+  "eml_3_2": "not within the ceiling",
+  "eml_3_3": "not within the ceiling",
+  "eml_3_4": "not within the ceiling",
+  "eml_3_5": "not within the ceiling",
+  "eml_4_1": "not within the ceiling"
+ },
+ "noise_rows": [
+  {
+   "K": 1,
+   "U": 2,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 2,
+   "U": 1,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 3,
+   "U": 4,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 4,
+   "U": 6,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 5,
+   "U": 13,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 6,
+   "U": 25,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 7,
+   "U": 52,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 8,
+   "U": 105,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 9,
+   "U": 226,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 10,
+   "U": 477,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 11,
+   "U": 1037,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 12,
+   "U": 2252,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 13,
+   "U": 4953,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 14,
+   "U": 10944,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 15,
+   "U": 24357,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 16,
+   "U": 54444,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 17,
+   "U": 122385,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 18,
+   "U": 276127,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 19,
+   "U": 625610,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  }
+ ]
+}

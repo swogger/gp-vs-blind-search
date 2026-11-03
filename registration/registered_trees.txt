@@ -1,0 +1,7 @@
+# label | commit | git tree hash of src/reach at that commit | patch from it to this release
+Stage 0 (OSF xh9ag) | f2540eb4be8ca9e907cf80170d145b5c00ed221f | faf558f548fc860ce367ad4125df9c346bb80f0b | src_reach_f2540eb.patch
+Stage 1 (OSF a3spg) | 3b8aa5e055f0f380c90d85890e3dd0f60ff213e3 | 6718710d91422b53f5afcf273947d05e031d0ac6 | src_reach_3b8aa5e.patch
+Stage 2 (OSF dg7f3) | 3079021f9dccd72e2282a6f37d54b4e6ccb085f6 | dfe773b331033124db2ffa2c9b97fb801d7ee3d9 | src_reach_3079021.patch
+Stage 2 addendum (OSF bc9g4) | a99034ea44962739b93cd5f0ef75bddc14e8f62c | dfe773b331033124db2ffa2c9b97fb801d7ee3d9 | src_reach_a99034e.patch
+Stage 3 (OSF hb238) | 80bc061ced0cb85dcbfda9810afc78aa22e5bade | 3699a63d2fb373003e616e3275d1c182516f8a9e | src_reach_80bc061.patch
+Stage 4 (OSF s5fjm) | 33e792b6810b913a741e6425f10564deeecde4c6 | c6b502bc790b9a91c71a0f8bfa92c6a56311437d | src_reach_33e792b.patch

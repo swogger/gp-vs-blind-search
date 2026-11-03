@@ -1,0 +1,4 @@
+a7ab3661ecfeb895a4c58bcf5d38a5a5127cc3073c01736c5148f65200b8fb48  data/registration/heldout_draw.json
+3a7c0ae50295d95e00121e6847b00554b7fdd9614a4c2141b7d5b9c385ac72a7  src/reach/s2_sets.py
+306943ad505d644d9dd8654b8620c596642e78d790e0bd33fd5ec8e4e65efdfb  src/reach/tasks/s2_draw.py
+# commit f2540eb4be8ca9e907cf80170d145b5c00ed221f

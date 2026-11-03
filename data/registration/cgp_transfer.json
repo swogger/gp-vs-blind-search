@@ -1,0 +1,82 @@
+{
+ "bool": {
+  "base_params": [
+   4.1563943540359585,
+   -0.09546364274166584,
+   0.5178494769052063,
+   -4.744856945944403
+  ],
+  "base_sha256": "8a87c1b333988ad1b0b87680a61a8497752d7018a61faf4822a98371c414ee60",
+  "baseline": {
+   "budget_term": true,
+   "feature": null,
+   "params": [
+    2.3798882441722196,
+    -0.015141938019635348,
+    0.783991760103001
+   ],
+   "unit": "nodes"
+  },
+  "budget_term": true,
+  "budgets": [
+   1,
+   2,
+   4,
+   8,
+   16
+  ],
+  "feature": "neutral_share_mutation",
+  "n": 67500,
+  "params": [
+   9.262423327611158,
+   -0.1494048700779491,
+   0.8104575898735096,
+   -7.425913313046779
+  ],
+  "rule": "logit P = c0 + c1 * eta (frozen H7 model), maximum likelihood on H10b transfer, CGP calibration runs, budgets [1, 2, 4, 8, 16] x E0",
+  "transfer": {
+   "c0": 2.7574802872757656,
+   "c1": 1.5650447205566376
+  },
+  "unit": "bits_sem"
+ },
+ "real": {
+  "base_params": [
+   3.8521842739386782,
+   -0.3768183945262654,
+   0.15826696307482876
+  ],
+  "base_sha256": "8a87c1b333988ad1b0b87680a61a8497752d7018a61faf4822a98371c414ee60",
+  "baseline": {
+   "budget_term": true,
+   "feature": null,
+   "params": [
+    1.8999838652281946,
+    -0.3316621146951635,
+    0.16516383243390992
+   ],
+   "unit": "nodes"
+  },
+  "budget_term": true,
+  "budgets": [
+   1,
+   2,
+   4,
+   8,
+   16
+  ],
+  "feature": null,
+  "n": 52500,
+  "params": [
+   2.7239487334763814,
+   -0.3431049432407466,
+   0.14410702389129101
+  ],
+  "rule": "logit P = c0 + c1 * eta (frozen H7 model), maximum likelihood on H10b transfer, CGP calibration runs, budgets [1, 2, 4, 8, 16] x E0",
+  "transfer": {
+   "c0": -0.7835856275366129,
+   "c1": 0.9105313016157206
+  },
+  "unit": "bits_sem"
+ }
+}

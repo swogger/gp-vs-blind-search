@@ -1,0 +1,5402 @@
+[
+ {
+  "expression": "eml(x, eml(x, eml(1, 1)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 10.809129620791062,
+  "target_scale": 16.949143121415307,
+  "target_id": "F-EML_K07_00"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(1, 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5091769317007916,
+  "target_scale": 6.539805351671948,
+  "target_id": "F-EML_K07_01"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, 1)), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013314094935341464,
+  "target_scale": 4.876856062560352,
+  "target_id": "F-EML_K07_02"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, x), 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 13.7662264660913,
+  "target_scale": 18.2646761405664,
+  "target_id": "F-EML_K07_03"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, x)), 1)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.17261907575418714,
+  "target_scale": 2.2402657948877374,
+  "target_id": "F-EML_K07_04"
+ },
+ {
+  "expression": "eml(1, eml(eml(1, x), x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.024937581424795758,
+  "target_scale": 1.3388004215480294,
+  "target_id": "F-EML_K07_05"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(x, 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683166,
+  "target_scale": 13.144361251380253,
+  "target_id": "F-EML_K07_06"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(x, x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.0215888310786263,
+  "target_scale": 5.628118040472522,
+  "target_id": "F-EML_K07_07"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(1, x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.42262159655053444,
+  "target_scale": 6.836610633964451,
+  "target_id": "F-EML_K07_08"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, 1), x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.993420611089588,
+  "target_scale": 17.244391856493078,
+  "target_id": "F-EML_K07_09"
+ },
+ {
+  "expression": "eml(1, eml(eml(1, 1), x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6.554865081664864e-05,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K07_10"
+ },
+ {
+  "expression": "eml(eml(eml(1, 1), 1), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013314094938636292,
+  "target_scale": 3814278.406674752,
+  "target_id": "F-EML_K07_11"
+ },
+ {
+  "expression": "eml(x, eml(x, eml(x, 1)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 10.693105329979039,
+  "target_scale": 17.060482681986404,
+  "target_id": "F-EML_K07_12"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(1, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.09414623320990771,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K07_13"
+ },
+ {
+  "expression": "eml(x, eml(1, eml(1, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.724070430667235,
+  "target_scale": 19.083848483390693,
+  "target_id": "F-EML_K07_14"
+ },
+ {
+  "expression": "eml(x, eml(eml(x, 1), x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 9.011000083283559e-09,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K07_15"
+ },
+ {
+  "expression": "eml(x, eml(eml(x, x), 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013314094935341471,
+  "target_scale": 1.09530650053361,
+  "target_id": "F-EML_K07_16"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(1, x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004057505669661537,
+  "target_scale": 14.67000115458704,
+  "target_id": "F-EML_K07_17"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(x, 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.9965577691376889,
+  "target_scale": 5.529904361572938,
+  "target_id": "F-EML_K07_18"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, x)), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.28151125693902057,
+  "target_scale": 1.5421803326872094,
+  "target_id": "F-EML_K07_19"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, x)), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1759649013655158,
+  "target_scale": 8.242027210416985,
+  "target_id": "F-EML_K07_20"
+ },
+ {
+  "expression": "eml(x, eml(1, eml(1, 1)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.935998848502534,
+  "target_scale": 19.34632661387892,
+  "target_id": "F-EML_K07_21"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(1, 1)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.09747021424762135,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K07_22"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(x, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.10613022305324891,
+  "target_scale": 1.0043233495558084,
+  "target_id": "F-EML_K07_23"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, 1), 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.935998848502528,
+  "target_scale": 17.16936964003279,
+  "target_id": "F-EML_K07_24"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(x, 1)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1088491517954949,
+  "target_scale": 1.0221750649176862,
+  "target_id": "F-EML_K07_25"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(x, x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0889906905540189,
+  "target_scale": 13.242574930279837,
+  "target_id": "F-EML_K07_26"
+ },
+ {
+  "expression": "eml(1, eml(1, eml(1, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0008990206114083207,
+  "target_scale": 2.0176194028526298,
+  "target_id": "F-EML_K07_27"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, 1)), 1)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.13487291560144843,
+  "target_scale": 2.030700562827876,
+  "target_id": "F-EML_K07_28"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, x), x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 11.094737505048093,
+   "bits_syn": 6.672425341971495,
+   "bits_sem": 6.539158811108031,
+   "bits_sem_uncorrected": 6.539158811108031,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 14.083837841604359,
+  "target_scale": 18.50817006158082,
+  "target_id": "F-EML_K07_29"
+ },
+ {
+  "expression": "eml(1, eml(eml(1, x), eml(x, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.07784460947920105,
+  "target_scale": 1.9599567835758744,
+  "target_id": "F-EML_K09_00"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(x, eml(1, x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.10597030838666627,
+  "target_scale": 1.0041872382597925,
+  "target_id": "F-EML_K09_01"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, eml(1, x))), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.10851991732498431,
+  "target_scale": 6.822315100446767,
+  "target_id": "F-EML_K09_02"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, eml(x, x)), 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 15.153830319048073,
+  "target_scale": 20.102819244391952,
+  "target_id": "F-EML_K09_03"
+ },
+ {
+  "expression": "eml(x, eml(1, eml(1, eml(1, 1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.935998848502532,
+  "target_scale": 19.109723450400686,
+  "target_id": "F-EML_K09_04"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, x), eml(1, 1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 13.933360475673334,
+  "target_scale": 18.484463780065056,
+  "target_id": "F-EML_K09_05"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(x, eml(x, 1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.10045078656518966,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K09_06"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, 1)), 1), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.62913037242236,
+  "target_scale": 6.921336911339202,
+  "target_id": "F-EML_K09_07"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, x)), eml(x, x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.05584927620444988,
+  "target_scale": 6.403884106591432,
+  "target_id": "F-EML_K09_08"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(x, eml(1, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.09414623320990774,
+  "target_scale": 13.243330520686664,
+  "target_id": "F-EML_K09_09"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(eml(1, 1), 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5091769317007915,
+  "target_scale": 4.821523523212903,
+  "target_id": "F-EML_K09_10"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, x)), eml(1, x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3579678531805142,
+  "target_scale": 8.853072624058372,
+  "target_id": "F-EML_K09_11"
+ },
+ {
+  "expression": "eml(eml(eml(1, 1), 1), eml(x, 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316833093985,
+  "target_scale": 3814277.0948592243,
+  "target_id": "F-EML_K09_12"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, x), eml(1, x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 13.770748397935574,
+  "target_scale": 18.36510431071534,
+  "target_id": "F-EML_K09_13"
+ },
+ {
+  "expression": "eml(x, eml(eml(x, eml(1, 1)), x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6.661746583047378e-08,
+  "target_scale": 1.0010901421645482,
+  "target_id": "F-EML_K09_14"
+ },
+ {
+  "expression": "eml(x, eml(x, eml(1, eml(1, 1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 10.890388154994803,
+  "target_scale": 16.925148906113787,
+  "target_id": "F-EML_K09_15"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, x)), eml(1, 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.17261907575418717,
+  "target_scale": 1.2402657948877374,
+  "target_id": "F-EML_K09_16"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, x)), eml(x, 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.061919157422398924,
+  "target_scale": 6.347234701049605,
+  "target_id": "F-EML_K09_17"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(x, eml(x, 1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.086725650744531,
+  "target_scale": 5.843698588130589,
+  "target_id": "F-EML_K09_18"
+ },
+ {
+  "expression": "eml(x, eml(eml(x, eml(x, x)), 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08899069055401888,
+  "target_scale": 2.933449604359165,
+  "target_id": "F-EML_K09_19"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, eml(1, 1))), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3122027488853528,
+  "target_scale": 1.646839613518365,
+  "target_id": "F-EML_K09_20"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, eml(1, 1)), 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.935998848502528,
+  "target_scale": 18.16936964003279,
+  "target_id": "F-EML_K09_21"
+ },
+ {
+  "expression": "eml(eml(eml(1, x), eml(x, 1)), 1)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3838.682046289671,
+  "target_scale": 252.11979752957586,
+  "target_id": "F-EML_K09_22"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(eml(1, x), 1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.12292163931242253,
+  "target_scale": 1.0240649819389878,
+  "target_id": "F-EML_K09_23"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, x)), eml(x, 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.4897519434858206,
+  "target_scale": 2.1836928765888386,
+  "target_id": "F-EML_K09_24"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(1, eml(1, 1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5091769317007915,
+  "target_scale": 6.99848049705903,
+  "target_id": "F-EML_K09_25"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, eml(1, x))), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.28641260918209016,
+  "target_scale": 1.5438736956944266,
+  "target_id": "F-EML_K09_26"
+ },
+ {
+  "expression": "eml(1, eml(1, eml(eml(1, x), x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0224625862729015,
+  "target_scale": 2.9473897782341605,
+  "target_id": "F-EML_K09_27"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(1, eml(1, x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.09142380890634338,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K09_28"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, eml(1, x)), 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 14.264662506490405,
+   "bits_syn": 9.103287808412022,
+   "bits_sem": 8.774787059601174,
+   "bits_sem_uncorrected": 8.778077129535358,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.4869646063622,
+  "target_scale": 17.653630726925016,
+  "target_id": "F-EML_K09_29"
+ },
+ {
+  "expression": "eml(1, eml(eml(1, eml(x, x)), eml(1, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.20523150608532043,
+  "target_scale": 3.851035208600772,
+  "target_id": "F-EML_K11_00"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(1, eml(1, 1))), 1), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013314094935340404,
+  "target_scale": 6763.693725930457,
+  "target_id": "F-EML_K11_01"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, eml(eml(1, x), x)), 1))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 11.838035018250293,
+  "target_scale": 18.548851046943806,
+  "target_id": "F-EML_K11_02"
+ },
+ {
+  "expression": "eml(eml(x, eml(eml(x, 1), eml(1, 1))), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.746798544052765e-08,
+  "target_scale": 1.0005745036525544,
+  "target_id": "F-EML_K11_03"
+ },
+ {
+  "expression": "eml(1, eml(1, eml(eml(1, eml(1, 1)), x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0004406433073305067,
+  "target_scale": 2.592723705560597,
+  "target_id": "F-EML_K11_04"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, eml(1, eml(1, x)))), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0138585332491333,
+  "target_scale": 7.915607056226029,
+  "target_id": "F-EML_K11_05"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, x)), eml(1, x)), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.022452301523331,
+  "target_scale": 3.952862572179725,
+  "target_id": "F-EML_K11_06"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(1, eml(1, eml(1, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.48769054404357937,
+  "target_scale": 6.837887048691183,
+  "target_id": "F-EML_K11_07"
+ },
+ {
+  "expression": "eml(x, eml(eml(x, eml(x, eml(1, 1))), 1))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.09747021424762141,
+  "target_scale": 2.938508347076528,
+  "target_id": "F-EML_K11_08"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, eml(1, x))), eml(1, x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.022611522153546865,
+  "target_scale": 6.817205844939799,
+  "target_id": "F-EML_K11_09"
+ },
+ {
+  "expression": "eml(x, eml(eml(1, eml(1, eml(1, 1))), 1))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.935998848502527,
+  "target_scale": 17.710694494645708,
+  "target_id": "F-EML_K11_10"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(x, 1)), 1), x), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 33881.91318200929,
+  "target_scale": 1013.6742816937258,
+  "target_id": "F-EML_K11_11"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, x), x)), eml(1, x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.2795808139681417,
+  "target_scale": 3.3302039228593103,
+  "target_id": "F-EML_K11_12"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, x)), x), eml(1, 1))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.121909871987351,
+  "target_scale": 3.6747717250735477,
+  "target_id": "F-EML_K11_13"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, eml(1, eml(1, 1)))), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013314094935341464,
+  "target_scale": 6.263128022283528,
+  "target_id": "F-EML_K11_14"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, eml(eml(1, 1), x))), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1153.3932256864928,
+  "target_scale": 320.63879561704806,
+  "target_id": "F-EML_K11_15"
+ },
+ {
+  "expression": "eml(eml(x, eml(eml(x, eml(1, 1)), x)), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4.926458870003471e-07,
+  "target_scale": 2.721246757899043,
+  "target_id": "F-EML_K11_16"
+ },
+ {
+  "expression": "eml(x, eml(x, eml(eml(1, eml(x, 1)), 1)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 10.779444709120122,
+  "target_scale": 16.88397738228612,
+  "target_id": "F-EML_K11_17"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, eml(x, eml(x, x)))), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.2561139601960429,
+  "target_scale": 2.6361565627661823,
+  "target_id": "F-EML_K11_18"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(1, eml(eml(1, 1), x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.04958949700076765,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K11_19"
+ },
+ {
+  "expression": "eml(x, eml(1, eml(eml(1, 1), eml(1, 1))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.935998848502532,
+  "target_scale": 22.57199445091248,
+  "target_id": "F-EML_K11_20"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, eml(x, 1))), 1), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.938463524546698,
+  "target_scale": 16.106665736817522,
+  "target_id": "F-EML_K11_21"
+ },
+ {
+  "expression": "eml(eml(x, eml(eml(x, 1), eml(x, 1))), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 7.354927568794919e-08,
+  "target_scale": 1.0011553657938521,
+  "target_id": "F-EML_K11_22"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(eml(1, x), eml(1, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.12047991958300353,
+  "target_scale": 1.006235640567295,
+  "target_id": "F-EML_K11_23"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, eml(x, x))), 1), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 11.652695433622627,
+  "target_scale": 15.33379708174205,
+  "target_id": "F-EML_K11_24"
+ },
+ {
+  "expression": "eml(1, eml(eml(1, eml(1, x)), eml(x, 1)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0017729829349469527,
+  "target_scale": 1.0150840621618236,
+  "target_id": "F-EML_K11_25"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, 1)), 1), eml(1, x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.09600375194008,
+  "target_scale": 6.916227655832232,
+  "target_id": "F-EML_K11_26"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, eml(eml(1, 1), 1))), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5888497568427454,
+  "target_scale": 2.496120861144372,
+  "target_id": "F-EML_K11_27"
+ },
+ {
+  "expression": "eml(1, eml(eml(1, eml(x, 1)), eml(1, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.20487764732458622,
+  "target_scale": 3.99937880232706,
+  "target_id": "F-EML_K11_28"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(x, eml(eml(1, x), 1)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 17.43458750793272,
+   "bits_syn": 11.660887270302567,
+   "bits_sem": 11.133784409179908,
+   "bits_sem_uncorrected": 11.1357092861044,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.12292163931242256,
+  "target_scale": 13.460045394959206,
+  "target_id": "F-EML_K11_29"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, eml(eml(1, x), 1))), 1), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 13.185939774065218,
+  "target_scale": 15.493483849428483,
+  "target_id": "F-EML_K13_00"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, eml(eml(1, 1), eml(x, x)))), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 149.435589623689,
+  "target_scale": 111.68489463635156,
+  "target_id": "F-EML_K13_01"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, eml(x, 1))), 1), eml(x, 1))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 14.9207056130233,
+  "target_scale": 14.096764746718513,
+  "target_id": "F-EML_K13_02"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, 1)), eml(x, x)), eml(x, x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.31605319653981384,
+  "target_scale": 2.819438114729316,
+  "target_id": "F-EML_K13_03"
+ },
+ {
+  "expression": "eml(x, eml(eml(eml(eml(1, eml(x, 1)), 1), 1), x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 25.56498191673464,
+  "target_scale": 17.882694442018398,
+  "target_id": "F-EML_K13_04"
+ },
+ {
+  "expression": "eml(x, eml(1, eml(eml(1, x), eml(eml(1, 1), 1))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 11.965254651908433,
+  "target_scale": 19.264967662092655,
+  "target_id": "F-EML_K13_05"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, eml(1, 1)), eml(x, x))), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.12251886416753024,
+  "target_scale": 4.6417022423038885,
+  "target_id": "F-EML_K13_06"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, x)), eml(x, eml(eml(1, x), 1)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.03417117894615322,
+  "target_scale": 6.43236478200939,
+  "target_id": "F-EML_K13_07"
+ },
+ {
+  "expression": "eml(x, eml(eml(eml(1, x), eml(eml(1, 1), x)), 1))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 18.375089259932558,
+  "target_scale": 17.46276377456541,
+  "target_id": "F-EML_K13_08"
+ },
+ {
+  "expression": "eml(x, eml(eml(eml(1, eml(x, eml(x, x))), 1), 1))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 16.88582856236252,
+  "target_scale": 18.993816278671503,
+  "target_id": "F-EML_K13_09"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(1, eml(eml(1, 1), x)), x), 1))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.011401479004527114,
+  "target_scale": 2.7356802310715835,
+  "target_id": "F-EML_K13_10"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(eml(eml(1, eml(x, 1)), 1), 1))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1348729156014485,
+  "target_scale": 14.392268686559603,
+  "target_id": "F-EML_K13_11"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, eml(1, x))), eml(x, eml(1, 1)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.27683002533885726,
+  "target_scale": 5.654372184923136,
+  "target_id": "F-EML_K13_12"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(x, eml(x, x)), 1)), eml(1, 1))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00020011458353249244,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K13_13"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, x), eml(eml(1, 1), x))), 1)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.827416001501594,
+  "target_scale": 6.24946972985012,
+  "target_id": "F-EML_K13_14"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(eml(1, eml(x, 1)), 1), x)), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 11.307348935991447,
+  "target_scale": 13.375406396242605,
+  "target_id": "F-EML_K13_15"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(x, 1)), x), x), eml(x, 1))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 21.991911507446776,
+  "target_scale": 20.030092179782976,
+  "target_id": "F-EML_K13_16"
+ },
+ {
+  "expression": "eml(eml(eml(1, x), eml(eml(1, 1), eml(x, 1))), 1)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1161.03736019653,
+  "target_scale": 143.13847053953228,
+  "target_id": "F-EML_K13_17"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(1, eml(x, 1)), eml(x, 1)), 1))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.42479654637057185,
+  "target_scale": 4.946387283440377,
+  "target_id": "F-EML_K13_18"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, eml(eml(1, x), 1))), eml(1, x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.24143118907237732,
+  "target_scale": 2.081295976206662,
+  "target_id": "F-EML_K13_19"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(eml(1, 1), eml(1, 1))), 1), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.01331409493534148,
+  "target_scale": 2.2191899333677667,
+  "target_id": "F-EML_K13_20"
+ },
+ {
+  "expression": "eml(x, eml(1, eml(eml(eml(1, eml(x, 1)), 1), x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 10.741312821216953,
+  "target_scale": 18.904776756362335,
+  "target_id": "F-EML_K13_21"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(1, eml(1, 1)), x), eml(x, 1)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.014621301775684555,
+  "target_scale": 2.143138384881738,
+  "target_id": "F-EML_K13_22"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(eml(1, eml(x, 1)), x), 1)), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 24.613445130886106,
+  "target_scale": 20.05373899148771,
+  "target_id": "F-EML_K13_23"
+ },
+ {
+  "expression": "eml(eml(eml(1, 1), 1), eml(x, eml(eml(1, x), x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.12200208700729805,
+  "target_scale": 3814277.3928488763,
+  "target_id": "F-EML_K13_24"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(eml(1, x), eml(x, x))), x), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 7551.56643703849,
+  "target_scale": 403.8345117106937,
+  "target_id": "F-EML_K13_25"
+ },
+ {
+  "expression": "eml(eml(eml(1, x), eml(eml(x, eml(x, x)), 1)), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.599726806534434,
+  "target_scale": 6.609509559889057,
+  "target_id": "F-EML_K13_26"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(eml(1, eml(x, x)), 1), x)), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 9.913104536777595,
+  "target_scale": 12.145207538330896,
+  "target_id": "F-EML_K13_27"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(1, x), eml(eml(1, 1), x)), x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5354921960822718,
+  "target_scale": 2.1450235837453184,
+  "target_id": "F-EML_K13_28"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(eml(1, 1), eml(1, x))), 1), 1)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 20.604512509375027,
+   "bits_syn": 14.297346198946718,
+   "bits_sem": 13.580022967753875,
+   "bits_sem_uncorrected": 13.585197295260024,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0001661443499493343,
+  "target_scale": 2.853825569884517,
+  "target_id": "F-EML_K13_29"
+ },
+ {
+  "expression": "eml(eml(eml(eml(x, eml(eml(x, x), 1)), eml(x, x)), 1), 1)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0015901847559936025,
+  "target_scale": 3.0137902026418537,
+  "target_id": "F-EML_K15_00"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(x, x)), eml(x, eml(1, 1))), 1), 1)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5488593684555161,
+  "target_scale": 4.279697314121507,
+  "target_id": "F-EML_K15_01"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(eml(1, 1), x)), 1), eml(x, 1)), 1)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.15878256715290928,
+  "target_scale": 2.3230176835279726,
+  "target_id": "F-EML_K15_02"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, eml(eml(eml(1, eml(1, 1)), 1), x))), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.01350335443013291,
+  "target_scale": 6.407935066859843,
+  "target_id": "F-EML_K15_03"
+ },
+ {
+  "expression": "eml(x, eml(x, eml(eml(eml(1, eml(x, 1)), eml(x, 1)), 1)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 10.81159534545051,
+  "target_scale": 16.791361131057144,
+  "target_id": "F-EML_K15_04"
+ },
+ {
+  "expression": "eml(1, eml(1, eml(1, eml(eml(1, 1), eml(eml(1, x), 1)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00020194683259272563,
+  "target_scale": 1.178690272189441,
+  "target_id": "F-EML_K15_05"
+ },
+ {
+  "expression": "eml(1, eml(eml(1, 1), eml(eml(1, 1), eml(x, eml(x, x)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4.033413770501934e-06,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K15_06"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(1, eml(1, x)), eml(eml(1, x), 1)), 1))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.4223191277322328,
+  "target_scale": 4.996076554566116,
+  "target_id": "F-EML_K15_07"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, 1)), x), eml(eml(1, eml(1, x)), x))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.7924290476269862,
+  "target_scale": 1.8735370327532646,
+  "target_id": "F-EML_K15_08"
+ },
+ {
+  "expression": "eml(eml(eml(x, eml(eml(x, x), 1)), eml(1, 1)), eml(x, x))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.0565310021783416,
+  "target_scale": 4.382808504082024,
+  "target_id": "F-EML_K15_09"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, eml(x, 1))), 1), eml(eml(1, x), 1))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.169669081326584,
+  "target_scale": 14.086469370559005,
+  "target_id": "F-EML_K15_10"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, eml(eml(1, x), x))), eml(x, x)), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.41346087189396946,
+  "target_scale": 1.5814383847618534,
+  "target_id": "F-EML_K15_11"
+ },
+ {
+  "expression": "eml(eml(eml(x, eml(eml(x, eml(1, 1)), x)), x), eml(x, 1))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.0047185426818501,
+  "target_scale": 5.552292525694586,
+  "target_id": "F-EML_K15_12"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(eml(1, x), eml(x, eml(eml(1, x), x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08228154803446154,
+  "target_scale": 14.388824610782942,
+  "target_id": "F-EML_K15_13"
+ },
+ {
+  "expression": "eml(x, eml(eml(x, 1), eml(eml(1, eml(1, x)), eml(1, 1))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6.196345601743785e-08,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K15_14"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(1, 1)), eml(eml(1, x), eml(x, 1))), 1)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 498.9959255764806,
+  "target_scale": 126.91434254637383,
+  "target_id": "F-EML_K15_15"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, 1)), eml(1, eml(1, eml(1, eml(1, x)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.14039136225677298,
+  "target_scale": 1.3294049086967643,
+  "target_id": "F-EML_K15_16"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, 1)), eml(eml(eml(1, x), x), eml(1, 1)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.21791274121898263,
+  "target_scale": 4.809950491120455,
+  "target_id": "F-EML_K15_17"
+ },
+ {
+  "expression": "eml(x, eml(eml(x, eml(1, eml(1, eml(eml(1, 1), x)))), 1))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0005835851413543677,
+  "target_scale": 1.7531035379634403,
+  "target_id": "F-EML_K15_18"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(eml(1, 1), eml(x, eml(x, eml(1, x)))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0006391475047637707,
+  "target_scale": 12.64258094835062,
+  "target_id": "F-EML_K15_19"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, x)), eml(eml(1, eml(x, 1)), x)), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4664.443033786182,
+  "target_scale": 474.4501212090259,
+  "target_id": "F-EML_K15_20"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(eml(1, eml(1, eml(1, x))), eml(x, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.11583667036294179,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K15_21"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(x, eml(x, eml(eml(x, 1), eml(1, 1))))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.12718841196151745,
+  "target_scale": 1.1581288052789183,
+  "target_id": "F-EML_K15_22"
+ },
+ {
+  "expression": "eml(eml(eml(1, 1), 1), eml(1, eml(eml(1, x), eml(1, x))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013713629438517304,
+  "target_scale": 3814279.332929196,
+  "target_id": "F-EML_K15_23"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(x, eml(1, 1))), eml(x, 1)), x), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.23580212735143025,
+  "target_scale": 1.3154429130041079,
+  "target_id": "F-EML_K15_24"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(x, 1)), eml(eml(1, 1), x)), 1), 1)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.020240256583437765,
+  "target_scale": 1.6939623409473243,
+  "target_id": "F-EML_K15_25"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, 1)), eml(eml(1, x), eml(x, eml(1, 1))))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.07950311728857629,
+  "target_scale": 4.818989062294739,
+  "target_id": "F-EML_K15_26"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, eml(eml(1, x), eml(eml(1, 1), 1)))), 1)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.1201914328186007,
+  "target_scale": 13.232946096036292,
+  "target_id": "F-EML_K15_27"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(eml(1, 1), x)), eml(eml(1, x), x)), 1)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.008809005883252084,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K15_28"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(eml(1, eml(eml(1, x), x)), x), 1)), x)",
+  "K_construction": 15,
+  "K_proven": 15,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 23.774437510817343,
+   "bits_syn": 16.987685920906255,
+   "bits_sem": 16.084517760429932,
+   "bits_sem_uncorrected": 16.09226162484392,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.6419963510912836,
+  "target_scale": 2.6266457165261827,
+  "target_id": "F-EML_K15_29"
+ },
+ {
+  "expression": "eml(1, eml(1, eml(1, eml(eml(x, eml(eml(x, eml(1, 1)), x)), 1))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4.762250278789098e-09,
+  "target_scale": 1.94035380853225,
+  "target_id": "F-EML_K17_00"
+ },
+ {
+  "expression": "eml(eml(eml(1, 1), eml(x, eml(eml(x, eml(1, eml(1, 1))), 1))), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013314094107161454,
+  "target_scale": 7046191.754111603,
+  "target_id": "F-EML_K17_01"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(eml(eml(1, x), x), 1)), x), eml(x, eml(x, 1)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.12136294855065534,
+  "target_scale": 2.3823573832487113,
+  "target_id": "F-EML_K17_02"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, eml(x, x))), eml(x, eml(x, eml(1, 1)))), 1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.44573057388474574,
+  "target_scale": 2.7398659722086967,
+  "target_id": "F-EML_K17_03"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(1, eml(x, x)), 1), eml(eml(1, x), eml(1, x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.4593630523038437,
+  "target_scale": 3.0505476191464638,
+  "target_id": "F-EML_K17_04"
+ },
+ {
+  "expression": "eml(x, eml(eml(x, eml(eml(1, 1), x)), eml(x, eml(eml(x, 1), x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 9.960465433277593e-05,
+  "target_scale": 2.6561980976597113,
+  "target_id": "F-EML_K17_05"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(eml(1, eml(1, x)), x)), eml(1, 1)), eml(1, 1))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.10188926116967915,
+  "target_scale": 2.412647952517877,
+  "target_id": "F-EML_K17_06"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(eml(1, eml(x, eml(x, eml(x, 1)))), x), 1)), 1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 23.925606796040164,
+  "target_scale": 18.64021639968128,
+  "target_id": "F-EML_K17_07"
+ },
+ {
+  "expression": "eml(eml(x, eml(eml(x, eml(1, eml(1, x))), 1)), eml(eml(1, x), 1))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.03206553850056724,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K17_08"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(eml(eml(x, eml(eml(x, x), 1)), x), 1)), x), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 54.45625769093063,
+  "target_scale": 28.773353088253888,
+  "target_id": "F-EML_K17_09"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(x, eml(eml(1, x), eml(x, 1)))), x), x), 1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 5645.051364205661,
+  "target_scale": 510.40764006345523,
+  "target_id": "F-EML_K17_10"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, eml(eml(1, x), x))), eml(x, x)), eml(1, 1))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.2880245313624606,
+  "target_scale": 1.2795238469623813,
+  "target_id": "F-EML_K17_11"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(eml(1, eml(x, eml(x, eml(eml(1, x), x)))), 1))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.10049597865808794,
+  "target_scale": 15.267394445694677,
+  "target_id": "F-EML_K17_12"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, eml(1, eml(1, eml(eml(1, 1), eml(x, 1)))))), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.37432459982183125,
+  "target_scale": 1.8609738144466563,
+  "target_id": "F-EML_K17_13"
+ },
+ {
+  "expression": "eml(eml(x, eml(eml(x, eml(eml(1, 1), x)), eml(1, 1))), eml(x, 1))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.17817502414568473,
+  "target_scale": 12.567271536510194,
+  "target_id": "F-EML_K17_14"
+ },
+ {
+  "expression": "eml(eml(x, eml(eml(x, 1), 1)), eml(eml(1, eml(1, eml(1, x))), x))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0027968278394067242,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K17_15"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, eml(eml(eml(1, eml(x, eml(1, 1))), 1), x))), 1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3497128597883943,
+  "target_scale": 2.9216348068890805,
+  "target_id": "F-EML_K17_16"
+ },
+ {
+  "expression": "eml(1, eml(eml(1, 1), eml(1, eml(eml(eml(1, eml(x, x)), 1), x))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0007684296742382952,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K17_17"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, 1), eml(x, eml(eml(1, x), eml(1, x))))), 1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0010235175693816849,
+  "target_scale": 1.237708065306829,
+  "target_id": "F-EML_K17_18"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(eml(x, eml(1, eml(eml(1, x), eml(x, 1)))), 1)))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.7558755227397336,
+  "target_scale": 7.536820039114902,
+  "target_id": "F-EML_K17_19"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(1, x), eml(x, eml(1, 1))), eml(1, eml(1, 1))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.0846495329785566,
+  "target_scale": 2.9536340356338955,
+  "target_id": "F-EML_K17_20"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(1, 1)), eml(eml(1, eml(x, 1)), eml(1, x))), 1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 43821.78611958836,
+  "target_scale": 949.5977735072412,
+  "target_id": "F-EML_K17_21"
+ },
+ {
+  "expression": "eml(eml(eml(1, 1), 1), eml(1, eml(eml(1, 1), eml(eml(1, x), 1))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004614523420289271,
+  "target_scale": 3814281.282676917,
+  "target_id": "F-EML_K17_22"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(eml(1, eml(1, eml(x, 1))), x)), eml(x, x)), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.036053698996029386,
+  "target_scale": 1.054545499557126,
+  "target_id": "F-EML_K17_23"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(x, 1)), eml(x, eml(x, x))), eml(1, x)), x)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.16582554283337506,
+  "target_scale": 1.2550847072732276,
+  "target_id": "F-EML_K17_24"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(eml(1, eml(eml(1, 1), eml(x, x))), 1), 1), x))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.008231639974898923,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K17_25"
+ },
+ {
+  "expression": "eml(eml(eml(eml(eml(x, eml(eml(x, 1), 1)), eml(1, x)), x), 1), 1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.055337759703972055,
+  "target_scale": 6.757793620022736,
+  "target_id": "F-EML_K17_26"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(eml(eml(1, eml(1, 1)), eml(eml(1, 1), x)), x))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5119643448050264,
+  "target_scale": 4.675001391933106,
+  "target_id": "F-EML_K17_27"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(eml(1, eml(x, eml(eml(1, 1), x))), 1), 1)), 1)",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.922221354671683,
+  "target_scale": 6.2933163160477,
+  "target_id": "F-EML_K17_28"
+ },
+ {
+  "expression": "eml(1, eml(eml(1, eml(1, 1)), eml(1, eml(eml(1, x), eml(1, 1)))))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 17.0,
+   "bits_uniform": 26.94436251225965,
+   "bits_syn": 19.71752582213154,
+   "bits_sem": 18.631592731450553,
+   "bits_sem_uncorrected": 18.641310914056376,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0005471177870122463,
+  "target_scale": 1.0503800698619818,
+  "target_id": "F-EML_K17_29"
+ },
+ {
+  "expression": "eml(x, eml(eml(x, eml(eml(1, 1), eml(x, eml(x, x)))), eml(eml(1, 1), 1)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0008431967247472116,
+  "target_scale": 2.619458254733675,
+  "target_id": "F-EML_K19_00"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(eml(1, x), eml(1, eml(1, 1))), 1)), eml(x, eml(x, 1)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08239074416950366,
+  "target_scale": 2.663275642236904,
+  "target_id": "F-EML_K19_01"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(eml(x, eml(eml(x, x), 1)), eml(1, x)), eml(1, x))), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.3997311276686955,
+  "target_scale": 4.368887600000521,
+  "target_id": "F-EML_K19_02"
+ },
+ {
+  "expression": "eml(eml(eml(eml(eml(1, x), eml(eml(x, x), x)), eml(1, 1)), eml(1, x)), 1)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.8323623446252284,
+  "target_scale": 12.535265242931478,
+  "target_id": "F-EML_K19_03"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, eml(eml(eml(1, x), 1), 1)), eml(eml(1, 1), 1))), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.028400551335650795,
+  "target_scale": 6.872981283621185,
+  "target_id": "F-EML_K19_04"
+ },
+ {
+  "expression": "eml(1, eml(1, eml(eml(1, 1), eml(x, eml(eml(1, eml(x, x)), eml(1, x))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.019749375746646116,
+  "target_scale": 4.700339901848544,
+  "target_id": "F-EML_K19_05"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(eml(eml(1, eml(x, eml(1, 1))), 1), x), x)), eml(x, 1))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3.420735247153573,
+  "target_scale": 4.522269977145522,
+  "target_id": "F-EML_K19_06"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(eml(1, x), x)), eml(x, eml(x, eml(x, 1)))), eml(x, 1))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004058294417234104,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K19_07"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, eml(1, 1))), eml(eml(1, x), eml(x, eml(x, 1)))), 1)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.05158788551118602,
+  "target_scale": 1.7852548166265385,
+  "target_id": "F-EML_K19_08"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(eml(1, eml(x, 1)), eml(1, eml(eml(1, 1), eml(1, x))))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.11148429531182501,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K19_09"
+ },
+ {
+  "expression": "eml(eml(eml(eml(eml(1, eml(x, 1)), eml(eml(1, x), x)), x), eml(x, 1)), 1)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.017068081707197067,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K19_10"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(eml(1, 1), x)), x), 1), eml(eml(1, x), eml(x, 1)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.023556714230524918,
+  "target_scale": 2.4242926971940184,
+  "target_id": "F-EML_K19_11"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, eml(1, 1))), eml(x, 1)), eml(x, eml(1, eml(1, 1))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3892438057432029,
+  "target_scale": 2.8503350609902256,
+  "target_id": "F-EML_K19_12"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(eml(1, 1), eml(1, x))), x), eml(eml(1, x), x)), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.010749928383526999,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K19_13"
+ },
+ {
+  "expression": "eml(eml(eml(1, x), eml(eml(eml(1, x), eml(x, eml(eml(x, x), x))), x)), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4.940725845329102e-06,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K19_14"
+ },
+ {
+  "expression": "eml(eml(eml(1, 1), 1), eml(eml(x, eml(eml(x, 1), eml(x, eml(x, x)))), 1))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 5.422304057401588e-08,
+  "target_scale": 3814279.1047602077,
+  "target_id": "F-EML_K19_15"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, 1)), eml(eml(1, 1), eml(x, eml(eml(1, 1), eml(1, x)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0008199982537138435,
+  "target_scale": 3.06459087876885,
+  "target_id": "F-EML_K19_16"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(1, x)), eml(eml(x, eml(eml(1, x), x)), x)), 1), 1)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 26235.09593443275,
+  "target_scale": 1251.3405342393607,
+  "target_id": "F-EML_K19_17"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(x, eml(1, x))), eml(x, eml(x, x))), eml(x, x)), 1)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.02805218799571375,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K19_18"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(eml(1, eml(eml(eml(1, x), eml(1, 1)), x)), 1), x), 1))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0019281116303331263,
+  "target_scale": 2.547476173621708,
+  "target_id": "F-EML_K19_19"
+ },
+ {
+  "expression": "eml(x, eml(eml(eml(eml(1, eml(eml(1, 1), eml(x, 1))), 1), eml(1, x)), x))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 11.851825754171038,
+  "target_scale": 16.952724176065754,
+  "target_id": "F-EML_K19_20"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(eml(x, eml(eml(eml(1, x), x), 1)), eml(x, eml(x, x)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0363881289013678,
+  "target_scale": 1.3388003342408392,
+  "target_id": "F-EML_K19_21"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, x), eml(eml(x, eml(x, 1)), 1)), eml(1, eml(x, 1))), 1)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 252361.1818442121,
+  "target_scale": 4476.072280333657,
+  "target_id": "F-EML_K19_22"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, eml(eml(1, x), eml(eml(1, eml(1, x)), 1)))), eml(1, 1))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.9017060164186415,
+  "target_scale": 14.018352467256692,
+  "target_id": "F-EML_K19_23"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(x, x)), eml(x, eml(x, x))), eml(x, 1)), eml(x, 1))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.17933342473680042,
+  "target_scale": 2.932714884952315,
+  "target_id": "F-EML_K19_24"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(1, eml(eml(eml(1, eml(1, x)), eml(x, 1)), 1))), 1), 1)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.051762607252118e-05,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K19_25"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(1, eml(1, eml(eml(eml(1, eml(x, x)), 1), eml(1, x)))))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.32311391567560777,
+  "target_scale": 6.344181899887271,
+  "target_id": "F-EML_K19_26"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(1, eml(eml(eml(eml(1, eml(x, 1)), 1), 1), x)), x), 1))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.26436037365709925,
+  "target_scale": 3.439680784739807,
+  "target_id": "F-EML_K19_27"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, eml(x, 1))), eml(x, x)), eml(eml(1, 1), eml(1, x)))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3380687069282957,
+  "target_scale": 2.555335434010679,
+  "target_id": "F-EML_K19_28"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(eml(1, x), eml(x, 1))), eml(x, eml(eml(1, x), x))), x)",
+  "K_construction": 19,
+  "K_proven": 19,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 19.0,
+   "bits_uniform": 30.114287513701967,
+   "bits_syn": 22.47773603636925,
+   "bits_sem": 21.209998252497392,
+   "bits_sem_uncorrected": 21.22154759179291,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 283.251411900498,
+  "target_scale": 78.29160221214632,
+  "target_id": "F-EML_K19_29"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, x)), eml(eml(1, 1), eml(1, eml(1, eml(1, 1))))), eml(x, 1))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.174173730557815,
+  "target_scale": 2.8342982494484827,
+  "target_id": "F-EML_K21_00"
+ },
+ {
+  "expression": "eml(eml(eml(eml(x, eml(eml(x, x), 1)), eml(x, eml(1, x))), eml(eml(1, x), 1)), x)",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.005147010470527354,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K21_01"
+ },
+ {
+  "expression": "eml(eml(eml(1, 1), eml(1, 1)), eml(eml(eml(eml(x, eml(eml(x, 1), x)), 1), 1), 1))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6.662314164790426e-08,
+  "target_scale": 1403192.1472492616,
+  "target_id": "F-EML_K21_02"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, x)), eml(eml(eml(eml(eml(1, eml(x, x)), x), eml(1, x)), x), 1))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 96.93054181488937,
+  "target_scale": 50.12980249765483,
+  "target_id": "F-EML_K21_03"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(x, eml(eml(1, 1), x))), eml(x, eml(x, eml(x, x)))), x), 1)",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 22.20756851207414,
+  "target_scale": 30.37119926835259,
+  "target_id": "F-EML_K21_04"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, eml(eml(eml(1, eml(x, x)), eml(x, x)), 1)), x)), eml(1, 1))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.13040576423469208,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K21_05"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(eml(1, 1), x)), eml(x, x)), eml(x, 1)), eml(1, eml(1, x)))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00508251608973637,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K21_06"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(1, eml(1, eml(eml(1, 1), eml(1, 1))))), eml(eml(1, 1), 1)), x)",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013314094935341478,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K21_07"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, 1), eml(x, eml(eml(1, x), 1)))), eml(eml(1, eml(1, 1)), 1))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.001040696635169404,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K21_08"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, x)), eml(eml(eml(eml(x, eml(eml(x, x), 1)), x), eml(1, x)), 1))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.7548295349940688,
+  "target_scale": 5.3605009861455395,
+  "target_id": "F-EML_K21_09"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(eml(1, 1), eml(1, 1))), eml(eml(1, x), x)), 1), eml(x, x))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.01948254594891361,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K21_10"
+ },
+ {
+  "expression": "eml(eml(eml(1, 1), 1), eml(eml(eml(1, x), eml(eml(1, 1), 1)), eml(eml(1, x), x)))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5616899822366982,
+  "target_scale": 3814276.895971881,
+  "target_id": "F-EML_K21_11"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(1, eml(1, eml(eml(1, eml(x, x)), eml(1, eml(1, 1))))), x), x))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.089798306911516,
+  "target_scale": 3.50745664938711,
+  "target_id": "F-EML_K21_12"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(1, 1)), eml(eml(eml(1, x), eml(x, 1)), eml(eml(1, x), x))), 1)",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 114.37997967854331,
+  "target_scale": 39.903004178351665,
+  "target_id": "F-EML_K21_13"
+ },
+ {
+  "expression": "eml(eml(eml(1, 1), 1), eml(x, eml(eml(eml(1, eml(x, eml(x, eml(1, 1)))), 1), 1)))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.15461579025278419,
+  "target_scale": 3814277.545607257,
+  "target_id": "F-EML_K21_14"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, x)), x), eml(eml(eml(1, eml(x, x)), eml(1, x)), eml(1, 1)))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.23860601294660577,
+  "target_scale": 3.379784855757914,
+  "target_id": "F-EML_K21_15"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(eml(1, eml(eml(1, 1), eml(x, x))), eml(eml(1, 1), x))), 1), 1)",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6.885892802817388e-11,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K21_16"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(eml(1, eml(1, 1)), eml(1, x)), x)), eml(eml(1, eml(1, 1)), x))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00032663785853478386,
+  "target_scale": 1.4677954615513435,
+  "target_id": "F-EML_K21_17"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, eml(eml(eml(eml(1, eml(x, eml(x, x))), eml(1, x)), x), 1))), x)",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 8444.749629546117,
+  "target_scale": 834.5444351818888,
+  "target_id": "F-EML_K21_18"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, eml(x, eml(x, eml(x, eml(eml(x, 1), x)))))), 1), eml(x, 1))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 9.858474515328991,
+  "target_scale": 10.9944587988779,
+  "target_id": "F-EML_K21_19"
+ },
+ {
+  "expression": "eml(1, eml(eml(1, eml(1, x)), eml(1, eml(eml(1, eml(1, x)), eml(1, eml(1, x))))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.005182546776239072,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K21_20"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(eml(1, 1), eml(x, eml(eml(1, 1), eml(1, 1))))), 1), eml(x, 1))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.03142115742228214,
+  "target_scale": 1.0417291348985227,
+  "target_id": "F-EML_K21_21"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(x, eml(x, eml(1, 1)))), eml(x, eml(1, 1))), eml(1, x)), x)",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.9862249247749137,
+  "target_scale": 4.341118388321874,
+  "target_id": "F-EML_K21_22"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(eml(eml(x, eml(eml(x, x), x)), x), eml(eml(1, 1), eml(1, 1))))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1458765231826318,
+  "target_scale": 15.087618719444025,
+  "target_id": "F-EML_K21_23"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(eml(1, eml(1, 1)), eml(x, 1)), eml(eml(1, 1), eml(1, 1)))), x)",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.027397536143879946,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K21_24"
+ },
+ {
+  "expression": "eml(eml(eml(x, eml(eml(x, eml(1, eml(1, eml(eml(1, 1), x)))), eml(1, x))), x), 1)",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 699.1512606429687,
+  "target_scale": 162.0475524661011,
+  "target_id": "F-EML_K21_25"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(eml(1, 1), x)), eml(1, 1)), eml(x, eml(1, x))), eml(x, x))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.14105660681971727,
+  "target_scale": 2.781533143209969,
+  "target_id": "F-EML_K21_26"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(eml(1, eml(x, eml(eml(1, eml(1, 1)), eml(x, 1)))), 1), x)), 1)",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 11.61309461887251,
+  "target_scale": 13.402672499282023,
+  "target_id": "F-EML_K21_27"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, eml(1, x)), x)), eml(eml(x, eml(eml(x, eml(1, x)), 1)), x))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.023143520959872203,
+  "target_scale": 2.4779435605503033,
+  "target_id": "F-EML_K21_28"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(eml(1, eml(eml(1, eml(1, x)), x)), eml(x, x)), 1)), eml(1, 1))",
+  "K_construction": 21,
+  "K_proven": 21,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 21.0,
+   "bits_uniform": 33.284212515144276,
+   "bits_syn": 25.262091618591104,
+   "bits_sem": 23.823966492954952,
+   "bits_sem_uncorrected": 23.825859398131055,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 97.36591470920648,
+  "target_scale": 44.28945777369181,
+  "target_id": "F-EML_K21_29"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(eml(1, 1), eml(x, eml(1, x)))), eml(x, eml(x, 1))), eml(x, 1)), 1)",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.0024940229608525293,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K23_00"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(1, eml(1, eml(1, eml(1, eml(1, eml(1, 1)))))), eml(eml(1, x), x)), x))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.024964169203664382,
+  "target_scale": 3.2723605015833512,
+  "target_id": "F-EML_K23_01"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(eml(1, eml(x, x)), eml(eml(1, eml(x, 1)), 1)), x)), eml(eml(1, 1), 1))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1.9486907045196302,
+  "target_scale": 5.514399781024332,
+  "target_id": "F-EML_K23_02"
+ },
+ {
+  "expression": "eml(eml(eml(eml(eml(1, eml(x, 1)), eml(eml(1, eml(1, 1)), eml(x, eml(1, 1)))), x), x), 1)",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 18.135634575190885,
+  "target_scale": 24.13343760996534,
+  "target_id": "F-EML_K23_03"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, 1), eml(eml(1, 1), eml(1, 1)))), eml(eml(1, x), eml(1, eml(1, x))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.01883647947561992,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K23_04"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(eml(eml(1, eml(x, 1)), eml(1, x)), 1), eml(eml(1, eml(x, x)), 1))), x)",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.9813266372191262,
+  "target_scale": 2.732409941517976,
+  "target_id": "F-EML_K23_05"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(eml(eml(1, x), eml(x, eml(eml(1, 1), eml(1, x)))), 1)), x), eml(x, x))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.03115203626302721,
+  "target_scale": 1.9106793420996655,
+  "target_id": "F-EML_K23_06"
+ },
+ {
+  "expression": "eml(eml(x, eml(eml(x, 1), eml(eml(1, eml(eml(1, 1), eml(eml(eml(1, x), x), 1))), x))), 1)",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1.6821722414924087e-10,
+  "target_scale": 1.000067619433485,
+  "target_id": "F-EML_K23_07"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, eml(x, x)), eml(1, x))), eml(1, eml(eml(1, x), eml(eml(1, x), 1))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 105.93387929423997,
+  "target_scale": 46.64881055963891,
+  "target_id": "F-EML_K23_08"
+ },
+ {
+  "expression": "eml(eml(eml(1, 1), eml(1, 1)), eml(eml(1, x), eml(eml(eml(1, eml(eml(1, 1), x)), 1), x)))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.0147813477882414,
+  "target_scale": 1403193.3711374297,
+  "target_id": "F-EML_K23_09"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(x, x)), eml(eml(1, x), eml(x, x))), eml(eml(1, x), eml(x, x))), x)",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.011837040589505791,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K23_10"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(eml(1, eml(1, x)), eml(eml(eml(1, eml(1, x)), x), x)), eml(x, x))), 1)",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1071.9979654375236,
+  "target_scale": 263.49673239310926,
+  "target_id": "F-EML_K23_11"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(eml(eml(eml(eml(1, eml(x, 1)), x), eml(eml(1, x), 1)), x), 1), 1)), x)",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 9.94859519846497,
+  "target_scale": 8.087920357561906,
+  "target_id": "F-EML_K23_12"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(eml(eml(eml(eml(eml(1, eml(x, x)), eml(x, 1)), eml(1, 1)), x), 1), x))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.04639401339396456,
+  "target_scale": 6.301095433881345,
+  "target_id": "F-EML_K23_13"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(eml(1, eml(eml(eml(1, 1), eml(eml(eml(1, x), eml(1, 1)), 1)), x)), 1))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 8.662923074655165e-10,
+  "target_scale": 13.435963628815516,
+  "target_id": "F-EML_K23_14"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(x, eml(x, eml(eml(1, eml(x, 1)), 1)))), eml(1, eml(1, eml(1, 1)))), 1)",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 2.4816766357409468,
+  "target_scale": 7.038410945475964,
+  "target_id": "F-EML_K23_15"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(eml(1, 1), eml(eml(1, 1), eml(1, x)))), eml(1, 1)), eml(eml(1, 1), 1))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 2.786764118376364e-07,
+  "target_scale": 1.4797285684525008,
+  "target_id": "F-EML_K23_16"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(x, x)), eml(eml(1, eml(eml(1, x), eml(x, 1))), x)), 1), eml(x, 1))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 342.17318524454794,
+  "target_scale": 97.52742665715296,
+  "target_id": "F-EML_K23_17"
+ },
+ {
+  "expression": "eml(1, eml(eml(eml(eml(x, eml(eml(x, eml(eml(1, x), eml(x, x))), x)), eml(x, 1)), 1), 1))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 82.93956826958488,
+  "target_scale": 35.03008042852408,
+  "target_id": "F-EML_K23_18"
+ },
+ {
+  "expression": "eml(eml(eml(eml(eml(1, eml(eml(1, x), eml(1, x))), eml(x, x)), x), eml(eml(1, x), 1)), x)",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.020026710881003627,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K23_19"
+ },
+ {
+  "expression": "eml(1, eml(eml(1, eml(1, eml(1, eml(1, eml(1, x))))), eml(x, eml(eml(x, eml(x, x)), 1))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.0007549159734870453,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K23_20"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(x, x)), eml(1, 1)), eml(1, eml(1, eml(eml(1, x), x)))), eml(1, x))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 4.536725953683665,
+  "target_scale": 10.054401323217604,
+  "target_id": "F-EML_K23_21"
+ },
+ {
+  "expression": "eml(eml(x, eml(eml(x, eml(eml(1, x), eml(eml(1, x), eml(1, x)))), x)), eml(1, eml(1, 1)))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.35976482123771275,
+  "target_scale": 5.088865486925292,
+  "target_id": "F-EML_K23_22"
+ },
+ {
+  "expression": "eml(1, eml(eml(1, eml(x, eml(1, eml(1, eml(1, 1))))), eml(eml(eml(1, eml(x, 1)), x), 1)))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.003458468113386627,
+  "target_scale": 2.78612308335502,
+  "target_id": "F-EML_K23_23"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(1, 1)), eml(x, eml(eml(1, x), eml(eml(1, x), eml(x, 1))))), eml(x, x))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 87.84758101836331,
+  "target_scale": 44.36051057318063,
+  "target_id": "F-EML_K23_24"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, eml(eml(1, x), eml(eml(eml(1, x), eml(x, x)), eml(x, x))))), eml(x, 1))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.22785672693649828,
+  "target_scale": 7.069382182310307,
+  "target_id": "F-EML_K23_25"
+ },
+ {
+  "expression": "eml(eml(eml(eml(eml(x, eml(eml(x, eml(1, eml(1, 1))), x)), eml(1, 1)), x), x), eml(1, x))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 27.667426063930932,
+  "target_scale": 23.33512309918417,
+  "target_id": "F-EML_K23_26"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, eml(eml(1, 1), 1))), eml(eml(eml(eml(1, eml(x, 1)), eml(x, 1)), 1), 1))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.1691793729279933,
+  "target_scale": 2.1731889319459716,
+  "target_id": "F-EML_K23_27"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, x), eml(eml(eml(eml(1, eml(x, eml(x, x))), x), eml(x, 1)), 1))), x)",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1.3493615008317439,
+  "target_scale": 7.1923932403693875,
+  "target_id": "F-EML_K23_28"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, eml(eml(1, x), eml(x, eml(x, eml(1, 1))))), eml(x, x))), eml(x, 1))",
+  "K_construction": 23,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 23.0,
+   "bits_uniform": 36.45413751658659,
+   "bits_syn": 28.066130783990644,
+   "bits_sem": 26.414226253805367,
+   "bits_sem_uncorrected": 26.414121118734794,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 29.168583077276864,
+  "target_scale": 19.851810329513512,
+  "target_id": "F-EML_K23_29"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, x)), eml(eml(1, eml(eml(1, eml(1, eml(1, eml(eml(1, x), eml(1, x))))), x)), x))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.3852014779786741,
+  "target_scale": 8.636648225855376,
+  "target_id": "F-EML_K25_00"
+ },
+ {
+  "expression": "eml(eml(eml(x, eml(eml(x, eml(eml(1, eml(1, eml(1, x))), eml(1, 1))), x)), eml(1, 1)), eml(x, 1))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1474.4252630555952,
+  "target_scale": 252.0287513690964,
+  "target_id": "F-EML_K25_01"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, 1), eml(1, eml(eml(1, eml(eml(1, eml(1, x)), x)), x)))), eml(eml(1, x), x))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.026856443364119333,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K25_02"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(eml(1, eml(1, eml(1, 1))), eml(eml(1, 1), eml(x, 1)))), eml(1, 1)), eml(x, 1))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.10331528487770976,
+  "target_scale": 2.157245939511605,
+  "target_id": "F-EML_K25_03"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(eml(1, eml(eml(eml(1, eml(x, 1)), 1), 1)), eml(1, 1)), eml(x, x))), eml(1, x))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 15.23683412153768,
+  "target_scale": 18.81075793001438,
+  "target_id": "F-EML_K25_04"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(1, 1)), eml(x, eml(eml(1, eml(eml(1, x), eml(1, x))), eml(x, x)))), eml(1, x))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 26.49713437353219,
+  "target_scale": 29.78560471349557,
+  "target_id": "F-EML_K25_05"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, 1), eml(1, x))), eml(eml(eml(eml(1, eml(x, x)), x), eml(1, eml(1, 1))), x))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 2.423956651097268,
+  "target_scale": 3.07353481619009,
+  "target_id": "F-EML_K25_06"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, eml(1, 1))), eml(1, eml(eml(eml(eml(1, x), eml(eml(eml(1, x), 1), x)), x), 1)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.0018884861047184951,
+  "target_scale": 7.937315960312609,
+  "target_id": "F-EML_K25_07"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(eml(1, eml(eml(eml(1, eml(x, x)), x), eml(1, 1))), x)), 1), eml(eml(1, x), x))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 204.53432083958535,
+  "target_scale": 81.47254706108937,
+  "target_id": "F-EML_K25_08"
+ },
+ {
+  "expression": "eml(eml(eml(eml(eml(1, x), eml(eml(x, x), x)), x), eml(eml(eml(1, x), eml(1, 1)), 1)), eml(1, 1))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.00015123003257466717,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K25_09"
+ },
+ {
+  "expression": "eml(eml(x, eml(eml(x, eml(eml(1, 1), eml(eml(1, x), eml(eml(1, x), 1)))), eml(1, 1))), eml(x, x))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.03226412191336464,
+  "target_scale": 11.638882576937462,
+  "target_id": "F-EML_K25_10"
+ },
+ {
+  "expression": "eml(eml(eml(eml(eml(1, eml(x, 1)), eml(eml(eml(1, x), eml(x, x)), x)), eml(x, x)), x), eml(1, x))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 5.12946221932711e-05,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K25_11"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, eml(eml(1, x), x))), eml(eml(1, eml(1, x)), eml(x, eml(eml(1, eml(1, x)), 1))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.32949286478830736,
+  "target_scale": 1.047830626401415,
+  "target_id": "F-EML_K25_12"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, eml(eml(x, eml(eml(1, 1), x)), x)), eml(1, 1))), eml(1, eml(eml(1, 1), x)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.152679508658615,
+  "target_scale": 14.295064872338525,
+  "target_id": "F-EML_K25_13"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(eml(eml(1, eml(1, 1)), x), 1)), 1), eml(eml(1, x), eml(1, 1))), eml(1, x))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.026109080854791508,
+  "target_scale": 1.0,
+  "target_id": "F-EML_K25_14"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(1, x)), eml(eml(x, eml(eml(1, x), x)), 1)), eml(1, eml(1, eml(1, eml(1, 1)))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 2.9743007733566413,
+  "target_scale": 6.44954224416376,
+  "target_id": "F-EML_K25_15"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(1, eml(eml(eml(eml(eml(1, eml(x, 1)), eml(x, 1)), eml(1, eml(1, 1))), 1), 1)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.7203983230292254,
+  "target_scale": 7.4420397948499035,
+  "target_id": "F-EML_K25_16"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(1, eml(1, eml(eml(eml(1, eml(eml(1, eml(1, x)), eml(x, x))), eml(1, x)), 1))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.0002490477316353467,
+  "target_scale": 14.090497376664555,
+  "target_id": "F-EML_K25_17"
+ },
+ {
+  "expression": "eml(eml(eml(1, x), eml(eml(1, 1), eml(eml(1, eml(1, 1)), 1))), eml(eml(1, eml(1, eml(1, 1))), 1))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1123.5090262658696,
+  "target_scale": 137.85478674010102,
+  "target_id": "F-EML_K25_18"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(eml(eml(1, eml(eml(1, 1), eml(x, 1))), 1), eml(1, x)), 1)), eml(eml(1, 1), x))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.021180104614790966,
+  "target_scale": 1.8823293331085253,
+  "target_id": "F-EML_K25_19"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(x, 1)), eml(eml(1, x), eml(x, eml(1, x)))), x), eml(1, eml(1, eml(1, 1))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.07590009152776428,
+  "target_scale": 1.1482665745641119,
+  "target_id": "F-EML_K25_20"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, x)), eml(eml(eml(eml(eml(x, eml(eml(x, 1), 1)), eml(1, eml(1, 1))), 1), x), 1))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.4223191277322328,
+  "target_scale": 5.568078084437149,
+  "target_id": "F-EML_K25_21"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(x, eml(eml(1, 1), eml(1, x)))), eml(eml(1, x), x)), 1), eml(x, eml(1, 1)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 33.065756745246645,
+  "target_scale": 29.756446851982343,
+  "target_id": "F-EML_K25_22"
+ },
+ {
+  "expression": "eml(eml(eml(1, x), eml(eml(1, x), eml(eml(eml(1, eml(eml(1, x), eml(1, 1))), 1), x))), eml(1, 1))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 4418.134470576907,
+  "target_scale": 354.40590594891825,
+  "target_id": "F-EML_K25_23"
+ },
+ {
+  "expression": "eml(eml(eml(x, eml(eml(x, eml(1, 1)), x)), eml(1, x)), eml(eml(1, eml(1, 1)), eml(1, eml(1, 1))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.28152823122792975,
+  "target_scale": 7.72119513958082,
+  "target_id": "F-EML_K25_24"
+ },
+ {
+  "expression": "eml(eml(eml(eml(1, eml(x, x)), x), 1), eml(eml(eml(eml(eml(1, eml(x, x)), eml(1, 1)), x), x), 1))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 290.9443606454544,
+  "target_scale": 92.13085817385232,
+  "target_id": "F-EML_K25_25"
+ },
+ {
+  "expression": "eml(eml(eml(1, eml(eml(1, eml(eml(1, eml(x, 1)), x)), x)), x), eml(x, eml(eml(1, eml(x, 1)), 1)))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.6192543249234164,
+  "target_scale": 2.7621481780678474,
+  "target_id": "F-EML_K25_26"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(eml(eml(eml(1, eml(eml(1, x), eml(x, eml(1, x)))), eml(x, eml(1, x))), x), 1))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 219.09077736375687,
+  "target_scale": 53.26963807108099,
+  "target_id": "F-EML_K25_27"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, eml(eml(1, eml(eml(1, eml(1, x)), eml(x, 1))), x)), eml(x, x))), eml(1, x))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 10,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.06064440579348112,
+  "target_scale": 2.0828416775967407,
+  "target_id": "F-EML_K25_28"
+ },
+ {
+  "expression": "eml(eml(1, eml(1, x)), eml(x, eml(eml(eml(1, eml(eml(1, x), eml(x, eml(1, x)))), x), eml(1, 1))))",
+  "K_construction": 25,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 25.0,
+   "bits_uniform": 39.6240625180289,
+   "bits_syn": 30.886536031130934,
+   "bits_sem": 29.01041313455757,
+   "bits_sem_uncorrected": 29.006395360772135,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.07318319487690204,
+  "target_scale": 6.71425143240167,
+  "target_id": "F-EML_K25_29"
+ }
+]

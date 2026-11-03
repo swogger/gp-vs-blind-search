@@ -1,0 +1,17 @@
+diff --git a/src/reach/revisit.py b/src/reach/revisit.py
+index 1caf234ecaa1dd0a6816a8ae6986082cf6c090d1..a3e23ce10e5af4dc64c5b0e0afb8aace5e5eee46 100644
+--- a/src/reach/revisit.py
++++ b/src/reach/revisit.py
+@@ -32,8 +32,10 @@ def enum_root(name):
+     d = enum_dir(name)
+     if (d / "level_001.npz").exists():
+         return d
+-    common = subprocess.run(["git", "rev-parse", "--git-common-dir"], cwd=ROOT, capture_output=True,
+-                            text=True).stdout.strip()
++    r = subprocess.run(["git", "rev-parse", "--git-common-dir"], cwd=ROOT, capture_output=True, text=True)
++    common = r.stdout.strip()
++    if r.returncode or not common:                      # not a git checkout (a release archive): row 157
++        return d
+     return (ROOT / common).resolve().parent / d.relative_to(ROOT)
+ 
+ 

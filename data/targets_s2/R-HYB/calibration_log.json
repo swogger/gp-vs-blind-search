@@ -1,0 +1,133 @@
+{
+ "grammar": "R-HYB",
+ "seed": 20261021,
+ "ceiling": 15,
+ "depth_limit": 10,
+ "levels": {
+  "7": {
+   "proven": true,
+   "n_level": 425,
+   "n_depth_ok": 425,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "dead_subtree": 19,
+    "variance": 2,
+    "magnitude_ratio": 2,
+    "complex": 2
+   }
+  },
+  "9": {
+   "proven": true,
+   "n_level": 3812,
+   "n_depth_ok": 3812,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "dead_subtree": 21,
+    "nonfinite": 2,
+    "variance": 4,
+    "complex": 1
+   }
+  },
+  "11": {
+   "proven": true,
+   "n_level": 36155,
+   "n_depth_ok": 36155,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "dead_subtree": 24,
+    "magnitude_ratio": 6,
+    "complex": 1,
+    "nonfinite": 2
+   }
+  },
+  "13": {
+   "proven": true,
+   "n_level": 356608,
+   "n_depth_ok": 356608,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "dead_subtree": 43,
+    "magnitude_ratio": 11,
+    "complex": 10,
+    "variance": 4,
+    "near_duplicate": 1,
+    "nonfinite": 3
+   }
+  },
+  "15": {
+   "proven": true,
+   "n_level": 3618729,
+   "n_depth_ok": 3618729,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "dead_subtree": 47,
+    "complex": 7,
+    "magnitude_ratio": 10,
+    "nonfinite": 3
+   }
+  },
+  "17": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 22,
+    "dead_subtree": 38,
+    "complex": 12,
+    "magnitude_ratio": 8,
+    "nonfinite": 3
+   }
+  },
+  "19": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "complex": 10,
+    "dead_subtree": 69,
+    "magnitude_ratio": 19,
+    "smaller_in_enumeration": 12,
+    "nonfinite": 7
+   }
+  },
+  "21": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "dead_subtree": 76,
+    "magnitude_ratio": 20,
+    "nonfinite": 4,
+    "smaller_in_enumeration": 24,
+    "complex": 8,
+    "variance": 2
+   }
+  },
+  "23": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "magnitude_ratio": 31,
+    "complex": 21,
+    "smaller_in_enumeration": 22,
+    "dead_subtree": 87,
+    "nonfinite": 10,
+    "variance": 1
+   }
+  },
+  "25": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "dead_subtree": 118,
+    "complex": 24,
+    "magnitude_ratio": 44,
+    "smaller_in_enumeration": 26,
+    "nonfinite": 15,
+    "variance": 1
+   }
+  }
+ }
+}

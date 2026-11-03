@@ -1,0 +1,75 @@
+{
+ "grammar": "HYB",
+ "seed": 20261013,
+ "ceiling": 15,
+ "levels": {
+  "5": {
+   "found": 10,
+   "rejected": {
+    "variance": 1
+   },
+   "proven": true
+  },
+  "7": {
+   "found": 10,
+   "rejected": {
+    "magnitude_ratio": 1
+   },
+   "proven": true
+  },
+  "9": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "11": {
+   "found": 10,
+   "rejected": {
+    "magnitude_ratio": 1
+   },
+   "proven": true
+  },
+  "13": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "15": {
+   "found": 10,
+   "rejected": {
+    "magnitude_ratio": 1
+   },
+   "proven": true
+  },
+  "17": {
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 3,
+    "nonfinite": 7,
+    "dead_subtree": 15,
+    "magnitude_ratio": 2,
+    "variance": 2
+   },
+   "proven": false
+  },
+  "19": {
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 21,
+    "magnitude_ratio": 4,
+    "nonfinite": 2
+   },
+   "proven": false
+  },
+  "23": {
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 56,
+    "nonfinite": 19,
+    "magnitude_ratio": 13,
+    "variance": 1
+   },
+   "proven": false
+  }
+ }
+}

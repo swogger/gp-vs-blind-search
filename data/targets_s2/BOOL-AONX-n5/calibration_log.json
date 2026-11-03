@@ -1,0 +1,85 @@
+{
+ "grammar": "BOOL-AONX-n5",
+ "seed": 20261021,
+ "ceiling": 18,
+ "depth_limit": 10,
+ "levels": {
+  "4": {
+   "proven": true,
+   "n_level": 71,
+   "n_depth_ok": 71,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "constant": 1
+   }
+  },
+  "5": {
+   "proven": true,
+   "n_level": 210,
+   "n_depth_ok": 210,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {}
+  },
+  "7": {
+   "proven": true,
+   "n_level": 1645,
+   "n_depth_ok": 1645,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {}
+  },
+  "12": {
+   "proven": true,
+   "n_level": 406355,
+   "n_depth_ok": 406355,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {}
+  },
+  "15": {
+   "proven": true,
+   "n_level": 6133294,
+   "n_depth_ok": 6133294,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {}
+  },
+  "19": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 366
+   }
+  },
+  "23": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 115
+   }
+  },
+  "27": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 43
+   }
+  },
+  "32": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 21
+   }
+  },
+  "35": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 16
+   }
+  }
+ }
+}

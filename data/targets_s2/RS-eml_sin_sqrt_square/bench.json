@@ -1,0 +1,59 @@
+[
+ {
+  "target_id": "RS-eml_sin_sqrt_square_bench_N8",
+  "benchmark": "N8",
+  "expression": "sqrt(x)",
+  "K_construction": 2,
+  "K_proven": 2,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 2.0,
+   "bits_uniform": 5.169925001442312,
+   "bits_syn": 3.0,
+   "bits_sem": 2.584962500721156,
+   "bits_sem_uncorrected": 2.584962500721156,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.008222486138986336,
+  "target_scale": 1.729190275794133
+ },
+ {
+  "target_id": "RS-eml_sin_sqrt_square_bench_eml_1_1",
+  "benchmark": "eml_1_1",
+  "expression": "eml(x, 1)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.935998848502534,
+  "target_scale": 19.887651468491836
+ },
+ {
+  "target_id": "RS-eml_sin_sqrt_square_bench_eml_1_2",
+  "benchmark": "eml_1_2",
+  "expression": "eml(x, eml(eml(x, x), 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 13.409125710465315,
+   "bits_sem": 12.221889161471266,
+   "bits_sem_uncorrected": 12.223700075986306,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013314094935341471,
+  "target_scale": 1.09530650053361
+ }
+]

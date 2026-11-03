@@ -1,0 +1,67 @@
+TABLE 11  convergence (conv) and exact-hash recovery (exact): original -> rerun
+ K  | A conv       A exact      | B conv       B exact
+  3 | 1.000->1.000  0.967->0.967 | 0.833->1.000  0.833->0.900
+  5 | 0.940->1.000  0.940->1.000 | 0.530->0.870  0.450->0.670
+  7 | 0.645->0.894  0.632->0.852 | 0.435->0.839  0.374->0.535
+  9 | 0.497->0.700  0.480->0.673 | 0.253->0.563  0.227->0.353
+ 11 | 0.260->0.503  0.250->0.473 | 0.113->0.357  0.107->0.217
+ 13 | 0.067->0.193  0.053->0.160 | 0.017->0.113  0.013->0.043
+ 15 | 0.070->0.170  0.070->0.150 | 0.027->0.103  0.020->0.067
+ 17 | 0.040->0.137  0.027->0.093 | 0.020->0.083  0.007->0.027
+ 19 | 0.007->0.030  0.007->0.013 | 0.000->0.007  0.000->0.003
+ 21 | 0.013->0.033  0.003->0.010 | 0.017->0.030  0.007->0.007
+ 23 | 0.013->0.030  0.000->0.010 | 0.000->0.000  0.000->0.000
+ 25 | 0.003->0.023  0.000->0.000 | 0.000->0.000  0.000->0.000
+ 27 | 0.003->0.017  0.000->0.007 | 0.000->0.003  0.000->0.000
+ 29 | 0.000->0.000  0.000->0.000 | 0.000->0.000  0.000->0.000
+ 31 | 0.000->0.003  0.000->0.003 | 0.000->0.000  0.000->0.000
+
+K50 (logistic on pre-specified K=7-31, 95% CI resampling targets)
+  conv  Regime A: original 8.46 [7.59, 9.18]  ->  rerun 11.07 [10.48, 11.67]
+  conv  Regime B: original 6.27 [5.21, 7.07]  ->  rerun 9.81 [9.28, 10.27]
+  exact Regime A: original 8.43 [7.64, 9.06]  ->  rerun 10.60 [9.99, 11.13]
+  exact Regime B: original 6.00 [5.05, 6.78]  ->  rerun 7.44 [6.77, 8.03]
+
+TABLE 13  paired A vs B on identical seeds (rerun): A-only, B-only, exact binomial p, Holm
+  K= 7  A-only  43  B-only  26  p=0.053  Holm=0.266
+  K= 9  A-only  65  B-only  24  p=1.6e-05  Holm=0.000193
+  K=11  A-only  66  B-only  22  p=2.9e-06  Holm=3.74e-05
+  K=13  A-only  46  B-only  22  p=0.0049  Holm=0.0441
+  K=15  A-only  31  B-only  11  p=0.0029  Holm=0.0318
+  K=17  A-only  28  B-only  12  p=0.017  Holm=0.125
+  K=19  A-only   8  B-only   1  p=0.039  Holm=0.234
+  K=21  A-only   7  B-only   6  p=1  Holm=1
+  K=23  A-only   9  B-only   0  p=0.0039  Holm=0.0391
+  K=25  A-only   7  B-only   0  p=0.016  Holm=0.125
+  K=27  A-only   5  B-only   1  p=0.22  Holm=0.875
+  K=29  A-only   0  B-only   0  p=1  Holm=1
+  K=31  A-only   1  B-only   0  p=1  Holm=1
+  pooled A-only 316  B-only 125
+
+TABLE 14  final nMSE, paired Wilcoxon A vs B (rerun)
+  K=7-11: median A 0  median B 3.58e-07  p=2.2e-09  (B lower)
+  K=13-17: median A 0.0121  median B 0.0197  p=0.96  (A lower)
+  K=19-31: median A 0.0522  median B 0.0546  p=0.45  (A lower)
+
+TABLE 12  run-level logistic models (rerun; same code as the original Table 12)
+ regime both:
+  K                                  dev=  4155.63  AIC=  4159.63  AUC=0.9218   K=-0.3858   p(K)=8.3e-48
+  n_crit                             dev=  6034.65  AIC=  6038.65  AUC=0.8010   n_crit=-0.4950   p(n_crit)=1.5e-26
+  K + alpha                          dev=  4095.41  AIC=  4101.41  AUC=0.9256   K=-0.3886  alpha=-0.8815   p(K)=3.1e-46 p(alpha)=0.0013
+  K + alpha + g                      dev=  4094.28  AIC=  4102.28  AUC=0.9259   K=-0.3907  alpha=-0.8682  g=-0.0896   p(K)=2.5e-43 p(alpha)=0.0017 p(g)=0.68
+ regime A:
+  K                                  dev=  2256.80  AIC=  2260.80  AUC=0.9168   K=-0.3619   p(K)=3.6e-35
+  n_crit                             dev=  3227.14  AIC=  3231.14  AUC=0.7987   n_crit=-0.4837   p(n_crit)=2.2e-26
+  K + alpha                          dev=  2223.03  AIC=  2229.03  AUC=0.9208   K=-0.3648  alpha=-0.9184   p(K)=6.5e-35 p(alpha)=0.0035
+  K + alpha + g                      dev=  2223.02  AIC=  2231.02  AUC=0.9211   K=-0.3651  alpha=-0.9169  g=-0.0102   p(K)=7.7e-33 p(alpha)=0.0041 p(g)=0.97
+ regime B:
+  K                                  dev=  1832.52  AIC=  1836.52  AUC=0.9315   K=-0.4353   p(K)=2.9e-37
+  n_crit                             dev=  2768.68  AIC=  2772.68  AUC=0.8065   n_crit=-0.5165   p(n_crit)=1.6e-22
+  K + alpha                          dev=  1805.07  AIC=  1811.07  AUC=0.9352   K=-0.4388  alpha=-0.8722   p(K)=5.4e-35 p(alpha)=0.0033
+  K + alpha + g                      dev=  1802.65  AIC=  1810.65  AUC=0.9357   K=-0.4443  alpha=-0.8410  g=-0.1962   p(K)=3e-33 p(alpha)=0.0043 p(g)=0.38
+
+MISC (rerun): runs 7820, converged 1467, exact 1123, loose 344
+  Regime A: converged at exactly K nodes 712/829; failures above K 0.932, median excess 566, single-leaf 91
+  Regime B: converged at exactly K nodes 336/638; failures above K 0.952, median excess 62, single-leaf 0
+  reference case eml(x, eml(eml(x,x),x)) Regime A: 10/10
+  terminal states {'converged': 1467, 'budget_exhausted': 6353}; max CPU 166.3s

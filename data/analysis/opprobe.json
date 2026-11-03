@@ -1,0 +1,1104 @@
+{
+ "F-EML": {
+  "subtree_mutation": {
+   "events": 3000,
+   "changed_share": 0.23866666666666667,
+   "rejected_share": 0.30266666666666664,
+   "changed_share_accepted": 0.3422562141491396,
+   "defined_parent_share": 0.21233333333333335,
+   "changed_share_defined": 0.9905362776025236,
+   "size_change_mean": 3.3406666666666665,
+   "size_change_sd": 16.810590299636182,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 3000,
+   "changed_share": 0.23033333333333333,
+   "rejected_share": 0.2966666666666667,
+   "changed_share_accepted": 0.32748815165876777,
+   "defined_parent_share": 0.22933333333333333,
+   "changed_share_defined": 0.9790940766550522,
+   "size_change_mean": -1.548,
+   "size_change_sd": 42.00486911458401,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 3000,
+   "changed_share": 0.23766666666666666,
+   "rejected_share": 0.2833333333333333,
+   "changed_share_accepted": 0.3316279069767442,
+   "defined_parent_share": 0.23866666666666667,
+   "changed_share_defined": 0.9655172413793104,
+   "size_change_mean": -0.9426666666666667,
+   "size_change_sd": 13.786250864135937,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "F-EML-R": {
+  "subtree_mutation": {
+   "events": 3000,
+   "changed_share": 0.243,
+   "rejected_share": 0.30133333333333334,
+   "changed_share_accepted": 0.34780534351145037,
+   "defined_parent_share": 0.216,
+   "changed_share_defined": 0.978328173374613,
+   "size_change_mean": 3.3406666666666665,
+   "size_change_sd": 16.810590299636182,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 3000,
+   "changed_share": 0.226,
+   "rejected_share": 0.29033333333333333,
+   "changed_share_accepted": 0.3184593705965242,
+   "defined_parent_share": 0.23333333333333334,
+   "changed_share_defined": 0.9656946826758147,
+   "size_change_mean": -1.548,
+   "size_change_sd": 42.00486911458401,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 3000,
+   "changed_share": 0.23566666666666666,
+   "rejected_share": 0.2773333333333333,
+   "changed_share_accepted": 0.3261070110701107,
+   "defined_parent_share": 0.24466666666666667,
+   "changed_share_defined": 0.9538950715421304,
+   "size_change_mean": -0.9426666666666667,
+   "size_change_sd": 13.786250864135937,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "R-ARITH": {
+  "subtree_mutation": {
+   "events": 3000,
+   "changed_share": 0.5956666666666667,
+   "rejected_share": 0.303,
+   "changed_share_accepted": 0.8546150167384027,
+   "defined_parent_share": 0.951,
+   "changed_share_defined": 0.8546150167384027,
+   "size_change_mean": 3.4833333333333334,
+   "size_change_sd": 15.761759278568988,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 3000,
+   "changed_share": 0.5673333333333334,
+   "rejected_share": 0.29933333333333334,
+   "changed_share_accepted": 0.8097050428163654,
+   "defined_parent_share": 0.9436666666666667,
+   "changed_share_defined": 0.8097050428163654,
+   "size_change_mean": -1.7486666666666666,
+   "size_change_sd": 18.08732977037302,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 3000,
+   "changed_share": 0.577,
+   "rejected_share": 0.29333333333333333,
+   "changed_share_accepted": 0.8165094339622642,
+   "defined_parent_share": 0.9483333333333334,
+   "changed_share_defined": 0.8165094339622642,
+   "size_change_mean": -0.8286666666666667,
+   "size_change_sd": 18.120485043790143,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "R-ARITH4": {
+  "subtree_mutation": {
+   "events": 3000,
+   "changed_share": 0.462,
+   "rejected_share": 0.30133333333333334,
+   "changed_share_accepted": 0.6612595419847328,
+   "defined_parent_share": 0.5363333333333333,
+   "changed_share_defined": 0.8872581721147431,
+   "size_change_mean": 3.3406666666666665,
+   "size_change_sd": 16.810590299636182,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 3000,
+   "changed_share": 0.39666666666666667,
+   "rejected_share": 0.2876666666666667,
+   "changed_share_accepted": 0.5568554047730463,
+   "defined_parent_share": 0.546,
+   "changed_share_defined": 0.8308605341246291,
+   "size_change_mean": -1.548,
+   "size_change_sd": 42.00486911458401,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 3000,
+   "changed_share": 0.4013333333333333,
+   "rejected_share": 0.27466666666666667,
+   "changed_share_accepted": 0.5533088235294118,
+   "defined_parent_share": 0.5436666666666666,
+   "changed_share_defined": 0.8386380458919319,
+   "size_change_mean": -0.9426666666666667,
+   "size_change_sd": 13.786250864135937,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "R-ELEM6": {
+  "subtree_mutation": {
+   "events": 3000,
+   "changed_share": 0.5416666666666666,
+   "rejected_share": 0.236,
+   "changed_share_accepted": 0.7089877835951134,
+   "defined_parent_share": 0.5973333333333334,
+   "changed_share_defined": 0.9052567237163814,
+   "size_change_mean": 1.2906666666666666,
+   "size_change_sd": 17.23202966055427,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 3000,
+   "changed_share": 0.485,
+   "rejected_share": 0.24233333333333335,
+   "changed_share_accepted": 0.6401231852177739,
+   "defined_parent_share": 0.6016666666666667,
+   "changed_share_defined": 0.8566710700132101,
+   "size_change_mean": -1.3236666666666668,
+   "size_change_sd": 12.666184898732881,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 3000,
+   "changed_share": 0.4876666666666667,
+   "rejected_share": 0.24566666666666667,
+   "changed_share_accepted": 0.6464869642068052,
+   "defined_parent_share": 0.6046666666666667,
+   "changed_share_defined": 0.8569570871261378,
+   "size_change_mean": -0.7666666666666667,
+   "size_change_sd": 13.220951386173219,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "R-ELEM4": {
+  "subtree_mutation": {
+   "events": 3000,
+   "changed_share": 0.6156666666666667,
+   "rejected_share": 0.195,
+   "changed_share_accepted": 0.7648033126293996,
+   "defined_parent_share": 0.6633333333333333,
+   "changed_share_defined": 0.8966074313408724,
+   "size_change_mean": 1.021,
+   "size_change_sd": 8.239572743777435,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 3000,
+   "changed_share": 0.5526666666666666,
+   "rejected_share": 0.236,
+   "changed_share_accepted": 0.7233856893542757,
+   "defined_parent_share": 0.659,
+   "changed_share_defined": 0.8711401425178147,
+   "size_change_mean": -0.689,
+   "size_change_sd": 10.082374670681507,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 3000,
+   "changed_share": 0.5566666666666666,
+   "rejected_share": 0.224,
+   "changed_share_accepted": 0.7173539518900344,
+   "defined_parent_share": 0.6606666666666666,
+   "changed_share_defined": 0.8725663716814159,
+   "size_change_mean": -1.1763333333333332,
+   "size_change_sd": 10.391722983006982,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "R-HYB": {
+  "subtree_mutation": {
+   "events": 3000,
+   "changed_share": 0.44566666666666666,
+   "rejected_share": 0.303,
+   "changed_share_accepted": 0.6394069823051172,
+   "defined_parent_share": 0.4723333333333333,
+   "changed_share_defined": 0.9152173913043479,
+   "size_change_mean": 3.4833333333333334,
+   "size_change_sd": 15.761759278568988,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 3000,
+   "changed_share": 0.36866666666666664,
+   "rejected_share": 0.29933333333333334,
+   "changed_share_accepted": 0.5261655566127498,
+   "defined_parent_share": 0.477,
+   "changed_share_defined": 0.8726061615320566,
+   "size_change_mean": -1.7486666666666666,
+   "size_change_sd": 18.08732977037302,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 3000,
+   "changed_share": 0.36666666666666664,
+   "rejected_share": 0.29333333333333333,
+   "changed_share_accepted": 0.5188679245283019,
+   "defined_parent_share": 0.47433333333333333,
+   "changed_share_defined": 0.8677337826453243,
+   "size_change_mean": -0.8286666666666667,
+   "size_change_sd": 18.120485043790143,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "R-TRIG": {
+  "subtree_mutation": {
+   "events": 3000,
+   "changed_share": 0.7983333333333333,
+   "rejected_share": 0.195,
+   "changed_share_accepted": 0.9917184265010351,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.9917184265010351,
+   "size_change_mean": 1.021,
+   "size_change_sd": 8.239572743777435,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 3000,
+   "changed_share": 0.7436666666666667,
+   "rejected_share": 0.236,
+   "changed_share_accepted": 0.9733856893542757,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.9733856893542757,
+   "size_change_mean": -0.689,
+   "size_change_sd": 10.082374670681507,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 3000,
+   "changed_share": 0.7556666666666667,
+   "rejected_share": 0.224,
+   "changed_share_accepted": 0.9737972508591065,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.9737972508591065,
+   "size_change_mean": -1.1763333333333332,
+   "size_change_sd": 10.391722983006982,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "F-LDE0": {
+  "subtree_mutation": {
+   "events": 3000,
+   "changed_share": 0.06266666666666666,
+   "rejected_share": 0.30266666666666664,
+   "changed_share_accepted": 0.08986615678776291,
+   "defined_parent_share": 0.05366666666666667,
+   "changed_share_defined": 1.0,
+   "size_change_mean": 3.3406666666666665,
+   "size_change_sd": 16.810590299636182,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 3000,
+   "changed_share": 0.088,
+   "rejected_share": 0.2966666666666667,
+   "changed_share_accepted": 0.12511848341232226,
+   "defined_parent_share": 0.05533333333333333,
+   "changed_share_defined": 0.9927007299270073,
+   "size_change_mean": -1.548,
+   "size_change_sd": 42.00486911458401,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 3000,
+   "changed_share": 0.08766666666666667,
+   "rejected_share": 0.2833333333333333,
+   "changed_share_accepted": 0.12232558139534884,
+   "defined_parent_share": 0.057666666666666665,
+   "changed_share_defined": 0.9929078014184397,
+   "size_change_mean": -0.9426666666666667,
+   "size_change_sd": 13.786250864135937,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "R-SRB": {
+  "subtree_mutation": {
+   "events": 3000,
+   "changed_share": 0.733,
+   "rejected_share": 0.17833333333333334,
+   "changed_share_accepted": 0.8920892494929006,
+   "defined_parent_share": 0.859,
+   "changed_share_defined": 0.9444444444444444,
+   "size_change_mean": 0.9176666666666666,
+   "size_change_sd": 6.699270200717554,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 3000,
+   "changed_share": 0.6873333333333334,
+   "rejected_share": 0.20166666666666666,
+   "changed_share_accepted": 0.8609603340292276,
+   "defined_parent_share": 0.8513333333333334,
+   "changed_share_defined": 0.914365933551708,
+   "size_change_mean": -0.7423333333333333,
+   "size_change_sd": 7.087261428475427,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 3000,
+   "changed_share": 0.6833333333333333,
+   "rejected_share": 0.205,
+   "changed_share_accepted": 0.859538784067086,
+   "defined_parent_share": 0.858,
+   "changed_share_defined": 0.9165885660731021,
+   "size_change_mean": -0.7286666666666667,
+   "size_change_sd": 7.560712811780529,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "BOOL-NAND-n5": {
+  "subtree_mutation": {
+   "events": 3000,
+   "changed_share": 0.493,
+   "rejected_share": 0.319,
+   "changed_share_accepted": 0.723935389133627,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.723935389133627,
+   "size_change_mean": 3.1346666666666665,
+   "size_change_sd": 15.130824990359544,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 3000,
+   "changed_share": 0.48433333333333334,
+   "rejected_share": 0.22233333333333333,
+   "changed_share_accepted": 0.6228032576082297,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.6228032576082297,
+   "size_change_mean": -1.348,
+   "size_change_sd": 14.626604618525336,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 3000,
+   "changed_share": 0.49,
+   "rejected_share": 0.21566666666666667,
+   "changed_share_accepted": 0.624734381640459,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.624734381640459,
+   "size_change_mean": -0.468,
+   "size_change_sd": 22.98329050999153,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "BOOL-NOR-n5": {
+  "subtree_mutation": {
+   "events": 3000,
+   "changed_share": 0.493,
+   "rejected_share": 0.319,
+   "changed_share_accepted": 0.723935389133627,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.723935389133627,
+   "size_change_mean": 3.1346666666666665,
+   "size_change_sd": 15.130824990359544,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 3000,
+   "changed_share": 0.48433333333333334,
+   "rejected_share": 0.22233333333333333,
+   "changed_share_accepted": 0.6228032576082297,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.6228032576082297,
+   "size_change_mean": -1.348,
+   "size_change_sd": 14.626604618525336,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 3000,
+   "changed_share": 0.49,
+   "rejected_share": 0.21566666666666667,
+   "changed_share_accepted": 0.624734381640459,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.624734381640459,
+   "size_change_mean": -0.468,
+   "size_change_sd": 22.98329050999153,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "BOOL-IMP0-n5": {
+  "subtree_mutation": {
+   "events": 3000,
+   "changed_share": 0.2693333333333333,
+   "rejected_share": 0.30366666666666664,
+   "changed_share_accepted": 0.38678793681187174,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.38678793681187174,
+   "size_change_mean": 3.3886666666666665,
+   "size_change_sd": 25.195997133583653,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 3000,
+   "changed_share": 0.26033333333333336,
+   "rejected_share": 0.218,
+   "changed_share_accepted": 0.3329070758738278,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.3329070758738278,
+   "size_change_mean": -1.1686666666666667,
+   "size_change_sd": 12.102047411721522,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 3000,
+   "changed_share": 0.28633333333333333,
+   "rejected_share": 0.20266666666666666,
+   "changed_share_accepted": 0.35911371237458195,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.35911371237458195,
+   "size_change_mean": -0.8233333333333334,
+   "size_change_sd": 12.197518417922375,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "BOOL-IMP0R-n5": {
+  "subtree_mutation": {
+   "events": 3000,
+   "changed_share": 0.26566666666666666,
+   "rejected_share": 0.30366666666666664,
+   "changed_share_accepted": 0.38152225945428436,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.38152225945428436,
+   "size_change_mean": 3.3886666666666665,
+   "size_change_sd": 25.195997133583653,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 3000,
+   "changed_share": 0.263,
+   "rejected_share": 0.21733333333333332,
+   "changed_share_accepted": 0.33603066439523,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.33603066439523,
+   "size_change_mean": -1.1686666666666667,
+   "size_change_sd": 12.102047411721522,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 3000,
+   "changed_share": 0.2813333333333333,
+   "rejected_share": 0.202,
+   "changed_share_accepted": 0.35254803675856305,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.35254803675856305,
+   "size_change_mean": -0.8233333333333334,
+   "size_change_sd": 12.197518417922375,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "BOOL-AON-n5": {
+  "subtree_mutation": {
+   "events": 3000,
+   "changed_share": 0.5086666666666667,
+   "rejected_share": 0.25766666666666665,
+   "changed_share_accepted": 0.6852267624607095,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.6852267624607095,
+   "size_change_mean": 2.1896666666666667,
+   "size_change_sd": 8.605755432009182,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 3000,
+   "changed_share": 0.517,
+   "rejected_share": 0.19533333333333333,
+   "changed_share_accepted": 0.6425020712510356,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.6425020712510356,
+   "size_change_mean": -1.278,
+   "size_change_sd": 13.778051966805759,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 3000,
+   "changed_share": 0.5046666666666667,
+   "rejected_share": 0.203,
+   "changed_share_accepted": 0.6332078628189042,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.6332078628189042,
+   "size_change_mean": -1.3836666666666666,
+   "size_change_sd": 11.203591681043877,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "BOOL-AN-n5": {
+  "subtree_mutation": {
+   "events": 3000,
+   "changed_share": 0.559,
+   "rejected_share": 0.199,
+   "changed_share_accepted": 0.6978776529338327,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.6978776529338327,
+   "size_change_mean": 1.1246666666666667,
+   "size_change_sd": 8.322406996910344,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 3000,
+   "changed_share": 0.5543333333333333,
+   "rejected_share": 0.18633333333333332,
+   "changed_share_accepted": 0.6812781646866038,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.6812781646866038,
+   "size_change_mean": -1.1326666666666667,
+   "size_change_sd": 10.757310671765918,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 3000,
+   "changed_share": 0.559,
+   "rejected_share": 0.19066666666666668,
+   "changed_share_accepted": 0.6906919275123559,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.6906919275123559,
+   "size_change_mean": -0.956,
+   "size_change_sd": 8.964489054039834,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "BOOL-AONX-n5": {
+  "subtree_mutation": {
+   "events": 3000,
+   "changed_share": 0.5903333333333334,
+   "rejected_share": 0.264,
+   "changed_share_accepted": 0.8020833333333334,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.8020833333333334,
+   "size_change_mean": 2.095,
+   "size_change_sd": 12.041787311967717,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 3000,
+   "changed_share": 0.6073333333333333,
+   "rejected_share": 0.20333333333333334,
+   "changed_share_accepted": 0.7623430962343096,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.7623430962343096,
+   "size_change_mean": -0.8946666666666667,
+   "size_change_sd": 9.797767001833746,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 3000,
+   "changed_share": 0.6163333333333333,
+   "rejected_share": 0.193,
+   "changed_share_accepted": 0.7637339942172656,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.7637339942172656,
+   "size_change_mean": -1.1256666666666666,
+   "size_change_sd": 11.612057292123371,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "BOOL-AX1-n5": {
+  "subtree_mutation": {
+   "events": 3000,
+   "changed_share": 0.4756666666666667,
+   "rejected_share": 0.30366666666666664,
+   "changed_share_accepted": 0.6831019626615605,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.6831019626615605,
+   "size_change_mean": 3.3886666666666665,
+   "size_change_sd": 25.195997133583653,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 3000,
+   "changed_share": 0.4643333333333333,
+   "rejected_share": 0.21733333333333332,
+   "changed_share_accepted": 0.5932708688245315,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.5932708688245315,
+   "size_change_mean": -1.1686666666666667,
+   "size_change_sd": 12.102047411721522,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 3000,
+   "changed_share": 0.4856666666666667,
+   "rejected_share": 0.202,
+   "changed_share_accepted": 0.6086048454469507,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.6086048454469507,
+   "size_change_mean": -0.8233333333333334,
+   "size_change_sd": 12.197518417922375,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "BOOL-RICH-n5": {
+  "subtree_mutation": {
+   "events": 3000,
+   "changed_share": 0.5576666666666666,
+   "rejected_share": 0.2886666666666667,
+   "changed_share_accepted": 0.7839737582005624,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.7839737582005624,
+   "size_change_mean": 2.881666666666667,
+   "size_change_sd": 10.919783142942395,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 3000,
+   "changed_share": 0.562,
+   "rejected_share": 0.21666666666666667,
+   "changed_share_accepted": 0.7174468085106382,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.7174468085106382,
+   "size_change_mean": -2.2133333333333334,
+   "size_change_sd": 27.458098178052236,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 3000,
+   "changed_share": 0.581,
+   "rejected_share": 0.20033333333333334,
+   "changed_share_accepted": 0.7265527303042935,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.7265527303042935,
+   "size_change_mean": -0.919,
+   "size_change_sd": 14.745567887786938,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "BOOL-NAND-n6": {
+  "subtree_mutation": {
+   "events": 3000,
+   "changed_share": 0.5543333333333333,
+   "rejected_share": 0.30366666666666664,
+   "changed_share_accepted": 0.7960746768788894,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.7960746768788894,
+   "size_change_mean": 3.3886666666666665,
+   "size_change_sd": 25.195997133583653,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 3000,
+   "changed_share": 0.5516666666666666,
+   "rejected_share": 0.218,
+   "changed_share_accepted": 0.7054560954816709,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.7054560954816709,
+   "size_change_mean": -1.1686666666666667,
+   "size_change_sd": 12.102047411721522,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 3000,
+   "changed_share": 0.557,
+   "rejected_share": 0.20266666666666666,
+   "changed_share_accepted": 0.6985785953177257,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.6985785953177257,
+   "size_change_mean": -0.8233333333333334,
+   "size_change_sd": 12.197518417922375,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "BOOL-AON-n6": {
+  "subtree_mutation": {
+   "events": 3000,
+   "changed_share": 0.552,
+   "rejected_share": 0.23866666666666667,
+   "changed_share_accepted": 0.7250437828371279,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.7250437828371279,
+   "size_change_mean": 1.5286666666666666,
+   "size_change_sd": 12.877208997121835,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 3000,
+   "changed_share": 0.5443333333333333,
+   "rejected_share": 0.18833333333333332,
+   "changed_share_accepted": 0.6706365503080082,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.6706365503080082,
+   "size_change_mean": -0.9143333333333333,
+   "size_change_sd": 11.979690920702236,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 3000,
+   "changed_share": 0.54,
+   "rejected_share": 0.20333333333333334,
+   "changed_share_accepted": 0.6778242677824268,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.6778242677824268,
+   "size_change_mean": -1.04,
+   "size_change_sd": 14.34012087350266,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "RS-mul_eml_sin": {
+  "subtree_mutation": {
+   "events": 2000,
+   "changed_share": 0.657,
+   "rejected_share": 0.2415,
+   "changed_share_accepted": 0.8661832564271589,
+   "defined_parent_share": 0.6795,
+   "changed_share_defined": 0.9806763285024155,
+   "size_change_mean": 1.957,
+   "size_change_sd": 8.583714289280602,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 2000,
+   "changed_share": 0.599,
+   "rejected_share": 0.2535,
+   "changed_share_accepted": 0.8024112525117214,
+   "defined_parent_share": 0.679,
+   "changed_share_defined": 0.946949602122016,
+   "size_change_mean": -1.2,
+   "size_change_sd": 12.580540528928001,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 2000,
+   "changed_share": 0.6075,
+   "rejected_share": 0.2465,
+   "changed_share_accepted": 0.8062375580623756,
+   "defined_parent_share": 0.6995,
+   "changed_share_defined": 0.9323181049069373,
+   "size_change_mean": -1.258,
+   "size_change_sd": 12.031643113058168,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "RS-eml_sin_sqrt_square": {
+  "subtree_mutation": {
+   "events": 2000,
+   "changed_share": 0.7875,
+   "rejected_share": 0.1305,
+   "changed_share_accepted": 0.9056929269695227,
+   "defined_parent_share": 0.912,
+   "changed_share_defined": 0.939076923076923,
+   "size_change_mean": 0.464,
+   "size_change_sd": 4.91291196745881,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 2000,
+   "changed_share": 0.7445,
+   "rejected_share": 0.1665,
+   "changed_share_accepted": 0.8932213557288542,
+   "defined_parent_share": 0.9225,
+   "changed_share_defined": 0.9222434671765456,
+   "size_change_mean": -0.4745,
+   "size_change_sd": 5.237685533706658,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 2000,
+   "changed_share": 0.7395,
+   "rejected_share": 0.1825,
+   "changed_share_accepted": 0.9045871559633027,
+   "defined_parent_share": 0.9225,
+   "changed_share_defined": 0.9298701298701298,
+   "size_change_mean": -0.367,
+   "size_change_sd": 5.846735071815722,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "RS-mul_div_eml_sin_square": {
+  "subtree_mutation": {
+   "events": 2000,
+   "changed_share": 0.68,
+   "rejected_share": 0.231,
+   "changed_share_accepted": 0.8842652795838751,
+   "defined_parent_share": 0.793,
+   "changed_share_defined": 0.9455732946298984,
+   "size_change_mean": 1.2715,
+   "size_change_sd": 10.648182368366912,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 2000,
+   "changed_share": 0.626,
+   "rejected_share": 0.2415,
+   "changed_share_accepted": 0.8253131179960448,
+   "defined_parent_share": 0.8085,
+   "changed_share_defined": 0.9019011406844106,
+   "size_change_mean": -0.627,
+   "size_change_sd": 10.363680379093134,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 2000,
+   "changed_share": 0.617,
+   "rejected_share": 0.237,
+   "changed_share_accepted": 0.8086500655307994,
+   "defined_parent_share": 0.7945,
+   "changed_share_defined": 0.881769641495042,
+   "size_change_mean": -0.4065,
+   "size_change_sd": 8.78870057232581,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "RS-add_sqrt": {
+  "subtree_mutation": {
+   "events": 2000,
+   "changed_share": 0.76,
+   "rejected_share": 0.1985,
+   "changed_share_accepted": 0.9482220835932627,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.9482220835932627,
+   "size_change_mean": 0.9935,
+   "size_change_sd": 8.191608984198403,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 2000,
+   "changed_share": 0.682,
+   "rejected_share": 0.256,
+   "changed_share_accepted": 0.9166666666666666,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.9166666666666666,
+   "size_change_mean": -0.829,
+   "size_change_sd": 10.770968340868892,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 2000,
+   "changed_share": 0.7025,
+   "rejected_share": 0.236,
+   "changed_share_accepted": 0.9195026178010471,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.9195026178010471,
+   "size_change_mean": -0.731,
+   "size_change_sd": 8.343598684021183,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "BOOL-RS-imp_or_rnimp-n5": {
+  "subtree_mutation": {
+   "events": 2000,
+   "changed_share": 0.304,
+   "rejected_share": 0.3035,
+   "changed_share_accepted": 0.43646805455850685,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.43646805455850685,
+   "size_change_mean": 3.776,
+   "size_change_sd": 14.857517423849787,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 2000,
+   "changed_share": 0.3155,
+   "rejected_share": 0.22,
+   "changed_share_accepted": 0.4044871794871795,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.4044871794871795,
+   "size_change_mean": -1.738,
+   "size_change_sd": 19.067547194120174,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 2000,
+   "changed_share": 0.298,
+   "rejected_share": 0.228,
+   "changed_share_accepted": 0.3860103626943005,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.3860103626943005,
+   "size_change_mean": -1.921,
+   "size_change_sd": 21.630620864875794,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "BOOL-RS-imp_nimp_rimp_rnimp-n5": {
+  "subtree_mutation": {
+   "events": 2000,
+   "changed_share": 0.321,
+   "rejected_share": 0.321,
+   "changed_share_accepted": 0.4727540500736377,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.4727540500736377,
+   "size_change_mean": 3.205,
+   "size_change_sd": 15.909681800714933,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 2000,
+   "changed_share": 0.333,
+   "rejected_share": 0.228,
+   "changed_share_accepted": 0.43134715025906734,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.43134715025906734,
+   "size_change_mean": -1.312,
+   "size_change_sd": 14.366442009071001,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 2000,
+   "changed_share": 0.3115,
+   "rejected_share": 0.2205,
+   "changed_share_accepted": 0.39961513790891595,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.39961513790891595,
+   "size_change_mean": -1.133,
+   "size_change_sd": 18.12672918648039,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "BOOL-RS-nand_rimp_c1-n5": {
+  "subtree_mutation": {
+   "events": 2000,
+   "changed_share": 0.4045,
+   "rejected_share": 0.305,
+   "changed_share_accepted": 0.5820143884892086,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.5820143884892086,
+   "size_change_mean": 3.064,
+   "size_change_sd": 29.945081465910224,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 2000,
+   "changed_share": 0.393,
+   "rejected_share": 0.2155,
+   "changed_share_accepted": 0.5009560229445507,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.5009560229445507,
+   "size_change_mean": -1.188,
+   "size_change_sd": 13.991449388823161,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 2000,
+   "changed_share": 0.4015,
+   "rejected_share": 0.2075,
+   "changed_share_accepted": 0.5066246056782334,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.5066246056782334,
+   "size_change_mean": -0.923,
+   "size_change_sd": 10.483418860276451,
+   "flag": false,
+   "few_defined": false
+  }
+ },
+ "BOOL-RS-rimp_c0-n5": {
+  "subtree_mutation": {
+   "events": 2000,
+   "changed_share": 0.2655,
+   "rejected_share": 0.305,
+   "changed_share_accepted": 0.38201438848920866,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.38201438848920866,
+   "size_change_mean": 3.064,
+   "size_change_sd": 29.945081465910224,
+   "flag": false,
+   "few_defined": false
+  },
+  "subtree_crossover": {
+   "events": 2000,
+   "changed_share": 0.257,
+   "rejected_share": 0.2165,
+   "changed_share_accepted": 0.32801531589023614,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.32801531589023614,
+   "size_change_mean": -1.188,
+   "size_change_sd": 13.991449388823161,
+   "flag": false,
+   "few_defined": false
+  },
+  "headless_crossover": {
+   "events": 2000,
+   "changed_share": 0.2785,
+   "rejected_share": 0.2085,
+   "changed_share_accepted": 0.35186355022109916,
+   "defined_parent_share": 1.0,
+   "changed_share_defined": 0.35186355022109916,
+   "size_change_mean": -0.923,
+   "size_change_sd": 10.483418860276451,
+   "flag": false,
+   "few_defined": false
+  }
+ }
+}

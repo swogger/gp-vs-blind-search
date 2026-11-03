@@ -1,0 +1,1244 @@
+[
+ {
+  "expression": "exp(exp(x))",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 3,
+  "var_target": 5252163430033231.0,
+  "target_scale": 433608004.5042443,
+  "target_id": "ELEM6_K03_00"
+ },
+ {
+  "expression": "+(x, x)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 0.3267326732673266,
+  "target_scale": 5.98019801980198,
+  "target_id": "ELEM6_K03_01"
+ },
+ {
+  "expression": "log(log(x))",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 3,
+  "var_target": 0.016768306075898066,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K03_02"
+ },
+ {
+  "expression": "/(1, x)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 0.002217170660324954,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K03_03"
+ },
+ {
+  "expression": "+(x, 1)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 0.08168316831683164,
+  "target_scale": 3.99009900990099,
+  "target_id": "ELEM6_K03_04"
+ },
+ {
+  "expression": "-(1, x)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 0.08168316831683164,
+  "target_scale": 1.99009900990099,
+  "target_id": "ELEM6_K03_05"
+ },
+ {
+  "expression": "-(x, 1)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 0.08168316831683164,
+  "target_scale": 1.99009900990099,
+  "target_id": "ELEM6_K03_06"
+ },
+ {
+  "expression": "*(x, x)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 2.0474153184360673,
+  "target_scale": 8.94069208901088,
+  "target_id": "ELEM6_K03_07"
+ },
+ {
+  "expression": "/(exp(x), x)",
+  "K_construction": 4,
+  "K_proven": 4,
+  "depth": 3,
+  "var_target": 0.7288172365331884,
+  "target_scale": 6.651168206349919,
+  "target_id": "ELEM6_K04_00"
+ },
+ {
+  "expression": "exp(-(1, x))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "depth": 3,
+  "var_target": 0.004339544168262526,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K04_01"
+ },
+ {
+  "expression": "-(exp(x), x)",
+  "K_construction": 4,
+  "K_proven": 4,
+  "depth": 3,
+  "var_target": 10.978280534051486,
+  "target_scale": 16.897552458590845,
+  "target_id": "ELEM6_K04_02"
+ },
+ {
+  "expression": "+(1, exp(x))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "depth": 3,
+  "var_target": 12.935998848502534,
+  "target_scale": 20.887651468491836,
+  "target_id": "ELEM6_K04_03"
+ },
+ {
+  "expression": "/(1, log(x))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "depth": 3,
+  "var_target": 0.021709107713237624,
+  "target_scale": 1.4324893643362335,
+  "target_id": "ELEM6_K04_04"
+ },
+ {
+  "expression": "-(exp(x), 1)",
+  "K_construction": 4,
+  "K_proven": 4,
+  "depth": 3,
+  "var_target": 12.935998848502534,
+  "target_scale": 18.887651468491836,
+  "target_id": "ELEM6_K04_05"
+ },
+ {
+  "expression": "-(x, log(x))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "depth": 3,
+  "var_target": 0.029129577412855472,
+  "target_scale": 1.8947925093673799,
+  "target_id": "ELEM6_K04_06"
+ },
+ {
+  "expression": "exp(+(x, x))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "depth": 3,
+  "var_target": 9286.937946984115,
+  "target_scale": 395.51868093220537,
+  "target_id": "ELEM6_K04_07"
+ },
+ {
+  "expression": "-(log(x), x)",
+  "K_construction": 4,
+  "K_proven": 4,
+  "depth": 3,
+  "var_target": 0.029129577412855472,
+  "target_scale": 1.8947925093673799,
+  "target_id": "ELEM6_K04_08"
+ },
+ {
+  "expression": "exp(*(x, x))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "depth": 3,
+  "var_target": 3407154.321255218,
+  "target_scale": 7636.480351313683,
+  "target_id": "ELEM6_K04_09"
+ },
+ {
+  "expression": "/(x, -(1, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.01909067746678399,
+  "target_scale": 1.9901960784313726,
+  "target_id": "ELEM6_K05_00"
+ },
+ {
+  "expression": "+(x, /(1, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.05712914664490196,
+  "target_scale": 3.324536095993705,
+  "target_id": "ELEM6_K05_01"
+ },
+ {
+  "expression": "exp(/(log(x), x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 4,
+  "var_target": 6.638159604634947e-05,
+  "target_scale": 1.4446671378418385,
+  "target_id": "ELEM6_K05_02"
+ },
+ {
+  "expression": "log(log(-(x, 1)))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 4,
+  "var_target": 0.6868742372026437,
+  "target_scale": 4.6200507095488765,
+  "target_id": "ELEM6_K05_03"
+ },
+ {
+  "expression": "*(log(x), log(x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.043440524158358834,
+  "target_scale": 1.1996963301111836,
+  "target_id": "ELEM6_K05_04"
+ },
+ {
+  "expression": "exp(/(exp(1), x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 4,
+  "var_target": 0.15588538294846985,
+  "target_scale": 3.8668709455328463,
+  "target_id": "ELEM6_K05_05"
+ },
+ {
+  "expression": "log(-(log(x), x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 4,
+  "var_target": 0.011587935658619673,
+  "target_scale": 3.2059421623031916,
+  "target_id": "ELEM6_K05_06"
+ },
+ {
+  "expression": "/(x, exp(exp(x)))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 4,
+  "var_target": 7.3421274881861e-08,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K05_07"
+ },
+ {
+  "expression": "-(/(1, x), x)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.11067153130941126,
+  "target_scale": 2.655661923808275,
+  "target_id": "ELEM6_K05_08"
+ },
+ {
+  "expression": "/(1, log(log(x)))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 4,
+  "var_target": 7560.574908417488,
+  "target_scale": 606.3472010684665,
+  "target_id": "ELEM6_K05_09"
+ },
+ {
+  "expression": "*(exp(x), -(x, 1))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "depth": 3,
+  "var_target": 85.27832050899988,
+  "target_scale": 39.578395496701575,
+  "target_id": "ELEM6_K06_00"
+ },
+ {
+  "expression": "log(-(x, *(x, x)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "depth": 4,
+  "var_target": 0.09671069497208391,
+  "target_scale": 3.612539849198851,
+  "target_id": "ELEM6_K06_01"
+ },
+ {
+  "expression": "/(1, log(-(1, x)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "depth": 4,
+  "var_target": 0.00037863428882204265,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K06_02"
+ },
+ {
+  "expression": "-(x, +(1, log(x)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "depth": 4,
+  "var_target": 0.02912957741285547,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K06_03"
+ },
+ {
+  "expression": "-(x, *(x, log(x)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "depth": 4,
+  "var_target": 0.06820583043158614,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K06_04"
+ },
+ {
+  "expression": "exp(/(x, +(x, 1)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "depth": 4,
+  "var_target": 0.0023207457381176806,
+  "target_scale": 2.1156871484274076,
+  "target_id": "ELEM6_K06_05"
+ },
+ {
+  "expression": "-(exp(+(x, 1)), 1)",
+  "K_construction": 6,
+  "K_proven": 6,
+  "depth": 4,
+  "var_target": 95.58482118728747,
+  "target_scale": 53.0602415975282,
+  "target_id": "ELEM6_K06_06"
+ },
+ {
+  "expression": "-(log(1), +(x, 1))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "depth": 3,
+  "var_target": 0.08168316831683164,
+  "target_scale": 3.99009900990099,
+  "target_id": "ELEM6_K06_07"
+ },
+ {
+  "expression": "exp(+(x, +(x, 1)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "depth": 4,
+  "var_target": 68621.70547755346,
+  "target_scale": 1075.131243194105,
+  "target_id": "ELEM6_K06_08"
+ },
+ {
+  "expression": "/(log(x), -(1, x))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "depth": 3,
+  "var_target": 0.0016673297173573852,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K06_09"
+ },
+ {
+  "expression": "-(exp(*(x, log(x))), 1)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 5,
+  "var_target": 39.66399733525953,
+  "target_scale": 25.445205697037025,
+  "target_id": "ELEM6_K07_00"
+ },
+ {
+  "expression": "/(x, exp(+(x, exp(1))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 5,
+  "var_target": 5.309565166919153e-06,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K07_01"
+ },
+ {
+  "expression": "*(x, log(-(exp(1), x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 5,
+  "var_target": 25.177328472660324,
+  "target_scale": 17.023818003072577,
+  "target_id": "ELEM6_K07_02"
+ },
+ {
+  "expression": "*(exp(x), +(x, exp(1)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 510.8311007425104,
+  "target_scale": 113.52628856272162,
+  "target_id": "ELEM6_K07_03"
+ },
+ {
+  "expression": "-(exp(/(1, x)), exp(1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 0.005062682874752977,
+  "target_scale": 1.321128141878398,
+  "target_id": "ELEM6_K07_04"
+ },
+ {
+  "expression": "+(x, log(log(*(x, x))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 5,
+  "var_target": 0.17202272072798142,
+  "target_scale": 3.7742804237252527,
+  "target_id": "ELEM6_K07_05"
+ },
+ {
+  "expression": "/(x, +(1, -(1, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 557.3398141943456,
+  "target_scale": 202.99999999999983,
+  "target_id": "ELEM6_K07_06"
+ },
+ {
+  "expression": "-(log(x), +(1, exp(x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 12.132399420784443,
+  "target_scale": 19.792344967958226,
+  "target_id": "ELEM6_K07_07"
+ },
+ {
+  "expression": "log(+(1, /(exp(1), x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 5,
+  "var_target": 0.003665124513718056,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K07_08"
+ },
+ {
+  "expression": "+(exp(x), -(exp(1), 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 12.935998848502534,
+  "target_scale": 21.60593329695088,
+  "target_id": "ELEM6_K07_09"
+ },
+ {
+  "expression": "+(x, /(x, -(exp(1), 1)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "depth": 5,
+  "var_target": 0.20442440578105167,
+  "target_scale": 4.730266984896402,
+  "target_id": "ELEM6_K08_00"
+ },
+ {
+  "expression": "+(x, +(1, /(exp(x), x)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "depth": 5,
+  "var_target": 1.2955190154829916,
+  "target_scale": 10.64126721625091,
+  "target_id": "ELEM6_K08_01"
+ },
+ {
+  "expression": "/(exp(x), -(1, +(x, x)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "depth": 4,
+  "var_target": 0.19725488222486903,
+  "target_scale": 3.993345523494385,
+  "target_id": "ELEM6_K08_02"
+ },
+ {
+  "expression": "/(1, +(x, /(x, log(x))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "depth": 5,
+  "var_target": 8.069061404988035e-05,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K08_03"
+ },
+ {
+  "expression": "/(1, -(exp(exp(x)), exp(x)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "depth": 5,
+  "var_target": 1.7569739565987813e-08,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K08_04"
+ },
+ {
+  "expression": "-(log(x), *(x, *(x, x)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "depth": 4,
+  "var_target": 28.244416126870224,
+  "target_scale": 25.63824806264744,
+  "target_id": "ELEM6_K08_05"
+ },
+ {
+  "expression": "log(/(+(x, 1), log(log(x))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "depth": 5,
+  "var_target": 3.432182670435478,
+  "target_scale": 8.158353793369418,
+  "target_id": "ELEM6_K08_06"
+ },
+ {
+  "expression": "log(/(x, log(+(x, exp(1)))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "depth": 6,
+  "var_target": 0.006736734137422916,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K08_07"
+ },
+ {
+  "expression": "*(x, /(x, -(exp(1), x)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "depth": 5,
+  "var_target": 55881.12440235651,
+  "target_scale": 1650.9460981609911,
+  "target_id": "ELEM6_K08_08"
+ },
+ {
+  "expression": "exp(-(exp(x), log(+(x, 1))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "depth": 5,
+  "var_target": 332929381253104.56,
+  "target_scale": 108670988.72190747,
+  "target_id": "ELEM6_K08_09"
+ },
+ {
+  "expression": "+(exp(1), log(-(x, /(1, x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.026331135069394055,
+  "target_scale": 3.694975764248675,
+  "target_id": "ELEM6_K09_00"
+ },
+ {
+  "expression": "+(exp(-(1, x)), /(1, log(x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 4,
+  "var_target": 0.04544199343930267,
+  "target_scale": 1.796744406978134,
+  "target_id": "ELEM6_K09_01"
+ },
+ {
+  "expression": "-(log(+(1, log(+(x, x)))), 1)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 6,
+  "var_target": 0.0019829662785674092,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K09_02"
+ },
+ {
+  "expression": "-(1, log(-(log(log(x)), exp(1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 6,
+  "var_target": 0.002084512623280966,
+  "target_scale": 3.1440460164054085,
+  "target_id": "ELEM6_K09_03"
+ },
+ {
+  "expression": "/(exp(1), +(log(x), exp(exp(1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 1.4806706055324312e-06,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K09_04"
+ },
+ {
+  "expression": "log(/(1, +(1, +(1, exp(x)))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 6,
+  "var_target": 0.05999217333792054,
+  "target_scale": 3.0859226179074692,
+  "target_id": "ELEM6_K09_05"
+ },
+ {
+  "expression": "log(log(-(*(exp(1), log(x)), x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 6,
+  "var_target": 0.11456096604004955,
+  "target_scale": 3.8627680259953605,
+  "target_id": "ELEM6_K09_06"
+ },
+ {
+  "expression": "/(log(x), -(/(x, log(x)), x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 1023.1138565009501,
+  "target_scale": 223.24635599095748,
+  "target_id": "ELEM6_K09_07"
+ },
+ {
+  "expression": "log(log(+(1, log(-(1, exp(x))))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 7,
+  "var_target": 0.0015615918274491482,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K09_08"
+ },
+ {
+  "expression": "-(/(1, +(x, +(x, x))), x)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "depth": 5,
+  "var_target": 0.09085325138984152,
+  "target_scale": 2.8786199812034186,
+  "target_id": "ELEM6_K09_09"
+ },
+ {
+  "expression": "-(log(x), /(exp(+(1, 1)), log(x)))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "depth": 5,
+  "var_target": 1.4481036363622721,
+  "target_scale": 9.886658812001409,
+  "target_id": "ELEM6_K10_00"
+ },
+ {
+  "expression": "exp(+(x, exp(/(1, log(+(1, 1))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "depth": 7,
+  "var_target": 61339.92692605531,
+  "target_scale": 1369.4782631328962,
+  "target_id": "ELEM6_K10_01"
+ },
+ {
+  "expression": "-(log(log(-(x, 1))), /(x, exp(x)))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "depth": 5,
+  "var_target": 0.7394690413984848,
+  "target_scale": 4.889381344507187,
+  "target_id": "ELEM6_K10_02"
+ },
+ {
+  "expression": "exp(/(1, log(/(log(x), +(x, 1)))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "depth": 6,
+  "var_target": 0.0001532284573912318,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K10_03"
+ },
+ {
+  "expression": "+(1, log(-(x, exp(/(1, exp(1))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "depth": 7,
+  "var_target": 0.08202371733895804,
+  "target_scale": 1.435302932190513,
+  "target_id": "ELEM6_K10_04"
+ },
+ {
+  "expression": "exp(/(1, +(x, log(-(exp(x), x)))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "depth": 7,
+  "var_target": 0.001228275908019446,
+  "target_scale": 1.3097445774871483,
+  "target_id": "ELEM6_K10_05"
+ },
+ {
+  "expression": "+(1, /(1, -(x, *(x, log(x)))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "depth": 6,
+  "var_target": 1023.3636467129005,
+  "target_scale": 221.51120432308633,
+  "target_id": "ELEM6_K10_06"
+ },
+ {
+  "expression": "log(-(exp(x), /(log(+(x, 1)), x)))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "depth": 6,
+  "var_target": 0.09047836399871359,
+  "target_scale": 2.9665532804037804,
+  "target_id": "ELEM6_K10_07"
+ },
+ {
+  "expression": "/(log(+(x, log(+(x, x)))), log(x))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "depth": 6,
+  "var_target": 0.008563263765177864,
+  "target_scale": 1.7535228331788018,
+  "target_id": "ELEM6_K10_08"
+ },
+ {
+  "expression": "log(log(-(log(+(x, exp(exp(1)))), 1)))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "depth": 8,
+  "var_target": 0.0001911135814667099,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K10_09"
+ },
+ {
+  "expression": "log(log(*(x, -(log(-(exp(1), 1)), x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 8,
+  "var_target": 0.005642347365270099,
+  "target_scale": 1.7254215226262586,
+  "target_id": "ELEM6_K11_00"
+ },
+ {
+  "expression": "exp(/(exp(x), +(1, exp(*(x, exp(1))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 7,
+  "var_target": 5.5539979512967215e-05,
+  "target_scale": 1.0320001257787537,
+  "target_id": "ELEM6_K11_01"
+ },
+ {
+  "expression": "+(1, /(exp(x), *(x, log(+(x, 1)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.177391615463622,
+  "target_scale": 5.8063962185401685,
+  "target_id": "ELEM6_K11_02"
+ },
+ {
+  "expression": "-(exp(1), exp(/(x, +(x, exp(exp(1))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 7,
+  "var_target": 0.00025641399962626895,
+  "target_scale": 1.5940514565193147,
+  "target_id": "ELEM6_K11_03"
+ },
+ {
+  "expression": "*(log(log(log(x))), /(-(log(x), 1), x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 5,
+  "var_target": 0.02779049765592486,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K11_04"
+ },
+ {
+  "expression": "log(/(x, log(log(log(-(log(x), exp(1)))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 8,
+  "var_target": 0.011021422413406002,
+  "target_scale": 1.4130197806821587,
+  "target_id": "ELEM6_K11_05"
+ },
+ {
+  "expression": "-(log(/(1, log(+(x, -(x, 1))))), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 7,
+  "var_target": 0.15409029915098754,
+  "target_scale": 3.4635153425310583,
+  "target_id": "ELEM6_K11_06"
+ },
+ {
+  "expression": "*(+(x, 1), log(*(x, +(x, exp(x)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 5.431533595578946,
+  "target_scale": 16.860049025898164,
+  "target_id": "ELEM6_K11_07"
+ },
+ {
+  "expression": "-(log(log(-(exp(*(x, exp(1))), 1))), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 8,
+  "var_target": 0.013358275396290777,
+  "target_scale": 1.0952701780104381,
+  "target_id": "ELEM6_K11_08"
+ },
+ {
+  "expression": "-(x, exp(-(1, /(log(x), +(1, 1)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "depth": 6,
+  "var_target": 0.14870890455343963,
+  "target_scale": 1.4181020662964638,
+  "target_id": "ELEM6_K11_09"
+ },
+ {
+  "expression": "+(x, *(exp(1), +(x, +(1, +(1, 1)))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "depth": 6,
+  "var_target": 1.1293204256015048,
+  "target_scale": 19.27287629918537,
+  "target_id": "ELEM6_K12_00"
+ },
+ {
+  "expression": "exp(exp(exp(*(x, +(x, -(log(x), exp(x)))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "depth": 8,
+  "var_target": 1.1259780784976237e-09,
+  "target_scale": 2.7184741795247906,
+  "target_id": "ELEM6_K12_01"
+ },
+ {
+  "expression": "log(/(1, log(-(exp(-(/(1, x), x)), x))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "depth": 8,
+  "var_target": 0.001879651334015911,
+  "target_scale": 1.8096519292039124,
+  "target_id": "ELEM6_K12_02"
+ },
+ {
+  "expression": "log(/(-(x, log(log(x))), -(/(1, x), x)))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "depth": 6,
+  "var_target": 0.010621304871192259,
+  "target_scale": 3.173505889526555,
+  "target_id": "ELEM6_K12_03"
+ },
+ {
+  "expression": "/(x, log(+(x, -(x, log(+(x, exp(1)))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "depth": 8,
+  "var_target": 0.002043695951678369,
+  "target_scale": 2.2265356696246696,
+  "target_id": "ELEM6_K12_04"
+ },
+ {
+  "expression": "log(*(x, /(+(x, x), log(-(1, log(x))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "depth": 7,
+  "var_target": 0.20377662769975177,
+  "target_scale": 3.6761180446801225,
+  "target_id": "ELEM6_K12_05"
+ },
+ {
+  "expression": "+(exp(x), exp(-(1, exp(/(x, +(x, x))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "depth": 7,
+  "var_target": 12.935998848502532,
+  "target_scale": 20.41036522747667,
+  "target_id": "ELEM6_K12_06"
+ },
+ {
+  "expression": "log(/(+(1, 1), +(exp(x), /(1, log(x)))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "depth": 6,
+  "var_target": 0.06227685882058915,
+  "target_scale": 2.3418364751169074,
+  "target_id": "ELEM6_K12_07"
+ },
+ {
+  "expression": "-(log(+(x, exp(1))), *(x, exp(+(1, 1))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "depth": 5,
+  "var_target": 4.231018574569653,
+  "target_scale": 20.35207390802139,
+  "target_id": "ELEM6_K12_08"
+ },
+ {
+  "expression": "-(exp(exp(/(x, -(/(1, x), exp(x))))), 1)",
+  "K_construction": 12,
+  "K_proven": 12,
+  "depth": 7,
+  "var_target": 0.005058238881305636,
+  "target_scale": 1.3589047746003122,
+  "target_id": "ELEM6_K12_09"
+ },
+ {
+  "expression": "+(exp(exp(-(/(log(x), x), x))), +(exp(x), exp(1)))",
+  "K_construction": 14,
+  "K_proven": null,
+  "depth": 7,
+  "var_target": 12.667703442684447,
+  "target_scale": 23.681155794713835,
+  "target_id": "ELEM6_K14_00"
+ },
+ {
+  "expression": "/(exp(/(1, -(exp(*(x, x)), +(x, 1)))), exp(1))",
+  "K_construction": 14,
+  "K_proven": null,
+  "depth": 7,
+  "var_target": 3.2788902759003537e-06,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K14_01"
+ },
+ {
+  "expression": "+(*(x, log(x)), log(*(+(x, 1), log(log(log(x))))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "depth": 7,
+  "var_target": 0.6458348673447154,
+  "target_scale": 6.683571505425281,
+  "target_id": "ELEM6_K14_02"
+ },
+ {
+  "expression": "*(exp(/(log(-(exp(1), 1)), log(log(*(x, x))))), x)",
+  "K_construction": 14,
+  "K_proven": null,
+  "depth": 7,
+  "var_target": 1.0313084389553886,
+  "target_scale": 10.176825195062674,
+  "target_id": "ELEM6_K14_03"
+ },
+ {
+  "expression": "*(*(x, log(+(x, -(x, exp(x))))), exp(+(x, 1)))",
+  "K_construction": 14,
+  "K_proven": null,
+  "depth": 7,
+  "var_target": 23598.761277208254,
+  "target_scale": 662.5348022810015,
+  "target_id": "ELEM6_K14_04"
+ },
+ {
+  "expression": "-(*(x, +(x, log(log(-(1, *(x, log(x))))))), x)",
+  "K_construction": 14,
+  "K_proven": null,
+  "depth": 9,
+  "var_target": 2.2240555086846,
+  "target_scale": 10.255973196884733,
+  "target_id": "ELEM6_K14_05"
+ },
+ {
+  "expression": "/(+(x, x), log(log(-(log(-(exp(1), log(x))), x))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "depth": 8,
+  "var_target": 0.14349776605002673,
+  "target_scale": 3.418302457053666,
+  "target_id": "ELEM6_K14_06"
+ },
+ {
+  "expression": "-(-(*(x, x), /(+(x, 1), *(x, exp(1)))), 1)",
+  "K_construction": 14,
+  "K_proven": null,
+  "depth": 6,
+  "var_target": 2.096698239694925,
+  "target_scale": 7.449780119500645,
+  "target_id": "ELEM6_K14_07"
+ },
+ {
+  "expression": "-(*(x, x), exp(+(/(x, exp(x)), /(x, log(x)))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "depth": 6,
+  "var_target": 8.38958095920703,
+  "target_scale": 19.261208267264823,
+  "target_id": "ELEM6_K14_08"
+ },
+ {
+  "expression": "*(/(exp(x), log(+(1, 1))), log(log(/(x, log(x)))))",
+  "K_construction": 14,
+  "K_proven": null,
+  "depth": 6,
+  "var_target": 0.030402537134760405,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K14_09"
+ },
+ {
+  "expression": "/(/(+(1, exp(exp(1))), exp(+(x, 1))), +(x, *(x, x)))",
+  "K_construction": 16,
+  "K_proven": null,
+  "depth": 6,
+  "var_target": 0.0009115380026343524,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K16_00"
+ },
+ {
+  "expression": "-(/(exp(-(x, *(x, x))), -(exp(x), x)), exp(/(1, x)))",
+  "K_construction": 16,
+  "K_proven": null,
+  "depth": 6,
+  "var_target": 0.00426151494716614,
+  "target_scale": 1.620574156495452,
+  "target_id": "ELEM6_K16_01"
+ },
+ {
+  "expression": "*(exp(exp(-(x, exp(x)))), log(-(/(+(1, 1), x), exp(x))))",
+  "K_construction": 16,
+  "K_proven": null,
+  "depth": 6,
+  "var_target": 0.09897751841464553,
+  "target_scale": 4.31356913787309,
+  "target_id": "ELEM6_K16_02"
+ },
+ {
+  "expression": "+(log(log(log(/(1, -(exp(x), x))))), -(log(log(x)), exp(x)))",
+  "K_construction": 16,
+  "K_proven": null,
+  "depth": 8,
+  "var_target": 11.972244640228238,
+  "target_scale": 18.64200507779191,
+  "target_id": "ELEM6_K16_03"
+ },
+ {
+  "expression": "/(*(x, exp(exp(/(log(x), x)))), +(x, log(-(log(x), 1))))",
+  "K_construction": 16,
+  "K_proven": null,
+  "depth": 7,
+  "var_target": 2892.7695401441515,
+  "target_scale": 363.16165934848027,
+  "target_id": "ELEM6_K16_04"
+ },
+ {
+  "expression": "*(log(-(log(-(/(1, exp(1)), x)), 1)), exp(+(x, exp(1))))",
+  "K_construction": 16,
+  "K_proven": null,
+  "depth": 8,
+  "var_target": 10477.276527873451,
+  "target_scale": 588.5893666725309,
+  "target_id": "ELEM6_K16_05"
+ },
+ {
+  "expression": "*(exp(/(-(1, log(x)), x)), exp(exp(*(x, log(-(1, x))))))",
+  "K_construction": 16,
+  "K_proven": null,
+  "depth": 7,
+  "var_target": 3.5760603189359,
+  "target_scale": 3.7212403933813296,
+  "target_id": "ELEM6_K16_06"
+ },
+ {
+  "expression": "/(-(/(+(1, 1), x), log(-(exp(1), x))), +(1, log(x)))",
+  "K_construction": 16,
+  "K_proven": null,
+  "depth": 6,
+  "var_target": 0.6907997000106945,
+  "target_scale": 3.4458327104910387,
+  "target_id": "ELEM6_K16_07"
+ },
+ {
+  "expression": "/(*(x, -(log(x), +(x, /(exp(1), log(x))))), exp(exp(1)))",
+  "K_construction": 16,
+  "K_proven": null,
+  "depth": 7,
+  "var_target": 0.0027181553320500614,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K16_08"
+ },
+ {
+  "expression": "+(log(/(+(1, 1), log(*(x, *(x, x))))), /(exp(1), x))",
+  "K_construction": 16,
+  "K_proven": null,
+  "depth": 7,
+  "var_target": 0.06629914105958717,
+  "target_scale": 1.3063942757138673,
+  "target_id": "ELEM6_K16_09"
+ },
+ {
+  "expression": "/(log(log(log(log(+(1, *(exp(x), log(x))))))), -(exp(1), +(1, exp(x))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "depth": 9,
+  "var_target": 0.04159468663243571,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K19_00"
+ },
+ {
+  "expression": "*(-(x, *(x, exp(-(x, exp(+(1, 1)))))), -(/(log(log(x)), x), 1))",
+  "K_construction": 19,
+  "K_proven": null,
+  "depth": 8,
+  "var_target": 0.0226879038180707,
+  "target_scale": 2.8634348334842614,
+  "target_id": "ELEM6_K19_01"
+ },
+ {
+  "expression": "/(-(x, log(+(exp(1), /(1, x)))), +(1, /(x, exp(exp(-(x, 1))))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "depth": 7,
+  "var_target": 0.10927632566314426,
+  "target_scale": 1.8703493243952927,
+  "target_id": "ELEM6_K19_02"
+ },
+ {
+  "expression": "/(+(exp(1), /(x, +(1, 1))), log(+(1, *(log(x), log(+(x, 1))))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "depth": 7,
+  "var_target": 0.30667490292013466,
+  "target_scale": 6.525783421534384,
+  "target_id": "ELEM6_K19_03"
+ },
+ {
+  "expression": "+(/(+(x, /(1, x)), log(x)), log(+(exp(1), -(exp(exp(1)), exp(x)))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "depth": 7,
+  "var_target": 2.3728219346918995,
+  "target_scale": 5.934641755756818,
+  "target_id": "ELEM6_K19_04"
+ },
+ {
+  "expression": "-(log(log(*(x, log(log(x))))), +(1, log(log(-(1, /(x, exp(exp(x))))))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "depth": 9,
+  "var_target": 11.336379989877821,
+  "target_scale": 18.05564198090737,
+  "target_id": "ELEM6_K19_05"
+ },
+ {
+  "expression": "*(+(x, log(/(x, +(x, exp(exp(1)))))), /(-(x, log(log(x))), exp(x)))",
+  "K_construction": 19,
+  "K_proven": null,
+  "depth": 8,
+  "var_target": 0.003841378761288189,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K19_06"
+ },
+ {
+  "expression": "/(+(x, +(1, log(+(x, 1)))), -(log(+(exp(1), log(x))), +(x, x)))",
+  "K_construction": 19,
+  "K_proven": null,
+  "depth": 6,
+  "var_target": 0.008242039751101765,
+  "target_scale": 1.4731199988621602,
+  "target_id": "ELEM6_K19_07"
+ },
+ {
+  "expression": "*(/(+(1, log(x)), exp(1)), -(/(1, +(x, 1)), /(1, *(x, x))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "depth": 5,
+  "var_target": 0.00024158185772139208,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K19_08"
+ },
+ {
+  "expression": "-(*(x, exp(/(x, exp(/(x, exp(exp(1))))))), +(1, log(-(1, exp(1)))))",
+  "K_construction": 19,
+  "K_proven": null,
+  "depth": 9,
+  "var_target": 45.24266752417243,
+  "target_scale": 33.41945593197374,
+  "target_id": "ELEM6_K19_09"
+ },
+ {
+  "expression": "/(+(exp(x), +(exp(1), log(+(1, log(x))))), log(log(-(log(log(-(*(x, x), 1))), x))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "depth": 9,
+  "var_target": 4.425692361031598,
+  "target_scale": 13.217304782603666,
+  "target_id": "ELEM6_K23_00"
+ },
+ {
+  "expression": "/(-(1, exp(/(log(log(log(x))), exp(x)))), log(-(1, exp(/(-(log(+(1, 1)), 1), x)))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "depth": 9,
+  "var_target": 0.004012737390962235,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K23_01"
+ },
+ {
+  "expression": "/(-(*(x, log(log(+(x, 1)))), +(x, exp(x))), /(x, *(+(x, 1), log(+(x, x)))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "depth": 7,
+  "var_target": 90.74200316987053,
+  "target_scale": 52.28142871624567,
+  "target_id": "ELEM6_K23_02"
+ },
+ {
+  "expression": "+(+(x, /(1, +(exp(1), log(+(1, exp(1)))))), /(log(/(x, +(x, exp(1)))), exp(1)))",
+  "K_construction": 23,
+  "K_proven": null,
+  "depth": 8,
+  "var_target": 0.09487271873628317,
+  "target_scale": 3.000261480666879,
+  "target_id": "ELEM6_K23_03"
+ },
+ {
+  "expression": "+(-(exp(/(exp(x), *(x, x))), exp(1)), -(exp(/(1, log(log(+(x, exp(exp(1))))))), x))",
+  "K_construction": 23,
+  "K_proven": null,
+  "depth": 10,
+  "var_target": 0.32778609691741534,
+  "target_scale": 6.098795410793904,
+  "target_id": "ELEM6_K23_04"
+ },
+ {
+  "expression": "/(exp(/(-(exp(x), log(log(x))), exp(1))), /(log(log(log(x))), log(log(log(+(1, exp(x)))))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "depth": 8,
+  "var_target": 174.46341580308655,
+  "target_scale": 64.22450014044968,
+  "target_id": "ELEM6_K23_05"
+ },
+ {
+  "expression": "/(+(x, *(exp(+(1, 1)), -(exp(1), 1))), /(log(+(1, exp(exp(1)))), -(exp(x), 1)))",
+  "K_construction": 23,
+  "K_proven": null,
+  "depth": 7,
+  "var_target": 437.65495829429017,
+  "target_scale": 106.4928344124618,
+  "target_id": "ELEM6_K23_06"
+ },
+ {
+  "expression": "+(log(/(1, +(x, /(1, log(-(log(1), 1)))))), exp(/(log(-(log(log(x)), 1)), exp(1))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "depth": 9,
+  "var_target": 0.020341968120972345,
+  "target_scale": 1.2188621045655337,
+  "target_id": "ELEM6_K23_07"
+ },
+ {
+  "expression": "-(+(1, exp(-(1, +(x, /(1, log(x)))))), /(-(/(x, -(exp(1), 1)), 1), log(x)))",
+  "K_construction": 23,
+  "K_proven": null,
+  "depth": 8,
+  "var_target": 0.017944042669547727,
+  "target_scale": 1.0,
+  "target_id": "ELEM6_K23_08"
+ },
+ {
+  "expression": "+(+(1, /(-(log(-(exp(x), 1)), 1), x)), -(log(x), exp(/(1, -(log(log(x)), 1)))))",
+  "K_construction": 23,
+  "K_proven": null,
+  "depth": 8,
+  "var_target": 0.04851582912094641,
+  "target_scale": 2.410794907009007,
+  "target_id": "ELEM6_K23_09"
+ }
+]

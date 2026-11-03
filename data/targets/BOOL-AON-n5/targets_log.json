@@ -1,0 +1,96 @@
+{
+ "grammar": "BOOL-AON-n5",
+ "seed": 20261013,
+ "ceiling": 24,
+ "levels": {
+  "3": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "6": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "9": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "12": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "15": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "18": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "21": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "24": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "26": {
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 685,
+    "constant": 14,
+    "depth": 1
+   },
+   "proven": false
+  },
+  "27": {
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 401,
+    "constant": 8
+   },
+   "proven": false
+  },
+  "30": {
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 301,
+    "constant": 6
+   },
+   "proven": false
+  },
+  "31": {
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 79,
+    "constant": 1,
+    "depth": 1
+   },
+   "proven": false
+  },
+  "34": {
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 117,
+    "constant": 1
+   },
+   "proven": false
+  },
+  "35": {
+   "found": 10,
+   "rejected": {
+    "smaller_in_enumeration": 40
+   },
+   "proven": false
+  }
+ }
+}

@@ -1,0 +1,124 @@
+{
+ "phase": "s2_targets_pilot_b",
+ "description": "Study 2 pilot targets, batch B (after s2_enum_extra and s2_enum_ceiling). --workers 2.",
+ "created": "2026-10-20 03:35:06",
+ "git": "a03eff2",
+ "n_tasks": 5,
+ "tasks": [
+  {
+   "key": "F-EML-R",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "F-EML-R",
+    "--name",
+    "pilot",
+    "--n",
+    "10",
+    "--seed",
+    "20261020"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "F-EML-R",
+    "out": "data/targets_s2/F-EML-R"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-TRIG",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "R-TRIG",
+    "--name",
+    "pilot",
+    "--n",
+    "10",
+    "--seed",
+    "20261020"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "R-TRIG",
+    "out": "data/targets_s2/R-TRIG"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-IMP0R-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-IMP0R-n5",
+    "--name",
+    "pilot",
+    "--n",
+    "10",
+    "--seed",
+    "20261020"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "BOOL-IMP0R-n5",
+    "out": "data/targets_s2/BOOL-IMP0R-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-NAND-n6",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-NAND-n6",
+    "--name",
+    "pilot",
+    "--n",
+    "10",
+    "--seed",
+    "20261020"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "BOOL-NAND-n6",
+    "out": "data/targets_s2/BOOL-NAND-n6"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AON-n6",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-AON-n6",
+    "--name",
+    "pilot",
+    "--n",
+    "10",
+    "--seed",
+    "20261020"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "BOOL-AON-n6",
+    "out": "data/targets_s2/BOOL-AON-n6"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

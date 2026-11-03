@@ -1,0 +1,248 @@
+{
+ "osf_id": "a3spg",
+ "seed": 8112082950146433225,
+ "rule": "first 4 per domain, in order, with proven ceiling >= 10",
+ "code_sha256": "acfddb05afab454d6cd53684f5c0480bab90edd4dd0912ef45be727b3d407fc6",
+ "real": {
+  "seed": 8112082950146433225,
+  "candidates": [
+   {
+    "domain": "real",
+    "k": 3,
+    "ops": [
+     "*",
+     "eml",
+     "sin"
+    ],
+    "constants": [],
+    "name": "RS-mul_eml_sin"
+   },
+   {
+    "domain": "real",
+    "k": 4,
+    "ops": [
+     "eml",
+     "sin",
+     "sqrt",
+     "square"
+    ],
+    "constants": [],
+    "name": "RS-eml_sin_sqrt_square"
+   },
+   {
+    "domain": "real",
+    "k": 5,
+    "ops": [
+     "*",
+     "/",
+     "eml",
+     "sin",
+     "square"
+    ],
+    "constants": [],
+    "name": "RS-mul_div_eml_sin_square"
+   },
+   {
+    "domain": "real",
+    "k": 2,
+    "ops": [
+     "+",
+     "sqrt"
+    ],
+    "constants": [],
+    "name": "RS-add_sqrt"
+   },
+   {
+    "domain": "real",
+    "k": 2,
+    "ops": [
+     "*",
+     "square"
+    ],
+    "constants": [],
+    "name": "RS-mul_square"
+   },
+   {
+    "domain": "real",
+    "k": 5,
+    "ops": [
+     "*",
+     "/",
+     "eml",
+     "exp",
+     "sqrt"
+    ],
+    "constants": [],
+    "name": "RS-mul_div_eml_exp_sqrt"
+   },
+   {
+    "domain": "real",
+    "k": 3,
+    "ops": [
+     "-",
+     "exp",
+     "sqrt"
+    ],
+    "constants": [],
+    "name": "RS-sub_exp_sqrt"
+   },
+   {
+    "domain": "real",
+    "k": 2,
+    "ops": [
+     "eml",
+     "sqrt"
+    ],
+    "constants": [],
+    "name": "RS-eml_sqrt"
+   },
+   {
+    "domain": "real",
+    "k": 4,
+    "ops": [
+     "+",
+     "cos",
+     "log",
+     "sqrt"
+    ],
+    "constants": [],
+    "name": "RS-add_cos_log_sqrt"
+   },
+   {
+    "domain": "real",
+    "k": 4,
+    "ops": [
+     "-",
+     "cos",
+     "eml",
+     "square"
+    ],
+    "constants": [],
+    "name": "RS-sub_cos_eml_square"
+   }
+  ]
+ },
+ "bool": {
+  "seed": 8112082950146433226,
+  "candidates": [
+   {
+    "domain": "bool",
+    "k": 3,
+    "ops": [
+     "imp",
+     "or",
+     "rnimp"
+    ],
+    "constants": [],
+    "name": "BOOL-RS-imp_or_rnimp-n5"
+   },
+   {
+    "domain": "bool",
+    "k": 4,
+    "ops": [
+     "imp",
+     "nimp",
+     "rimp",
+     "rnimp"
+    ],
+    "constants": [],
+    "name": "BOOL-RS-imp_nimp_rimp_rnimp-n5"
+   },
+   {
+    "domain": "bool",
+    "k": 3,
+    "ops": [
+     "nand",
+     "rimp"
+    ],
+    "constants": [
+     1
+    ],
+    "name": "BOOL-RS-nand_rimp_c1-n5"
+   },
+   {
+    "domain": "bool",
+    "k": 2,
+    "ops": [
+     "rimp"
+    ],
+    "constants": [
+     0
+    ],
+    "name": "BOOL-RS-rimp_c0-n5"
+   },
+   {
+    "domain": "bool",
+    "k": 3,
+    "ops": [
+     "not",
+     "or"
+    ],
+    "constants": [
+     1
+    ],
+    "name": "BOOL-RS-not_or_c1-n5"
+   },
+   {
+    "domain": "bool",
+    "k": 4,
+    "ops": [
+     "and",
+     "nimp",
+     "or",
+     "xnor"
+    ],
+    "constants": [],
+    "name": "BOOL-RS-and_nimp_or_xnor-n5"
+   },
+   {
+    "domain": "bool",
+    "k": 4,
+    "ops": [
+     "or",
+     "rimp"
+    ],
+    "constants": [
+     0,
+     1
+    ],
+    "name": "BOOL-RS-or_rimp_c0_c1-n5"
+   },
+   {
+    "domain": "bool",
+    "k": 3,
+    "ops": [
+     "nand",
+     "rimp",
+     "xnor"
+    ],
+    "constants": [],
+    "name": "BOOL-RS-nand_rimp_xnor-n5"
+   },
+   {
+    "domain": "bool",
+    "k": 4,
+    "ops": [
+     "nor",
+     "or",
+     "rimp",
+     "rnimp"
+    ],
+    "constants": [],
+    "name": "BOOL-RS-nor_or_rimp_rnimp-n5"
+   },
+   {
+    "domain": "bool",
+    "k": 3,
+    "ops": [
+     "imp",
+     "nimp"
+    ],
+    "constants": [
+     1
+    ],
+    "name": "BOOL-RS-imp_nimp_c1-n5"
+   }
+  ]
+ }
+}

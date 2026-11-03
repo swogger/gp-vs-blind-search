@@ -1,0 +1,82 @@
+[
+ {
+  "target_id": "F-NEML_calc_exp(x)",
+  "function": "exp(x)",
+  "expression": "neml(x, neml(neml(x, x), -inf))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "depth": 4,
+  "var_target": 12.935998848502534,
+  "target_scale": 19.887651468491836
+ },
+ {
+  "target_id": "F-NEML_calc_ln(x)",
+  "function": "ln(x)",
+  "expression": "neml(x, -inf)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "depth": 2,
+  "var_target": 0.01331409493534148,
+  "target_scale": 1.0953065005336102
+ },
+ {
+  "target_id": "F-NEML_calc_-x",
+  "function": "-x",
+  "expression": "neml(neml(x, neml(neml(x, neml(x, neml(x, -inf))), -inf)), neml(neml(x, -inf), -inf))",
+  "K_construction": 17,
+  "K_proven": 17,
+  "depth": 7,
+  "var_target": 0.08168316831683164,
+  "target_scale": 2.99009900990099
+ },
+ {
+  "target_id": "F-NEML_calc_x+1",
+  "function": "x+1",
+  "expression": "neml(x, neml(neml(neml(x, neml(neml(x, neml(x, neml(x, -inf))), -inf)), neml(x, neml(neml(x, -inf), -inf))), -inf))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 9,
+  "var_target": 0.08168316831683164,
+  "target_scale": 3.99009900990099
+ },
+ {
+  "target_id": "F-NEML_calc_x-1",
+  "function": "x-1",
+  "expression": "neml(neml(x, neml(neml(x, x), -inf)), neml(x, neml(neml(x, -inf), -inf)))",
+  "K_construction": 15,
+  "K_proven": 15,
+  "depth": 5,
+  "var_target": 0.08168316831683164,
+  "target_scale": 1.99009900990099
+ },
+ {
+  "target_id": "F-NEML_calc_2x",
+  "function": "2x",
+  "expression": "neml(x, neml(neml(neml(x, neml(neml(x, neml(x, neml(x, -inf))), -inf)), neml(x, -inf)), -inf))",
+  "K_construction": 19,
+  "K_proven": 19,
+  "depth": 9,
+  "var_target": 0.3267326732673266,
+  "target_scale": 5.980198019801979
+ },
+ {
+  "target_id": "F-NEML_calc_exp(-x)",
+  "function": "exp(-x)",
+  "expression": "neml(x, neml(neml(x, neml(neml(x, neml(neml(x, neml(x, neml(x, -inf))), -inf)), neml(neml(x, -inf), -inf))), -inf))",
+  "K_construction": 23,
+  "K_proven": 23,
+  "depth": 10,
+  "var_target": 0.0005872934391296001,
+  "target_scale": 1.0
+ },
+ {
+  "target_id": "F-NEML_calc_ln(ln(x))",
+  "function": "ln(ln(x))",
+  "expression": "neml(neml(x, -inf), -inf)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "depth": 3,
+  "var_target": 0.016768306075898066,
+  "target_scale": 1.0
+ }
+]

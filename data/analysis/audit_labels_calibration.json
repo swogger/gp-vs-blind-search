@@ -1,0 +1,40 @@
+{
+ "s2_cal_a0": {
+  "exact_checked": 3873,
+  "exact_near_miss": [],
+  "exact_disputed": [],
+  "failures_checked": 300,
+  "failures_near": [],
+  "failures_disputed": []
+ },
+ "s2_cal_a16": {
+  "exact_checked": 5651,
+  "exact_near_miss": [
+   "cal_a16|F-LDE0|F-LDE0_K13_02|A|base|3200|902357597",
+   "cal_a16|R-TRIG|R-TRIG_K06_27|A|base|3200|768497062",
+   "cal_a16|F-LDE0|F-LDE0_K13_18|A|base|3200|948678857",
+   "cal_a16|F-LDE0|F-LDE0_K09_04|A|base|3200|948678857",
+   "cal_a16|F-LDE0|F-LDE0_K11_19|A|base|3200|768497062"
+  ],
+  "exact_disputed": [],
+  "failures_checked": 300,
+  "failures_near": [],
+  "failures_disputed": []
+ },
+ "s2_cal_alloc": {
+  "exact_checked": 6656,
+  "exact_near_miss": [
+   "cal_alloc|F-LDE0|F-LDE0_K09_04|A|base|200|729190210",
+   "cal_alloc|F-LDE0|F-LDE0_K11_07|A|base|200|651146227",
+   "cal_alloc|R-ELEM4|R-ELEM4_K06_02|A|base|200|2040219483",
+   "cal_alloc|F-LDE0|F-LDE0_K11_19|A|base|200|1558989667",
+   "cal_alloc|F-LDE0|F-LDE0_K09_04|A|base|200|1558989667",
+   "cal_alloc|F-LDE0|F-LDE0_K11_07|A|base|200|710608083",
+   "cal_alloc|F-LDE0|F-LDE0_K09_10|A|base|200|2064559975"
+  ],
+  "exact_disputed": [],
+  "failures_checked": 300,
+  "failures_near": [],
+  "failures_disputed": []
+ }
+}

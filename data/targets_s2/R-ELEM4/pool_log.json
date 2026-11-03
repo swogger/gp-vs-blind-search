@@ -1,0 +1,13 @@
+{
+ "domain": "real",
+ "seed": 20261023,
+ "n": 40,
+ "sets": [
+  "F-EML",
+  "R-ARITH4",
+  "R-ELEM4",
+  "R-HYB",
+  "F-LDE0",
+  "R-TRIG"
+ ]
+}

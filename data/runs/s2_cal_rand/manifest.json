@@ -1,0 +1,1209 @@
+{
+ "phase": "s2_cal_rand",
+ "description": "CONFIRMATORY (locked until Stage 1): random sampling, 4 x 250,000 trees per full set, hits on the calibration targets (H5c, H2r).",
+ "created": "2026-10-26 13:15:08",
+ "git": "e801e89",
+ "n_tasks": 48,
+ "tasks": [
+  {
+   "key": "F-EML|0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "F-EML",
+    "--targets",
+    "data/targets_s2/F-EML/calibration.json",
+    "--targets_sha256",
+    "53f414454ba83bf363797358fe3ac017fbd21cfa5c66e1a2a99d588efd35bb70",
+    "--n",
+    "250000",
+    "--seed",
+    "20261030"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "F-EML",
+    "part": 0
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-EML|1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "F-EML",
+    "--targets",
+    "data/targets_s2/F-EML/calibration.json",
+    "--targets_sha256",
+    "53f414454ba83bf363797358fe3ac017fbd21cfa5c66e1a2a99d588efd35bb70",
+    "--n",
+    "250000",
+    "--seed",
+    "20261031"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "F-EML",
+    "part": 1
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-EML|2",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "F-EML",
+    "--targets",
+    "data/targets_s2/F-EML/calibration.json",
+    "--targets_sha256",
+    "53f414454ba83bf363797358fe3ac017fbd21cfa5c66e1a2a99d588efd35bb70",
+    "--n",
+    "250000",
+    "--seed",
+    "20261032"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "F-EML",
+    "part": 2
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-EML|3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "F-EML",
+    "--targets",
+    "data/targets_s2/F-EML/calibration.json",
+    "--targets_sha256",
+    "53f414454ba83bf363797358fe3ac017fbd21cfa5c66e1a2a99d588efd35bb70",
+    "--n",
+    "250000",
+    "--seed",
+    "20261033"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "F-EML",
+    "part": 3
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ARITH4|0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "R-ARITH4",
+    "--targets",
+    "data/targets_s2/R-ARITH4/calibration.json",
+    "--targets_sha256",
+    "01f860534f226af012103c27b86a9023f2ef683fd54ea1dd8b785245eadd36da",
+    "--n",
+    "250000",
+    "--seed",
+    "20261040"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "R-ARITH4",
+    "part": 0
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ARITH4|1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "R-ARITH4",
+    "--targets",
+    "data/targets_s2/R-ARITH4/calibration.json",
+    "--targets_sha256",
+    "01f860534f226af012103c27b86a9023f2ef683fd54ea1dd8b785245eadd36da",
+    "--n",
+    "250000",
+    "--seed",
+    "20261041"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "R-ARITH4",
+    "part": 1
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ARITH4|2",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "R-ARITH4",
+    "--targets",
+    "data/targets_s2/R-ARITH4/calibration.json",
+    "--targets_sha256",
+    "01f860534f226af012103c27b86a9023f2ef683fd54ea1dd8b785245eadd36da",
+    "--n",
+    "250000",
+    "--seed",
+    "20261042"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "R-ARITH4",
+    "part": 2
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ARITH4|3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "R-ARITH4",
+    "--targets",
+    "data/targets_s2/R-ARITH4/calibration.json",
+    "--targets_sha256",
+    "01f860534f226af012103c27b86a9023f2ef683fd54ea1dd8b785245eadd36da",
+    "--n",
+    "250000",
+    "--seed",
+    "20261043"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "R-ARITH4",
+    "part": 3
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ELEM4|0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "R-ELEM4",
+    "--targets",
+    "data/targets_s2/R-ELEM4/calibration.json",
+    "--targets_sha256",
+    "c98d372512767b31d6508b233452e0ffdc5031eac6fb7286769335725984464f",
+    "--n",
+    "250000",
+    "--seed",
+    "20261050"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "R-ELEM4",
+    "part": 0
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ELEM4|1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "R-ELEM4",
+    "--targets",
+    "data/targets_s2/R-ELEM4/calibration.json",
+    "--targets_sha256",
+    "c98d372512767b31d6508b233452e0ffdc5031eac6fb7286769335725984464f",
+    "--n",
+    "250000",
+    "--seed",
+    "20261051"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "R-ELEM4",
+    "part": 1
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ELEM4|2",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "R-ELEM4",
+    "--targets",
+    "data/targets_s2/R-ELEM4/calibration.json",
+    "--targets_sha256",
+    "c98d372512767b31d6508b233452e0ffdc5031eac6fb7286769335725984464f",
+    "--n",
+    "250000",
+    "--seed",
+    "20261052"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "R-ELEM4",
+    "part": 2
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ELEM4|3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "R-ELEM4",
+    "--targets",
+    "data/targets_s2/R-ELEM4/calibration.json",
+    "--targets_sha256",
+    "c98d372512767b31d6508b233452e0ffdc5031eac6fb7286769335725984464f",
+    "--n",
+    "250000",
+    "--seed",
+    "20261053"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "R-ELEM4",
+    "part": 3
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-HYB|0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "R-HYB",
+    "--targets",
+    "data/targets_s2/R-HYB/calibration.json",
+    "--targets_sha256",
+    "64522e9adbf42f9a92eec2a4bb907f5fdd58e71fc310ce0211431d8a9e736c0c",
+    "--n",
+    "250000",
+    "--seed",
+    "20261060"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "R-HYB",
+    "part": 0
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-HYB|1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "R-HYB",
+    "--targets",
+    "data/targets_s2/R-HYB/calibration.json",
+    "--targets_sha256",
+    "64522e9adbf42f9a92eec2a4bb907f5fdd58e71fc310ce0211431d8a9e736c0c",
+    "--n",
+    "250000",
+    "--seed",
+    "20261061"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "R-HYB",
+    "part": 1
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-HYB|2",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "R-HYB",
+    "--targets",
+    "data/targets_s2/R-HYB/calibration.json",
+    "--targets_sha256",
+    "64522e9adbf42f9a92eec2a4bb907f5fdd58e71fc310ce0211431d8a9e736c0c",
+    "--n",
+    "250000",
+    "--seed",
+    "20261062"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "R-HYB",
+    "part": 2
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-HYB|3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "R-HYB",
+    "--targets",
+    "data/targets_s2/R-HYB/calibration.json",
+    "--targets_sha256",
+    "64522e9adbf42f9a92eec2a4bb907f5fdd58e71fc310ce0211431d8a9e736c0c",
+    "--n",
+    "250000",
+    "--seed",
+    "20261063"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "R-HYB",
+    "part": 3
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-LDE0|0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "F-LDE0",
+    "--targets",
+    "data/targets_s2/F-LDE0/calibration.json",
+    "--targets_sha256",
+    "8ecc3c5fb7ce14b8804ec6883e169688f563b34e33162714af760c657e31bbf7",
+    "--n",
+    "250000",
+    "--seed",
+    "20261070"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "F-LDE0",
+    "part": 0
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-LDE0|1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "F-LDE0",
+    "--targets",
+    "data/targets_s2/F-LDE0/calibration.json",
+    "--targets_sha256",
+    "8ecc3c5fb7ce14b8804ec6883e169688f563b34e33162714af760c657e31bbf7",
+    "--n",
+    "250000",
+    "--seed",
+    "20261071"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "F-LDE0",
+    "part": 1
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-LDE0|2",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "F-LDE0",
+    "--targets",
+    "data/targets_s2/F-LDE0/calibration.json",
+    "--targets_sha256",
+    "8ecc3c5fb7ce14b8804ec6883e169688f563b34e33162714af760c657e31bbf7",
+    "--n",
+    "250000",
+    "--seed",
+    "20261072"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "F-LDE0",
+    "part": 2
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-LDE0|3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "F-LDE0",
+    "--targets",
+    "data/targets_s2/F-LDE0/calibration.json",
+    "--targets_sha256",
+    "8ecc3c5fb7ce14b8804ec6883e169688f563b34e33162714af760c657e31bbf7",
+    "--n",
+    "250000",
+    "--seed",
+    "20261073"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "F-LDE0",
+    "part": 3
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-NAND-n5|0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-NAND-n5",
+    "--targets",
+    "data/targets_s2/BOOL-NAND-n5/calibration.json",
+    "--targets_sha256",
+    "ed200e88dbc87ae348caf9f9b00f8876ac88a3e7e3dba0460988d7232a2c18d8",
+    "--n",
+    "250000",
+    "--seed",
+    "20261080"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-NAND-n5",
+    "part": 0
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-NAND-n5|1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-NAND-n5",
+    "--targets",
+    "data/targets_s2/BOOL-NAND-n5/calibration.json",
+    "--targets_sha256",
+    "ed200e88dbc87ae348caf9f9b00f8876ac88a3e7e3dba0460988d7232a2c18d8",
+    "--n",
+    "250000",
+    "--seed",
+    "20261081"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-NAND-n5",
+    "part": 1
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-NAND-n5|2",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-NAND-n5",
+    "--targets",
+    "data/targets_s2/BOOL-NAND-n5/calibration.json",
+    "--targets_sha256",
+    "ed200e88dbc87ae348caf9f9b00f8876ac88a3e7e3dba0460988d7232a2c18d8",
+    "--n",
+    "250000",
+    "--seed",
+    "20261082"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-NAND-n5",
+    "part": 2
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-NAND-n5|3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-NAND-n5",
+    "--targets",
+    "data/targets_s2/BOOL-NAND-n5/calibration.json",
+    "--targets_sha256",
+    "ed200e88dbc87ae348caf9f9b00f8876ac88a3e7e3dba0460988d7232a2c18d8",
+    "--n",
+    "250000",
+    "--seed",
+    "20261083"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-NAND-n5",
+    "part": 3
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-NOR-n5|0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-NOR-n5",
+    "--targets",
+    "data/targets_s2/BOOL-NOR-n5/calibration.json",
+    "--targets_sha256",
+    "3761c0e5e58dc23aed5f900db0c067ae1c1853d0f74d2ee792f6bab702c68a5e",
+    "--n",
+    "250000",
+    "--seed",
+    "20261090"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-NOR-n5",
+    "part": 0
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-NOR-n5|1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-NOR-n5",
+    "--targets",
+    "data/targets_s2/BOOL-NOR-n5/calibration.json",
+    "--targets_sha256",
+    "3761c0e5e58dc23aed5f900db0c067ae1c1853d0f74d2ee792f6bab702c68a5e",
+    "--n",
+    "250000",
+    "--seed",
+    "20261091"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-NOR-n5",
+    "part": 1
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-NOR-n5|2",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-NOR-n5",
+    "--targets",
+    "data/targets_s2/BOOL-NOR-n5/calibration.json",
+    "--targets_sha256",
+    "3761c0e5e58dc23aed5f900db0c067ae1c1853d0f74d2ee792f6bab702c68a5e",
+    "--n",
+    "250000",
+    "--seed",
+    "20261092"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-NOR-n5",
+    "part": 2
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-NOR-n5|3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-NOR-n5",
+    "--targets",
+    "data/targets_s2/BOOL-NOR-n5/calibration.json",
+    "--targets_sha256",
+    "3761c0e5e58dc23aed5f900db0c067ae1c1853d0f74d2ee792f6bab702c68a5e",
+    "--n",
+    "250000",
+    "--seed",
+    "20261093"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-NOR-n5",
+    "part": 3
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-IMP0-n5|0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-IMP0-n5",
+    "--targets",
+    "data/targets_s2/BOOL-IMP0-n5/calibration.json",
+    "--targets_sha256",
+    "cff195209cf7dd47acacf00f97acbc22332106352596e1718b47be2321be993d",
+    "--n",
+    "250000",
+    "--seed",
+    "20261100"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-IMP0-n5",
+    "part": 0
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-IMP0-n5|1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-IMP0-n5",
+    "--targets",
+    "data/targets_s2/BOOL-IMP0-n5/calibration.json",
+    "--targets_sha256",
+    "cff195209cf7dd47acacf00f97acbc22332106352596e1718b47be2321be993d",
+    "--n",
+    "250000",
+    "--seed",
+    "20261101"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-IMP0-n5",
+    "part": 1
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-IMP0-n5|2",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-IMP0-n5",
+    "--targets",
+    "data/targets_s2/BOOL-IMP0-n5/calibration.json",
+    "--targets_sha256",
+    "cff195209cf7dd47acacf00f97acbc22332106352596e1718b47be2321be993d",
+    "--n",
+    "250000",
+    "--seed",
+    "20261102"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-IMP0-n5",
+    "part": 2
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-IMP0-n5|3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-IMP0-n5",
+    "--targets",
+    "data/targets_s2/BOOL-IMP0-n5/calibration.json",
+    "--targets_sha256",
+    "cff195209cf7dd47acacf00f97acbc22332106352596e1718b47be2321be993d",
+    "--n",
+    "250000",
+    "--seed",
+    "20261103"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-IMP0-n5",
+    "part": 3
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AON-n5|0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-AON-n5",
+    "--targets",
+    "data/targets_s2/BOOL-AON-n5/calibration.json",
+    "--targets_sha256",
+    "65044bf1c9c704ebe0b06d20c2449fd202bd7010358430971e049e8f143ae646",
+    "--n",
+    "250000",
+    "--seed",
+    "20261110"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-AON-n5",
+    "part": 0
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AON-n5|1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-AON-n5",
+    "--targets",
+    "data/targets_s2/BOOL-AON-n5/calibration.json",
+    "--targets_sha256",
+    "65044bf1c9c704ebe0b06d20c2449fd202bd7010358430971e049e8f143ae646",
+    "--n",
+    "250000",
+    "--seed",
+    "20261111"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-AON-n5",
+    "part": 1
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AON-n5|2",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-AON-n5",
+    "--targets",
+    "data/targets_s2/BOOL-AON-n5/calibration.json",
+    "--targets_sha256",
+    "65044bf1c9c704ebe0b06d20c2449fd202bd7010358430971e049e8f143ae646",
+    "--n",
+    "250000",
+    "--seed",
+    "20261112"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-AON-n5",
+    "part": 2
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AON-n5|3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-AON-n5",
+    "--targets",
+    "data/targets_s2/BOOL-AON-n5/calibration.json",
+    "--targets_sha256",
+    "65044bf1c9c704ebe0b06d20c2449fd202bd7010358430971e049e8f143ae646",
+    "--n",
+    "250000",
+    "--seed",
+    "20261113"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-AON-n5",
+    "part": 3
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AONX-n5|0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-AONX-n5",
+    "--targets",
+    "data/targets_s2/BOOL-AONX-n5/calibration.json",
+    "--targets_sha256",
+    "0acaeb8d9f7ada736f002064a50769e45d12a44c1ed584c32390e34f45e3c549",
+    "--n",
+    "250000",
+    "--seed",
+    "20261120"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-AONX-n5",
+    "part": 0
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AONX-n5|1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-AONX-n5",
+    "--targets",
+    "data/targets_s2/BOOL-AONX-n5/calibration.json",
+    "--targets_sha256",
+    "0acaeb8d9f7ada736f002064a50769e45d12a44c1ed584c32390e34f45e3c549",
+    "--n",
+    "250000",
+    "--seed",
+    "20261121"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-AONX-n5",
+    "part": 1
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AONX-n5|2",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-AONX-n5",
+    "--targets",
+    "data/targets_s2/BOOL-AONX-n5/calibration.json",
+    "--targets_sha256",
+    "0acaeb8d9f7ada736f002064a50769e45d12a44c1ed584c32390e34f45e3c549",
+    "--n",
+    "250000",
+    "--seed",
+    "20261122"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-AONX-n5",
+    "part": 2
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AONX-n5|3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-AONX-n5",
+    "--targets",
+    "data/targets_s2/BOOL-AONX-n5/calibration.json",
+    "--targets_sha256",
+    "0acaeb8d9f7ada736f002064a50769e45d12a44c1ed584c32390e34f45e3c549",
+    "--n",
+    "250000",
+    "--seed",
+    "20261123"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-AONX-n5",
+    "part": 3
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-RICH-n5|0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-RICH-n5",
+    "--targets",
+    "data/targets_s2/BOOL-RICH-n5/calibration.json",
+    "--targets_sha256",
+    "55064737b3480df6dbee2317f99efa676c0dcebfc6b182cccad0c111ba98c355",
+    "--n",
+    "250000",
+    "--seed",
+    "20261130"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-RICH-n5",
+    "part": 0
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-RICH-n5|1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-RICH-n5",
+    "--targets",
+    "data/targets_s2/BOOL-RICH-n5/calibration.json",
+    "--targets_sha256",
+    "55064737b3480df6dbee2317f99efa676c0dcebfc6b182cccad0c111ba98c355",
+    "--n",
+    "250000",
+    "--seed",
+    "20261131"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-RICH-n5",
+    "part": 1
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-RICH-n5|2",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-RICH-n5",
+    "--targets",
+    "data/targets_s2/BOOL-RICH-n5/calibration.json",
+    "--targets_sha256",
+    "55064737b3480df6dbee2317f99efa676c0dcebfc6b182cccad0c111ba98c355",
+    "--n",
+    "250000",
+    "--seed",
+    "20261132"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-RICH-n5",
+    "part": 2
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-RICH-n5|3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "BOOL-RICH-n5",
+    "--targets",
+    "data/targets_s2/BOOL-RICH-n5/calibration.json",
+    "--targets_sha256",
+    "55064737b3480df6dbee2317f99efa676c0dcebfc6b182cccad0c111ba98c355",
+    "--n",
+    "250000",
+    "--seed",
+    "20261133"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "BOOL-RICH-n5",
+    "part": 3
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-TRIG|0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "R-TRIG",
+    "--targets",
+    "data/targets_s2/R-TRIG/calibration.json",
+    "--targets_sha256",
+    "bc5a58f144856fb50c112ae1700aef39044031555b7a416a9990f1973e268f9c",
+    "--n",
+    "250000",
+    "--seed",
+    "20261140"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "R-TRIG",
+    "part": 0
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-TRIG|1",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "R-TRIG",
+    "--targets",
+    "data/targets_s2/R-TRIG/calibration.json",
+    "--targets_sha256",
+    "bc5a58f144856fb50c112ae1700aef39044031555b7a416a9990f1973e268f9c",
+    "--n",
+    "250000",
+    "--seed",
+    "20261141"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "R-TRIG",
+    "part": 1
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-TRIG|2",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "R-TRIG",
+    "--targets",
+    "data/targets_s2/R-TRIG/calibration.json",
+    "--targets_sha256",
+    "bc5a58f144856fb50c112ae1700aef39044031555b7a416a9990f1973e268f9c",
+    "--n",
+    "250000",
+    "--seed",
+    "20261142"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "R-TRIG",
+    "part": 2
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-TRIG|3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_random",
+    "--set",
+    "R-TRIG",
+    "--targets",
+    "data/targets_s2/R-TRIG/calibration.json",
+    "--targets_sha256",
+    "bc5a58f144856fb50c112ae1700aef39044031555b7a416a9990f1973e268f9c",
+    "--n",
+    "250000",
+    "--seed",
+    "20261143"
+   ],
+   "cpu_limit": 10800,
+   "meta": {
+    "set": "R-TRIG",
+    "part": 3
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

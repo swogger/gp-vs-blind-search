@@ -1,0 +1,147 @@
+{
+ "grammar": "RS-mul_div_eml_sin_square",
+ "seed": 20261022,
+ "ceiling": 12,
+ "depth_limit": 10,
+ "levels": {
+  "5": {
+   "proven": true,
+   "n_level": 184,
+   "n_depth_ok": 184,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "variance": 2
+   }
+  },
+  "6": {
+   "proven": true,
+   "n_level": 802,
+   "n_depth_ok": 802,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "variance": 3,
+    "dead_subtree": 2,
+    "fp_dependent": 1
+   }
+  },
+  "7": {
+   "proven": true,
+   "n_level": 3572,
+   "n_depth_ok": 3572,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "dead_subtree": 6,
+    "magnitude_ratio": 1,
+    "variance": 2,
+    "fp_dependent": 2,
+    "complex": 1
+   }
+  },
+  "8": {
+   "proven": true,
+   "n_level": 16405,
+   "n_depth_ok": 16405,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "variance": 6,
+    "complex": 2,
+    "near_duplicate": 1,
+    "fp_dependent": 1,
+    "magnitude_ratio": 2
+   }
+  },
+  "9": {
+   "proven": true,
+   "n_level": 76752,
+   "n_depth_ok": 76752,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "magnitude_ratio": 6,
+    "dead_subtree": 2,
+    "fp_dependent": 2,
+    "complex": 2,
+    "variance": 1,
+    "near_duplicate": 1
+   }
+  },
+  "10": {
+   "proven": true,
+   "n_level": 365069,
+   "n_depth_ok": 365069,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "complex": 6,
+    "near_duplicate": 2,
+    "fp_dependent": 2,
+    "nonfinite": 1,
+    "dead_subtree": 2,
+    "magnitude_ratio": 1
+   }
+  },
+  "11": {
+   "proven": true,
+   "n_level": 1757166,
+   "n_depth_ok": 1755905,
+   "excluded_share": 0.0007176328246734087,
+   "found": 30,
+   "rejected": {
+    "magnitude_ratio": 9,
+    "dead_subtree": 5,
+    "variance": 4,
+    "nonfinite": 3,
+    "complex": 4,
+    "fp_dependent": 1
+   }
+  },
+  "12": {
+   "proven": true,
+   "n_level": 8548896,
+   "n_depth_ok": 8495755,
+   "excluded_share": 0.0062161242808428385,
+   "found": 30,
+   "rejected": {
+    "near_duplicate": 6,
+    "complex": 4,
+    "dead_subtree": 4,
+    "magnitude_ratio": 5,
+    "fp_dependent": 2,
+    "nonfinite": 6
+   }
+  },
+  "13": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 13,
+    "dead_subtree": 9,
+    "fp_dependent": 5,
+    "nonfinite": 1,
+    "complex": 6,
+    "depth": 1,
+    "near_duplicate": 1,
+    "variance": 1,
+    "magnitude_ratio": 4
+   }
+  },
+  "14": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "fp_dependent": 2,
+    "magnitude_ratio": 2,
+    "smaller_in_enumeration": 11,
+    "dead_subtree": 4,
+    "depth": 2,
+    "complex": 3,
+    "nonfinite": 2,
+    "near_duplicate": 1
+   }
+  }
+ }
+}

@@ -1,0 +1,319 @@
+{
+ "BOOL-AN-n5": {
+  "budget": [
+   6,
+   25,
+   55,
+   72,
+   73
+  ],
+  "domain": "bool",
+  "main": [
+   7,
+   29,
+   58,
+   70,
+   71
+  ],
+  "rule": {
+   "d": 24.77017671416137,
+   "feature": "neutral_share_mutation",
+   "feature_value": 0.30212234706616725,
+   "k05": 114.3902332111174,
+   "k50_16": 92.11714721308154,
+   "k50_quarter": 18.661744909628528,
+   "k95": 1.0,
+   "source": "frozen model (no held-out data)"
+  }
+ },
+ "BOOL-AX1-n5": {
+  "budget": [
+   5,
+   15,
+   29,
+   43,
+   47
+  ],
+  "domain": "bool",
+  "main": [
+   7,
+   13,
+   27,
+   41,
+   45
+  ],
+  "rule": {
+   "d": 11.393961837453872,
+   "feature": "neutral_share_mutation",
+   "feature_value": 0.31689803733843946,
+   "k05": 55.404678979372555,
+   "k50_16": 45.902638259554486,
+   "k50_quarter": 13.086599128597058,
+   "k95": 1.0,
+   "source": "frozen model (no held-out data)"
+  }
+ },
+ "BOOL-RS-imp_nimp_rimp_rnimp-n5": {
+  "budget": [
+   5,
+   7,
+   21,
+   35,
+   43
+  ],
+  "domain": "bool",
+  "main": [
+   9,
+   13,
+   25,
+   37,
+   41
+  ],
+  "rule": {
+   "d": 11.096129116492456,
+   "feature": "neutral_share_mutation",
+   "feature_value": 0.5272459499263623,
+   "k05": 49.61009678930965,
+   "k50_16": 38.13925228265025,
+   "k50_quarter": 3.569231073123958,
+   "k95": 1.0,
+   "source": "frozen model (no held-out data)"
+  }
+ },
+ "BOOL-RS-imp_or_rnimp-n5": {
+  "budget": [
+   5,
+   7,
+   19,
+   33,
+   43
+  ],
+  "domain": "bool",
+  "main": [
+   9,
+   13,
+   25,
+   35,
+   41
+  ],
+  "rule": {
+   "d": 10.301987129522088,
+   "feature": "neutral_share_mutation",
+   "feature_value": 0.5635319454414931,
+   "k05": 47.083840407072216,
+   "k50_16": 35.48687205752808,
+   "k50_quarter": 2.3435435647400946,
+   "k95": 1.0,
+   "source": "frozen model (no held-out data)"
+  }
+ },
+ "BOOL-RS-nand_rimp_c1-n5": {
+  "budget": [
+   5,
+   11,
+   27,
+   43,
+   47
+  ],
+  "domain": "bool",
+  "main": [
+   7,
+   15,
+   31,
+   41,
+   45
+  ],
+  "rule": {
+   "d": 13.039688283286296,
+   "feature": "neutral_share_mutation",
+   "feature_value": 0.4179856115107914,
+   "k05": 59.8522971085555,
+   "k50_16": 47.26302905842141,
+   "k50_quarter": 7.6592907011653,
+   "k95": 1.0,
+   "source": "frozen model (no held-out data)"
+  }
+ },
+ "BOOL-RS-rimp_c0-n5": {
+  "budget": [
+   5,
+   7,
+   21,
+   39,
+   55
+  ],
+  "domain": "bool",
+  "main": [
+   9,
+   15,
+   29,
+   43,
+   59
+  ],
+  "rule": {
+   "d": 11.953560520115909,
+   "feature": "neutral_share_mutation",
+   "feature_value": 0.6179856115107913,
+   "k05": 58.32717644693872,
+   "k50_16": 42.50064754678345,
+   "k50_quarter": 1.0,
+   "k95": 1.0,
+   "source": "frozen model (no held-out data)"
+  }
+ },
+ "R-ARITH": {
+  "budget": [
+   9,
+   11,
+   13,
+   15,
+   17
+  ],
+  "domain": "real",
+  "main": [
+   19,
+   21,
+   23,
+   25,
+   27
+  ],
+  "rule": {
+   "d": 3.35511665824001,
+   "k05": 20.16953550596548,
+   "k50_16": 13.496669687307156,
+   "k50_quarter": 10.598043830697458,
+   "k95": 2.298637403139875,
+   "source": "frozen model (no held-out data)"
+  }
+ },
+ "R-ELEM6": {
+  "budget": [
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "domain": "real",
+  "main": [
+   10,
+   11,
+   12,
+   13,
+   14
+  ],
+  "rule": {
+   "d": 1.4911225415321852,
+   "k05": 10.104790082137702,
+   "k50_16": 7.106580389707955,
+   "k50_quarter": 5.8384635942586085,
+   "k95": 1.8889629147690157,
+   "source": "frozen model (no held-out data)"
+  }
+ },
+ "RS-add_sqrt": {
+  "budget": [
+   8,
+   9,
+   11,
+   13,
+   15
+  ],
+  "domain": "real",
+  "main": [
+   10,
+   12,
+   14,
+   16,
+   17
+  ],
+  "rule": {
+   "d": 2.6841902322497964,
+   "k05": 17.24075613718333,
+   "k50_16": 11.879808874196724,
+   "k50_quarter": 9.58083479263013,
+   "k95": 2.6740964434470365,
+   "source": "frozen model (no held-out data)"
+  }
+ },
+ "RS-eml_sin_sqrt_square": {
+  "budget": [
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "domain": "real",
+  "main": [
+   10,
+   11,
+   12,
+   13,
+   14
+  ],
+  "rule": {
+   "d": 1.426015792895385,
+   "k05": 9.720803337719738,
+   "k50_16": 6.84617877157275,
+   "k50_quarter": 5.621818437738911,
+   "k95": 1.8889629147690157,
+   "source": "frozen model (no held-out data)"
+  }
+ },
+ "RS-mul_div_eml_sin_square": {
+  "budget": [
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "domain": "real",
+  "main": [
+   10,
+   11,
+   12,
+   13,
+   14
+  ],
+  "rule": {
+   "d": 1.372710217841679,
+   "k05": 9.655662080534421,
+   "k50_16": 6.874900742060167,
+   "k50_quarter": 5.692852341571828,
+   "k95": 2.0518719068522047,
+   "source": "frozen model (no held-out data)"
+  }
+ },
+ "RS-mul_eml_sin": {
+  "budget": [
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "domain": "real",
+  "main": [
+   11,
+   12,
+   13,
+   14,
+   15
+  ],
+  "rule": {
+   "d": 1.663410110621351,
+   "k05": 11.500829883875546,
+   "k50_16": 8.171354724761876,
+   "k50_quarter": 6.747720771151512,
+   "k95": 2.280227507214441,
+   "source": "frozen model (no held-out data)"
+  }
+ },
+ "_h7_model_sha256": {
+  "bool": "8a87c1b333988ad1b0b87680a61a8497752d7018a61faf4822a98371c414ee60",
+  "real": "8a87c1b333988ad1b0b87680a61a8497752d7018a61faf4822a98371c414ee60"
+ },
+ "_source": "reach.analysis.s2.stage2_freeze: the G2 rule on the frozen H7 model of each domain, mapped to nodes through each set's size units (D050 rows for real sets); no held-out data"
+}

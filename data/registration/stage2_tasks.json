@@ -1,0 +1,32 @@
+{
+ "s2_cal_cgp": {
+  "n_tasks": 24000,
+  "sha256": "c5a6dfa8bb1c93170f0028355266223c16b711914ccd87395f7cdcdadc0df738",
+  "sha256_full": "82fdea672ffe7e034f97b55e011a528b1fdce6c94884363decb62cb62a5d2cf5"
+ },
+ "s2_ho_a0": {
+  "n_tasks": 9000,
+  "sha256": "0b14e52b8b43912dde9e076236d6c7d59239fd923041243e3babf2863ec5b271",
+  "sha256_full": "5bf5361ec0765fec7fa9d164d081ed41be15b4958d098258222db843cb853cbe"
+ },
+ "s2_ho_a16": {
+  "n_tasks": 9000,
+  "sha256": "ddd7168b78980e69cbacbf6f784fa4c7921c0c1e1a1b227e2b1b6b2e7b93fae8",
+  "sha256_full": "51808b06498b5282e29d8b6f8074fd58417c586c8862f1fc072a20747fc3c2b6"
+ },
+ "s2_ho_bench": {
+  "n_tasks": 1650,
+  "sha256": "82676ddc25760b1fc7c2f8bc26ea1141d20f3a67ac92d1dedcb6df1f46c77c96",
+  "sha256_full": "6dcc27cf3d4a5218abbddc746db91bc7773ce2d3307852b4d2c844c4658f4a9f"
+ },
+ "s2_ho_operon": {
+  "n_tasks": 7200,
+  "sha256": "9aaa3ad664987ce46d559468d9cbef3cc21224bce365e1b9ed32773b92d35acf",
+  "sha256_full": "25f2c8658a72aa3908e9ea0bfb0c15684970a54ba4c3b5cd061ec0fe885ce2bd"
+ },
+ "s2_ho_cgp": {
+  "n_tasks": 18000,
+  "sha256": "d6e05fa7aeb385bc99daa7567d757659d3dd5d693cb8c32c416f3eb91ef12a5e",
+  "sha256_full": "620496919184c8591f48d1693ee1d510e029a93aa709ca7fd0be4a7786ee32a4"
+ }
+}

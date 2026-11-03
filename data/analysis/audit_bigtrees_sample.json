@@ -1,0 +1,105 @@
+{
+ "ok": true,
+ "s2_cal_a0": {
+  "differing": {},
+  "identical": 3,
+  "labels": {
+   "exact_checked": 3,
+   "exact_disputed": [],
+   "exact_ieee_only": [],
+   "exact_near_miss": [],
+   "failures_checked": 0,
+   "failures_disputed": [],
+   "failures_near": [],
+   "unchecked": []
+  },
+  "missing": [],
+  "planned": 3,
+  "rerun": 3
+ },
+ "s2_cal_a16": {
+  "differing": {},
+  "identical": 4,
+  "labels": {
+   "exact_checked": 4,
+   "exact_disputed": [],
+   "exact_ieee_only": [],
+   "exact_near_miss": [],
+   "failures_checked": 0,
+   "failures_disputed": [],
+   "failures_near": [],
+   "unchecked": []
+  },
+  "missing": [],
+  "planned": 4,
+  "rerun": 4
+ },
+ "s2_cal_alloc": {
+  "differing": {},
+  "identical": 3,
+  "labels": {
+   "exact_checked": 3,
+   "exact_disputed": [],
+   "exact_ieee_only": [],
+   "exact_near_miss": [],
+   "failures_checked": 0,
+   "failures_disputed": [],
+   "failures_near": [],
+   "unchecked": []
+  },
+  "missing": [],
+  "planned": 3,
+  "rerun": 3
+ },
+ "s2_cal_mech": {
+  "differing": {},
+  "identical": 3,
+  "labels": {
+   "exact_checked": 3,
+   "exact_disputed": [],
+   "exact_ieee_only": [],
+   "exact_near_miss": [],
+   "failures_checked": 0,
+   "failures_disputed": [],
+   "failures_near": [],
+   "unchecked": []
+  },
+  "missing": [],
+  "planned": 3,
+  "rerun": 3
+ },
+ "s2_cal_pool": {
+  "differing": {},
+  "identical": 3,
+  "labels": {
+   "exact_checked": 3,
+   "exact_disputed": [],
+   "exact_ieee_only": [],
+   "exact_near_miss": [],
+   "failures_checked": 0,
+   "failures_disputed": [],
+   "failures_near": [],
+   "unchecked": []
+  },
+  "missing": [],
+  "planned": 3,
+  "rerun": 3
+ },
+ "s2_cal_robust": {
+  "differing": {},
+  "identical": 3,
+  "labels": {
+   "exact_checked": 3,
+   "exact_disputed": [],
+   "exact_ieee_only": [],
+   "exact_near_miss": [],
+   "failures_checked": 0,
+   "failures_disputed": [],
+   "failures_near": [],
+   "unchecked": []
+  },
+  "missing": [],
+  "planned": 3,
+  "rerun": 3
+ }
+}

@@ -1,0 +1,297 @@
+{
+ "phase": "s2_ho_targets",
+ "description": "Study 2 held-out targets: 30 per level on the levels the frozen model gives each held-out set (data/registration/heldout_levels.json), seed TARGET_SEEDS['heldout']. Not a search. --workers 1.",
+ "created": "2026-10-27 22:40:13",
+ "git": "27cab48",
+ "n_tasks": 12,
+ "tasks": [
+  {
+   "key": "R-ARITH",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "R-ARITH",
+    "--name",
+    "heldout",
+    "--n",
+    "30",
+    "--seed",
+    "20261022",
+    "--levels",
+    "9,11,13,15,17,19,21,23,25,27"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "R-ARITH"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ELEM6",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "R-ELEM6",
+    "--name",
+    "heldout",
+    "--n",
+    "30",
+    "--seed",
+    "20261022",
+    "--levels",
+    "5,6,7,8,9,10,11,12,13,14"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "R-ELEM6"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "RS-mul_eml_sin",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "RS-mul_eml_sin",
+    "--name",
+    "heldout",
+    "--n",
+    "30",
+    "--seed",
+    "20261022",
+    "--levels",
+    "6,7,8,9,10,11,12,13,14,15"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "RS-mul_eml_sin"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "RS-eml_sin_sqrt_square",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "RS-eml_sin_sqrt_square",
+    "--name",
+    "heldout",
+    "--n",
+    "30",
+    "--seed",
+    "20261022",
+    "--levels",
+    "5,6,7,8,9,10,11,12,13,14"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "RS-eml_sin_sqrt_square"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "RS-mul_div_eml_sin_square",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "RS-mul_div_eml_sin_square",
+    "--name",
+    "heldout",
+    "--n",
+    "30",
+    "--seed",
+    "20261022",
+    "--levels",
+    "5,6,7,8,9,10,11,12,13,14"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "RS-mul_div_eml_sin_square"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "RS-add_sqrt",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "RS-add_sqrt",
+    "--name",
+    "heldout",
+    "--n",
+    "30",
+    "--seed",
+    "20261022",
+    "--levels",
+    "8,9,10,11,12,13,14,15,16,17"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "RS-add_sqrt"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AN-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-AN-n5",
+    "--name",
+    "heldout",
+    "--n",
+    "30",
+    "--seed",
+    "20261022",
+    "--levels",
+    "6,7,25,29,55,58,70,71,72,73"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-AN-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AX1-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-AX1-n5",
+    "--name",
+    "heldout",
+    "--n",
+    "30",
+    "--seed",
+    "20261022",
+    "--levels",
+    "5,7,13,15,27,29,41,43,45,47"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-AX1-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-RS-imp_or_rnimp-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-RS-imp_or_rnimp-n5",
+    "--name",
+    "heldout",
+    "--n",
+    "30",
+    "--seed",
+    "20261022",
+    "--levels",
+    "5,7,9,13,19,25,33,35,41,43"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-RS-imp_or_rnimp-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-RS-imp_nimp_rimp_rnimp-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-RS-imp_nimp_rimp_rnimp-n5",
+    "--name",
+    "heldout",
+    "--n",
+    "30",
+    "--seed",
+    "20261022",
+    "--levels",
+    "5,7,9,13,21,25,35,37,41,43"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-RS-imp_nimp_rimp_rnimp-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-RS-nand_rimp_c1-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-RS-nand_rimp_c1-n5",
+    "--name",
+    "heldout",
+    "--n",
+    "30",
+    "--seed",
+    "20261022",
+    "--levels",
+    "5,7,11,15,27,31,41,43,45,47"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-RS-nand_rimp_c1-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-RS-rimp_c0-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-RS-rimp_c0-n5",
+    "--name",
+    "heldout",
+    "--n",
+    "30",
+    "--seed",
+    "20261022",
+    "--levels",
+    "5,7,9,15,21,29,39,43,55,59"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-RS-rimp_c0-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

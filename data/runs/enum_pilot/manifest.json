@@ -1,0 +1,369 @@
+{
+ "phase": "enum_pilot",
+ "description": "M4: enumerate every pilot grammar by size until the memory ceiling (8 GB of stored values for real grammars; peak about 12 GB) or 4 CPU-hours (18 tasks; checkpointed per level). Run with --workers 2 so peak memory stays within 32 GB. Gives lambda_G and the null.",
+ "created": "2026-10-12 21:52:25",
+ "git": "3e01c45",
+ "n_tasks": 18,
+ "tasks": [
+  {
+   "key": "EML",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "EML",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8"
+   ],
+   "cpu_limit": 14400,
+   "weight": 1.0,
+   "meta": {
+    "grammar": "EML"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "ARITH",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "ARITH",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8"
+   ],
+   "cpu_limit": 14400,
+   "weight": 1.0,
+   "meta": {
+    "grammar": "ARITH"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "ELEM6",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "ELEM6",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8"
+   ],
+   "cpu_limit": 14400,
+   "weight": 1.0,
+   "meta": {
+    "grammar": "ELEM6"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "HYB",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "HYB",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8"
+   ],
+   "cpu_limit": 14400,
+   "weight": 1.0,
+   "meta": {
+    "grammar": "HYB"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "BOOL-NAND-n3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-NAND-n3",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "2"
+   ],
+   "cpu_limit": 14400,
+   "weight": 1.0,
+   "meta": {
+    "grammar": "BOOL-NAND-n3"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "BOOL-NOR-n3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-NOR-n3",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "2"
+   ],
+   "cpu_limit": 14400,
+   "weight": 1.0,
+   "meta": {
+    "grammar": "BOOL-NOR-n3"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "BOOL-AON-n3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-AON-n3",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "2"
+   ],
+   "cpu_limit": 14400,
+   "weight": 1.0,
+   "meta": {
+    "grammar": "BOOL-AON-n3"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "BOOL-AN-n3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-AN-n3",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "2"
+   ],
+   "cpu_limit": 14400,
+   "weight": 1.0,
+   "meta": {
+    "grammar": "BOOL-AN-n3"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "BOOL-AONX-n3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-AONX-n3",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "2"
+   ],
+   "cpu_limit": 14400,
+   "weight": 1.0,
+   "meta": {
+    "grammar": "BOOL-AONX-n3"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "BOOL-AX1-n3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-AX1-n3",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "2"
+   ],
+   "cpu_limit": 14400,
+   "weight": 1.0,
+   "meta": {
+    "grammar": "BOOL-AX1-n3"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "BOOL-RICH-n3",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-RICH-n3",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "2"
+   ],
+   "cpu_limit": 14400,
+   "weight": 1.0,
+   "meta": {
+    "grammar": "BOOL-RICH-n3"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "BOOL-NAND-n4",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-NAND-n4",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "2"
+   ],
+   "cpu_limit": 14400,
+   "weight": 1.0,
+   "meta": {
+    "grammar": "BOOL-NAND-n4"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "BOOL-NOR-n4",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-NOR-n4",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "2"
+   ],
+   "cpu_limit": 14400,
+   "weight": 1.0,
+   "meta": {
+    "grammar": "BOOL-NOR-n4"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "BOOL-AON-n4",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-AON-n4",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "2"
+   ],
+   "cpu_limit": 14400,
+   "weight": 1.0,
+   "meta": {
+    "grammar": "BOOL-AON-n4"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "BOOL-AN-n4",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-AN-n4",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "2"
+   ],
+   "cpu_limit": 14400,
+   "weight": 1.0,
+   "meta": {
+    "grammar": "BOOL-AN-n4"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "BOOL-AONX-n4",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-AONX-n4",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "2"
+   ],
+   "cpu_limit": 14400,
+   "weight": 1.0,
+   "meta": {
+    "grammar": "BOOL-AONX-n4"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "BOOL-AX1-n4",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-AX1-n4",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "2"
+   ],
+   "cpu_limit": 14400,
+   "weight": 1.0,
+   "meta": {
+    "grammar": "BOOL-AX1-n4"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "BOOL-RICH-n4",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-RICH-n4",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "2"
+   ],
+   "cpu_limit": 14400,
+   "weight": 1.0,
+   "meta": {
+    "grammar": "BOOL-RICH-n4"
+   },
+   "cwd": "."
+  }
+ ]
+}

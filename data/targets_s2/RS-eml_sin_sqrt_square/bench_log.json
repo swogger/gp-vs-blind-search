@@ -1,0 +1,105 @@
+{
+ "grammar": "RS-eml_sin_sqrt_square",
+ "benchmarks": {
+  "N1": "not within the ceiling",
+  "N2": "not within the ceiling",
+  "N3": "not within the ceiling",
+  "N4": "not within the ceiling",
+  "N5": "not within the ceiling",
+  "N6": "not within the ceiling",
+  "N7": "not within the ceiling",
+  "N8": "proven K=2",
+  "K2": "not within the ceiling",
+  "K3": "not within the ceiling",
+  "feynman_I_6_2a": "not within the ceiling",
+  "eml_1_1": "proven K=3",
+  "eml_1_2": "proven K=7",
+  "eml_1_4": "not within the ceiling",
+  "eml_2_1": "not within the ceiling",
+  "eml_3_1": "not within the ceiling",
+  "eml_3_2": "not within the ceiling",
+  "eml_3_3": "not within the ceiling",
+  "eml_3_4": "not within the ceiling",
+  "eml_3_5": "not within the ceiling",
+  "eml_4_1": "not within the ceiling"
+ },
+ "noise_rows": [
+  {
+   "K": 1,
+   "U": 2,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 2,
+   "U": 4,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 3,
+   "U": 14,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 4,
+   "U": 52,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 5,
+   "U": 207,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 6,
+   "U": 856,
+   "candidates": 0,
+   "noise": 0,
+   "share": 0.0
+  },
+  {
+   "K": 7,
+   "U": 3648,
+   "candidates": 6,
+   "noise": 6,
+   "share": 0.00164
+  },
+  {
+   "K": 8,
+   "U": 15908,
+   "candidates": 50,
+   "noise": 45,
+   "share": 0.00283
+  },
+  {
+   "K": 9,
+   "U": 70718,
+   "candidates": 285,
+   "noise": 245,
+   "share": 0.00346
+  },
+  {
+   "K": 10,
+   "U": 319163,
+   "candidates": 1671,
+   "noise": 1288,
+   "share": 0.00404
+  },
+  {
+   "K": 11,
+   "U": 1458953,
+   "candidates": 9445,
+   "noise": 6749,
+   "share": 0.00463
+  }
+ ]
+}

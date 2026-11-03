@@ -1,0 +1,31 @@
+A. design integrity
+   rerun keys 7820, original keys 7820, identical sets: True
+   Table 11 (pandas):
+                 conv         exact       
+regime              A      B      A      B
+K_construction                            
+7               0.894  0.839  0.852  0.535
+9               0.700  0.563  0.673  0.353
+11              0.503  0.357  0.473  0.217
+13              0.193  0.113  0.160  0.043
+15              0.170  0.103  0.150  0.067
+17              0.137  0.083  0.093  0.027
+19              0.030  0.007  0.013  0.003
+21              0.033  0.030  0.010  0.007
+23              0.030  0.000  0.010  0.000
+25              0.023  0.000  0.000  0.000
+27              0.017  0.003  0.007  0.000
+29              0.000  0.000  0.000  0.000
+31              0.003  0.000  0.003  0.000
+   Table 13 discordant (pandas): {7: {'Aonly': 43, 'Bonly': 26}, 9: {'Aonly': 65, 'Bonly': 24}, 11: {'Aonly': 66, 'Bonly': 22}, 13: {'Aonly': 46, 'Bonly': 22}, 15: {'Aonly': 31, 'Bonly': 11}, 17: {'Aonly': 28, 'Bonly': 12}, 19: {'Aonly': 8, 'Bonly': 1}, 21: {'Aonly': 7, 'Bonly': 6}, 23: {'Aonly': 9, 'Bonly': 0}, 25: {'Aonly': 7, 'Bonly': 0}, 27: {'Aonly': 5, 'Bonly': 1}, 29: {'Aonly': 0, 'Bonly': 0}, 31: {'Aonly': 1, 'Bonly': 0}} pooled 316 125
+
+B. K50 by direct MLE, 2,000 target resamples, seed 7
+   conv  Regime A: 11.07 [10.43, 11.66]
+   conv  Regime B: 9.81 [9.31, 10.29]
+   exact Regime A: 10.60 [10.00, 11.16]
+   exact Regime B: 7.44 [6.76, 8.02]
+
+C. determinism and functional meaning of exact_hash_match (60 exact + 60 loose converged runs)
+   deterministic reproduction: 111/120 identical final nMSE
+   hash exact: dense-grid equivalent 60/60
+   hash loose: dense-grid equivalent 4/59

@@ -1,0 +1,60 @@
+{
+ "grammar": "EML",
+ "seed": 20261013,
+ "ceiling": 21,
+ "levels": {
+  "7": {
+   "found": 10,
+   "rejected": {
+    "variance": 1
+   },
+   "proven": true
+  },
+  "9": {
+   "found": 10,
+   "rejected": {
+    "magnitude_ratio": 1,
+    "variance": 1,
+    "nonfinite": 1
+   },
+   "proven": true
+  },
+  "11": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "13": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "15": {
+   "found": 10,
+   "rejected": {
+    "variance": 1
+   },
+   "proven": true
+  },
+  "17": {
+   "found": 10,
+   "rejected": {
+    "nonfinite": 1
+   },
+   "proven": true
+  },
+  "19": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "21": {
+   "found": 10,
+   "rejected": {
+    "magnitude_ratio": 1,
+    "nonfinite": 1
+   },
+   "proven": true
+  }
+ }
+}

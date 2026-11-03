@@ -1,0 +1,149 @@
+{
+ "phase": "enum_bool5",
+ "description": "Enumerate the 7 Boolean grammars with n = 5 inputs (1 CPU-hour and 3 GB each). n = 4 saturated at E0 (pilot P1). Run with --workers 2.",
+ "created": "2026-10-13 00:06:09",
+ "git": "f9ad39d+dirty",
+ "n_tasks": 7,
+ "tasks": [
+  {
+   "key": "BOOL-NAND-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-NAND-n5",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "3"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "BOOL-NAND-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-NOR-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-NOR-n5",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "3"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "BOOL-NOR-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AON-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-AON-n5",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "3"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "BOOL-AON-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AN-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-AN-n5",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "3"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "BOOL-AN-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AONX-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-AONX-n5",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "3"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "BOOL-AONX-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AX1-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-AX1-n5",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "3"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "BOOL-AX1-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-RICH-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "BOOL-RICH-n5",
+    "--kmax",
+    "60",
+    "--max_gb",
+    "3"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "BOOL-RICH-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

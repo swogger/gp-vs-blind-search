@@ -1,0 +1,70 @@
+{
+ "file": "src/reach/s2_sets.py",
+ "commit": "f2540eb4be8ca9e907cf80170d145b5c00ed221f",
+ "sha256": "3a7c0ae50295d95e00121e6847b00554b7fdd9614a4c2141b7d5b9c385ac72a7",
+ "seed": 4214255330019105118,
+ "rule": "per domain: random.Random(seed + index), index real=0 bool=1, over sorted eligible sets; held out = first 2 with proven ceiling >= 10",
+ "ceilings_used": {
+  "R-ARITH": 23,
+  "R-ARITH4": 17,
+  "R-ELEM6": 12,
+  "R-ELEM4": 15,
+  "R-HYB": 15,
+  "R-TRIG": 13,
+  "F-LDE0": 23,
+  "R-SRB": null,
+  "BOOL-AON-n5": 26,
+  "BOOL-AN-n5": 36,
+  "BOOL-AONX-n5": 18,
+  "BOOL-AX1-n5": 21,
+  "BOOL-RICH-n5": 16
+ },
+ "ceiling_sources": {
+  "R-ARITH": "data/enumeration_s2/R-ARITH",
+  "R-ARITH4": "data/enumeration_s2/R-ARITH4",
+  "R-ELEM6": "data/enumeration_s2/R-ELEM6",
+  "R-ELEM4": "data/enumeration_s2/R-ELEM4",
+  "R-HYB": "data/enumeration_s2/R-HYB",
+  "R-TRIG": "data/enumeration_s2/R-TRIG",
+  "F-LDE0": "data/enumeration_s2/F-LDE0",
+  "R-SRB": null,
+  "BOOL-AON-n5": "data/enumeration_s2/BOOL-AON-n5",
+  "BOOL-AN-n5": "data/enumeration_s2/BOOL-AN-n5",
+  "BOOL-AONX-n5": "data/enumeration_s2/BOOL-AONX-n5",
+  "BOOL-AX1-n5": "data/enumeration_s2/BOOL-AX1-n5",
+  "BOOL-RICH-n5": "data/enumeration/BOOL-RICH-n5"
+ },
+ "real": {
+  "order": [
+   "R-ARITH",
+   "R-ELEM6",
+   "R-TRIG",
+   "F-LDE0",
+   "R-ARITH4",
+   "R-HYB",
+   "R-SRB",
+   "R-ELEM4"
+  ],
+  "held_out": [
+   "R-ARITH",
+   "R-ELEM6"
+  ],
+  "status": "final",
+  "pending_on": null
+ },
+ "bool": {
+  "order": [
+   "BOOL-AN-n5",
+   "BOOL-AX1-n5",
+   "BOOL-AONX-n5",
+   "BOOL-RICH-n5",
+   "BOOL-AON-n5"
+  ],
+  "held_out": [
+   "BOOL-AN-n5",
+   "BOOL-AX1-n5"
+  ],
+  "status": "final",
+  "pending_on": null
+ }
+}

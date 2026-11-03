@@ -1,0 +1,117 @@
+{
+ "grammar": "R-SRB",
+ "levels": [
+  {
+   "K": 1,
+   "N_syntactic": 2,
+   "candidates": 2,
+   "U": 2,
+   "U_cum": 2,
+   "U_finite_nonconst": 1,
+   "U_depth_ok": 2,
+   "max_min_depth": 1,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 2,
+   "N_syntactic": 12,
+   "candidates": 12,
+   "U": 10,
+   "U_cum": 12,
+   "U_finite_nonconst": 6,
+   "U_depth_ok": 10,
+   "max_min_depth": 2,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 3,
+   "N_syntactic": 88,
+   "candidates": 76,
+   "U": 56,
+   "U_cum": 68,
+   "U_finite_nonconst": 37,
+   "U_depth_ok": 56,
+   "max_min_depth": 3,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 4,
+   "N_syntactic": 720,
+   "candidates": 496,
+   "U": 383,
+   "U_cum": 451,
+   "U_finite_nonconst": 270,
+   "U_depth_ok": 383,
+   "max_min_depth": 4,
+   "cpu_s": 0.0,
+   "vals_stored": true
+  },
+  {
+   "K": 5,
+   "N_syntactic": 6304,
+   "candidates": 3594,
+   "U": 2741,
+   "U_cum": 3192,
+   "U_finite_nonconst": 2074,
+   "U_depth_ok": 2741,
+   "max_min_depth": 5,
+   "cpu_s": 0.01,
+   "vals_stored": true
+  },
+  {
+   "K": 6,
+   "N_syntactic": 57792,
+   "candidates": 27054,
+   "U": 20379,
+   "U_cum": 23571,
+   "U_finite_nonconst": 16115,
+   "U_depth_ok": 20379,
+   "max_min_depth": 6,
+   "cpu_s": 0.07,
+   "vals_stored": true
+  },
+  {
+   "K": 7,
+   "N_syntactic": 547712,
+   "candidates": 209314,
+   "U": 155561,
+   "U_cum": 179132,
+   "U_finite_nonconst": 127559,
+   "U_depth_ok": 155561,
+   "max_min_depth": 7,
+   "cpu_s": 0.66,
+   "vals_stored": true
+  },
+  {
+   "K": 8,
+   "N_syntactic": 5323008,
+   "candidates": 1650294,
+   "U": 1213786,
+   "U_cum": 1392918,
+   "U_finite_nonconst": 1024654,
+   "U_depth_ok": 1213786,
+   "max_min_depth": 8,
+   "cpu_s": 5.43,
+   "vals_stored": true
+  },
+  {
+   "K": 9,
+   "N_syntactic": 52761088,
+   "candidates": 13216736,
+   "U": 9618430,
+   "U_cum": 11011348,
+   "U_finite_nonconst": 8306982,
+   "U_depth_ok": 9618430,
+   "max_min_depth": 9,
+   "cpu_s": 39.98,
+   "vals_stored": false
+  }
+ ],
+ "hash_precision": 11,
+ "format": "v2",
+ "stop_reason": "memory",
+ "sample": "grid (2,3) 100 points"
+}

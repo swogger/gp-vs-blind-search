@@ -1,0 +1,95 @@
+{
+ "grammar": "R-ARITH4",
+ "seed": 20261021,
+ "ceiling": 17,
+ "depth_limit": 10,
+ "levels": {
+  "7": {
+   "proven": true,
+   "n_level": 173,
+   "n_depth_ok": 173,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "nonfinite": 1
+   }
+  },
+  "9": {
+   "proven": true,
+   "n_level": 825,
+   "n_depth_ok": 825,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "variance": 1
+   }
+  },
+  "11": {
+   "proven": true,
+   "n_level": 4255,
+   "n_depth_ok": 4255,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {}
+  },
+  "13": {
+   "proven": true,
+   "n_level": 22597,
+   "n_depth_ok": 22597,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "nonfinite": 1
+   }
+  },
+  "15": {
+   "proven": true,
+   "n_level": 123442,
+   "n_depth_ok": 123442,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {}
+  },
+  "17": {
+   "proven": true,
+   "n_level": 693342,
+   "n_depth_ok": 693342,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "dead_subtree": 1
+   }
+  },
+  "19": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 32,
+    "dead_subtree": 1
+   }
+  },
+  "21": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 12,
+    "dead_subtree": 1
+   }
+  },
+  "23": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 5,
+    "dead_subtree": 2
+   }
+  },
+  "25": {
+   "proven": false,
+   "found": 30,
+   "rejected": {
+    "smaller_in_enumeration": 3
+   }
+  }
+ }
+}

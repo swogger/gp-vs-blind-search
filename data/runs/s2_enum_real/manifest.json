@@ -1,0 +1,225 @@
+{
+ "phase": "s2_enum_real",
+ "description": "Study 2: enumerate the 8 real sets (guarded semantics, depth-aware) until the 8 GB memory cap or 4 CPU-hours. Run with --workers 2 (peak about 12 GB each).",
+ "created": "2026-10-19 16:39:10",
+ "git": "82f4af7",
+ "n_tasks": 8,
+ "tasks": [
+  {
+   "key": "F-EML",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "F-EML",
+    "--root",
+    "data/enumeration_s2",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8",
+    "--cpu_budget",
+    "13800",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "F-EML",
+    "root": "data/enumeration_s2"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ARITH",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "R-ARITH",
+    "--root",
+    "data/enumeration_s2",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8",
+    "--cpu_budget",
+    "13800",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "R-ARITH",
+    "root": "data/enumeration_s2"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ARITH4",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "R-ARITH4",
+    "--root",
+    "data/enumeration_s2",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8",
+    "--cpu_budget",
+    "13800",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "R-ARITH4",
+    "root": "data/enumeration_s2"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ELEM6",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "R-ELEM6",
+    "--root",
+    "data/enumeration_s2",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8",
+    "--cpu_budget",
+    "13800",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "R-ELEM6",
+    "root": "data/enumeration_s2"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ELEM4",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "R-ELEM4",
+    "--root",
+    "data/enumeration_s2",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8",
+    "--cpu_budget",
+    "13800",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "R-ELEM4",
+    "root": "data/enumeration_s2"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-HYB",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "R-HYB",
+    "--root",
+    "data/enumeration_s2",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8",
+    "--cpu_budget",
+    "13800",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "R-HYB",
+    "root": "data/enumeration_s2"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-TRIG",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "R-TRIG",
+    "--root",
+    "data/enumeration_s2",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8",
+    "--cpu_budget",
+    "13800",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "R-TRIG",
+    "root": "data/enumeration_s2"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-LDE0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "F-LDE0",
+    "--root",
+    "data/enumeration_s2",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "8",
+    "--cpu_budget",
+    "13800",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "F-LDE0",
+    "root": "data/enumeration_s2"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

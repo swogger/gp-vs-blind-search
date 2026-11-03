@@ -1,0 +1,34 @@
+{
+ "s2_cal_a16": {
+  "n_tasks": 12000,
+  "sha256": "ab9798c8355c93ece35fac5a923dad3290ddd9d31cf9dd7fcf9a02c12deeea78"
+ },
+ "s2_cal_a0": {
+  "n_tasks": 12000,
+  "sha256": "4f2c51a5a8b4673dece74ae7d69365257603cf49bdbad5829b714ed23973f6e6"
+ },
+ "s2_cal_mech": {
+  "n_tasks": 36000,
+  "sha256": "9386bfa0d58ae2d5b8d2a1bc0504654487f40d987c9253a69ece477a4cdd9048"
+ },
+ "s2_cal_alloc": {
+  "n_tasks": 32400,
+  "sha256": "7949e337653a754d7b33802093c338617f0f56163246b8a0a914e4109df501a2"
+ },
+ "s2_cal_robust": {
+  "n_tasks": 18000,
+  "sha256": "f09901e24809c8ccf4d35d093b38369138e1e73aae9222ed5d9dba0d497960d9"
+ },
+ "s2_cal_pool": {
+  "n_tasks": 11160,
+  "sha256": "a43663a6b5ed31d3dad750ab389f6b432084ba5de76da339671544f4c11110df"
+ },
+ "s2_cal_rand": {
+  "n_tasks": 48,
+  "sha256": "5e610fd77bc71544d67357300bc4ca512849e9fdec8a4899f5fbcbe1fbccbba2"
+ },
+ "s2_cal_operon": {
+  "n_tasks": 9000,
+  "sha256": "fe81c040973015b5adca5016cb243cd25bb227cd4ae02f041384aa4a93e06166"
+ }
+}

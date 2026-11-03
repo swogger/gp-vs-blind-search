@@ -1,0 +1,473 @@
+{
+ "phase": "s2_precision",
+ "description": "Study 2 measurement check (brief 7.2): the 8 real sets re-enumerated to K = 13 with keys rounded to 7 and to 11 decimals. --workers 2.",
+ "created": "2026-10-19 16:43:10",
+ "git": "82f4af7+dirty",
+ "n_tasks": 16,
+ "tasks": [
+  {
+   "key": "F-EML|p7",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "F-EML",
+    "--root",
+    "data/enumeration_s2/precision7",
+    "--kmax",
+    "13",
+    "--max_gb",
+    "6",
+    "--cpu_budget",
+    "3000",
+    "--min_free_gb",
+    "15",
+    "--precision",
+    "7"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "F-EML",
+    "root": "data/enumeration_s2/precision7"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ARITH|p7",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "R-ARITH",
+    "--root",
+    "data/enumeration_s2/precision7",
+    "--kmax",
+    "13",
+    "--max_gb",
+    "6",
+    "--cpu_budget",
+    "3000",
+    "--min_free_gb",
+    "15",
+    "--precision",
+    "7"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "R-ARITH",
+    "root": "data/enumeration_s2/precision7"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ARITH4|p7",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "R-ARITH4",
+    "--root",
+    "data/enumeration_s2/precision7",
+    "--kmax",
+    "13",
+    "--max_gb",
+    "6",
+    "--cpu_budget",
+    "3000",
+    "--min_free_gb",
+    "15",
+    "--precision",
+    "7"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "R-ARITH4",
+    "root": "data/enumeration_s2/precision7"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ELEM6|p7",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "R-ELEM6",
+    "--root",
+    "data/enumeration_s2/precision7",
+    "--kmax",
+    "13",
+    "--max_gb",
+    "6",
+    "--cpu_budget",
+    "3000",
+    "--min_free_gb",
+    "15",
+    "--precision",
+    "7"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "R-ELEM6",
+    "root": "data/enumeration_s2/precision7"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ELEM4|p7",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "R-ELEM4",
+    "--root",
+    "data/enumeration_s2/precision7",
+    "--kmax",
+    "13",
+    "--max_gb",
+    "6",
+    "--cpu_budget",
+    "3000",
+    "--min_free_gb",
+    "15",
+    "--precision",
+    "7"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "R-ELEM4",
+    "root": "data/enumeration_s2/precision7"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-HYB|p7",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "R-HYB",
+    "--root",
+    "data/enumeration_s2/precision7",
+    "--kmax",
+    "13",
+    "--max_gb",
+    "6",
+    "--cpu_budget",
+    "3000",
+    "--min_free_gb",
+    "15",
+    "--precision",
+    "7"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "R-HYB",
+    "root": "data/enumeration_s2/precision7"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-TRIG|p7",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "R-TRIG",
+    "--root",
+    "data/enumeration_s2/precision7",
+    "--kmax",
+    "13",
+    "--max_gb",
+    "6",
+    "--cpu_budget",
+    "3000",
+    "--min_free_gb",
+    "15",
+    "--precision",
+    "7"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "R-TRIG",
+    "root": "data/enumeration_s2/precision7"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-LDE0|p7",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "F-LDE0",
+    "--root",
+    "data/enumeration_s2/precision7",
+    "--kmax",
+    "13",
+    "--max_gb",
+    "6",
+    "--cpu_budget",
+    "3000",
+    "--min_free_gb",
+    "15",
+    "--precision",
+    "7"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "F-LDE0",
+    "root": "data/enumeration_s2/precision7"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-EML|p11",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "F-EML",
+    "--root",
+    "data/enumeration_s2/precision11",
+    "--kmax",
+    "13",
+    "--max_gb",
+    "6",
+    "--cpu_budget",
+    "3000",
+    "--min_free_gb",
+    "15",
+    "--precision",
+    "11"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "F-EML",
+    "root": "data/enumeration_s2/precision11"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ARITH|p11",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "R-ARITH",
+    "--root",
+    "data/enumeration_s2/precision11",
+    "--kmax",
+    "13",
+    "--max_gb",
+    "6",
+    "--cpu_budget",
+    "3000",
+    "--min_free_gb",
+    "15",
+    "--precision",
+    "11"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "R-ARITH",
+    "root": "data/enumeration_s2/precision11"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ARITH4|p11",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "R-ARITH4",
+    "--root",
+    "data/enumeration_s2/precision11",
+    "--kmax",
+    "13",
+    "--max_gb",
+    "6",
+    "--cpu_budget",
+    "3000",
+    "--min_free_gb",
+    "15",
+    "--precision",
+    "11"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "R-ARITH4",
+    "root": "data/enumeration_s2/precision11"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ELEM6|p11",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "R-ELEM6",
+    "--root",
+    "data/enumeration_s2/precision11",
+    "--kmax",
+    "13",
+    "--max_gb",
+    "6",
+    "--cpu_budget",
+    "3000",
+    "--min_free_gb",
+    "15",
+    "--precision",
+    "11"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "R-ELEM6",
+    "root": "data/enumeration_s2/precision11"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ELEM4|p11",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "R-ELEM4",
+    "--root",
+    "data/enumeration_s2/precision11",
+    "--kmax",
+    "13",
+    "--max_gb",
+    "6",
+    "--cpu_budget",
+    "3000",
+    "--min_free_gb",
+    "15",
+    "--precision",
+    "11"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "R-ELEM4",
+    "root": "data/enumeration_s2/precision11"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-HYB|p11",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "R-HYB",
+    "--root",
+    "data/enumeration_s2/precision11",
+    "--kmax",
+    "13",
+    "--max_gb",
+    "6",
+    "--cpu_budget",
+    "3000",
+    "--min_free_gb",
+    "15",
+    "--precision",
+    "11"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "R-HYB",
+    "root": "data/enumeration_s2/precision11"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-TRIG|p11",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "R-TRIG",
+    "--root",
+    "data/enumeration_s2/precision11",
+    "--kmax",
+    "13",
+    "--max_gb",
+    "6",
+    "--cpu_budget",
+    "3000",
+    "--min_free_gb",
+    "15",
+    "--precision",
+    "11"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "R-TRIG",
+    "root": "data/enumeration_s2/precision11"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-LDE0|p11",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "F-LDE0",
+    "--root",
+    "data/enumeration_s2/precision11",
+    "--kmax",
+    "13",
+    "--max_gb",
+    "6",
+    "--cpu_budget",
+    "3000",
+    "--min_free_gb",
+    "15",
+    "--precision",
+    "11"
+   ],
+   "cpu_limit": 3600,
+   "meta": {
+    "grammar": "F-LDE0",
+    "root": "data/enumeration_s2/precision11"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "domain": "bool",
+ "seed": 20261023,
+ "n": 40,
+ "sets": [
+  "BOOL-NAND-n5",
+  "BOOL-NOR-n5",
+  "BOOL-IMP0-n5",
+  "BOOL-AON-n5",
+  "BOOL-AONX-n5",
+  "BOOL-RICH-n5"
+ ]
+}

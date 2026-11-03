@@ -1,0 +1,5402 @@
+[
+ {
+  "expression": "*(sin(x), sin(sin(x)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.04706662129062712,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K06_00"
+ },
+ {
+  "expression": "eml(x, eml(x, sin(1)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 11.004666304952655,
+  "target_scale": 16.888910963468643,
+  "target_id": "RS-mul_eml_sin_K06_01"
+ },
+ {
+  "expression": "sin(sin(*(x, sin(1))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00706716765685771,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K06_02"
+ },
+ {
+  "expression": "eml(1, eml(x, sin(1)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.07936387914113072,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K06_03"
+ },
+ {
+  "expression": "*(sin(x), eml(x, 1))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.4363042648080064,
+  "target_scale": 7.460488105359311,
+  "target_id": "RS-mul_eml_sin_K06_04"
+ },
+ {
+  "expression": "eml(x, *(x, sin(1)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.132399420784445,
+  "target_scale": 18.96494871422732,
+  "target_id": "RS-mul_eml_sin_K06_05"
+ },
+ {
+  "expression": "eml(eml(1, sin(x)), 1)",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 367.13724145164275,
+  "target_scale": 100.41598660478977,
+  "target_id": "RS-mul_eml_sin_K06_06"
+ },
+ {
+  "expression": "eml(x, eml(1, sin(x)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 11.985620232184663,
+  "target_scale": 18.359570818909216,
+  "target_id": "RS-mul_eml_sin_K06_07"
+ },
+ {
+  "expression": "sin(eml(eml(1, x), x))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.19857662660388747,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K06_08"
+ },
+ {
+  "expression": "eml(x, eml(sin(1), x))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 13.524850859938025,
+  "target_scale": 19.685143106424633,
+  "target_id": "RS-mul_eml_sin_K06_09"
+ },
+ {
+  "expression": "eml(x, eml(sin(1), 1))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.935998848502534,
+  "target_scale": 19.04618048368394,
+  "target_id": "RS-mul_eml_sin_K06_10"
+ },
+ {
+  "expression": "eml(sin(x), eml(x, x))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.48089809431638947,
+  "target_scale": 1.770551986450675,
+  "target_id": "RS-mul_eml_sin_K06_11"
+ },
+ {
+  "expression": "*(sin(1), sin(sin(x)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0253640450032386,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K06_12"
+ },
+ {
+  "expression": "sin(sin(*(x, sin(x))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.010655167422105451,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K06_13"
+ },
+ {
+  "expression": "eml(1, *(x, sin(x)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.13820452112911255,
+  "target_scale": 3.5140149231797784,
+  "target_id": "RS-mul_eml_sin_K06_14"
+ },
+ {
+  "expression": "*(x, sin(sin(sin(x))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08863050677446425,
+  "target_scale": 1.4560258612697166,
+  "target_id": "RS-mul_eml_sin_K06_15"
+ },
+ {
+  "expression": "eml(1, eml(sin(1), x))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.006682807845978011,
+  "target_scale": 2.5157734663918427,
+  "target_id": "RS-mul_eml_sin_K06_16"
+ },
+ {
+  "expression": "sin(eml(*(x, x), 1))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.43897621108074303,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K06_17"
+ },
+ {
+  "expression": "sin(sin(sin(eml(x, x))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.33348555558022647,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K06_18"
+ },
+ {
+  "expression": "eml(x, sin(eml(1, 1)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.935998848502528,
+  "target_scale": 20.77734581451002,
+  "target_id": "RS-mul_eml_sin_K06_19"
+ },
+ {
+  "expression": "eml(eml(1, x), sin(x))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.10996798674998709,
+  "target_scale": 7.63947911232073,
+  "target_id": "RS-mul_eml_sin_K06_20"
+ },
+ {
+  "expression": "sin(sin(eml(sin(x), x)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.05850912895680962,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K06_21"
+ },
+ {
+  "expression": "sin(eml(x, eml(x, 1)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.4453903195694134,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K06_22"
+ },
+ {
+  "expression": "eml(sin(1), *(x, x))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.05325637974136591,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K06_23"
+ },
+ {
+  "expression": "sin(*(x, sin(sin(x))))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.022624836669308,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K06_24"
+ },
+ {
+  "expression": "sin(*(x, *(x, x)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.4953298252866145,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K06_25"
+ },
+ {
+  "expression": "*(sin(1), *(x, x))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.449720363150699,
+  "target_scale": 7.523332977004156,
+  "target_id": "RS-mul_eml_sin_K06_26"
+ },
+ {
+  "expression": "eml(1, eml(sin(x), 1))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.05037819723723758,
+  "target_scale": 2.5673669915504327,
+  "target_id": "RS-mul_eml_sin_K06_27"
+ },
+ {
+  "expression": "*(x, sin(eml(x, 1)))",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3.1781924921669047,
+  "target_scale": 2.8497669910155827,
+  "target_id": "RS-mul_eml_sin_K06_28"
+ },
+ {
+  "expression": "eml(eml(1, sin(1)), x)",
+  "K_construction": 6,
+  "K_proven": 6,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 6.0,
+   "bits_uniform": 13.931568569324174,
+   "bits_syn": 9.118941072723507,
+   "bits_sem": 8.08214904135387,
+   "bits_sem_uncorrected": 8.08214904135387,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013314094935341443,
+  "target_scale": 17.311165617251604,
+  "target_id": "RS-mul_eml_sin_K06_29"
+ },
+ {
+  "expression": "sin(sin(sin(sin(eml(x, x)))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.28715124627996036,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K07_00"
+ },
+ {
+  "expression": "eml(eml(sin(x), x), sin(1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.9894278611817737,
+  "target_scale": 6.068015671006509,
+  "target_id": "RS-mul_eml_sin_K07_01"
+ },
+ {
+  "expression": "eml(sin(eml(x, x)), sin(1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.7247194517449594,
+  "target_scale": 2.8893098466843314,
+  "target_id": "RS-mul_eml_sin_K07_02"
+ },
+ {
+  "expression": "sin(sin(eml(sin(1), sin(x))))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.17008767142222767,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K07_03"
+ },
+ {
+  "expression": "eml(sin(eml(x, 1)), sin(1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.7217776747309645,
+  "target_scale": 2.8906673563910172,
+  "target_id": "RS-mul_eml_sin_K07_04"
+ },
+ {
+  "expression": "eml(sin(1), eml(sin(x), x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.631769976478457,
+  "target_scale": 5.0140555290626905,
+  "target_id": "RS-mul_eml_sin_K07_05"
+ },
+ {
+  "expression": "eml(1, eml(x, eml(1, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.09414623320990771,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K07_06"
+ },
+ {
+  "expression": "eml(x, eml(sin(sin(x)), 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 14.332534326484863,
+  "target_scale": 19.737308834402516,
+  "target_id": "RS-mul_eml_sin_K07_07"
+ },
+ {
+  "expression": "*(sin(sin(1)), eml(x, x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6.745072495344013,
+  "target_scale": 14.012026086616919,
+  "target_id": "RS-mul_eml_sin_K07_08"
+ },
+ {
+  "expression": "*(sin(sin(1)), sin(sin(x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.01991499246124366,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K07_09"
+ },
+ {
+  "expression": "eml(sin(sin(sin(sin(1)))), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.01331409493534148,
+  "target_scale": 1.1749714939492857,
+  "target_id": "RS-mul_eml_sin_K07_10"
+ },
+ {
+  "expression": "eml(eml(1, sin(x)), sin(1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 367.1372414516427,
+  "target_scale": 100.58859035105885,
+  "target_id": "RS-mul_eml_sin_K07_11"
+ },
+ {
+  "expression": "eml(1, eml(1, eml(1, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0008990206114083207,
+  "target_scale": 2.0176194028526298,
+  "target_id": "RS-mul_eml_sin_K07_12"
+ },
+ {
+  "expression": "*(sin(sin(x)), sin(sin(x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.03566030481853917,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K07_13"
+ },
+ {
+  "expression": "eml(sin(sin(1)), eml(1, x))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004057505669661526,
+  "target_scale": 1.6234954763246032,
+  "target_id": "RS-mul_eml_sin_K07_14"
+ },
+ {
+  "expression": "eml(eml(eml(1, x), x), 1)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 51653.71136504296,
+  "target_scale": 936.0977356645712,
+  "target_id": "RS-mul_eml_sin_K07_15"
+ },
+ {
+  "expression": "eml(sin(sin(eml(1, x))), 1)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0013883656535206177,
+  "target_scale": 2.318069775377185,
+  "target_id": "RS-mul_eml_sin_K07_16"
+ },
+ {
+  "expression": "eml(x, eml(*(x, x), 1))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4.720254375691334,
+  "target_scale": 10.946959379480955,
+  "target_id": "RS-mul_eml_sin_K07_17"
+ },
+ {
+  "expression": "eml(sin(sin(eml(1, 1))), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013314094935341478,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K07_18"
+ },
+ {
+  "expression": "eml(1, eml(sin(x), sin(x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0037020004853246997,
+  "target_scale": 1.8722456701881502,
+  "target_id": "RS-mul_eml_sin_K07_19"
+ },
+ {
+  "expression": "sin(*(sin(x), eml(1, 1)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.024249214312628133,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K07_20"
+ },
+ {
+  "expression": "*(x, *(sin(x), sin(x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.2579651732072748,
+  "target_scale": 1.6466417995057474,
+  "target_id": "RS-mul_eml_sin_K07_21"
+ },
+ {
+  "expression": "sin(*(sin(1), eml(1, x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3.4490460794318145e-05,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K07_22"
+ },
+ {
+  "expression": "eml(eml(1, 1), sin(sin(x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.19255515422591998,
+  "target_scale": 17.049100603984094,
+  "target_id": "RS-mul_eml_sin_K07_23"
+ },
+ {
+  "expression": "eml(1, eml(sin(1), sin(x)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.023479218478632446,
+  "target_scale": 1.8347413449069128,
+  "target_id": "RS-mul_eml_sin_K07_24"
+ },
+ {
+  "expression": "sin(eml(sin(x), eml(x, 1)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.22659151241761832,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K07_25"
+ },
+ {
+  "expression": "eml(x, *(sin(x), sin(1)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 16.544550016058242,
+  "target_scale": 21.95129481001527,
+  "target_id": "RS-mul_eml_sin_K07_26"
+ },
+ {
+  "expression": "*(sin(x), eml(1, sin(1)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.4210216475989638,
+  "target_scale": 2.6166349493307988,
+  "target_id": "RS-mul_eml_sin_K07_27"
+ },
+ {
+  "expression": "eml(*(sin(x), sin(x)), x)",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.24624141626129564,
+  "target_scale": 1.5707464700640257,
+  "target_id": "RS-mul_eml_sin_K07_28"
+ },
+ {
+  "expression": "eml(x, *(x, eml(x, 1)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 16.253496664211536,
+   "bits_syn": 11.153552031708111,
+   "bits_sem": 9.821773981970567,
+   "bits_sem_uncorrected": 9.823367240046235,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 10.240548792172712,
+  "target_scale": 15.802245958057235,
+  "target_id": "RS-mul_eml_sin_K07_29"
+ },
+ {
+  "expression": "sin(sin(eml(sin(eml(x, 1)), x)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.29778198579174536,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K08_00"
+ },
+ {
+  "expression": "*(x, eml(x, eml(sin(1), x)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 167.35220843577693,
+  "target_scale": 58.860526912279596,
+  "target_id": "RS-mul_eml_sin_K08_01"
+ },
+ {
+  "expression": "sin(sin(sin(sin(sin(eml(x, 1))))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.24987324013443185,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K08_02"
+ },
+ {
+  "expression": "sin(eml(eml(sin(1), 1), sin(x)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.011507312042350197,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K08_03"
+ },
+ {
+  "expression": "eml(eml(sin(1), x), *(x, x))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5035286273809014,
+  "target_scale": 3.665473231493233,
+  "target_id": "RS-mul_eml_sin_K08_04"
+ },
+ {
+  "expression": "eml(*(sin(x), eml(1, 1)), x)",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 10.294772039202785,
+  "target_scale": 11.011475231047402,
+  "target_id": "RS-mul_eml_sin_K08_05"
+ },
+ {
+  "expression": "sin(eml(sin(eml(1, sin(x))), x))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1684612711275174,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K08_06"
+ },
+ {
+  "expression": "*(sin(sin(x)), eml(sin(1), 1))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.19276697620968572,
+  "target_scale": 1.824520919987766,
+  "target_id": "RS-mul_eml_sin_K08_07"
+ },
+ {
+  "expression": "sin(sin(eml(eml(sin(x), 1), 1)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.33259271134050117,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K08_08"
+ },
+ {
+  "expression": "sin(eml(sin(x), eml(x, sin(x))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.22182157392300084,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K08_09"
+ },
+ {
+  "expression": "*(x, sin(*(x, eml(1, x))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1607281203999675,
+  "target_scale": 2.9606482984942604,
+  "target_id": "RS-mul_eml_sin_K08_10"
+ },
+ {
+  "expression": "eml(eml(1, 1), eml(x, sin(x)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.09391572635105874,
+  "target_scale": 13.13109318530556,
+  "target_id": "RS-mul_eml_sin_K08_11"
+ },
+ {
+  "expression": "sin(sin(*(sin(1), *(x, x))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.2914947980494148,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K08_12"
+ },
+ {
+  "expression": "eml(eml(1, sin(1)), eml(x, x))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08899069055401883,
+  "target_scale": 16.097563768252705,
+  "target_id": "RS-mul_eml_sin_K08_13"
+ },
+ {
+  "expression": "sin(sin(eml(eml(sin(1), x), 1)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.033887842332412293,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K08_14"
+ },
+ {
+  "expression": "eml(eml(1, sin(eml(1, 1))), x)",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013314094935341456,
+  "target_scale": 36.193230164483175,
+  "target_id": "RS-mul_eml_sin_K08_15"
+ },
+ {
+  "expression": "eml(1, sin(sin(*(x, sin(x)))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.02453019844782063,
+  "target_scale": 3.5800853932673955,
+  "target_id": "RS-mul_eml_sin_K08_16"
+ },
+ {
+  "expression": "sin(*(x, sin(sin(eml(x, x)))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.7092688827807955,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K08_17"
+ },
+ {
+  "expression": "eml(sin(eml(x, 1)), sin(sin(1)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.7217776747309645,
+  "target_scale": 3.0115972474135737,
+  "target_id": "RS-mul_eml_sin_K08_18"
+ },
+ {
+  "expression": "*(sin(x), eml(eml(1, x), 1))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3.1735931368221046,
+  "target_scale": 6.824524072071428,
+  "target_id": "RS-mul_eml_sin_K08_19"
+ },
+ {
+  "expression": "eml(sin(x), eml(1, eml(1, 1)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1561819153267645,
+  "target_scale": 1.930935016105538,
+  "target_id": "RS-mul_eml_sin_K08_20"
+ },
+ {
+  "expression": "*(sin(sin(x)), sin(eml(x, x)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1639198705373386,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K08_21"
+ },
+ {
+  "expression": "*(x, *(sin(x), eml(x, x)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4.2095543041073675,
+  "target_scale": 16.888143110262646,
+  "target_id": "RS-mul_eml_sin_K08_22"
+ },
+ {
+  "expression": "sin(eml(x, eml(1, eml(1, 1))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5133507419263803,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K08_23"
+ },
+ {
+  "expression": "*(x, eml(eml(sin(1), x), x))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.29893415995341266,
+  "target_scale": 8.770320938810233,
+  "target_id": "RS-mul_eml_sin_K08_24"
+ },
+ {
+  "expression": "*(x, eml(1, eml(1, sin(1))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.2241972351057087,
+  "target_scale": 4.953753680215611,
+  "target_id": "RS-mul_eml_sin_K08_25"
+ },
+ {
+  "expression": "*(sin(x), eml(x, sin(sin(1))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.5735050578062515,
+  "target_scale": 7.669351757681144,
+  "target_id": "RS-mul_eml_sin_K08_26"
+ },
+ {
+  "expression": "*(sin(x), eml(sin(x), sin(1)))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.4432215609203593,
+  "target_scale": 2.393952440360395,
+  "target_id": "RS-mul_eml_sin_K08_27"
+ },
+ {
+  "expression": "*(eml(1, x), sin(sin(sin(x))))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.12243676127536655,
+  "target_scale": 1.4300777669509754,
+  "target_id": "RS-mul_eml_sin_K08_28"
+ },
+ {
+  "expression": "eml(eml(sin(x), x), *(x, x))",
+  "K_construction": 8,
+  "K_proven": 8,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 8.0,
+   "bits_uniform": 18.575424759098897,
+   "bits_syn": 13.162391328756906,
+   "bits_sem": 11.592924155627637,
+   "bits_sem_uncorrected": 11.593391122791736,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.684023372763129,
+  "target_scale": 4.499241000336362,
+  "target_id": "RS-mul_eml_sin_K08_29"
+ },
+ {
+  "expression": "*(sin(x), sin(sin(*(x, sin(x)))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.04210753805190452,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K09_00"
+ },
+ {
+  "expression": "sin(*(x, sin(*(x, sin(sin(1))))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.006502994457469603,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K09_01"
+ },
+ {
+  "expression": "*(eml(1, 1), eml(x, sin(sin(1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 95.58482118728753,
+  "target_scale": 54.85814874981958,
+  "target_id": "RS-mul_eml_sin_K09_02"
+ },
+ {
+  "expression": "eml(sin(x), eml(1, sin(eml(1, 1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.15618191532676456,
+  "target_scale": 1.189112872066149,
+  "target_id": "RS-mul_eml_sin_K09_03"
+ },
+ {
+  "expression": "sin(eml(*(sin(x), sin(1)), sin(x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.026477221455939115,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K09_04"
+ },
+ {
+  "expression": "sin(sin(eml(*(x, sin(1)), sin(x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3468407694040911,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K09_05"
+ },
+ {
+  "expression": "eml(sin(eml(x, x)), eml(sin(x), 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.610363469058537,
+  "target_scale": 2.3021111949648536,
+  "target_id": "RS-mul_eml_sin_K09_06"
+ },
+ {
+  "expression": "eml(x, eml(1, eml(1, sin(sin(1)))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.935998848502534,
+  "target_scale": 19.40785916332145,
+  "target_id": "RS-mul_eml_sin_K09_07"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, x)), eml(x, 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.4897519434858206,
+  "target_scale": 2.1836928765888386,
+  "target_id": "RS-mul_eml_sin_K09_08"
+ },
+ {
+  "expression": "sin(eml(eml(sin(x), sin(x)), sin(x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.39776395205714593,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K09_09"
+ },
+ {
+  "expression": "sin(sin(eml(eml(sin(x), 1), sin(1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.34049378903676236,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K09_10"
+ },
+ {
+  "expression": "eml(eml(sin(1), 1), eml(1, sin(x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.018391260316439905,
+  "target_scale": 9.137391946828927,
+  "target_id": "RS-mul_eml_sin_K09_11"
+ },
+ {
+  "expression": "eml(sin(1), eml(1, eml(1, sin(x))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00866354121635166,
+  "target_scale": 2.1456544740017387,
+  "target_id": "RS-mul_eml_sin_K09_12"
+ },
+ {
+  "expression": "*(sin(1), sin(eml(x, eml(1, 1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3521852059863159,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K09_13"
+ },
+ {
+  "expression": "*(x, eml(eml(1, x), sin(sin(1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.007037984839888464,
+  "target_scale": 16.031956879717654,
+  "target_id": "RS-mul_eml_sin_K09_14"
+ },
+ {
+  "expression": "*(eml(1, sin(x)), eml(x, sin(x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 451.7786136316523,
+  "target_scale": 100.3849873005606,
+  "target_id": "RS-mul_eml_sin_K09_15"
+ },
+ {
+  "expression": "sin(sin(eml(x, eml(x, sin(sin(1))))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3515028490755915,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K09_16"
+ },
+ {
+  "expression": "sin(sin(eml(eml(sin(x), x), sin(1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.43736948578326285,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K09_17"
+ },
+ {
+  "expression": "eml(eml(sin(1), sin(eml(1, x))), 1)",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.10154694837271064,
+  "target_scale": 11.294897683233476,
+  "target_id": "RS-mul_eml_sin_K09_18"
+ },
+ {
+  "expression": "eml(*(x, eml(1, x)), eml(x, 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 411.49186290661896,
+  "target_scale": 125.11575685943625,
+  "target_id": "RS-mul_eml_sin_K09_19"
+ },
+ {
+  "expression": "*(*(x, sin(x)), eml(sin(x), 1))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.5238933132051138,
+  "target_scale": 4.497601979605176,
+  "target_id": "RS-mul_eml_sin_K09_20"
+ },
+ {
+  "expression": "eml(x, eml(1, eml(1, sin(sin(x)))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 13.541230487930438,
+  "target_scale": 19.714221517298913,
+  "target_id": "RS-mul_eml_sin_K09_21"
+ },
+ {
+  "expression": "sin(sin(sin(eml(1, eml(sin(x), x)))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.24896164043650212,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K09_22"
+ },
+ {
+  "expression": "eml(x, sin(eml(sin(x), eml(1, 1))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 16.63864545576935,
+  "target_scale": 21.706711379147862,
+  "target_id": "RS-mul_eml_sin_K09_23"
+ },
+ {
+  "expression": "eml(sin(*(x, sin(x))), eml(x, x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.33851632077984595,
+  "target_scale": 1.3868000294132625,
+  "target_id": "RS-mul_eml_sin_K09_24"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, 1)), eml(x, x))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.44119776393928833,
+  "target_scale": 2.1714560494395045,
+  "target_id": "RS-mul_eml_sin_K09_25"
+ },
+ {
+  "expression": "*(x, sin(*(x, sin(eml(x, x)))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3.628834574058813,
+  "target_scale": 2.916945507322858,
+  "target_id": "RS-mul_eml_sin_K09_26"
+ },
+ {
+  "expression": "*(sin(x), eml(sin(1), eml(x, 1)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.017685217291923322,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K09_27"
+ },
+ {
+  "expression": "*(x, sin(sin(eml(1, eml(x, x)))))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.353688245250479,
+  "target_scale": 1.3282191688958522,
+  "target_id": "RS-mul_eml_sin_K09_28"
+ },
+ {
+  "expression": "eml(sin(sin(x)), *(sin(x), sin(x)))",
+  "K_construction": 9,
+  "K_proven": 9,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 9.0,
+   "bits_uniform": 20.89735285398626,
+   "bits_syn": 15.249780115389212,
+   "bits_sem": 13.402212672714642,
+   "bits_sem_uncorrected": 13.404609397837712,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.42955667924854923,
+  "target_scale": 4.944311585461035,
+  "target_id": "RS-mul_eml_sin_K09_29"
+ },
+ {
+  "expression": "sin(*(*(x, sin(x)), eml(x, sin(x))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3796872801677788,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K10_00"
+ },
+ {
+  "expression": "*(eml(1, sin(1)), *(x, *(x, x)))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 246.28145414782904,
+  "target_scale": 77.28364724790764,
+  "target_id": "RS-mul_eml_sin_K10_01"
+ },
+ {
+  "expression": "sin(eml(eml(sin(1), sin(sin(sin(x)))), 1))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.4965545461811432,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K10_02"
+ },
+ {
+  "expression": "sin(eml(sin(sin(*(x, sin(1)))), sin(1)))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.010849138648856211,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K10_03"
+ },
+ {
+  "expression": "eml(*(x, sin(eml(x, eml(1, x)))), 1)",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 15.3058789584238,
+  "target_scale": 14.605763649236174,
+  "target_id": "RS-mul_eml_sin_K10_04"
+ },
+ {
+  "expression": "eml(*(sin(x), eml(1, 1)), eml(x, 1))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 11.400152965640702,
+  "target_scale": 9.699659703148921,
+  "target_id": "RS-mul_eml_sin_K10_05"
+ },
+ {
+  "expression": "sin(eml(sin(sin(1)), eml(sin(1), sin(x))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.007231674719318935,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K10_06"
+ },
+ {
+  "expression": "sin(*(x, eml(eml(1, *(x, x)), x)))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.4402109802419741,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K10_07"
+ },
+ {
+  "expression": "sin(sin(*(x, *(sin(1), *(x, x)))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3828782786129078,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K10_08"
+ },
+ {
+  "expression": "sin(eml(*(sin(sin(x)), eml(1, x)), x))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.30259644071878866,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K10_09"
+ },
+ {
+  "expression": "eml(sin(*(x, sin(x))), sin(eml(1, x)))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.11439316912989446,
+  "target_scale": 2.7524888885166163,
+  "target_id": "RS-mul_eml_sin_K10_10"
+ },
+ {
+  "expression": "eml(sin(eml(sin(x), x)), eml(x, sin(1)))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.705424834633248,
+  "target_scale": 1.9288678114138391,
+  "target_id": "RS-mul_eml_sin_K10_11"
+ },
+ {
+  "expression": "*(sin(1), sin(*(sin(x), eml(x, x))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.17799898444933873,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K10_12"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(1, x), sin(1))), 1)",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.07300921470792901,
+  "target_scale": 2.891620321315253,
+  "target_id": "RS-mul_eml_sin_K10_13"
+ },
+ {
+  "expression": "eml(*(sin(1), eml(1, 1)), eml(x, 1))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683164,
+  "target_scale": 7.83895482151054,
+  "target_id": "RS-mul_eml_sin_K10_14"
+ },
+ {
+  "expression": "sin(sin(sin(eml(sin(1), eml(x, sin(1))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.06333058369071903,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K10_15"
+ },
+ {
+  "expression": "sin(eml(*(x, x), sin(sin(sin(sin(1))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.509643313901336,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K10_16"
+ },
+ {
+  "expression": "eml(1, eml(sin(1), *(x, eml(1, 1))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08551700937207662,
+  "target_scale": 4.212293595266881,
+  "target_id": "RS-mul_eml_sin_K10_17"
+ },
+ {
+  "expression": "eml(sin(eml(1, *(x, eml(1, 1)))), x)",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.07693786303794076,
+  "target_scale": 1.6467395487873668,
+  "target_id": "RS-mul_eml_sin_K10_18"
+ },
+ {
+  "expression": "sin(*(x, eml(sin(sin(1)), eml(x, x))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.19812074080995445,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K10_19"
+ },
+ {
+  "expression": "*(eml(x, 1), eml(x, *(x, sin(1))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 8504.737342849456,
+  "target_scale": 377.1682901463753,
+  "target_id": "RS-mul_eml_sin_K10_20"
+ },
+ {
+  "expression": "sin(*(x, sin(sin(eml(*(x, x), 1)))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.643711719325389,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K10_21"
+ },
+ {
+  "expression": "*(sin(*(x, x)), eml(x, *(x, x)))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 71.66945020086702,
+  "target_scale": 14.69135104397161,
+  "target_id": "RS-mul_eml_sin_K10_22"
+ },
+ {
+  "expression": "sin(eml(x, *(sin(sin(1)), eml(1, x))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5147263991243402,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K10_23"
+ },
+ {
+  "expression": "*(eml(x, sin(x)), eml(sin(x), sin(1)))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6.535381855270126,
+  "target_scale": 29.085471625635094,
+  "target_id": "RS-mul_eml_sin_K10_24"
+ },
+ {
+  "expression": "sin(eml(eml(sin(sin(x)), x), sin(sin(x))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.30303571164470966,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K10_25"
+ },
+ {
+  "expression": "sin(*(x, sin(eml(x, eml(x, sin(x))))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5596067579639525,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K10_26"
+ },
+ {
+  "expression": "sin(eml(eml(sin(x), sin(eml(1, x))), 1))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.4092911440105837,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K10_27"
+ },
+ {
+  "expression": "eml(1, *(x, sin(eml(sin(sin(x)), x))))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.30410872629994556,
+  "target_scale": 4.3278912771419895,
+  "target_id": "RS-mul_eml_sin_K10_28"
+ },
+ {
+  "expression": "sin(sin(eml(sin(eml(eml(1, 1), 1)), x)))",
+  "K_construction": 10,
+  "K_proven": 10,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 10.0,
+   "bits_uniform": 23.21928094887362,
+   "bits_syn": 17.33723860036717,
+   "bits_sem": 15.239561238262604,
+   "bits_sem_uncorrected": 15.242653114638543,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.003824454465733988,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K10_29"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(sin(1), x), sin(1))), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.15351387275318654,
+  "target_scale": 4.238993362730548,
+  "target_id": "RS-mul_eml_sin_K11_00"
+ },
+ {
+  "expression": "sin(eml(sin(eml(x, *(x, sin(1)))), sin(x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1370949622837846,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K11_01"
+ },
+ {
+  "expression": "sin(sin(eml(sin(sin(eml(x, x))), sin(sin(x)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.06032597538931813,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K11_02"
+ },
+ {
+  "expression": "eml(sin(sin(sin(eml(sin(sin(sin(x))), 1)))), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0006783454402286449,
+  "target_scale": 2.1077556297443785,
+  "target_id": "RS-mul_eml_sin_K11_03"
+ },
+ {
+  "expression": "eml(*(sin(x), sin(sin(eml(x, sin(1))))), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.2684395688493994,
+  "target_scale": 1.4202474599098958,
+  "target_id": "RS-mul_eml_sin_K11_04"
+ },
+ {
+  "expression": "*(x, eml(x, eml(1, *(x, sin(sin(x))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 150.13382714968174,
+  "target_scale": 55.70498176556739,
+  "target_id": "RS-mul_eml_sin_K11_05"
+ },
+ {
+  "expression": "eml(eml(1, eml(x, eml(1, x))), eml(x, 1))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.49581511019794944,
+  "target_scale": 2.2090879626847175,
+  "target_id": "RS-mul_eml_sin_K11_06"
+ },
+ {
+  "expression": "eml(eml(sin(1), x), eml(eml(1, x), sin(x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.19402178002025341,
+  "target_scale": 3.028314734055766,
+  "target_id": "RS-mul_eml_sin_K11_07"
+ },
+ {
+  "expression": "eml(x, eml(eml(sin(1), x), eml(sin(x), x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.483079862597776,
+  "target_scale": 18.0799133144268,
+  "target_id": "RS-mul_eml_sin_K11_08"
+ },
+ {
+  "expression": "*(eml(x, x), sin(*(sin(x), eml(x, x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 48.396883728042006,
+  "target_scale": 16.236834153650854,
+  "target_id": "RS-mul_eml_sin_K11_09"
+ },
+ {
+  "expression": "sin(sin(*(sin(*(x, x)), eml(x, sin(1)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3231131179515703,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K11_10"
+ },
+ {
+  "expression": "*(eml(x, sin(1)), sin(sin(eml(sin(x), x))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3.556731463115623,
+  "target_scale": 8.758392830101076,
+  "target_id": "RS-mul_eml_sin_K11_11"
+ },
+ {
+  "expression": "sin(eml(sin(sin(sin(sin(1)))), eml(sin(x), x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.28482865864122964,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K11_12"
+ },
+ {
+  "expression": "eml(sin(eml(x, x)), eml(1, sin(sin(sin(1)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.7247194517449594,
+  "target_scale": 1.5832882481476727,
+  "target_id": "RS-mul_eml_sin_K11_13"
+ },
+ {
+  "expression": "sin(eml(sin(sin(eml(eml(sin(1), x), x))), 1))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.041942237667454495,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K11_14"
+ },
+ {
+  "expression": "eml(eml(1, eml(sin(eml(sin(1), 1)), 1)), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013314094935341468,
+  "target_scale": 6.587504414859698,
+  "target_id": "RS-mul_eml_sin_K11_15"
+ },
+ {
+  "expression": "sin(*(eml(x, x), eml(eml(1, sin(1)), 1)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5203124766233375,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K11_16"
+ },
+ {
+  "expression": "eml(*(x, eml(1, eml(eml(1, 1), x))), 1)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.001968328724374347,
+  "target_scale": 1.2514762508462327,
+  "target_id": "RS-mul_eml_sin_K11_17"
+ },
+ {
+  "expression": "sin(eml(*(x, sin(sin(*(x, sin(x))))), 1))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.4558804220418643,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K11_18"
+ },
+ {
+  "expression": "eml(x, eml(eml(sin(1), 1), eml(1, sin(1))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.935998848502528,
+  "target_scale": 17.678076722961315,
+  "target_id": "RS-mul_eml_sin_K11_19"
+ },
+ {
+  "expression": "sin(*(sin(sin(1)), eml(sin(*(x, x)), x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.24168824001277084,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K11_20"
+ },
+ {
+  "expression": "eml(eml(1, x), eml(eml(1, *(x, x)), 1))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.23353167653137155,
+  "target_scale": 6.217694447613958,
+  "target_id": "RS-mul_eml_sin_K11_21"
+ },
+ {
+  "expression": "eml(sin(eml(sin(1), sin(sin(1)))), eml(1, x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0040575056696615245,
+  "target_scale": 1.1711518043134908,
+  "target_id": "RS-mul_eml_sin_K11_22"
+ },
+ {
+  "expression": "sin(sin(*(x, eml(x, eml(sin(1), sin(x))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.39713809251287635,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K11_23"
+ },
+ {
+  "expression": "*(*(x, sin(1)), eml(sin(1), *(x, x)))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.13159802108752383,
+  "target_scale": 1.5620700594256642,
+  "target_id": "RS-mul_eml_sin_K11_24"
+ },
+ {
+  "expression": "eml(x, eml(x, sin(sin(eml(1, *(x, x))))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 10.956252460808905,
+  "target_scale": 16.861564565958915,
+  "target_id": "RS-mul_eml_sin_K11_25"
+ },
+ {
+  "expression": "eml(sin(sin(sin(sin(*(x, eml(x, 1)))))), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3120249394499908,
+  "target_scale": 1.1737384544796663,
+  "target_id": "RS-mul_eml_sin_K11_26"
+ },
+ {
+  "expression": "sin(eml(sin(eml(1, eml(eml(1, x), x))), x))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 5.0727729557827505e-05,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K11_27"
+ },
+ {
+  "expression": "eml(*(x, eml(*(sin(x), sin(x)), 1)), x)",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 533.8399243123881,
+  "target_scale": 94.89758653404776,
+  "target_id": "RS-mul_eml_sin_K11_28"
+ },
+ {
+  "expression": "eml(1, sin(eml(sin(1), *(x, eml(1, 1)))))",
+  "K_construction": 11,
+  "K_proven": 11,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 11.0,
+   "bits_uniform": 25.541209043760983,
+   "bits_syn": 19.462370464728256,
+   "bits_sem": 17.09712682378535,
+   "bits_sem_uncorrected": 17.101565383132318,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.07649138653157854,
+  "target_scale": 4.220705566314202,
+  "target_id": "RS-mul_eml_sin_K11_29"
+ },
+ {
+  "expression": "sin(eml(eml(sin(1), sin(x)), eml(1, sin(sin(x)))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5264835611552098,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K12_00"
+ },
+ {
+  "expression": "*(x, *(eml(sin(1), x), eml(x, eml(x, x))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 162.35542759757863,
+  "target_scale": 62.074207425280854,
+  "target_id": "RS-mul_eml_sin_K12_01"
+ },
+ {
+  "expression": "*(x, sin(sin(eml(*(x, x), sin(eml(1, x))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.1864518339658656,
+  "target_scale": 2.391816442666622,
+  "target_id": "RS-mul_eml_sin_K12_02"
+ },
+ {
+  "expression": "eml(x, eml(1, eml(eml(sin(eml(1, 1)), 1), x)))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.778668101902984,
+  "target_scale": 19.490251074018143,
+  "target_id": "RS-mul_eml_sin_K12_03"
+ },
+ {
+  "expression": "eml(eml(1, *(x, sin(1))), eml(x, eml(1, x)))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.3314688481899626,
+  "target_scale": 7.049336057654028,
+  "target_id": "RS-mul_eml_sin_K12_04"
+ },
+ {
+  "expression": "sin(eml(x, eml(*(x, sin(x)), eml(sin(x), 1))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.4528760083574637,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K12_05"
+ },
+ {
+  "expression": "eml(x, sin(sin(sin(sin(sin(sin(eml(sin(1), x))))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 12.976288981521247,
+  "target_scale": 20.438593448422406,
+  "target_id": "RS-mul_eml_sin_K12_06"
+ },
+ {
+  "expression": "eml(sin(sin(sin(eml(x, x)))), eml(x, *(x, x)))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.6895562422928238,
+  "target_scale": 2.320541745189019,
+  "target_id": "RS-mul_eml_sin_K12_07"
+ },
+ {
+  "expression": "sin(sin(eml(eml(1, eml(eml(sin(x), 1), x)), 1)))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.39955495910804034,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K12_08"
+ },
+ {
+  "expression": "*(eml(1, sin(1)), eml(1, *(x, *(x, x))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.001419313123177,
+  "target_scale": 1.8039861481290864,
+  "target_id": "RS-mul_eml_sin_K12_09"
+ },
+ {
+  "expression": "*(eml(x, 1), eml(eml(1, sin(sin(x))), sin(1)))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 178384.21052629448,
+  "target_scale": 2008.0715372311565,
+  "target_id": "RS-mul_eml_sin_K12_10"
+ },
+ {
+  "expression": "*(sin(sin(sin(sin(1)))), eml(sin(x), eml(x, x)))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.18939998532044378,
+  "target_scale": 1.111148553875128,
+  "target_id": "RS-mul_eml_sin_K12_11"
+ },
+ {
+  "expression": "*(x, sin(*(sin(sin(sin(x))), sin(eml(1, 1)))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.01434746269222109,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K12_12"
+ },
+ {
+  "expression": "eml(eml(sin(sin(*(sin(1), sin(sin(x))))), x), 1)",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3246787835308886,
+  "target_scale": 2.9502301044273818,
+  "target_id": "RS-mul_eml_sin_K12_13"
+ },
+ {
+  "expression": "sin(*(eml(1, sin(1)), eml(sin(sin(sin(1))), x)))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.10376027190010408,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K12_14"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(eml(sin(1), x), x), x)), x)",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.10447780851355054,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K12_15"
+ },
+ {
+  "expression": "*(sin(x), eml(eml(sin(sin(x)), eml(1, x)), x))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.0404518462672723,
+  "target_scale": 3.3944290492921487,
+  "target_id": "RS-mul_eml_sin_K12_16"
+ },
+ {
+  "expression": "*(x, sin(eml(x, sin(sin(*(sin(x), sin(x)))))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 3.20747387358134,
+  "target_scale": 2.972691020668519,
+  "target_id": "RS-mul_eml_sin_K12_17"
+ },
+ {
+  "expression": "eml(eml(1, eml(sin(eml(sin(x), 1)), x)), sin(1))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.4647553124690997,
+  "target_scale": 13.21746923270452,
+  "target_id": "RS-mul_eml_sin_K12_18"
+ },
+ {
+  "expression": "sin(*(sin(1), eml(sin(x), eml(eml(1, 1), x))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.05880454578359995,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K12_19"
+ },
+ {
+  "expression": "eml(x, *(eml(sin(x), x), *(sin(x), sin(x))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 28.320055319535236,
+  "target_scale": 26.36400936334736,
+  "target_id": "RS-mul_eml_sin_K12_20"
+ },
+ {
+  "expression": "eml(1, sin(*(sin(sin(sin(x))), eml(1, sin(1)))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.039180079871503876,
+  "target_scale": 3.5867713491295756,
+  "target_id": "RS-mul_eml_sin_K12_21"
+ },
+ {
+  "expression": "eml(sin(x), eml(sin(eml(x, sin(sin(x)))), sin(1)))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.49088334593448707,
+  "target_scale": 2.652792416852647,
+  "target_id": "RS-mul_eml_sin_K12_22"
+ },
+ {
+  "expression": "eml(sin(eml(sin(sin(sin(sin(x)))), 1)), eml(1, x))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.008481351378118885,
+  "target_scale": 2.1620208076402045,
+  "target_id": "RS-mul_eml_sin_K12_23"
+ },
+ {
+  "expression": "sin(eml(sin(1), *(sin(1), eml(x, eml(x, 1)))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.09684129963679672,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K12_24"
+ },
+ {
+  "expression": "sin(sin(eml(sin(eml(1, eml(x, 1))), eml(1, 1))))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08653692446709497,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K12_25"
+ },
+ {
+  "expression": "*(eml(sin(1), sin(x)), eml(sin(1), eml(1, x)))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.0443427686427045,
+  "target_scale": 7.729019807941448,
+  "target_id": "RS-mul_eml_sin_K12_26"
+ },
+ {
+  "expression": "sin(eml(eml(sin(1), 1), eml(eml(sin(x), 1), x)))",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.09800718118186738,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K12_27"
+ },
+ {
+  "expression": "eml(sin(eml(x, *(sin(1), eml(sin(1), 1)))), 1)",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.7107685741562884,
+  "target_scale": 2.7171333714822614,
+  "target_id": "RS-mul_eml_sin_K12_28"
+ },
+ {
+  "expression": "eml(eml(sin(sin(*(x, x))), eml(x, sin(1))), 1)",
+  "K_construction": 12,
+  "K_proven": 12,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 12.0,
+   "bits_uniform": 27.863137138648348,
+   "bits_syn": 21.595370406151982,
+   "bits_sem": 18.973492780190014,
+   "bits_sem_uncorrected": 18.97925212764299,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.026698089539265363,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K12_29"
+ },
+ {
+  "expression": "eml(1, eml(sin(x), eml(eml(sin(1), *(x, x)), 1)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.01637245716311344,
+  "target_scale": 2.6851045378792633,
+  "target_id": "RS-mul_eml_sin_K13_00"
+ },
+ {
+  "expression": "sin(eml(eml(1, *(x, sin(sin(eml(x, x))))), sin(x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5384555425816849,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K13_01"
+ },
+ {
+  "expression": "sin(eml(sin(sin(eml(sin(1), sin(eml(1, sin(1)))))), x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.012024186695908615,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K13_02"
+ },
+ {
+  "expression": "eml(sin(eml(x, 1)), eml(eml(sin(1), sin(sin(x))), 1))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.0629200393097409,
+  "target_scale": 3.2598570879498974,
+  "target_id": "RS-mul_eml_sin_K13_03"
+ },
+ {
+  "expression": "sin(*(sin(eml(x, 1)), sin(sin(sin(eml(sin(x), x))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.16785632048990629,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K13_04"
+ },
+ {
+  "expression": "eml(sin(1), *(sin(1), eml(x, eml(1, sin(sin(1))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.09935552234749576,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K13_05"
+ },
+ {
+  "expression": "*(sin(1), eml(eml(eml(sin(eml(x, x)), x), x), 1))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 9141.452450873108,
+  "target_scale": 443.7129157600762,
+  "target_id": "RS-mul_eml_sin_K13_06"
+ },
+ {
+  "expression": "*(sin(x), sin(eml(x, eml(x, sin(eml(sin(1), 1))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.15667295707116213,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K13_07"
+ },
+ {
+  "expression": "*(sin(1), sin(eml(sin(sin(sin(sin(x)))), *(x, x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.12288961496332837,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K13_08"
+ },
+ {
+  "expression": "eml(sin(eml(1, eml(1, eml(eml(sin(x), 1), x)))), 1)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.37306652358861847,
+  "target_scale": 2.4420688167120392,
+  "target_id": "RS-mul_eml_sin_K13_09"
+ },
+ {
+  "expression": "*(eml(sin(sin(x)), 1), sin(sin(eml(sin(x), sin(x)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08118745466577511,
+  "target_scale": 1.2308377441484017,
+  "target_id": "RS-mul_eml_sin_K13_10"
+ },
+ {
+  "expression": "*(sin(eml(1, sin(sin(x)))), eml(sin(1), eml(x, x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.02887638924654889,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K13_11"
+ },
+ {
+  "expression": "eml(1, *(*(x, sin(x)), eml(x, sin(eml(1, 1)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.027090744889145205,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K13_12"
+ },
+ {
+  "expression": "*(sin(sin(eml(sin(1), x))), sin(eml(*(x, x), 1)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3030062332411026,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K13_13"
+ },
+ {
+  "expression": "eml(x, eml(*(eml(1, 1), sin(sin(eml(1, 1)))), x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 13.338411335471958,
+  "target_scale": 19.264093443585082,
+  "target_id": "RS-mul_eml_sin_K13_14"
+ },
+ {
+  "expression": "*(sin(x), eml(eml(sin(x), 1), sin(sin(sin(sin(x))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 9.35396095868786,
+  "target_scale": 11.114684651820893,
+  "target_id": "RS-mul_eml_sin_K13_15"
+ },
+ {
+  "expression": "eml(x, eml(x, *(x, *(eml(x, x), eml(x, 1)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 10.00507307031872,
+  "target_scale": 17.33284597466857,
+  "target_id": "RS-mul_eml_sin_K13_16"
+ },
+ {
+  "expression": "*(sin(eml(1, eml(x, 1))), sin(eml(x, sin(sin(x)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0657342426277925,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K13_17"
+ },
+ {
+  "expression": "eml(sin(sin(eml(x, eml(x, eml(1, eml(1, 1)))))), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.4832565261512363,
+  "target_scale": 1.4814516479264195,
+  "target_id": "RS-mul_eml_sin_K13_18"
+ },
+ {
+  "expression": "eml(sin(sin(x)), *(x, eml(sin(sin(eml(1, 1))), x)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.05165192029084384,
+  "target_scale": 1.729896047917308,
+  "target_id": "RS-mul_eml_sin_K13_19"
+ },
+ {
+  "expression": "eml(eml(sin(eml(*(x, sin(1)), sin(1))), x), sin(x))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.834149373952869,
+  "target_scale": 6.665592011417518,
+  "target_id": "RS-mul_eml_sin_K13_20"
+ },
+ {
+  "expression": "eml(eml(eml(1, x), eml(eml(sin(1), sin(x)), 1)), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1858.7522950629207,
+  "target_scale": 166.69665964165458,
+  "target_id": "RS-mul_eml_sin_K13_21"
+ },
+ {
+  "expression": "*(sin(x), eml(*(sin(1), sin(sin(x))), sin(sin(x))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1970392815277944,
+  "target_scale": 1.97180979175792,
+  "target_id": "RS-mul_eml_sin_K13_22"
+ },
+ {
+  "expression": "*(x, sin(eml(sin(1), sin(eml(1, eml(sin(1), 1))))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.03993053779899608,
+  "target_scale": 2.0906044068599314,
+  "target_id": "RS-mul_eml_sin_K13_23"
+ },
+ {
+  "expression": "eml(eml(sin(*(x, sin(x))), sin(eml(sin(x), 1))), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 22.23288927082199,
+  "target_scale": 21.79902071226969,
+  "target_id": "RS-mul_eml_sin_K13_24"
+ },
+ {
+  "expression": "eml(eml(sin(1), *(sin(sin(1)), eml(1, sin(1)))), x)",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.013314094935341478,
+  "target_scale": 4.021625588165795,
+  "target_id": "RS-mul_eml_sin_K13_25"
+ },
+ {
+  "expression": "eml(eml(sin(sin(1)), eml(sin(1), x)), eml(x, sin(1)))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.039054154993672284,
+  "target_scale": 3.7223350942974145,
+  "target_id": "RS-mul_eml_sin_K13_26"
+ },
+ {
+  "expression": "*(eml(x, x), eml(eml(1, eml(x, sin(sin(x)))), 1))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.004801615655512867,
+  "target_scale": 13.384194918724928,
+  "target_id": "RS-mul_eml_sin_K13_27"
+ },
+ {
+  "expression": "eml(eml(sin(sin(1)), sin(x)), *(x, sin(sin(sin(x)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 114.72668140598527,
+  "target_scale": 55.33576391523334,
+  "target_id": "RS-mul_eml_sin_K13_28"
+ },
+ {
+  "expression": "sin(*(sin(x), eml(sin(1), eml(eml(1, x), sin(1)))))",
+  "K_construction": 13,
+  "K_proven": 13,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 13.0,
+   "bits_uniform": 30.18506523353571,
+   "bits_syn": 23.74905205258786,
+   "bits_sem": 20.8640107796,
+   "bits_sem_uncorrected": 20.871067484112796,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.003113854096794025,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K13_29"
+ },
+ {
+  "expression": "sin(eml(*(x, sin(sin(sin(1)))), sin(eml(sin(x), sin(x)))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5101440793305957,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K14_00"
+ },
+ {
+  "expression": "sin(sin(*(x, eml(sin(eml(sin(1), eml(x, sin(1)))), 1))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 9,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.014116722474820674,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K14_01"
+ },
+ {
+  "expression": "sin(*(eml(x, eml(1, 1)), sin(eml(sin(x), sin(sin(1))))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.46100787629291823,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K14_02"
+ },
+ {
+  "expression": "sin(*(sin(1), eml(sin(eml(x, eml(x, eml(1, 1)))), 1)))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.053028164001280714,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K14_03"
+ },
+ {
+  "expression": "sin(eml(*(x, sin(1)), eml(sin(x), *(sin(x), sin(x)))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5187837670851401,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K14_04"
+ },
+ {
+  "expression": "eml(*(sin(1), sin(eml(*(x, x), 1))), *(x, sin(x)))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5101714342440556,
+  "target_scale": 2.576946832307255,
+  "target_id": "RS-mul_eml_sin_K14_05"
+ },
+ {
+  "expression": "*(sin(sin(sin(x))), eml(eml(1, eml(1, 1)), eml(x, x)))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.42639791738345956,
+  "target_scale": 2.5931827682702275,
+  "target_id": "RS-mul_eml_sin_K14_06"
+ },
+ {
+  "expression": "eml(sin(sin(eml(sin(sin(x)), 1))), eml(1, eml(sin(1), 1)))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.00567851517158865,
+  "target_scale": 1.6902026158583658,
+  "target_id": "RS-mul_eml_sin_K14_07"
+ },
+ {
+  "expression": "*(sin(eml(1, sin(x))), *(sin(1), eml(sin(x), sin(x))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.8255543105416175,
+  "target_scale": 2.5561622439243505,
+  "target_id": "RS-mul_eml_sin_K14_08"
+ },
+ {
+  "expression": "sin(*(eml(sin(sin(1)), x), sin(eml(eml(sin(1), 1), 1))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.002858596709237714,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K14_09"
+ },
+ {
+  "expression": "*(sin(x), eml(*(sin(x), sin(sin(eml(x, sin(1))))), 1))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.24900426272039422,
+  "target_scale": 1.9157214914099323,
+  "target_id": "RS-mul_eml_sin_K14_10"
+ },
+ {
+  "expression": "eml(sin(*(x, sin(1))), *(sin(sin(x)), eml(sin(1), 1)))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.03307449274370312,
+  "target_scale": 2.8492770516997687,
+  "target_id": "RS-mul_eml_sin_K14_11"
+ },
+ {
+  "expression": "eml(*(x, sin(sin(sin(eml(x, x))))), eml(*(x, x), 1))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 9.157312862745004,
+  "target_scale": 8.553882229967613,
+  "target_id": "RS-mul_eml_sin_K14_12"
+ },
+ {
+  "expression": "sin(sin(eml(eml(1, eml(x, eml(x, 1))), sin(sin(sin(x))))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.03624887947047033,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K14_13"
+ },
+ {
+  "expression": "*(eml(eml(1, sin(x)), 1), eml(eml(1, *(x, x)), 1))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 634.2365542362393,
+  "target_scale": 170.2027291730839,
+  "target_id": "RS-mul_eml_sin_K14_14"
+ },
+ {
+  "expression": "eml(*(eml(1, 1), eml(1, 1)), eml(*(x, sin(1)), 1))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.05783768020551636,
+  "target_scale": 1616.4867185471473,
+  "target_id": "RS-mul_eml_sin_K14_15"
+ },
+ {
+  "expression": "sin(eml(eml(sin(1), *(x, sin(1))), eml(eml(1, x), x)))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.1476392555069178,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K14_16"
+ },
+ {
+  "expression": "sin(eml(sin(sin(sin(x))), eml(x, eml(*(x, sin(x)), 1))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.18170757806645002,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K14_17"
+ },
+ {
+  "expression": "*(sin(x), eml(sin(*(x, eml(x, eml(1, sin(x))))), 1))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3931608795871711,
+  "target_scale": 2.3789413967036084,
+  "target_id": "RS-mul_eml_sin_K14_18"
+ },
+ {
+  "expression": "eml(eml(sin(eml(x, eml(x, sin(x)))), *(x, x)), sin(1))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5818207127915465,
+  "target_scale": 2.983270205025311,
+  "target_id": "RS-mul_eml_sin_K14_19"
+ },
+ {
+  "expression": "eml(sin(eml(eml(*(x, sin(x)), 1), eml(1, sin(1)))), x)",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.6556423297906919,
+  "target_scale": 1.9472960920283788,
+  "target_id": "RS-mul_eml_sin_K14_20"
+ },
+ {
+  "expression": "sin(*(sin(sin(eml(x, 1))), eml(sin(sin(x)), eml(x, 1))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.24721832815627692,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K14_21"
+ },
+ {
+  "expression": "sin(*(eml(1, x), eml(1, sin(*(sin(1), sin(sin(x)))))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 8,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08452163497239773,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K14_22"
+ },
+ {
+  "expression": "eml(*(x, sin(sin(1))), eml(*(x, sin(x)), eml(1, 1)))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 5,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 4.016195201004317,
+  "target_scale": 9.85676227087073,
+  "target_id": "RS-mul_eml_sin_K14_23"
+ },
+ {
+  "expression": "eml(eml(sin(eml(sin(sin(x)), sin(1))), eml(sin(1), x)), 1)",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 6.415356208593874,
+  "target_scale": 11.832481353893051,
+  "target_id": "RS-mul_eml_sin_K14_24"
+ },
+ {
+  "expression": "sin(eml(*(sin(x), eml(x, sin(sin(x)))), eml(sin(x), x)))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.5021795573407184,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K14_25"
+ },
+ {
+  "expression": "*(sin(x), eml(1, sin(*(sin(x), eml(1, eml(1, x))))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3073293029114884,
+  "target_scale": 2.4897176173475035,
+  "target_id": "RS-mul_eml_sin_K14_26"
+ },
+ {
+  "expression": "eml(eml(sin(sin(eml(eml(1, 1), x))), sin(*(x, x))), 1)",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 7,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 15849.506226243187,
+  "target_scale": 1202.5395339021045,
+  "target_id": "RS-mul_eml_sin_K14_27"
+ },
+ {
+  "expression": "sin(*(x, sin(sin(*(x, sin(sin(eml(*(x, x), 1))))))))",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 10,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.7434554421454872,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K14_28"
+ },
+ {
+  "expression": "eml(eml(sin(sin(x)), eml(sin(1), *(x, eml(x, 1)))), 1)",
+  "K_construction": 14,
+  "K_proven": 14,
+  "constructed": false,
+  "depth": 6,
+  "units": {
+   "nodes": 14.0,
+   "bits_uniform": 32.50699332842307,
+   "bits_syn": 25.911742976915047,
+   "bits_sem": 22.768615851484437,
+   "bits_sem_uncorrected": 22.776023523055628,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 29.561960527918163,
+  "target_scale": 23.148347472165597,
+  "target_id": "RS-mul_eml_sin_K14_29"
+ },
+ {
+  "expression": "sin(eml(sin(sin(sin(sin(*(sin(1), sin(1)))))), eml(x, sin(x))))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.041017723298592025,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K15_00"
+ },
+ {
+  "expression": "*(*(x, sin(eml(1, eml(sin(1), x)))), *(sin(x), sin(1)))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.08909654342153943,
+  "target_scale": 1.2055623310232546,
+  "target_id": "RS-mul_eml_sin_K15_01"
+ },
+ {
+  "expression": "*(x, eml(1, *(x, eml(sin(eml(1, sin(sin(x)))), sin(x)))))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.09102821125358783,
+  "target_scale": 3.712832481762439,
+  "target_id": "RS-mul_eml_sin_K15_02"
+ },
+ {
+  "expression": "eml(sin(sin(eml(eml(sin(sin(x)), sin(1)), eml(x, 1)))), sin(1))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.5345593804277419,
+  "target_scale": 2.4923137471989247,
+  "target_id": "RS-mul_eml_sin_K15_03"
+ },
+ {
+  "expression": "*(eml(1, *(x, sin(sin(1)))), sin(eml(sin(1), eml(x, x))))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.3590013670706053,
+  "target_scale": 1.1036676380269823,
+  "target_id": "RS-mul_eml_sin_K15_04"
+ },
+ {
+  "expression": "*(*(x, x), sin(sin(*(x, sin(sin(eml(sin(x), sin(1))))))))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.42384085614563155,
+  "target_scale": 5.207589108115355,
+  "target_id": "RS-mul_eml_sin_K15_05"
+ },
+ {
+  "expression": "sin(eml(1, *(sin(1), eml(1, eml(sin(sin(x)), sin(sin(x)))))))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.0005876969057650828,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K15_06"
+ },
+ {
+  "expression": "eml(sin(*(sin(x), *(sin(1), eml(1, 1)))), eml(sin(x), x))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.22206789816879235,
+  "target_scale": 4.096953497709457,
+  "target_id": "RS-mul_eml_sin_K15_07"
+ },
+ {
+  "expression": "*(eml(eml(1, 1), eml(sin(1), x)), sin(sin(*(x, sin(1)))))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1.4156797555966147,
+  "target_scale": 12.28726538646406,
+  "target_id": "RS-mul_eml_sin_K15_08"
+ },
+ {
+  "expression": "eml(sin(sin(eml(eml(sin(x), *(x, eml(1, x))), sin(x)))), x)",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.06251885433756883,
+  "target_scale": 1.3418471415115751,
+  "target_id": "RS-mul_eml_sin_K15_09"
+ },
+ {
+  "expression": "*(x, *(*(x, eml(x, 1)), eml(x, eml(eml(x, 1), x))))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 9.872632396249396e-06,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K15_10"
+ },
+ {
+  "expression": "*(x, sin(sin(eml(sin(*(x, *(x, x))), *(x, sin(1))))))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1.4809201592010746,
+  "target_scale": 2.494399066703326,
+  "target_id": "RS-mul_eml_sin_K15_11"
+ },
+ {
+  "expression": "eml(eml(sin(eml(1, eml(1, 1))), eml(eml(1, 1), sin(1))), x)",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.013314094935341478,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K15_12"
+ },
+ {
+  "expression": "eml(*(sin(1), sin(*(x, eml(eml(1, 1), 1)))), sin(sin(1)))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.4264181771363668,
+  "target_scale": 2.6128137371565416,
+  "target_id": "RS-mul_eml_sin_K15_13"
+ },
+ {
+  "expression": "eml(sin(eml(1, x)), *(eml(x, x), eml(sin(eml(1, x)), x)))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.04049278984364205,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K15_14"
+ },
+ {
+  "expression": "sin(*(eml(sin(1), 1), sin(eml(eml(1, 1), sin(eml(1, x))))))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.0006798729718956635,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K15_15"
+ },
+ {
+  "expression": "eml(x, eml(eml(eml(sin(sin(sin(1))), eml(sin(1), 1)), 1), 1))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 12.935998848502528,
+  "target_scale": 16.794126734001807,
+  "target_id": "RS-mul_eml_sin_K15_16"
+ },
+ {
+  "expression": "sin(*(*(x, eml(x, x)), eml(sin(*(x, sin(x))), sin(1))))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.4654991578472081,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K15_17"
+ },
+ {
+  "expression": "eml(eml(1, eml(eml(sin(x), eml(x, sin(sin(x)))), x)), sin(x))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 54183.28112666363,
+  "target_scale": 1972.2036750127786,
+  "target_id": "RS-mul_eml_sin_K15_18"
+ },
+ {
+  "expression": "sin(eml(eml(sin(sin(1)), sin(x)), *(sin(x), eml(x, sin(x)))))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.5098343721736225,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K15_19"
+ },
+ {
+  "expression": "*(eml(sin(1), 1), eml(sin(x), sin(eml(1, *(x, sin(1))))))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 1.073522445226737,
+  "target_scale": 6.216161354684648,
+  "target_id": "RS-mul_eml_sin_K15_20"
+ },
+ {
+  "expression": "sin(sin(*(sin(x), sin(eml(sin(*(sin(1), sin(1))), sin(1))))))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 9,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.0237573505766049,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K15_21"
+ },
+ {
+  "expression": "*(*(sin(sin(x)), eml(sin(x), sin(1))), *(sin(x), sin(x)))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 5,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.2792209264816989,
+  "target_scale": 1.7042385935203401,
+  "target_id": "RS-mul_eml_sin_K15_22"
+ },
+ {
+  "expression": "eml(eml(sin(eml(sin(sin(x)), 1)), eml(1, eml(1, sin(x)))), 1)",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 2.7964326254748597,
+  "target_scale": 10.513038053565198,
+  "target_id": "RS-mul_eml_sin_K15_23"
+ },
+ {
+  "expression": "sin(eml(x, eml(x, *(sin(x), *(sin(sin(1)), sin(sin(x)))))))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.44370264619558264,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K15_24"
+ },
+ {
+  "expression": "*(sin(eml(1, sin(1))), eml(sin(x), sin(sin(sin(sin(sin(x)))))))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.0015883727266628944,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K15_25"
+ },
+ {
+  "expression": "eml(sin(eml(sin(x), eml(sin(eml(sin(1), 1)), eml(1, x)))), 1)",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 8,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.0538340971479691,
+  "target_scale": 2.7182817646021054,
+  "target_id": "RS-mul_eml_sin_K15_26"
+ },
+ {
+  "expression": "*(*(x, eml(x, eml(sin(sin(1)), sin(x)))), eml(sin(1), x))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 178.49606740373542,
+  "target_scale": 67.73988965242049,
+  "target_id": "RS-mul_eml_sin_K15_27"
+ },
+ {
+  "expression": "*(eml(eml(1, eml(x, eml(x, x))), eml(1, x)), eml(1, x))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 6,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.9678061627036207,
+  "target_scale": 4.0946645687422185,
+  "target_id": "RS-mul_eml_sin_K15_28"
+ },
+ {
+  "expression": "sin(*(x, *(sin(sin(eml(x, x))), eml(eml(sin(x), 1), x))))",
+  "K_construction": 15,
+  "K_proven": null,
+  "constructed": true,
+  "depth": 7,
+  "units": {
+   "nodes": 15.0,
+   "bits_uniform": 34.82892142331043,
+   "bits_syn": 28.08740144213747,
+   "bits_sem": 24.663829541719238,
+   "bits_sem_uncorrected": 24.67221910701645,
+   "bits_sem_extrapolated": true
+  },
+  "var_target": 0.5265441373059335,
+  "target_scale": 1.0,
+  "target_id": "RS-mul_eml_sin_K15_29"
+ }
+]

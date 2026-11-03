@@ -1,0 +1,47 @@
+{
+ "grammar": "BOOL-RICH-n4",
+ "seed": 20261013,
+ "ceiling": 16,
+ "levels": {
+  "3": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "5": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "7": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "9": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "10": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "12": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "14": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  },
+  "16": {
+   "found": 10,
+   "rejected": {},
+   "proven": true
+  }
+ }
+}

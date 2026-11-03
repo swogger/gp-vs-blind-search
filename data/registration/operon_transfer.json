@@ -1,0 +1,70 @@
+{
+ "default": {
+  "base_params": [
+   3.8521842739386782,
+   -0.3768183945262654,
+   0.15826696307482876
+  ],
+  "base_sha256": "8a87c1b333988ad1b0b87680a61a8497752d7018a61faf4822a98371c414ee60",
+  "baseline": {
+   "budget_term": false,
+   "feature": null,
+   "params": [
+    1.0018533227412283,
+    -0.3235971888745935
+   ],
+   "unit": "nodes"
+  },
+  "budget_term": true,
+  "budgets": [
+   16
+  ],
+  "feature": null,
+  "n": 4500,
+  "params": [
+   0.4594479846305579,
+   -0.21872877162887408,
+   0.09186796325670539
+  ],
+  "rule": "logit P = c0 + c1 * eta (frozen H7 model), maximum likelihood on H9b transfer, Operon default calibration runs, budgets [16] x E0",
+  "transfer": {
+   "c0": -1.776598733274405,
+   "c1": 0.5804620337174862
+  },
+  "unit": "bits_sem"
+ },
+ "symbolic": {
+  "base_params": [
+   3.8521842739386782,
+   -0.3768183945262654,
+   0.15826696307482876
+  ],
+  "base_sha256": "8a87c1b333988ad1b0b87680a61a8497752d7018a61faf4822a98371c414ee60",
+  "baseline": {
+   "budget_term": false,
+   "feature": null,
+   "params": [
+    2.1207352653526472,
+    -0.2868424270078014
+   ],
+   "unit": "nodes"
+  },
+  "budget_term": true,
+  "budgets": [
+   16
+  ],
+  "feature": null,
+  "n": 4499,
+  "params": [
+   2.2073290719989247,
+   -0.2422773388410572,
+   0.10175856379949796
+  ],
+  "rule": "logit P = c0 + c1 * eta (frozen H7 model), maximum likelihood on H9b transfer, Operon symbolic calibration runs, budgets [16] x E0",
+  "transfer": {
+   "c0": -0.26945276289151415,
+   "c1": 0.6429551804275566
+  },
+  "unit": "bits_sem"
+ }
+}

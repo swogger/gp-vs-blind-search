@@ -1,0 +1,13 @@
+{
+ "grammar": "BOOL-RS-rimp_c0-n5",
+ "benchmarks": {
+  "parity5": "not within the ceiling",
+  "majority5": "not within the ceiling",
+  "add2_s0": "proven K=25",
+  "add2_s1": "not within the ceiling",
+  "add2_cout": "proven K=29",
+  "cmp2_gt": "proven K=13",
+  "mux": "proven K=11"
+ },
+ "noise_rows": null
+}

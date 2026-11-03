@@ -1,0 +1,63 @@
+{
+ "phase": "s2_enum_ceiling",
+ "description": "Study 2 (D053): raise the low ceilings of R-ELEM6 and R-TRIG with a 16 GB cap (fresh enumerations under data/enumeration_s2/cap16; they supersede the 8 GB ones). --workers 1 (peak about 20 GB); never alongside another enumeration.",
+ "created": "2026-10-20 03:28:05",
+ "git": "a03eff2",
+ "n_tasks": 2,
+ "tasks": [
+  {
+   "key": "R-ELEM6",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "R-ELEM6",
+    "--root",
+    "data/enumeration_s2/cap16",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "16",
+    "--cpu_budget",
+    "13800",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "R-ELEM6",
+    "root": "data/enumeration_s2/cap16"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-TRIG",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.enumerate_task",
+    "--grammar",
+    "R-TRIG",
+    "--root",
+    "data/enumeration_s2/cap16",
+    "--kmax",
+    "40",
+    "--max_gb",
+    "16",
+    "--cpu_budget",
+    "13800",
+    "--min_free_gb",
+    "15"
+   ],
+   "cpu_limit": 14400,
+   "meta": {
+    "grammar": "R-TRIG",
+    "root": "data/enumeration_s2/cap16"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}
