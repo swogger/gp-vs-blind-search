@@ -5764,6 +5764,201 @@ index 0000000000000000000000000000000000000000..2959d26b6592e2abffcc3e8bc5e099cf
 +        raise ValueError("describe_bench reads benchmark cells only")
 +    return {c: predictor.describe_model(models[c], rr, models[c]["baseline"])
 +            for c, rr in sorted(_by_config(bench_recs).items())}
+diff --git a/src/reach/analysis/s2/heldout_reach.py b/src/reach/analysis/s2/heldout_reach.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..4c04d1b88b4f570c1d166e85dc3b043f3b8b45f9
+--- /dev/null
++++ b/src/reach/analysis/s2/heldout_reach.py
+@@ -0,0 +1,189 @@
++"""Descriptive analyses on existing records for the paper (D111; REQ-ANA-97, REQ-ANA-98). No new runs.
++
++1. One-run reach per budget on the six real held-out sets: K50 (`law._k50`, bits_sem) at 1, 2, 4, 8 and 16 x E0
++   from the registered Stage 2 runs (s2_ho_a0 at E0; s2_ho_a16 with smaller budgets read as prefixes), the recipe
++   of `remedy.build` extended to the intermediate budgets. At 1 and 16 x E0 it must equal remedy.json's values.
++2. The exact null's reach read with GP's own estimator: the null's success at a level is the share of that level
++   the first E functions cover (`h6d.enum_probs`), and K50 is `h6d.k50_rates` on the set's proven restart targets.
++   The difference to log2 E is the estimator's offset for the null (the O of the decomposition, for E functions);
++   the restarted gap under that reading is K50(restarts) - K50(enum E).
++
++Output: data/analysis/heldout_reach.json, and the paper's value file (paper/scripts/values.py) when present.
++"""
++import importlib.util
++import json
++import math
++from collections import defaultdict
++from pathlib import Path
++
++import numpy as np
++
++from reach.analysis.s2 import confirm, h6d, law
++from reach.analysis.s2.load import read_phase, tidy
++
++SETS = ("R-ARITH", "R-ELEM6", "RS-add_sqrt", "RS-eml_sin_sqrt_square", "RS-mul_div_eml_sin_square", "RS-mul_eml_sin")
++BUDGETS = (1, 2, 4, 8, 16)
++E_RESTART = 320_000
++
++
++def tidy_rows(rows, budgets):
++    """Tidy records with units for regime A base runs; a run shorter than a budget does not enter it ('beyond')."""
++    rows = [r for r in rows if r.get("algorithm", "A") == "A" and r.get("config", "base") == "base"]
++    recs = tidy(rows, budgets)
++    for r in recs:
++        if not r.get("units"):
++            r["units"] = {"bits_sem": None}
++    return [r for r in recs if r["units"].get("bits_sem") is not None]
++
++
++def k50_by_budget(recs):
++    return {b: law._k50([r for r in recs if r["budget"] == b], "bits_sem") for b in sorted({r["budget"] for r in recs})}
++
++
++def one_run_curves(root):
++    rows = [r for ph in ("s2_ho_a0", "s2_ho_a16") for r in read_phase(ph, root) if r.get("set") in SETS]
++    confirm._load_units(root, list(SETS), "heldout")
++    recs = [r for r in confirm._with_units(tidy_rows(rows, BUDGETS)) if r["units"].get("bits_sem") is not None]
++    by = defaultdict(list)
++    for r in recs:
++        by[r["set"]].append(r)
++    out = {}
++    for s in SETS:
++        top = max(r["units"]["bits_sem"] for r in by[s])
++        ks = k50_by_budget(by[s])
++        out[s] = {str(b): dict(k50=k, extrapolated=bool(np.isfinite(k) and k > top)) for b, k in ks.items()}
++    return out
++
++
++def counts_path(root, s):
++    for p in (Path(root) / f"data/enumeration_s2/{s}/counts.json", Path(root) / f"data/enumeration_s2/random/{s}/counts.json"):
++        if p.exists():
++            return p
++    raise FileNotFoundError(s)
++
++
++def level_counts(root, s):
++    levels = json.loads(counts_path(root, s).read_text())["levels"]
++    return {l["K"]: l["U"] for l in levels}
++
++
++def proven_targets(root, s):
++    out = []
++    for name in ("heldout", "restart"):
++        p = Path(root) / f"data/targets_s2/{s}/{name}.json"
++        if p.exists():
++            out += [dict(K=t["K_construction"], bits_sem=t["units"]["bits_sem"])
++                    for t in json.loads(p.read_text()) if not t.get("constructed") and t["K_proven"] == t["K_construction"]]
++    return out
++
++
++def null_k50_under_estimator(targets, U, E):
++    """K50 of exact enumeration of E functions, read with GP's estimator on the targets' levels."""
++    return h6d.k50_rates(targets, h6d.enum_probs(E, U))
++
++
++def null_estimator(root, E=E_RESTART):
++    h11 = json.loads((Path(root) / "data/analysis/h11.json").read_text())["h11"]["per_set"]
++    out = {}
++    for s in SETS:
++        U = level_counts(root, s)
++        if sum(U.values()) < E:
++            out[s] = dict(k50_enum=float("nan"), log2E=math.log2(E), offset=float("nan"), note="enumeration smaller than E")
++            continue
++        k = null_k50_under_estimator(proven_targets(root, s), U, E)
++        out[s] = dict(k50_enum=k, log2E=math.log2(E), offset=k - math.log2(E),
++                      k50_restart=h11[s]["k50"], gap_registered=h11[s]["gap"], gap_estimator=h11[s]["k50"] - k)
++    return out
++
++
++CAL_REAL = ("F-EML", "F-EML-R", "F-LDE0", "R-ARITH4", "R-ELEM4", "R-HYB", "R-TRIG")
++CAL_BOOL = ("BOOL-NAND-n5", "BOOL-NOR-n5", "BOOL-IMP0-n5", "BOOL-IMP0R-n5", "BOOL-AON-n5", "BOOL-AONX-n5", "BOOL-RICH-n5")
++
++
++def null_offsets_calibration(root, E=20_000):
++    """The null read with GP's estimator on the 14 calibration sets at E0: per set K50 of exact enumeration of E
++    functions under the logistic estimator over the set's own targets (all ten levels), its offset to log2 E, and the
++    registered-unit gap under both readings (sign per set under each)."""
++    from reach.analysis.s2 import law as _law
++    rows_all = [r for ph in ("s2_cal_a0", "s2_cal_a16") for r in read_phase(ph, root)
++                if r.get("algorithm") == "A" and r.get("config") == "base"]
++    out = {}
++    for s in CAL_REAL + CAL_BOOL:
++        rows = [r for r in rows_all if r.get("set") == s]
++        confirm._load_units(root, [s], "calibration")
++        recs = [r for r in confirm._with_units(tidy(rows, (1,))) if r["units"].get("bits_sem") is not None]
++        U = level_counts(root, s)
++        tg = [dict(K=r["K"], bits_sem=r["units"]["bits_sem"]) for r in recs]
++        k_gp = _law._k50(recs, "bits_sem")
++        k_en = null_k50_under_estimator(tg, U, E)
++        out[s] = dict(k50_gp=k_gp, k50_enum=k_en, offset=k_en - math.log2(E), gap_exact=k_gp - math.log2(E),
++                      gap_estimator=k_gp - k_en, real=not s.startswith("BOOL"))
++    for dom, sets in (("real", CAL_REAL), ("bool", CAL_BOOL)):
++        v = [out[s] for s in sets]
++        out[f"{dom}_mean"] = dict(offset=float(np.mean([x["offset"] for x in v])),
++                                 gap_exact=float(np.mean([x["gap_exact"] for x in v])),
++                                 gap_estimator=float(np.mean([x["gap_estimator"] for x in v])),
++                                 signs_agree=bool(all((x["gap_exact"] < 0) == (x["gap_estimator"] < 0) for x in v)))
++    return out
++
++
++def null_estimator_by_budget(root, budgets=BUDGETS):
++    """The null read with GP's estimator on the six held-out sets at every budget (for the second null line of the
++    reach figure): per budget, the mean over sets of K50(enum B x E0) under the estimator, with the per-set values."""
++    out = {}
++    for B in budgets:
++        E = B * 20_000
++        per = {}
++        for s in SETS:
++            U = level_counts(root, s)
++            per[s] = null_k50_under_estimator(proven_targets(root, s), U, E) if sum(U.values()) >= E else float("nan")
++        vals = [v for v in per.values() if np.isfinite(v)]
++        out[str(B)] = dict(mean=float(np.mean(vals)), log2E=math.log2(E), per_set=per)
++    return out
++
++
++def build(root):
++    one = one_run_curves(root)
++    nul = null_estimator(root)
++    cal = null_offsets_calibration(root)
++    nb = null_estimator_by_budget(root)
++    finite = [v["gap_estimator"] for v in nul.values() if np.isfinite(v.get("gap_estimator", float("nan")))]
++    offs = [v["offset"] for v in nul.values() if np.isfinite(v.get("offset", float("nan")))]
++    return dict(label="DESCRIPTIVE on registered records (D111); no new runs; not confirmatory",
++                sets=list(SETS), budgets=list(BUDGETS), one_run=one, null_estimator=nul, null_estimator_by_budget=nb, calibration_offsets=cal,
++                summary=dict(mean_offset=float(np.mean(offs)), mean_gap_estimator=float(np.mean(finite)),
++                             mean_gap_registered=float(np.mean([v["gap_registered"] for v in nul.values()])),
++                             sets_below_margin_estimator=int(sum(g < -1 for g in finite)),
++                             one_run_mean={str(b): float(np.mean([one[s][str(b)]["k50"] for s in SETS])) for b in BUDGETS}))
++
++
++def record_values(out, root):
++    """The paper's value recorder (paper/scripts/values.py), when present."""
++    p = Path(root) / "paper/scripts/values.py"
++    if not p.exists():
++        return False
++    spec = importlib.util.spec_from_file_location("values", p)
++    values = importlib.util.module_from_spec(spec)
++    spec.loader.exec_module(values)
++    values.record("heldout_reach", dict(one_run=out["one_run"], null_estimator=out["null_estimator"], calibration_offsets=out["calibration_offsets"], null_estimator_by_budget=out["null_estimator_by_budget"], summary=out["summary"]))
++    return True
++
++
++def main():
++    from reach.paths import ROOT
++    out = build(ROOT)
++    (ROOT / "data/analysis/heldout_reach.json").write_text(json.dumps(out, indent=1) + "\n")
++    recorded = record_values(out, ROOT)
++    s = out["summary"]
++    print(f"one-run mean K50 by budget: { {b: round(v, 2) for b, v in s['one_run_mean'].items()} }")
++    print(f"null under the estimator: mean offset {s['mean_offset']:+.2f} bits; restarted gap {s['mean_gap_registered']:+.2f} "
++          f"registered -> {s['mean_gap_estimator']:+.2f} under the estimator; sets below -1: {s['sets_below_margin_estimator']}")
++    for st, v in out["null_estimator"].items():
++        print(f"  {st:28s} K50(enum E) {v.get('k50_enum', float('nan')):6.2f}  offset {v.get('offset', float('nan')):+.2f}  gap {v.get('gap_registered', float('nan')):+.2f} -> {v.get('gap_estimator', float('nan')):+.2f}")
++    c = out["calibration_offsets"]
++    print(f"calibration offsets at E0: real {c['real_mean']['offset']:+.2f} (gap {c['real_mean']['gap_exact']:+.2f} -> {c['real_mean']['gap_estimator']:+.2f}), bool {c['bool_mean']['offset']:+.2f} (gap {c['bool_mean']['gap_exact']:+.2f} -> {c['bool_mean']['gap_estimator']:+.2f})")
++    print("values recorded" if recorded else "paper tools not present")
++
++
++if __name__ == "__main__":
++    main()
 diff --git a/src/reach/analysis/s2/invariance.py b/src/reach/analysis/s2/invariance.py
 index 4d6fb26e1ff819a9853e70bb09b0c4245eddb919..7037c77065b96fd8995df2a7d7a0ed1d363a749b 100644
 --- a/src/reach/analysis/s2/invariance.py
@@ -7211,10 +7406,10 @@ index 0000000000000000000000000000000000000000..092d8da619238573bc3dc8842edafaf8
 +    return c
 diff --git a/src/reach/analysis/s2/remedy.py b/src/reach/analysis/s2/remedy.py
 new file mode 100644
-index 0000000000000000000000000000000000000000..7c840a6a730836ee8e78c5d6343fc26c60a37393
+index 0000000000000000000000000000000000000000..b53a53fcdcd73b6f1dd85b3b098336ecd14d9189
 --- /dev/null
 +++ b/src/reach/analysis/s2/remedy.py
-@@ -0,0 +1,364 @@
+@@ -0,0 +1,365 @@
 +"""The real-domain loss beside its remedies (D100; REQ-ANA-93, 94). EXPLORATORY and descriptive on registered records;
 +no test, no decision. Stage 4's registered analysis will use the same restart estimator.
 +
@@ -7245,7 +7440,8 @@ index 0000000000000000000000000000000000000000..7c840a6a730836ee8e78c5d6343fc26c
 +
 +
 +def eval_ratio(gap):
-+    """Evaluations GP needs for the null's reach, as a multiple of the null's: the null's reach is exactly log2 E."""
++    """The evaluations GP spent, as a multiple of what the null needs to reach GP's own reach: 2^(log2 E - K50), since the
++    null reaches K50 with 2^K50 evaluations."""
 +    return 2.0 ** (-gap)
 +
 +

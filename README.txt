@@ -19,6 +19,8 @@ src/reach/        Grammars with guarded real and Boolean semantics, the exhausti
                   analyses (src/reach/analysis/s2).
 tests/            Unit, regression and guardrail tests (pytest).
 scripts/          Launchers for the run phases and the registration task lists.
+paper/scripts/    The paper's figure scripts (figures.py, coverage_disc.py): the five figures and the
+                  graphical abstract, drawn from data/analysis and the run records (added in 1.1.0).
 rust/cgp/         The Cartesian GP engine (Rust).
 legacy/           Verbatim copy of the EML-GP code and stored results used for the regression test.
 data/targets_s2/  Every target set (calibration, held-out, benchmark and restart targets).

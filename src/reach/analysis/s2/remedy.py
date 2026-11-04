@@ -28,7 +28,8 @@ GENS_E0 = 200            # generations per E0 at population 100
 
 
 def eval_ratio(gap):
-    """Evaluations GP needs for the null's reach, as a multiple of the null's: the null's reach is exactly log2 E."""
+    """The evaluations GP spent, as a multiple of what the null needs to reach GP's own reach: 2^(log2 E - K50), since the
+    null reaches K50 with 2^K50 evaluations."""
     return 2.0 ** (-gap)
 
 
