@@ -112,7 +112,7 @@ def test_manifest_rejects_duplicates_and_missing_cpu_limit(phase):
 def test_limit_is_cpu_time_not_wall_time(phase):
     """Rule (author, 2026-10-19): run limits are CPU time. A task that sleeps 3 wall seconds with a 1-CPU-second
     limit must finish normally; a task that burns CPU with the same limit must be killed (positive control)."""
-    phase.write_manifest([dict(key="sleeper", argv=["{python}", "-m", "reach.runner.selftest_task", "--mode", "sleep",
+    phase.write_manifest([dict(key="sleeper", argv=["{python}", "-W", f"ignore:{TOKEN}", "-m", "reach.runner.selftest_task", "--mode", "sleep",
                                                     "--cpu", "0.05", "--sleep", "3"], cpu_limit=1),
                           task("burner", "timeout", cpu_limit=1)])
     run(phase)
@@ -134,7 +134,7 @@ def test_external_kill_is_not_reported_as_a_cpu_timeout(phase):
 
 def test_task_env_is_passed_but_cannot_unpin_the_code(phase):
     """Operon runs need a library path; a task may add variables, never override PYTHONPATH or REACH_ROOT."""
-    t = dict(key="env", argv=["{python}", "-m", "reach.runner.selftest_task", "--mode", "env"], cpu_limit=10,
+    t = dict(key="env", argv=["{python}", "-W", f"ignore:{TOKEN}", "-m", "reach.runner.selftest_task", "--mode", "env"], cpu_limit=10,
              env=dict(REACH_TEST_ENV="seen", DYLD_FALLBACK_LIBRARY_PATH="/tmp/libs"))
     phase.write_manifest([t])
     run(phase)
@@ -186,6 +186,21 @@ def test_another_suites_selftest_tasks_do_not_match_this_ones(monkeypatch):
     assert other != mine["argv"] and Q.live_task_processes([mine]) == []
     monkeypatch.setattr(Q, "_processes", lambda: [(99, "/usr/bin/python3 " + " ".join(mine["argv"][1:]))])
     assert Q.live_task_processes([mine]) == [(99, "a")]
+
+
+def test_every_selftest_task_in_the_suite_carries_the_session_tag():
+    """Guardrail row 160: two tasks written out by hand (the sleeper and the env task) missed row 145's tag, so a
+    concurrent suite's live sleeper made this suite's queue skip it and the CPU-time test failed with a KeyError
+    (independent check, 2026-11-05, while the pre-push suite ran). Every selftest argv in tests/ must carry TOKEN."""
+    import ast
+    from pathlib import Path
+    bad = []
+    for f in sorted(Path(__file__).parent.glob("test_*.py")):
+        for node in ast.walk(ast.parse(f.read_text())):
+            if isinstance(node, ast.List) and any(isinstance(e, ast.Constant) and e.value == "reach.runner.selftest_task"
+                                                  for e in node.elts) and "TOKEN" not in ast.unparse(node):
+                bad.append(f"{f.name}:{node.lineno}")
+    assert bad == [], bad
 
 
 # ------------------------------------------- guardrail row 138: orphans of a hard-killed queue block the relaunch

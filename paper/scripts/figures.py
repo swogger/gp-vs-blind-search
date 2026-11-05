@@ -8,6 +8,7 @@ import collections
 import importlib.util
 import json
 import math
+import os
 import shutil
 import subprocess
 import sys
@@ -21,9 +22,19 @@ import numpy as np
 BLUE, VERM, GRAY, INK, GREEN = "#0072B2", "#D55E00", "#666666", "#222222", "#009E73"
 SVG_NAMES = {1: "fig_success.svg", 2: "fig_price.svg", 3: "fig_reach.svg", 4: "fig_coverage_disc.svg", 5: "fig_waterfall.svg"}
 E0 = 20000
+LINE_PT = 390.0                                  # the manuscript's line width (elsarticle preprint, 12 pt)
+SHARE = {1: 1.0, 2: 1.0, 3: 0.95, 4: 1.0, 5: 0.85}   # each figure's printed width as a share of the line width
+EPOCH = "1793836800"                             # SOURCE_DATE_EPOCH for rsvg-convert (2026-11-05): no build date
+
+
+def _size(n, height_in):
+    """Figures are drawn at their printed width (REQ-ANA-105), so a font size in points is the printed size."""
+    return (SHARE[n] * LINE_PT / 72, height_in)
+
 
 plt.rcParams.update({
-    "font.size": 9, "axes.edgecolor": GRAY, "axes.labelcolor": INK, "xtick.color": INK, "ytick.color": INK, "text.color": INK,
+    "svg.hashsalt": "gp-search-mechanics",
+    "font.size": 8, "axes.edgecolor": GRAY, "axes.labelcolor": INK, "xtick.color": INK, "ytick.color": INK, "text.color": INK,
     "axes.spines.top": False, "axes.spines.right": False, "svg.fonttype": "none", "pdf.fonttype": 42,
     "font.family": "sans-serif", "font.sans-serif": ["Helvetica", "Arial", "DejaVu Sans"]})
 
@@ -37,7 +48,7 @@ def fig_success(root):
     null's step and the null read with the estimator."""
     from reach.analysis.s2 import confirm, h6d, law
     from reach.analysis.s2.load import read_phase, tidy
-    fig, axes = plt.subplots(1, 2, figsize=(7.0, 2.9))
+    fig, axes = plt.subplots(1, 2, figsize=_size(1, 2.55))
     vals = {}
     for ax, s in zip(axes, ("R-ARITH4", "BOOL-AON-n5")):
         rows = [r for ph in ("s2_cal_a0", "s2_cal_a16") for r in read_phase(ph, root)
@@ -59,10 +70,10 @@ def fig_success(root):
         ax.step([grid[0], math.log2(E0), math.log2(E0), grid[-1]], [1, 1, 0, 0], where="post", color=GRAY, lw=1.6, ls=(0, (4, 2)), zorder=2)
         ax.axvline(k_en, color=GREEN, lw=1.2, ls=":", zorder=2)
         ax.axvline(f.k50, color=BLUE, lw=0.8, ls=":", zorder=2)
-        ax.annotate("K₅₀", (f.k50, 0.52), xytext=(4, 0), textcoords="offset points", fontsize=8, color=BLUE)
-        ax.annotate("null\n(exact)", (math.log2(E0), 0.9), xytext=(4, 0), textcoords="offset points", fontsize=7.5, color=GRAY)
-        ax.annotate("null read\nwith the estimator", (k_en, 0.30), xytext=(4, 0), textcoords="offset points", fontsize=7.5, color=GREEN)
-        ax.set_title(s + (" (real)" if not s.startswith("BOOL") else " (Boolean)"), fontsize=9)
+        ax.annotate("K₅₀", (f.k50, 0.52), xytext=(3, 0), textcoords="offset points", fontsize=8, color=BLUE)
+        ax.annotate("null\n(exact)", (math.log2(E0), 0.9), xytext=(3, 0), textcoords="offset points", fontsize=7.5, color=GRAY)
+        ax.annotate("null read\nwith the\nestimator", (k_en, 0.30), xytext=(3, 0), textcoords="offset points", fontsize=7.5, color=GREEN)
+        ax.set_title(s + (" (real)" if not s.startswith("BOOL") else " (Boolean)"), fontsize=8.5)
         ax.set_xlabel("difficulty (semantic bits)")
         ax.set_ylim(-0.03, 1.03)
         ax.grid(axis="y", color=GRAY, alpha=0.18, lw=0.7)
@@ -82,15 +93,17 @@ def fig_price(root):
             r = e["bits_per_doubling"]
             rows.append((name, 2 ** (1 / r["rate"]), 2 ** (1 / r["hi"]), 2 ** (1 / r["lo"])))
     rows.sort(key=lambda t: t[1])
-    fig, ax = plt.subplots(figsize=(6.6, 2.9))
+    fig, ax = plt.subplots(figsize=_size(2, 2.5))
     for y, (name, f, lo, hi) in enumerate(rows):
-        ax.plot([lo, hi], [y, y], color=BLUE, lw=1.6, solid_capstyle="round", zorder=2)
-        ax.plot([f], [y], "o", color=BLUE, ms=5.5, zorder=3)
-        ax.annotate(f"×{f:.1f}", (hi, y), xytext=(6, 0), textcoords="offset points", va="center", fontsize=8, color=INK)
-    ax.axvline(2, color=GRAY, lw=1.4, ls=(0, (4, 2)), zorder=1)
-    ax.annotate("exact blind search: ×2 per bit", (2, len(rows) - 0.3), xytext=(8, 0), textcoords="offset points", fontsize=8, color=GRAY)
+        ax.plot([lo, hi], [y, y], color=BLUE, lw=1.5, solid_capstyle="round", zorder=2)
+        ax.plot([f], [y], "o", color=BLUE, ms=5, zorder=3)
+        ax.annotate(f"×{f:.1f}", (hi, y), xytext=(5, 0), textcoords="offset points", va="center", fontsize=8, color=INK)
+    ax.axvline(2, color=GRAY, lw=1.3, ls=(0, (4, 2)), zorder=1)
+    ax.set_ylim(-0.6, len(rows) + 0.2)
+    ax.annotate("exact blind search: ×2 per bit", (2, len(rows) - 0.25), xytext=(5, 0), textcoords="offset points",
+                va="center", fontsize=7.5, color=GRAY)
     ax.set_yticks(range(len(rows)))
-    ax.set_yticklabels([r[0] for r in rows], fontsize=8.5)
+    ax.set_yticklabels([r[0] for r in rows])
     ax.set_xscale("log", base=2)
     ax.set_xticks([2, 4, 8, 16, 32])
     ax.set_xticklabels(["×2", "×4", "×8", "×16", "×32"])
@@ -111,7 +124,7 @@ def fig_reach(root):
     null_est = [hr["null_estimator_by_budget"][str(b // E0)]["mean"] for b in budgets]
     Rs = [2, 4, 8, 16, 32]
     restart = [sum(h11["descriptive"][s]["restarts_L100"][str(r)]["k50"] for s in h11["sets"]) / len(h11["sets"]) for r in Rs]
-    fig, ax = plt.subplots(figsize=(6.2, 4.1))
+    fig, ax = plt.subplots(figsize=_size(3, 3.2))
     ax.plot(budgets, null, color=GRAY, lw=1.6, ls=(0, (4, 2)), zorder=2, label="exact blind search, exact reach (log₂E)")
     ax.plot(budgets, null_est, color=GRAY, lw=1.4, ls=(0, (1, 2)), zorder=2, label="exact blind search read as GP is read")
     ax.plot(budgets, one, color=BLUE, lw=1.8, marker="o", ms=4.5, zorder=3, label="one long run (held-out mean)")
@@ -121,9 +134,9 @@ def fig_reach(root):
     for yv in (one[4], null[4]):
         ax.plot([xg / 1.025, xg * 1.025], [yv, yv], color="black", lw=1.8, zorder=4)
     ax.annotate(_neg(f"gap to the exact reach\nat 16×E₀:\none long run {one[4] - null[4]:+.1f} bits\nrestarts {restart[4] - null[4]:+.1f} bits"),
-                (xg, (null[4] + one[4]) / 2), xytext=(-8, 0), textcoords="offset points", fontsize=8.5, color=INK, va="center", ha="right")
+                (xg, one[4] + 0.3 * (null[4] - one[4])), xytext=(-6, 0), textcoords="offset points", fontsize=8, color=INK, va="center", ha="right")
     ax.set_xlim(budgets[0] / 1.15, budgets[4] * 1.35)
-    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.17), ncol=2, frameon=False, fontsize=8, handlelength=2.6)
+    ax.legend(loc="upper center", bbox_to_anchor=(0.45, -0.21), ncol=1, frameon=False, fontsize=7.5, handlelength=2.6)
     ax.set_xscale("log", base=2)
     ax.set_xticks(budgets)
     ax.set_xticklabels(["E₀", "2×E₀", "4×E₀", "8×E₀", "16×E₀"])
@@ -138,7 +151,8 @@ def fig_reach(root):
 def fig_waterfall(root):
     """Figure 5: the decomposition at E0 per domain, gap = G - S - R + O, registered values."""
     dom = json.loads((Path(root) / "data/analysis/h6d.json").read_text())["domain"]
-    fig, ax = plt.subplots(figsize=(5.4, 3.6))
+    proven = json.loads((Path(root) / "data/analysis/preempt.json").read_text())["bool_bounds"]["readings"]["proven_only"]
+    fig, ax = plt.subplots(figsize=_size(5, 3.25))
 
     def waterfall(x0, terms, labels):
         cum = 0.0
@@ -164,11 +178,12 @@ def fig_waterfall(root):
     r, b = dom["real"], dom["bool"]
     ax.set_ylim(-9, 26)
     gaps = dict(real=waterfall(0, [r["G"], -r["S"], -r["R"], r["O"]], labs), bool=waterfall(6, [b["G"], -b["S"], -b["R"], b["O"]], labs))
-    ax.annotate("real", (2.5, 23.5), ha="center", fontsize=9)
-    ax.annotate("Boolean (registered unit;\nproven-only reading: G +15.6, gap +7.9)", (8.5, 23.5), ha="center", fontsize=7.5)
+    ax.annotate("real", (2.5, 23.5), ha="center", fontsize=8.5)
+    g_pr, gap_pr = _neg(f"{proven['G_mean']:+.1f}"), _neg(f"{proven['gap']['gap']:+.1f}")
+    ax.annotate(f"Boolean (registered unit;\nproven-only reading: G {g_pr}, gap {gap_pr})", (8.5, 23.5), ha="center", fontsize=7.5)
     ax.set_xticks([])
     ax.set_ylabel("bits at E₀")
-    ax.annotate("O (hatched): the estimator's offset", (-0.35, -8.6), fontsize=7.5, color=INK)
+    ax.annotate("O (hatched): the estimator's offset", (5.7, -8.0), fontsize=7.5, color=INK)
     for s in ("top", "right", "bottom"):
         ax.spines[s].set_visible(False)
     fig.tight_layout()
@@ -189,7 +204,13 @@ def svg_to(src, dst, width=None):
         raise RuntimeError("rsvg-convert not found (brew install librsvg)")
     fmt = dst.suffix[1:]
     cmd = ["rsvg-convert", "-f", fmt, "-o", str(dst)] + (["-w", str(width)] if width else []) + [str(src)]
-    subprocess.run(cmd, check=True)
+    subprocess.run(cmd, check=True, env=dict(os.environ, SOURCE_DATE_EPOCH=EPOCH))      # no build date (REQ-ANA-105)
+
+
+def _save(fig, svg, pdf):
+    """Fixed ids (svg.hashsalt) and no dates, so a rebuild gives the same bytes (REQ-ANA-105)."""
+    fig.savefig(svg, metadata={"Date": None})
+    fig.savefig(pdf, metadata={"CreationDate": None})
 
 
 def build_all(root, pdf_dir, svg_dir):
@@ -200,13 +221,11 @@ def build_all(root, pdf_dir, svg_dir):
     out = {}
     for n, (name, fn) in enumerate(((("success", fig_success)), ("price", fig_price), ("reach", fig_reach)), start=1):
         fig, vals = fn(root)
-        fig.savefig(svg_dir / SVG_NAMES[n])
-        fig.savefig(pdf_dir / f"Figure_{n}.pdf")
+        _save(fig, svg_dir / SVG_NAMES[n], pdf_dir / f"Figure_{n}.pdf")
         plt.close(fig)
         out[name] = vals
     fig, vals = fig_waterfall(root)
-    fig.savefig(svg_dir / SVG_NAMES[5])
-    fig.savefig(pdf_dir / "Figure_5.pdf")
+    _save(fig, svg_dir / SVG_NAMES[5], pdf_dir / "Figure_5.pdf")
     plt.close(fig)
     out["waterfall"] = vals
     disc = _disc()

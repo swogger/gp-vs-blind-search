@@ -1,0 +1,29 @@
+{
+ "label": "DESCRIPTIVE: the frozen node-count baseline's AUC on the H7 records (D117)",
+ "bool": {
+  "auc": 0.849613946488462,
+  "frozen_auc": 0.8214216607089518,
+  "n": 27000,
+  "sets": [
+   "BOOL-AN-n5",
+   "BOOL-AX1-n5",
+   "BOOL-RS-imp_nimp_rimp_rnimp-n5",
+   "BOOL-RS-imp_or_rnimp-n5",
+   "BOOL-RS-nand_rimp_c1-n5",
+   "BOOL-RS-rimp_c0-n5"
+  ]
+ },
+ "real": {
+  "auc": 0.6923898027396708,
+  "frozen_auc": 0.8211783043907106,
+  "n": 27000,
+  "sets": [
+   "R-ARITH",
+   "R-ELEM6",
+   "RS-add_sqrt",
+   "RS-eml_sin_sqrt_square",
+   "RS-mul_div_eml_sin_square",
+   "RS-mul_eml_sin"
+  ]
+ }
+}
