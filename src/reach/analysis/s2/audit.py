@@ -79,11 +79,22 @@ def bigtree_compare(orig, again):
 REVISIT_IGNORE = BIGTREE_IGNORE | {"audit_of", "rv"}   # bookkeeping, timing and the counter's new field
 
 
-def revisit_compare(orig, again):
+def revisit_compare(orig, again, extra_ignore=(), check_keys=False, root=None):
     """Problems of one H6d re-run (D098): every differing field except REVISIT_IGNORE (sorted), then a missing rv or
-    one whose evaluations are not the run's (the population of every evaluated generation)."""
-    keys = (set(orig) | set(again)) - REVISIT_IGNORE
+    one whose evaluations are not the run's (the population of every evaluated generation). Stage 5 (D125): fields in
+    extra_ignore are new fields of the re-run (`keys`); with check_keys (the row's task asked for a side file) the side
+    file must exist and have the SHA-256 the row records."""
+    keys = (set(orig) | set(again)) - REVISIT_IGNORE - set(extra_ignore)
     out = sorted(k for k in keys if orig.get(k) != again.get(k))
+    if check_keys:
+        import hashlib
+        from pathlib import Path
+        k = again.get("keys") or {}
+        f = Path(root or ".") / k["file"] if k.get("file") else None
+        if f is None or not f.exists():
+            out.append("no side file")
+        elif hashlib.sha256(f.read_bytes()).hexdigest() != k.get("sha256"):
+            out.append("side file differs from its row")
     rv = again.get("rv")
     if not rv:
         return out + ["no rv"]
@@ -93,29 +104,37 @@ def revisit_compare(orig, again):
     return out
 
 
-def revisit_report(root, phase):
+def revisit_report(root, phase, extra_ignore=(), check_keys=False):
     """Each planned task of an H6d re-run phase against its original row, per source phase: planned, rerun,
-    identical, differing {original key: problems}, missing; plus CPU seconds of the re-runs, of their originals and of
-    the counter. ok only if nothing differs and nothing is missing."""
-    import json
+    identical, differing {original key: problems}, missing (no re-run row), missing_original (no original row); plus
+    CPU seconds of the re-runs, of their originals and of the counter. ok only if nothing differs and nothing is
+    missing. Files are read with their gzip fallback (guardrail row 176). With check_keys (Stage 5) a side file is
+    checked exactly for the tasks whose argv has --keys_out, and a `keys` field on any other task is a problem
+    (guardrail row 174)."""
     from pathlib import Path
-    from reach.runner.queue import read_results
+    from reach.runner.phases import _manifest_tasks, phase_rows
     root = Path(root)
-    tasks = json.loads((root / f"data/runs/{phase}/manifest.json").read_text())["tasks"]
-    again = read_results(root / f"data/runs/{phase}/results.jsonl")
+    tasks = _manifest_tasks(phase, root)
+    again = phase_rows(phase, root)
     out, ok = {}, True
     cpu = dict(rerun=0.0, original=0.0, counter=0.0)
     for src in sorted({t["meta"]["audit_of"] for t in tasks}):
-        orig = read_results(root / f"data/runs/{src}/results.jsonl")
-        e = dict(planned=0, rerun=0, identical=0, differing={}, missing=[])
+        orig = phase_rows(src, root)
+        e = dict(planned=0, rerun=0, identical=0, differing={}, missing=[], missing_original=[])
         for t in (t for t in tasks if t["meta"]["audit_of"] == src):
             e["planned"] += 1
             k, r = t["meta"]["audit_key"], again.get(t["key"])
             if r is None:
                 e["missing"].append(k)
                 continue
+            if k not in orig:
+                e["missing_original"].append(k)
+                continue
             e["rerun"] += 1
-            d = revisit_compare(orig[k], r)
+            wants = check_keys and "--keys_out" in t.get("argv", ())
+            d = revisit_compare(orig[k], r, extra_ignore, wants, root)
+            if check_keys and not wants and "keys" in r:
+                d = d + ["keys without --keys_out"]
             if d:
                 e["differing"][k] = d
             else:
@@ -123,7 +142,7 @@ def revisit_report(root, phase):
             cpu["rerun"] += r.get("cpu_seconds") or 0.0
             cpu["original"] += orig[k].get("cpu_seconds") or 0.0
             cpu["counter"] += (r.get("rv") or {}).get("cpu_seconds") or 0.0
-        ok = ok and not e["differing"] and not e["missing"]
+        ok = ok and not e["differing"] and not e["missing"] and not e["missing_original"]
         out[src] = e
     return dict(ok=ok, phase=phase, sources=out, cpu_seconds=cpu)
 
@@ -131,7 +150,8 @@ def revisit_report(root, phase):
 def print_revisit_report(rep):
     for src, e in rep["sources"].items():
         print(f"{rep['phase']} <- {src}: planned {e['planned']}, rerun {e['rerun']}, identical {e['identical']}, "
-              f"differing {len(e['differing'])}, missing {len(e['missing'])}")
+              f"differing {len(e['differing'])}, missing {len(e['missing'])}, missing originals "
+              f"{len(e.get('missing_original', []))}")
         for k, d in list(e["differing"].items())[:20]:
             print(f"  {k}: {', '.join(d)}")
     c = rep["cpu_seconds"]
@@ -197,15 +217,170 @@ def print_bigtree_report(rep):
     print("ALL IDENTICAL AND AGREED" if rep["ok"] else "PROBLEMS FOUND")
 
 
+# ---- Stage 5 arm 7 (D125; REQ-RUN-49): a long run's first 200 generations against its registered s2_ho_a0 run ----
+
+def prefix_mismatch(long, short):
+    """Problems of a long run against the registered shorter run of the same task (prefix property, REQ-ENG-03), or
+    None when they cannot be compared (either stopped before the shorter run's last generation by its CPU limit)."""
+    n = short.get("generations")
+    ok_states = ("converged", "budget_exhausted")
+    if short.get("terminal_state") not in ok_states:
+        return None
+    if long.get("terminal_state") not in ok_states and (long.get("gens_reached") or 0) < n:
+        return None
+    if short.get("exact"):
+        fields = ("exact", "gen_exact", "best_expr", "final_tree_size") + (("best_expr_full",) if "best_expr_full" in short
+                                                                           else ())
+        return [f for f in fields if long.get(f) != short.get(f)]
+    if long.get("exact") and long.get("gen_exact") is not None and long["gen_exact"] < n:
+        return [f"exact at generation {long['gen_exact']}, before the shorter run's {n}"]
+    return []
+
+
+def long_extra_report(root, phase):
+    """Every planned task of the long-run phase that names a registered shorter run (meta prefix_of, prefix_key)
+    against that run's row: compared, mismatch {key: problems}, not comparable, missing (no long or no short row),
+    no_prefix (levels without a shorter run). ok only if nothing differs and nothing is missing."""
+    from pathlib import Path
+    from reach.runner.phases import _manifest_tasks, phase_rows
+    root = Path(root)
+    tasks = _manifest_tasks(phase, root)
+    rows = phase_rows(phase, root)
+    short_rows = {}
+    out = dict(phase=phase, compared=0, mismatch={}, not_comparable=[], missing=[], no_prefix=0)
+    for t in tasks:
+        m = t.get("meta", {})
+        if "prefix_key" not in m:
+            out["no_prefix"] += 1
+            continue
+        src = m["prefix_of"]
+        if src not in short_rows:
+            short_rows[src] = phase_rows(src, root)
+        long, short = rows.get(t["key"]), short_rows[src].get(m["prefix_key"])
+        if long is None or short is None:
+            out["missing"].append(t["key"])
+            continue
+        d = prefix_mismatch(long, short)
+        if d is None:
+            out["not_comparable"].append(t["key"])
+            continue
+        out["compared"] += 1
+        if d:
+            out["mismatch"][t["key"]] = d
+    out["ok"] = not out["mismatch"] and not out["missing"]
+    return out
+
+
+def print_long_extra_report(rep):
+    print(f"{rep['phase']}: compared {rep['compared']} with their s2_ho_a0 prefix, mismatches {len(rep['mismatch'])}, "
+          f"not comparable {len(rep['not_comparable'])}, missing {len(rep['missing'])}, no prefix {rep['no_prefix']}")
+    for k, d in list(rep["mismatch"].items())[:20]:
+        print(f"  MISMATCH {k}: {', '.join(d)}")
+    print("OK" if rep["ok"] else "NOT OK")
+
+
+# ---- Re-scoring of the held-out and restart phases (D125; REQ-RUN-50; guardrail row 171) ----
+
+def recheck_extended(phase, g, keys, root):
+    """Guardrail row 180: the exact runs listed as disputed by a re-scoring row written before the 'extended_only'
+    class existed, checked again with audit_labels.max_rel_diff_extended (Study 2's guarded extended reals) against
+    their targets; returns (extended-only keys, still disputed keys)."""
+    if not keys:
+        return [], []
+    from reach.analysis.s2 import audit_labels as L
+    from reach.runner.phases import phase_rows
+    from reach.tasks.s2_rescore import targets_of
+    rows, (targets, _) = phase_rows(phase, root), targets_of(g, root)
+    ext, still = [], []
+    for k in keys:
+        r = rows.get(k)
+        expr = r and (r.get("best_expr") or r.get("best_expr_full"))
+        t = r and targets.get((g, r["target_id"]))
+        ok = bool(expr and t and r.get("algorithm") != "operon"
+                  and L.classify(L.max_rel_diff_extended(expr, t["expression"], t["target_scale"])) != "different")
+        (ext if ok else still).append(k)
+    return ext, still
+
+
+def heldout_labels_report(root, phase="s2_audit_labels_ho", exact_rows=None):
+    """Aggregates the re-scoring tasks: per source phase the sums of the tasks' counts, and ok only if every task has
+    a row, every exact run was checked (exact_checked equals the task's exact_rows, and with exact_rows given
+    {(phase, set): n} also the count read from the source phase), nothing is disputed or unchecked, every full
+    expression has its row's size and every row names its target file."""
+    import json
+    from pathlib import Path
+    from reach.runner.queue import read_results
+    root = Path(root)
+    tasks = json.loads((root / f"data/runs/{phase}/manifest.json").read_text())["tasks"]
+    rows = read_results(root / f"data/runs/{phase}/results.jsonl")
+    out, problems = {}, []
+    for t in tasks:
+        ph, g = t["meta"]["phase"], t["meta"]["set"]
+        r = rows.get(t["key"])
+        e = out.setdefault(ph, dict(sets=0, exact_rows=0, exact_checked=0, exact_near_miss=0, exact_ieee_only=0,
+                                    exact_extended_only=[], exact_disputed=[], failures_checked=0, failures_disputed=[], unchecked=0,
+                                    full_size_mismatch=[], target_file_mismatch=[]))
+        if r is None or r.get("terminal_state") != "completed":
+            problems.append(f"{t['key']}: no completed row")
+            continue
+        e["sets"] += 1
+        for k in ("exact_rows", "exact_checked", "failures_checked"):
+            e[k] += r[k]
+        for k in ("exact_near_miss", "exact_ieee_only"):
+            e[k] += len(r[k])
+        e["unchecked"] += len(r["unchecked"])
+        ext, still = recheck_extended(ph, g, r["exact_disputed"], root)        # rows written before row 180's class
+        r = dict(r, exact_disputed=still)
+        e["exact_extended_only"] += r.get("exact_extended_only", []) + ext
+        for k in ("exact_disputed", "failures_disputed", "full_size_mismatch", "target_file_mismatch"):
+            e[k] += r[k]
+        if r["exact_checked"] != r["exact_rows"]:
+            problems.append(f"{t['key']}: {r['exact_checked']} of {r['exact_rows']} exact runs checked")
+        if exact_rows is not None and exact_rows.get((ph, g)) != r["exact_rows"]:
+            problems.append(f"{t['key']}: {r['exact_rows']} exact rows, the phase holds {exact_rows.get((ph, g))}")
+        for k in ("exact_disputed", "failures_disputed", "full_size_mismatch", "target_file_mismatch", "unchecked"):
+            if r[k]:
+                problems.append(f"{t['key']}: {k} {len(r[k])}")
+    return dict(ok=not problems, phase=phase, phases=out, problems=problems)
+
+
+def print_heldout_labels_report(rep):
+    for ph, e in sorted(rep["phases"].items()):
+        print(f"{ph}: {e['sets']} sets, exact {e['exact_checked']} of {e['exact_rows']} checked, near misses "
+              f"{e['exact_near_miss']}, IEEE-only {e['exact_ieee_only']}, extended-reals-only "
+              f"{len(e['exact_extended_only'])}, disputed {len(e['exact_disputed'])}; "
+              f"failures checked {e['failures_checked']}, disputed {len(e['failures_disputed'])}; unchecked "
+              f"{e['unchecked']}")
+    for p in rep["problems"][:30]:
+        print("  PROBLEM", p)
+    print("ALL EXACT RUNS CHECKED AND AGREED" if rep["ok"] else "PROBLEMS FOUND")
+
+
 def main():
-    """python -m reach.analysis.s2.audit bigtrees PHASE: writes data/analysis/audit_bigtrees[_sample].json."""
+    """python -m reach.analysis.s2.audit bigtrees PHASE: writes data/analysis/audit_bigtrees[_sample].json.
+    python -m reach.analysis.s2.audit labels_heldout: writes data/analysis/audit_labels_heldout.json (D125).
+    python -m reach.analysis.s2.audit labels_s5: writes data/analysis/audit_labels_s5.json (REQ-RUN-51)."""
     import argparse
     import json
     from reach.paths import ROOT
     ap = argparse.ArgumentParser()
-    ap.add_argument("check", choices=["bigtrees"])
-    ap.add_argument("phase", choices=["s2_audit_bigtrees", "s2_audit_bigtrees_sample"])
+    ap.add_argument("check", choices=["bigtrees", "labels_heldout", "labels_s5"])
+    ap.add_argument("phase", nargs="?", choices=["s2_audit_bigtrees", "s2_audit_bigtrees_sample"])
     a = ap.parse_args()
+    if a.check in ("labels_heldout", "labels_s5"):
+        from reach.runner.phases import RESCORE_PHASES, phase_rows
+        sources, qa, name = ((RESCORE_PHASES, "s2_audit_labels_ho", "audit_labels_heldout") if a.check == "labels_heldout"
+                             else (("s5_long_extra",), "s2_audit_labels_s5", "audit_labels_s5"))
+        n = {}
+        for ph in sources:
+            for r in phase_rows(ph).values():
+                n[(ph, r["set"])] = n.get((ph, r["set"]), 0) + bool(r.get("exact"))
+        rep = heldout_labels_report(ROOT, qa, exact_rows=n)
+        print_heldout_labels_report(rep)
+        out = ROOT / f"data/analysis/{name}.json"
+        out.write_text(json.dumps(rep, indent=1, sort_keys=True) + "\n")
+        print("written", out.relative_to(ROOT))
+        return 0 if rep["ok"] else 1
     rep = bigtree_report(ROOT, a.phase)
     print_bigtree_report(rep)
     out = ROOT / f"data/analysis/{a.phase.replace('s2_audit_', 'audit_')}.json"

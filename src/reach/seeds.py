@@ -28,9 +28,12 @@ S2_SLICES = {"pilot": (0, 20), "calibration": (100, 132), "pool": (200, 230), "h
              "benchmark": (400, 430),
              "cgp_validation": (500, 700), "cgp_pilot": (700, 710),   # CGP (D072): validation, pilot (new slices)
              "cgp_calibration": (710, 715), "cgp_heldout": (715, 720),  # CGP confirmatory (D076): new slices
-             "restart": (720, 784)}                                    # Stage 4 restarts (D100): 64 fresh seeds
+             "restart": (720, 784),                                    # Stage 4 restarts (D100): 64 fresh seeds
+             "s5_pop1000": (784, 789),                                 # Stage 5 arm 4a (D125): 5 fresh seeds
+             "s5_pilot": (810, 830)}                                   # Stage 5 pilot of the key sets (D125)
 TARGET_SEEDS = {"pilot": 20261020, "calibration": 20261021, "heldout": 20261022, "pool": 20261023,
-                "restart": 20261102}                                   # Stage 4: RS-add_sqrt's extra levels (D100)
+                "restart": 20261102,                                   # Stage 4: RS-add_sqrt's extra levels (D100)
+                "low": 20261108}                                       # Stage 5: the low levels (D125)
 
 
 def s2_seeds(name):

@@ -2,7 +2,7 @@
 Rings are size levels split into cells; the filled cells per ring are the measured coverage share times the cells
 (at least one when the share is above zero); positions inside a ring are not data (blind search in order, GP
 scattered). Every number is read from the instrumented re-runs (s2_revisit_a16) and the enumeration counts.
-Layouts: "square" is the paper's Figure 4 (900 x 1020); "wide" is the graphical abstract (2000 x 800, horizontal,
+Layouts: "square" is the paper's Figure 4 (900 wide, the disc across the width); "wide" is the graphical abstract (2000 x 800, horizontal,
 large type, the bars in a right-hand column). Text sizes: REQ-ANA-105. Construction and limits: supplement S20."""
 import json
 import math
@@ -110,14 +110,14 @@ def bar_svg(d, s, x, y, bw, bh):
 
 
 def subtitles(d):
-    """Figure 4's lines under each search's name: above the bar and below it, short enough for 17 px type."""
+    """Figure 4's lines for each search, above its bar and below it, short enough for 17 px type in a corner block."""
     small, above, bars = d["small"], d["above"], d["bars"]
-    return [([f"all {small[0]:,} distinct functions of up to 17 nodes; none larger"], ["no function evaluated twice"]),
-            ([f"about {small[1]:,.0f} distinct functions of up to 17 nodes",
-              f"(at most {d['small_capped']:,.0f}) and up to {above[1]:,.0f} larger ones"],
-             [f"{bars[1][2]:.0%} of evaluations repeat a function", "within the same restart"]),
-            ([f"{small[2]:,.0f} distinct functions of up to 17 nodes", f"and {above[2]:,.0f} larger ones"],
-             [f"{bars[2][2]:.0%} of evaluations repeat a function", "already evaluated"])]
+    return [([f"all {small[0]:,} distinct functions up to 17 nodes; none larger"], ["no function evaluated twice"]),
+            ([f"about {small[1]:,.0f} distinct functions", f"up to 17 nodes (at most {d['small_capped']:,.0f})",
+              f"and up to {above[1]:,.0f} larger ones"],
+             [f"{bars[1][2]:.0%} of evaluations repeat a", "function within the same restart"]),
+            ([f"{small[2]:,.0f} distinct functions", "up to 17 nodes", f"and {above[2]:,.0f} larger ones"],
+             [f"{bars[2][2]:.0%} of evaluations repeat", "a function already evaluated"])]
 
 
 def style(lab, sub, key, head=0):
@@ -141,36 +141,42 @@ def key_items(x, y, items, px=17):
     return "\n".join(out)
 
 
+SQUARE = dict(W=900, cx=450, cy=548, w=37, gap=36)   # Figure 4: the disc spans 0.91 of the width (D122)
+
+
 def svg_square(d):
-    """The paper's Figure 4 (900 x 1020): two searches' labels and bars above the disc, blind search's below, then
-    the key; 17 px text prints at 7.4 pt at the line width."""
-    W, cx, cy = 900, 450, 462
-    rings, outer = rings_svg(d, cx, cy)
-    H = round(cy + outer + 152 + 81 + 16)
+    """The paper's Figure 4 (900 wide): the disc across the width, the two GP searches' blocks in the top corners
+    (names in their slice colours), the bar key between them, blind search below; 17 px text prints at 7.4 pt at
+    the line width. The slice gap (36 px) is wider than any ring number, so the numbers touch no cell."""
+    W, cx, cy = SQUARE["W"], SQUARE["cx"], SQUARE["cy"]
+    rings, outer = rings_svg(d, cx, cy, w=SQUARE["w"], gap=SQUARE["gap"])
     subs = subtitles(d)
     out = [rings]
-    bw, bh = 300, 11
-    for s, name in enumerate(NAMES):
-        lx, ly = [(cx, cy + outer + 50), (cx + 222, 24), (cx - 222, 24)][s]
+    bw, bh, x0 = 280, 11, 22
+
+    def block(s, x, y, anchor, colour):
         above, below = subs[s]
-        out.append(f'<text class="lab" x="{lx}" y="{ly}" text-anchor="middle">{name}</text>')
-        y = ly + 22
+        out.append(f'<text class="lab" x="{x}" y="{y}" text-anchor="{anchor}" style="fill:{COL[colour]}">{NAMES[s]}</text>')
+        y += 22
         for line in above:
-            out.append(f'<text class="sub" x="{lx}" y="{y}" text-anchor="middle">{line}</text>')
+            out.append(f'<text class="sub" x="{x}" y="{y}" text-anchor="{anchor}">{line}</text>')
             y += 20
-        out.append(bar_svg(d, s, lx - bw / 2, y - 10, bw, bh))
+        bx = x if anchor == "start" else x - bw if anchor == "end" else x - bw / 2
+        out.append(bar_svg(d, s, bx, y - 10, bw, bh))
         y += 21
         for line in below:
-            out.append(f'<text class="sub" x="{lx}" y="{y}" text-anchor="middle">{line}</text>')
+            out.append(f'<text class="sub" x="{x}" y="{y}" text-anchor="{anchor}">{line}</text>')
             y += 20
-    counts = " · ".join(f"{k}: {d['U'][k]:,}" for k in d["K"])
-    y0 = cy + outer + 152
-    out.append(f'<text class="key" x="30" y="{y0}" font-weight="bold">Functions per level (nodes: count):</text>')
-    out.append(f'<text class="key" x="30" y="{y0 + 23}">{counts}</text>')
-    out.append(key_items(30, y0 + 52, [(COL["bs"], "blind search", 1), (COL["rs"], f"{RESTARTS} restarts (independence estimate)", 1),
-                                       (COL["lr"], "one run", 1)]))
-    out.append(f'<text class="key" x="30" y="{y0 + 81}" font-weight="bold">Bars, share of evaluations:</text>')
-    out.append(key_items(265, y0 + 81, [(COL["lr"], "new, up to 17 nodes", 1), (COL["lr"], "new, larger", .4), (COL["empty"], "evaluated again", 1)]))
+        return y
+
+    block(2, x0, 24, "start", "lr")                                    # one run, top left
+    block(1, W - x0, 24, "end", "rs")                                  # restarts, top right
+    out.append(f'<text class="key" x="{cx}" y="26" text-anchor="middle" font-weight="bold">Bars: share of evaluations</text>')
+    for k, (fill, label, opacity) in enumerate([(COL["lr"], "new, up to 17 nodes", 1), (COL["lr"], "new, larger", .4),
+                                                 (COL["empty"], "evaluated again", 1)]):
+        out.append(key_items(cx - 80, 50 + 22 * k, [(fill, label, opacity)]))
+    y = block(0, cx, cy + outer + 34, "middle", "bs")                   # blind search, below the disc
+    H = round(y - 6)
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n<style>{style(21, 17, 17)}</style>\n'
             f'<rect width="{W}" height="{H}" fill="{COL["bg"]}"/>\n' + "\n".join(out) + "\n</svg>\n")
 

@@ -1,0 +1,88 @@
+{
+ "ok": true,
+ "phase": "s2_audit_labels_ho",
+ "phases": {
+  "s2_ho_a0": {
+   "exact_checked": 2118,
+   "exact_disputed": [],
+   "exact_extended_only": [],
+   "exact_ieee_only": 0,
+   "exact_near_miss": 0,
+   "exact_rows": 2118,
+   "failures_checked": 300,
+   "failures_disputed": [],
+   "full_size_mismatch": [],
+   "sets": 12,
+   "target_file_mismatch": [],
+   "unchecked": 0
+  },
+  "s2_ho_a16": {
+   "exact_checked": 5808,
+   "exact_disputed": [],
+   "exact_extended_only": [],
+   "exact_ieee_only": 0,
+   "exact_near_miss": 0,
+   "exact_rows": 5808,
+   "failures_checked": 300,
+   "failures_disputed": [],
+   "full_size_mismatch": [],
+   "sets": 12,
+   "target_file_mismatch": [],
+   "unchecked": 0
+  },
+  "s2_ho_bench": {
+   "exact_checked": 765,
+   "exact_disputed": [],
+   "exact_extended_only": [],
+   "exact_ieee_only": 0,
+   "exact_near_miss": 1,
+   "exact_rows": 765,
+   "failures_checked": 250,
+   "failures_disputed": [],
+   "full_size_mismatch": [],
+   "sets": 12,
+   "target_file_mismatch": [],
+   "unchecked": 0
+  },
+  "s2_ho_operon": {
+   "exact_checked": 1533,
+   "exact_disputed": [],
+   "exact_extended_only": [],
+   "exact_ieee_only": 2,
+   "exact_near_miss": 12,
+   "exact_rows": 1533,
+   "failures_checked": 300,
+   "failures_disputed": [],
+   "full_size_mismatch": [],
+   "sets": 2,
+   "target_file_mismatch": [],
+   "unchecked": 0
+  },
+  "s4_restart": {
+   "exact_checked": 24747,
+   "exact_disputed": [],
+   "exact_extended_only": [
+    "s4_restart|R-ELEM6|R-ELEM6_K05_05|A|base|100|1421500229",
+    "s4_restart|R-ELEM6|R-ELEM6_K05_25|A|base|100|1196855091",
+    "s4_restart|R-ELEM6|R-ELEM6_K05_25|A|base|100|782480790",
+    "s4_restart|R-ELEM6|R-ELEM6_K05_25|A|base|100|923989809",
+    "s4_restart|R-ELEM6|R-ELEM6_K06_22|A|base|100|1196855091",
+    "s4_restart|R-ELEM6|R-ELEM6_K06_26|A|base|100|1099298519",
+    "s4_restart|R-ELEM6|R-ELEM6_K07_01|A|base|100|510775150",
+    "s4_restart|R-ELEM6|R-ELEM6_K07_16|A|base|100|268762564",
+    "s4_restart|R-ELEM6|R-ELEM6_K07_20|A|base|100|783272928",
+    "s4_restart|R-ELEM6|R-ELEM6_K09_10|A|base|100|510775150"
+   ],
+   "exact_ieee_only": 0,
+   "exact_near_miss": 9,
+   "exact_rows": 24747,
+   "failures_checked": 300,
+   "failures_disputed": [],
+   "full_size_mismatch": [],
+   "sets": 6,
+   "target_file_mismatch": [],
+   "unchecked": 0
+  }
+ },
+ "problems": []
+}

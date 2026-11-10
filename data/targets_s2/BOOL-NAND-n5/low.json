@@ -1,0 +1,1652 @@
+[
+ {
+  "expression": "nand(x4, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K03_00"
+ },
+ {
+  "expression": "nand(x1, x2)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K03_01"
+ },
+ {
+  "expression": "nand(x2, x2)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-NAND-n5_K03_02"
+ },
+ {
+  "expression": "nand(x1, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K03_03"
+ },
+ {
+  "expression": "nand(x3, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K03_04"
+ },
+ {
+  "expression": "nand(x2, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K03_05"
+ },
+ {
+  "expression": "nand(x3, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K03_06"
+ },
+ {
+  "expression": "nand(x5, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-NAND-n5_K03_07"
+ },
+ {
+  "expression": "nand(x1, x1)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-NAND-n5_K03_08"
+ },
+ {
+  "expression": "nand(x2, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K03_09"
+ },
+ {
+  "expression": "nand(x4, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-NAND-n5_K03_10"
+ },
+ {
+  "expression": "nand(x1, x3)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K03_11"
+ },
+ {
+  "expression": "nand(x3, x3)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-NAND-n5_K03_12"
+ },
+ {
+  "expression": "nand(x1, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K03_13"
+ },
+ {
+  "expression": "nand(x2, x3)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K03_14"
+ },
+ {
+  "expression": "nand(x3, nand(x2, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K05_00"
+ },
+ {
+  "expression": "nand(x3, nand(x1, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K05_01"
+ },
+ {
+  "expression": "nand(x3, nand(x1, x1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K05_02"
+ },
+ {
+  "expression": "nand(x1, nand(x4, x4))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K05_03"
+ },
+ {
+  "expression": "nand(x4, nand(x2, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K05_04"
+ },
+ {
+  "expression": "nand(x4, nand(x1, x1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K05_05"
+ },
+ {
+  "expression": "nand(x1, nand(x3, x3))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K05_06"
+ },
+ {
+  "expression": "nand(x3, nand(x4, x4))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K05_07"
+ },
+ {
+  "expression": "nand(x1, nand(x5, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K05_08"
+ },
+ {
+  "expression": "nand(x2, nand(x5, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K05_09"
+ },
+ {
+  "expression": "nand(x5, nand(x4, x4))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K05_10"
+ },
+ {
+  "expression": "nand(x4, nand(x2, x3))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K05_11"
+ },
+ {
+  "expression": "nand(x2, nand(x3, x3))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K05_12"
+ },
+ {
+  "expression": "nand(x2, nand(x1, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K05_13"
+ },
+ {
+  "expression": "nand(x2, nand(x3, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K05_14"
+ },
+ {
+  "expression": "nand(x2, nand(x4, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K05_15"
+ },
+ {
+  "expression": "nand(x4, nand(x1, x3))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K05_16"
+ },
+ {
+  "expression": "nand(x1, nand(x2, x4))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K05_17"
+ },
+ {
+  "expression": "nand(x5, nand(x2, x2))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K05_18"
+ },
+ {
+  "expression": "nand(x2, nand(x1, x1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K05_19"
+ },
+ {
+  "expression": "nand(x2, nand(x1, x4))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K05_20"
+ },
+ {
+  "expression": "nand(x5, nand(x3, x3))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K05_21"
+ },
+ {
+  "expression": "nand(x2, nand(x3, x4))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K05_22"
+ },
+ {
+  "expression": "nand(x3, nand(x4, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K05_23"
+ },
+ {
+  "expression": "nand(x4, nand(x5, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K05_24"
+ },
+ {
+  "expression": "nand(x3, nand(x2, x4))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K05_25"
+ },
+ {
+  "expression": "nand(x5, nand(x1, x3))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K05_26"
+ },
+ {
+  "expression": "nand(x4, nand(x1, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K05_27"
+ },
+ {
+  "expression": "nand(x5, nand(x2, x4))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K05_28"
+ },
+ {
+  "expression": "nand(x1, nand(x3, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K05_29"
+ },
+ {
+  "expression": "nand(x5, nand(x2, nand(x1, x3)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 4,
+   "nonlinearity": 6,
+   "weight": 22
+  },
+  "target_id": "BOOL-NAND-n5_K07_00"
+ },
+ {
+  "expression": "nand(nand(x1, x1), nand(x2, x4))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K07_01"
+ },
+ {
+  "expression": "nand(nand(x1, x1), nand(x2, x2))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-NAND-n5_K07_02"
+ },
+ {
+  "expression": "nand(x4, nand(x2, nand(x4, x5)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K07_03"
+ },
+ {
+  "expression": "nand(x4, nand(x2, nand(x1, x4)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K07_04"
+ },
+ {
+  "expression": "nand(x5, nand(x1, nand(x3, x4)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 4,
+   "nonlinearity": 6,
+   "weight": 22
+  },
+  "target_id": "BOOL-NAND-n5_K07_05"
+ },
+ {
+  "expression": "nand(x1, nand(x4, nand(x1, x2)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K07_06"
+ },
+ {
+  "expression": "nand(nand(x1, x1), nand(x2, x5))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K07_07"
+ },
+ {
+  "expression": "nand(nand(x1, x2), nand(x1, x5))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-NAND-n5_K07_08"
+ },
+ {
+  "expression": "nand(x2, nand(x5, nand(x2, x3)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K07_09"
+ },
+ {
+  "expression": "nand(x1, nand(x3, nand(x1, x2)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K07_10"
+ },
+ {
+  "expression": "nand(x3, nand(x5, nand(x1, x2)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 4,
+   "nonlinearity": 6,
+   "weight": 22
+  },
+  "target_id": "BOOL-NAND-n5_K07_11"
+ },
+ {
+  "expression": "nand(nand(x2, x2), nand(x1, x4))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K07_12"
+ },
+ {
+  "expression": "nand(x4, nand(x5, nand(x1, x3)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 4,
+   "nonlinearity": 6,
+   "weight": 22
+  },
+  "target_id": "BOOL-NAND-n5_K07_13"
+ },
+ {
+  "expression": "nand(x4, nand(x3, nand(x1, x4)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K07_14"
+ },
+ {
+  "expression": "nand(x1, nand(x3, nand(x1, x4)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K07_15"
+ },
+ {
+  "expression": "nand(x3, nand(x4, nand(x1, x2)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 4,
+   "nonlinearity": 6,
+   "weight": 22
+  },
+  "target_id": "BOOL-NAND-n5_K07_16"
+ },
+ {
+  "expression": "nand(x3, nand(x4, nand(x2, x5)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 4,
+   "nonlinearity": 6,
+   "weight": 22
+  },
+  "target_id": "BOOL-NAND-n5_K07_17"
+ },
+ {
+  "expression": "nand(x4, nand(x3, nand(x2, x5)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 4,
+   "nonlinearity": 6,
+   "weight": 22
+  },
+  "target_id": "BOOL-NAND-n5_K07_18"
+ },
+ {
+  "expression": "nand(nand(x2, x4), nand(x4, x5))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-NAND-n5_K07_19"
+ },
+ {
+  "expression": "nand(nand(x3, x5), nand(x3, x5))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-NAND-n5_K07_20"
+ },
+ {
+  "expression": "nand(nand(x1, x3), nand(x3, x4))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-NAND-n5_K07_21"
+ },
+ {
+  "expression": "nand(nand(x3, x4), nand(x1, x5))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 4,
+   "nonlinearity": 10,
+   "weight": 14
+  },
+  "target_id": "BOOL-NAND-n5_K07_22"
+ },
+ {
+  "expression": "nand(nand(x1, x4), nand(x3, x4))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-NAND-n5_K07_23"
+ },
+ {
+  "expression": "nand(nand(x3, x5), nand(x4, x5))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-NAND-n5_K07_24"
+ },
+ {
+  "expression": "nand(nand(x2, x3), nand(x5, x5))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K07_25"
+ },
+ {
+  "expression": "nand(nand(x4, x4), nand(x1, x5))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K07_26"
+ },
+ {
+  "expression": "nand(x1, nand(x2, nand(x1, x5)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 20
+  },
+  "target_id": "BOOL-NAND-n5_K07_27"
+ },
+ {
+  "expression": "nand(x1, nand(x5, nand(x3, x4)))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 4,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 4,
+   "nonlinearity": 6,
+   "weight": 22
+  },
+  "target_id": "BOOL-NAND-n5_K07_28"
+ },
+ {
+  "expression": "nand(nand(x2, x3), nand(x4, x5))",
+  "K_construction": 7,
+  "K_proven": 7,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 7.0,
+   "bits_uniform": 18.094737505048094,
+   "bits_syn": 11.733439082899434,
+   "bits_sem": 8.20945336562895,
+   "bits_sem_uncorrected": 8.20945336562895,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 4,
+   "degree": 4,
+   "nonlinearity": 10,
+   "weight": 14
+  },
+  "target_id": "BOOL-NAND-n5_K07_29"
+ }
+]

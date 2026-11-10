@@ -1,0 +1,30 @@
+{
+ "grammar": "F-LDE0",
+ "seed": 20261108,
+ "ceiling": 23,
+ "depth_limit": 10,
+ "levels": {
+  "5": {
+   "proven": true,
+   "n_level": 8,
+   "n_depth_ok": 8,
+   "excluded_share": 0.0,
+   "found": 6,
+   "rejected": {
+    "nonfinite": 2
+   }
+  },
+  "7": {
+   "proven": true,
+   "n_level": 23,
+   "n_depth_ok": 23,
+   "excluded_share": 0.0,
+   "found": 13,
+   "rejected": {
+    "complex": 8,
+    "nonfinite": 1,
+    "variance": 1
+   }
+  }
+ }
+}

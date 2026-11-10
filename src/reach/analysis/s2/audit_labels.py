@@ -94,6 +94,93 @@ def classify(diff):
     return "identical" if diff <= TOL else "near" if diff < NEAR else "different"
 
 
+# ---- Study 2's guarded real semantics (D048 C4, D021; complex128 on the grid, D058): exact extended values are kept
+# (ln 0 = -inf, exp(-inf) = 0, x/0 non-finite, complex intermediates), but finite inputs that overflow or underflow
+# give NaN. Written here from the rule with this module's own parser, over numpy's complex128 arithmetic (the
+# registered arithmetic, as D091's IEEE check for Operon); used only when the 30-digit real evaluation finds a tree
+# undefined (guardrail row 180: 10 s4_restart R-ELEM6 runs whose dead subtree divides by log(1) = 0 or takes the log
+# of -inf).
+_TINY, _EXP_HI, _EXP_LO = 2.2250738585072014e-308, 709.782712893384, -708.3964185322641
+_CNAN = complex(float("nan"), float("nan"))
+
+
+def _np():
+    import numpy as np
+    return np
+
+
+def _fin(*v):
+    np = _np()
+    return all(bool(np.isfinite(a)) for a in v)
+
+
+def _g_guard(r, *ins):
+    return _CNAN if _fin(*ins) and not _fin(r) else r
+
+
+def _g_mul(a, b):
+    r = a * b
+    under = _fin(a, b) and a != 0 and b != 0 and abs(r) < _TINY
+    return _CNAN if (_fin(a, b) and not _fin(r)) or under else r
+
+
+def _g_div(a, b):
+    r = a / b
+    under = _fin(a, b) and a != 0 and abs(r) < _TINY
+    return _CNAN if (_fin(a, b) and b != 0 and not _fin(r)) or under else r
+
+
+def _g_exp(a):
+    r = _np().exp(a)
+    lossy = _fin(a) and (a.real > _EXP_HI or a.real < _EXP_LO)
+    return _CNAN if lossy else r
+
+
+def _g_un(name):
+    return lambda a: _g_guard(getattr(_np(), name)(a), a)
+
+
+_EXT = {"+": lambda a, b: _g_guard(a + b, a, b), "-": lambda a, b: _g_guard(a - b, a, b), "*": _g_mul,
+        "/": _g_div, "exp": _g_exp, "log": lambda a: _np().log(a), "sin": _g_un("sin"), "cos": _g_un("cos"),
+        "sqrt": _g_un("sqrt"), "square": lambda a: _g_mul(a, a),
+        "eml": lambda a, b: _g_guard(_g_exp(a) - _np().log(b), _g_exp(a), _np().log(b)),
+        "reml": lambda a, b: _g_guard(_g_exp(b) - _np().log(a), _g_exp(b), _np().log(a)),
+        "lde": lambda a, b: _g_div(_np().log(a), _g_exp(b))}
+
+
+def _ext(t, x):
+    np = _np()
+    if isinstance(t, str):
+        return np.complex128(x if t == "x" else float(t))
+    op, args = t
+    with np.errstate(all="ignore"):
+        return np.complex128(_EXT[op](*[_ext(a, x) for a in args]))
+
+
+def max_rel_diff_extended(a, target, scale):
+    """As max_rel_diff_real, with the tree `a` in Study 2's guarded semantics (complex128) and the target still at 30
+    digits; inf where either is undefined (NaN), unless both are the same infinity."""
+    import math
+    ta, tb = parse(a), parse(target)
+    step = (mp.mpf(_HI) - _LO) / (_N + 1)
+    worst = mp.mpf(0)
+    with mp.workdps(DPS):
+        for i in range(_N):
+            x = _LO + step * (i + 1)
+            va = complex(_ext(ta, float(x)))
+            try:
+                vb = _real(tb, x)
+            except (ZeroDivisionError, ValueError, OverflowError):
+                return float("inf")
+            vb = mp.mpc(vb)
+            if math.isnan(va.real) or math.isnan(va.imag) or not mp.isfinite(vb):
+                return float("inf")
+            if not (math.isfinite(va.real) and math.isfinite(va.imag)):
+                return float("inf")
+            worst = max(worst, abs(mp.mpc(va.real, va.imag) - vb) / scale)
+    return float(worst)
+
+
 _BOOL = {"and": lambda a, b: a & b, "or": lambda a, b: a | b, "nand": lambda a, b: 1 - (a & b),
          "nor": lambda a, b: 1 - (a | b), "xor": lambda a, b: a ^ b, "xnor": lambda a, b: 1 - (a ^ b),
          "not": lambda a: 1 - a, "imp": lambda a, b: (1 - a) | b, "rimp": lambda a, b: a | (1 - b),
@@ -338,7 +425,7 @@ def audit(rows, targets, n_fail=300, seed=20261022):
     fails = [r for r in ok if not r.get("exact")]
     fails = random.Random(seed).sample(fails, min(n_fail, len(fails)))
     out = dict(exact_checked=0, exact_near_miss=[], exact_disputed=[], failures_checked=0, failures_near=[],
-               failures_disputed=[], unchecked=unchecked, exact_ieee_only=[])
+               failures_disputed=[], unchecked=unchecked, exact_ieee_only=[], exact_extended_only=[])
     for r, label in [(r, True) for r in exact] + [(r, False) for r in fails]:
         t = targets[(r["set"], r["target_id"])]
         if r.get("algorithm") == "operon":
@@ -347,10 +434,16 @@ def audit(rows, targets, n_fail=300, seed=20261022):
             cls = "identical" if same_function_bool(r["best_expr"], t["expression"], G.get(r["set"]).n_inputs) \
                 else "different"
         else:
-            cls = classify(max_rel_diff_real(r["best_expr"], t["expression"], t["target_scale"]))
+            d = max_rel_diff_real(r["best_expr"], t["expression"], t["target_scale"])
+            cls = classify(d)
+            if d == float("inf") and classify(max_rel_diff_extended(r["best_expr"], t["expression"],
+                                                                    t["target_scale"])) != "different":
+                cls = "extended_only"                           # exact by the guarded rule only (row 180)
         out["exact_checked" if label else "failures_checked"] += 1
         if cls == "ieee_only":                                  # Operon only (D091): exact by D056's IEEE rule
             out["exact_ieee_only" if label else "failures_disputed"].append(r["key"])
+        elif cls == "extended_only":                            # tree GP (row 180): exact by D048's guarded rule
+            out["exact_extended_only" if label else "failures_disputed"].append(r["key"])
         elif label and cls == "near":
             out["exact_near_miss"].append(r["key"])            # exact by the registered rule, not mathematically
         elif label and cls == "different" or not label and cls == "identical":

@@ -1,0 +1,34 @@
+{
+ "grammar": "BOOL-AON-n5",
+ "seed": 20261108,
+ "ceiling": 26,
+ "depth_limit": 10,
+ "levels": {
+  "2": {
+   "proven": true,
+   "n_level": 5,
+   "n_depth_ok": 5,
+   "excluded_share": 0.0,
+   "found": 5,
+   "rejected": {}
+  },
+  "3": {
+   "proven": true,
+   "n_level": 20,
+   "n_depth_ok": 20,
+   "excluded_share": 0.0,
+   "found": 20,
+   "rejected": {}
+  },
+  "4": {
+   "proven": true,
+   "n_level": 62,
+   "n_depth_ok": 62,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "constant": 1
+   }
+  }
+ }
+}

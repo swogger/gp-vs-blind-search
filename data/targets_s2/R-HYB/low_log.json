@@ -1,0 +1,29 @@
+{
+ "grammar": "R-HYB",
+ "seed": 20261108,
+ "ceiling": 15,
+ "depth_limit": 10,
+ "levels": {
+  "3": {
+   "proven": true,
+   "n_level": 8,
+   "n_depth_ok": 8,
+   "excluded_share": 0.0,
+   "found": 6,
+   "rejected": {
+    "variance": 2
+   }
+  },
+  "5": {
+   "proven": true,
+   "n_level": 52,
+   "n_depth_ok": 52,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "dead_subtree": 3,
+    "variance": 5
+   }
+  }
+ }
+}

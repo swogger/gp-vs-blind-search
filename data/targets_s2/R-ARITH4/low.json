@@ -1,0 +1,650 @@
+[
+ {
+  "expression": "/(1, x)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.169925001442312,
+   "bits_sem": 3.321928094887362,
+   "bits_sem_uncorrected": 3.321928094887362,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.002217170660324954,
+  "target_scale": 1.0,
+  "target_id": "R-ARITH4_K03_00"
+ },
+ {
+  "expression": "+(x, x)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.169925001442312,
+   "bits_sem": 3.321928094887362,
+   "bits_sem_uncorrected": 3.321928094887362,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3267326732673266,
+  "target_scale": 5.98019801980198,
+  "target_id": "R-ARITH4_K03_01"
+ },
+ {
+  "expression": "-(x, 1)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.169925001442312,
+   "bits_sem": 3.321928094887362,
+   "bits_sem_uncorrected": 3.321928094887362,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683164,
+  "target_scale": 1.99009900990099,
+  "target_id": "R-ARITH4_K03_02"
+ },
+ {
+  "expression": "*(x, x)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.169925001442312,
+   "bits_sem": 3.321928094887362,
+   "bits_sem_uncorrected": 3.321928094887362,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.0474153184360673,
+  "target_scale": 8.94069208901088,
+  "target_id": "R-ARITH4_K03_03"
+ },
+ {
+  "expression": "+(x, 1)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.169925001442312,
+   "bits_sem": 3.321928094887362,
+   "bits_sem_uncorrected": 3.321928094887362,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683164,
+  "target_scale": 3.99009900990099,
+  "target_id": "R-ARITH4_K03_04"
+ },
+ {
+  "expression": "-(1, x)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.169925001442312,
+   "bits_sem": 3.321928094887362,
+   "bits_sem_uncorrected": 3.321928094887362,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683164,
+  "target_scale": 1.99009900990099,
+  "target_id": "R-ARITH4_K03_05"
+ },
+ {
+  "expression": "-(*(x, x), 1)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.0474153184360673,
+  "target_scale": 7.940692089010881,
+  "target_id": "R-ARITH4_K05_00"
+ },
+ {
+  "expression": "/(x, -(1, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.01909067746678399,
+  "target_scale": 1.9901960784313726,
+  "target_id": "R-ARITH4_K05_01"
+ },
+ {
+  "expression": "+(x, *(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.9459301699212155,
+  "target_scale": 11.930791098911872,
+  "target_id": "R-ARITH4_K05_02"
+ },
+ {
+  "expression": "-(/(1, x), 1)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0022171706603249536,
+  "target_scale": 1.0,
+  "target_id": "R-ARITH4_K05_03"
+ },
+ {
+  "expression": "+(x, +(x, 1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3267326732673266,
+  "target_scale": 6.98019801980198,
+  "target_id": "R-ARITH4_K05_04"
+ },
+ {
+  "expression": "/(1, +(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0005542926650812385,
+  "target_scale": 1.0,
+  "target_id": "R-ARITH4_K05_05"
+ },
+ {
+  "expression": "-(x, +(1, 1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683164,
+  "target_scale": 1.0,
+  "target_id": "R-ARITH4_K05_06"
+ },
+ {
+  "expression": "/(x, +(1, 1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.02042079207920791,
+  "target_scale": 1.495049504950495,
+  "target_id": "R-ARITH4_K05_07"
+ },
+ {
+  "expression": "*(x, -(x, 1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.312266803584583,
+  "target_scale": 5.9505930791098915,
+  "target_id": "R-ARITH4_K05_08"
+ },
+ {
+  "expression": "/(x, -(x, 1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.01909067746678399,
+  "target_scale": 1.9901960784313726,
+  "target_id": "R-ARITH4_K05_09"
+ },
+ {
+  "expression": "-(x, +(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683164,
+  "target_scale": 2.99009900990099,
+  "target_id": "R-ARITH4_K05_10"
+ },
+ {
+  "expression": "+(x, +(1, 1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683164,
+  "target_scale": 4.99009900990099,
+  "target_id": "R-ARITH4_K05_11"
+ },
+ {
+  "expression": "-(1, /(1, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0022171706603249536,
+  "target_scale": 1.0,
+  "target_id": "R-ARITH4_K05_12"
+ },
+ {
+  "expression": "*(x, *(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 29.469305779619386,
+  "target_scale": 26.73355456318105,
+  "target_id": "R-ARITH4_K05_13"
+ },
+ {
+  "expression": "/(1, *(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0015088804487243001,
+  "target_scale": 1.0,
+  "target_id": "R-ARITH4_K05_14"
+ },
+ {
+  "expression": "*(x, +(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 8.189661273744269,
+  "target_scale": 17.88138417802176,
+  "target_id": "R-ARITH4_K05_15"
+ },
+ {
+  "expression": "/(x, +(x, 1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0005606832367440561,
+  "target_scale": 1.0,
+  "target_id": "R-ARITH4_K05_16"
+ },
+ {
+  "expression": "-(x, /(1, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.11067153130941126,
+  "target_scale": 2.655661923808275,
+  "target_id": "R-ARITH4_K05_17"
+ },
+ {
+  "expression": "+(x, +(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.735148514851485,
+  "target_scale": 8.97029702970297,
+  "target_id": "R-ARITH4_K05_18"
+ },
+ {
+  "expression": "+(1, *(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.0474153184360673,
+  "target_scale": 9.94069208901088,
+  "target_id": "R-ARITH4_K05_19"
+ },
+ {
+  "expression": "-(x, *(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 1.3122668035845826,
+  "target_scale": 5.950593079109891,
+  "target_id": "R-ARITH4_K05_20"
+ },
+ {
+  "expression": "/(1, +(x, 1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.0005606832367440555,
+  "target_scale": 1.0,
+  "target_id": "R-ARITH4_K05_21"
+ },
+ {
+  "expression": "-(1, *(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 2.0474153184360673,
+  "target_scale": 7.940692089010881,
+  "target_id": "R-ARITH4_K05_22"
+ },
+ {
+  "expression": "/(1, -(x, 1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.019090677466783987,
+  "target_scale": 1.0,
+  "target_id": "R-ARITH4_K05_23"
+ },
+ {
+  "expression": "+(x, /(1, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.05712914664490196,
+  "target_scale": 3.324536095993705,
+  "target_id": "R-ARITH4_K05_24"
+ },
+ {
+  "expression": "-(1, +(x, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3267326732673266,
+  "target_scale": 4.98019801980198,
+  "target_id": "R-ARITH4_K05_25"
+ },
+ {
+  "expression": "+(1, /(1, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.002217170660324954,
+  "target_scale": 1.4975369458128078,
+  "target_id": "R-ARITH4_K05_26"
+ },
+ {
+  "expression": "+(x, -(x, 1))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.3267326732673266,
+  "target_scale": 4.98019801980198,
+  "target_id": "R-ARITH4_K05_27"
+ },
+ {
+  "expression": "-(/(1, x), x)",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.11067153130941126,
+  "target_scale": 2.655661923808275,
+  "target_id": "R-ARITH4_K05_28"
+ },
+ {
+  "expression": "+(1, -(1, x))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.098032082960527,
+   "bits_sem": 5.523561956057013,
+   "bits_sem_uncorrected": 5.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "var_target": 0.08168316831683164,
+  "target_scale": 1.0,
+  "target_id": "R-ARITH4_K05_29"
+ }
+]

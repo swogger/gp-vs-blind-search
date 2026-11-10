@@ -1,0 +1,345 @@
+{
+ "phase": "s5_targets",
+ "description": "STAGE 5 targets (D125): the low levels of the 14 main sets by the registered rule (every proven level below the lowest calibration level with U >= 5 and log2 U(<=K) >= 3), up to 30 targets each, seed TARGET_SEEDS['low'], into data/targets_s2/<set>/low.json. No search: drawn and checksummed before the Stage 5 registration. --workers 2.",
+ "created": "2026-11-08 22:40:14",
+ "git": "6cb35c1",
+ "n_tasks": 14,
+ "tasks": [
+  {
+   "key": "F-EML",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "F-EML",
+    "--name",
+    "low",
+    "--n",
+    "30",
+    "--seed",
+    "20261108",
+    "--levels",
+    "5"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "F-EML"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ARITH4",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "R-ARITH4",
+    "--name",
+    "low",
+    "--n",
+    "30",
+    "--seed",
+    "20261108",
+    "--levels",
+    "3,5"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "R-ARITH4"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-ELEM4",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "R-ELEM4",
+    "--name",
+    "low",
+    "--n",
+    "30",
+    "--seed",
+    "20261108",
+    "--levels",
+    "3,4,5"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "R-ELEM4"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-HYB",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "R-HYB",
+    "--name",
+    "low",
+    "--n",
+    "30",
+    "--seed",
+    "20261108",
+    "--levels",
+    "3,5"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "R-HYB"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-LDE0",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "F-LDE0",
+    "--name",
+    "low",
+    "--n",
+    "30",
+    "--seed",
+    "20261108",
+    "--levels",
+    "5,7"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "F-LDE0"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-NAND-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-NAND-n5",
+    "--name",
+    "low",
+    "--n",
+    "30",
+    "--seed",
+    "20261108",
+    "--levels",
+    "3,5,7"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-NAND-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-NOR-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-NOR-n5",
+    "--name",
+    "low",
+    "--n",
+    "30",
+    "--seed",
+    "20261108",
+    "--levels",
+    "3,5"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-NOR-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-IMP0-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-IMP0-n5",
+    "--name",
+    "low",
+    "--n",
+    "30",
+    "--seed",
+    "20261108",
+    "--levels",
+    "3"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-IMP0-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AON-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-AON-n5",
+    "--name",
+    "low",
+    "--n",
+    "30",
+    "--seed",
+    "20261108",
+    "--levels",
+    "2,3,4"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-AON-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-AONX-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-AONX-n5",
+    "--name",
+    "low",
+    "--n",
+    "30",
+    "--seed",
+    "20261108",
+    "--levels",
+    "2,3"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-AONX-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-RICH-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-RICH-n5",
+    "--name",
+    "low",
+    "--n",
+    "30",
+    "--seed",
+    "20261108",
+    "--levels",
+    "2"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-RICH-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "F-EML-R",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "F-EML-R",
+    "--name",
+    "low",
+    "--n",
+    "30",
+    "--seed",
+    "20261108",
+    "--levels",
+    "5"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "F-EML-R"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "R-TRIG",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "R-TRIG",
+    "--name",
+    "low",
+    "--n",
+    "30",
+    "--seed",
+    "20261108",
+    "--levels",
+    "3,4"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "R-TRIG"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  },
+  {
+   "key": "BOOL-IMP0R-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_targets",
+    "--grammar",
+    "BOOL-IMP0R-n5",
+    "--name",
+    "low",
+    "--n",
+    "30",
+    "--seed",
+    "20261108",
+    "--levels",
+    "3"
+   ],
+   "cpu_limit": 21600,
+   "meta": {
+    "grammar": "BOOL-IMP0R-n5"
+   },
+   "cwd": ".",
+   "weight": 1.0
+  }
+ ]
+}

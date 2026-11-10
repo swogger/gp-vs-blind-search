@@ -1,0 +1,46 @@
+{
+ "grammar": "R-ELEM4",
+ "seed": 20261108,
+ "ceiling": 15,
+ "depth_limit": 10,
+ "levels": {
+  "3": {
+   "proven": true,
+   "n_level": 8,
+   "n_depth_ok": 8,
+   "excluded_share": 0.0,
+   "found": 5,
+   "rejected": {
+    "variance": 2,
+    "nonfinite": 1
+   }
+  },
+  "4": {
+   "proven": true,
+   "n_level": 21,
+   "n_depth_ok": 21,
+   "excluded_share": 0.0,
+   "found": 14,
+   "rejected": {
+    "variance": 4,
+    "complex": 1,
+    "nonfinite": 2
+   }
+  },
+  "5": {
+   "proven": true,
+   "n_level": 52,
+   "n_depth_ok": 52,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "nonfinite": 5,
+    "variance": 6,
+    "near_duplicate": 3,
+    "magnitude_ratio": 2,
+    "dead_subtree": 2,
+    "complex": 1
+   }
+  }
+ }
+}

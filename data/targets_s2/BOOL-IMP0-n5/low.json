@@ -1,0 +1,552 @@
+[
+ {
+  "expression": "imp(x5, x1)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-IMP0-n5_K03_00"
+ },
+ {
+  "expression": "imp(x4, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-IMP0-n5_K03_01"
+ },
+ {
+  "expression": "imp(x2, x1)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-IMP0-n5_K03_02"
+ },
+ {
+  "expression": "imp(x4, 0)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-IMP0-n5_K03_03"
+ },
+ {
+  "expression": "imp(x3, x1)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-IMP0-n5_K03_04"
+ },
+ {
+  "expression": "imp(x5, x3)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-IMP0-n5_K03_05"
+ },
+ {
+  "expression": "imp(x4, x3)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-IMP0-n5_K03_06"
+ },
+ {
+  "expression": "imp(x4, x1)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-IMP0-n5_K03_07"
+ },
+ {
+  "expression": "imp(x2, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-IMP0-n5_K03_08"
+ },
+ {
+  "expression": "imp(x5, 0)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-IMP0-n5_K03_09"
+ },
+ {
+  "expression": "imp(x1, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-IMP0-n5_K03_10"
+ },
+ {
+  "expression": "imp(x4, x2)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-IMP0-n5_K03_11"
+ },
+ {
+  "expression": "imp(x2, 0)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-IMP0-n5_K03_12"
+ },
+ {
+  "expression": "imp(x3, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-IMP0-n5_K03_13"
+ },
+ {
+  "expression": "imp(x3, x2)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-IMP0-n5_K03_14"
+ },
+ {
+  "expression": "imp(x3, 0)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-IMP0-n5_K03_15"
+ },
+ {
+  "expression": "imp(x1, x3)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-IMP0-n5_K03_16"
+ },
+ {
+  "expression": "imp(x5, x2)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-IMP0-n5_K03_17"
+ },
+ {
+  "expression": "imp(x1, 0)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-IMP0-n5_K03_18"
+ },
+ {
+  "expression": "imp(x1, x2)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-IMP0-n5_K03_19"
+ },
+ {
+  "expression": "imp(x5, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-IMP0-n5_K03_20"
+ },
+ {
+  "expression": "imp(x1, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-IMP0-n5_K03_21"
+ },
+ {
+  "expression": "imp(x3, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-IMP0-n5_K03_22"
+ },
+ {
+  "expression": "imp(x2, x3)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-IMP0-n5_K03_23"
+ },
+ {
+  "expression": "imp(x2, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 8.422064766172813,
+   "bits_syn": 5.392317422778761,
+   "bits_sem": 5.0,
+   "bits_sem_uncorrected": 5.0,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-IMP0-n5_K03_24"
+ }
+]

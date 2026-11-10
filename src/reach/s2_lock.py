@@ -89,6 +89,22 @@ def check_stage4():
         raise PermissionError(f"Stage 4 phase: the Stage 4 registration is not recorded in {STAGE4_FILE}")
 
 
+STAGE5_FILE = _ROOT / "data/registration/stage5_registration.txt"  # the Stage 5 OSF link (H11-2L; D125, D126)
+TASKS5_FILE = _ROOT / "data/registration/stage5_tasks.json"  # the registered Stage 5 phases
+STAGE5_PHASES = ("s5_long_extra",)    # registered by Stage 5 (H11-2L alone; D126)
+# Paused by D126 (they wait for the real reviews): locked, and not in stage5_tasks.json, so planning refuses them even
+# once the Stage 5 registration is recorded; any of them needs a registration of its own (guardrail row 202).
+STAGE5_PAUSED = ("s5_grid", "s5_boolsub", "s5_wide", "s5_selfree", "s5_low_base", "s5_pop1000", "s5_revisit_robust",
+                 "s5_revisit_restart", "s5_union", "s5_revisit_ho16", "s5_frozen")
+STAGE5_OPEN = ("s5_targets",)          # no search (the low-level targets are drawn and checksummed before filing)
+
+
+def check_stage5():
+    """The Stage 5 phases (D125) plan only once the Stage 5 registration is recorded."""
+    if not (STAGE5_FILE.exists() and STAGE5_FILE.read_text().strip()):
+        raise PermissionError(f"Stage 5 phase: the Stage 5 registration is not recorded in {STAGE5_FILE}")
+
+
 def registered_tasks_file(phase):
     """The registered task-list file a phase must match when planned: Stage 2 phases (and any other s2_ho_ search
     phase) -> TASKS2_FILE; the other s2_cal_ phases -> TASKS_FILE (Stage 1); anything else -> None (not checked)."""
@@ -98,6 +114,9 @@ def registered_tasks_file(phase):
         return TASKS3_FILE
     if phase in STAGE4_PHASES:
         return TASKS4_FILE
+    if phase in STAGE5_PHASES + STAGE5_PAUSED or (phase.startswith("s5_") and phase not in STAGE5_OPEN
+                                  and not phase.startswith("s5_pilot_")):
+        return TASKS5_FILE                # any other s5 phase must be registered too
     if phase.startswith("s2_cal_"):
         return TASKS_FILE
     return None

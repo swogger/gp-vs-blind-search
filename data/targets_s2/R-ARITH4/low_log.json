@@ -1,0 +1,29 @@
+{
+ "grammar": "R-ARITH4",
+ "seed": 20261108,
+ "ceiling": 17,
+ "depth_limit": 10,
+ "levels": {
+  "3": {
+   "proven": true,
+   "n_level": 8,
+   "n_depth_ok": 8,
+   "excluded_share": 0.0,
+   "found": 6,
+   "rejected": {
+    "variance": 2
+   }
+  },
+  "5": {
+   "proven": true,
+   "n_level": 36,
+   "n_depth_ok": 36,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "nonfinite": 1,
+    "variance": 3
+   }
+  }
+ }
+}

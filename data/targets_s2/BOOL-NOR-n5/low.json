@@ -1,0 +1,992 @@
+[
+ {
+  "expression": "nor(x5, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-NOR-n5_K03_00"
+ },
+ {
+  "expression": "nor(x1, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-NOR-n5_K03_01"
+ },
+ {
+  "expression": "nor(x1, x3)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-NOR-n5_K03_02"
+ },
+ {
+  "expression": "nor(x3, x3)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-NOR-n5_K03_03"
+ },
+ {
+  "expression": "nor(x4, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-NOR-n5_K03_04"
+ },
+ {
+  "expression": "nor(x4, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-NOR-n5_K03_05"
+ },
+ {
+  "expression": "nor(x3, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-NOR-n5_K03_06"
+ },
+ {
+  "expression": "nor(x3, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-NOR-n5_K03_07"
+ },
+ {
+  "expression": "nor(x1, x2)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-NOR-n5_K03_08"
+ },
+ {
+  "expression": "nor(x2, x2)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-NOR-n5_K03_09"
+ },
+ {
+  "expression": "nor(x2, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-NOR-n5_K03_10"
+ },
+ {
+  "expression": "nor(x1, x1)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-NOR-n5_K03_11"
+ },
+ {
+  "expression": "nor(x1, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-NOR-n5_K03_12"
+ },
+ {
+  "expression": "nor(x2, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-NOR-n5_K03_13"
+ },
+ {
+  "expression": "nor(x2, x3)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 7.754887502163468,
+   "bits_syn": 4.906890595608519,
+   "bits_sem": 4.321928094887363,
+   "bits_sem_uncorrected": 4.321928094887363,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-NOR-n5_K03_14"
+ },
+ {
+  "expression": "nor(x1, nor(x2, x4))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-NOR-n5_K05_00"
+ },
+ {
+  "expression": "nor(x1, nor(x2, x3))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-NOR-n5_K05_01"
+ },
+ {
+  "expression": "nor(x5, nor(x1, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-NOR-n5_K05_02"
+ },
+ {
+  "expression": "nor(x2, nor(x1, x4))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-NOR-n5_K05_03"
+ },
+ {
+  "expression": "nor(x2, nor(x4, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-NOR-n5_K05_04"
+ },
+ {
+  "expression": "nor(x5, nor(x1, x4))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-NOR-n5_K05_05"
+ },
+ {
+  "expression": "nor(x3, nor(x1, x2))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-NOR-n5_K05_06"
+ },
+ {
+  "expression": "nor(x3, nor(x2, x3))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-NOR-n5_K05_07"
+ },
+ {
+  "expression": "nor(x1, nor(x3, x4))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-NOR-n5_K05_08"
+ },
+ {
+  "expression": "nor(x1, nor(x2, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-NOR-n5_K05_09"
+ },
+ {
+  "expression": "nor(x3, nor(x1, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-NOR-n5_K05_10"
+ },
+ {
+  "expression": "nor(x4, nor(x3, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-NOR-n5_K05_11"
+ },
+ {
+  "expression": "nor(x4, nor(x3, x4))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-NOR-n5_K05_12"
+ },
+ {
+  "expression": "nor(x1, nor(x1, x2))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-NOR-n5_K05_13"
+ },
+ {
+  "expression": "nor(x1, nor(x1, x3))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-NOR-n5_K05_14"
+ },
+ {
+  "expression": "nor(x1, nor(x1, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-NOR-n5_K05_15"
+ },
+ {
+  "expression": "nor(x4, nor(x2, x4))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-NOR-n5_K05_16"
+ },
+ {
+  "expression": "nor(x2, nor(x1, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-NOR-n5_K05_17"
+ },
+ {
+  "expression": "nor(x5, nor(x2, x4))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-NOR-n5_K05_18"
+ },
+ {
+  "expression": "nor(x5, nor(x2, x3))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-NOR-n5_K05_19"
+ },
+ {
+  "expression": "nor(x2, nor(x1, x3))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-NOR-n5_K05_20"
+ },
+ {
+  "expression": "nor(x4, nor(x1, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-NOR-n5_K05_21"
+ },
+ {
+  "expression": "nor(x2, nor(x1, x2))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-NOR-n5_K05_22"
+ },
+ {
+  "expression": "nor(x1, nor(x1, x4))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-NOR-n5_K05_23"
+ },
+ {
+  "expression": "nor(x2, nor(x3, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-NOR-n5_K05_24"
+ },
+ {
+  "expression": "nor(x3, nor(x3, x4))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-NOR-n5_K05_25"
+ },
+ {
+  "expression": "nor(x4, nor(x1, x4))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-NOR-n5_K05_26"
+ },
+ {
+  "expression": "nor(x2, nor(x2, x3))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-NOR-n5_K05_27"
+ },
+ {
+  "expression": "nor(x3, nor(x2, x4))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-NOR-n5_K05_28"
+ },
+ {
+  "expression": "nor(x1, nor(x4, x5))",
+  "K_construction": 5,
+  "K_proven": 5,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 5.0,
+   "bits_uniform": 12.92481250360578,
+   "bits_syn": 8.129283016944967,
+   "bits_sem": 6.149747119504682,
+   "bits_sem_uncorrected": 6.149747119504682,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 3,
+   "degree": 3,
+   "nonlinearity": 4,
+   "weight": 12
+  },
+  "target_id": "BOOL-NOR-n5_K05_29"
+ }
+]

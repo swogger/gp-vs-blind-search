@@ -1,0 +1,1212 @@
+[
+ {
+  "expression": "not(x5)",
+  "K_construction": 2,
+  "K_proven": 2,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 2.0,
+   "bits_uniform": 6.0,
+   "bits_syn": 3.321928094887362,
+   "bits_sem": 3.321928094887362,
+   "bits_sem_uncorrected": 3.321928094887362,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-AON-n5_K02_00"
+ },
+ {
+  "expression": "not(x2)",
+  "K_construction": 2,
+  "K_proven": 2,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 2.0,
+   "bits_uniform": 6.0,
+   "bits_syn": 3.321928094887362,
+   "bits_sem": 3.321928094887362,
+   "bits_sem_uncorrected": 3.321928094887362,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-AON-n5_K02_01"
+ },
+ {
+  "expression": "not(x1)",
+  "K_construction": 2,
+  "K_proven": 2,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 2.0,
+   "bits_uniform": 6.0,
+   "bits_syn": 3.321928094887362,
+   "bits_sem": 3.321928094887362,
+   "bits_sem_uncorrected": 3.321928094887362,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-AON-n5_K02_02"
+ },
+ {
+  "expression": "not(x4)",
+  "K_construction": 2,
+  "K_proven": 2,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 2.0,
+   "bits_uniform": 6.0,
+   "bits_syn": 3.321928094887362,
+   "bits_sem": 3.321928094887362,
+   "bits_sem_uncorrected": 3.321928094887362,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-AON-n5_K02_03"
+ },
+ {
+  "expression": "not(x3)",
+  "K_construction": 2,
+  "K_proven": 2,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 2.0,
+   "bits_uniform": 6.0,
+   "bits_syn": 3.321928094887362,
+   "bits_sem": 3.321928094887362,
+   "bits_sem_uncorrected": 3.321928094887362,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-AON-n5_K02_04"
+ },
+ {
+  "expression": "and(x1, x3)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.0,
+   "bits_syn": 6.022367813028454,
+   "bits_sem": 4.906890595608519,
+   "bits_sem_uncorrected": 4.906890595608519,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AON-n5_K03_00"
+ },
+ {
+  "expression": "and(x1, x2)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.0,
+   "bits_syn": 6.022367813028454,
+   "bits_sem": 4.906890595608519,
+   "bits_sem_uncorrected": 4.906890595608519,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AON-n5_K03_01"
+ },
+ {
+  "expression": "or(x1, x2)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.0,
+   "bits_syn": 6.022367813028454,
+   "bits_sem": 4.906890595608519,
+   "bits_sem_uncorrected": 4.906890595608519,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K03_02"
+ },
+ {
+  "expression": "or(x2, x3)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.0,
+   "bits_syn": 6.022367813028454,
+   "bits_sem": 4.906890595608519,
+   "bits_sem_uncorrected": 4.906890595608519,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K03_03"
+ },
+ {
+  "expression": "or(x4, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.0,
+   "bits_syn": 6.022367813028454,
+   "bits_sem": 4.906890595608519,
+   "bits_sem_uncorrected": 4.906890595608519,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K03_04"
+ },
+ {
+  "expression": "and(x1, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.0,
+   "bits_syn": 6.022367813028454,
+   "bits_sem": 4.906890595608519,
+   "bits_sem_uncorrected": 4.906890595608519,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AON-n5_K03_05"
+ },
+ {
+  "expression": "and(x2, x3)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.0,
+   "bits_syn": 6.022367813028454,
+   "bits_sem": 4.906890595608519,
+   "bits_sem_uncorrected": 4.906890595608519,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AON-n5_K03_06"
+ },
+ {
+  "expression": "or(x2, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.0,
+   "bits_syn": 6.022367813028454,
+   "bits_sem": 4.906890595608519,
+   "bits_sem_uncorrected": 4.906890595608519,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K03_07"
+ },
+ {
+  "expression": "and(x3, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.0,
+   "bits_syn": 6.022367813028454,
+   "bits_sem": 4.906890595608519,
+   "bits_sem_uncorrected": 4.906890595608519,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AON-n5_K03_08"
+ },
+ {
+  "expression": "and(x2, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.0,
+   "bits_syn": 6.022367813028454,
+   "bits_sem": 4.906890595608519,
+   "bits_sem_uncorrected": 4.906890595608519,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AON-n5_K03_09"
+ },
+ {
+  "expression": "or(x1, x3)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.0,
+   "bits_syn": 6.022367813028454,
+   "bits_sem": 4.906890595608519,
+   "bits_sem_uncorrected": 4.906890595608519,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K03_10"
+ },
+ {
+  "expression": "and(x3, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.0,
+   "bits_syn": 6.022367813028454,
+   "bits_sem": 4.906890595608519,
+   "bits_sem_uncorrected": 4.906890595608519,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AON-n5_K03_11"
+ },
+ {
+  "expression": "or(x3, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.0,
+   "bits_syn": 6.022367813028454,
+   "bits_sem": 4.906890595608519,
+   "bits_sem_uncorrected": 4.906890595608519,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K03_12"
+ },
+ {
+  "expression": "and(x1, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.0,
+   "bits_syn": 6.022367813028454,
+   "bits_sem": 4.906890595608519,
+   "bits_sem_uncorrected": 4.906890595608519,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AON-n5_K03_13"
+ },
+ {
+  "expression": "or(x1, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.0,
+   "bits_syn": 6.022367813028454,
+   "bits_sem": 4.906890595608519,
+   "bits_sem_uncorrected": 4.906890595608519,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K03_14"
+ },
+ {
+  "expression": "and(x2, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.0,
+   "bits_syn": 6.022367813028454,
+   "bits_sem": 4.906890595608519,
+   "bits_sem_uncorrected": 4.906890595608519,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AON-n5_K03_15"
+ },
+ {
+  "expression": "or(x2, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.0,
+   "bits_syn": 6.022367813028454,
+   "bits_sem": 4.906890595608519,
+   "bits_sem_uncorrected": 4.906890595608519,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K03_16"
+ },
+ {
+  "expression": "and(x4, x5)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.0,
+   "bits_syn": 6.022367813028454,
+   "bits_sem": 4.906890595608519,
+   "bits_sem_uncorrected": 4.906890595608519,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AON-n5_K03_17"
+ },
+ {
+  "expression": "or(x1, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.0,
+   "bits_syn": 6.022367813028454,
+   "bits_sem": 4.906890595608519,
+   "bits_sem_uncorrected": 4.906890595608519,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K03_18"
+ },
+ {
+  "expression": "or(x3, x4)",
+  "K_construction": 3,
+  "K_proven": 3,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 3.0,
+   "bits_uniform": 9.0,
+   "bits_syn": 6.022367813028454,
+   "bits_sem": 4.906890595608519,
+   "bits_sem_uncorrected": 4.906890595608519,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K03_19"
+ },
+ {
+  "expression": "not(and(x1, x4))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K04_00"
+ },
+ {
+  "expression": "not(and(x4, x5))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K04_01"
+ },
+ {
+  "expression": "not(or(x3, x5))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AON-n5_K04_02"
+ },
+ {
+  "expression": "not(and(x3, x4))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K04_03"
+ },
+ {
+  "expression": "and(x3, not(x1))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AON-n5_K04_04"
+ },
+ {
+  "expression": "and(x4, not(x5))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AON-n5_K04_05"
+ },
+ {
+  "expression": "and(x3, not(x4))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AON-n5_K04_06"
+ },
+ {
+  "expression": "not(and(x1, x3))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K04_07"
+ },
+ {
+  "expression": "not(and(x2, x4))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K04_08"
+ },
+ {
+  "expression": "and(x2, not(x5))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AON-n5_K04_09"
+ },
+ {
+  "expression": "not(and(x1, x2))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K04_10"
+ },
+ {
+  "expression": "or(x4, not(x1))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K04_11"
+ },
+ {
+  "expression": "not(or(x1, x4))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AON-n5_K04_12"
+ },
+ {
+  "expression": "not(and(x3, x5))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K04_13"
+ },
+ {
+  "expression": "or(x2, not(x5))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K04_14"
+ },
+ {
+  "expression": "or(x3, not(x2))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K04_15"
+ },
+ {
+  "expression": "or(x4, not(x5))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K04_16"
+ },
+ {
+  "expression": "or(x2, not(x3))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K04_17"
+ },
+ {
+  "expression": "not(or(x1, x3))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AON-n5_K04_18"
+ },
+ {
+  "expression": "or(x4, not(x3))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K04_19"
+ },
+ {
+  "expression": "and(x3, not(x5))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AON-n5_K04_20"
+ },
+ {
+  "expression": "and(x4, not(x3))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AON-n5_K04_21"
+ },
+ {
+  "expression": "and(x5, not(x4))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AON-n5_K04_22"
+ },
+ {
+  "expression": "or(x2, not(x4))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K04_23"
+ },
+ {
+  "expression": "not(and(x1, x5))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K04_24"
+ },
+ {
+  "expression": "not(or(x3, x4))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AON-n5_K04_25"
+ },
+ {
+  "expression": "or(x3, not(x1))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K04_26"
+ },
+ {
+  "expression": "and(x1, not(x5))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AON-n5_K04_27"
+ },
+ {
+  "expression": "and(x4, not(x2))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 8
+  },
+  "target_id": "BOOL-AON-n5_K04_28"
+ },
+ {
+  "expression": "or(x5, not(x2))",
+  "K_construction": 4,
+  "K_proven": 4,
+  "constructed": false,
+  "depth": 3,
+  "units": {
+   "nodes": 4.0,
+   "bits_uniform": 12.0,
+   "bits_syn": 7.78135971352466,
+   "bits_sem": 6.523561956057013,
+   "bits_sem_uncorrected": 6.523561956057013,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 2,
+   "degree": 2,
+   "nonlinearity": 8,
+   "weight": 24
+  },
+  "target_id": "BOOL-AON-n5_K04_29"
+ }
+]

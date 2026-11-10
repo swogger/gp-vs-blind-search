@@ -1,0 +1,135 @@
+{
+ "phase": "s2_audit_labels_s5",
+ "description": "QA (REQ-RUN-51, guardrail row 209; not a test of any hypothesis): every exact run (and 300 sampled failures) of Stage 5's s5_long_extra re-scored by the independent evaluators, as s2_audit_labels_ho; one task per set; run before the H11-2L analysis. No search.",
+ "created": "2026-11-10 18:31:46",
+ "git": "3a356c9+dirty",
+ "n_tasks": 6,
+ "tasks": [
+  {
+   "key": "labels|s5_long_extra|R-ARITH",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s5_long_extra",
+    "--set",
+    "R-ARITH",
+    "--n_fail",
+    "50"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s5_long_extra",
+    "set": "R-ARITH"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s5_long_extra|R-ELEM6",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s5_long_extra",
+    "--set",
+    "R-ELEM6",
+    "--n_fail",
+    "50"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s5_long_extra",
+    "set": "R-ELEM6"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s5_long_extra|RS-add_sqrt",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s5_long_extra",
+    "--set",
+    "RS-add_sqrt",
+    "--n_fail",
+    "50"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s5_long_extra",
+    "set": "RS-add_sqrt"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s5_long_extra|RS-eml_sin_sqrt_square",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s5_long_extra",
+    "--set",
+    "RS-eml_sin_sqrt_square",
+    "--n_fail",
+    "50"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s5_long_extra",
+    "set": "RS-eml_sin_sqrt_square"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s5_long_extra|RS-mul_div_eml_sin_square",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s5_long_extra",
+    "--set",
+    "RS-mul_div_eml_sin_square",
+    "--n_fail",
+    "50"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s5_long_extra",
+    "set": "RS-mul_div_eml_sin_square"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s5_long_extra|RS-mul_eml_sin",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s5_long_extra",
+    "--set",
+    "RS-mul_eml_sin",
+    "--n_fail",
+    "50"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s5_long_extra",
+    "set": "RS-mul_eml_sin"
+   },
+   "cwd": "."
+  }
+ ]
+}

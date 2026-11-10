@@ -26,6 +26,29 @@ LEGACY_PLATEAU = 600
 EXPR_MAX_NODES = 200        # best_expr is printed only for best trees up to this size; full_expr adds the whole tree
 _INF = float("inf")
 _PATCHED = ("choice", "random", "sample", "uniform")
+REAL_FITNESS = ("batch", "grid", "frozen")      # Stage 5 (D125, REQ-ENG-25): the points the selection error uses
+SELECTIONS = ("tournament", "lexicase", "none")
+
+
+def own_generator(seed, label):
+    """A run's own generator for a Stage 5 option (never pop_rng or evo_rng, so their streams are unchanged): seeded
+    by the first 8 bytes of SHA-256("label|seed")."""
+    import hashlib
+    return _random_module.Random(int.from_bytes(hashlib.sha256(f"{label}|{seed}".encode()).digest()[:8], "big"))
+
+
+def _row_mask(rng, rows, k):
+    """k distinct rows of the truth table, drawn without replacement, as a bit mask (REQ-ENG-26)."""
+    m = 0
+    for r in rng.sample(range(rows), k):
+        m |= 1 << r
+    return m
+
+
+def _selfree_elite(population, best_tree, rng):
+    """The elite slot under selection "none": a uniform random member of the evaluated generation, not the best so
+    far (keeping the best would be selection; REQ-ENG-27)."""
+    return population[rng.randrange(len(population))].copy()
 
 
 def _patch(rng):
@@ -61,7 +84,8 @@ def run_gp(g, target_tree, regime, seed, *, val_xs=None, val_target=None, var_no
            pop_size=POP_SIZE, timeout_seconds=600.0, legacy=False, seed_leaves=None,
            point_mutation=False, stop_on="tolerance", undefined_penalty="fixed", crossover_mode="subtree",
            tournament_size=5, selection="tournament", p_crossover=0.75, p_mutation=0.20, init="ramped",
-           max_depth=MAX_DEPTH, full_expr=False, counter=None):
+           max_depth=MAX_DEPTH, full_expr=False, counter=None, real_fitness="batch", bool_rows=None,
+           batch_domain=None, batch_var_norm=None):
     """One run. regime 'A' = crossover 0.75 + subtree mutation 0.20; 'B' = mutation only.
     timeout_seconds is CPU time. For Boolean grammars the data arguments are ignored.
     stop_on: 'tolerance' stops at validation nMSE <= 1e-6 (EML-GP); 'exact' keeps searching until the best
@@ -77,12 +101,37 @@ def run_gp(g, target_tree, regime, seed, *, val_xs=None, val_target=None, var_no
     random generators already restored, so the search and every other field are unchanged (REQ-ENG-22).
     counter (H6d re-runs, D098): a `reach.revisit.Counter` shown every evaluated generation; it draws no random number,
     and its CPU time, measured here around each call, is left out of the soft limit, so the search stops where it would
-    without it (REQ-ENG-23)."""
+    without it (REQ-ENG-23).
+    Stage 5 options (D125; each default is the engine above, byte for byte; new draws come from the run's own
+    generators, never from pop_rng or evo_rng):
+    real_fitness: "batch" (a fresh batch of 75 uniform points each generation), "grid" (the error on the 100-point
+    identity grid), "frozen" (generation 0's batch kept); the batch is drawn from evo_rng in every mode, so the stream
+    position is unchanged (REQ-ENG-25). bool_rows (Boolean): None (the full table) or k: the selection error counts
+    only k rows drawn afresh each generation from the run's own generator; the elite and the stop rule use the full
+    table (REQ-ENG-26). selection "none": parents drawn uniformly from the evaluated generation and the elite slot
+    filled by a uniform random member, from the run's own generator; the best so far is tracked for detection and the
+    stop rule only, so the search is blind to the target until it stops (REQ-ENG-27). batch_domain (real): the batch
+    points are drawn uniformly from (lo, hi) instead of (2, 3), with the same draws; batch_var_norm normalises the
+    batch error and scales its undefined penalty (default var_norm); the validation sample, the identity grid and
+    exactness stay on (2, 3) (REQ-ENG-29)."""
     seed_leaves = legacy if seed_leaves is None else seed_leaves
     plateau = LEGACY_PLATEAU if legacy else None
     xdepth = None if legacy else max_depth
     mutation_only = regime == "B"
     is_bool = g.kind == "bool"
+    if real_fitness not in REAL_FITNESS or selection not in SELECTIONS:
+        raise ValueError(f"real_fitness {real_fitness!r} or selection {selection!r} unknown")
+    if is_bool and (real_fitness != "batch" or batch_domain is not None or batch_var_norm is not None):
+        raise ValueError("real_fitness, batch_domain and batch_var_norm are options of real-valued sets")
+    if not is_bool and bool_rows is not None:
+        raise ValueError("bool_rows is an option of Boolean sets")
+    if bool_rows is not None and (selection == "lexicase" or not 1 <= bool_rows <= 1 << g.n_inputs):
+        raise ValueError(f"bool_rows {bool_rows}: between 1 and the table's rows, without lexicase")
+    if real_fitness == "grid" and grid_xs is None:
+        raise ValueError("real_fitness 'grid' needs the identity grid")
+    if batch_var_norm is not None and not (math.isfinite(batch_var_norm) and batch_var_norm > 0):
+        raise ValueError(f"batch_var_norm {batch_var_norm}: must be finite and positive (an infinite one makes every "
+                         "batch error NaN: no selection, no detection; guardrail row 173)")
     t0, c0 = time.time(), time.process_time()
     saved = {n: getattr(_random_module, n) for n in _PATCHED}
 
@@ -95,6 +144,13 @@ def run_gp(g, target_tree, regime, seed, *, val_xs=None, val_target=None, var_no
             return float(bin(G.evaluate(g, tree) ^ tt).count("1"))
 
         rows = 1 << g.n_inputs
+        row_mask = g.mask
+
+        def masked_error(tree, *_):         # the selection error on this generation's rows (REQ-ENG-26)
+            if G.count_nodes(tree) > G.MAX_NODES:
+                return _INF
+            return float(bin((G.evaluate(g, tree) ^ tt) & row_mask).count("1"))
+        score_error = error if bool_rows is None else masked_error
 
         def case_errors(tree, *_):
             if G.count_nodes(tree) > G.MAX_NODES:
@@ -117,6 +173,15 @@ def run_gp(g, target_tree, regime, seed, *, val_xs=None, val_target=None, var_no
                 return np.where(bad, penalty, np.where(bad, 0.0, d) ** 2) / var_norm
         penalty = {"fixed": 1000.0, "scaled": 1000.0 * var_norm}[undefined_penalty]
         threshold = CONV_THRESHOLD
+        if batch_var_norm is None:
+            score_error = error
+        else:                               # the wider interval's own normaliser and penalty (REQ-ENG-29)
+            b_penalty = {"fixed": 1000.0, "scaled": 1000.0 * batch_var_norm}[undefined_penalty]
+
+            def score_error(tree, xs, target):
+                if G.count_nodes(tree) > G.MAX_NODES:
+                    return _INF
+                return G.mse_against(G.evaluate(g, tree, xs), target, b_penalty) / batch_var_norm
 
     def is_exact(tree):
         if is_bool:
@@ -129,6 +194,10 @@ def run_gp(g, target_tree, regime, seed, *, val_xs=None, val_target=None, var_no
         m.randint(0, 2 ** 31 - 1)                     # drawn and unused, as in EML-GP
         pop_rng = _random_module.Random(m.randint(0, 2 ** 31 - 1))
         evo_rng = _random_module.Random(m.randint(0, 2 ** 31 - 1))
+        rows_rng = own_generator(seed, "bool_rows") if bool_rows is not None else None
+        sel_rng = own_generator(seed, "selection_none") if selection == "none" else None
+        lo, hi = batch_domain if batch_domain is not None else (G.DOMAIN_LO, G.DOMAIN_HI)
+        frozen = None
         _patch(pop_rng)
         init_depth = min(max_depth, MAX_DEPTH)          # R6 raises the limit only; trees start as in base (row 64)
         if init == "uniform":
@@ -151,15 +220,24 @@ def run_gp(g, target_tree, regime, seed, *, val_xs=None, val_target=None, var_no
                 break
             if is_bool:
                 bx = b_target = None
+                if rows_rng is not None:
+                    row_mask = _row_mask(rows_rng, rows, bool_rows)
             else:
                 if len(g.variables) == 1:      # EML-GP's draw order (legacy exactness)
-                    bx = np.array([complex(evo_rng.uniform(G.DOMAIN_LO, G.DOMAIN_HI))
+                    bx = np.array([complex(evo_rng.uniform(lo, hi))
                                    for _ in range(BATCH_SIZE)], dtype=np.complex128)
                 else:
-                    bx = {v: np.array([complex(evo_rng.uniform(G.DOMAIN_LO, G.DOMAIN_HI))
+                    bx = {v: np.array([complex(evo_rng.uniform(lo, hi))
                                        for _ in range(BATCH_SIZE)], dtype=np.complex128) for v in g.variables}
-                b_target = G.evaluate(g, target_tree, bx)
-            scores = [(ind, error(ind, bx, b_target)) for ind in population]
+                if real_fitness == "grid":     # drawn above and not used: the stream position is unchanged
+                    bx, b_target = grid_xs, grid_target
+                elif frozen is not None:       # "frozen": generation 0's batch, every generation
+                    bx, b_target = frozen
+                else:
+                    b_target = G.evaluate(g, target_tree, bx)
+                    if real_fitness == "frozen":
+                        frozen = (bx, b_target)
+            scores = [(ind, score_error(ind, bx, b_target)) for ind in population]
             if counter is not None:
                 t_c = time.process_time()
                 counter.generation(population)
@@ -187,13 +265,15 @@ def run_gp(g, target_tree, regime, seed, *, val_xs=None, val_target=None, var_no
                 break
 
             def pick():
+                if selection == "none":        # uniform over the evaluated generation, in its own order
+                    return population[sel_rng.randrange(len(population))]
                 if selection == "lexicase":
                     return scores[lexicase_select(cases, eps, evo_rng)][0]
                 tt_ = evo_rng.sample(scores, k=tournament_size)
                 tt_.sort(key=lambda x: x[1])
                 return tt_[0][0]
 
-            new_pop = [best_tree.copy()]
+            new_pop = [_selfree_elite(population, best_tree, sel_rng) if selection == "none" else best_tree.copy()]
             while len(new_pop) < pop_size:
                 p1 = pick()
                 if not mutation_only and evo_rng.random() < p_crossover and len(new_pop) < pop_size - 1:

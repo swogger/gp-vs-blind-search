@@ -1,0 +1,26 @@
+{
+ "grammar": "BOOL-AONX-n5",
+ "seed": 20261108,
+ "ceiling": 18,
+ "depth_limit": 10,
+ "levels": {
+  "2": {
+   "proven": true,
+   "n_level": 5,
+   "n_depth_ok": 5,
+   "excluded_share": 0.0,
+   "found": 5,
+   "rejected": {}
+  },
+  "3": {
+   "proven": true,
+   "n_level": 31,
+   "n_depth_ok": 31,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {
+    "constant": 1
+   }
+  }
+ }
+}

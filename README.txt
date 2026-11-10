@@ -7,7 +7,7 @@ Paper: [citation and DOI to be added on publication]
 Repository: https://github.com/swogger/gp-vs-blind-search
 Archive: https://doi.org/10.5281/zenodo.23915069 (all versions; Zenodo)
 Preregistrations (OSF, public): Stage 0 xh9ag, Stage 1 a3spg, Stage 2 dg7f3, Stage 2 addendum bc9g4,
-Stage 3 hb238, Stage 4 s5fjm (https://osf.io/<id>).
+Stage 3 hb238, Stage 4 s5fjm, Stage 5 9s3zd (https://osf.io/<id>).
 Earlier study: https://github.com/swogger/gp-construction-size
 
 
@@ -57,11 +57,17 @@ The analyses write a JSON file to data/analysis and a short report to docs/statu
     .venv/bin/python -m reach.analysis.s2.stage2_report  (Stage 2)
     .venv/bin/python -m reach.analysis.s2.h6d_report     (Stage 3)
     .venv/bin/python -m reach.analysis.s2.h11_report     (Stage 4)
+    .venv/bin/python -m reach.analysis.s2.stage5_report --families H11-2L   (Stage 5; added in 1.2.0)
+    .venv/bin/python -m reach.analysis.s2.revision_report   (exploratory re-readings of registered records;
+                                                         added in 1.2.0)
 
-Two descriptive analyses the paper quotes write only their JSON file:
+Four descriptive analyses the paper quotes write only their JSON file:
 
     .venv/bin/python -m reach.analysis.s2.heldout_reach  (the null read with GP's estimator; added in 1.1.0)
     .venv/bin/python -m reach.analysis.s2.baseline_auc   (the node-count baseline's AUC; added in 1.1.1)
+    .venv/bin/python -m reach.analysis.s2.audit labels_heldout   (independent re-scoring of every exact
+                          held-out, benchmark and restart run; added in 1.2.0)
+    .venv/bin/python -m reach.analysis.s2.audit labels_s5        (the same for Stage 5's long runs; added in 1.2.0)
 
 The paper's figures (vector PDF, SVG and the graphical abstract) are drawn from data/analysis and the
 run records; rsvg-convert (librsvg) is needed for the coverage disc:

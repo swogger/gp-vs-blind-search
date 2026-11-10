@@ -1,0 +1,28 @@
+{
+ "grammar": "R-TRIG",
+ "seed": 20261108,
+ "ceiling": 13,
+ "depth_limit": 10,
+ "levels": {
+  "3": {
+   "proven": true,
+   "n_level": 12,
+   "n_depth_ok": 12,
+   "excluded_share": 0.0,
+   "found": 7,
+   "rejected": {
+    "variance": 5
+   }
+  },
+  "4": {
+   "proven": true,
+   "n_level": 36,
+   "n_depth_ok": 36,
+   "excluded_share": 0.0,
+   "found": 24,
+   "rejected": {
+    "variance": 12
+   }
+  }
+ }
+}

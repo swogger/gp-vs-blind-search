@@ -1,0 +1,933 @@
+{
+ "phase": "s2_audit_labels_ho",
+ "description": "QA (D068 check 2 extended, D125; not a test of any hypothesis): every exact run (and 300 sampled failures per phase) of s2_ho_a0, s2_ho_a16, s2_ho_operon and s4_restart re-scored by the independent evaluators of reach.analysis.s2.audit_labels; one task per phase and set. No search.",
+ "created": "2026-11-08 22:42:46",
+ "git": "6cb35c1",
+ "n_tasks": 44,
+ "tasks": [
+  {
+   "key": "labels|s2_ho_a0|BOOL-AN-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a0",
+    "--set",
+    "BOOL-AN-n5",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a0",
+    "set": "BOOL-AN-n5"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_a0|BOOL-AX1-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a0",
+    "--set",
+    "BOOL-AX1-n5",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a0",
+    "set": "BOOL-AX1-n5"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_a0|BOOL-RS-imp_nimp_rimp_rnimp-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a0",
+    "--set",
+    "BOOL-RS-imp_nimp_rimp_rnimp-n5",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a0",
+    "set": "BOOL-RS-imp_nimp_rimp_rnimp-n5"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_a0|BOOL-RS-imp_or_rnimp-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a0",
+    "--set",
+    "BOOL-RS-imp_or_rnimp-n5",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a0",
+    "set": "BOOL-RS-imp_or_rnimp-n5"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_a0|BOOL-RS-nand_rimp_c1-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a0",
+    "--set",
+    "BOOL-RS-nand_rimp_c1-n5",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a0",
+    "set": "BOOL-RS-nand_rimp_c1-n5"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_a0|BOOL-RS-rimp_c0-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a0",
+    "--set",
+    "BOOL-RS-rimp_c0-n5",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a0",
+    "set": "BOOL-RS-rimp_c0-n5"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_a0|R-ARITH",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a0",
+    "--set",
+    "R-ARITH",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a0",
+    "set": "R-ARITH"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_a0|R-ELEM6",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a0",
+    "--set",
+    "R-ELEM6",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a0",
+    "set": "R-ELEM6"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_a0|RS-add_sqrt",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a0",
+    "--set",
+    "RS-add_sqrt",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a0",
+    "set": "RS-add_sqrt"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_a0|RS-eml_sin_sqrt_square",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a0",
+    "--set",
+    "RS-eml_sin_sqrt_square",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a0",
+    "set": "RS-eml_sin_sqrt_square"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_a0|RS-mul_div_eml_sin_square",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a0",
+    "--set",
+    "RS-mul_div_eml_sin_square",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a0",
+    "set": "RS-mul_div_eml_sin_square"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_a0|RS-mul_eml_sin",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a0",
+    "--set",
+    "RS-mul_eml_sin",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a0",
+    "set": "RS-mul_eml_sin"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_a16|BOOL-AN-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a16",
+    "--set",
+    "BOOL-AN-n5",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a16",
+    "set": "BOOL-AN-n5"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_a16|BOOL-AX1-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a16",
+    "--set",
+    "BOOL-AX1-n5",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a16",
+    "set": "BOOL-AX1-n5"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_a16|BOOL-RS-imp_nimp_rimp_rnimp-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a16",
+    "--set",
+    "BOOL-RS-imp_nimp_rimp_rnimp-n5",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a16",
+    "set": "BOOL-RS-imp_nimp_rimp_rnimp-n5"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_a16|BOOL-RS-imp_or_rnimp-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a16",
+    "--set",
+    "BOOL-RS-imp_or_rnimp-n5",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a16",
+    "set": "BOOL-RS-imp_or_rnimp-n5"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_a16|BOOL-RS-nand_rimp_c1-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a16",
+    "--set",
+    "BOOL-RS-nand_rimp_c1-n5",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a16",
+    "set": "BOOL-RS-nand_rimp_c1-n5"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_a16|BOOL-RS-rimp_c0-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a16",
+    "--set",
+    "BOOL-RS-rimp_c0-n5",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a16",
+    "set": "BOOL-RS-rimp_c0-n5"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_a16|R-ARITH",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a16",
+    "--set",
+    "R-ARITH",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a16",
+    "set": "R-ARITH"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_a16|R-ELEM6",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a16",
+    "--set",
+    "R-ELEM6",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a16",
+    "set": "R-ELEM6"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_a16|RS-add_sqrt",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a16",
+    "--set",
+    "RS-add_sqrt",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a16",
+    "set": "RS-add_sqrt"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_a16|RS-eml_sin_sqrt_square",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a16",
+    "--set",
+    "RS-eml_sin_sqrt_square",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a16",
+    "set": "RS-eml_sin_sqrt_square"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_a16|RS-mul_div_eml_sin_square",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a16",
+    "--set",
+    "RS-mul_div_eml_sin_square",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a16",
+    "set": "RS-mul_div_eml_sin_square"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_a16|RS-mul_eml_sin",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_a16",
+    "--set",
+    "RS-mul_eml_sin",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_a16",
+    "set": "RS-mul_eml_sin"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_bench|BOOL-AN-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_bench",
+    "--set",
+    "BOOL-AN-n5",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_bench",
+    "set": "BOOL-AN-n5"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_bench|BOOL-AX1-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_bench",
+    "--set",
+    "BOOL-AX1-n5",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_bench",
+    "set": "BOOL-AX1-n5"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_bench|BOOL-RS-imp_nimp_rimp_rnimp-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_bench",
+    "--set",
+    "BOOL-RS-imp_nimp_rimp_rnimp-n5",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_bench",
+    "set": "BOOL-RS-imp_nimp_rimp_rnimp-n5"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_bench|BOOL-RS-imp_or_rnimp-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_bench",
+    "--set",
+    "BOOL-RS-imp_or_rnimp-n5",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_bench",
+    "set": "BOOL-RS-imp_or_rnimp-n5"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_bench|BOOL-RS-nand_rimp_c1-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_bench",
+    "--set",
+    "BOOL-RS-nand_rimp_c1-n5",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_bench",
+    "set": "BOOL-RS-nand_rimp_c1-n5"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_bench|BOOL-RS-rimp_c0-n5",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_bench",
+    "--set",
+    "BOOL-RS-rimp_c0-n5",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_bench",
+    "set": "BOOL-RS-rimp_c0-n5"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_bench|R-ARITH",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_bench",
+    "--set",
+    "R-ARITH",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_bench",
+    "set": "R-ARITH"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_bench|R-ELEM6",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_bench",
+    "--set",
+    "R-ELEM6",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_bench",
+    "set": "R-ELEM6"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_bench|RS-add_sqrt",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_bench",
+    "--set",
+    "RS-add_sqrt",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_bench",
+    "set": "RS-add_sqrt"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_bench|RS-eml_sin_sqrt_square",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_bench",
+    "--set",
+    "RS-eml_sin_sqrt_square",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_bench",
+    "set": "RS-eml_sin_sqrt_square"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_bench|RS-mul_div_eml_sin_square",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_bench",
+    "--set",
+    "RS-mul_div_eml_sin_square",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_bench",
+    "set": "RS-mul_div_eml_sin_square"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_bench|RS-mul_eml_sin",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_bench",
+    "--set",
+    "RS-mul_eml_sin",
+    "--n_fail",
+    "25"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_bench",
+    "set": "RS-mul_eml_sin"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_operon|R-ARITH",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_operon",
+    "--set",
+    "R-ARITH",
+    "--n_fail",
+    "150"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_operon",
+    "set": "R-ARITH"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s2_ho_operon|R-ELEM6",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s2_ho_operon",
+    "--set",
+    "R-ELEM6",
+    "--n_fail",
+    "150"
+   ],
+   "cpu_limit": 21600,
+   "weight": 1,
+   "meta": {
+    "phase": "s2_ho_operon",
+    "set": "R-ELEM6"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s4_restart|R-ARITH",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s4_restart",
+    "--set",
+    "R-ARITH",
+    "--n_fail",
+    "50"
+   ],
+   "cpu_limit": 21600,
+   "weight": 10,
+   "meta": {
+    "phase": "s4_restart",
+    "set": "R-ARITH"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s4_restart|R-ELEM6",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s4_restart",
+    "--set",
+    "R-ELEM6",
+    "--n_fail",
+    "50"
+   ],
+   "cpu_limit": 21600,
+   "weight": 10,
+   "meta": {
+    "phase": "s4_restart",
+    "set": "R-ELEM6"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s4_restart|RS-add_sqrt",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s4_restart",
+    "--set",
+    "RS-add_sqrt",
+    "--n_fail",
+    "50"
+   ],
+   "cpu_limit": 21600,
+   "weight": 10,
+   "meta": {
+    "phase": "s4_restart",
+    "set": "RS-add_sqrt"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s4_restart|RS-eml_sin_sqrt_square",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s4_restart",
+    "--set",
+    "RS-eml_sin_sqrt_square",
+    "--n_fail",
+    "50"
+   ],
+   "cpu_limit": 21600,
+   "weight": 10,
+   "meta": {
+    "phase": "s4_restart",
+    "set": "RS-eml_sin_sqrt_square"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s4_restart|RS-mul_div_eml_sin_square",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s4_restart",
+    "--set",
+    "RS-mul_div_eml_sin_square",
+    "--n_fail",
+    "50"
+   ],
+   "cpu_limit": 21600,
+   "weight": 10,
+   "meta": {
+    "phase": "s4_restart",
+    "set": "RS-mul_div_eml_sin_square"
+   },
+   "cwd": "."
+  },
+  {
+   "key": "labels|s4_restart|RS-mul_eml_sin",
+   "argv": [
+    "{python}",
+    "-m",
+    "reach.tasks.s2_rescore",
+    "--phase",
+    "s4_restart",
+    "--set",
+    "RS-mul_eml_sin",
+    "--n_fail",
+    "50"
+   ],
+   "cpu_limit": 21600,
+   "weight": 10,
+   "meta": {
+    "phase": "s4_restart",
+    "set": "RS-mul_eml_sin"
+   },
+   "cwd": "."
+  }
+ ]
+}

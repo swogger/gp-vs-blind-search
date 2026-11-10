@@ -1,0 +1,74 @@
+diff --git a/src/reach/analysis/s2/audit.py b/src/reach/analysis/s2/audit.py
+index 51c2ab3db9b8630504b2b2563acf963546ba72ca..d71f17bb585e96d5d7a84a5aa5264e07d521f96d 100644
+--- a/src/reach/analysis/s2/audit.py
++++ b/src/reach/analysis/s2/audit.py
+@@ -358,23 +358,26 @@ def print_heldout_labels_report(rep):
+ 
+ def main():
+     """python -m reach.analysis.s2.audit bigtrees PHASE: writes data/analysis/audit_bigtrees[_sample].json.
+-    python -m reach.analysis.s2.audit labels_heldout: writes data/analysis/audit_labels_heldout.json (D125)."""
++    python -m reach.analysis.s2.audit labels_heldout: writes data/analysis/audit_labels_heldout.json (D125).
++    python -m reach.analysis.s2.audit labels_s5: writes data/analysis/audit_labels_s5.json (REQ-RUN-51)."""
+     import argparse
+     import json
+     from reach.paths import ROOT
+     ap = argparse.ArgumentParser()
+-    ap.add_argument("check", choices=["bigtrees", "labels_heldout"])
++    ap.add_argument("check", choices=["bigtrees", "labels_heldout", "labels_s5"])
+     ap.add_argument("phase", nargs="?", choices=["s2_audit_bigtrees", "s2_audit_bigtrees_sample"])
+     a = ap.parse_args()
+-    if a.check == "labels_heldout":
++    if a.check in ("labels_heldout", "labels_s5"):
+         from reach.runner.phases import RESCORE_PHASES, phase_rows
++        sources, qa, name = ((RESCORE_PHASES, "s2_audit_labels_ho", "audit_labels_heldout") if a.check == "labels_heldout"
++                             else (("s5_long_extra",), "s2_audit_labels_s5", "audit_labels_s5"))
+         n = {}
+-        for ph in RESCORE_PHASES:
++        for ph in sources:
+             for r in phase_rows(ph).values():
+                 n[(ph, r["set"])] = n.get((ph, r["set"]), 0) + bool(r.get("exact"))
+-        rep = heldout_labels_report(ROOT, exact_rows=n)
++        rep = heldout_labels_report(ROOT, qa, exact_rows=n)
+         print_heldout_labels_report(rep)
+-        out = ROOT / "data/analysis/audit_labels_heldout.json"
++        out = ROOT / f"data/analysis/{name}.json"
+         out.write_text(json.dumps(rep, indent=1, sort_keys=True) + "\n")
+         print("written", out.relative_to(ROOT))
+         return 0 if rep["ok"] else 1
+diff --git a/src/reach/analysis/s2/revision_report.py b/src/reach/analysis/s2/revision_report.py
+index 56898303f6908d89e59d8435bfdb60fe2af4df03..03d70935838404e973bc8f2e945520ce6ac2552d 100644
+--- a/src/reach/analysis/s2/revision_report.py
++++ b/src/reach/analysis/s2/revision_report.py
+@@ -3,7 +3,7 @@ records: no test, no decision, no run; nothing here is confirmatory.
+ 
+     PYTHONPATH=src python -m reach.analysis.s2.revision_report
+ 
+-Each section re-implements one audit computation (paper/reviews/audit/) in package code and first reproduces the
++Each section re-implements one computation of the private audit scripts in package code and first reproduces the
+ deposited registered values it overlaps (an instrument check raises otherwise). Writes
+ data/analysis/revision_exploratory.json and docs/status/revision_exploratory.md.
+ """
+diff --git a/src/reach/runner/phases.py b/src/reach/runner/phases.py
+index d1fdbbfdde13c33cd0b22aa67c1bf9ecdaf33661..ecf1a0664020e4d7d2e78767e4f9349918277be8 100644
+--- a/src/reach/runner/phases.py
++++ b/src/reach/runner/phases.py
+@@ -2020,7 +2020,18 @@ def s2_audit_labels_ho():
+     return tasks
+ 
+ 
+-@phase("s5_pilot_restart10", "Stage 5 pilot (QA, never confirmatory; the outcomes are known): ten s4_restart tasks, "
++@phase("s2_audit_labels_s5", "QA (REQ-RUN-51, guardrail row 209; not a test of any hypothesis): every exact run (and "
++       "300 sampled failures) of Stage 5's s5_long_extra re-scored by the independent evaluators, as "
++       "s2_audit_labels_ho; one task per set; run before the H11-2L analysis. No search.", verify=_verify_labels_ho)
++def s2_audit_labels_s5():
++    sets = sorted({t["meta"]["set"] for t in _manifest_tasks("s5_long_extra")})
++    return [dict(key=f"labels|s5_long_extra|{g}", argv=["{python}", "-m", "reach.tasks.s2_rescore", "--phase",
++                                                         "s5_long_extra", "--set", g, "--n_fail",
++                                                         str(RESCORE_FAILURES // len(sets))],
++                 cpu_limit=6 * 3600, weight=1, meta=dict(phase="s5_long_extra", set=g)) for g in sets]
++
++
++@phase("s5_pilot_restart10","Stage 5 pilot (QA, never confirmatory; the outcomes are known): ten s4_restart tasks, "
+        "drawn as D068's reproduction sample (seed 20261022), again with the counter and key sets (side files under "
+        "data/keys_s5/s5_pilot_restart10); every row must reproduce its original.", verify=_verify_reexec)
+ def s5_pilot_restart10():

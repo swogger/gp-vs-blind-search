@@ -97,9 +97,12 @@ class Counter:
     undefined or constant functions (real), lv distinct keys per level (index 0: not found below the bound) and lv_ok
     the same for keys whose function is finite on the grid and not constant, the run's own target left out of both;
     target_first, the evaluation at which a tree with the target's key was first evaluated (None if never). `cpu` is
-    set by run_gp, which times every call."""
+    set by run_gp, which times every call.
+    record_keys (Stage 5, D125; REQ-ENG-28): also keep every distinct key found in the lookup (level > 0, the target
+    left out) with the evaluation of its first sight; `write_keys` saves them as indices into `Lookup.keys`. Nothing
+    else changes: `record()` is the same with and without it."""
 
-    def __init__(self, g, target_tree, lookup, pop_size, prefixes=PREFIXES):
+    def __init__(self, g, target_tree, lookup, pop_size, prefixes=PREFIXES, record_keys=False):
         if any(p % pop_size for p in prefixes):
             raise ValueError(f"every prefix must be a whole number of generations of {pop_size}")
         self.key, self.lookup = key_function(g), lookup
@@ -110,9 +113,10 @@ class Counter:
         self.lv_ok = np.zeros(lookup.top + 1, np.int64)
         self.target_first = None
         self.snaps = {}
+        self.first = {} if record_keys else None
 
     def generation(self, population):
-        new, new_ok = [], []
+        new, new_ok, new_n = [], [], []
         for tree in population:
             k, ok = self.key(tree)
             self.n += 1
@@ -124,15 +128,50 @@ class Counter:
                 else:
                     new.append(k)
                     new_ok.append(ok)
+                    new_n.append(self.n)
         if new:
             lv = self.lookup.levels(np.array(new, dtype=np.uint64))
             np.add.at(self.lv, lv, 1)
             np.add.at(self.lv_ok, lv[np.array(new_ok, bool)], 1)
+            if self.first is not None:
+                self.first.update((k, n) for k, level, n in zip(new, lv, new_n) if level > 0)
         if self.n in self.prefixes:
             self.snaps[str(self.n)] = self._snap()
 
     def _snap(self):
         return dict(n=self.n, d=len(self.seen), undef=self.undef, lv=self.lv.tolist(), lv_ok=self.lv_ok.tolist())
+
+    def keys(self):
+        """(idx, first): uint32 indices into `Lookup.keys` of every key found in the lookup and the evaluation of its
+        first sight, in order of first sight (record_keys only)."""
+        if self.first is None:
+            raise ValueError("the counter was made without record_keys")
+        items = sorted(self.first.items(), key=lambda kv: (kv[1], kv[0]))
+        keys = np.array([k for k, _ in items], dtype=np.uint64)
+        idx = np.searchsorted(self.lookup.keys, keys)
+        if len(keys) and not (self.lookup.keys[np.minimum(idx, len(self.lookup.keys) - 1)] == keys).all():
+            raise ValueError("a recorded key is not in the lookup")
+        return idx.astype(np.uint32), np.array([n for _, n in items], dtype=np.uint32)
+
+    def write_keys(self, path):
+        """Save `keys()` to a compressed .npz with fixed timestamps (the same run gives the same bytes), written
+        atomically; returns {file, n, sha256} for the run's record."""
+        import io
+        import os
+        import zipfile
+        idx, first = self.keys()
+        path = Path(path)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        tmp = path.with_name(path.name + ".tmp")
+        with zipfile.ZipFile(tmp, "w", zipfile.ZIP_DEFLATED) as z:
+            for name, arr in (("idx", idx), ("first", first)):
+                buf = io.BytesIO()
+                np.lib.format.write_array(buf, arr, allow_pickle=False)
+                info = zipfile.ZipInfo(f"{name}.npy", date_time=(1980, 1, 1, 0, 0, 0))
+                info.compress_type = zipfile.ZIP_DEFLATED
+                z.writestr(info, buf.getvalue())
+        os.replace(tmp, path)
+        return dict(file=str(path), n=int(len(idx)), sha256=hashlib.sha256(path.read_bytes()).hexdigest())
 
     def record(self):
         return dict(prefixes=dict(self.snaps), stop=self._snap(), cpu_seconds=self.cpu, target_first=self.target_first,

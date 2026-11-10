@@ -1,0 +1,32 @@
+{
+ "grammar": "BOOL-NAND-n5",
+ "seed": 20261108,
+ "ceiling": 31,
+ "depth_limit": 10,
+ "levels": {
+  "3": {
+   "proven": true,
+   "n_level": 15,
+   "n_depth_ok": 15,
+   "excluded_share": 0.0,
+   "found": 15,
+   "rejected": {}
+  },
+  "5": {
+   "proven": true,
+   "n_level": 51,
+   "n_depth_ok": 51,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {}
+  },
+  "7": {
+   "proven": true,
+   "n_level": 225,
+   "n_depth_ok": 225,
+   "excluded_share": 0.0,
+   "found": 30,
+   "rejected": {}
+  }
+ }
+}

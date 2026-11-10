@@ -178,3 +178,26 @@ def test_cgp_timing_fields_are_timing():
     assert A.compare_rows(a, b) == []
     assert A.compare_rows(a, dict(b, evals_exact=4322)) == ["evals_exact"]
     assert {"child_cpu_seconds", "rust_cpu_seconds"} <= A.BIGTREE_IGNORE
+
+
+def test_tree_gp_runs_exact_only_in_extended_reals_are_their_own_class():
+    """Guardrail row 180 (2026-11-08, held-out re-scoring): Study 2's real sets keep exact extended reals (ln 0 = -inf,
+    exp(-inf) = 0, x/0 non-finite; D048 C4, D021), so a tree whose dead subtree divides by log(1) = 0 is exact by the
+    registered rule while 30-digit real arithmetic finds it undefined: 10 s4_restart R-ELEM6 runs were reported as
+    disputed. Such a run is its own class, 'extended_only', checked by an independent float64 evaluation of the guarded
+    rules; a tree that is undefined in reals and different in extended reals stays disputed, and a failure that the
+    extended evaluation finds exact is still a disagreement."""
+    from reach.analysis.s2 import audit_labels as L
+    t, dead = "-(exp(exp(1)), x)", "-(exp(/(-(exp(1), exp(exp(1))), log(1))), -(x, exp(exp(1))))"   # R-ELEM6_K05_05
+    assert L.max_rel_diff_real(dead, t, 1.0) == float("inf")                     # the old instrument disputes it
+    assert L.classify(L.max_rel_diff_extended(dead, t, 1.0)) == "identical"
+    assert L.classify(L.max_rel_diff_extended("+(/(x, log(1)), x)", "x", 1.0)) == "different"   # inf survives
+    assert L.max_rel_diff_extended("exp(*(x, +(+(1, 1), 1000)))", "x", 1.0) == float("inf")    # lossy overflow: NaN
+    assert L.max_rel_diff_extended("*(x, exp(-(1, exp(exp(exp(1))))))", "x", 1.0) == float("inf")  # lossy underflow
+    tg = {("R-ELEM6", "t1"): dict(expression=t, target_scale=1.0)}
+    base = dict(set="R-ELEM6", target_id="t1")
+    rows = [dict(base, key="ext", exact=True, terminal_state="converged", best_expr=dead),
+            dict(base, key="bad", exact=True, terminal_state="converged", best_expr="+(/(x, log(1)), x)"),
+            dict(base, key="miss", exact=False, terminal_state="budget_exhausted", best_expr=dead)]
+    a = L.audit(rows, tg)
+    assert a["exact_extended_only"] == ["ext"] and a["exact_disputed"] == ["bad"] and a["failures_disputed"] == ["miss"]

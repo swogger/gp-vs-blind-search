@@ -1537,3 +1537,505 @@ def rand_sample():
                                              "--targets", f"data/targets/{g}/targets_conf.json", "--n", "250000",
                                              "--seed", str(20261016 + i)],
                  cpu_limit=3600, meta=dict(exp="rand", grammar=g, part=i)) for g in _family() for i in range(4)]
+
+
+# ---------------------------------------------------------------- Stage 5 (D125; docs/design/stage5_*.md; REQ-RUN-42 to 49)
+# Every phase below except s5_targets and the s5_pilot_* phases is locked until the Stage 5 registration is recorded
+# (s2_lock.check_stage5) and checked against data/registration/stage5_tasks.json (key and full hash). The registered
+# builders of Stages 1 to 4 are not changed; the Stage 5 builders reuse them only by reading their task lists.
+S5_MAIN_SETS = [g for g in CAL_SETS if g not in ("BOOL-NAND-n6", "BOOL-AON-n6")]   # H6c's 14 main sets
+S5_CUT_BITS = math.log2(16 * 20_000)      # 18.29: calibration levels kept for selection-free GP (rule in the design)
+LOW_MIN_U, LOW_MIN_BITS, LOW_N = 5, 3.0, 30
+S5_KEYS_DIR = "data/keys_s5"              # side files of key sets (untracked, like the level files)
+S5_LONG_TIMEOUT = S2_TIMEOUT[16]
+STAGE5_ORDER = (("s5_targets",),
+                ("s5_pilot_grid", "s5_pilot_wide", "s5_pilot_boolsub", "s5_pilot_selfree", "s5_pilot_pop1000",
+                 "s5_pilot_keys", "s5_pilot_robust", "s5_pilot_restart10"),
+                ("s5_grid", "s5_boolsub", "s5_wide"),
+                ("s5_selfree", "s5_low_base"),
+                ("s5_pop1000",),
+                ("s5_revisit_robust",),
+                ("s5_revisit_restart", "s5_union"),
+                ("s5_long_extra", "s5_revisit_ho16"),
+                ("s5_frozen",))                # priority order (design memo Section 10); IPOP is not run (D125)
+
+
+def _domain_sets(domain):
+    from reach import grammar as G
+    return [g for g in S5_MAIN_SETS if G.get(g).kind == domain]
+
+
+def _s5_task(block, g, tname, t, config, seed, generations, timeout, enum=None, keys_out=None, weight=1.0, **meta):
+    """One Stage 5 run of reach.tasks.s2_run, every scientific setting explicit (C6), the whole best tree printed
+    (REQ-RUN-33); enum: the set's enumeration for the counter (`--count_distinct`, hard CPU limit x
+    REVISIT_CPU_FACTOR, the soft limit unchanged as REQ-ENG-23); keys_out: the side file of the run's key set."""
+    from reach.s2_lock import check_search_allowed
+    from reach.tasks.s2_configs import CONFIGS
+    check_search_allowed(g)
+    rel = f"data/targets_s2/{g}/{tname}.json"
+    sha = (ROOT / f"data/targets_s2/{g}/{tname}.sha256").read_text().split()[0]
+    pop = CONFIGS[config]["pop_size"]
+    argv = ["{python}", "-m", "reach.tasks.s2_run", "--set", g, "--targets", rel, "--target_id", t["target_id"],
+            "--targets_sha256", sha, "--algorithm", "A", "--config", config, "--seed", str(seed),
+            "--generations", str(generations), "--pop_size", str(pop), "--penalty", "scaled", "--stop_on", "exact",
+            "--seed_leaves", "off", "--timeout", str(timeout), PRINT_TREE]
+    cpu = timeout + 100
+    if enum is not None:
+        argv += ["--count_distinct", "--enum_dir", str(enum)]
+        cpu *= REVISIT_CPU_FACTOR
+    if keys_out is not None:
+        argv += ["--keys_out", keys_out]
+    return dict(key=f"{block}|{g}|{t['target_id']}|A|{config}|{generations}|{seed}", argv=argv, cpu_limit=cpu,
+                weight=weight, meta=dict(block=block, set=g, target_id=t["target_id"], K=t["K_construction"],
+                                         K_proven=t["K_proven"], algorithm="A", config=config,
+                                         generations=generations, budget=pop * generations / 20_000, pop_size=pop,
+                                         seed=seed, targets=tname, **meta))
+
+
+def _enum(g, resolve=False):
+    """The set's enumeration: this checkout's (a registered list hashes alike in every worktree) or, with resolve
+    (pilots), the main worktree's when this checkout lacks the untracked level files."""
+    from reach import revisit
+    from reach.analysis.s2.phase1 import enum_dir
+    return revisit.enum_root(g) if resolve else enum_dir(g)
+
+
+def _phase_file(phase, name, root=None):
+    """A phase's manifest.json or results.jsonl, or its gzipped copy (files over 50 MB are committed gzipped, D097;
+    guardrail row 176); FileNotFoundError when neither exists."""
+    import gzip
+    from pathlib import Path
+    d = Path(root or ROOT) / f"data/runs/{phase}"
+    if (d / name).exists():
+        return (d / name).read_text()
+    return gzip.decompress((d / f"{name}.gz").read_bytes()).decode()
+
+
+def _manifest_tasks(phase, root=None):
+    return json.loads(_phase_file(phase, "manifest.json", root))["tasks"]
+
+
+def phase_rows(phase, root=None):
+    """Last row per key of a phase (read_results' rule: a truncated line is ignored), from results.jsonl or
+    results.jsonl.gz; {} when the phase has neither."""
+    try:
+        text = _phase_file(phase, "results.jsonl", root)
+    except FileNotFoundError:
+        return {}
+    rows = {}
+    for line in text.splitlines():
+        try:
+            r = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        rows[r["key"]] = r
+    return rows
+
+
+def low_levels(g):
+    """The low-level rule (REQ-RUN-43): every proven level below the set's lowest calibration level with at least
+    LOW_MIN_U functions and log2 U(<=K) of at least LOW_MIN_BITS."""
+    from reach.analysis.s2.phase1 import enum_dir
+    lv = _cal_levels()[g]
+    lowest = min(lv["main"] + lv["budget"])
+    stats = json.loads((enum_dir(g) / "counts.json").read_text())["levels"]
+    return [st["K"] for st in stats if st["K"] < lowest and st["U"] >= LOW_MIN_U and math.log2(st["U_cum"]) >= LOW_MIN_BITS]
+
+
+@phase("s5_targets", "STAGE 5 targets (D125): the low levels of the 14 main sets by the registered rule (every "
+       "proven level below the lowest calibration level with U >= 5 and log2 U(<=K) >= 3), up to 30 targets each, "
+       "seed TARGET_SEEDS['low'], into data/targets_s2/<set>/low.json. No search: drawn and checksummed before the "
+       "Stage 5 registration. --workers 2.")
+def s5_targets():
+    from reach.seeds import TARGET_SEEDS
+    return [dict(key=g, argv=["{python}", "-m", "reach.tasks.s2_targets", "--grammar", g, "--name", "low",
+                              "--n", str(LOW_N), "--seed", str(TARGET_SEEDS["low"]),
+                              "--levels", ",".join(map(str, low_levels(g)))],
+                 cpu_limit=6 * 3600, meta=dict(grammar=g)) for g in S5_MAIN_SETS if low_levels(g)]
+
+
+def _cal_targets(g, which, n=30):
+    """The first n calibration targets of each of the set's main or budget levels, as `_cal` takes them."""
+    lv = _cal_levels()[g]
+    sizes = set(lv["main"] if which == "main" else lv["budget"])
+    by = defaultdict(list)
+    for t in json.loads((ROOT / f"data/targets_s2/{g}/calibration.json").read_text()):
+        if t["K_construction"] in sizes:
+            by[t["K_construction"]].append(t)
+    return [t for K in sorted(by) for t in by[K][:n]]
+
+
+def _wide_ok(g, t):
+    """Review F1 (guardrail row 173): the wider-interval arm takes a target only if its normaliser on the wide
+    interval's 100-point grid is finite and positive in double precision (`s2_configs.wide_ok`)."""
+    from reach import grammar as G
+    from reach.tasks.s2_configs import wide_ok
+    gr = G.get(g)
+    return wide_ok(gr, G.parse_expr(t["expression"], gr))
+
+
+def wide_excluded():
+    """The calibration targets of the real main sets that the wider-interval arm leaves out (sorted ids): H12-3 drops
+    them from both arms (paired exclusion)."""
+    return sorted(t["target_id"] for g in _domain_sets("real") for which in ("main", "budget")
+                  for t in _cal_targets(g, which) if not _wide_ok(g, t))
+
+
+def _h6c_e0(block, config, domain, count, keep=None):
+    """H6c's E0 design (REQ-RUN-44): every s2_cal_a0 task (main levels) and every s2_cal_a16 task cut to its first
+    200 generations (budget levels) on the domain's main sets, same targets and seeds, under `config`; meta names the
+    registered base run each new run is paired with. keep(set, target): a filter (the wider interval's)."""
+    from reach.s2_lock import check_stage1, check_stage5
+    from reach.seeds import s2_seeds
+    check_stage1()
+    check_stage5()
+    tasks = []
+    for g in _domain_sets(domain):
+        for which, src, gens in (("main", "cal_a0", 200), ("budget", "cal_a16", 3200)):
+            for t in _cal_targets(g, which):
+                if keep is not None and not keep(g, t):
+                    continue
+                tasks += [_s5_task(block, g, "calibration", t, config, s, 200, S2_TIMEOUT[1],
+                                   enum=_enum(g) if count else None,
+                                   pair_of=f"s2_{src}", pair_key=f"{src}|{g}|{t['target_id']}|A|base|{gens}|{s}")
+                          for s in s2_seeds("main")]
+    return tasks
+
+
+@phase("s5_grid", "STAGE 5 (locked until Stage 5; arm 1a, H12-1): real GP with the error on the 100-point identity "
+       "grid (FG) on H6c's E0 design of the seven real main sets, with the counter.")
+def s5_grid():
+    return _h6c_e0("s5_grid", "FG", "real", True)
+
+
+@phase("s5_wide", "STAGE 5 (locked until Stage 5; wider interval, H12-3): real GP with a fresh 75-point batch on "
+       "(1.5, 3.5) (WIDE; identity, targets and exactness on (2, 3)) on H6c's E0 design of the seven real main sets, "
+       "counter; targets whose wide normaliser is not finite are left out (guardrail row 173).")
+def s5_wide():
+    return _h6c_e0("s5_wide", "WIDE", "real", True, keep=_wide_ok)
+
+
+@phase("s5_boolsub", "STAGE 5 (locked until Stage 5; arm 2, H12-2): Boolean GP with the error on 24 of 32 rows drawn "
+       "afresh each generation (BS24) on H6c's E0 design of the seven Boolean main sets, with the counter.")
+def s5_boolsub():
+    return _h6c_e0("s5_boolsub", "BS24", "bool", True)
+
+
+@phase("s5_frozen", "STAGE 5 (locked until Stage 5; arm 1b, descriptive): real GP on generation 0's batch kept (FB) "
+       "on H6c's E0 design of the seven real main sets, no counter.")
+def s5_frozen():
+    return _h6c_e0("s5_frozen", "FB", "real", False)
+
+
+def selfree_levels(g):
+    """S_d's calibration part (REQ-RUN-45): the set's calibration levels (main and budget) whose bits_sem is at most
+    S5_CUT_BITS."""
+    out = set()
+    for t in json.loads((ROOT / f"data/targets_s2/{g}/calibration.json").read_text()):
+        lv = _cal_levels()[g]
+        if t["K_construction"] in lv["main"] + lv["budget"] and t["units"]["bits_sem"] <= S5_CUT_BITS:
+            out.add(t["K_construction"])
+    return sorted(out)
+
+
+def _low_targets(g):
+    p = ROOT / f"data/targets_s2/{g}/low.json"
+    if low_levels(g) and not p.exists():
+        raise FileNotFoundError(f"{p}: the low-level targets are not drawn yet (phase s5_targets)")
+    return json.loads(p.read_text()) if p.exists() else []
+
+
+def _selfree(block, config, with_cal):
+    from reach.s2_lock import check_stage1, check_stage5
+    from reach.seeds import s2_seeds
+    check_stage1()
+    check_stage5()
+    tasks = []
+    for g in S5_MAIN_SETS:
+        if with_cal:
+            keep = set(selfree_levels(g))
+            for which in ("main", "budget"):
+                tasks += [_s5_task(block, g, "calibration", t, config, s, 200, S2_TIMEOUT[1], enum=_enum(g))
+                          for t in _cal_targets(g, which) if t["K_construction"] in keep for s in s2_seeds("main")]
+        tasks += [_s5_task(block, g, "low", t, config, s, 200, S2_TIMEOUT[1], enum=_enum(g))
+                  for t in _low_targets(g) for s in s2_seeds("main")]
+    return tasks
+
+
+@phase("s5_selfree", "STAGE 5 (locked until Stage 5; arm 3, H13): selection-free GP (SF) at E0 on S_d (calibration "
+       "levels up to 18.29 bits and the low levels) of the 14 main sets, main seeds, with the counter.")
+def s5_selfree():
+    return _selfree("s5_selfree", "SF", True)
+
+
+@phase("s5_low_base", "STAGE 5 (locked until Stage 5; arm 3c): base GP at E0 on the low levels of the 14 main sets, "
+       "main seeds, with the counter.")
+def s5_low_base():
+    return _selfree("s5_low_base", "base", False)
+
+
+def restart_targets():
+    """The Stage 4 restart arm's targets (s4_restart's rule, unchanged): every proven level of the six real held-out
+    sets' heldout.json and the restart.json levels; [(set, file, target)]."""
+    out = []
+    for g in REAL_HELDOUT:
+        for tname in ("heldout", "restart"):
+            if tname == "restart" and not restart_extra_levels(g):
+                continue
+            for t in json.loads((ROOT / f"data/targets_s2/{g}/{tname}.json").read_text()):
+                if t["K_proven"] == t["K_construction"] and not t.get("constructed"):
+                    out.append((g, tname, t))
+    return out
+
+
+@phase("s5_pop1000", "STAGE 5 (locked until Stage 5; arm 4a, H14): population 1,000 (R2) for 320 generations "
+       "(16 x E0) on the restart arm's 55 levels x 30 targets x 5 new seeds (slice s5_pop1000).")
+def s5_pop1000():
+    from reach.s2_lock import check_stage5
+    from reach.seeds import s2_seeds
+    check_stage5()
+    return [_s5_task("s5_pop1000", g, tname, t, "R2", s, 320, S5_LONG_TIMEOUT, weight=16)
+            for g, tname, t in restart_targets() for s in s2_seeds("s5_pop1000")]
+
+
+def reexec_tasks(src, prefix="revisit", select=lambda t: True, keys=False, resolve=False,
+                 keys_phase="s5_revisit_restart"):
+    """Re-execution (REQ-RUN-47, 48): one task per selected task of `src`'s manifest, unchanged except for its key
+    (prefix|KEY), `--count_distinct --enum_dir DIR` (and `--keys_out` under S5_KEYS_DIR with keys), the hard CPU
+    limit x REVISIT_CPU_FACTOR and meta `audit_of`, `audit_key` (as Stage 3's revisit_tasks)."""
+    tasks = []
+    for o in _manifest_tasks(src):
+        if not select(o):
+            continue
+        if "reach.tasks.s2_run" not in o["argv"] or "--count_distinct" in o["argv"]:
+            raise ValueError(f"{src} {o['key']}: not a plain tree-GP run task (reach.tasks.s2_run)")
+        m = o["meta"]
+        t = json.loads(json.dumps(o))
+        t["key"] = f"{prefix}|{o['key']}"
+        t["argv"] = o["argv"] + ["--count_distinct", "--enum_dir", str(_enum(m["set"], resolve))]
+        if keys:
+            t["argv"] += ["--keys_out", keys_path(m["target_id"], m["seed"], keys_phase)]
+        t["cpu_limit"] = o["cpu_limit"] * REVISIT_CPU_FACTOR
+        t["meta"] = dict(m, audit_of=src, audit_key=o["key"])
+        tasks.append(t)
+    return tasks
+
+
+def keys_path(target_id, seed, phase="s5_revisit_restart"):
+    return f"{S5_KEYS_DIR}/{phase}/{target_id}/{seed}.npz"
+
+
+def _verify_reexec(ph):
+    from reach.analysis.s2.audit import print_revisit_report, revisit_report
+    rep = revisit_report(ROOT, ph.name, extra_ignore=("keys",), check_keys=True)
+    print_revisit_report(rep)
+    return 0 if rep["ok"] else 1
+
+
+@phase("s5_revisit_robust", "STAGE 5 (locked until Stage 5; arm 6, H16): every s2_cal_robust task of R1 "
+       "(population 25) and R2 (population 1,000) again plus the counter; every row must reproduce its original.",
+       verify=_verify_reexec)
+def s5_revisit_robust():
+    from reach.s2_lock import check_stage5
+    check_stage5()
+    return reexec_tasks("s2_cal_robust", select=lambda t: t["meta"]["config"] in ("R1", "R2"))
+
+
+@phase("s5_revisit_restart", "STAGE 5 (locked until Stage 5; arm 5a, H15): every s4_restart task again plus the "
+       "counter and its key set (side files under data/keys_s5); every row must reproduce its original.",
+       verify=_verify_reexec)
+def s5_revisit_restart():
+    from reach.s2_lock import check_stage5
+    check_stage5()
+    return reexec_tasks("s4_restart", keys=True)
+
+
+@phase("s5_union", "STAGE 5 (locked until Stage 5; arm 5a): per restart target, the union histograms of its 64 key "
+       "sets (functions covered by exactly m runs, per level, at 50 and 100 generations; all runs and runs without "
+       "a hit). Run after s5_revisit_restart is complete. No search.")
+def s5_union():
+    from reach.s2_lock import check_stage5
+    check_stage5()
+    from reach.analysis.s2.phase1 import enum_dir
+    return [dict(key=f"union|{g}|{t['target_id']}",
+                 argv=["{python}", "-m", "reach.tasks.s5_union", "--set", g, "--target_id", t["target_id"],
+                       "--rows", "data/runs/s5_revisit_restart/results.jsonl", "--enum_dir", str(enum_dir(g)),
+                       "--n_runs", "64"],
+                 cpu_limit=1800, weight=0.05, meta=dict(set=g, target_id=t["target_id"], K=t["K_construction"]))
+            for g, _, t in restart_targets()]
+
+
+def long_extra_levels(g):
+    """Arm 7's levels (REQ-RUN-49): the restart arm's proven levels of the set without a one-run 16 x E0 comparator
+    (not among the set's Stage 2 budget levels)."""
+    budget = set(_ho_levels()[g]["budget"])
+    return sorted({t["K_construction"] for h, _, t in restart_targets() if h == g} - budget)
+
+
+def _verify_long_extra(ph):
+    from reach.analysis.s2.audit import long_extra_report, print_long_extra_report
+    rep = long_extra_report(ROOT, ph.name)
+    print_long_extra_report(rep)
+    return 0 if rep["ok"] else 1
+
+
+@phase("s5_long_extra", "STAGE 5 (locked until Stage 5; arm 7, H11-2L): one base run of 3,200 generations "
+       "(16 x E0) on the 25 restart levels without one, 30 targets x the 5 held-out seeds; no counter (D126). Each "
+       "run's first 200 generations must reproduce its s2_ho_a0 row where one exists.",
+       verify=_verify_long_extra)
+def s5_long_extra():
+    from reach.s2_lock import check_stage5
+    from reach.seeds import s2_seeds
+    check_stage5()
+    seeds, lv, tasks = s2_seeds("heldout"), _ho_levels(), []
+    for g, tname, t in restart_targets():
+        if t["K_construction"] not in long_extra_levels(g):
+            continue
+        main = t["K_construction"] in lv[g]["main"] and tname == "heldout"
+        for s in seeds:
+            extra = dict(prefix_of="s2_ho_a0", prefix_key=f"ho_a0|{g}|{t['target_id']}|A|base|200|{s}") if main else {}
+            tasks.append(_s5_task("s5_long_extra", g, tname, t, "base", s, 3200, S5_LONG_TIMEOUT,
+                                  weight=16, **extra))       # no counter (D126: H11-2L alone needs no counts)
+    return tasks
+
+
+@phase("s5_revisit_ho16", "STAGE 5 (locked until Stage 5; 7c): every s2_ho_a16 task of a real held-out set with the "
+       "first held-out seed again plus the counter (900); every row must reproduce its original.",
+       verify=_verify_reexec)
+def s5_revisit_ho16():
+    from reach.s2_lock import check_stage5
+    from reach.seeds import s2_seeds
+    check_stage5()
+    first = s2_seeds("heldout")[0]
+    return reexec_tasks("s2_ho_a16", select=lambda t: t["meta"]["set"] in REAL_HELDOUT and t["meta"]["seed"] == first)
+
+
+# ---------------------------------------------------------------- Stage 5 pilots (never confirmatory; not locked)
+def _pilot_s5(block, sets, configs, seeds, generations, timeout, count=True, levels=None):
+    tasks = []
+    for g in sets:
+        for t in _pilot_targets(g):
+            if levels is not None and not levels(g, t):
+                continue
+            tasks += [_s5_task(block, g, "pilot", t, c, s, generations, timeout,
+                               enum=_enum(g, resolve=True) if count else None) for c in configs for s in seeds]
+    return _spread(tasks)
+
+
+@phase("s5_pilot_grid", "Stage 5 pilot (never confirmatory): FG at E0 on every pilot target of the seven real main "
+       "sets x pilot seeds 0-1, with the counter (paired with s2_revisit_pilot2).")
+def s5_pilot_grid():
+    from reach.seeds import s2_seeds
+    return _pilot_s5("s5_pilot_grid", _domain_sets("real"), ("FG",), s2_seeds("pilot")[:2], 200, S2_TIMEOUT[1])
+
+
+@phase("s5_pilot_wide", "Stage 5 pilot (never confirmatory): WIDE at E0 on every pilot target of the seven real main "
+       "sets x pilot seeds 0-1, with the counter.")
+def s5_pilot_wide():
+    from reach.seeds import s2_seeds
+    return _pilot_s5("s5_pilot_wide", _domain_sets("real"), ("WIDE",), s2_seeds("pilot")[:2], 200, S2_TIMEOUT[1],
+                     levels=_wide_ok)
+
+
+@phase("s5_pilot_boolsub", "Stage 5 pilot (never confirmatory): BS24 at E0 on every pilot target of the seven Boolean "
+       "main sets x pilot seeds 0-1, with the counter.")
+def s5_pilot_boolsub():
+    from reach.seeds import s2_seeds
+    return _pilot_s5("s5_pilot_boolsub", _domain_sets("bool"), ("BS24",), s2_seeds("pilot")[:2], 200,
+                     S2_TIMEOUT[1])
+
+
+@phase("s5_pilot_selfree", "Stage 5 pilot (never confirmatory): SF and base at E0 on the pilot targets of the 14 main "
+       "sets up to 18.29 bits x pilot seeds 0-1, with the counter.")
+def s5_pilot_selfree():
+    from reach.seeds import s2_seeds
+    return _pilot_s5("s5_pilot_selfree", S5_MAIN_SETS, ("SF", "base"), s2_seeds("pilot")[:2], 200, S2_TIMEOUT[1],
+                     levels=lambda g, t: t["units"]["bits_sem"] <= S5_CUT_BITS)
+
+
+@phase("s5_pilot_pop1000", "Stage 5 pilot (never confirmatory): R2 for 320 generations (16 x E0) on the pilot targets "
+       "of F-EML and R-ELEM4 x pilot seeds 8-9 (cost and estimability).")
+def s5_pilot_pop1000():
+    from reach.seeds import s2_seeds
+    return _pilot_s5("s5_pilot_pop1000", ["F-EML", "R-ELEM4"], ("R2",), s2_seeds("pilot")[8:10], 320,
+                     S5_LONG_TIMEOUT, count=False)
+
+
+@phase("s5_pilot_keys", "Stage 5 pilot (never confirmatory): 100-generation base runs with the counter and key sets "
+       "on the pilot targets of F-EML and R-ARITH4 x 16 seeds of the slice s5_pilot (union check, cost).")
+def s5_pilot_keys():
+    from reach.seeds import s2_seeds
+    tasks = []
+    for g in ("F-EML", "R-ARITH4"):
+        for t in _pilot_targets(g):
+            tasks += [_s5_task("s5_pilot_keys", g, "pilot", t, "base", s, RESTART_GENERATIONS, RESTART_TIMEOUT,
+                               enum=_enum(g, resolve=True), keys_out=keys_path(t["target_id"], s, "s5_pilot_keys"))
+                      for s in s2_seeds("s5_pilot")[:16]]
+    return _spread(tasks)
+
+
+@phase("s5_pilot_robust", "Stage 5 pilot (never confirmatory): s2_pilot_robust's R2 tasks again with the counter, and "
+       "R1 at 4 x E0 on the same pilot targets and seeds (pilot seeds 0-1), with the counter.")
+def s5_pilot_robust():
+    from reach.seeds import s2_seeds
+    again = reexec_tasks("s2_pilot_robust", select=lambda t: t["meta"]["config"] == "R2", resolve=True)
+    r1 = [_s5_task("s5_pilot_robust", t["meta"]["set"], "pilot", dict(target_id=t["meta"]["target_id"],
+                                                                      K_construction=t["meta"]["K"],
+                                                                      K_proven=t["meta"]["K_proven"]),
+                   "R1", t["meta"]["seed"], 3200, S2_TIMEOUT[4], enum=_enum(t["meta"]["set"], resolve=True))
+          for t in again]
+    assert {x["meta"]["seed"] for x in r1} <= set(s2_seeds("pilot")[:2])
+    return _spread(again + r1)
+
+
+# ---------------------------------------------------------------- QA: re-scoring of the held-out and restart runs
+# D068's check 2 (independent evaluators) covered the calibration phases only (data/analysis/audit_labels_
+# calibration_all.json, D069; the big trees by s2_audit_bigtrees, D091), while the supplement says every exact run
+# entering a confirmatory test was re-scored (guardrail row 171). Every Stage 2 and Stage 4 tree-GP task printed the
+# whole tree (REQ-RUN-33), so no rerun is needed: the records are re-scored directly. Not Stage 5; not locked.
+RESCORE_PHASES = ("s2_ho_a0", "s2_ho_a16", "s2_ho_bench", "s2_ho_operon", "s4_restart")   # bench: row 177
+RESCORE_FAILURES = 300          # sampled failures per phase, as the calibration check, split over its sets
+
+
+def _verify_labels_ho(ph):
+    from reach.analysis.s2.audit import heldout_labels_report, print_heldout_labels_report
+    rep = heldout_labels_report(ROOT, ph.name)
+    print_heldout_labels_report(rep)
+    return 0 if rep["ok"] else 1
+
+
+@phase("s2_audit_labels_ho", "QA (D068 check 2 extended, D125; not a test of any hypothesis): every exact run (and "
+       "300 sampled failures per phase) of s2_ho_a0, s2_ho_a16, s2_ho_operon and s4_restart re-scored by the "
+       "independent evaluators of reach.analysis.s2.audit_labels; one task per phase and set. No search.",
+       verify=_verify_labels_ho)
+def s2_audit_labels_ho():
+    tasks = []
+    for ph in RESCORE_PHASES:
+        sets = sorted({t["meta"]["set"] for t in _manifest_tasks(ph)})
+        n_fail = RESCORE_FAILURES // len(sets)
+        tasks += [dict(key=f"labels|{ph}|{g}", argv=["{python}", "-m", "reach.tasks.s2_rescore", "--phase", ph, "--set",
+                                                     g, "--n_fail", str(n_fail)],
+                       cpu_limit=6 * 3600, weight=10 if ph == "s4_restart" else 1, meta=dict(phase=ph, set=g))
+                  for g in sets]
+    return tasks
+
+
+@phase("s2_audit_labels_s5", "QA (REQ-RUN-51, guardrail row 209; not a test of any hypothesis): every exact run (and "
+       "300 sampled failures) of Stage 5's s5_long_extra re-scored by the independent evaluators, as "
+       "s2_audit_labels_ho; one task per set; run before the H11-2L analysis. No search.", verify=_verify_labels_ho)
+def s2_audit_labels_s5():
+    sets = sorted({t["meta"]["set"] for t in _manifest_tasks("s5_long_extra")})
+    return [dict(key=f"labels|s5_long_extra|{g}", argv=["{python}", "-m", "reach.tasks.s2_rescore", "--phase",
+                                                         "s5_long_extra", "--set", g, "--n_fail",
+                                                         str(RESCORE_FAILURES // len(sets))],
+                 cpu_limit=6 * 3600, weight=1, meta=dict(phase="s5_long_extra", set=g)) for g in sets]
+
+
+@phase("s5_pilot_restart10","Stage 5 pilot (QA, never confirmatory; the outcomes are known): ten s4_restart tasks, "
+       "drawn as D068's reproduction sample (seed 20261022), again with the counter and key sets (side files under "
+       "data/keys_s5/s5_pilot_restart10); every row must reproduce its original.", verify=_verify_reexec)
+def s5_pilot_restart10():
+    from reach.analysis.s2.audit import sample_keys
+    chosen = set(sample_keys(phase_rows("s4_restart"), 10))
+    return reexec_tasks("s4_restart", select=lambda t: t["key"] in chosen, keys=True, resolve=True,
+                        keys_phase="s5_pilot_restart10")

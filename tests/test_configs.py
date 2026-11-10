@@ -22,13 +22,15 @@ def test_defaults_are_bit_identical_to_the_base_configuration():
     for seed in (1, 2, 3):
         a = run_gp(g, t, "A", seed, generations=60, stop_on="exact")
         b = run_gp(g, t, "A", seed, generations=60, stop_on="exact", tournament_size=5, selection="tournament",
-                   p_crossover=0.75, p_mutation=0.20, init="ramped", max_depth=E.MAX_DEPTH)
+                   p_crossover=0.75, p_mutation=0.20, init="ramped", max_depth=E.MAX_DEPTH,
+                   real_fitness="batch", bool_rows=None, batch_domain=None, batch_var_norm=None)   # Stage 5 defaults
         for k in ("best_expr", "final_nmse", "gens_run", "terminal_state", "final_tree_size"):
             assert a[k] == b[k]
 
 
 @pytest.mark.parametrize("opts", [dict(tournament_size=2), dict(selection="lexicase"), dict(init="uniform"),
-                                  dict(max_depth=17), dict(p_crossover=0.9, p_mutation=0.1)])
+                                  dict(max_depth=17), dict(p_crossover=0.9, p_mutation=0.1),
+                                  dict(bool_rows=6), dict(selection="none")])                  # Stage 5 (D125)
 def test_prefix_property_holds_for_every_option(opts):
     """REQ-ENG-03: a shorter run is the start of a longer one, for every configuration."""
     g, t = _bool()
@@ -79,7 +81,8 @@ def test_depth_17_allows_deeper_trees():
 
 def test_s2_run_knows_every_configuration():
     from reach.tasks import s2_configs as C
-    assert set(C.CONFIGS) == {"base", "R1", "R2", "R3", "R4", "R5", "R6"}
+    assert set(C.CONFIGS) == {"base", "R1", "R2", "R3", "R4", "R5", "R6",
+                              "FG", "FB", "BS24", "SF", "WIDE"}                                # Stage 5 (D125)
     assert C.CONFIGS["R1"]["pop_size"] == 25 and C.CONFIGS["R1"]["generations_per_E0"] == 800
     assert C.CONFIGS["R2"]["pop_size"] == 1000 and C.CONFIGS["R2"]["generations_per_E0"] == 20
     for name, c in C.CONFIGS.items():

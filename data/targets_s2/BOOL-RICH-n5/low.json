@@ -1,0 +1,112 @@
+[
+ {
+  "expression": "not(x5)",
+  "K_construction": 2,
+  "K_proven": 2,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 2.0,
+   "bits_uniform": 7.169925001442312,
+   "bits_syn": 3.321928094887362,
+   "bits_sem": 3.321928094887362,
+   "bits_sem_uncorrected": 3.321928094887362,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-RICH-n5_K02_00"
+ },
+ {
+  "expression": "not(x2)",
+  "K_construction": 2,
+  "K_proven": 2,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 2.0,
+   "bits_uniform": 7.169925001442312,
+   "bits_syn": 3.321928094887362,
+   "bits_sem": 3.321928094887362,
+   "bits_sem_uncorrected": 3.321928094887362,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-RICH-n5_K02_01"
+ },
+ {
+  "expression": "not(x1)",
+  "K_construction": 2,
+  "K_proven": 2,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 2.0,
+   "bits_uniform": 7.169925001442312,
+   "bits_syn": 3.321928094887362,
+   "bits_sem": 3.321928094887362,
+   "bits_sem_uncorrected": 3.321928094887362,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-RICH-n5_K02_02"
+ },
+ {
+  "expression": "not(x4)",
+  "K_construction": 2,
+  "K_proven": 2,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 2.0,
+   "bits_uniform": 7.169925001442312,
+   "bits_syn": 3.321928094887362,
+   "bits_sem": 3.321928094887362,
+   "bits_sem_uncorrected": 3.321928094887362,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-RICH-n5_K02_03"
+ },
+ {
+  "expression": "not(x3)",
+  "K_construction": 2,
+  "K_proven": 2,
+  "constructed": false,
+  "depth": 2,
+  "units": {
+   "nodes": 2.0,
+   "bits_uniform": 7.169925001442312,
+   "bits_syn": 3.321928094887362,
+   "bits_sem": 3.321928094887362,
+   "bits_sem_uncorrected": 3.321928094887362,
+   "bits_sem_extrapolated": false
+  },
+  "properties": {
+   "essential_inputs": 1,
+   "degree": 1,
+   "nonlinearity": 0,
+   "weight": 16
+  },
+  "target_id": "BOOL-RICH-n5_K02_04"
+ }
+]

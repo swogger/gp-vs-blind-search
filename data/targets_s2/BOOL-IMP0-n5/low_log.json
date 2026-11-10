@@ -1,0 +1,18 @@
+{
+ "grammar": "BOOL-IMP0-n5",
+ "seed": 20261108,
+ "ceiling": 29,
+ "depth_limit": 10,
+ "levels": {
+  "3": {
+   "proven": true,
+   "n_level": 26,
+   "n_depth_ok": 26,
+   "excluded_share": 0.0,
+   "found": 25,
+   "rejected": {
+    "constant": 1
+   }
+  }
+ }
+}

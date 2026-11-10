@@ -84,7 +84,24 @@ def tidy(rows, budgets, censored_as_failure=True):
 
 
 def read_phase(name, root=None):
-    """Last row per key of data/runs/<name>/results.jsonl (the queue's file)."""
+    """Last row per key of data/runs/<name>/results.jsonl (the queue's file), or of the committed results.jsonl.gz
+    when the raw file is absent (D097: results over 50 MB are committed gzipped, the raw file stays local; guardrail
+    row 179: a clean checkout read no row of those phases). A truncated final line is ignored, as `read_results`."""
+    import gzip
     from reach.runner.queue import read_results
     from reach.paths import ROOT
-    return list(read_results(Path(root or ROOT) / "data/runs" / name / "results.jsonl").values())
+    p = Path(root or ROOT) / "data/runs" / name / "results.jsonl"
+    gz = p.with_name("results.jsonl.gz")
+    if p.exists() or not gz.exists():
+        return list(read_results(p).values())
+    rows = {}
+    with gzip.open(gz, "rt") as fh:
+        for line in fh:
+            line = line.strip()
+            if line:
+                try:
+                    row = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                rows[row["key"]] = row
+    return list(rows.values())

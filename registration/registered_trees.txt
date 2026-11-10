@@ -5,3 +5,4 @@ Stage 2 (OSF dg7f3) | 3079021f9dccd72e2282a6f37d54b4e6ccb085f6 | dfe773b33103312
 Stage 2 addendum (OSF bc9g4) | a99034ea44962739b93cd5f0ef75bddc14e8f62c | dfe773b331033124db2ffa2c9b97fb801d7ee3d9 | src_reach_a99034e.patch
 Stage 3 (OSF hb238) | 80bc061ced0cb85dcbfda9810afc78aa22e5bade | 3699a63d2fb373003e616e3275d1c182516f8a9e | src_reach_80bc061.patch
 Stage 4 (OSF s5fjm) | 33e792b6810b913a741e6425f10564deeecde4c6 | c6b502bc790b9a91c71a0f8bfa92c6a56311437d | src_reach_33e792b.patch
+Stage 5 (OSF 9s3zd) | 4ae57f072d01a35e510aef9a2c6cc388f0bcd298 | ce222fa786c71b434dfef232853251963a5fa0fc | src_reach_4ae57f0.patch

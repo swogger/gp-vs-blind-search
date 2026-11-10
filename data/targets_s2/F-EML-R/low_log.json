@@ -1,0 +1,19 @@
+{
+ "grammar": "F-EML-R",
+ "seed": 20261108,
+ "ceiling": 19,
+ "depth_limit": 10,
+ "levels": {
+  "5": {
+   "proven": true,
+   "n_level": 16,
+   "n_depth_ok": 16,
+   "excluded_share": 0.0,
+   "found": 10,
+   "rejected": {
+    "dead_subtree": 4,
+    "variance": 2
+   }
+  }
+ }
+}

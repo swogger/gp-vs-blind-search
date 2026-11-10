@@ -9,7 +9,24 @@ import os
 import pytest
 
 
+# Guardrail row 178: a pre-commit hook in a linked worktree exports GIT_DIR and GIT_INDEX_FILE as absolute paths (the
+# main checkout gets a relative GIT_INDEX_FILE and no GIT_DIR). A test that runs git in a planted repository under
+# tmp_path then acts on the worktree's repository: `git init` sets core.bare = true in the shared config and `git
+# commit` lands on the branch being committed (test_release's planted repository did both on rev-ana, 2026-11-08).
+GIT_ENV = ("GIT_DIR", "GIT_INDEX_FILE", "GIT_WORK_TREE", "GIT_COMMON_DIR", "GIT_OBJECT_DIRECTORY",
+           "GIT_ALTERNATE_OBJECT_DIRECTORIES", "GIT_PREFIX", "GIT_NAMESPACE")
+
+
+def strip_git_env(environ):
+    """Remove the variables that point git at a repository, so every git a test starts finds its repository from
+    its own working directory."""
+    for k in GIT_ENV:
+        environ.pop(k, None)
+    return environ
+
+
 def pytest_configure(config):
+    strip_git_env(os.environ)
     config.addinivalue_line("markers", "study_machine: holds only on the study machine; skipped in CI")
     config.addinivalue_line("markers", "runtime_model: keep confirm.build's run-time model on (slow)")
 
